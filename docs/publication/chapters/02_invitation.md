@@ -1,122 +1,135 @@
-# An Invitation to Contribute
+# What Is Still Needed
 
-**From Andy Stavros**
+**A note from Andy Stavros**
 
-Having explained why I started, I want to ask you for something.
+This investigation reached a point where the remaining questions are no longer research
+questions. They are **retrieval questions** — specific documents, photographs, and recollections
+that exist somewhere, and that nobody has yet put in front of the analysis.
 
-I am one person, working from public records, using AI tools to organize and analyze material at
-a scale I could not manage alone. I am not a scientist, a historian, an epidemiologist, or a
-regulator, and — as the previous page says — I don't live in Ladera Ranch. I live in Newport
-Beach.
-
-That last point matters for how you read this. I have no property interest here, no stake in what
-the answer turns out to be, and no relationship to any family involved. What I have is a question
-that seemed worth answering carefully, and the same question applies to a lot of places besides
-this one.
-
-**One person is not enough for this.**
-
-What you are about to read is genuinely useful in places, and genuinely incomplete in others.
-The gaps in it are not modesty — they are listed, by name, with the reason each one is still
-open. Several of them could be closed tomorrow by someone who happens to have a box in a garage.
+This chapter lists them. Not as a request for help with my project, but because the report itself
+identifies them as the things standing between where the evidence sits now and an actual
+conclusion.
 
 ---
 
-## What I am asking for
+## What would move this from open to answered
 
-If you have any of the following, I would be glad to receive it:
+Each item below is named in the report, with the reasoning for why it matters.
 
-**Documents.** Environmental reports, Phase I or Phase II assessments, grading plans, soil
-tests, geotechnical reports, EIR appendices — anything from the entitlement or construction of
-Ladera Ranch or Rancho Mission Viejo. The single most important missing document in this whole
-project is a 1995 hazardous-materials assessment by Michael Brandman Associates. It is named in
-county records. Nobody has been able to find a copy.
+**The 1995 hazardous-materials assessment.** Michael Brandman Associates, May 1995, Appendix H,
+prepared for the Antonio Parkway Roadway Alignment and Land Use Plan. It is the hazardous-
+materials study for the land Ladera Ranch was built on. It is cited by name in county records and
+is not online. A complete sweep of the state clearinghouse for Orange County filings from 1990 to
+2000 returned no Ladera Ranch environmental impact report at all.
 
-**Photographs.** Ranch-era photographs of any kind — cattle operations, corrals, chutes, water
-tanks, windmills, ranch buildings, roundups, working crews. Family albums count. A single
-photograph showing a dipping vat, or showing that there wasn't one, would change this
-investigation more than any amount of further searching online.
+This one document would answer, for the residential footprint itself, the central question of the
+audit chapter: **how far back did the historical review actually look?** For the neighbouring
+Ranch Plan land the answer is 1952 — forty years after the cattle-dipping era ended.
 
-**Maps and surveys.** Plats, survey field notes, ranch maps, water-system drawings, anything
-showing where things stood before development.
+**Orange County Board of Supervisors minutes, 1907–1912.** Dipping in this county was
+county-ordered and supervised by the county veterinarian. That means board action,
+appropriations, an inspector appointment, and the record of a claim filed in 1908 after six
+cattle died following a dip. Those minutes should name locations. They are not digitised.
 
-**Memories.** If you worked on the ranch, or your parents or grandparents did — where cattle
-were worked, where the corrals and water were, what was done and where. If you know someone in
-their eighties or nineties who remembers the ranch operating, that memory is more perishable
-than any archive in this report. Every other lead here will still be available in ten years.
-That one will not.
+**The Anaheim Gazette and the Santa Ana Blade.** The papers of record for Orange County during
+the quarantine, neither digitised anywhere. Quarantine proclamations were published as paid legal
+notices — which means the locations may be sitting on microfilm in Santa Ana or Fullerton, unread
+since they were printed.
 
-**Corrections.** If something in this report is wrong, I want to know. Eight corrections have
-already been issued, and every one of them is published in full, including the two that
-weakened conclusions I had already put in writing. A ninth would be welcome.
+**Ranch photographs.** Any photograph of cattle operations on this land — corrals, chutes, water
+tanks, working crews, roundups. A single image showing a dipping vat, or clearly showing its
+absence at a known working area, would do more than any amount of further archival searching. The
+report establishes that an arsenical swim vat operated somewhere in Orange County. It cannot say
+where.
 
----
+**Survey field notes.** General Land Office notes for the townships along the western edge of the
+community. Surveyors recorded springs, corrals, houses and fences in their running notes — detail
+that never reached the published plat.
 
-## What happens to what you send
+**Recollection.** Anyone who worked this land, or whose parents or grandparents did. Where cattle
+were worked. Where the corrals and the water were. What was there.
 
-I will read it, and where it is relevant, it goes into the same process as everything else here:
-classified, sourced, cross-referenced against what has already been collected, and checked for
-whether it supports or contradicts the existing record.
-
-The most useful thing about a research project organized this way is that a new document can be
-tested against everything else in minutes rather than months. If you send me a 1920s photograph
-of a corral, I can put it against the 1929 aerial photography, the 1968 water survey, and the
-land-grant survey record and see whether it lines up. That is genuinely the fastest way to find
-out whether something matters.
-
-**You will be credited if you want to be, and not if you don't.** Anything you send that carries
-rights restrictions will be recorded and used for research, but not republished — this report
-already holds several photographs it will not reproduce for exactly that reason.
+That last item is the only one on this list with a deadline. Every archive here will still exist
+in ten years. The people who watched this ranch operate will not.
 
 ---
 
-## What I cannot accept, and why
+## Why this is an offer to facilitate, not a request to lead
 
-I need to be direct about this, because it protects people.
+I want to be precise about my role, because it is easy to misread.
 
-**Please do not send me medical information about any individual**, including your own family.
-Not diagnoses, not treatment records, not names of affected children. This project stores health
-information at an aggregate level only, and it will stay that way permanently. That is not a
-technicality — it is the difference between a research project and something that harms the
-families it claims to be helping.
+I did not set out to lead anything. I set out to find whether a question had been asked properly,
+and the honest answer turned out to be *partly, and not far enough back*. Along the way this
+became a working research system — a graded source registry, an evidence matrix where every claim
+carries its own counter-evidence, a georeferenced map stack spanning 1929 to the present, and a
+published log of every dead end.
 
-**Please do not send me addresses, or anything identifying a specific child or household.** No
-map in this report shows a residence, a case location, or a patient. None ever will.
+That infrastructure exists now. It took considerable effort to build and it is sitting here
+either way.
 
-If you want to talk about a family's experience, that conversation belongs with a physician, a
-public health agency, or the California Cancer Registry — people with the authority, the
-training, and the legal protections to handle it properly. I have none of those things, and I
-would be doing you a disservice by pretending otherwise.
+So the offer is simply this: **if you have something relevant, the cheapest place to test it is
+against a system that already holds everything else.** A photograph can be checked against 1929
+aerial photography and the 1968 water survey in minutes. A document can be cross-referenced
+against ninety-one catalogued sources and thirty-nine claims immediately. That is not a favour to
+anyone — it is just where the comparison costs least.
+
+And if a public agency, a university, a journalist, or an epidemiologist wants to take this
+further, everything is available: sources, data, scripts, archived documents, corrections. Take
+it. It was assembled to be used, not owned.
+
+**I am one person with a method and a lot of organised material. I am not the right institution
+to reach a conclusion, and this report does not reach one.**
 
 ---
 
-## What this report does not claim
+## What I cannot accept, and why it matters
 
-Nothing in these pages establishes that any pesticide, property, company, agency, school, water
-provider, or individual caused any illness. It does not explain the reported cases and does not
-try to.
+**Please do not send medical information about any individual** — not diagnoses, not treatment
+records, not the names of affected children. This project holds health information at aggregate
+level only and always will. That is not a formality. It is the difference between a research
+project and something that harms the families it claims to care about.
 
-What it does is reconstruct what the public record shows about the history of this land, and
-identify precisely where that record has holes. The most useful thing in it is probably not a
-finding at all — it is a list of specific, answerable questions, each with a method attached.
+**Please do not send addresses or anything identifying a specific child or household.** No map in
+this report shows a residence, a case location, or a patient. None ever will.
 
-If you can help close one of them, please do.
+Anyone wanting to discuss a family's medical experience should be speaking with a physician, a
+public health agency, or the California Cancer Registry — people with the authority, the training
+and the legal protections to handle it properly. I have none of those, and pretending otherwise
+would cause harm.
+
+**Corrections are welcome and will be published.** Nine have been issued so far, every one in
+full, including several that weakened conclusions already in print. A tenth would be a
+contribution, not an embarrassment.
+
+---
+
+## Disclosure
+
+I am a **licensed real estate agent** in Orange County. I do not live in Ladera Ranch, have never
+held a listing there, and have no property interest in the community.
+
+I am stating that here rather than letting it surface later, because a report touching on land
+history and soil could affect how people see a place, and a reader is entitled to know what the
+author does for a living before weighing a word of it.
+
+The professional incentive runs opposite to the accusation anyone would make: there is nothing to
+gain from unsettling a housing market. And this report does **not** claim that anything harmful is
+present in Ladera Ranch soil — because no measurement exists showing that it is. What it documents
+is a gap in a historical records window, and a set of questions that can be closed.
 
 ---
 
 ::: classification limit
-**A note on how this was made.** This investigation was assembled with substantial AI
-assistance. That has obvious advantages — a great deal of material was located, cross-checked,
-and organized quickly — and it carries a specific risk: fluent, confident writing can make
-uncertain conclusions read as settled ones.
+**On how this was made.** This investigation was assembled with substantial AI assistance. That
+brought real advantages — a great deal of material located, cross-checked and organised quickly —
+and one specific risk: fluent writing can make uncertain conclusions read as settled.
 
-The countermeasures used here are visible in the document itself: every claim carries mandatory
-counter-evidence, the dead ends are published alongside the findings, sources are graded and
-never silently promoted, and corrections are issued in full rather than quietly revised. **Those
-measures have already been demonstrably insufficient on their own** — five of the eight
-corrections issued so far share the same shape: an assumption adopted without checking the
-primary source, in the direction that made the analysis simpler.
+The countermeasures are visible throughout: every claim carries mandatory counter-evidence, dead
+ends are published beside findings, sources are graded and never silently promoted, corrections
+are issued in full.
 
-Read it accordingly. Verify anything that matters to you against the cited sources. They are all
-listed, with URLs and identifiers, at the end.
+**Those measures have already proven insufficient on their own.** Of the nine corrections issued,
+most share one shape — an assumption adopted without checking the primary source, in whichever
+direction made the analysis simpler. Read accordingly, and verify anything that matters to you
+against the citations. They are all listed at the end, with URLs.
 :::
