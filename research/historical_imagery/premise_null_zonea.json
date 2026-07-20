@@ -1,0 +1,8 @@
+{
+ "zone_a_enrichment": 0.97,
+ "zone_a_p": 0.506,
+ "zone_a_water_mean": 9.0,
+ "zone_a_random_mean": 9.26,
+ "within_300m_of_building": 40,
+ "median_nearest_building_m": 66.0
+}

@@ -1,0 +1,8 @@
+id,period,land_use,evidence,confidence,sourceId
+LU-001,"pre-1769","Acjachemen (Juaneño) native land","Regional history",high,SRC-LU-RMV
+LU-002,"1840s-1882","Mexican land grant ranchos; cattle","RMV history",high,SRC-LU-RMV
+LU-003,"1882-1940s","O'Neill/Flood partnership; cattle, wheat (largest OC wheat producer), row crops introduced","RMV history page",high,SRC-LU-RMV
+LU-004,"1940s-1998","Working cattle ranch; grazing dominant; barley dry-farming (pre-1983); lemon/citrus groves + frost wind machines; tree nurseries in canyon bottoms; stored agricultural chemicals","Phase I ESA (RMV Planning Areas 1/2, EEI 2003/2004); aerials 1952-2002",high (adjacent land) / moderate-high (exact footprint),SRC-LU-ESA
+LU-005,"1997-1999","Ladera Planned Community entitled (OC ~1997, EIR 555); mass grading begins; first homes 1999","OC records; ULI; Wikipedia",high,SRC-LU-ULI
+LU-006,"1999-2006","Ladera Ranch built out — 9 villages, ~8100 homes","ULI; Wikipedia",high,SRC-LU-ULI
+LU-007,"2010","First delineated as Census CDP","Census/Wikipedia",high,SRC-DEM-001

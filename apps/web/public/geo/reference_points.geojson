@@ -1,0 +1,21 @@
+{
+ "type": "FeatureCollection",
+ "features": [
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -117.6403,
+     33.5467
+    ]
+   },
+   "properties": {
+    "name": "Ladera Ranch (approx. center)",
+    "layer": "reference",
+    "sourceId": "SRC-DEM-001",
+    "grade": "A1"
+   }
+  }
+ ]
+}

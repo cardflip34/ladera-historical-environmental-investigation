@@ -1,0 +1,4 @@
+year,dataset,total_population,pop_0_19,pop_0_4,pop_5_9,pop_10_14,pop_15_17,pop_18_19,pop_10_19,pct_white_nh,housing_units,median_age,median_hh_income,sourceId,grade,notes
+2010,"Decennial Census",22980,,,,,,,,,8000,,,SRC-DEM-001,A1,"Band detail not retrieved; CDP first delineated 2010"
+2020,"Decennial Census",26170,9160,,,,,,,68.7,8139,,,SRC-DEM-001,A1,"35.0% under 18; White alone incl Hispanic 68.7%"
+2024,"ACS 2020-2024 5-yr",23793,9115,1852,2357,2446,1726,734,4906,63.6,7716,35.1,184458,SRC-DEM-002,A1,"White alone non-Hispanic = 15136 (63.6%); pop 0-19 = 38.3%; pop 10-19 (Ewing peak) = 4906"

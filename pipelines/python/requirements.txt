@@ -1,0 +1,11 @@
+# LEHRP Python pipeline dependencies.
+# The core GeoJSON build and tests run on the STANDARD LIBRARY ONLY (no install needed).
+# The packages below are for extended geospatial/analytical work (PUR ingestion, spatial ops).
+geopandas>=0.14
+shapely>=2.0
+pyproj>=3.6
+pandas>=2.0
+requests>=2.31
+duckdb>=0.10
+# Optional: jupyter for running the incidence notebook interactively
+jupyter>=1.0

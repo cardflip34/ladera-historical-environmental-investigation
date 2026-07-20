@@ -1,0 +1,61 @@
+{
+  "service": "https://ocgis.com/arcpub/rest/services/Historic_Imagery/Historic_Imagery_v2/ImageServer",
+  "footprint_bbox_wgs84": [
+    -117.68,
+    33.52,
+    -117.616,
+    33.575
+  ],
+  "coordinates_for_maplibre": [
+    [
+      -117.68,
+      33.575
+    ],
+    [
+      -117.616,
+      33.575
+    ],
+    [
+      -117.616,
+      33.52
+    ],
+    [
+      -117.68,
+      33.52
+    ]
+  ],
+  "frames": [
+    {
+      "objectid": 346,
+      "tag": "1929",
+      "name": "South County Watersheds 1929"
+    },
+    {
+      "objectid": 351,
+      "tag": "1931",
+      "name": "Irvine Ranch 1931"
+    },
+    {
+      "objectid": 310,
+      "tag": "1937",
+      "name": "Orange County 600 Scale 1938"
+    },
+    {
+      "objectid": 340,
+      "tag": "1938",
+      "name": "Orange County 1938"
+    },
+    {
+      "objectid": 286,
+      "tag": "1946a",
+      "name": "San Juan Capistrano 600 Scale 1947"
+    },
+    {
+      "objectid": 293,
+      "tag": "1946b",
+      "name": "Orange County 1200 Scale 1947"
+    }
+  ],
+  "retrieved": "2026-07-18",
+  "provenance": "OC Survey / OCGIS Historic_Imagery_v2 ImageServer, LockRaster mosaic per frame"
+}

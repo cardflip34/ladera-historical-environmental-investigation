@@ -1,0 +1,110 @@
+{
+ "type": "FeatureCollection",
+ "features": [
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -117.655,
+     33.5697
+    ]
+   },
+   "properties": {
+    "name": "Carl Hankey Elementary",
+    "contaminants": "Arsenic, lead, methane",
+    "arsenic": true,
+    "distanceMiles": 1.8,
+    "pastUse": "Former orchard + row crops",
+    "layer": "school_arsenic",
+    "database": "DTSC EnviroStor",
+    "grade": "A1",
+    "sourceId": "SRC-ENV-ENVIROSTOR"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -117.659,
+     33.508
+    ]
+   },
+   "properties": {
+    "name": "Plant Depot School Site",
+    "contaminants": "Arsenic, nitrate",
+    "arsenic": true,
+    "distanceMiles": 2.9,
+    "pastUse": "Former agricultural services",
+    "layer": "school_arsenic",
+    "database": "DTSC EnviroStor",
+    "grade": "A1",
+    "sourceId": "SRC-ENV-ENVIROSTOR"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -117.662,
+     33.504
+    ]
+   },
+   "properties": {
+    "name": "San Juan Elementary",
+    "contaminants": "Arsenic, chlordane, DDD, DDE, DDT, lead",
+    "arsenic": true,
+    "distanceMiles": 3.2,
+    "pastUse": "Former orchard",
+    "layer": "school_arsenic",
+    "database": "DTSC EnviroStor",
+    "grade": "A1",
+    "sourceId": "SRC-ENV-ENVIROSTOR"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -117.645,
+     33.503
+    ]
+   },
+   "properties": {
+    "name": "Ambuehl Elementary",
+    "contaminants": "DDD, DDE, DDT, toxaphene",
+    "arsenic": false,
+    "distanceMiles": 3.0,
+    "pastUse": "Former agricultural land",
+    "layer": "school_other",
+    "database": "DTSC EnviroStor",
+    "grade": "A1",
+    "sourceId": "SRC-ENV-ENVIROSTOR"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -117.688,
+     33.637
+    ]
+   },
+   "properties": {
+    "name": "El Toro High School",
+    "contaminants": "PCBs, TPH-diesel",
+    "arsenic": false,
+    "distanceMiles": 6.8,
+    "pastUse": "Former row crops",
+    "layer": "school_other",
+    "database": "DTSC EnviroStor",
+    "grade": "A1",
+    "sourceId": "SRC-ENV-ENVIROSTOR"
+   }
+  }
+ ]
+}

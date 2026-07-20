@@ -1,0 +1,5 @@
+id,productName,manufacturer,epaRegistrationNumber,activeIngredientId,formulation,registrationStatus,siteUses,sourceId,notes
+PROD-001,"Lifeline Herbicide",UPL,70506-310,AI-001,"soluble concentrate (glufosinate-ammonium)",Registered,"Landscape/common-area weed control",SRC-LARMAC-NOTICE,"DOCUMENTED in Ladera Ranch common-area application notices (O'Connell Landscape, Dec 2023 & 2025)"
+PROD-002,"Finale / Finale XL",Bayer/Environmental Science,432-1229,AI-001,"glufosinate-ammonium",Registered,"Landscape/ornamental/turf/right-of-way",SRC-PEST-EPA,"Glufosinate product explicitly labeled for landscape use"
+PROD-003,"Roundup ProMax (example)",Bayer,"(various)",AI-002,"glyphosate",Registered,"Turf/landscape/right-of-way",SRC-PEST-EPA,"Representative glyphosate product; specific LR product not documented"
+PROD-004,"Attrimec (named in coverage)","(named by Epoch Times)","NOT FOUND","NOT FOUND","NOT FOUND",Unverified,"Named as applied in Ladera Ranch",SRC-NEWS-008,"Product name appears in one grade-C source; EPA reg no. and active ingredient NOT independently verified"

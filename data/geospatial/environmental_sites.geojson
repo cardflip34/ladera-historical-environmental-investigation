@@ -1,0 +1,269 @@
+{
+ "type": "FeatureCollection",
+ "features": [
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -117.655,
+     33.5697
+    ]
+   },
+   "properties": {
+    "id": "ENV-001",
+    "name": "Carl Hankey Elementary School",
+    "siteType": "School Investigation (former orchard + row crops)",
+    "database": "EnviroStor",
+    "status": "No Further Action",
+    "contaminants": "Arsenic, Lead, Methane",
+    "distanceMiles": "1.8",
+    "grade": "A1",
+    "sourceId": "SRC-ENV-ENVIROSTOR",
+    "layer": "environmental_sites"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -117.662,
+     33.504
+    ]
+   },
+   "properties": {
+    "id": "ENV-002",
+    "name": "San Juan Elementary School",
+    "siteType": "School Investigation (former orchard)",
+    "database": "EnviroStor",
+    "status": "Inactive-Withdrawn",
+    "contaminants": "Arsenic, Chlordane, DDD, DDE, DDT, Lead",
+    "distanceMiles": "3.2",
+    "grade": "A1",
+    "sourceId": "SRC-ENV-ENVIROSTOR",
+    "layer": "environmental_sites"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -117.645,
+     33.503
+    ]
+   },
+   "properties": {
+    "id": "ENV-003",
+    "name": "Ambuehl Elementary School",
+    "siteType": "School Investigation",
+    "database": "EnviroStor",
+    "status": "No Further Action",
+    "contaminants": "DDD, DDE, DDT, Toxaphene",
+    "distanceMiles": "3.0",
+    "grade": "A1",
+    "sourceId": "SRC-ENV-ENVIROSTOR",
+    "layer": "environmental_sites"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -117.659,
+     33.508
+    ]
+   },
+   "properties": {
+    "id": "ENV-004",
+    "name": "Plant Depot School Site",
+    "siteType": "School Investigation (ag services)",
+    "database": "EnviroStor",
+    "status": "Inactive-Needs Eval",
+    "contaminants": "Arsenic, Nitrate",
+    "distanceMiles": "2.9",
+    "grade": "A1",
+    "sourceId": "SRC-ENV-ENVIROSTOR",
+    "layer": "environmental_sites"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -117.691,
+     33.607
+    ]
+   },
+   "properties": {
+    "id": "ENV-005",
+    "name": "Alicia Towne Plaza",
+    "siteType": "Voluntary Cleanup (dry cleaner)",
+    "database": "EnviroStor",
+    "status": "Active",
+    "contaminants": "PCE",
+    "distanceMiles": "5.1",
+    "grade": "A1",
+    "sourceId": "SRC-ENV-ENVIROSTOR",
+    "layer": "environmental_sites"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -117.635,
+     33.627
+    ]
+   },
+   "properties": {
+    "id": "ENV-006",
+    "name": "Polo Cleaners",
+    "siteType": "Voluntary Cleanup",
+    "database": "EnviroStor",
+    "status": "Active",
+    "contaminants": "1,1,1,2-tetrachloroethane; 1,1,2-TCA",
+    "distanceMiles": "5.6",
+    "grade": "A1",
+    "sourceId": "SRC-ENV-ENVIROSTOR",
+    "layer": "environmental_sites"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -117.667,
+     33.502
+    ]
+   },
+   "properties": {
+    "id": "ENV-007",
+    "name": "SOLAG Disposal Site",
+    "siteType": "Voluntary Cleanup (junkyard/fuel)",
+    "database": "EnviroStor",
+    "status": "No Further Action",
+    "contaminants": "Arsenic, Cr, Lead, PAHs, Beryllium",
+    "distanceMiles": "3.5",
+    "grade": "A1",
+    "sourceId": "SRC-ENV-ENVIROSTOR",
+    "layer": "environmental_sites"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -117.662,
+     33.518
+    ]
+   },
+   "properties": {
+    "id": "ENV-008",
+    "name": "Meggitt (OC) Inc / former Endevco",
+    "siteType": "Tiered Permit (electronics mfg)",
+    "database": "EnviroStor",
+    "status": "Active",
+    "contaminants": "Lead",
+    "distanceMiles": "2.3",
+    "grade": "A1",
+    "sourceId": "SRC-ENV-ENVIROSTOR",
+    "layer": "environmental_sites"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -117.688,
+     33.637
+    ]
+   },
+   "properties": {
+    "id": "ENV-009",
+    "name": "El Toro High School",
+    "siteType": "School Investigation (former row crops)",
+    "database": "EnviroStor",
+    "status": "No Further Action",
+    "contaminants": "PCBs, TPH-diesel",
+    "distanceMiles": "6.8",
+    "grade": "A1",
+    "sourceId": "SRC-ENV-ENVIROSTOR",
+    "layer": "environmental_sites"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -117.662,
+     33.542
+    ]
+   },
+   "properties": {
+    "id": "ENV-010",
+    "name": "Blue Diamond Materials Plant",
+    "siteType": "Evaluation (asphalt)",
+    "database": "EnviroStor",
+    "status": "Refer local",
+    "contaminants": "(unspecified)",
+    "distanceMiles": "1.3",
+    "grade": "A1",
+    "sourceId": "SRC-ENV-ENVIROSTOR",
+    "layer": "environmental_sites"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -117.624,
+     33.486
+    ]
+   },
+   "properties": {
+    "id": "ENV-011",
+    "name": "Prima Deshecha Landfill",
+    "siteType": "Active Class III landfill (SWIS 30-AB-0019)",
+    "database": "CalRecycle/SD Water Board",
+    "status": "Permitted/Active",
+    "contaminants": "Landfill gas (methane), leachate; groundwater & LFG monitored",
+    "distanceMiles": "4.3",
+    "grade": "A1",
+    "sourceId": "SRC-ENV-PRIMA",
+    "layer": "environmental_sites"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -117.731,
+     33.676
+    ]
+   },
+   "properties": {
+    "id": "ENV-012",
+    "name": "El Toro MCAS (former)",
+    "siteType": "Federal Superfund / NPL",
+    "database": "EPA/DTSC",
+    "status": "Cleanup ongoing",
+    "contaminants": "TCE (VOC groundwater plume migrated >3 mi off-base)",
+    "distanceMiles": "10.3",
+    "grade": "A2",
+    "sourceId": "SRC-ENV-ELTORO",
+    "layer": "environmental_sites"
+   }
+  }
+ ]
+}

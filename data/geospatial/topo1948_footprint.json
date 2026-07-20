@@ -1,0 +1,22 @@
+{
+ "corners_TL_TR_BR_BL": [
+  [
+   -117.679999,
+   33.575037
+  ],
+  [
+   -117.616002,
+   33.575017
+  ],
+  [
+   -117.616048,
+   33.519982
+  ],
+  [
+   -117.680004,
+   33.520003
+  ]
+ ],
+ "source": "USGS Historical Topo, San Juan Capistrano quad, 1948, 1:24000, NAD27 polyconic",
+ "note": "Georeferenced via GeoTIFF tags; pixel->lonlat RMS < 1px against quad neatline"
+}

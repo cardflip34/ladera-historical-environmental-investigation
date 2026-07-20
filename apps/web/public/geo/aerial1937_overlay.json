@@ -1,0 +1,26 @@
+{
+ "coordinates": [
+  [
+   -117.68,
+   33.57523333333334
+  ],
+  [
+   -117.616,
+   33.57523333333334
+  ],
+  [
+   -117.616,
+   33.51976666666666
+  ],
+  [
+   -117.68,
+   33.51976666666666
+  ]
+ ],
+ "year": "1937-38",
+ "label": "OC Survey aerial, 600-scale county series",
+ "service": "https://ocgis.com/arcpub/rest/services/Historic_Imagery/Historic_Imagery_v2/ImageServer",
+ "grade": "A1",
+ "retrieved": "2026-07-18",
+ "note": "Georeferenced server-side by OC Survey; export extent verified to +/-25 m."
+}

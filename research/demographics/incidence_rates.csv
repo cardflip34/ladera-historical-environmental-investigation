@@ -1,0 +1,9 @@
+cancer,population_group,rate,rate_units,period_basis,sourceId,grade,notes
+Ewing sarcoma,"US all ages/races",2.93,per million per year,"1973-2004 SEER",SRC-LIT-006,B1,"StatPearls NBK559183"
+Ewing sarcoma,"US children/adolescents <20",3.0,per million per year,"SEER-based central estimate",SRC-LIT-006,B1,"Best-supported central estimate for expected-case math"
+Ewing sarcoma,"US non-Hispanic White",1.5,per million,"SEER (narrower slice)",SRC-LIT-003,B1,"Different denominator/age-standard than 2.93; reconcile before mixing"
+Ewing sarcoma,"US Black/African American",0.2,per million,"SEER",SRC-LIT-003,B1,"~9x lower than White"
+Ewing sarcoma,"US Asian/Pacific Islander",0.8,per million,"SEER",SRC-LIT-003,B1,""
+Ewing sarcoma,"Ancestry IRR vs European",0.16,ratio,"CI5 1988-2012",SRC-LIT-003,A1,"African 0.16; E.Asian 0.30; Pacific Islander 2.18 (Spector 2021)"
+Ewing sarcoma,"Ages 10-19 North America",4.58,per million per year,"2003-2012 peak",SRC-LIT-003,A1,"Peak-age window rate"
+All pediatric cancer,"California ages 0-19",18.2,per 100000 per year,"2012-2016 CCR/SEER",SRC-DEM-003,B1,"kidsdata.org (Lucile Packard); rose from 16.5 (2000-04)"

@@ -1,0 +1,16 @@
+{
+ "n_buildings": 10592,
+ "buildings": {
+  "pct_in_valley_bottom": 3.0,
+  "median_slope_deg": 1.7,
+  "median_dist_to_drainage_m": 967.0,
+  "median_height_above_drainage_m": 9.2
+ },
+ "available_land": {
+  "pct_in_valley_bottom": 2.6,
+  "median_slope_deg": 6.7,
+  "median_dist_to_drainage_m": 914.1,
+  "median_height_above_drainage_m": 10.3
+ },
+ "enrichment_valley_bottom": 1.15
+}

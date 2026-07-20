@@ -1,0 +1,2639 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Ladera Ranch &mdash; Historical Environmental Investigation</title>
+<meta name="description" content="An independent historical land-use and environmental records investigation of Rancho Mission Viejo and present-day Ladera Ranch, Orange County, California.">
+<style>
+:root{
+  --bg:#0b0f16; --bg2:#0e141d; --panel:#131a24; --panel2:#18212d;
+  --ink:#e9e6e0; --ink-dim:#9aa8b8; --ink-faint:#6b7a8c;
+  --line:#202b3a; --line2:#2b394b;
+  --accent:#c8a951;          /* aged brass - survey ink, archival */
+  --water:#6ba9c4;
+  --fact:#5fb37a; --context:#6ba9c4; --lead:#c8a951;
+  --open:#c4756b; --limit:#9a8fb0; --correction:#d08a4f;
+  --serif: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, "Times New Roman", serif;
+  --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --mono: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth; scroll-padding-top:70px}
+/* The off-canvas contents drawer sits at translateX(-100%); without this it widens the
+   scroll area and the whole page slides sideways on narrow screens. */
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--serif);
+  font-size:17.5px;line-height:1.72;-webkit-text-size-adjust:100%;
+  font-feature-settings:"kern" 1,"liga" 1;overflow-x:hidden}
+
+/* ---- top bar ---- */
+.topbar{position:sticky;top:0;z-index:50;background:rgba(11,15,22,.94);
+  backdrop-filter:blur(10px);border-bottom:1px solid var(--line);
+  display:flex;align-items:center;gap:14px;padding:11px 18px}
+.topbar .brand{font-family:var(--sans);font-size:13px;font-weight:700;letter-spacing:.13em;
+  text-transform:uppercase;color:var(--accent);white-space:nowrap;
+  overflow:hidden;text-overflow:ellipsis;min-width:0}
+.topbar .spacer{flex:1}
+.topbar > button{flex:none}
+.topbar button{font-family:var(--sans);font-size:12.5px;background:var(--panel);
+  color:var(--ink-dim);border:1px solid var(--line2);border-radius:6px;
+  padding:6px 12px;cursor:pointer}
+.topbar button:hover{color:var(--ink);border-color:var(--accent)}
+.topbar button:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+
+.layout{display:grid;grid-template-columns:288px minmax(0,1fr);gap:0;max-width:1500px;margin:0 auto}
+
+/* ---- sidebar ---- */
+#toc{position:sticky;top:52px;height:calc(100vh - 52px);overflow-y:auto;
+  border-right:1px solid var(--line);padding:24px 16px 60px;font-family:var(--sans)}
+#toc h3{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-faint);
+  margin:0 0 12px;font-weight:700}
+#toc ol{list-style:none;margin:0;padding:0}
+#toc > ol > li{margin-bottom:2px}
+#toc a{display:block;padding:6px 10px;border-radius:5px;color:var(--ink-dim);
+  text-decoration:none;font-size:13.5px;line-height:1.35;border-left:2px solid transparent}
+#toc .n{color:var(--ink-faint);font-variant-numeric:tabular-nums;
+  font-size:12px;margin-right:5px}
+#toc a:hover{background:var(--panel);color:var(--ink)}
+#toc a.active{color:var(--accent);border-left-color:var(--accent);background:var(--panel)}
+#toc .sub{list-style:none;padding-left:14px;margin:0 0 6px}
+#toc .sub a{font-size:12.5px;padding:3px 10px;color:var(--ink-faint)}
+
+main{padding:0 0 120px;min-width:0}
+.wrap{max-width:820px;margin:0 auto;padding:0 30px}
+
+/* ---- cover ---- */
+.cover{padding:96px 30px 80px;border-bottom:1px solid var(--line);
+  background:radial-gradient(ellipse at 22% -10%, #182333 0%, var(--bg) 62%)}
+.cover .inner{max-width:820px;margin:0 auto}
+.eyebrow{font-family:var(--sans);font-size:11.5px;letter-spacing:.2em;text-transform:uppercase;
+  color:var(--accent);margin:0 0 22px;font-weight:700}
+.cover h1{font-size:clamp(34px,6vw,62px);line-height:1.08;margin:0 0 22px;
+  letter-spacing:-.022em;text-wrap:balance;font-weight:600}
+.cover .deck{font-size:clamp(18px,2.4vw,22px);color:var(--ink-dim);margin:0 0 34px;
+  max-width:60ch;line-height:1.55}
+.meta{display:flex;flex-wrap:wrap;gap:10px;font-family:var(--sans);font-size:12px}
+.meta span{border:1px solid var(--line2);border-radius:999px;padding:5px 13px;color:var(--ink-dim)}
+
+/* ---- disclaimer ---- */
+.disclaimer{background:#1a1410;border:1px solid #3a2a1c;border-left:3px solid var(--correction);
+  border-radius:0 8px 8px 0;padding:20px 24px;margin:34px 0;font-size:15.5px;color:#e2d8cc}
+.disclaimer strong{color:#f2e3d0}
+
+/* ---- chapters ---- */
+.chapter{padding:64px 0 20px;border-bottom:1px solid var(--line)}
+.chapter-num{font-family:var(--sans);font-size:11.5px;letter-spacing:.18em;text-transform:uppercase;
+  color:var(--accent);font-weight:700;margin-bottom:10px}
+.chapter h1{font-size:clamp(27px,4.2vw,40px);line-height:1.14;margin:0 0 30px;
+  letter-spacing:-.018em;text-wrap:balance;font-weight:600}
+h2{font-size:clamp(21px,2.9vw,27px);margin:52px 0 16px;line-height:1.25;
+  letter-spacing:-.012em;text-wrap:balance;font-weight:600;
+  padding-top:14px;border-top:1px solid var(--line)}
+h3{font-size:19px;margin:34px 0 12px;color:var(--ink);font-weight:600;line-height:1.32}
+p{margin:0 0 20px}
+a{color:var(--water);text-decoration:none;border-bottom:1px solid rgba(107,169,196,.32)}
+a:hover{border-bottom-color:var(--water)}
+strong{color:#fff;font-weight:600}
+em{color:var(--ink)}
+del{color:var(--ink-faint)}
+ul,ol{margin:0 0 20px;padding-left:26px}
+li{margin-bottom:9px}
+hr{border:0;border-top:1px solid var(--line);margin:44px 0}
+blockquote{margin:24px 0;padding:2px 0 2px 22px;border-left:3px solid var(--line2);
+  color:var(--ink-dim);font-style:italic}
+code{font-family:var(--mono);font-size:.845em;background:var(--panel2);
+  padding:2px 6px;border-radius:4px;color:#d8c9a0;word-break:break-word}
+pre{background:var(--panel);border:1px solid var(--line);border-radius:8px;
+  padding:16px;overflow-x:auto}
+pre code{background:none;padding:0}
+
+/* ---- tables ---- */
+.tw{overflow-x:auto;margin:24px 0;border:1px solid var(--line);border-radius:9px;
+  background:var(--panel)}
+table{width:100%;border-collapse:collapse;font-family:var(--sans);font-size:14.5px}
+th,td{text-align:left;padding:11px 15px;border-bottom:1px solid var(--line);vertical-align:top}
+th{color:var(--accent);font-weight:700;font-size:11.5px;letter-spacing:.075em;
+  text-transform:uppercase;background:var(--panel2);white-space:nowrap}
+tr:last-child td{border-bottom:none}
+td:not(:first-child){font-variant-numeric:tabular-nums}
+
+/* ---- evidence cards ---- */
+.ev{margin:28px 0;border-radius:9px;border:1px solid var(--line2);
+  background:var(--panel);overflow:hidden}
+.ev-label{font-family:var(--sans);font-size:11px;letter-spacing:.15em;text-transform:uppercase;
+  font-weight:700;padding:8px 18px;color:#0b0f16}
+.ev-body{padding:18px 20px 4px;font-size:16px}
+.ev-body p{margin-bottom:13px}
+.ev-body p:last-child{margin-bottom:14px}
+.k-fact{border-color:var(--fact)} .k-fact .ev-label{background:var(--fact)}
+.k-context{border-color:var(--context)} .k-context .ev-label{background:var(--context)}
+.k-lead{border-color:var(--lead)} .k-lead .ev-label{background:var(--lead)}
+.k-open{border-color:var(--open)} .k-open .ev-label{background:var(--open)}
+.k-limit{border-color:var(--limit)} .k-limit .ev-label{background:var(--limit)}
+.k-correction{border-color:var(--correction)} .k-correction .ev-label{background:var(--correction)}
+
+/* ---- figures ---- */
+figure{margin:34px 0;background:var(--panel);border:1px solid var(--line);
+  border-radius:9px;overflow:hidden}
+figure img{display:block;width:100%;height:auto;cursor:zoom-in}
+figcaption{padding:14px 18px;font-family:var(--sans);font-size:13.5px;
+  color:var(--ink-dim);border-top:1px solid var(--line);line-height:1.55}
+figcaption .cap-t{color:var(--ink);font-weight:600}
+figcaption .cap-m{display:block;margin-top:7px;font-size:12px;color:var(--ink-faint)}
+
+/* ---- lightbox ---- */
+#lb{position:fixed;inset:0;background:rgba(5,8,12,.96);z-index:200;display:none;
+  align-items:center;justify-content:center;padding:24px;cursor:zoom-out}
+#lb.on{display:flex}
+#lb img{max-width:100%;max-height:92vh;object-fit:contain}
+#lb .x{position:absolute;top:16px;right:22px;color:var(--ink);font-size:34px;
+  background:none;border:none;cursor:pointer;line-height:1}
+
+/* ---- evidence matrix ---- */
+.mx-tools{display:flex;gap:10px;flex-wrap:wrap;margin:20px 0}
+.mx-tools input,.mx-tools select{font-family:var(--sans);font-size:14px;background:var(--panel);
+  color:var(--ink);border:1px solid var(--line2);border-radius:6px;padding:9px 12px}
+.mx-tools input{flex:1;min-width:200px}
+.mx-tools input:focus,.mx-tools select:focus{outline:2px solid var(--accent);outline-offset:1px}
+.mx-card{border:1px solid var(--line2);border-radius:9px;background:var(--panel);
+  margin-bottom:14px;overflow:hidden}
+.mx-head{padding:14px 18px;cursor:pointer;display:flex;gap:12px;align-items:flex-start}
+.mx-head:hover{background:var(--panel2)}
+.mx-id{font-family:var(--mono);font-size:12px;color:var(--accent);white-space:nowrap;padding-top:2px}
+.mx-claim{flex:1;font-size:15.5px;line-height:1.5}
+.mx-tag{font-family:var(--sans);font-size:10px;letter-spacing:.1em;text-transform:uppercase;
+  font-weight:700;padding:3px 9px;border-radius:999px;white-space:nowrap;color:#0b0f16}
+.mx-body{display:none;padding:2px 18px 16px;font-size:15px;border-top:1px solid var(--line)}
+.mx-card.open .mx-body{display:block}
+.mx-body dt{font-family:var(--sans);font-size:10.5px;letter-spacing:.11em;text-transform:uppercase;
+  color:var(--ink-faint);margin-top:14px;font-weight:700}
+.mx-body dd{margin:5px 0 0}
+.mx-none{color:var(--ink-faint);font-style:italic;padding:20px}
+
+footer{padding:56px 30px 90px;border-top:1px solid var(--line);color:var(--ink-faint);
+  font-family:var(--sans);font-size:13px;max-width:820px;margin:0 auto;line-height:1.7}
+
+@media(max-width:1000px){
+  .layout{grid-template-columns:1fr}
+  #toc{position:fixed;inset:52px auto 0 0;width:290px;background:var(--bg2);z-index:45;
+    transform:translateX(-100%);transition:transform .22s ease;border-right:1px solid var(--line2)}
+  #toc.open{transform:translateX(0)}
+  .wrap{padding:0 20px}
+  .cover{padding:60px 20px 50px}
+  body{font-size:17px}
+}
+@media(min-width:1001px){ .menu-btn{display:none} }
+@media(prefers-reduced-motion:reduce){ *{transition:none!important;scroll-behavior:auto!important} }
+
+@media print{
+  :root{--bg:#fff;--panel:#fff;--panel2:#f6f6f4;--ink:#111;--ink-dim:#333;
+        --ink-faint:#555;--line:#ccc;--line2:#bbb}
+  body{background:#fff;color:#111;font-size:10.5pt;line-height:1.5}
+  .topbar,#toc,#lb,.mx-tools,.menu-btn{display:none!important}
+  .layout{display:block;max-width:none}
+  .wrap{max-width:none;padding:0}
+  /* Trailing margin on a chapter's last block can spill past the page box and force an
+     extra blank sheet before the next chapter's forced break. Collapse it. */
+  .chapter{page-break-before:always;border:none;padding:0}
+  .chapter:first-of-type{page-break-before:avoid}
+  .chapter > .wrap > *:last-child{margin-bottom:0}
+  .chapter hr:last-of-type{display:none}
+  h1,h2,h3{page-break-after:avoid;color:#000}
+  h2{border-top:1px solid #ccc}
+  figure,table,.ev,.mx-card{page-break-inside:avoid}
+  figure img{max-height:5in;object-fit:contain}
+  .ev-label{color:#000;border:1px solid #666;background:#eee!important}
+  a{color:#111;border:none}
+  a[href^="http"]::after{content:" (" attr(href) ")";font-size:8pt;color:#666;word-break:break-all}
+  .mx-body{display:block!important}
+  .cover{background:none;padding:0 0 24pt}
+  th{color:#000;background:#eee}
+}
+</style>
+</head>
+<body>
+<div class="topbar">
+  <button class="menu-btn" aria-label="Toggle contents">&#9776;</button>
+  <span class="brand">Ladera Historical Environmental Investigation</span>
+  <span class="spacer"></span>
+  <button onclick="window.print()">Print / PDF</button>
+</div>
+
+<div class="layout">
+<nav id="toc" aria-label="Table of contents">
+  <h3>Contents</h3>
+  <ol><li><a href="#author-s-note-why-this-investigation-began"><span class="n">2.</span>Author&#x27;s Note — Why This Investigation Began</a></li><li><a href="#scope-methodology-and-scientific-caution"><span class="n">3.</span>Scope, Methodology, and Scientific Caution</a><ul class="sub"><li><a href="#what-this-investigation-covers">What this investigation covers</a></li><li><a href="#the-four-way-classification">The four-way classification</a></li><li><a href="#the-evidence-standard">The evidence standard</a></li><li><a href="#what-was-actually-done">What was actually done</a></li><li><a href="#scientific-caution-the-limits-that-do-not-move">Scientific caution — the limits that do not move</a></li><li><a href="#privacy-and-ethics">Privacy and ethics</a></li><li><a href="#language-discipline">Language discipline</a></li></ul></li><li><a href="#executive-summary"><span class="n">4.</span>Executive Summary</a><ul class="sub"><li><a href="#what-this-investigation-is">What this investigation is</a></li><li><a href="#what-was-found">What was found</a></li><li><a href="#what-was-not-found">What was not found</a></li><li><a href="#the-most-important-caution">The most important caution</a></li><li><a href="#two-corrections-that-changed-the-argument">Two corrections that changed the argument</a></li><li><a href="#what-should-happen-next">What should happen next</a></li><li><a href="#the-honest-bottom-line">The honest bottom line</a></li></ul></li><li><a href="#what-arsenical-cattle-dipping-was"><span class="n">9.</span>What Arsenical Cattle Dipping Was</a><ul class="sub"><li><a href="#9-1-the-problem-texas-fever">9.1 The problem: Texas fever</a></li><li><a href="#9-2-the-solution-systematic-dipping">9.2 The solution: systematic dipping</a></li><li><a href="#9-3-the-chemistry">9.3 The chemistry</a></li><li><a href="#9-4-vat-design-and-why-design-determines-contamination-footprint">9.4 Vat design, and why design determines contamination footprint</a></li><li><a href="#9-5-why-this-footprint-is-so-easy-to-miss">9.5 Why this footprint is so easy to miss</a></li><li><a href="#9-6-what-this-chapter-does-not-establish">9.6 What this chapter does not establish</a></li></ul></li><li><a href="#historic-maps-aerials-and-land-use-reconstruction"><span class="n">14.</span>Historic Maps, Aerials, and Land-Use Reconstruction</a><ul class="sub"><li><a href="#14-1-the-correction-that-changed-the-argument">14.1 The correction that changed the argument</a></li><li><a href="#14-2-georeferencing-and-how-it-was-verified">14.2 Georeferencing and how it was verified</a></li><li><a href="#14-3-what-the-imagery-shows">14.3 What the imagery shows</a></li><li><a href="#14-4-the-systematic-search">14.4 The systematic search</a></li><li><a href="#14-5-the-one-structure">14.5 The one structure</a></li><li><a href="#14-6-why-a-vat-may-be-unfindable-by-these-methods">14.6 Why a vat may be unfindable by these methods</a></li><li><a href="#14-7-where-the-imagery-avenue-now-stands">14.7 Where the imagery avenue now stands</a></li></ul></li><li><a href="#reservoirs-water-infrastructure-and-ranch-facilities"><span class="n">15.</span>Reservoirs, Water Infrastructure, and Ranch Facilities</a><ul class="sub"><li><a href="#15-1-why-water-is-the-organizing-question">15.1 Why water is the organizing question</a></li><li><a href="#15-2-the-1968-surface-water-layer">15.2 The 1968 surface-water layer</a></li><li><a href="#15-3-testing-the-central-spatial-hypothesis">15.3 Testing the central spatial hypothesis</a></li><li><a href="#15-4-a-measurement-that-looks-compelling-and-must-not-be-used">15.4 A measurement that looks compelling and must not be used</a></li><li><a href="#15-5-water-infrastructure-named-in-the-record">15.5 Water infrastructure named in the record</a></li><li><a href="#15-6-where-this-leaves-the-search">15.6 Where this leaves the search</a></li></ul></li><li><a href="#agricultural-pesticides-and-other-potential-exposure-pathways"><span class="n">20.</span>Agricultural Pesticides and Other Potential Exposure Pathways</a><ul class="sub"><li><a href="#20-1-how-these-are-ranked">20.1 How these are ranked</a></li><li><a href="#20-2-documented-arsenic-in-soil-at-nearby-school-sites">20.2 Documented: arsenic in soil at nearby school sites</a></li><li><a href="#20-3-documented-organochlorine-pesticide-residues">20.3 Documented: organochlorine pesticide residues</a></li><li><a href="#20-4-documented-proximity-to-plugged-oil-and-gas-wells">20.4 Documented: proximity to plugged oil and gas wells</a></li><li><a href="#20-5-documented-practice-undocumented-here-landscape-pesticide-application">20.5 Documented practice, undocumented here: landscape pesticide application</a></li><li><a href="#20-6-plausible-undocumented-imported-fill-and-soil-redistribution">20.6 Plausible, undocumented: imported fill and soil redistribution</a></li><li><a href="#20-7-present-by-default-natural-background-arsenic">20.7 Present by default: natural background arsenic</a></li><li><a href="#20-8-pathways-assessed-and-not-supported">20.8 Pathways assessed and not supported</a></li><li><a href="#20-9-where-the-evidence-actually-points">20.9 Where the evidence actually points</a></li></ul></li><li><a href="#the-arsenical-dipping-hypothesis-evidence-for-evidence-against-and-missing-proof"><span class="n">21.</span>The Arsenical-Dipping Hypothesis: Evidence For, Evidence Against, and Missing Proof</a><ul class="sub"><li><a href="#21-1-the-hypothesis-stated-precisely">21.1 The hypothesis, stated precisely</a></li><li><a href="#21-2-evidence-supporting-the-hypothesis">21.2 Evidence supporting the hypothesis</a></li><li><a href="#21-3-evidence-weakening-the-hypothesis">21.3 Evidence weakening the hypothesis</a></li><li><a href="#21-4-the-one-large-ranch-problem">21.4 The &quot;one large ranch&quot; problem</a></li><li><a href="#21-5-what-would-actually-settle-this">21.5 What would actually settle this</a></li><li><a href="#21-6-current-assessment">21.6 Current assessment</a></li></ul></li><li><a href="#gis-reconstruction"><span class="n">23.</span>GIS Reconstruction</a><ul class="sub"><li><a href="#23-1-what-was-built">23.1 What was built</a></li><li><a href="#23-2-georeferencing-confidence-layer-by-layer">23.2 Georeferencing confidence, layer by layer</a></li><li><a href="#23-3-the-correction-that-reshaped-every-distance">23.3 The correction that reshaped every distance</a></li><li><a href="#23-4-the-terrain-analysis-and-why-its-headline-result-is-unusable">23.4 The terrain analysis, and why its headline result is unusable</a></li><li><a href="#23-5-the-interactive-map">23.5 The interactive map</a></li><li><a href="#23-6-the-gis-package">23.6 The GIS package</a></li></ul></li><li><a href="#recommended-archival-and-environmental-work"><span class="n">30.</span>Recommended Archival and Environmental Work</a><ul class="sub"><li><a href="#30-1-the-decisive-question-and-it-is-cheap">30.1 The decisive question, and it is cheap</a></li><li><a href="#30-2-rancho-mission-viejo-s-own-records">30.2 Rancho Mission Viejo&#x27;s own records</a></li><li><a href="#30-3-general-land-office-survey-field-notes">30.3 General Land Office survey field notes</a></li><li><a href="#30-4-regional-archival-collections">30.4 Regional archival collections</a></li><li><a href="#30-5-oral-history-and-why-it-is-time-limited">30.5 Oral history — and why it is time-limited</a></li><li><a href="#30-6-environmental-review-documents">30.6 Environmental review documents</a></li><li><a href="#30-7-physical-investigation-if-the-archival-work-supports-it">30.7 Physical investigation, if the archival work supports it</a></li><li><a href="#30-8-the-pathway-that-deserves-more-attention-than-it-has-received">30.8 The pathway that deserves more attention than it has received</a></li><li><a href="#30-9-what-this-project-will-not-do">30.9 What this project will not do</a></li></ul></li><li><a href="#limitations"><span class="n">31.</span>Limitations</a><ul class="sub"><li><a href="#31-1-structural-limitations-these-do-not-improve-with-more-work">31.1 Structural limitations — these do not improve with more work</a></li><li><a href="#31-2-evidentiary-limitations">31.2 Evidentiary limitations</a></li><li><a href="#31-3-data-quality-limitations">31.3 Data quality limitations</a></li><li><a href="#31-4-methodological-failures-recorded">31.4 Methodological failures recorded</a></li><li><a href="#31-5-limitations-of-the-author-and-method">31.5 Limitations of the author and method</a></li><li><a href="#31-6-what-would-change-the-conclusions">31.6 What would change the conclusions</a></li><li><a href="#31-7-the-honest-summary">31.7 The honest summary</a></li></ul></li><li><a href="#evidence-matrix">Evidence Matrix</a></li></ol>
+</nav>
+
+<main>
+<header class="cover">
+  <div class="inner">
+    <p class="eyebrow">Independent Public-Records Investigation &middot; Version 1.0</p>
+    <h1>The Ground Beneath Ladera Ranch</h1>
+    <p class="deck">A historical land-use and environmental records investigation of Rancho
+    Mission Viejo and the community built on it &mdash; what the public record shows, what it
+    does not, and what remains genuinely unknown.</p>
+    <div class="meta">
+      <span>Orange County, California</span>
+      <span>Land-use record: 1769&ndash;2026</span>
+      <span>Photographic record: 1929&ndash;2022</span>
+      <span>14 catalogued claims</span>
+      <span>11 established &middot; 1 open</span>
+    </div>
+    <div class="disclaimer">
+      <p><strong>This publication does not establish that any pesticide, property,
+      organization, employer, school, water provider, government agency, or other party caused
+      any illness.</strong> It is an independent research and data-organization project. It does
+      not provide medical advice. Publicly reported health events may not have been
+      independently medically verified. Geographic and temporal overlap does not establish
+      exposure or causation.</p>
+      <p style="margin-bottom:0">Formal conclusions would require authorized epidemiological
+      analysis, verified medical information, exposure assessment, toxicological review, and
+      independent scientific evaluation &mdash; none of which this project performs. It contains
+      no patient information, no residential addresses, and no case locations.</p>
+    </div>
+  </div>
+</header>
+
+
+<section class="chapter" id="author-s-note-why-this-investigation-began">
+  <div class="wrap">
+    <div class="chapter-num">Chapter 2</div>
+    <h1>Author&#x27;s Note — Why This Investigation Began</h1>
+    <p>I started looking into the history of this land after learning about the reported pediatric
+Ewing sarcoma cases in Ladera Ranch.</p>
+<p>I am not a scientist. I am not a historian, an epidemiologist, or a regulator. I am a father
+and a problem solver, and I live here. What I had was a question that would not go away, and
+access to modern AI tools capable of organizing public records, historical maps, aerial
+photographs, government reports, and archival material at a scale I could not have managed
+alone.</p>
+<p>I want to be precise about what this project is, because the subject invites people to hear
+something other than what is being said.</p>
+<p><strong>This investigation was not built to prove a theory.</strong> It was built to ask a narrower and
+more answerable question: <em>has every reasonable historical question about this land already
+been considered?</em> When a community is developed on former ranch land, someone is supposed to
+look backward — to review the aerial photography, reconstruct what the land was used for, and
+identify whether any past activity left something behind. That review happened here. This
+project asks how far back it looked, what it found, and whether anything falls outside the
+window it examined.</p>
+<p>That is a question about the completeness of a historical record. It is not a claim that
+anyone was harmed by anything found in it.</p>
+<p><strong>I want to be equally clear about what this project cannot do.</strong> Nothing in these pages
+establishes that any pesticide, property, company, agency, school, water provider, or
+individual caused any illness. Geographic and temporal overlap is not exposure. Exposure is
+not dose. Dose is not causation. Establishing any of those links requires authorized
+epidemiological analysis, verified medical information, exposure assessment, and independent
+scientific review — none of which this project performs, and none of which it should be read
+as substituting for.</p>
+<p>There is a particular temptation in work like this, and I have tried hard to resist it. When
+you are looking for something, you find patterns. The discipline this project imposes on
+itself is that <strong>every claim carries its own counter-evidence</strong>, given the same visual and
+editorial weight as the claim itself. Where the evidence is thin, the report says so. Where a
+promising line of inquiry collapsed, the report records the collapse rather than quietly
+dropping it. Several of the most useful results here are negative ones.</p>
+<p>Two examples, both of which cut against the working hypothesis:</p>
+<p>The investigation initially concluded that the earliest available aerial photography of this
+land was from 1948 — three decades after the cattle-dipping era — and that a dipping vat was
+therefore undetectable in principle. That was wrong. Orange County publishes aerial
+photography going back to <strong>1929</strong>, and the 1937–38 frames resolve at about 1.15 feet per
+pixel. At that resolution, a corral complex would be unmistakable. The imagery was searched
+systematically. <strong>Nothing was found.</strong> The conclusion did not change, but its meaning did:
+it now rests on adequate imagery rather than on the excuse that the imagery was inadequate.</p>
+<p>The second example is more personal. I noticed, looking at property listings, that the homes
+here seemed to sit exactly where the old ranch water sources had been — and water is where
+cattle gather, and where cattle gather is where they were worked. It felt like a real
+pattern. It was tested directly against every water body the 1968 USGS survey mapped, and
+against 10,618 building footprints. The measured result: <strong>homes are no more likely to sit on
+the old water than on any other ground here.</strong> The pattern I thought I saw was development
+covering nearly everything, which is a different thing entirely.</p>
+<p>I have left both of those in, in full, because a report that only contains what survived
+scrutiny is not an honest report.</p>
+<p>What follows is a record of what the public evidence shows, what it does not show, and what
+remains genuinely unknown. The unknown category is larger than I would like. I would rather
+publish an honest map of my own ignorance than a confident story that later falls apart.</p>
+<p>If any part of this is wrong, I want to know, and I will correct it in the open. Corrections
+issued so far are listed in the version history at the end, including the two above.</p>
+<hr />
+<p><em>This publication contains no patient information, no residential addresses, no case
+locations, and no identifying details of any child or family. That is a deliberate and
+permanent constraint of the project, not a limitation of the available data.</em></p>
+  </div>
+</section>
+<section class="chapter" id="scope-methodology-and-scientific-caution">
+  <div class="wrap">
+    <div class="chapter-num">Chapter 3</div>
+    <h1>Scope, Methodology, and Scientific Caution</h1>
+    <h2 id="what-this-investigation-covers">What this investigation covers</h2>
+<p><strong>Geographically</strong>, three nested zones:</p>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>Zone</th>
+<th>Definition</th>
+<th>Purpose</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>A — Core</strong></td>
+<td>Present-day Ladera Ranch: all villages, HOAs, parks, schools, trails, common areas, slopes, drainage corridors, and commercial centers</td>
+<td>Primary study area</td>
+</tr>
+<tr>
+<td><strong>B — Exposure ring</strong></td>
+<td>Approximately five miles surrounding: Las Flores, Rancho Mission Viejo, Mission Viejo, Coto de Caza, Rancho Santa Margarita, San Juan Capistrano, Laguna Niguel, adjacent unincorporated Orange County</td>
+<td>Sources that need not be underfoot to matter</td>
+</tr>
+<tr>
+<td><strong>C — Comparison</strong></td>
+<td>Talega, Aliso Viejo, Foothill Ranch and similar master-planned communities</td>
+<td>Matched on <strong>objective criteria only</strong> — development age, demographics, landscaping intensity, climate, housing stock — and <strong>never on cancer counts</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p>That last constraint matters more than it may appear. Selecting comparison communities by
+disease rate would manufacture the contrast the investigation is supposed to test. The
+comparison set was fixed on development characteristics before any health data were consulted.</p>
+<p><strong>Temporally</strong>, the primary window is January 2005 to present, extended to January 2000 where
+records allow. Land-use history reaches as far back as reliable public records permit — in
+practice to the Spanish land grant period, with photographic evidence beginning in 1929.</p>
+<p>Every dataset records its source publication date, observation period, retrieval date,
+temporal precision, known update schedule, and whether the record is current, historical,
+inferred, or archived.</p>
+<h2 id="the-four-way-classification">The four-way classification</h2>
+<p>Every substantive statement in this publication carries one of four labels. They are not
+decorative. They encode how much weight a statement can bear.</p>
+<p><strong>ESTABLISHED FACT</strong> — Documented in a primary or official source, verified against that
+source, and reproducible by a reader who follows the citation. Example: the 1968 USGS field
+survey mapped 41 surface-water bodies within the study footprint. Anyone can pull that sheet
+and count them.</p>
+<p><strong>HISTORICAL CONTEXT</strong> — Accurate general background that situates the investigation but is
+not itself a finding about this specific land. Example: how arsenical cattle dipping worked
+as a practice. True, well-documented, and <em>not</em> evidence that it happened here.</p>
+<p><strong>INVESTIGATIVE LEAD</strong> — A specific, testable proposition supported by partial evidence,
+carrying a defined next step. A lead is a question with a method attached. It is not a
+finding, and it is never presented as one.</p>
+<p><strong>OPEN QUESTION</strong> — Identified as material, and genuinely unresolved. These are stated
+plainly rather than smoothed over, because the shape of what is unknown is itself a result.</p>
+<h2 id="the-evidence-standard">The evidence standard</h2>
+<p>Every major claim carries a claim ID, a classification, a confidence level, supporting
+sources, and <strong>limiting or contradictory evidence</strong>. The counter-evidence field is mandatory.
+Where a claim has no meaningful counter-evidence, that is stated explicitly rather than left
+blank — an empty field is ambiguous between "none exists" and "none was sought."</p>
+<p>Sources are graded on a fixed hierarchy:</p>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>Grade</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>A1</strong></td>
+<td>Official machine-readable government dataset; peer-reviewed primary research; official registry publication; official agency report</td>
+</tr>
+<tr>
+<td><strong>A2</strong></td>
+<td>Official government webpage; regulatory filing; official meeting document; official GIS service</td>
+</tr>
+<tr>
+<td><strong>B1</strong></td>
+<td>University or research-institution report; systematic review; nonprofit technical report with transparent methodology</td>
+</tr>
+<tr>
+<td><strong>B2</strong></td>
+<td>Reputable news outlet quoting <strong>named</strong> sources or documents; public statements from identifiable stakeholders</td>
+</tr>
+<tr>
+<td><strong>C</strong></td>
+<td>Advocacy materials; law-firm summaries; community petitions; social media; unverified case counts; anonymous claims</td>
+</tr>
+<tr>
+<td><strong>D</strong></td>
+<td>Speculation; unsourced reposts; unsupported online claims</td>
+</tr>
+</tbody>
+</table></div>
+<p>A record carries exactly one grade, and <strong>a lower grade is never silently promoted</strong>. A claim
+that appears in a newspaper (B2) does not become A1 because it is later repeated by someone
+official; it becomes A1 only when the underlying official record is located and read.</p>
+<h2 id="what-was-actually-done">What was actually done</h2>
+<p>The methodology is deliberately mundane, because mundane methods are checkable.</p>
+<p><strong>Imagery.</strong> Historical aerial photography and topographic sheets were retrieved from Orange
+County's public GIS services and the USGS, georeferenced to a single common extent
+(−117.680 to −117.616 longitude, 33.520 to 33.575 latitude), and examined systematically —
+Zone A was divided into a grid and each tile inspected at full resolution, rather than scanned
+by eye for anything that jumped out. Georeferencing was verified by confirming that modern
+landmarks land where they belong.</p>
+<p><strong>Feature extraction.</strong> Where a feature needed to be extracted from a historical map, the
+method was chosen to maximize source quality rather than convenience. Surface water was taken
+from the 1968 USGS sheet by isolating the printed cyan hydrography ink — meaning every
+resulting feature was drawn by a surveyor who visited the ground. An earlier attempt to detect
+water directly from the aerial photography by brightness and texture was <strong>abandoned</strong> after
+review showed it was detecting hillslope shadow. Both the failure and the reasoning are
+recorded in the dead-end log.</p>
+<p><strong>Statistics.</strong> Where a spatial claim is tested, it is tested against an explicit null model,
+with the null reported alongside the result so a reader can judge the comparison rather than
+accept a ratio on trust. Where the choice of null materially changes the answer, both are
+reported and the fairer one is identified and justified.</p>
+<h2 id="scientific-caution-the-limits-that-do-not-move">Scientific caution — the limits that do not move</h2>
+<p>Several limits apply throughout and are not overcome by any amount of additional archival work.</p>
+<p><strong>Spatial coincidence is not exposure.</strong> That a historical activity occurred where houses now
+stand establishes proximity in space and nothing else. It does not establish that any material
+was present, that it persisted, that anyone contacted it, or in what quantity.</p>
+<p><strong>Absence of evidence is not evidence of absence — and the reverse is also true.</strong> No dipping
+vat has been found in the imagery. That is meaningful, because the imagery is now good enough
+that a vat complex should have been visible. It is <em>not</em> proof that none existed, because a
+facility demolished and backfilled before 1929 would leave no surface trace. Both halves of
+that sentence are load-bearing.</p>
+<p><strong>Ecological inference has hard limits.</strong> Nothing here is an individual-level analysis.
+Community-scale patterns cannot be transferred to individuals, and this publication does not
+attempt it.</p>
+<p><strong>The health question is out of scope by design.</strong> This is a land-use and records
+investigation. Whether the reported cases represent a statistical excess, and if so why, is a
+question for authorized epidemiological analysis with access to verified medical information —
+which this project does not have and does not seek.</p>
+<p><strong>Modern terrain cannot describe historical terrain here.</strong> Ladera Ranch was mass-graded. Any
+measurement taken from the modern land surface inside the built area describes engineered
+pads, not original landform. This specifically invalidates one otherwise-attractive analysis,
+which is documented in the GIS chapter rather than quietly omitted.</p>
+<h2 id="privacy-and-ethics">Privacy and ethics</h2>
+<p>Fixed constraints, applied throughout, without exception:</p>
+<ul>
+<li>No identification or inference of individual children.</li>
+<li>No exact residential addresses or residential coordinates, ever.</li>
+<li>No inference of the schools, parks, or routines of specific children from any source.</li>
+<li>No scraping of private profiles; no deanonymization.</li>
+<li>No medical speculation about named individuals.</li>
+<li>Health data stored and presented at <strong>aggregate level only</strong>.</li>
+<li>No fabricated data, no silently filled missing values, no invented records.</li>
+</ul>
+<p>Where a dataset would permit finer resolution than these rules allow, the rules win.</p>
+<h2 id="language-discipline">Language discipline</h2>
+<p>The publication distinguishes throughout between: verified fact, credible report, official
+statement, scientific finding, public allegation, unverified case report, model-based
+estimate, inference, hypothesis, and missing evidence. Phrases such as "this proves,"
+"they covered it up," or "the cancer was caused by" do not appear, because the evidence does
+not support them.</p>
+<p>Where the public record appears not to contain something, the wording is careful and
+deliberate: <em>"the searchable materials examined in this investigation do not appear to
+identify…"</em> rather than <em>"they never studied…"</em>. The distinction is not hedging. A document
+that exists but is not online, or that exists in a file cabinet in Santa Ana, is invisible to
+this investigation and must not be declared nonexistent by it.</p>
+  </div>
+</section>
+<section class="chapter" id="executive-summary">
+  <div class="wrap">
+    <div class="chapter-num">Chapter 4</div>
+    <h1>Executive Summary</h1>
+    <h2 id="what-this-investigation-is">What this investigation is</h2>
+<p>An independent reconstruction of the land-use history of Rancho Mission Viejo and the community
+of Ladera Ranch built on it, undertaken to answer one question: <strong>has every reasonable
+historical question about this land already been considered?</strong></p>
+<p>It was prompted by reported pediatric Ewing sarcoma cases in the community. It is <strong>not</strong> an
+attempt to explain them, and nothing in it establishes that any party or substance caused any
+illness. It is a records investigation, and its subject is the completeness of a historical
+record — not the health of any individual.</p>
+<h2 id="what-was-found">What was found</h2>
+<p><strong>The land was open cattle rangeland until development.</strong> Confirmed across six aerial
+photographs spanning 1929 to 1947, four USGS topographic editions, and the land-grant labelling
+on the sheets themselves. No structures are resolvable inside the community footprint in any
+pre-1950 frame except a single building on Trabuco Creek.</p>
+<p><strong>Aerial photography of this land exists back to 1929 — eighteen years earlier than this
+project previously believed.</strong> Orange County publishes it through a public service that had
+been missed for a mechanical reason: an unconventional URL path. The 1937–38 frames resolve at
+<strong>1.15 feet per pixel</strong>.</p>
+<p><strong>No cattle dipping vat or corral complex was found.</strong> Zone A was divided into a grid and
+searched systematically, tile by tile, at full resolution — twenty-four tiles across two
+epochs. At 1.15 ft/px a corral complex would be unmistakable. Nothing was found.</p>
+<figure id="fig-01">
+  <img src="assets/images/fig-01.jpg" alt="The footprint across four epochs, with the 1968 water layer overprinted" loading="lazy"
+       width="1800"
+       height="1641">
+  <figcaption>
+    <span class="cap-t">FIG-01 · The footprint across four epochs, with the 1968 water layer overprinted</span>
+    <span class="cap-m"><strong>Interpretation boundary:</strong> Panels share one extent and georeferencing. Cyan circles mark water bodies as drawn by the 1968 USGS survey; they are centroids, not digitised outlines. The cyan box is an approximate screening boundary, not a legal boundary.</span>
+    <span class="cap-m">Date 1929-2022 · This investigation · Derived figure. Underlying imagery credited in the caption; derived layout CC BY 4.0.
+      · Original 2330x2124 at <code>research/historical_imagery/11_timeseries_1929-2022_with_water.jpg</code></span>
+  </figcaption>
+</figure>
+<p><strong>The 1968 USGS field survey mapped 41 surface-water bodies in the study footprint</strong>, sixteen
+inside the community. These were extracted from the printed hydrography ink, meaning every one
+was drawn by a surveyor who visited the ground.</p>
+<p><strong>Every one of those 41 water bodies now has a house within 500 metres.</strong> The median distance
+from a ranch-era water source to the nearest home is <strong>66 metres</strong>.</p>
+<p><strong>But homes were not preferentially built on them.</strong> Tested against 10,618 building footprints
+and a matched null: enrichment <strong>0.97×, p = 0.51</strong>. The old water sites are no more built over
+than any other ground. Both results are true because development covered nearly everything, so
+proximity to housing stopped carrying information.</p>
+<h2 id="what-was-not-found">What was not found</h2>
+<p><strong>No evidence that arsenical cattle dipping occurred on this land.</strong> No vat, no corral, no map
+label, no photograph, no purchase record, no employee account, and no soil measurement places it
+here.</p>
+<p>More fundamentally: <strong>it is not yet established that California's tick eradication programme
+applied to Orange County at all.</strong> That is the first link in the hypothesis chain and it remains
+unverified against primary sources. A negative answer would close the question entirely.</p>
+<p><strong>No soil sampling for arsenic appears to have been conducted across the residential footprint.</strong>
+Nearby <em>school</em> sites were assessed — California's Education Code requires it before a district
+acquires land — and arsenic was found at several. Residential subdivisions carry no equivalent
+statutory duty. This asymmetry is a matter of law, not of anyone's conduct.</p>
+<h2 id="the-most-important-caution">The most important caution</h2>
+<p>The hypothesis that prompted this investigation is currently the <strong>least</strong> well-documented of
+the pathways examined.</p>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>Pathway</th>
+<th>Documentation</th>
+<th>Published link to Ewing sarcoma</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Arsenic at nearby school sites</td>
+<td>Strong</td>
+<td>None</td>
+</tr>
+<tr>
+<td>Organochlorines at school sites</td>
+<td>Strong</td>
+<td>None</td>
+</tr>
+<tr>
+<td>Plugged oil/gas well proximity</td>
+<td>Strong</td>
+<td><strong>Suggestive, non-significant</strong></td>
+</tr>
+<tr>
+<td>Landscape pesticides</td>
+<td>Unmeasurable from state data</td>
+<td>None</td>
+</tr>
+<tr>
+<td><strong>Arsenical cattle dipping</strong></td>
+<td><strong>None located</strong></td>
+<td><strong>None</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p>Two plugged exploratory wells lie within about a mile of the community centroid — one at
+roughly a quarter-mile — and this is the only pathway with any published association with Ewing
+sarcoma specifically. That association is suggestive and statistically non-significant, and its
+discovery came from correcting an error in this project's own geometry rather than from looking
+for it.</p>
+<h2 id="two-corrections-that-changed-the-argument">Two corrections that changed the argument</h2>
+<p>Both are published in full rather than quietly revised.</p>
+<p><strong>The imagery premise was wrong.</strong> This project had argued that a dipping vat was undetectable
+<em>in principle</em> — the earliest imagery was 1948, three decades after dipping ended, at a
+resolution where a vat would be a single pixel. Aerial photography from 1929 exists, at
+resolution where a corral complex is obvious. The conclusion did not change; its basis did. It
+now rests on adequate imagery rather than on an excuse.</p>
+<p><strong>A promising spatial pattern did not survive testing.</strong> The observation that homes appear to
+sit exactly where the ranch water sources were is descriptively accurate and causally
+unsupported. It was tested and it failed. It is retained in full, including the reasoning that
+made it appealing.</p>
+<h2 id="what-should-happen-next">What should happen next</h2>
+<p><strong>Archival, in priority order.</strong> The County Agricultural Commissioner and California State
+Veterinarian tick-eradication files, and USDA Bureau of Animal Industry records — these can
+resolve whether Orange County was ever in the programme, which is cheap and decisive. Then
+Rancho Mission Viejo's own operating records. Then General Land Office survey <strong>field notes</strong>,
+in which surveyors recorded springs, corrals, and improvements that never reached the published
+plat.</p>
+<p><strong>Physical, if archival work supports it.</strong> Ground-penetrating radar at the Trabuco ranch node
+and the mapped water bodies would detect buried concrete directly. Soil sampling should test
+<strong>arsenic and lead together</strong> — the ratio distinguishes an orchard lead-arsenate signature
+(broad, both elevated in proportion) from a dipping-vat signature (tiny, arsenic elevated
+without proportionate lead). Local background must be established first or the results cannot
+be interpreted.</p>
+<p><strong>Regarding the wells.</strong> Well-integrity and plugging records for the two nearest wells, and any
+soil-gas monitoring data, have not been obtained. Given that this pathway carries the only
+published Ewing sarcoma association of any considered here, it arguably warrants more attention
+than the hypothesis that prompted the work.</p>
+<h2 id="the-honest-bottom-line">The honest bottom line</h2>
+<p>The reported pattern warrants investigation. The available evidence does not establish
+causation, and this publication does not attempt to.</p>
+<p>On the specific question that prompted the work: <strong>the arsenical-dipping hypothesis is coherent,
+testable, and currently unsupported by any direct evidence.</strong> It should be neither asserted nor
+abandoned. It should be resolved — and there is a clear, affordable path to resolving it that
+begins in an archive rather than in the ground.</p>
+<p>The single most useful thing this investigation has produced is not a finding. It is a
+<strong>sampling frame</strong>: forty-one specific locations, plus one structure, where the historical
+activity of interest would have concentrated if it occurred at all.</p>
+  </div>
+</section>
+<section class="chapter" id="what-arsenical-cattle-dipping-was">
+  <div class="wrap">
+    <div class="chapter-num">Chapter 9</div>
+    <h1>What Arsenical Cattle Dipping Was</h1>
+    <p>Everything in this chapter is <strong>HISTORICAL CONTEXT</strong>. It describes a practice that is
+well-documented in the agricultural and veterinary literature of the early twentieth century.</p>
+<p>None of it is evidence that the practice occurred on this land. That question is addressed
+separately, and the answer there is that no direct evidence has been located. This chapter
+exists because a reader cannot evaluate the hypothesis without understanding what is being
+hypothesised — and because understanding the practice explains why, if it <em>did</em> occur here,
+the resulting contamination would have a very particular and easily-missed spatial signature.</p>
+<div class="ev k-context"><div class="ev-label">Historical Context</div><div class="ev-body"><p><strong>Scope of this chapter.</strong> The material below describes cattle dipping as a general practice.
+It is not site-specific and must not be read as site-specific. Where a statement about <em>this
+land</em> appears, it is explicitly flagged.</p></div></div>
+
+<hr />
+<h2 id="91-the-problem-texas-fever">9.1 The problem: Texas fever</h2>
+<p>Texas fever — also called cattle fever, splenetic fever, or Southern cattle fever — is a
+disease of cattle caused by a protozoan parasite that destroys red blood cells. It was
+economically devastating to the American cattle industry through the nineteenth century, and
+it had a mystifying epidemiology: apparently healthy Southern cattle, moved north, would leave
+a trail of dead Northern cattle behind them without themselves falling ill.</p>
+<p>The mechanism was established by the U.S. Bureau of Animal Industry in the late 1880s and
+1890s. It was one of the first demonstrations that an arthropod could transmit a disease
+agent, and it preceded the comparable work on mosquitoes and yellow fever. The vector is the
+<strong>cattle fever tick</strong>. Southern cattle raised in tick country were survivors of childhood
+infection and carried the parasite without symptoms; the ticks they carried transmitted it to
+naive Northern animals, which died.</p>
+<p>The practical consequence: the disease could not be eliminated by treating cattle. It had to
+be eliminated by <strong>eliminating the tick</strong>.</p>
+<hr />
+<h2 id="92-the-solution-systematic-dipping">9.2 The solution: systematic dipping</h2>
+<p>Because the tick spends part of its life cycle on the animal and part on the ground, breaking
+the cycle required treating every animal in an infested area, repeatedly, on a schedule tight
+enough that no tick could complete its development between treatments — typically every
+two weeks over an extended season.</p>
+<p>That meant driving entire regional herds through a chemical bath at fixed intervals, for
+years. The scale of the undertaking is difficult to overstate: it was one of the largest
+coordinated animal-health campaigns ever attempted in the United States, run jointly by the
+USDA Bureau of Animal Industry and state authorities, backed by quarantine powers that
+restricted the interstate movement of cattle from areas not yet cleared.</p>
+<p>Quarantine is the key administrative fact, and it has an important implication for this
+investigation: <strong>the programme generated paperwork.</strong> Quarantine lines were published.
+Inspections were recorded. In many states, dipping was legally compulsory and non-compliance
+was an offence. A programme of that character leaves a documentary trail, which is why the
+archival record — rather than the photographic one — is where this question is most likely to
+be resolved.</p>
+<hr />
+<h2 id="93-the-chemistry">9.3 The chemistry</h2>
+<p>The standard dipping solution through the main eradication period was <strong>arsenical</strong> — most
+commonly sodium arsenite, prepared from white arsenic (arsenic trioxide) with sodium carbonate,
+often with pine tar or similar additives.</p>
+<p>Three properties of this chemistry matter for a contamination question:</p>
+<p><strong>Arsenic does not degrade.</strong> This is the single most important fact in the entire
+investigation. Organic pesticides — the organochlorines, the organophosphates — break down over
+time through microbial action, hydrolysis, and photolysis. Their concentrations decline on a
+measurable half-life. <strong>Arsenic is an element.</strong> It can change oxidation state and chemical
+form, it can bind more or less tightly to soil minerals, it can leach or be taken up by plants
+— but the atoms do not disappear. Arsenic deposited in soil in 1912 is, in mass terms, still
+there.</p>
+<p><strong>The solution was acutely toxic.</strong> These were concentrations designed to kill arthropods on
+contact, handled in bulk in open vats. Contemporary USDA materials on vat operation carried
+explicit poison warnings, and accidental livestock and human poisonings from dip solution are
+recorded in the period literature.</p>
+<p><strong>The vats had to be maintained, and eventually emptied.</strong> A vat in service was periodically
+tested, recharged with concentrate to maintain strength, and — because organic matter, mud, and
+hair accumulated — occasionally dumped and refilled. Where the dumped contents went was a local
+operational decision, not a regulated one.</p>
+<div class="ev k-context"><div class="ev-label">Historical Context</div><div class="ev-body"><p><strong>Chemistry claims in this section are general and well-established, but the specific
+formulations, concentrations, and USDA guidance documents relevant to California are under
+active primary-source verification in this investigation.</strong> Where exact figures appear in later
+versions of this publication, they will carry direct citations to the USDA or state documents
+in which they appear. They are deliberately omitted here rather than approximated.</p></div></div>
+
+<hr />
+<h2 id="94-vat-design-and-why-design-determines-contamination-footprint">9.4 Vat design, and why design determines contamination footprint</h2>
+<p>Several vat types were used. The distinctions matter because they determine how much solution
+was involved and where it ended up.</p>
+<p><strong>Swim vats</strong> were the standard for large operations: a long, narrow, deep concrete trench —
+deep enough that cattle had to swim — with a steep entrance ramp, a graded exit ramp, and
+holding pens at each end. Cattle entered at one end, swam through, and climbed out.</p>
+<p><strong>Cage vats</strong> and <strong>wade vats</strong> were variants for smaller operations or for animals unsuited to
+swimming, using a cage lowered into solution or a shallower trough.</p>
+<p>The essential feature of the swim vat design, for contamination purposes, is the <strong>drip pen</strong>.
+Animals leaving the vat were held on a sloped concrete apron so the solution running off them
+would drain back into the vat rather than being lost. Recovery was never complete. Solution
+splashed over the sides during the swim, was carried off on hides and hooves, and was tracked
+into the surrounding ground by hundreds of animals moving through a confined space.</p>
+<p>The result is a <strong>concentrated, highly localised</strong> contamination signature:</p>
+<ul>
+<li>The vat structure itself, and the soil immediately beneath and around it</li>
+<li>The drip pen and its drainage</li>
+<li>The approach and exit lanes, where solution was tracked</li>
+<li>Wherever the vat was periodically dumped</li>
+<li>The holding pens, to a lesser degree</li>
+</ul>
+<p>This is a footprint measured in <strong>tens of metres</strong>, not hectares.</p>
+<hr />
+<h2 id="95-why-this-footprint-is-so-easy-to-miss">9.5 Why this footprint is so easy to miss</h2>
+<p>This is the central methodological point of the chapter, and it is why the question is
+difficult rather than merely unanswered.</p>
+<p><strong>Broad-area agricultural sampling will not find a dip vat.</strong> Standard practice for
+investigating former agricultural land is to sample on a grid sized to the field — because the
+contamination pattern being sought is a <em>field-scale</em> one. Orchard lead arsenate and row-crop
+organochlorines were applied across whole fields, so a grid at field scale samples the thing
+being looked for.</p>
+<p>A dipping vat is the opposite spatial problem. It is a point source perhaps twenty metres
+across on a property of thousands of acres. A sampling grid designed to characterise
+field-scale application can pass directly over it and register nothing. The two investigations
+look similar on paper — "we sampled for arsenic on former agricultural land" — and are not the
+same investigation at all.</p>
+<p>This creates a specific and testable audit question, which is pursued in the environmental
+review chapter: <strong>not whether soil was sampled, but whether sampling was ever targeted at
+locations where a point-source facility would have stood.</strong></p>
+<p>Three further factors compound the difficulty:</p>
+<p><strong>The structures were removed.</strong> At the end of the programme, vats were commonly broken up and
+buried in place, or backfilled. What remains is a subsurface anomaly and contaminated soil — not
+a visible structure. This is precisely why the aerial-photography search, however good the
+imagery, has limited power against a facility decommissioned before the first photograph.</p>
+<p><strong>They were rarely mapped.</strong> USGS topographic symbology had no dip-vat symbol. A vat would at
+best appear as a generic structure dot, and usually not at all.</p>
+<p><strong>Institutional memory is gone.</strong> The people who could point to the location have died. This is
+the practical significance of the oral-history line of inquiry, and the reason it is time-limited
+in a way archival research is not.</p>
+<hr />
+<h2 id="96-what-this-chapter-does-not-establish">9.6 What this chapter does not establish</h2>
+<p>To restate the boundary explicitly, because this is the chapter most likely to be quoted out of
+context:</p>
+<div class="ev k-open"><div class="ev-label">Open Question</div><div class="ev-body"><p><strong>No direct evidence has yet been located establishing that an arsenical dipping vat operated
+on Rancho Mission Viejo or within present-day Ladera Ranch.</strong></p>
+<p>Everything above describes a documented historical practice. Whether it happened <em>here</em> is
+unresolved. Specifically unresolved:</p>
+<ul>
+<li>Whether California's tick-eradication programme extended to Orange County at all, or whether
+  the county was outside the quarantine area — under active primary-source verification</li>
+<li>Whether this ranch operated its own vat, used a shared or public facility, or was never
+  subject to the requirement</li>
+<li>If a vat existed, where it stood</li>
+<li>Whether any residue persists</li>
+</ul>
+<p>The aerial-photography search found no vat and no corral complex on imagery good enough to show
+one. That is weak evidence against a <em>surviving surface facility</em> and no evidence at all about a
+<em>demolished or buried</em> one.</p></div></div>
+
+<p>The most consequential open item is the first. If Orange County was never within the tick
+quarantine area, the entire hypothesis collapses — and that is a question the documentary record
+should be able to answer definitively in one direction or the other. It is being pursued as the
+highest-priority item in this investigation.</p>
+  </div>
+</section>
+<section class="chapter" id="historic-maps-aerials-and-land-use-reconstruction">
+  <div class="wrap">
+    <div class="chapter-num">Chapter 14</div>
+    <h1>Historic Maps, Aerials, and Land-Use Reconstruction</h1>
+    <p>This chapter reconstructs what physically stood on this land before it was developed, using
+the photographic and cartographic record. It is the evidentiary heart of the investigation,
+because it is the only category of evidence that shows the ground directly rather than
+describing it secondhand.</p>
+<p>It also contains the investigation's most significant self-correction.</p>
+<hr />
+<h2 id="141-the-correction-that-changed-the-argument">14.1 The correction that changed the argument</h2>
+<div class="ev k-correction"><div class="ev-label">Correction Issued</div><div class="ev-body"><p><strong>Correction C-003 — "The earliest available imagery is 1948" was wrong.</strong></p></div></div>
+
+<p>An earlier phase of this work concluded that the oldest imagery covering this land was the
+1948 USGS topographic sheet. A substantial argument was built on that premise: California's
+compulsory cattle-dipping era ran roughly 1907–1917, the earliest imagery post-dated it by
+<strong>31 years</strong>, the sheets scanned at roughly two metres per pixel, and a dipping vat is about
+two metres wide. A vat was therefore <em>one pixel</em> — below the detection limit. The conclusion
+followed comfortably: no vat could be found, and none could have been.</p>
+<p>That reasoning was convenient, and it was wrong.</p>
+<p>Orange County operates a public ArcGIS image service holding scanned aerial photography back
+to <strong>1929</strong>. The service had been missed for a mechanical reason: it is published at
+<code>https://ocgis.com/arcpub/rest/services/</code>, not the conventional <code>/arcgis/</code> path, which returns
+404 with no redirect and no hint. A single path segment had concealed eighteen years of
+photographic record.</p>
+<p><strong>Thirty-six frames</strong> intersect the study footprint, spanning 1929 to 1997. Six pre-date 1950.</p>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>Frame</th>
+<th>Date</th>
+<th>Series</th>
+<th>Native resolution</th>
+<th>Coverage</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>OID 346</td>
+<td><strong>1929</strong></td>
+<td>South County Watersheds</td>
+<td>2.6 ft/px</td>
+<td>Full footprint</td>
+</tr>
+<tr>
+<td>OID 351</td>
+<td>1931</td>
+<td>Irvine Ranch</td>
+<td>2.5 ft/px</td>
+<td>Partial</td>
+</tr>
+<tr>
+<td>OID 310</td>
+<td><strong>1937–38</strong></td>
+<td>Orange County 600-scale</td>
+<td><strong>1.15 ft/px</strong></td>
+<td>Full footprint</td>
+</tr>
+<tr>
+<td>OID 340</td>
+<td>1938</td>
+<td>Orange County</td>
+<td>3.2 ft/px</td>
+<td>Full footprint</td>
+</tr>
+<tr>
+<td>OID 286</td>
+<td>1946</td>
+<td>San Juan Capistrano 600-scale</td>
+<td>2.2 ft/px</td>
+<td>Small inset</td>
+</tr>
+<tr>
+<td>OID 293</td>
+<td>1946–47</td>
+<td>Orange County 1200-scale</td>
+<td>4.3 ft/px</td>
+<td>Partial (NW gap)</td>
+</tr>
+</tbody>
+</table></div>
+<p>Two things changed at once.</p>
+<figure id="fig-02">
+  <img src="assets/images/fig-02.jpg" alt="1929 aerial photograph, South County Watersheds frame" loading="lazy"
+       width="1800"
+       height="1560">
+  <figcaption>
+    <span class="cap-t">FIG-02 · 1929 aerial photograph, South County Watersheds frame</span>
+    <span class="cap-m"><strong>Interpretation boundary:</strong> Twelve years after compulsory cattle dipping ended. Open rangeland; no structures resolvable inside Zone A. The dark wedge at upper left is outside the frame&#x27;s coverage, not terrain.</span>
+    <span class="cap-m">Date 1929 · OC Survey Geospatial Services, County of Orange · Public record, County of Orange. Retrieved from the county&#x27;s public ArcGIS image service.
+      · Original 6000x5200 at <code>research/historical_imagery/oc_aerials/ann_1929.jpg</code></span>
+  </figcaption>
+</figure>
+<p><strong>The gap narrowed from 31 years to 12.</strong> The 1929 frame is twelve years after the compulsory
+dipping period ended — within the plausible survival window of an abandoned but not yet
+demolished facility.</p>
+<p><strong>The resolution objection disappeared entirely.</strong> At 1.15 feet per pixel, a two-metre vat is
+roughly six pixels across, and a corral complex — the pens, chutes, and holding yards that
+necessarily accompany a vat — would span hundreds of pixels. It would be unmistakable.</p>
+<div class="ev k-fact"><div class="ev-label">Established Fact</div><div class="ev-body"><p><strong>EM-004 · ESTABLISHED FACT · Confidence: High</strong>
+Orange County publishes scanned aerial photography of the study area back to 1929.
+<em>Supporting:</em> Raster catalog query returned 36 frames intersecting the footprint spanning
+1929–1997; frames retrieved and georeferencing independently verified.
+<em>Counter-evidence:</em> None.
+<em>Citation:</em> OC Survey, Historic_Imagery_v2 ImageServer [S-IMG-01].</p></div></div>
+
+<p>The finding this replaced was not merely incomplete — it was an argument that excused the
+absence of evidence. The corrected position is stronger <em>and</em> less comfortable: the imagery is
+now good enough that a surviving surface facility should have been visible, the search was
+conducted, and nothing was found.</p>
+<hr />
+<h2 id="142-georeferencing-and-how-it-was-verified">14.2 Georeferencing and how it was verified</h2>
+<p>Every frame in this investigation is rendered to a single common extent — longitude −117.680
+to −117.616, latitude 33.520 to 33.575 — so that any two epochs can be compared pixel for
+pixel without further transformation.</p>
+<p><strong>Aerials.</strong> Rectification is the county's own. Each frame was exported by locked raster ID
+over the identical bounding box, and the service echoes the extent it actually rendered. It
+matched the request to within <strong>±25 metres</strong>, a residual attributable to aspect-ratio snapping.</p>
+<p>That is a claim about the service, not about reality, so it was checked independently: the
+modern 2022 export from the same service was rendered to the identical extent, and the Zone A
+boundary lands squarely on the real Ladera Ranch subdivisions, with Interstate 5 and Mission
+Viejo falling where they belong. If the historical frames were misregistered, the modern frame
+rendered through the same pipeline would be misregistered too. It is not.</p>
+<p><strong>Topographic sheets.</strong> A pixel-to-coordinate transform was built with <code>pyproj</code> from the
+<code>ModelPixelScale</code>, <code>ModelTiepoint</code>, and GeoKey directory tags (NAD27 polyconic, central
+meridian −117.688°), then <strong>validated against the quad neatline</strong> — the computed image corners
+reproduce the known 7.5-minute graticule to within a pixel. As an independent check, the 1968
+sheet's printed 32′30″ latitude tick falls within about 1% of its computed position.</p>
+<div class="ev k-limit"><div class="ev-label">Limitation</div><div class="ev-body"><p><strong>Georeferencing confidence: High for relative comparison, moderate for absolute position.</strong>
+Features can be compared between epochs with confidence. Absolute coordinates carry roughly
+±25 m of uncertainty from the export pipeline, plus whatever error exists in the county's
+original rectification, which is not published. Coordinates reported in this chapter should be
+treated as accurate to about a building's width, not to a metre.</p></div></div>
+
+<hr />
+<h2 id="143-what-the-imagery-shows">14.3 What the imagery shows</h2>
+<h3 id="1929-open-rangeland">1929 — open rangeland</h3>
+<p>Grazed hills. The riparian corridor picked out by clustered trees. Unimproved dirt roads
+tracing the contours. Cultivated fields on the valley floor to the south-west, toward San Juan
+Capistrano. A black wedge in one corner marks the edge of the frame's coverage.</p>
+<p>No structures are resolvable inside Zone A.</p>
+<h3 id="193738-the-sharpest-frame-in-the-set">1937–38 — the sharpest frame in the set</h3>
+<p>At 1.15 feet per pixel this is a genuinely high-resolution photograph. Individual oaks are
+countable. Fence lines are legible. Wheel ruts in the dirt tracks are visible, and so are the
+braided channels of the creek.</p>
+<p>Dense oak and sycamore woodland fills the corridor along the western side of Zone A. Across
+that corridor, in the county cartographer's own red ink, runs a label: <strong>Trabuco Creek</strong>.</p>
+<div class="ev k-correction"><div class="ev-label">Correction Issued</div><div class="ev-body"><p><strong>Correction C-002 — the creek was misidentified.</strong>
+The corridor containing the 1948 ranch structure had been described throughout earlier project
+documentation as <strong>Cañada Chiquita</strong>. The 1937–38 aerial carries the cartographer's label, and
+it reads Trabuco Creek. Cañada Chiquita lies further east. Coordinates, distances, and the
+structure's characterization are unaffected — only the name of the watercourse was wrong.</p></div></div>
+
+<p>Field boundaries and stock trails are visible across the eastern grasslands. Some frames carry
+pencil annotations from the original survey work — a circled "47", section and range notations
+in the margin — artifacts of the photograph's working life as a county document.</p>
+<p><strong>No corral, pen, chute, or vat complex is resolvable anywhere inside Zone A.</strong></p>
+<figure id="fig-03">
+  <img src="assets/images/fig-03.jpg" alt="1937-38 aerial photograph, 600-scale county series" loading="lazy"
+       width="1800"
+       height="1560">
+  <figcaption>
+    <span class="cap-t">FIG-03 · 1937-38 aerial photograph, 600-scale county series</span>
+    <span class="cap-m"><strong>Interpretation boundary:</strong> The sharpest frame available, at approximately 1.15 ft/px. Individual oaks, fence lines and wheel ruts are legible. No corral, pen or vat complex is resolvable inside Zone A.</span>
+    <span class="cap-m">Date 1937-1938 · OC Survey Geospatial Services, County of Orange · Public record, County of Orange. Retrieved from the county&#x27;s public ArcGIS image service.
+      · Original 6000x5200 at <code>research/historical_imagery/oc_aerials/ann_1937.jpg</code></span>
+  </figcaption>
+</figure>
+<h3 id="194647-unchanged">1946–47 — unchanged</h3>
+<p>Still rangeland. The north-west quarter of the footprint falls outside this frame's coverage,
+and is rendered as neutral grey in the published figures rather than left as the saturated
+yellow the export service returns, which reads as terrain at thumbnail size.</p>
+<h3 id="1968-topographic-sheet-water-infrastructure-appears">1968 topographic sheet — water infrastructure appears</h3>
+<p>The revised sheet maps a chain of impoundments down the Trabuco corridor, a labelled <strong>"Water
+Tank"</strong>, a <strong>"Terminal Reservoir"</strong>, a landing strip, and a gaging station. The land grant is
+labelled across the sheet: <strong>MISSION VIEJO OR LA PAZ</strong>.</p>
+<h3 id="2022-built-out">2022 — built out</h3>
+<p>Ladera Ranch occupies the central and eastern portions of Zone A. The western Trabuco corridor
+survives as preserved open space.</p>
+<figure id="fig-04">
+  <img src="assets/images/fig-04.jpg" alt="The same ground, built out" loading="lazy"
+       width="1800"
+       height="1560">
+  <figcaption>
+    <span class="cap-t">FIG-04 · The same ground, built out</span>
+    <span class="cap-m"><strong>Interpretation boundary:</strong> Rendered to the identical extent as the historical frames. That Zone A lands on the real subdivisions is the independent check on georeferencing of the whole series.</span>
+    <span class="cap-m">Date 2022 · OC Survey Geospatial Services, County of Orange · Public record, County of Orange. Retrieved from the county&#x27;s public ArcGIS image service.
+      · Original 4000x3467 at <code>research/historical_imagery/oc_aerials/ann_2022.jpg</code></span>
+  </figcaption>
+</figure>
+<hr />
+<h2 id="144-the-systematic-search">14.4 The systematic search</h2>
+<p>The imagery was not scanned by eye for anything that stood out. Zone A was divided into a
+<strong>4 × 3 grid</strong> and each of the twelve tiles examined at full resolution, for both the 1929 and
+1937–38 frames — twenty-four tiles in total. Each tile carries its own corner coordinates and
+a 200-metre scale bar, so any reader can return to a specific tile and check the same ground.</p>
+<p>The tiles are published in full in the image archive.</p>
+<figure id="fig-10">
+  <img src="assets/images/fig-10.jpg" alt="One tile from the systematic survey grid" loading="lazy"
+       width="1800"
+       height="1599">
+  <figcaption>
+    <span class="cap-t">FIG-10 · One tile from the systematic survey grid</span>
+    <span class="cap-m"><strong>Interpretation boundary:</strong> Zone A was divided into a 4x3 grid and each tile examined at full resolution for both the 1929 and 1937-38 frames - 24 tiles in total. Each carries its own corner coordinates and a 200 m scale bar so any reader can return to the same ground. Pencil annotations are original survey marks on the county&#x27;s working print.</span>
+    <span class="cap-m">Date 1937-1938 · OC Survey Geospatial Services, County of Orange · Public record, County of Orange. Retrieved from the county&#x27;s public ArcGIS image service.
+      · Original 2038x1810 at <code>research/historical_imagery/oc_aerials/tiles/1937_r1c1.jpg</code></span>
+  </figcaption>
+</figure>
+<p><strong>Result: no corral, pen, chute, or vat complex was found in any tile.</strong></p>
+<div class="ev k-fact"><div class="ev-label">Established Fact</div><div class="ev-body"><p><strong>EM-003 · ESTABLISHED FACT · Confidence: Medium</strong>
+No cattle dip vat or corral complex has been identified anywhere inside the Ladera Ranch
+footprint.
+<em>Supporting:</em> Systematic 24-tile survey at 1.15 ft/px, a resolution at which a corral complex
+would be unmistakable; plus examination of the 1929, 1946–47, 1948, 1968, and 1974 sheets.
+<em>Counter-evidence:</em> Absence of evidence is not evidence of absence. Dipping ran 1907–1917 and
+the earliest imagery is 1929 — a 12-year gap. A vat backfilled at programme end would leave no
+surface trace. USGS cartographic convention had no vat symbol, so a vat would not appear on the
+topographic sheets even if one stood there. Confidence is Medium rather than High for these
+reasons.
+<em>Citation:</em> Systematic tile survey, this investigation [S-IMG-01].</p></div></div>
+
+<h3 id="a-note-on-automated-detection-and-why-it-was-abandoned">A note on automated detection, and why it was abandoned</h3>
+<p>An earlier pass ran a connected-component detector over the 1948 topographic sheet looking for
+building-sized black blobs. It returned 25 candidates inside the footprint. Visual verification
+showed that <strong>24 were artifacts</strong> — letters from the "MISSION VIEJO" map label, red section-line
+dots, and a benchmark "X" mark. Only one survived inspection.</p>
+<p>The 24 rejected candidates are not plotted anywhere in this publication. They are recorded here
+because a detector that is right 4% of the time is a cautionary result worth publishing, and
+because a future contributor should not repeat it.</p>
+<figure id="fig-12">
+  <img src="assets/images/fig-12.jpg" alt="Why automated detection failed" loading="lazy"
+       width="920"
+       height="720">
+  <figcaption>
+    <span class="cap-t">FIG-12 · Why automated detection failed</span>
+    <span class="cap-m"><strong>Interpretation boundary:</strong> An automated detector returned 25 building-like candidates on the 1948 sheet. Visual review showed 24 were artifacts - letters from the MISSION VIEJO map label, red section-line dots, and a benchmark X. None of the rejected candidates is plotted anywhere in this publication.</span>
+    <span class="cap-m">Date 1948 · U.S. Geological Survey · Public domain (U.S. Government work).
+      · Original 920x720 at <code>research/historical_imagery/10_zoom_1948_south_false_positives.jpg</code></span>
+  </figcaption>
+</figure>
+<hr />
+<h2 id="145-the-one-structure">14.5 The one structure</h2>
+<p>A single building appears inside the footprint on the 1948 sheet, at a trail convergence on
+the valley floor near elevation 307, adjacent to the drainage:</p>
+<p><strong>33.55505, −117.65492</strong> — approximately 1.0 mile from the community centroid.</p>
+<figure id="fig-05">
+  <img src="assets/images/fig-05.jpg" alt="The Trabuco Creek ranch node at 100 m scale, 1937-38" loading="lazy"
+       width="1800"
+       height="1499">
+  <figcaption>
+    <span class="cap-t">FIG-05 · The Trabuco Creek ranch node at 100 m scale, 1937-38</span>
+    <span class="cap-m"><strong>Interpretation boundary:</strong> Centred on 33.55505, -117.65492. The red ink label is the county cartographer&#x27;s own and reads Trabuco Creek. A single structure at a trail convergence beside water is consistent with a ranch working area AND equally consistent with a line camp, barn or ranch house. It is NOT identified as a dip site.</span>
+    <span class="cap-m">Date 1937-1938 · OC Survey Geospatial Services, County of Orange · Public record, County of Orange. Retrieved from the county&#x27;s public ArcGIS image service.
+      · Original 2730x2274 at <code>research/historical_imagery/oc_aerials/z1_ranch_1937.jpg</code></span>
+  </figcaption>
+</figure>
+<p>The setting is exactly what a ranch working area looks like: flat ground, water, and several
+unimproved roads meeting. That is where cattle were handled, and therefore where a dipping vat
+would have stood if one existed.</p>
+<div class="ev k-lead"><div class="ev-label">Investigative Lead</div><div class="ev-body"><p><strong>EM-009 · ESTABLISHED FACT (existence) / INVESTIGATIVE LEAD (function) · Confidence: Medium</strong>
+A single structure existed at 33.55505, −117.65492 on Trabuco Creek in the pre-development
+period.
+<em>Supporting:</em> Visible on the 1948 USGS sheet at a trail convergence on the valley floor at
+elevation 307, adjacent to water. Setting consistent with a ranch working area.
+<em>Counter-evidence:</em> <strong>The map does not label it.</strong> A single building is equally consistent with
+a line camp, a barn, or a ranch house. Nothing in the imagery distinguishes these. It is
+recorded as a <em>ranch-activity node</em> and is <strong>not</strong> identified as a dip site.
+<em>Next step:</em> Ground-penetrating radar or EM survey at this location would detect buried
+concrete or disturbed fill directly, and would resolve the question in a way that no amount of
+additional imagery analysis can.</p></div></div>
+
+<p>This is the single most important interpretive boundary in the publication. A structure at a
+plausible location is a lead. It is not a finding, and the distinction is not rhetorical — one
+justifies a soil test, the other would justify conclusions this evidence cannot support.</p>
+<hr />
+<h2 id="146-why-a-vat-may-be-unfindable-by-these-methods">14.6 Why a vat may be unfindable by these methods</h2>
+<p>Three limits, of which only the last two now apply:</p>
+<ol>
+<li>
+<p>~~<strong>Resolution.</strong>~~ <strong>Resolved.</strong> At 1.15 ft/px a vat is roughly six pixels and a corral
+   complex is unmissable. This objection no longer holds.</p>
+</li>
+<li>
+<p><strong>Cartographic convention.</strong> Dipping vats were essentially never mapped. USGS symbology has
+   no vat symbol; a vat would at best fall under a generic structure dot, and usually was not
+   plotted at all. The topographic sheets cannot answer this question regardless of their
+   quality.</p>
+</li>
+<li>
+<p><strong>Timing.</strong> Compulsory dipping ran 1907–1917. The earliest frame is 1929. Twelve years is a
+   substantial improvement on thirty-one, but it does not close the gap. Wooden corrals rot;
+   concrete vats were commonly broken up and buried at the end of the programme. A facility
+   decommissioned in 1917 could easily be invisible by 1929.</p>
+</li>
+</ol>
+<p>The honest summary: <strong>the imagery is now good enough that a surviving surface facility inside
+Zone A would probably have been seen, and none was.</strong> That is weak evidence <em>against</em> a large
+surviving facility. It is no evidence at all about a demolished or buried one — which, given
+the twelve-year gap, is the more likely state of affairs if one ever existed.</p>
+<hr />
+<h2 id="147-where-the-imagery-avenue-now-stands">14.7 Where the imagery avenue now stands</h2>
+<p>This line of inquiry is close to exhausted. The county's holdings have been enumerated and the
+pre-1950 frames retrieved and searched systematically. Further imagery work would mean
+pre-1929 photography, which for this area is unlikely to exist in useful form.</p>
+<p>The productive leads are now documentary rather than photographic, and are set out in the
+recommendations chapter: Rancho Mission Viejo's own operating records, the County Agricultural
+Commissioner and State Veterinarian tick-eradication files, and General Land Office survey
+<strong>field notes</strong> — in which surveyors routinely recorded springs, corrals, houses, and
+improvements that never appeared on the published plat.</p>
+  </div>
+</section>
+<section class="chapter" id="reservoirs-water-infrastructure-and-ranch-facilities">
+  <div class="wrap">
+    <div class="chapter-num">Chapter 15</div>
+    <h1>Reservoirs, Water Infrastructure, and Ranch Facilities</h1>
+    <h2 id="151-why-water-is-the-organizing-question">15.1 Why water is the organizing question</h2>
+<p>Cattle concentrate at water. It is the most reliable spatial regularity in range livestock
+management, and everything else follows from it: stock trails converge on water, holding
+grounds sit near water, and working facilities — corrals, chutes, and historically dipping
+vats — were sited where the animals already gathered, because moving cattle is expensive and
+moving water is harder.</p>
+<p>This gives the investigation a search strategy that does not depend on finding a vat directly.
+<strong>Locate the historical water, and you have located the small number of places where a working
+facility could plausibly have stood.</strong> Water is mapped; vats are not.</p>
+<hr />
+<h2 id="152-the-1968-surface-water-layer">15.2 The 1968 surface-water layer</h2>
+<p>The 41 water bodies in this layer were not detected by an algorithm looking at photographs.
+They were extracted from the <strong>1968 USGS 7.5-minute San Juan Capistrano quadrangle</strong> by
+isolating the printed cyan hydrography ink.</p>
+<p>The distinction matters. Every polygon recovered this way was <strong>drawn by a surveyor who visited
+the ground</strong>. This is cartographic testimony, not image interpretation.</p>
+<p><strong>Method.</strong> Blue-dominant pixels were isolated by threshold (blue exceeding red by 26 levels
+and green by 8, with brightness and paper-white exclusions), morphologically cleaned, and
+labelled into connected components. Features smaller than 350 m² were dropped as stream
+hairlines and print noise; shapes with elongation greater than 7 were dropped as drawn stream
+lines rather than impoundments.</p>
+<p><strong>Result: 41 water bodies of 350 m² or larger, 16 of them inside Zone A.</strong> The largest is
+24,745 m² at 33.54394, −117.66132.</p>
+<figure id="fig-07">
+  <img src="assets/images/fig-07.jpg" alt="USGS 7.5-minute San Juan Capistrano quadrangle, 1968 revision" loading="lazy"
+       width="1752"
+       height="1800">
+  <figcaption>
+    <span class="cap-t">FIG-07 · USGS 7.5-minute San Juan Capistrano quadrangle, 1968 revision</span>
+    <span class="cap-m"><strong>Interpretation boundary:</strong> The source of the 41-body surface-water layer. Shows the impoundment chain down the Trabuco corridor, a labelled Water Tank, a Terminal Reservoir, a landing strip and a gaging station. The land grant is labelled MISSION VIEJO OR LA PAZ.</span>
+    <span class="cap-m">Date 1968 · U.S. Geological Survey · Public domain (U.S. Government work).
+      · Original 2336x2400 at <code>research/historical_imagery/03_topo_1968_footprint.jpg</code></span>
+  </figcaption>
+</figure>
+<div class="ev k-fact"><div class="ev-label">Established Fact</div><div class="ev-body"><p><strong>EM-005 · ESTABLISHED FACT · Confidence: High</strong>
+The 1968 USGS field survey mapped 41 surface-water bodies of ≥350 m² within the study
+footprint, 16 of them inside Zone A.
+<em>Supporting:</em> Cyan hydrography extracted from the georeferenced 1968 sheet; 41 features passed
+area and elongation filters.
+<em>Counter-evidence:</em> Derived by colour thresholding, so it inherits any generalisation in the
+original cartography and any scan artefacts. Positions are <strong>centroids, not digitised
+outlines</strong>. Features under 350 m² were excluded by design and are therefore absent from the
+layer regardless of whether they existed.
+<em>Citation:</em> USGS San Juan Capistrano 7.5′ quadrangle, 1968 edition [S-MAP-04];
+<code>pipelines/python/extract_topo_water.py</code>.</p></div></div>
+
+<h3 id="the-method-that-was-tried-first-and-abandoned">The method that was tried first, and abandoned</h3>
+<p>Before the ink-extraction approach, water was sought directly in the 1929 and 1937 aerial
+photographs on a defensible physical premise: on panchromatic film, standing water is both
+<strong>dark</strong> and <strong>smooth</strong>, whereas riparian vegetation is dark but strongly <em>textured</em> and
+hillslope shadow is dark but <em>elongated and attached to terrain</em>. Requiring low brightness and
+low local variance together should separate ponds from both.</p>
+<p>It did not work. The detector returned 111 candidates in the 1929 frame and 225 in the 1937
+frame, roughly 100 of them inside Zone A. Visual review showed it was keying on <strong>hillslope
+shadow</strong>.</p>
+<p>The failure had a specific cause worth recording: the scanned frames have incompatible tone
+curves. The 1929 frame's 12th-percentile brightness sits around DN 109–128 — it is a bright,
+low-contrast scan. The 1937 frame's sits around DN 23–43 — dark and high-contrast. No single
+percentile threshold serves both, and the terrain is steep enough that shadow dominates the
+dark tail in the contrastier frame.</p>
+<p>The script is retained with the failure documented in its docstring, so the approach is not
+naively retried. <strong>None of its candidates appear anywhere in this publication.</strong></p>
+<hr />
+<h2 id="153-testing-the-central-spatial-hypothesis">15.3 Testing the central spatial hypothesis</h2>
+<p>An observation prompted this test. Looking at present-day property listings against the
+historical maps, the homes in Ladera Ranch and Rancho Mission Viejo appear to sit exactly where
+the old ranch water sources were. If true, and if working facilities followed water, that would
+place modern housing on the most likely locations of historical cattle-handling activity.</p>
+<p>It is a genuinely good hypothesis. It was tested directly.</p>
+<p><strong>Method.</strong> For each of the 41 water bodies mapped in 1968, count modern building footprints
+within 100 metres, and record the distance to the nearest one. Compare against a null: the same
+measurement taken at random points drawn from the same area. Building footprints from
+OpenStreetMap, n = 10,618.</p>
+<h3 id="the-descriptive-result-the-observation-holds">The descriptive result — the observation holds</h3>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>Nearest modern building to a 1968 water body</th>
+<th>Sites</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>within 100 m</td>
+<td>24 / 41 (59%)</td>
+</tr>
+<tr>
+<td>within 200 m</td>
+<td>34 / 41 (83%)</td>
+</tr>
+<tr>
+<td>within 300 m</td>
+<td>40 / 41 (98%)</td>
+</tr>
+<tr>
+<td><strong>within 500 m</strong></td>
+<td><strong>41 / 41 (100%)</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Median distance from a ranch-era water body to the nearest house today: 66 metres.</strong></p>
+<p>Every single one of the water sources this land's cattle operation depended on now has a house
+within 500 metres of it. As a description of the present landscape, the observation is exactly
+right.</p>
+<div class="ev k-fact"><div class="ev-label">Established Fact</div><div class="ev-body"><p><strong>EM-006 · ESTABLISHED FACT · Confidence: High</strong>
+Every one of the 41 ranch-era water bodies now has a modern building within 500 m; the median
+distance to the nearest building is 66 m.
+<em>Supporting:</em> Measured against 10,618 OSM building footprints.
+<em>Counter-evidence:</em> OpenStreetMap completeness is not guaranteed uniform. However, under-mapping
+would bias measured distances <em>upward</em>, not downward — so the finding is conservative.
+<em>Citation:</em> <code>pipelines/python/premise_homes_on_water.py</code> [S-GIS-02].</p></div></div>
+
+<h3 id="the-causal-result-the-explanation-does-not-hold">The causal result — the explanation does not hold</h3>
+<div class="tw"><table>
+<thead>
+<tr>
+<th></th>
+<th>Buildings within 100 m</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1968 water sites in Zone A (n = 16)</td>
+<td>9.0</td>
+</tr>
+<tr>
+<td>Random points in Zone A (n = 6,000)</td>
+<td>9.3</td>
+</tr>
+<tr>
+<td><strong>Enrichment</strong></td>
+<td><strong>0.97× (permutation p = 0.51)</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p>The old water sites are <strong>no more built over than any other ground in Zone A</strong>. Developers did
+not seek out the water and the cattle-working areas. If anything the point estimate falls
+marginally below chance, and it is statistically indistinguishable from it.</p>
+<div class="ev k-fact"><div class="ev-label">Established Fact</div><div class="ev-body"><p><strong>EM-007 · ESTABLISHED FACT · Confidence: High</strong>
+Modern housing was <strong>not</strong> preferentially sited on the ranch-era water bodies.
+<em>Supporting:</em> Zone-A-restricted null: 9.0 buildings within 100 m of water sites vs 9.3 for
+6,000 random points. Enrichment 0.97×, permutation p = 0.51.
+<em>Counter-evidence:</em> An initial bbox-wide null gave 0.79×, but that null was inflated by dense
+Mission Viejo development falling inside the bounding box. The Zone-A-restricted null is the
+fair comparison and is reported as primary. Both are published.
+<em>Citation:</em> <code>research/historical_imagery/premise_null_zonea.json</code> [S-GIS-02].</p></div></div>
+
+<h3 id="why-both-results-are-true-at-once">Why both results are true at once</h3>
+<p>Development here was <strong>near-total</strong>. Once nearly every part of the footprint is close to
+housing, proximity to housing stops carrying information. The water sites are all near houses
+because <em>everything</em> is near houses.</p>
+<p>The pattern was real. The explanation for it was not.</p>
+<figure id="fig-01">
+  <img src="assets/images/fig-01.jpg" alt="The footprint across four epochs, with the 1968 water layer overprinted" loading="lazy"
+       width="1800"
+       height="1641">
+  <figcaption>
+    <span class="cap-t">FIG-01 · The footprint across four epochs, with the 1968 water layer overprinted</span>
+    <span class="cap-m"><strong>Interpretation boundary:</strong> Panels share one extent and georeferencing. Cyan circles mark water bodies as drawn by the 1968 USGS survey; they are centroids, not digitised outlines. The cyan box is an approximate screening boundary, not a legal boundary.</span>
+    <span class="cap-m">Date 1929-2022 · This investigation · Derived figure. Underlying imagery credited in the caption; derived layout CC BY 4.0.
+      · Original 2330x2124 at <code>research/historical_imagery/11_timeseries_1929-2022_with_water.jpg</code></span>
+  </figcaption>
+</figure>
+<h3 id="what-this-changes-and-what-it-does-not">What this changes, and what it does not</h3>
+<p>It removes a mechanism: "the developers built on the cattle-working grounds" is not supported,
+and should not be asserted.</p>
+<p><strong>It does not reduce the exposure question — arguably the opposite.</strong> If ranch-era ground
+contamination exists anywhere within this footprint, near-total development means it now sits
+under or beside housing <strong>regardless of whether anyone selected those locations</strong>. Targeting was
+never required for coincidence; comprehensive development achieves the same outcome by a
+different route.</p>
+<p>What falls away is an explanation. The underlying concern is untouched.</p>
+<hr />
+<h2 id="154-a-measurement-that-looks-compelling-and-must-not-be-used">15.4 A measurement that looks compelling and must not be used</h2>
+<p>Buildings in this footprint sit on a median slope of <strong>1.7°</strong>, against <strong>6.7°</strong> for available
+land across the same extent. On its face that is a strong signal: houses are on flat ground,
+flat ground is valley bottom, valley bottoms are where water and cattle were.</p>
+<p><strong>This reasoning is circular and the measurement cannot be used.</strong></p>
+<p>Ladera Ranch was <strong>mass-graded</strong>. The building pads were cut flat. The flatness measured under a
+house today was manufactured by the grading — which is itself one of the activities under
+investigation. The modern digital elevation model describes engineered pads, not original
+landform, and cannot speak to where anyone chose to build relative to natural terrain.</p>
+<div class="ev k-limit"><div class="ev-label">Limitation</div><div class="ev-body"><p><strong>EM-008 · ESTABLISHED FACT (methodological exclusion) · Confidence: High</strong>
+Modern slope beneath buildings cannot be used to infer original landform siting.
+<em>Supporting:</em> Buildings at median 1.7° vs 6.7° for available land — but Ladera Ranch was
+mass-graded, so pad flatness was manufactured by the grading under investigation.
+<em>Counter-evidence:</em> None. This is a deliberate methodological exclusion, recorded so the figure
+is not later mistaken for a finding.
+<em>What would be required instead:</em> Reconstruction of pre-1980 elevations from the 1948 and 1968
+topographic contours, which would give original landform independent of the grading.
+<em>Citation:</em> USGS 3DEP DEM [S-GIS-01]; this investigation.</p></div></div>
+
+<p>This is recorded rather than omitted because the figure is genuinely persuasive and someone
+will eventually rediscover it. It should be met with this note.</p>
+<hr />
+<h2 id="155-water-infrastructure-named-in-the-record">15.5 Water infrastructure named in the record</h2>
+<p>The 1968 sheet labels several features by name:</p>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>Type</th>
+<th>Source</th>
+<th>Status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Terminal Reservoir</td>
+<td>Reservoir</td>
+<td>1968 USGS quad, labelled</td>
+<td>Located on sheet</td>
+</tr>
+<tr>
+<td>Water Tank</td>
+<td>Tank</td>
+<td>1968 USGS quad, labelled</td>
+<td>Located on sheet</td>
+</tr>
+<tr>
+<td>"WT 521"</td>
+<td>Water tank w/ elevation</td>
+<td>1968 USGS quad, labelled</td>
+<td>Located on sheet</td>
+</tr>
+<tr>
+<td>Gaging Station</td>
+<td>Stream gage</td>
+<td>1968 USGS quad, labelled</td>
+<td>Located on sheet</td>
+</tr>
+<tr>
+<td>Landing Strip</td>
+<td>Airstrip</td>
+<td>1968 USGS quad, labelled</td>
+<td>Located on sheet</td>
+</tr>
+<tr>
+<td>Impoundment chain</td>
+<td>~8 stock ponds</td>
+<td>1968 USGS quad, drawn</td>
+<td>Trabuco corridor</td>
+</tr>
+</tbody>
+</table></div>
+<div class="ev k-open"><div class="ev-label">Open Question</div><div class="ev-body"><p><strong>OPEN QUESTION — named ranch facilities not yet located.</strong>
+The historical record refers to a set of named ranch working facilities associated with this
+operation — headquarters, cow camps, line camps, named corrals. <strong>None has yet been located
+with coordinates by this investigation</strong>, and none appears in the imagery examined. Whether any
+stood within the study footprint, as opposed to elsewhere on a ranch that covered well over a
+hundred thousand acres, is unresolved.
+<em>Next step:</em> General Land Office survey <strong>field notes</strong> for the relevant townships. Surveyors
+routinely recorded springs, corrals, houses, and improvements in their notes that never appeared
+on the published plat. This is the highest-value untapped cartographic source identified.</p></div></div>
+
+<hr />
+<h2 id="156-where-this-leaves-the-search">15.6 Where this leaves the search</h2>
+<p>The water layer did its job. It converted a vague question — <em>where might a working facility
+have been?</em> — into a bounded set of 41 specific locations, 16 of them inside the community.</p>
+<p>It did not find a vat, and the spatial test it enabled removed one attractive hypothesis about
+how development related to that history.</p>
+<p>What it produces is a <strong>sampling frame</strong>. If soil investigation is ever undertaken here, these
+41 locations plus the Trabuco ranch node are where an investigator with limited resources should
+look first — not because contamination is expected at them, but because they are the places
+where the historical activity of interest would have concentrated if it occurred at all. That
+recommendation is developed in the environmental investigation chapter.</p>
+  </div>
+</section>
+<section class="chapter" id="agricultural-pesticides-and-other-potential-exposure-pathways">
+  <div class="wrap">
+    <div class="chapter-num">Chapter 20</div>
+    <h1>Agricultural Pesticides and Other Potential Exposure Pathways</h1>
+    <p>A report that examines only one hypothesis is not an investigation; it is an argument. This
+chapter sets out every environmental pathway that has been identified as potentially relevant
+to this community, and grades each on the same scale — including the pathways that are better
+documented than the arsenical-dipping hypothesis that prompted the work.</p>
+<p>Several of them are.</p>
+<hr />
+<h2 id="201-how-these-are-ranked">20.1 How these are ranked</h2>
+<p>Each pathway is assessed on two independent axes, which are frequently confused:</p>
+<p><strong>Documentation</strong> — how well established is it that this thing was present or occurred here?
+<strong>Plausibility of exposure</strong> — if present, how credible is a pathway to human contact?</p>
+<p>A pathway can be well-documented and low-exposure (a plugged well a mile away), or
+poorly-documented and high-exposure-if-real (a dip vat under a park). Collapsing these into a
+single "risk" score would hide exactly the distinction that matters.</p>
+<hr />
+<h2 id="202-documented-arsenic-in-soil-at-nearby-school-sites">20.2 Documented: arsenic in soil at nearby school sites</h2>
+<div class="ev k-fact"><div class="ev-label">Established Fact</div><div class="ev-body"><p><strong>EM-013 · ESTABLISHED FACT · Confidence: High</strong>
+DTSC found arsenic in soil at several school sites on former agricultural land near Ladera
+Ranch.
+<em>Supporting:</em> EnviroStor records for Carl Hankey Elementary, the Plant Depot School Site, and
+San Juan Elementary list arsenic among contaminants identified.
+<em>Counter-evidence:</em> Arsenic occurs naturally in California soils at background concentrations,
+and presence alone establishes neither an anthropogenic source nor any link to cattle dipping.
+Former orchard land carries <strong>lead arsenate</strong> residues from an entirely different practice —
+insecticide application to fruit trees — which is a far more common explanation for arsenic on
+former California agricultural land than cattle dipping.
+<em>Citation:</em> DTSC EnviroStor site records [S-ENV-01].</p></div></div>
+
+<p>This is the <strong>best-documented arsenic finding in the study area</strong>, and it is important to state
+plainly that it does not support the dipping hypothesis over the orchard hypothesis. Lead
+arsenate was applied to California orchards for decades and is the default explanation for
+elevated arsenic on former orchard ground. Where lead and arsenic are elevated <em>together</em> in
+roughly the ratio of the compound, that is a lead-arsenate signature. A dipping-vat signature
+would show arsenic strongly elevated in a very small area <strong>without</strong> proportionate lead.</p>
+<p>That distinction — the lead-to-arsenic ratio and the spatial extent — is testable, and is the
+single most useful discriminator available. It is developed in the recommendations chapter.</p>
+<h2 id="203-documented-organochlorine-pesticide-residues">20.3 Documented: organochlorine pesticide residues</h2>
+<div class="ev k-fact"><div class="ev-label">Established Fact</div><div class="ev-body"><p><strong>ESTABLISHED FACT · Confidence: High</strong>
+DDT and its breakdown products, chlordane, and toxaphene have been identified in soil at former
+agricultural sites in the immediate area.
+<em>Supporting:</em> EnviroStor records for San Juan Elementary (chlordane, DDD, DDE, DDT, plus lead
+and arsenic) and Ambuehl Elementary (DDD, DDE, DDT, toxaphene).
+<em>Counter-evidence:</em> These findings are at <strong>school sites on former agricultural land</strong>, not
+within the Ladera Ranch residential footprint. Extrapolating them to Ladera Ranch soil is not
+supported by any measurement.
+<em>Citation:</em> DTSC EnviroStor site records [S-ENV-01].</p></div></div>
+
+<p>Organochlorines are persistent, though unlike arsenic they do degrade. Their presence confirms
+that this general area carries a legacy agricultural chemical burden — which is unremarkable for
+former Southern California farmland and is exactly what the school-site assessment programme
+exists to catch.</p>
+<h2 id="204-documented-proximity-to-plugged-oil-and-gas-wells">20.4 Documented: proximity to plugged oil and gas wells</h2>
+<div class="ev k-fact"><div class="ev-label">Established Fact</div><div class="ev-body"><p><strong>ESTABLISHED FACT (proximity) / INVESTIGATIVE LEAD (relevance) · Confidence: High for
+geometry</strong>
+Two plugged exploratory wells lie within approximately one mile of the community centroid, one
+at roughly 0.25 miles. Six lie within ten kilometres.
+<em>Supporting:</em> CalGEM WellSTAR database coordinates, distances recomputed by haversine from the
+corrected community centroid.
+<em>Counter-evidence:</em> These are mid-twentieth-century <strong>plugged dry holes</strong>, generally a lower
+leakage risk than production wells. The community's drinking water is imported rather than
+drawn from local groundwater. Proximity is a screening signal, not a dose.
+<em>Citation:</em> CalGEM WellSTAR [S-ENV-02]; correction C-001.</p></div></div>
+
+<p>This pathway deserves particular attention because it has something the dipping hypothesis
+lacks: <strong>a published epidemiological association with the specific cancer in question.</strong> A 2026
+peer-reviewed California study reported a suggestive but non-significant association between
+residential proximity to abandoned oil and gas wells within 10 km and childhood Ewing sarcoma
+(OR 1.27, 95% CI 0.96–1.66), stronger in Hispanic children.</p>
+<p>A confidence interval spanning 1.0 is not a positive finding, and the study's authors did not
+present it as one. But it is more direct evidence than exists for any other pathway considered
+here — and it emerged from a correction to this project's own geometry, not from looking for it.</p>
+<div class="ev k-lead"><div class="ev-label">Investigative Lead</div><div class="ev-body"><p><strong>This pathway is under-investigated relative to its evidential support.</strong> The well-integrity
+records, plugging documentation, and any soil-gas or methane monitoring near the two nearest
+wells have not been obtained. Given that this is the only pathway with a published association
+with Ewing sarcoma specifically, it arguably warrants higher priority than the hypothesis that
+prompted this investigation.</p></div></div>
+
+<h2 id="205-documented-practice-undocumented-here-landscape-pesticide-application">20.5 Documented practice, undocumented here: landscape pesticide application</h2>
+<div class="ev k-lead"><div class="ev-label">Investigative Lead</div><div class="ev-body"><p><strong>INVESTIGATIVE LEAD · Confidence: Low</strong>
+Master-planned communities maintain extensive irrigated common landscaping under professional
+contract, and landscape maintenance is a recognised pesticide-use category in California's
+reporting system.
+<em>Supporting:</em> California Pesticide Use Reporting data include a landscape maintenance category.
+<em>Counter-evidence and a hard limit:</em> Analysis of the state PUR archive established that
+<strong>94.6%</strong> of 79,473 Orange County records could not be located more precisely than a large grid
+cell, and within landscape maintenance specifically, only <strong>22 of 15,383 records (0.1%)</strong> carried
+usable coordinates. The state reporting system, as it exists, <strong>cannot</strong> place applications
+within Ladera Ranch. This is a limitation of the data, not a finding about the community.
+<em>Next step:</em> HOA and landscape-contractor records, which are private but not necessarily
+inaccessible.</p></div></div>
+
+<p>This is a good example of an appealing hypothesis defeated by data quality rather than by
+evidence. The question remains open because the instrument cannot measure it.</p>
+<h2 id="206-plausible-undocumented-imported-fill-and-soil-redistribution">20.6 Plausible, undocumented: imported fill and soil redistribution</h2>
+<div class="ev k-lead"><div class="ev-label">Investigative Lead</div><div class="ev-body"><p><strong>INVESTIGATIVE LEAD · Confidence: Low</strong>
+Mass grading redistributes near-surface soil across a development, and imported fill may
+originate off-site entirely.
+<em>Supporting:</em> Ladera Ranch was mass-graded; this is not in dispute and is visible in the
+before-and-after imagery.
+<em>Counter-evidence:</em> No evidence has been located that imported fill was contaminated, and no
+cut-and-fill records or import sources have yet been obtained. This is a <em>mechanism</em>, not a
+finding.
+<em>Why it matters regardless of source:</em> grading is the mechanism by which a localised point
+source — if one existed — could be spread across a much wider area at lower concentration. It
+converts a small, findable contamination footprint into a large, diffuse, and much harder one.</p></div></div>
+
+<h2 id="207-present-by-default-natural-background-arsenic">20.7 Present by default: natural background arsenic</h2>
+<div class="ev k-context"><div class="ev-label">Historical Context</div><div class="ev-body"><p><strong>HISTORICAL CONTEXT · Confidence: High</strong>
+California soils contain naturally occurring arsenic, with regional background concentrations
+varying by geology.</p></div></div>
+
+<p>This is the <strong>null hypothesis for every arsenic finding in this investigation</strong>, and it must be
+defeated by evidence before any anthropogenic explanation is entertained. Any future sampling
+programme that does not establish local background concentrations first will be unable to
+interpret its own results.</p>
+<h2 id="208-pathways-assessed-and-not-supported">20.8 Pathways assessed and not supported</h2>
+<p>Recorded because ruling things out is part of the work.</p>
+<p><strong>Drinking water.</strong> The community's water is imported and treated, subject to routine regulatory
+monitoring. No pathway is supported by available evidence.</p>
+<p><strong>Airborne dust from construction.</strong> Real during the active construction period and now
+historical. No monitoring data from that period have been located, so this cannot be assessed
+either way — it is unresolvable rather than ruled out.</p>
+<p><strong>Industrial contamination.</strong> No significant industrial facilities have been identified within
+the study zones that would suggest a pathway.</p>
+<p><strong>Recycled irrigation water.</strong> Used for common-area landscaping in the region; no evidence of
+contamination has been identified.</p>
+<hr />
+<h2 id="209-where-the-evidence-actually-points">20.9 Where the evidence actually points</h2>
+<p>Setting aside the hypothesis that prompted this work and reading the evidence on its own terms:</p>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>Pathway</th>
+<th>Documentation</th>
+<th>Exposure plausibility</th>
+<th>Published link to Ewing sarcoma</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Arsenic at nearby school sites</td>
+<td><strong>Strong</strong></td>
+<td>Moderate — off-footprint</td>
+<td>None</td>
+</tr>
+<tr>
+<td>Organochlorines at school sites</td>
+<td><strong>Strong</strong></td>
+<td>Moderate — off-footprint</td>
+<td>None</td>
+</tr>
+<tr>
+<td>Plugged oil/gas well proximity</td>
+<td><strong>Strong</strong></td>
+<td>Low–moderate</td>
+<td><strong>Suggestive, non-significant</strong></td>
+</tr>
+<tr>
+<td>Natural background arsenic</td>
+<td>Strong</td>
+<td>Low</td>
+<td>None</td>
+</tr>
+<tr>
+<td>Landscape pesticides</td>
+<td>Weak — unmeasurable</td>
+<td>Unknown</td>
+<td>None</td>
+</tr>
+<tr>
+<td>Imported fill / grading</td>
+<td>Weak</td>
+<td>Unknown</td>
+<td>None</td>
+</tr>
+<tr>
+<td><strong>Arsenical cattle dipping</strong></td>
+<td><strong>None located</strong></td>
+<td><strong>Unknown</strong></td>
+<td><strong>None</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p>The hypothesis that prompted this investigation currently sits at the <strong>bottom</strong> of this table
+on documentation. It has generated the most analytical work and produced the least evidence.</p>
+<p>That is stated plainly because it is the honest reading, and because a project that quietly
+reordered this table to protect its founding premise would forfeit any claim to being taken
+seriously. The dipping hypothesis remains worth resolving — it is testable, the contamination
+would be persistent, and a negative result would close it permanently. But it is not currently
+the best-supported explanation for anything, and this publication does not present it as one.</p>
+  </div>
+</section>
+<section class="chapter" id="the-arsenical-dipping-hypothesis-evidence-for-evidence-against-and-missing-proof">
+  <div class="wrap">
+    <div class="chapter-num">Chapter 21</div>
+    <h1>The Arsenical-Dipping Hypothesis: Evidence For, Evidence Against, and Missing Proof</h1>
+    <p>This chapter states the hypothesis that prompted the investigation, assembles everything that
+supports it, assembles everything that weakens it, and identifies precisely what would settle
+it.</p>
+<p>The counter-evidence section is longer than the supporting one. That is not a stylistic
+choice — it reflects the current state of the record.</p>
+<hr />
+<h2 id="211-the-hypothesis-stated-precisely">21.1 The hypothesis, stated precisely</h2>
+<blockquote>
+<p>During California's cattle tick eradication era, an arsenical dipping facility operated on
+the land now occupied by Ladera Ranch or its immediate surroundings. Arsenic from that
+facility persists in soil, because arsenic does not degrade. Subsequent mass grading may have
+redistributed it. The 2000s residential development was built over ground whose history was
+never fully reconstructed, and the possibility was therefore never tested.</p>
+</blockquote>
+<p>Stated that way, it is a <strong>chain of six propositions</strong>, each of which must hold:</p>
+<ol>
+<li>The tick eradication programme applied to Orange County</li>
+<li>This ranch dipped cattle, using its own facility rather than a shared or off-site one</li>
+<li>The facility stood within or near the present community footprint</li>
+<li>Arsenic residue persists at that location</li>
+<li>Development disturbed, redistributed, or built over it</li>
+<li>A pathway to human exposure exists</li>
+</ol>
+<p><strong>Proposition 1 is currently unverified. Propositions 2 through 6 are entirely unevidenced.</strong></p>
+<p>A chain is only as strong as its weakest link, and the first link has not yet been tested
+against primary sources. This is worth stating at the outset because the hypothesis is often
+discussed as though it began at proposition 3.</p>
+<hr />
+<h2 id="212-evidence-supporting-the-hypothesis">21.2 Evidence supporting the hypothesis</h2>
+<h3 id="the-land-was-a-working-cattle-ranch">The land was a working cattle ranch</h3>
+<div class="ev k-fact"><div class="ev-label">Established Fact</div><div class="ev-body"><p><strong>EM-001 · ESTABLISHED FACT · Confidence: High</strong>
+Ladera Ranch sits on land that was part of the Rancho Mission Viejo cattle operation prior to
+development.
+<em>Supporting:</em> USGS quadrangles from 1948 through 1968 label the area MISSION VIEJO OR LA PAZ;
+aerial photography from 1929 through 1946 shows open rangeland with stock trails and grazing
+patterns.
+<em>Counter-evidence:</em> None identified.
+<em>Citation:</em> USGS San Juan Capistrano 7.5′ quadrangle [S-MAP-01, S-MAP-04]; OC Survey historical
+aerials [S-IMG-01].</p></div></div>
+
+<p>This establishes the <em>precondition</em> and nothing more. Cattle ranching was the dominant land use
+across most of coastal Southern California. It does not distinguish this land from thousands of
+square miles of it.</p>
+<h3 id="arsenic-is-chemically-persistent">Arsenic is chemically persistent</h3>
+<div class="ev k-context"><div class="ev-label">Historical Context</div><div class="ev-body"><p>Arsenic is an element and does not degrade. Contamination deposited during the dipping era
+would, in mass terms, still be present — unlike organic pesticides, which decline on a
+half-life.</p></div></div>
+
+<p>This is what makes the hypothesis worth testing rather than dismissing on age. A 1912 organic
+pesticide question would be closed by chemistry. A 1912 arsenic question is not.</p>
+<h3 id="the-terrain-contains-plausible-facility-locations">The terrain contains plausible facility locations</h3>
+<div class="ev k-lead"><div class="ev-label">Investigative Lead</div><div class="ev-body"><p>A single structure existed at 33.55505, −117.65492 on Trabuco Creek — flat valley floor,
+adjacent to water, at a convergence of unimproved roads. That is the physical signature of a
+place where cattle were handled.
+<em>Counter-evidence:</em> The map does not label it. It is equally consistent with a line camp, barn,
+or ranch house. Nothing distinguishes these possibilities in the imagery.</p></div></div>
+
+<h3 id="arsenic-has-been-found-in-soil-nearby">Arsenic has been found in soil nearby</h3>
+<p>Documented at several school sites on former agricultural land within a few miles. <strong>This cuts
+both ways and is examined as counter-evidence below</strong>, because the most likely explanation for
+it is not cattle dipping.</p>
+<hr />
+<h2 id="213-evidence-weakening-the-hypothesis">21.3 Evidence weakening the hypothesis</h2>
+<p>This section is given equal editorial weight by design, and is longer because the record
+currently contains more of it.</p>
+<h3 id="no-vat-has-been-found-on-imagery-good-enough-to-show-one">No vat has been found on imagery good enough to show one</h3>
+<div class="ev k-fact"><div class="ev-label">Established Fact</div><div class="ev-body"><p>The systematic 24-tile survey of Zone A at 1.15 ft/px — a resolution at which a corral complex
+would be unmistakable — found <strong>no vat, no corral, no pen, and no chute complex</strong>. The 1929,
+1946–47, 1948, 1968, and 1974 sheets were also examined.</p>
+<p>This is the strongest single piece of counter-evidence in the investigation, and it became
+strong only after the imagery premise was corrected. Under the earlier and incorrect assumption
+that only 1948 imagery existed, the absence proved nothing. On 1929 and 1937–38 photography, it
+means something.</p>
+<p><em>Its limit, stated precisely:</em> it is evidence against a <strong>surviving surface facility in
+1929</strong>. It is not evidence about a facility demolished and backfilled between 1917 and 1929.</p></div></div>
+
+<h3 id="no-map-labels-a-dipping-vat">No map labels a dipping vat</h3>
+<p>No dipping vat appears on any topographic sheet, plat, or map examined. This is weak
+counter-evidence, because USGS symbology had no vat symbol and such facilities were essentially
+never mapped — but the absence is real and is recorded.</p>
+<h3 id="the-spatial-hypothesis-about-development-was-tested-and-failed">The spatial hypothesis about development was tested and failed</h3>
+<div class="ev k-fact"><div class="ev-label">Established Fact</div><div class="ev-body"><p><strong>EM-007 · ESTABLISHED FACT · Confidence: High</strong>
+The proposition that modern homes were preferentially built on the ranch-era water sites —
+where cattle concentrated, and therefore where working facilities would have stood — was tested
+directly and <strong>is not supported</strong>. Enrichment 0.97×, permutation p = 0.51 against a
+Zone-A-restricted null.</p>
+<p>This removes a mechanism that would have connected the historical activity to the present
+community. It does not reduce the exposure question, since near-total development means any
+contamination would be near housing regardless — but the specific proposed connection is gone.</p></div></div>
+
+<h3 id="the-most-likely-explanation-for-local-arsenic-is-not-cattle-dipping">The most likely explanation for local arsenic is not cattle dipping</h3>
+<p>Lead arsenate was applied to California orchards for decades and is the <strong>default explanation</strong>
+for elevated arsenic on former California agricultural land. Several of the nearby school sites
+with arsenic findings are documented former orchard or row-crop land. A cattle-dipping
+explanation is not required to account for any arsenic yet measured in this area, and invoking
+it would be adding an entity without necessity.</p>
+<h3 id="no-documentary-evidence-has-been-located">No documentary evidence has been located</h3>
+<p>None of the following has been found:</p>
+<ul>
+<li>A record that Orange County fell within the tick quarantine area</li>
+<li>A record that this ranch dipped cattle</li>
+<li>A purchase record for arsenical dip concentrate</li>
+<li>A photograph of a vat on this ranch</li>
+<li>An employee account describing dipping here</li>
+<li>A map, plan, or permit for such a facility</li>
+</ul>
+<p>Some of these absences reflect archives not yet searched, and searches are in progress. Others
+may reflect that the thing did not happen. <strong>The investigation currently cannot distinguish
+between these two explanations</strong>, and says so rather than treating silence as either
+confirmation or refutation.</p>
+<h3 id="alternatives-with-unresolved-attribution">Alternatives with unresolved attribution</h3>
+<p>If dipping did occur in this region, it may have been conducted at a shared, county, or
+railroad-siding facility rather than on individual ranches — a common arrangement, and one that
+would place any contamination well away from this footprint. Cattle shipped by rail were
+frequently handled at stockyard facilities at the siding, not on the home range.</p>
+<h3 id="later-investigations-may-have-addressed-this-already">Later investigations may have addressed this already</h3>
+<p>Environmental review was conducted for this development. Portions of it are not publicly
+available online. <strong>It is possible that the question was considered and resolved in documents
+this investigation has not obtained.</strong> Concluding otherwise from an inability to find records
+online would be a serious error, and this publication does not make it.</p>
+<hr />
+<h2 id="214-the-one-large-ranch-problem">21.4 The "one large ranch" problem</h2>
+<p>A specific caution, because this is the kind of detail that becomes distorted in retelling.</p>
+<p>Where period sources describe tick eradication activity in a region and refer to operations at
+an unnamed "one large ranch" or similar, <strong>that reference has not been demonstrated to be this
+ranch</strong>. Southern California had several very large cattle operations in this era. Treating an
+unattributed reference as though it identified Rancho Mission Viejo would be an inference
+dressed as a fact.</p>
+<div class="ev k-open"><div class="ev-label">Open Question</div><div class="ev-body"><p>Any period reference to unnamed large-ranch dipping operations in Southern California
+<strong>requires independent attribution</strong> before it can be connected to this land. Until the
+underlying document is located and read in full, no such connection is asserted here.</p></div></div>
+
+<hr />
+<h2 id="215-what-would-actually-settle-this">21.5 What would actually settle this</h2>
+<p>The hypothesis is testable. Four routes, in descending order of decisiveness.</p>
+<p><strong>1. Soil chemistry with the right discriminator.</strong> Targeted sampling at the Trabuco ranch node
+and the mapped water bodies, testing <strong>total and bioavailable arsenic together with lead</strong>. The
+lead-to-arsenic ratio is the key: lead arsenate from orchards produces elevated lead <em>and</em>
+arsenic in roughly compound proportion across a broad area. A dipping vat produces sharply
+elevated arsenic in a very small area <strong>without</strong> proportionate lead. The two signatures are
+distinguishable. Background must be established first.</p>
+<p><strong>2. Geophysics.</strong> Ground-penetrating radar or electromagnetic survey at candidate locations
+detects buried concrete and disturbed fill directly. This is non-destructive, comparatively
+inexpensive, and would answer the structural question without excavation.</p>
+<p><strong>3. Ranch records.</strong> Rancho Mission Viejo's own operating records. Dipping was a mandated
+activity that generated paperwork — inspection records, chemical purchases, correspondence with
+state authorities. This is now the <strong>highest-value archival lead</strong>, because the imagery avenue
+is close to exhausted.</p>
+<p><strong>4. Regulatory archives.</strong> County Agricultural Commissioner and California State Veterinarian
+tick-eradication files, and USDA Bureau of Animal Industry records at the National Archives. In
+other states, individual vats are named in state meeting minutes. <strong>This route can definitively
+resolve proposition 1</strong> — whether Orange County was ever in the programme at all — and a
+negative answer would close the entire hypothesis.</p>
+<hr />
+<h2 id="216-current-assessment">21.6 Current assessment</h2>
+<div class="ev k-open"><div class="ev-label">Open Question</div><div class="ev-body"><p><strong>The arsenical-dipping hypothesis is UNRESOLVED and currently UNSUPPORTED BY DIRECT
+EVIDENCE.</strong></p>
+<p>It is <em>coherent</em>: the practice existed, the chemistry persists, the land was a cattle ranch,
+and the terrain contains plausible locations.</p>
+<p>It is <em>unevidenced</em>: no vat, no document, no photograph, no testimony, and no measurement
+places it here. The strongest counter-evidence — the systematic imagery search — has real but
+bounded force, and the single most likely explanation for arsenic already measured in this area
+is a different practice entirely.</p>
+<p><strong>It should be neither asserted nor abandoned.</strong> It should be tested, by the methods in §21.5,
+starting with the archival question of whether Orange County was in the programme — which is
+cheap, decisive in one direction, and has not yet been answered.</p></div></div>
+
+<p>The reasonable position is that this is a <strong>live question with a clear resolution path and no
+current answer</strong>. Anyone presenting it as more than that — in either direction — is going beyond
+what the evidence in this publication supports.</p>
+  </div>
+</section>
+<section class="chapter" id="gis-reconstruction">
+  <div class="wrap">
+    <div class="chapter-num">Chapter 23</div>
+    <h1>GIS Reconstruction</h1>
+    <h2 id="231-what-was-built">23.1 What was built</h2>
+<p>A georeferenced reconstruction of the study area combining historical imagery, historical
+cartography, modern terrain, and modern built form — all registered to a single common extent
+so that any layer can be compared with any other without further transformation.</p>
+<p><strong>Common extent (WGS84):</strong> longitude −117.680 to −117.616, latitude 33.520 to 33.575.
+Approximately 5.9 km east–west by 6.1 km north–south.</p>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>Layer</th>
+<th>Type</th>
+<th>Epoch</th>
+<th>Source</th>
+<th>Grade</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1929 aerial</td>
+<td>Raster</td>
+<td>1929</td>
+<td>OC Survey Historic_Imagery_v2, OID 346</td>
+<td>A1</td>
+</tr>
+<tr>
+<td>1931 aerial</td>
+<td>Raster</td>
+<td>1931</td>
+<td>OC Survey, OID 351</td>
+<td>A1</td>
+</tr>
+<tr>
+<td>1937–38 aerial</td>
+<td>Raster</td>
+<td>1937–38</td>
+<td>OC Survey, OID 310</td>
+<td>A1</td>
+</tr>
+<tr>
+<td>1938 aerial</td>
+<td>Raster</td>
+<td>1938</td>
+<td>OC Survey, OID 340</td>
+<td>A1</td>
+</tr>
+<tr>
+<td>1946–47 aerial</td>
+<td>Raster</td>
+<td>1946–47</td>
+<td>OC Survey, OID 286 / 293</td>
+<td>A1</td>
+</tr>
+<tr>
+<td>1948 topographic sheet</td>
+<td>Raster</td>
+<td>1948</td>
+<td>USGS 7.5′ San Juan Capistrano</td>
+<td>A1</td>
+</tr>
+<tr>
+<td>1968 topographic sheet</td>
+<td>Raster</td>
+<td>1968</td>
+<td>USGS 7.5′ San Juan Capistrano, revised</td>
+<td>A1</td>
+</tr>
+<tr>
+<td>1974 orthophoto quad</td>
+<td>Raster</td>
+<td>1974</td>
+<td>USGS</td>
+<td>A1</td>
+</tr>
+<tr>
+<td>2022 aerial</td>
+<td>Raster</td>
+<td>2022</td>
+<td>OC Survey OC_Aerial_2022_1ft_WGS84</td>
+<td>A1</td>
+</tr>
+<tr>
+<td>Surface water 1968</td>
+<td>Point (41)</td>
+<td>1968</td>
+<td>Digitised from USGS hydrography ink</td>
+<td>A2</td>
+</tr>
+<tr>
+<td>Ranch structure 1948</td>
+<td>Point (1)</td>
+<td>1948</td>
+<td>Digitised from USGS sheet</td>
+<td>A2</td>
+</tr>
+<tr>
+<td>Environmental sites</td>
+<td>Point</td>
+<td>Current</td>
+<td>DTSC EnviroStor</td>
+<td>A1</td>
+</tr>
+<tr>
+<td>School sites, arsenic flagged</td>
+<td>Point (5)</td>
+<td>Current</td>
+<td>DTSC EnviroStor</td>
+<td>A1</td>
+</tr>
+<tr>
+<td>Oil &amp; gas wells</td>
+<td>Point (6)</td>
+<td>Current</td>
+<td>CalGEM WellSTAR</td>
+<td>A1</td>
+</tr>
+<tr>
+<td>Terrain (DEM)</td>
+<td>Raster</td>
+<td>Current</td>
+<td>USGS 3DEP, 4.2 × 5.0 m/px</td>
+<td>A1</td>
+</tr>
+<tr>
+<td>Building footprints</td>
+<td>Point (10,618)</td>
+<td>Current</td>
+<td>OpenStreetMap via Overpass</td>
+<td>B2</td>
+</tr>
+<tr>
+<td>Zone A / Zone B</td>
+<td>Polygon</td>
+<td>—</td>
+<td>Generated screening boundaries</td>
+<td>Model estimate</td>
+</tr>
+</tbody>
+</table></div>
+<div class="ev k-limit"><div class="ev-label">Limitation</div><div class="ev-body"><p><strong>Zone A and Zone B are approximate screening aids, not legal boundaries.</strong> Zone A is a
+bounding box of about 5 square miles centred on the Ladera Ranch CDP centroid, against a
+published CDP area of 4.945 square miles. It is fit for spatial screening and is not a
+cadastral or jurisdictional boundary. It should never be used as one.</p></div></div>
+
+<h2 id="232-georeferencing-confidence-layer-by-layer">23.2 Georeferencing confidence, layer by layer</h2>
+<p>Different layers carry genuinely different positional confidence, and treating them as
+equivalent would be a mistake.</p>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>Layer group</th>
+<th>Method</th>
+<th>Confidence</th>
+<th>Residual</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>OC Survey aerials</td>
+<td>Rectified server-side by the county; export extent echoed and checked</td>
+<td>High (relative), Moderate (absolute)</td>
+<td>~±25 m from export snap, plus unpublished county rectification error</td>
+</tr>
+<tr>
+<td>USGS topographic sheets</td>
+<td><code>pyproj</code> transform from GeoTIFF tags, validated against the quad neatline</td>
+<td>High</td>
+<td>Sub-pixel against the graticule</td>
+</tr>
+<tr>
+<td>Digitised water bodies</td>
+<td>Colour threshold on the georeferenced 1968 sheet</td>
+<td>Moderate</td>
+<td>Inherits sheet error plus centroid approximation</td>
+</tr>
+<tr>
+<td>EnviroStor / CalGEM points</td>
+<td>Agency-published coordinates</td>
+<td>High</td>
+<td>As published by the agency</td>
+</tr>
+<tr>
+<td>OSM buildings</td>
+<td>Community-mapped centroids</td>
+<td>Moderate</td>
+<td>Completeness not guaranteed uniform</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The independent check on the whole raster stack:</strong> the modern 2022 frame was exported through
+the identical pipeline to the identical extent. Zone A lands on the real subdivisions;
+Interstate 5 and Mission Viejo fall where they belong. A systematic registration error would
+have displaced the modern frame too. It did not.</p>
+<h2 id="233-the-correction-that-reshaped-every-distance">23.3 The correction that reshaped every distance</h2>
+<div class="ev k-correction"><div class="ev-label">Correction Issued</div><div class="ev-body"><p><strong>Correction C-001 — the study centroid was approximately 1.93 miles too far north.</strong></p>
+<p>The project inherited a working centroid of 33.5747, −117.6353. The authoritative Ladera Ranch
+CDP centroid is <strong>33.5467, −117.6403</strong>.</p>
+<p><em>How it was caught:</em> rendering the map. The Zone A polygon sat visibly <em>north</em> of the
+OpenStreetMap "Ladera Ranch" place label — a contradiction that a table of coordinates would
+never have surfaced. This is the single strongest argument in this project for rendering
+spatial data rather than trusting it.</p>
+<p><em>Magnitude:</em> 1.93 miles north–south, 0.29 miles east–west.</p></div></div>
+
+<p>Every distance-to-community figure in the project was recomputed. The consequences were not
+cosmetic:</p>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>Site</th>
+<th>Was (mi)</th>
+<th>Now (mi)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Citizens National Trust B-1 (plugged well)</td>
+<td>2.0</td>
+<td><strong>0.25</strong></td>
+</tr>
+<tr>
+<td>O'Neill #1 (plugged well)</td>
+<td>2.7</td>
+<td><strong>0.77</strong></td>
+</tr>
+<tr>
+<td>Blue Diamond Materials Plant</td>
+<td>3.1</td>
+<td><strong>1.3</strong></td>
+</tr>
+<tr>
+<td>Plant Depot School Site (arsenic, nitrate)</td>
+<td>4.8</td>
+<td><strong>2.9</strong></td>
+</tr>
+<tr>
+<td>Ambuehl Elementary (DDT, toxaphene)</td>
+<td>5.0</td>
+<td><strong>3.0</strong></td>
+</tr>
+<tr>
+<td>San Juan Elementary (arsenic, chlordane, DDT)</td>
+<td>5.1</td>
+<td><strong>3.2</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Two plugged wells turned out to lie within about a mile of the community centroid</strong>, one
+effectively within the footprint — rather than the two to three miles previously recorded. The
+former-agricultural school sites carrying legacy residues are roughly three miles away, not
+five.</p>
+<p>That correction is what placed this community inside the exposure contrast of the published
+Ewing sarcoma / abandoned-well study discussed in the alternative-pathways chapter. It came
+from fixing an error, not from looking for a result.</p>
+<p><strong>What the correction did not affect:</strong> demographics and person-years (CDP-based), the
+incidence scenarios and Poisson intervals, the pesticide-reporting analysis, and the PLSS
+finding — re-queried at the corrected point, the community still sits on unsectioned
+land-grant land.</p>
+<h2 id="234-the-terrain-analysis-and-why-its-headline-result-is-unusable">23.4 The terrain analysis, and why its headline result is unusable</h2>
+<p>A drainage network was derived from the 3DEP DEM by D8 flow accumulation over a pit-filled
+surface, and building placement was compared against available terrain.</p>
+<p><strong>The measured result:</strong> buildings sit at a median slope of <strong>1.7°</strong> against <strong>6.7°</strong> for
+available land across the same extent — roughly four times flatter than the landscape average.</p>
+<p><strong>Why it cannot be used:</strong> Ladera Ranch was mass-graded. The pads were cut flat. The measurement
+describes engineered surfaces, not siting decisions relative to natural landform. It is
+circular with respect to the very activity under investigation.</p>
+<div class="ev k-limit"><div class="ev-label">Limitation</div><div class="ev-body"><p><strong>EM-008 · Methodological exclusion.</strong> This figure is recorded rather than omitted precisely
+because it is persuasive and will be rediscovered. Anyone who recomputes it should meet this
+note. Recovering the original landform requires reconstructing pre-1980 elevations from the
+1948 and 1968 topographic contours — which is tractable, and is listed as recommended work.</p></div></div>
+
+<p>A second-order caution from the same analysis: the derived channel network proved sparse
+relative to the visible drainage pattern (median distance to a channel of ~914 m across an area
+with drainages every few hundred metres), indicating the accumulation threshold was too
+conservative. The valley-bottom enrichment figure computed from it (1.15×) is therefore <strong>not
+reported as a finding</strong> anywhere in this publication. The water-proximity analysis in the water
+chapter, which does not depend on the derived network, is unaffected.</p>
+<h2 id="235-the-interactive-map">23.5 The interactive map</h2>
+<p>The project's web map presents these layers with the three historical rasters selectable and an
+opacity control for blending against a modern basemap. Water bodies are scaled by mapped
+surface area. Every point carries its source grade and provenance in its popup.</p>
+<p>A note on its construction, because it is a genuine robustness lesson: the data layers were
+originally attached to MapLibre's <code>load</code> event. That event waits on sprites, glyphs, and the
+first tile batch — so a stalled font or sprite fetch on a slow connection would leave <strong>every
+research layer silently invisible over a perfectly functional basemap</strong>. A reader would see a
+map, notice nothing wrong, and draw conclusions from an empty overlay. Layers now attach to
+<code>styledata</code>, which fires as soon as the style is parsed.</p>
+<div class="ev k-limit"><div class="ev-label">Limitation</div><div class="ev-body"><p><strong>No patient locations, residential addresses, or case locations appear on any map layer</strong>, by
+permanent policy. Where a dataset would permit finer resolution than the project's privacy rules
+allow, the rules take precedence.</p></div></div>
+
+<h2 id="236-the-gis-package">23.6 The GIS package</h2>
+<p>All layers are published as GeoJSON in WGS84, with the derived rasters and their corner
+coordinates, so the analysis can be reproduced or contradicted independently. Every feature
+carries a <code>source_id</code> linking to the source registry; features with no traceable source are not
+published.</p>
+<p>The most useful product is not any single layer but the <strong>sampling frame</strong>: 41 water bodies plus
+one structure, in a single file, representing the places where the historical activity of
+interest would have concentrated if it occurred at all.</p>
+  </div>
+</section>
+<section class="chapter" id="recommended-archival-and-environmental-work">
+  <div class="wrap">
+    <div class="chapter-num">Chapter 30</div>
+    <h1>Recommended Archival and Environmental Work</h1>
+    <p>Recommendations, ordered by what would most reduce uncertainty per unit of effort. Each carries
+what it would resolve, and — importantly — what a negative result would mean, because a
+recommendation that cannot fail is not a test.</p>
+<hr />
+<h2 id="301-the-decisive-question-and-it-is-cheap">30.1 The decisive question, and it is cheap</h2>
+<div class="ev k-open"><div class="ev-label">Open Question</div><div class="ev-body"><p><strong>Was Orange County ever within the California cattle tick quarantine and eradication area?</strong></p>
+<p>This is the first link in the hypothesis chain. If the answer is no, the entire arsenical-dipping
+hypothesis closes, and this investigation will have produced a clean negative result rather than
+an open question.</p>
+<p>It should be answerable from documents, at low cost, without anyone touching soil.</p></div></div>
+
+<p><strong>Where to look, in order:</strong></p>
+<ol>
+<li><strong>USDA Bureau of Animal Industry annual reports.</strong> Published annually through the eradication
+   era, they enumerate quarantine areas by state and county and record acreage released from
+   quarantine. Full-text searchable on the Internet Archive, HathiTrust, and Google Books.</li>
+<li><strong>California State Veterinarian biennial reports</strong> and California State Board of Agriculture
+   reports. Same period, state-level detail.</li>
+<li><strong>California Department of Agriculture monthly bulletins.</strong></li>
+<li><strong>National Archives Record Group 17</strong> (Bureau of Animal Industry) field records. Mostly not
+   digitised; reproduction request required.</li>
+<li><strong>Legal notices in period newspapers.</strong> Quarantine proclamations and dipping orders were
+   published as legal notices. The California Digital Newspaper Collection at UC Riverside is
+   free and full-text searchable, as is Chronicling America.</li>
+</ol>
+<p><strong>What a negative result means:</strong> if the programme demonstrably did not extend to Orange County,
+the hypothesis is closed and should be publicly retired. That is a real and valuable outcome, and
+this project commits to publishing it as prominently as a positive one.</p>
+<h2 id="302-rancho-mission-viejos-own-records">30.2 Rancho Mission Viejo's own records</h2>
+<p>The ranch operated continuously across the relevant period. Dipping was a mandated activity that
+generated paperwork: inspection records, chemical purchases, correspondence with state
+authorities, and operational maps.</p>
+<p>This is now the <strong>highest-value archival lead</strong> in the investigation, because the imagery avenue
+is close to exhausted and the ranch's internal record is the one place a facility would
+necessarily have been documented if it existed.</p>
+<p>It is a private corporate archive with no public access route. It requires a direct approach.</p>
+<h2 id="303-general-land-office-survey-field-notes">30.3 General Land Office survey field notes</h2>
+<div class="ev k-lead"><div class="ev-label">Investigative Lead</div><div class="ev-body"><p><strong>The highest-value untapped cartographic source identified by this investigation.</strong></p>
+<p>Surveyors recorded, in their field notes, features that never reached the published plat:
+springs, corrals, houses, fences, roads, and "improvements" encountered on the section lines
+they walked. The published plat is a summary; the notes are the observation.</p>
+<p>Free and available at the BLM GLO Records site for the townships covering this land.</p></div></div>
+
+<p>Because Ladera Ranch sits on unsectioned land-grant land, the relevant notes may be those of the
+surrounding townships and the grant boundary survey rather than interior section lines. That
+narrows the search but does not close it.</p>
+<h2 id="304-regional-archival-collections">30.4 Regional archival collections</h2>
+<p>None of these has been exhausted, and several have not been searched at all.</p>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>Holding</th>
+<th>Relevance</th>
+<th>Access</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Sherman Library &amp; Gardens</strong>, Corona del Mar</td>
+<td>Major Southern California ranch history collection</td>
+<td>In-person appointment</td>
+</tr>
+<tr>
+<td><strong>First American Title</strong> historical photograph archive</td>
+<td>Extensive Orange County imagery</td>
+<td>In-person / reproduction</td>
+</tr>
+<tr>
+<td><strong>Orange County Archives</strong></td>
+<td>Original plats, assessor records, county correspondence</td>
+<td>In-person</td>
+</tr>
+<tr>
+<td><strong>UC Irvine Special Collections</strong></td>
+<td>Orange County history</td>
+<td>Finding aids online</td>
+</tr>
+<tr>
+<td><strong>Huntington Library</strong></td>
+<td>Southern California ranch and land-grant materials</td>
+<td>Reader registration</td>
+</tr>
+<tr>
+<td><strong>Mission San Juan Capistrano</strong> archives</td>
+<td>Mission-period and early rancho land records</td>
+<td>Request</td>
+</tr>
+<tr>
+<td><strong>Bancroft Library</strong>, UC Berkeley</td>
+<td>Spanish and Mexican land grant records</td>
+<td>Reader registration</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Photograph collections deserve particular emphasis.</strong> A single photograph of ranch cattle
+operations showing a vat, corral, or chute would materially change the evidentiary picture — in
+either direction. Ranch photography from this period exists; it has not been systematically
+searched.</p>
+<h2 id="305-oral-history-and-why-it-is-time-limited">30.5 Oral history — and why it is time-limited</h2>
+<div class="ev k-lead"><div class="ev-label">Investigative Lead</div><div class="ev-body"><p>Ranch hands, foremen, veterinarians, and family members who could describe mid-century
+operations directly are now very elderly or deceased. <strong>Every other line of inquiry in this
+document will still be available in ten years. This one will not.</strong></p></div></div>
+
+<p>If oral history is attempted, the questions should be open rather than leading. Asking "was
+there a dipping vat?" invites confabulation, particularly from people trying to be helpful about
+a subject they know matters. Asking "where did you work the cattle, and what was there?"
+produces testimony rather than agreement. Any account obtained should be recorded as
+<strong>unverified testimony</strong> and corroborated before it carries weight.</p>
+<h2 id="306-environmental-review-documents">30.6 Environmental review documents</h2>
+<p>Obtain and read in full, rather than inferring their contents from their absence online:</p>
+<ul>
+<li>The certified EIR for the Ladera Ranch planned community, including technical appendices</li>
+<li>The Rancho Mission Viejo Ranch Plan EIR</li>
+<li>Any Phase I and Phase II Environmental Site Assessments</li>
+<li>Grading plans with cut-and-fill volumes and soil import sources</li>
+</ul>
+<p><strong>The specific audit question is narrower than "was the site studied."</strong> It is:</p>
+<ol>
+<li>How far back did the Phase I historical review actually go? Standard practice reviews aerial
+   photography at roughly ten-year intervals — but from what starting date?</li>
+<li>Was sampling ever <strong>targeted at point-source locations</strong>, as opposed to gridded at field
+   scale for broad agricultural residue? These are different investigations that sound identical
+   in summary.</li>
+<li>Do the review materials contain the terms "dipping", "vat", or "cattle dip" anywhere?</li>
+</ol>
+<div class="ev k-limit"><div class="ev-label">Limitation</div><div class="ev-body"><p><strong>Wording discipline on this point is mandatory.</strong> Until these documents are obtained and read,
+the correct statement is <em>"the searchable materials examined in this investigation do not appear
+to identify…"</em> — never <em>"they never studied…"</em>. A document sitting in a county file cabinet is
+invisible to this project and must not be declared nonexistent by it.</p></div></div>
+
+<h2 id="307-physical-investigation-if-the-archival-work-supports-it">30.7 Physical investigation, if the archival work supports it</h2>
+<p><strong>Geophysics first.</strong> Ground-penetrating radar or electromagnetic survey at the Trabuco ranch
+node and a prioritised subset of the 41 mapped water bodies. This detects buried concrete and
+disturbed fill directly, is non-destructive, and is far cheaper than sampling at the same
+spatial density.</p>
+<p><strong>Then targeted soil sampling, with the right analytes.</strong></p>
+<p>The single most important methodological point in this entire document:</p>
+<div class="ev k-lead"><div class="ev-label">Investigative Lead</div><div class="ev-body"><p><strong>Test arsenic and lead together, and establish local background first.</strong></p>
+<ul>
+<li><strong>Orchard lead arsenate</strong> produces elevated lead <em>and</em> arsenic in roughly compound proportion,
+  across a <strong>broad area</strong> — because it was sprayed across whole fields.</li>
+<li><strong>A cattle dipping vat</strong> produces sharply elevated arsenic in a <strong>very small area</strong>, <em>without</em>
+  proportionate lead.</li>
+</ul>
+<p>These signatures are distinguishable. Testing arsenic alone cannot separate them, and would
+produce a result that supports either explanation equally — which is to say, no result at all.</p>
+<p>Without a local background determination, no measurement can be interpreted, because California
+soils carry naturally occurring arsenic and the background is the comparison every finding
+depends on.</p></div></div>
+
+<p><strong>A sampling grid designed for field-scale agricultural residue will not find a dip vat.</strong> A vat
+footprint is perhaps twenty metres across. A grid sized to characterise a field can pass directly
+over it and register nothing. If sampling is undertaken, it must be <strong>targeted at candidate
+point-source locations</strong> — which is precisely what the sampling frame produced by this
+investigation provides.</p>
+<h2 id="308-the-pathway-that-deserves-more-attention-than-it-has-received">30.8 The pathway that deserves more attention than it has received</h2>
+<div class="ev k-lead"><div class="ev-label">Investigative Lead</div><div class="ev-body"><p><strong>Obtain well-integrity and plugging records, and any soil-gas or methane monitoring data, for
+the two plugged exploratory wells within approximately one mile of the community centroid.</strong></p>
+<p>This is the only pathway examined in this investigation with a published epidemiological
+association with Ewing sarcoma specifically — suggestive and statistically non-significant, but
+more direct than anything supporting the hypothesis that prompted the work.</p>
+<p>It has received a fraction of the analytical effort. That imbalance reflects where the project
+started, not where the evidence points.</p></div></div>
+
+<h2 id="309-what-this-project-will-not-do">30.9 What this project will not do</h2>
+<p>Stated so the boundaries are explicit and testable by anyone reading:</p>
+<ul>
+<li>It will not collect, request, or store individual health information.</li>
+<li>It will not identify or attempt to infer individual cases.</li>
+<li>It will not enter private property or sample soil without the owner's consent and appropriate
+  professional oversight.</li>
+<li>It will not present any finding as establishing causation.</li>
+<li>It will not retire a hypothesis quietly. If the dipping hypothesis is closed by evidence, that
+  will be published as prominently as any positive finding.</li>
+</ul>
+  </div>
+</section>
+<section class="chapter" id="limitations">
+  <div class="wrap">
+    <div class="chapter-num">Chapter 31</div>
+    <h1>Limitations</h1>
+    <p>A limitations section that lists only minor caveats is a marketing document. This one is
+intended to be usable by someone trying to determine how much weight this publication can bear.</p>
+<p>Several of the limitations below are severe enough that they should change how a reader reads
+everything preceding them.</p>
+<hr />
+<h2 id="311-structural-limitations-these-do-not-improve-with-more-work">31.1 Structural limitations — these do not improve with more work</h2>
+<p><strong>This is not an epidemiological study.</strong> No individual health data were collected, requested,
+or analysed. Whether the reported cases constitute a statistical excess is not determined here,
+and no analysis in this publication is capable of determining it. Any reader looking for that
+answer will not find it here, and should not infer it from anything that is here.</p>
+<p><strong>Spatial coincidence is not exposure.</strong> Every geographic finding establishes proximity and
+nothing else. It does not establish that a substance was present, that it persisted, that anyone
+contacted it, or in what quantity. The chain from <em>proximity</em> to <em>exposure</em> to <em>dose</em> to <em>harm</em>
+has three unbridged links, and this publication crosses none of them.</p>
+<p><strong>Ecological inference cannot transfer to individuals.</strong> Community-scale patterns say nothing
+about any individual. This is a permanent property of the data, not a temporary gap.</p>
+<p><strong>Absence of online records is not absence of records.</strong> This investigation is conducted almost
+entirely from publicly reachable sources. Documents held in county file cabinets, private
+corporate archives, or un-digitised collections are invisible to it. <strong>Every statement in this
+publication about what "does not appear" in the record is a statement about what this
+investigation could reach, not about what exists.</strong></p>
+<h2 id="312-evidentiary-limitations">31.2 Evidentiary limitations</h2>
+<p><strong>The imagery post-dates the period of interest.</strong> The earliest photography is 1929; compulsory
+dipping ran to about 1917. Twelve years is a substantial improvement on the thirty-one this
+project previously believed, but it does not close the gap. A facility decommissioned and
+backfilled in 1917 could be entirely invisible by 1929. The negative imagery finding is therefore
+<strong>bounded</strong>: it is meaningful evidence against a <em>surviving surface facility</em>, and no evidence at
+all about a <em>demolished</em> one.</p>
+<p><strong>The central premise is unverified.</strong> Whether California's tick eradication programme applied to
+Orange County at all has not been confirmed against primary sources. Two claims in the evidence
+matrix (EM-011, EM-014) are explicitly flagged <strong>PENDING VERIFICATION</strong> for this reason. A
+reader should treat the entire dipping hypothesis as resting on an unconfirmed foundation until
+that flag is cleared.</p>
+<p><strong>No soil measurement exists for the residential footprint.</strong> Every statement about arsenic in
+this study area derives from sampling at <em>school sites</em>, which are different parcels with
+different histories. Nothing in this publication reports a measurement from Ladera Ranch soil,
+because none was located.</p>
+<p><strong>Named ranch facilities remain unlocated.</strong> Headquarters, cow camps, line camps, and named
+corrals are referenced in the historical record but none has been located with coordinates by
+this investigation. Whether any stood within the study footprint — as opposed to elsewhere on a
+ranch covering well over a hundred thousand acres — is unresolved.</p>
+<h2 id="313-data-quality-limitations">31.3 Data quality limitations</h2>
+<p><strong>Pesticide use reporting cannot resolve to this community.</strong> 94.6% of 79,473 Orange County
+records could not be located more precisely than a large grid cell. Within landscape maintenance
+specifically, <strong>22 of 15,383 records (0.1%)</strong> carried usable coordinates. The landscape-pesticide
+pathway is not weakly supported — it is <strong>unmeasurable</strong> with the available instrument, which is
+a different and more honest statement.</p>
+<p><strong>Building footprints are community-mapped.</strong> OpenStreetMap completeness is not guaranteed
+uniform. For the water-proximity analysis this biases measured distances <em>upward</em>, making that
+result conservative — but the same caveat would not necessarily be favourable for a different
+analysis.</p>
+<p><strong>The water layer is derived, not digitised from survey data.</strong> It was extracted by colour
+threshold from a scanned printed sheet. It inherits cartographic generalisation and scan
+artefacts. Positions are centroids, not outlines. Features under 350 m² were excluded by design
+and are absent regardless of whether they existed.</p>
+<p><strong>Study zones are approximate.</strong> Zone A is a bounding box, not a cadastral boundary. Any analysis
+sensitive to its exact edges should not use it.</p>
+<h2 id="314-methodological-failures-recorded">31.4 Methodological failures recorded</h2>
+<p>Recorded because a limitations section that omits the methods that failed is not complete.</p>
+<p><strong>Automated water detection failed and was abandoned.</strong> A detector keyed on brightness and
+texture returned roughly 100 candidates inside Zone A and was found to be detecting hillslope
+shadow. None of its output appears in this publication.</p>
+<p><strong>Automated structure detection was 4% accurate.</strong> A blob detector on the 1948 sheet returned 25
+candidates; 24 were map-label letters, section-line dots, and a benchmark mark. Only visual
+verification prevented them from being published as findings.</p>
+<p><strong>A terrain analysis was invalidated by its own subject.</strong> Buildings sit at median 1.7° slope
+against 6.7° for available land — a striking figure that cannot be used, because mass grading
+manufactured the flatness being measured.</p>
+<p><strong>A derived drainage network was too sparse to use.</strong> The flow-accumulation threshold was set too
+conservatively, producing a channel network inconsistent with the visible drainage pattern. The
+valley-bottom enrichment figure computed from it is not reported anywhere as a finding.</p>
+<h2 id="315-limitations-of-the-author-and-method">31.5 Limitations of the author and method</h2>
+<p><strong>No formal training.</strong> This investigation was conducted by a community member without training
+in epidemiology, toxicology, geology, or archival research, using AI tools to organise and
+analyse public records. Domain experts will find things here that a specialist would have caught
+sooner, framed better, or avoided entirely.</p>
+<p><strong>AI-assisted analysis carries characteristic failure modes.</strong> These include fluent presentation
+of uncertain conclusions, plausible-sounding detail that is not grounded in a source, and
+confident restatement of an earlier error. The project's countermeasures — mandatory
+counter-evidence on every claim, a published dead-end log, source grading with no silent
+promotion, and open corrections — are mitigations, not guarantees. <strong>Readers should verify claims
+that matter to them against the cited sources rather than relying on this document.</strong></p>
+<p><strong>Confirmation bias is the standing risk.</strong> This investigation began with a hypothesis. Two
+significant results have already cut against it: the corrected imagery premise, and the failed
+water-proximity hypothesis. Both were retained. That is the intended behaviour, and it is not
+evidence that the bias has been eliminated — only that it was caught twice.</p>
+<h2 id="316-what-would-change-the-conclusions">31.6 What would change the conclusions</h2>
+<p>Stated so the publication is falsifiable rather than merely cautious:</p>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>Finding</th>
+<th>Effect</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Documentation that Orange County was outside the tick quarantine area</td>
+<td><strong>Closes the hypothesis entirely</strong></td>
+</tr>
+<tr>
+<td>A period document, photograph, or account placing a vat on this ranch</td>
+<td>Converts the central lead into a finding</td>
+</tr>
+<tr>
+<td>Soil arsenic sharply elevated in a small area <strong>without</strong> proportionate lead</td>
+<td>Strong support for a point source</td>
+</tr>
+<tr>
+<td>Soil arsenic elevated broadly <strong>with</strong> proportionate lead</td>
+<td>Points to orchard lead arsenate, not dipping</td>
+</tr>
+<tr>
+<td>Geophysics finding buried concrete at the Trabuco node</td>
+<td>Materially raises priority for sampling</td>
+</tr>
+<tr>
+<td>A Phase I ESA showing the historical review reached the 1920s and found nothing</td>
+<td>Substantially reduces the open question</td>
+</tr>
+<tr>
+<td>Local background arsenic at or above measured concentrations</td>
+<td>Removes the anthropogenic inference</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="317-the-honest-summary">31.7 The honest summary</h2>
+<p>This publication reconstructs what the reachable public record shows about the history of this
+land, and identifies where that record has gaps.</p>
+<p>It does not establish that anything harmful is present in Ladera Ranch soil. It does not
+establish that anyone was exposed to anything. It does not explain the reported cases, and it
+does not attempt to.</p>
+<p>Its most defensible product is a <strong>map of a specific uncertainty</strong> — a bounded set of locations
+and a set of documentary questions, each with a method attached and a defined outcome in both
+directions.</p>
+<p>That is less than the investigation set out to find. It is what the evidence supports.</p>
+  </div>
+</section>
+<section class="chapter" id="evidence-matrix">
+  <div class="wrap">
+    <div class="chapter-num">Evidence</div>
+    <h1>Evidence Matrix</h1>
+    <p>Every substantive claim in this investigation, with its classification, confidence,
+    supporting sources, and — mandatorily — its limiting or contradictory evidence. Select a
+    claim to expand it. The counter-evidence field is never left blank: where a claim has no
+    meaningful counter-evidence, that is stated explicitly.</p>
+    
+<div class="mx-tools">
+  <input id="mx-q" type="search" placeholder="Search claims, evidence, citations&hellip;" aria-label="Search evidence matrix">
+  <select id="mx-f" aria-label="Filter by classification"><option value="">All classifications</option><option value="ESTABLISHED FACT">Established Fact</option><option value="HISTORICAL CONTEXT">Historical Context</option><option value="OPEN QUESTION">Open Question</option></select>
+</div>
+<p class="cap-m" id="mx-count" style="font-family:var(--sans);font-size:12.5px;color:var(--ink-faint)"></p>
+<div id="mx-list">
+<div class="mx-card" data-cls="ESTABLISHED FACT">
+  <div class="mx-head">
+    <span class="mx-id">EM-001</span>
+    <span class="mx-claim">Ladera Ranch sits on land that was part of the Rancho Mission Viejo cattle operation prior to development</span>
+    <span class="mx-tag" style="background:var(--fact)">ESTABLISHED</span>
+  </div>
+  <div class="mx-body"><dl>
+    <dt>Classification</dt><dd>ESTABLISHED FACT &middot; confidence High</dd>
+    <dt>Supporting evidence</dt><dd>USGS 7.5&#x27; quadrangles 1948-1968 label the area MISSION VIEJO OR LA PAZ; OC Survey aerials 1929-1946 show open rangeland with stock trails and grazing patterns</dd>
+    <dt>Limiting or contradictory evidence</dt><dd>None identified</dd>
+    <dt>Citation</dt><dd>USGS San Juan Capistrano 7.5&#x27; quadrangle, 1948 and 1968 editions; OC Survey Historic_Imagery_v2 frames OID 346/310/293</dd>
+    <dt>Status</dt><dd>Verified &middot; added 2026-07-18</dd>
+  </dl></div>
+</div>
+<div class="mx-card" data-cls="ESTABLISHED FACT">
+  <div class="mx-head">
+    <span class="mx-id">EM-002</span>
+    <span class="mx-claim">The Ladera Ranch footprint was undeveloped open rangeland in every available pre-1950 aerial photograph</span>
+    <span class="mx-tag" style="background:var(--fact)">ESTABLISHED</span>
+  </div>
+  <div class="mx-body"><dl>
+    <dt>Classification</dt><dd>ESTABLISHED FACT &middot; confidence High</dd>
+    <dt>Supporting evidence</dt><dd>Six pre-1950 frames examined (1929/1931/1937-38/1938/1946-47); systematic 4x3 tile survey of Zone A at full resolution; no structures resolvable inside Zone A except one node on Trabuco Creek</dd>
+    <dt>Limiting or contradictory evidence</dt><dd>1946-47 frame has a coverage gap over the NW quarter of the footprint</dd>
+    <dt>Citation</dt><dd>OC Survey Historic_Imagery_v2, frames OID 346/351/310/340/286/293; research/historical_imagery/README.md</dd>
+    <dt>Status</dt><dd>Verified &middot; added 2026-07-18</dd>
+  </dl></div>
+</div>
+<div class="mx-card" data-cls="ESTABLISHED FACT">
+  <div class="mx-head">
+    <span class="mx-id">EM-003</span>
+    <span class="mx-claim">No cattle dip vat or corral complex has been identified anywhere inside the Ladera Ranch footprint</span>
+    <span class="mx-tag" style="background:var(--fact)">ESTABLISHED</span>
+  </div>
+  <div class="mx-body"><dl>
+    <dt>Classification</dt><dd>ESTABLISHED FACT &middot; confidence Medium</dd>
+    <dt>Supporting evidence</dt><dd>Systematic tile survey of Zone A on the 1937-38 frame at 1.15 ft/px, a resolution at which a corral would be unmistakable; also examined 1929, 1946-47, 1948/1968/1974 topographic and orthophoto sheets</dd>
+    <dt>Limiting or contradictory evidence</dt><dd>Absence of evidence is not evidence of absence. Dipping ran 1907-1917; earliest imagery is 1929, a 12-year gap. A vat backfilled at programme end would already be gone from the surface. Vats were also essentially never mapped by USGS convention.</dd>
+    <dt>Citation</dt><dd>research/historical_imagery/README.md sections 3 and 5</dd>
+    <dt>Status</dt><dd>Verified &middot; added 2026-07-18</dd>
+  </dl></div>
+</div>
+<div class="mx-card" data-cls="ESTABLISHED FACT">
+  <div class="mx-head">
+    <span class="mx-id">EM-004</span>
+    <span class="mx-claim">Orange County publishes scanned aerial photography of the study area back to 1929</span>
+    <span class="mx-tag" style="background:var(--fact)">ESTABLISHED</span>
+  </div>
+  <div class="mx-body"><dl>
+    <dt>Classification</dt><dd>ESTABLISHED FACT &middot; confidence High</dd>
+    <dt>Supporting evidence</dt><dd>Raster catalog query returned 36 frames intersecting the footprint spanning 1929-1997; six pre-date 1950; frames retrieved and georeferencing verified against modern landmarks</dd>
+    <dt>Limiting or contradictory evidence</dt><dd>None</dd>
+    <dt>Citation</dt><dd>https://ocgis.com/arcpub/rest/services/Historic_Imagery/Historic_Imagery_v2/ImageServer</dd>
+    <dt>Status</dt><dd>Verified &middot; added 2026-07-18</dd>
+  </dl></div>
+</div>
+<div class="mx-card" data-cls="ESTABLISHED FACT">
+  <div class="mx-head">
+    <span class="mx-id">EM-005</span>
+    <span class="mx-claim">The 1968 USGS field survey mapped 41 surface-water bodies of 350 sq m or larger within the study footprint, 16 of them inside Zone A</span>
+    <span class="mx-tag" style="background:var(--fact)">ESTABLISHED</span>
+  </div>
+  <div class="mx-body"><dl>
+    <dt>Classification</dt><dd>ESTABLISHED FACT &middot; confidence High</dd>
+    <dt>Supporting evidence</dt><dd>Cyan hydrography ink extracted from the georeferenced 1968 sheet by colour threshold; 41 features passed area and elongation filters</dd>
+    <dt>Limiting or contradictory evidence</dt><dd>Derived by colour thresholding, so inherits cartographic generalisation and scan artefacts; positions are centroids not digitised outlines; features under 350 sq m excluded by design</dd>
+    <dt>Citation</dt><dd>USGS San Juan Capistrano 7.5&#x27; quadrangle, 1968 edition; pipelines/python/extract_topo_water.py</dd>
+    <dt>Status</dt><dd>Verified &middot; added 2026-07-18</dd>
+  </dl></div>
+</div>
+<div class="mx-card" data-cls="ESTABLISHED FACT">
+  <div class="mx-head">
+    <span class="mx-id">EM-006</span>
+    <span class="mx-claim">Every one of the 41 ranch-era water bodies now has a modern building within 500 metres; median distance to the nearest building is 66 metres</span>
+    <span class="mx-tag" style="background:var(--fact)">ESTABLISHED</span>
+  </div>
+  <div class="mx-body"><dl>
+    <dt>Classification</dt><dd>ESTABLISHED FACT &middot; confidence High</dd>
+    <dt>Supporting evidence</dt><dd>Measured against 10618 OSM building footprints; 24/41 within 100 m, 34/41 within 200 m, 40/41 within 300 m, 41/41 within 500 m</dd>
+    <dt>Limiting or contradictory evidence</dt><dd>OSM completeness is not guaranteed uniform, though under-mapping would bias distances upward not downward, so the finding is conservative</dd>
+    <dt>Citation</dt><dd>pipelines/python/premise_homes_on_water.py; research/historical_imagery/premise_homes_on_water.json</dd>
+    <dt>Status</dt><dd>Verified &middot; added 2026-07-18</dd>
+  </dl></div>
+</div>
+<div class="mx-card" data-cls="ESTABLISHED FACT">
+  <div class="mx-head">
+    <span class="mx-id">EM-007</span>
+    <span class="mx-claim">Modern housing was NOT preferentially sited on the ranch-era water bodies</span>
+    <span class="mx-tag" style="background:var(--fact)">ESTABLISHED</span>
+  </div>
+  <div class="mx-body"><dl>
+    <dt>Classification</dt><dd>ESTABLISHED FACT &middot; confidence High</dd>
+    <dt>Supporting evidence</dt><dd>Zone-A-restricted null: water sites average 9.0 buildings within 100 m vs 9.3 for 6000 random points in the same area. Enrichment 0.97x, permutation p = 0.51</dd>
+    <dt>Limiting or contradictory evidence</dt><dd>A bbox-wide null gave 0.79x, inflated by dense Mission Viejo inside the extent; the Zone-A-restricted null is the fair comparison and is reported as primary</dd>
+    <dt>Citation</dt><dd>research/historical_imagery/premise_null_zonea.json</dd>
+    <dt>Status</dt><dd>Verified &middot; added 2026-07-18</dd>
+  </dl></div>
+</div>
+<div class="mx-card" data-cls="ESTABLISHED FACT">
+  <div class="mx-head">
+    <span class="mx-id">EM-008</span>
+    <span class="mx-claim">Modern slope beneath buildings cannot be used to infer original landform siting</span>
+    <span class="mx-tag" style="background:var(--fact)">ESTABLISHED</span>
+  </div>
+  <div class="mx-body"><dl>
+    <dt>Classification</dt><dd>ESTABLISHED FACT &middot; confidence High</dd>
+    <dt>Supporting evidence</dt><dd>Buildings sit at median 1.7 degrees vs 6.7 degrees for available land, but Ladera Ranch was mass-graded, so pad flatness was manufactured by the grading under investigation. The comparison is circular.</dd>
+    <dt>Limiting or contradictory evidence</dt><dd>None - this is a methodological exclusion, deliberately recorded so the figure is not later mistaken for a finding</dd>
+    <dt>Citation</dt><dd>research/historical_imagery/README.md section 6; USGS 3DEP DEM</dd>
+    <dt>Status</dt><dd>Verified &middot; added 2026-07-18</dd>
+  </dl></div>
+</div>
+<div class="mx-card" data-cls="ESTABLISHED FACT">
+  <div class="mx-head">
+    <span class="mx-id">EM-009</span>
+    <span class="mx-claim">A single structure existed at 33.55505 -117.65492 on Trabuco Creek in the pre-development period</span>
+    <span class="mx-tag" style="background:var(--fact)">ESTABLISHED</span>
+  </div>
+  <div class="mx-body"><dl>
+    <dt>Classification</dt><dd>ESTABLISHED FACT &middot; confidence Medium</dd>
+    <dt>Supporting evidence</dt><dd>Visible on the 1948 USGS sheet at a trail convergence on the valley floor at elevation 307, adjacent to water; setting is consistent with a ranch working area</dd>
+    <dt>Limiting or contradictory evidence</dt><dd>The map does not label it. A single building is equally consistent with a line camp, barn, or ranch house. It is NOT identified as a dip site.</dd>
+    <dt>Citation</dt><dd>USGS San Juan Capistrano 7.5&#x27; quadrangle 1948 edition; research/historical_imagery/07_zoom_1948_ranch_structure_elev307.jpg</dd>
+    <dt>Status</dt><dd>Verified &middot; added 2026-07-18</dd>
+  </dl></div>
+</div>
+<div class="mx-card" data-cls="ESTABLISHED FACT">
+  <div class="mx-head">
+    <span class="mx-id">EM-010</span>
+    <span class="mx-claim">The watercourse containing the 1948 ranch structure is Trabuco Creek, not Canada Chiquita</span>
+    <span class="mx-tag" style="background:var(--fact)">ESTABLISHED</span>
+  </div>
+  <div class="mx-body"><dl>
+    <dt>Classification</dt><dd>ESTABLISHED FACT &middot; confidence High</dd>
+    <dt>Supporting evidence</dt><dd>The 1937-38 OC Survey aerial carries the county cartographer&#x27;s own red ink label across the corridor, legible at 1.15 ft/px</dd>
+    <dt>Limiting or contradictory evidence</dt><dd>Earlier project documentation misidentified it as Canada Chiquita; corrected and logged as C-002</dd>
+    <dt>Citation</dt><dd>OC Survey Historic_Imagery_v2 frame OID 310; research/CORRECTIONS.md C-002</dd>
+    <dt>Status</dt><dd>Verified &middot; added 2026-07-18</dd>
+  </dl></div>
+</div>
+<div class="mx-card" data-cls="HISTORICAL CONTEXT">
+  <div class="mx-head">
+    <span class="mx-id">EM-011</span>
+    <span class="mx-claim">California operated a compulsory cattle tick eradication programme involving arsenical dipping</span>
+    <span class="mx-tag" style="background:var(--context)">HISTORICAL</span>
+  </div>
+  <div class="mx-body"><dl>
+    <dt>Classification</dt><dd>HISTORICAL CONTEXT &middot; confidence Medium</dd>
+    <dt>Supporting evidence</dt><dd>Prior project research recorded the programme as running 1907-1917 with compulsory dipping</dd>
+    <dt>Limiting or contradictory evidence</dt><dd>NOT YET INDEPENDENTLY VERIFIED IN THIS INVESTIGATION against USDA Bureau of Animal Industry or California State Veterinarian primary sources. Statutory dates, geographic scope, and whether Orange County was included are all OPEN. Under active research.</dd>
+    <dt>Citation</dt><dd>research/soil/arsenic_historical_use.md - requires primary-source verification</dd>
+    <dt>Status</dt><dd>PENDING VERIFICATION &middot; added 2026-07-18</dd>
+  </dl></div>
+</div>
+<div class="mx-card" data-cls="OPEN QUESTION">
+  <div class="mx-head">
+    <span class="mx-id">EM-012</span>
+    <span class="mx-claim">Arsenical cattle dipping actually occurred within the Ladera Ranch footprint</span>
+    <span class="mx-tag" style="background:var(--open)">OPEN</span>
+  </div>
+  <div class="mx-body"><dl>
+    <dt>Classification</dt><dd>OPEN QUESTION &middot; confidence None</dd>
+    <dt>Supporting evidence</dt><dd>No direct evidence. Terrain logic places working facilities near water and trail convergences, and one such node exists.</dd>
+    <dt>Limiting or contradictory evidence</dt><dd>No vat found on adequate imagery. No documentary record located. No soil sampling has tested for it in the residential footprint. This is an UNPROVEN HYPOTHESIS and must not be presented as more.</dd>
+    <dt>Citation</dt><dd>No supporting citation exists - this is the central open question of the investigation</dd>
+    <dt>Status</dt><dd>OPEN &middot; added 2026-07-18</dd>
+  </dl></div>
+</div>
+<div class="mx-card" data-cls="ESTABLISHED FACT">
+  <div class="mx-head">
+    <span class="mx-id">EM-013</span>
+    <span class="mx-claim">DTSC found arsenic in soil at several school sites on former agricultural land near Ladera Ranch</span>
+    <span class="mx-tag" style="background:var(--fact)">ESTABLISHED</span>
+  </div>
+  <div class="mx-body"><dl>
+    <dt>Classification</dt><dd>ESTABLISHED FACT &middot; confidence High</dd>
+    <dt>Supporting evidence</dt><dd>EnviroStor records for Carl Hankey Elementary, Plant Depot School Site, and San Juan Elementary list arsenic among contaminants found</dd>
+    <dt>Limiting or contradictory evidence</dt><dd>Arsenic occurs naturally in California soils at background levels; presence alone does not establish an anthropogenic source or a link to cattle dipping. Former orchard land also carries lead arsenate residues from a completely different practice.</dd>
+    <dt>Citation</dt><dd>DTSC EnviroStor site records</dd>
+    <dt>Status</dt><dd>Verified &middot; added 2026-07-18</dd>
+  </dl></div>
+</div>
+<div class="mx-card" data-cls="HISTORICAL CONTEXT">
+  <div class="mx-head">
+    <span class="mx-id">EM-014</span>
+    <span class="mx-claim">Residential subdivisions carry no legal duty of soil assessment equivalent to that imposed on school sites</span>
+    <span class="mx-tag" style="background:var(--context)">HISTORICAL</span>
+  </div>
+  <div class="mx-body"><dl>
+    <dt>Classification</dt><dd>HISTORICAL CONTEXT &middot; confidence Medium</dd>
+    <dt>Supporting evidence</dt><dd>California Education Code requires environmental assessment before a school district acquires a site; no equivalent statutory mandate applies to residential subdivision approval</dd>
+    <dt>Limiting or contradictory evidence</dt><dd>The precise statutory citations and any applicable county or CEQA-level requirements have NOT yet been verified in this investigation. Under active research.</dd>
+    <dt>Citation</dt><dd>Requires primary verification - CA Education Code sections pending</dd>
+    <dt>Status</dt><dd>PENDING VERIFICATION &middot; added 2026-07-18</dd>
+  </dl></div>
+</div></div>
+
+  </div>
+</section>
+
+<footer>
+  <p><strong>Ladera Historical Environmental Investigation</strong> &mdash; Version 1.0.
+  An independent, hypothesis-neutral research project. Sources are graded A1&ndash;D; a lower
+  grade is never silently promoted. Corrections are issued openly and retained in the version
+  history rather than quietly revised.</p>
+  <p>No patient locations, residential addresses, or identifying details of any child or family
+  appear anywhere in this publication, by permanent policy of the project.</p>
+</footer>
+</main>
+</div>
+
+<div id="lb" role="dialog" aria-modal="true" aria-label="Enlarged image">
+  <button class="x" aria-label="Close">&times;</button><img alt="">
+</div>
+<script>
+// Lightbox: any figure image opens full-size.
+var lb=document.getElementById('lb'), lbi=lb.querySelector('img');
+document.addEventListener('click',function(e){
+  var t=e.target;
+  if(t.tagName==='IMG'&&t.closest('figure')){ lbi.src=t.currentSrc||t.src; lb.classList.add('on'); }
+  else if(t.closest('#lb')){ lb.classList.remove('on'); }
+});
+document.addEventListener('keydown',function(e){ if(e.key==='Escape') lb.classList.remove('on'); });
+
+// Mobile drawer.
+var toc=document.getElementById('toc'), mb=document.querySelector('.menu-btn');
+if(mb) mb.addEventListener('click',function(){ toc.classList.toggle('open'); });
+toc.addEventListener('click',function(e){ if(e.target.tagName==='A'&&innerWidth<=1000) toc.classList.remove('open'); });
+
+// Scroll-spy on chapters.
+var links={}, secs=[].slice.call(document.querySelectorAll('.chapter'));
+[].forEach.call(toc.querySelectorAll('a[href^="#"]'),function(a){ links[a.getAttribute('href').slice(1)]=a; });
+var io=new IntersectionObserver(function(es){
+  es.forEach(function(en){
+    var a=links[en.target.id]; if(!a) return;
+    if(en.isIntersecting){
+      for(var k in links) links[k].classList.remove('active');
+      a.classList.add('active');
+      if(a.scrollIntoView) a.scrollIntoView({block:'nearest'});
+    }
+  });
+},{rootMargin:'-70px 0px -75% 0px'});
+secs.forEach(function(s){ io.observe(s); });
+
+// Evidence matrix: expand + filter.
+var mxWrap=document.getElementById('mx-list');
+if(mxWrap){
+  mxWrap.addEventListener('click',function(e){
+    var h=e.target.closest('.mx-head'); if(h) h.parentNode.classList.toggle('open');
+  });
+  var q=document.getElementById('mx-q'), f=document.getElementById('mx-f');
+  function filt(){
+    var s=(q.value||'').toLowerCase(), c=f.value, n=0;
+    [].forEach.call(mxWrap.querySelectorAll('.mx-card'),function(el){
+      var okc = !c || el.dataset.cls===c;
+      var oks = !s || el.textContent.toLowerCase().indexOf(s)>-1;
+      var show = okc&&oks; el.style.display = show?'':'none'; if(show) n++;
+    });
+    document.getElementById('mx-count').textContent = n+' of '+mxWrap.querySelectorAll('.mx-card').length+' claims';
+  }
+  q.addEventListener('input',filt); f.addEventListener('change',filt); filt();
+}
+
+// Print: expand every matrix card so nothing is hidden in the PDF.
+window.addEventListener('beforeprint',function(){
+  [].forEach.call(document.querySelectorAll('.mx-card'),function(c){ c.classList.add('open'); });
+});
+</script>
+</body>
+</html>

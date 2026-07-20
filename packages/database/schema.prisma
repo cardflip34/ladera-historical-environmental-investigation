@@ -1,0 +1,230 @@
+// LEHRP Prisma schema. PostGIS-ready; the platform also runs file-based (CSV/GeoJSON)
+// without a database. Geometry is stored as GeoJSON text until PostGIS is enabled.
+
+generator client {
+  provider = "prisma-client-js"
+  output   = "../../node_modules/.prisma/client"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+enum ReliabilityGrade {
+  A1
+  A2
+  B1
+  B2
+  C
+  D
+}
+
+enum MedicalVerificationStatus {
+  not_independently_verified
+  registry_confirmed
+  official_confirmed
+}
+
+enum EvidenceClass {
+  documented_exact
+  documented_within_reporting_unit
+  documented_purchase
+  documented_approved_product
+  contractually_permitted
+  current_policy_product
+  historically_likely
+  industry_standard_inference
+  unverified_allegation
+}
+
+model Source {
+  id                String            @id
+  title             String
+  publisher         String?
+  author            String?
+  url               String?
+  publicationDate   DateTime?
+  retrievalDate     DateTime          @default(now())
+  sourceType        String
+  geographicCoverage String?
+  timeCoverage      String?
+  isOfficial        Boolean           @default(false)
+  isPrimary         Boolean           @default(false)
+  isPeerReviewed    Boolean           @default(false)
+  dataFormat        String?
+  localFilePath     String?
+  checksum          String?
+  citationText      String?
+  reliabilityGrade  ReliabilityGrade
+  knownLimitations  String?
+  notes             String?
+
+  healthEvents      PublicHealthEvent[]
+  literature        LiteratureEntry[]
+  products          PesticideProduct[]
+  ingredients       ActiveIngredient[]
+  applications      ApplicationEvent[]
+  applicationAreas  ApplicationArea[]
+  sites             Site[]
+  environmentalSites EnvironmentalSite[]
+  waterSystems      WaterSystem[]
+}
+
+model PublicHealthEvent {
+  id                          String   @id
+  reportedDiagnosis           String
+  isEwingSarcoma              Boolean  @default(false)
+  approximateAge              String?
+  approximateYearOfDiagnosis  String?
+  communityAssociation        String?
+  sourceId                    String
+  source                      Source   @relation(fields: [sourceId], references: [id])
+  sourceWording               String?
+  namesIndividual             Boolean  @default(false)
+  hasCorroboration            Boolean  @default(false)
+  medicalVerificationStatus   MedicalVerificationStatus @default(not_independently_verified)
+  duplicateResolutionStatus   String   @default("unique")
+  notes                       String?
+}
+
+model LiteratureEntry {
+  id                String  @id
+  citation          String
+  doi               String?
+  pmid              String?
+  abstract          String?
+  studyDesign       String?
+  population        String?
+  sampleSize        String?
+  exposure          String?
+  outcome           String?
+  effectEstimate    String?
+  confidenceInterval String?
+  mainFinding       String?
+  limitations       String?
+  funding           String?
+  conflicts         String?
+  relevanceToProject String?
+  evidenceDirection String?
+  sourceId          String?
+  source            Source? @relation(fields: [sourceId], references: [id])
+}
+
+model PesticideProduct {
+  id                    String    @id
+  productName           String
+  manufacturer          String?
+  epaRegistrationNumber String?
+  caRegistrationId      String?
+  formulation           String?
+  registrationStatus    String?
+  firstRegistrationDate DateTime?
+  cancellationDate      DateTime?
+  sourceId              String?
+  source                Source?   @relation(fields: [sourceId], references: [id])
+}
+
+model ActiveIngredient {
+  id                              String  @id
+  commonName                      String
+  casNumber                       String?
+  chemicalClass                   String?
+  soilHalfLife                    String?
+  waterHalfLife                   String?
+  vaporPressure                   String?
+  solubility                      String?
+  koc                             String?
+  driftPotential                  String?
+  runoffPotential                 String?
+  cancerClassification            String?
+  developmentalToxicityClassification String?
+  genotoxicityEvidence            String?
+  endocrineActivityEvidence       String?
+  restrictedMaterialCA            Boolean @default(false)
+  sourceId                        String?
+  source                          Source? @relation(fields: [sourceId], references: [id])
+}
+
+model ApplicationEvent {
+  id                 String        @id
+  date               DateTime?
+  time               String?
+  temporalPrecision  String?
+  productId          String?
+  activeIngredientId String?
+  quantity           Float?
+  unit               String?
+  applicationRate    String?
+  area               String?
+  cropOrSiteType     String?
+  location           String?
+  locationPrecision  String?
+  applicator         String?
+  permitNumber       String?
+  method             String?
+  targetPest         String?
+  weatherNotes       String?
+  evidenceClass      EvidenceClass @default(unverified_allegation)
+  confidenceGrade    ReliabilityGrade?
+  sourceId           String?
+  source             Source?       @relation(fields: [sourceId], references: [id])
+  notes              String?
+}
+
+model ApplicationArea {
+  id                String  @id
+  geometry          String? // GeoJSON text
+  accuracy          String?
+  reportingUnit     String?
+  parcelId          String?
+  siteName          String?
+  siteType          String?
+  bufferAssumptions String?
+  sourceId          String?
+  source            Source? @relation(fields: [sourceId], references: [id])
+}
+
+model Site {
+  id                       String  @id
+  name                     String
+  address                  String?
+  coordinates              String? // "lat,lng" or GeoJSON point text
+  operator                 String?
+  owner                    String?
+  maintenanceResponsibility String?
+  knownVendor              String?
+  knownProduct             String?
+  knownApplication         String?
+  policyDocuments          String?
+  sourceQuality            String?
+  earliestEvidence         String?
+  latestEvidence           String?
+  unknownFields            String?
+  sourceId                 String?
+  source                   Source? @relation(fields: [sourceId], references: [id])
+}
+
+model EnvironmentalSite {
+  id             String  @id
+  name           String
+  siteType       String?
+  status         String?
+  contaminants   String?
+  geometry       String? // GeoJSON text
+  database       String?
+  distanceToZoneA String?
+  sourceId       String?
+  source         Source? @relation(fields: [sourceId], references: [id])
+}
+
+model WaterSystem {
+  id                  String  @id
+  name                String
+  provider            String?
+  source              String?
+  treatmentType       String?
+  serviceAreaGeometry String? // GeoJSON text
+  sourceId            String?
+  sourceRel           Source? @relation(fields: [sourceId], references: [id])
+}

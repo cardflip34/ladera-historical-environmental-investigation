@@ -1,0 +1,125 @@
+{
+ "type": "FeatureCollection",
+ "features": [
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -117.636,
+     33.546
+    ]
+   },
+   "properties": {
+    "api": "0405901005",
+    "name": "Citizens National Trust B-1 / Exxon Mobil",
+    "status": "Plugged, Dry Hole",
+    "distanceMiles": 0.25,
+    "grade": "A1",
+    "sourceId": "SRC-ENV-CALGEM",
+    "layer": "oil_gas_wells",
+    "note": "Plugged/idle exploratory well; relevant to abandoned-well Ewing association"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -117.644,
+     33.536
+    ]
+   },
+   "properties": {
+    "api": "0405901270",
+    "name": "O'Neill #1 / Union Oil",
+    "status": "Plugged, Dry Hole",
+    "distanceMiles": 0.77,
+    "grade": "A1",
+    "sourceId": "SRC-ENV-CALGEM",
+    "layer": "oil_gas_wells",
+    "note": "Plugged/idle exploratory well; relevant to abandoned-well Ewing association"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -117.673,
+     33.618
+    ]
+   },
+   "properties": {
+    "api": "0405901016",
+    "name": "O'Neill Estate B-1 / Exxon Mobil",
+    "status": "Plugged, Dry Hole",
+    "distanceMiles": 5.27,
+    "grade": "A1",
+    "sourceId": "SRC-ENV-CALGEM",
+    "layer": "oil_gas_wells",
+    "note": "Plugged/idle exploratory well; relevant to abandoned-well Ewing association"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -117.692,
+     33.549
+    ]
+   },
+   "properties": {
+    "api": "0405900899",
+    "name": "Shumaker #1 / Conoco",
+    "status": "Plugged, Dry Hole",
+    "distanceMiles": 2.98,
+    "grade": "A1",
+    "sourceId": "SRC-ENV-CALGEM",
+    "layer": "oil_gas_wells",
+    "note": "Plugged/idle exploratory well; relevant to abandoned-well Ewing association"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -117.689,
+     33.501
+    ]
+   },
+   "properties": {
+    "api": "0405901091",
+    "name": "Norswing & Halvorson #1",
+    "status": "Idle, Oil & Gas",
+    "distanceMiles": 4.22,
+    "grade": "A1",
+    "sourceId": "SRC-ENV-CALGEM",
+    "layer": "oil_gas_wells",
+    "note": "Plugged/idle exploratory well; relevant to abandoned-well Ewing association"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -117.72,
+     33.593
+    ]
+   },
+   "properties": {
+    "api": "0405901153",
+    "name": "South Fullerton Oil Co. #1",
+    "status": "Idle, Oil & Gas",
+    "distanceMiles": 5.59,
+    "grade": "A1",
+    "sourceId": "SRC-ENV-CALGEM",
+    "layer": "oil_gas_wells",
+    "note": "Plugged/idle exploratory well; relevant to abandoned-well Ewing association"
+   }
+  }
+ ]
+}

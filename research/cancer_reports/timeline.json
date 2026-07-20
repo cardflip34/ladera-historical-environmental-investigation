@@ -1,0 +1,22 @@
+{
+  "_meta": {
+    "description": "Aggregated year buckets of PUBLICLY REPORTED (not medically verified) health events associated with Ladera Ranch. Counts reflect public reporting only and may be incomplete, duplicated, or misclassified. Do not interpret as true incidence.",
+    "retrievalDate": "2026-07-18",
+    "warning": "Counts based on public reports only. May reflect reporting/ascertainment bias, not true incidence. No individual-level data.",
+    "primaryDiagnosis": "Ewing sarcoma",
+    "reportedRangeStart": 2013,
+    "coreEwingCountLadera": "at least 6 (NBC LA, 2013-2026)",
+    "sourceIdsForCounts": ["SRC-NEWS-001", "SRC-NEWS-002", "SRC-NEWS-007"]
+  },
+  "note_on_year_resolution": "Public sources give an aggregate 'at least 6 Ewing sarcoma since 2013' and 'about a dozen' mixed cancers, but do NOT publish a per-year breakdown. Only two individual events have a datable year in public reporting. Year buckets below are therefore mostly null/unknown by design — fabricating a per-year distribution would violate the no-invention rule.",
+  "buckets": {
+    "2000": null, "2001": null, "2002": null, "2003": null, "2004": null,
+    "2005": null, "2006": null, "2007": null, "2008": null, "2009": null,
+    "2010": null, "2011": null, "2012": null, "2013": null, "2014": null,
+    "2015": null, "2016": null, "2017": null, "2018": null, "2019": null,
+    "2020": null, "2021": null, "2022": null, "2023": null,
+    "2024": {"ewing_sarcoma_dx": 1, "note": "One publicly reported Ewing sarcoma diagnosis (age ~17, Aug 2024) that later progressed to secondary AML and death in Mar 2026", "sourceId": "SRC-NEWS-001"},
+    "2025": null,
+    "2026": {"synovial_sarcoma_reported": 1, "death_reported": 1, "note": "One synovial sarcoma case publicly reported in 2026; the Aug-2024 Ewing case died Mar 2026", "sourceIds": ["SRC-NEWS-002", "SRC-NEWS-001"]}
+  }
+}

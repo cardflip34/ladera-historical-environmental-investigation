@@ -1,0 +1,42 @@
+{
+ "type": "FeatureCollection",
+ "features": [
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -117.66203646088789,
+       33.532207246376814
+      ],
+      [
+       -117.6185635391121,
+       33.532207246376814
+      ],
+      [
+       -117.6185635391121,
+       33.56119275362319
+      ],
+      [
+       -117.66203646088789,
+       33.56119275362319
+      ],
+      [
+       -117.66203646088789,
+       33.532207246376814
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "name": "Zone A \u2014 Ladera Ranch (core)",
+    "zone": "A",
+    "precision": "APPROXIMATE \u2014 screening boundary, not the legal CDP boundary",
+    "source": "Approximate from CDP centroid + area; refine with Census TIGER",
+    "confidence": "Model Estimate"
+   }
+  }
+ ]
+}

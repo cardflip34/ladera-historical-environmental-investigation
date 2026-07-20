@@ -1,0 +1,95 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>LEHRP — Report Map Figure</title>
+<link href="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.css" rel="stylesheet" />
+<script src="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.js"></script>
+<style>
+  html,body{margin:0;padding:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;background:#fff}
+  #wrap{position:relative;width:1280px;height:860px}
+  #map{width:100%;height:100%}
+  #legend{position:absolute;left:16px;bottom:16px;background:rgba(255,255,255,.95);border:1px solid #d8e0ea;
+    border-radius:8px;padding:12px 14px;font-size:13px;color:#1a2b42;box-shadow:0 1px 4px rgba(15,36,64,.15);z-index:5}
+  #legend h4{margin:0 0 8px;font-size:13px;color:#0f2440;letter-spacing:.02em}
+  .row{display:flex;align-items:center;gap:8px;margin:4px 0}
+  .sw{width:14px;height:14px;border-radius:3px;display:inline-block;border:1px solid rgba(0,0,0,.15)}
+  .dot{width:12px;height:12px;border-radius:50%;display:inline-block;border:2px solid #fff;box-shadow:0 0 0 1px rgba(0,0,0,.2)}
+  .note{margin-top:8px;font-size:11px;color:#55647a;max-width:280px;line-height:1.4}
+  #title{position:absolute;left:16px;top:16px;background:rgba(255,255,255,.95);border:1px solid #d8e0ea;
+    border-radius:8px;padding:10px 14px;z-index:5;box-shadow:0 1px 4px rgba(15,36,64,.15)}
+  #title h3{margin:0;font-size:15px;color:#0f2440}
+  #title p{margin:2px 0 0;font-size:11px;color:#55647a}
+</style>
+</head>
+<body>
+<div id="wrap">
+  <div id="map"></div>
+  <div id="title">
+    <h3>Ladera Ranch study area — environmental context</h3>
+    <p>Study zones · School sites with arsenic in soil · EnviroStor cleanup sites · CalGEM oil &amp; gas wells</p>
+  </div>
+  <div id="legend">
+    <h4>Legend</h4>
+    <div class="row"><span class="sw" style="background:rgba(37,99,168,.18);border-color:#2563a8"></span> Zone A — Ladera Ranch (approx.)</div>
+    <div class="row"><span class="sw" style="background:transparent;border:2px dashed #7a4fb0"></span> Zone B — 5-mile exposure ring</div>
+    <div class="row"><span class="dot" style="background:#b06a12"></span> Environmental / cleanup site (EnviroStor)</div>
+    <div class="row"><span class="dot" style="background:#8a1f6b;width:15px;height:15px"></span> <strong>School site — ARSENIC found in soil</strong></div>
+    <div class="row"><span class="dot" style="background:#9aa3b0"></span> School site — other legacy residues</div>
+    <div class="row"><span class="dot" style="background:#9a3030"></span> Oil &amp; gas well — plugged or idle (CalGEM)</div>
+    <div class="row"><span class="dot" style="background:#1b6b3a"></span> Community center reference point</div>
+    <div class="note"><strong>No patient locations or residential addresses are plotted.</strong>
+      Zone boundaries are approximate screening aids. Geographic overlap does not establish
+      exposure or causation.</div>
+  </div>
+</div>
+<script>
+const LAYERS = [
+  {id:'zone_b', file:'/geo/zone_b_buffer.geojson', type:'line',   color:'#7a4fb0'},
+  {id:'zone_a', file:'/geo/zone_a_boundary.geojson', type:'fill', color:'#2563a8'},
+  {id:'env',    file:'/geo/environmental_sites.geojson', type:'circle', color:'#b06a12'},
+  {id:'schools', file:'/geo/school_sites.geojson', type:'school', color:'#8a1f6b'},
+  {id:'wells',  file:'/geo/oil_gas_wells.geojson', type:'circle', color:'#9a3030'},
+  {id:'ref',    file:'/geo/reference_points.geojson', type:'circle', color:'#1b6b3a'},
+];
+const map = new maplibregl.Map({
+  container:'map',
+  style:'https://basemaps.cartocdn.com/gl/positron-gl-style/style.json',
+  center:[-117.6403,33.5467], zoom:10.9, attributionControl:{compact:true}
+});
+map.addControl(new maplibregl.ScaleControl({maxWidth:130, unit:'imperial'}));
+let pending = LAYERS.length;
+map.on('load', async () => {
+  for (const l of LAYERS) {
+    try {
+      const d = await (await fetch(l.file)).json();
+      map.addSource(l.id, {type:'geojson', data:d});
+      if (l.type==='fill') {
+        map.addLayer({id:l.id+'-f', source:l.id, type:'fill', paint:{'fill-color':l.color,'fill-opacity':0.18}});
+        map.addLayer({id:l.id+'-l', source:l.id, type:'line', paint:{'line-color':l.color,'line-width':2.5}});
+      } else if (l.type==='line') {
+        map.addLayer({id:l.id+'-l', source:l.id, type:'line',
+          paint:{'line-color':l.color,'line-width':2.5,'line-dasharray':[3,2]}});
+      } else if (l.type==='school') {
+        map.addLayer({id:l.id+'-c', source:l.id, type:'circle',
+          paint:{'circle-radius':['case',['get','arsenic'],10,7],
+                 'circle-color':['case',['get','arsenic'],'#8a1f6b','#9aa3b0'],
+                 'circle-opacity':.95,'circle-stroke-width':2.5,'circle-stroke-color':'#fff'}});
+        map.addLayer({id:l.id+'-t', source:l.id, type:'symbol',
+          layout:{'text-field':['case',['get','arsenic'],'As',''],
+                  'text-size':10,'text-font':['Open Sans Bold','Arial Unicode MS Bold'],
+                  'text-allow-overlap':true},
+          paint:{'text-color':'#fff'}});
+      } else {
+        map.addLayer({id:l.id+'-c', source:l.id, type:'circle',
+          paint:{'circle-radius':l.id==='ref'?9:7,'circle-color':l.color,'circle-opacity':.9,
+                 'circle-stroke-width':2,'circle-stroke-color':'#fff'}});
+      }
+    } catch(e){}
+    pending--;
+  }
+  map.once('idle', () => { window.__MAP_READY__ = true; document.title = 'MAP_READY'; });
+});
+</script>
+</body>
+</html>

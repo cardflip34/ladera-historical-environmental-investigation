@@ -1,0 +1,20 @@
+{
+ "type": "FeatureCollection",
+ "features": [
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -117.65492,
+     33.55505
+    ]
+   },
+   "properties": {
+    "name": "1948 ranch structure \u2014 valley-bottom trail/water node",
+    "note": "Single building at trail convergence in the Canada Chiquita drainage (~elev 307), ~1.0 mi from the community centroid. Strongest ranch-activity candidate inside the footprint. NOT labelled as a dip vat; classification inferred from setting.",
+    "layer": "historic_ranch"
+   }
+  }
+ ]
+}

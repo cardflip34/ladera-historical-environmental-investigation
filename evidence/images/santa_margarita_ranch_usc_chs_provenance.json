@@ -1,0 +1,132 @@
+{
+  "_note": "Provenance sidecar for downloaded image assets. Metadata fields transcribed verbatim from the USC Digital Library asset records on 2026-07-19. Do not edit by hand without re-verifying against the permanent DOI links.",
+  "retrieved_date": "2026-07-19",
+  "retrieval_method": "Rendered browser session against digitallibrary.usc.edu (WebFetch/curl are blocked: HTTP 403 / HTTP 202 empty body). Third item located via Calisphere search, then resolved to USC via DOI.",
+  "source_grade": "A2",
+  "source_grade_rationale": "Official university digital library repository webpage (USC Libraries Special Collections). Not a machine-readable dataset or peer-reviewed publication, therefore A2 rather than A1.",
+  "collection": {
+    "collection": "California Historical Society Collection, 1860-1960",
+    "subcollection": "Title Insurance and Trust, and C.C. Pierce Photography Collection, 1860-1960",
+    "contributing_entity": "California Historical Society",
+    "repository_name": "USC Libraries Special Collections",
+    "repository_location": "Doheny Memorial Library, Los Angeles, CA 90089-0189",
+    "repository_email": "specol@lib.usc.edu",
+    "calisphere_owning_institution": "California Historical Society Collection at Stanford",
+    "creator_photographer": null,
+    "creator_note": "NO creator/photographer is stated in any of the three item records. The parent subcollection is associated with C.C. Pierce, but attribution of these specific negatives to Pierce is NOT stated by the repository and must not be asserted."
+  },
+  "rights_statement_verbatim": "Public Domain. Please credit both “University of Southern California. Libraries” and “California Historical Society” as the source. Digitally reproduced by the USC Digital Library.",
+  "rights_note": "Identical verbatim text appears in BOTH the 'Rights' and 'Copyright' fields of all three records. 'Access Conditions' field reads: 'Send requests to address or e-mail given'.",
+  "geographic_note": "Santa Margarita Ranch / Rancho Santa Margarita y Las Flores, San Diego County (the Camp Pendleton-area rancho). Distinct from the Santa Margarita Ranch in San Luis Obispo County. Repository 'Place' field for all three records: California (states), San Diego (counties), USA (countries).",
+  "items": [
+    {
+      "filename": "usc_chs2358_UC139843_cattle_grazing_near_small_stream_santa_margarita_ranch_sd_county_1900.jpg",
+      "title_verbatim": "Cattle grazing in the open near a small stream on the Santa Margarita cattle ranch in San Diego County, 1900",
+      "description_verbatim": "Photograph of a small herd of cattle (less than 50 head) grazing in the open near a small stream on the Santa Margarita cattle ranch in San Diego County, 1900. A copse of oak trees is visible behind the cattle, which stand at center. The narrow, shallow stream is pictured to the right of center running from the distance under the dipping trees to the left foreground.",
+      "date_created_stated": "1900",
+      "date_precision": "Stated by repository as 'Date Created: 1900'. Temporal Subject: 1900. Not described by the repository as estimated or circa.",
+      "identifiers": {
+        "accession_number": "2358",
+        "call_number": "CHS-2358",
+        "filename_id": "CHS-2358",
+        "legacy_collection_record_id": "chs-m265",
+        "legacy_record_ids": ["chs-c65-9885", "chs-m9636", "USC-1-1-1-9775"],
+        "microfiche_number": "1-78-14",
+        "project": "USC",
+        "dm_record_id": "9885",
+        "unique_identifier": "UC139843",
+        "legacy_identifier": "CHS-2358.tiff"
+      },
+      "permanent_url_doi": "https://doi.org/10.25549/chs-m9636",
+      "usc_asset_page": "https://digitallibrary.usc.edu/asset-management/2A3BF1895BQ",
+      "calisphere_permalink": "https://calisphere.org/item/07b30433172935de88533db2279f3e31/",
+      "master_format_verbatim": "2 photographs : glass photonegative, photoprint, b&w ; 21 x 26 cm. (aacr2), glass plate negatives (format), photographic prints (aat), photographs (aat)",
+      "master_internet_media_type": "image/tiff",
+      "master_resolution_stated": "17.6 in × 14.0 in at 300dpi / 44.8 cm × 35.5 cm at 300dpi",
+      "downloaded_derivative": {
+        "dimensions": "1200x953",
+        "bytes": 200599,
+        "format": "JPEG, baseline, precision 8, grayscale (1 component)"
+      },
+      "visual_confirmation": "Negative number '2358.' is inscribed in the lower-left corner of the photograph itself, independently corroborating the CHS-2358 call number."
+    },
+    {
+      "filename": "usc_chs2359_UC139832_lone_mounted_cowboy_santa_margarita_ranch_sd_county_1900.jpg",
+      "title_verbatim": "Lone mounted cowboy on the Santa Margarita cattle ranch, San Diego County",
+      "description_verbatim": "Photograph of a lone mounted cowbow on the Santa Margarita cattle ranch, San Diego County, standing in an open grazing field in the distance. Small stands of trees dot the rolling landscape.",
+      "description_note": "'cowbow' is a typographical error present in the repository record; transcribed verbatim.",
+      "date_created_stated": "1900",
+      "date_precision": "Stated by repository as 'Date Created: 1900'. Temporal Subject: 1900. Not described by the repository as estimated or circa.",
+      "identifiers": {
+        "accession_number": "2359",
+        "call_number": "CHS-2359",
+        "filename_id": "CHS-2359",
+        "legacy_collection_record_id": "chs-m265",
+        "legacy_record_ids": ["chs-c65-9884", "chs-m9635", "USC-1-1-1-9774"],
+        "microfiche_number": "1-78-15",
+        "project": "USC",
+        "dm_record_id": "9884",
+        "unique_identifier": "UC139832",
+        "legacy_identifier": "CHS-2359.tiff"
+      },
+      "permanent_url_doi": "https://doi.org/10.25549/chs-m9635",
+      "usc_asset_page": "https://digitallibrary.usc.edu/asset-management/2A3BF189U2O",
+      "calisphere_permalink": "https://calisphere.org/item/375f4bc37e8aa47a31512886829d66ad/",
+      "master_format_verbatim": "2 photographs : glass photonegative, photoprint, b&w ; 21 x 26 cm. (aacr2), glass plate negatives (format), photographic prints (aat), photographs (aat)",
+      "master_internet_media_type": "image/tiff",
+      "master_resolution_stated": "17.8 in × 14.2 in at 300dpi / 45.2 cm × 36.1 cm at 300dpi",
+      "downloaded_derivative": {
+        "dimensions": "1200x957",
+        "bytes": 146026,
+        "format": "JPEG, baseline, precision 8, grayscale (1 component)"
+      },
+      "visual_confirmation": "Negative number '2359' is inscribed in the lower-left corner of the photograph itself, independently corroborating the CHS-2359 call number."
+    },
+    {
+      "filename": "usc_chs2360_UC139844_herd_of_cattle_grazing_santa_margarita_ranch_sd_county_1900.jpg",
+      "title_verbatim": "Herd of cattle grazing on the Santa Margarita Ranch, San Diego County",
+      "description_verbatim": "Photograph of a a cowboy tending a herd of cattle grazing in an open field on the Santa Margarita Ranch, San Diego County. A ranch building is visible in the distance at left. Low mountains or hills rise in the background.",
+      "description_note": "'a a' duplication is present in the repository record; transcribed verbatim.",
+      "date_created_stated": "1900",
+      "date_precision": "Stated by repository as 'Date Created: 1900'. Temporal Subject: 1900. Not described by the repository as estimated or circa.",
+      "identifiers": {
+        "accession_number": "2360",
+        "call_number": "CHS-2360",
+        "filename_id": "CHS-2360",
+        "legacy_collection_record_id": "chs-m265",
+        "legacy_record_ids": ["chs-c65-9887", "chs-m9638", "USC-1-1-1-9777"],
+        "microfiche_number": "1-78-16",
+        "project": "USC",
+        "dm_record_id": "9887",
+        "unique_identifier": "UC139844",
+        "legacy_identifier": "CHS-2360.tiff"
+      },
+      "permanent_url_doi": "https://doi.org/10.25549/chs-m9638",
+      "usc_asset_page": "https://digitallibrary.usc.edu/asset-management/2A3BF189911",
+      "calisphere_permalink": "https://calisphere.org/item/d2907e2d5edecef1e6f84f5670a93d09/",
+      "master_format_verbatim": "2 photographs : glass photonegative, photoprint, b&w ; 21 x 26 cm. (aacr2), glass plate negatives (format), photographs (aat)",
+      "master_internet_media_type": "image/tiff",
+      "master_resolution_stated": "17.7 in × 13.9 in at 300dpi / 44.9 cm × 35.3 cm at 300dpi",
+      "downloaded_derivative": {
+        "dimensions": "1200x944",
+        "bytes": 131053,
+        "format": "JPEG, baseline, precision 8, grayscale (1 component)"
+      },
+      "visual_confirmation": "Negative number '2360' is inscribed in the lower-left corner of the photograph itself, independently corroborating the CHS-2360 call number."
+    }
+  ],
+  "could_not_verify": [
+    "No photographer/creator is named in any record. Attribution to C.C. Pierce is NOT stated at item level and must not be asserted.",
+    "Higher-resolution masters could not be retrieved anonymously. Legacy CONTENTdm endpoints (/cdm/ref/collection/p15799coll65/id/NNNN) and IIIF endpoints (/digital/iiif/..., /iiif/2/...) all return HTTP 404. Master TIFFs (~5300x4200 px at 300dpi) require a request to specol@lib.usc.edu.",
+    "The delivered image URLs are time-expiring CloudFront signed URLs and are NOT stable citation targets. Cite the DOI instead.",
+    "Exact geographic coordinates of each photograph within the rancho are not stated by the repository."
+  ],
+  "related_items_found_not_downloaded": [
+    {"title": "[Santa Margarita Ranch, San Diego County]", "calisphere": "https://calisphere.org/item/6ac5e4aeccfbede6697f72a7654efb5d/"},
+    {"title": "Santa Margarita Ranch bunk houses, San Diego County", "calisphere": "https://calisphere.org/item/6dc78cedc0477fda4d3cc93312f43e18/"},
+    {"title": "Exterior view on the Santa Margarita Ranch, San Diego, ca.1930", "calisphere": "https://calisphere.org/item/fb02a2b8d79f31a3d6abdcad8fa5ddf8/"},
+    {"title": "Exterior view of an adobe at the Santa Margarita Ranch, San Diego, ca.1875", "calisphere": "https://calisphere.org/item/d04412a5bbf9e4f419194d3556ff64c4/"},
+    {"title": "Santa Margarita Ranch (future Camp Pendleton)", "calisphere": "https://calisphere.org/item/ark:/20775/bb63838761/"},
+    {"title": "Hardy, Charles S. (Manager, Santa Margarita Ranch)", "calisphere": "https://calisphere.org/item/ark:/20775/bb3755859r/"}
+  ]
+}
