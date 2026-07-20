@@ -2,7 +2,7 @@
 
 This project issues corrections **openly and in full**. Nothing is silently revised. Where a finding changed, the superseded reasoning is retained in the text alongside the correction, because a report that shows only what survived scrutiny is not an honest report.
 
-**Version 1.0** — 34 catalogued claims, 90 registered sources.
+**Version 1.0** — 39 catalogued claims, 91 registered sources.
 
 
 ## Corrections issued
@@ -17,6 +17,7 @@ This project issues corrections **openly and in full**. Nothing is silently revi
 | **C-006** | Armor (1921) was briefly treated as a land-title source | 2026-07-19 |
 | **C-007** | The Ladera Ranch footprint is NOT entirely unsectioned land | 2026-07-20 |
 | **C-008** | The survey underlying the patent is 1858, not 1867 | 2026-07-20 |
+| **C-009** | "No dip chemistry is named for Orange County" is superseded | 2026-07-20 |
 
 Full text of every correction, including what was affected and what was not, is retained in `research/CORRECTIONS.md`.
 
@@ -36,6 +37,7 @@ Each was caught by going to a primary source or by rendering the data rather tha
 
 | Commit | Date | Change |
 |---|---|---|
+| `3601f1e` | 2026-07-20 | Complete all 37 chapters; add Andy Stavros's invitation to contribute |
 | `6f6876e` | 2026-07-20 | Correct the PLSS finding and the survey chronology; reopen the GLO route |
 | `ed13357` | 2026-07-19 | Establish the development record; find why the entitlement EIR never surfaced |
 | `4d52e3a` | 2026-07-19 | Establish the land grant from the federal court record; correct Armor |

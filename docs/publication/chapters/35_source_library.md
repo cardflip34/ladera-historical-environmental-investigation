@@ -5,9 +5,9 @@ The bibliography lists sources. This lists **where the underlying material actua
 A citation to a document nobody opened is a weaker thing than a citation to one that was read, and this report distinguishes them.
 
 
-## Archived locally — 64 files
+## Archived locally — 72 files
 
-Total 477 MB under `evidence/`. Retained so every citation in this report can be checked against the document it came from.
+Total 972 MB under `evidence/`. Retained so every citation in this report can be checked against the document it came from.
 
 | File | Location | Size |
 |---|---|---|
@@ -29,6 +29,14 @@ Total 477 MB under `evidence/`. Retained so every citation in this report can be
 | `CA-Gov-Proclamation-1912-03-07-interstate-cattle-import-Johnson_CSL_6131-6132.pdf` | `evidence/documents/` | 0.3 MB |
 | `CA-Gov-Proclamation-1915-03-01-cattle-quarantine-Orange-SLO-SanDiego-Johnson_CSL_6572-6575_PAGE2-MISSING.pdf` | `evidence/documents/` | 1.6 MB |
 | `CA-Gov-Proclamation-1919-06-25-cattle-quarantine-Tulare-Kings-only-Stephens_CSL_8776-8779.pdf` | `evidence/documents/` | 1.4 MB |
+| `CA-StateVeterinarian-5thBiennialReport-1910-EXTRACT.pdf` | `evidence/documents/` | 2.1 MB |
+| `CA-StateVeterinarian-5thBiennialReport-1910_AppendixJournals-39thSession-v2.pdf` | `evidence/documents/` | 104.9 MB |
+| `CA-StateVeterinarian-6thBiennialReport-1912-EXTRACT.pdf` | `evidence/documents/` | 1.7 MB |
+| `CA-StateVeterinarian-6thBiennialReport-1912_AppendixJournals-40thSession-v2.pdf` | `evidence/documents/` | 99.8 MB |
+| `CA-StateVeterinarian-Report-1906-EXTRACT.pdf` | `evidence/documents/` | 0.5 MB |
+| `CA-StateVeterinarian-Report-1906_AppendixJournals-37thSession-v3.pdf` | `evidence/documents/` | 128.9 MB |
+| `CA-StateVeterinarian-Report-1908-EXTRACT.pdf` | `evidence/documents/` | 1.9 MB |
+| `CA-StateVeterinarian-Report-1908_AppendixJournals-38thSession-v2.pdf` | `evidence/documents/` | 155.4 MB |
 | `CDNC_LAH19080725_Levengood_CattleDipping_Claim.txt` | `evidence/documents/` | 0.0 MB |
 | `CSA_diseno_MissionViejaOLaPaz_vol2_p119.jpg` | `evidence/documents/` | 24.1 MB |
 | `CSA_diseno_Trabuco_vol1_p662.jpg` | `evidence/documents/` | 27.4 MB |
@@ -82,6 +90,7 @@ Total 477 MB under `evidence/`. Retained so every citation in this report can be
 |---|---|---|
 | `S-BANCROFT-250SD` | US Land Commission case files 250 SD (Mission Vieja/La Paz), 216 SD (Trabuco), 130 SD (Niguel) | A1 |
 | `S-BLM-CADNSDI` | BLM National PLSS CadNSDI | A1 |
+| `S-CASTATEVET` | California State Veterinarian, Biennial Reports 1906, 1908, 1910, 1912 | A1 |
 | `S-HOFFMAN-1862` | Reports of Land Cases Determined in the U.S. District Court, Northern District of California | A1 |
 | `S-OSOGRANDE` | Oso Grande School Phase I Environmental Site Assessment and Addendum | A1 |
 | `S-USDA-C174` | Eradicating Cattle Ticks in California (USDA BAI Circular No. 174) | A1 |

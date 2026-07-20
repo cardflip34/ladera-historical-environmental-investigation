@@ -257,3 +257,46 @@ certified copy **1866** → **patent 6 Aug 1866**.
 copy. It is indexed in Orange County's GIS as "Hayes 1867-12-19, Mission Viejo or La Paz, LA
 Book 3/67-68". It is **not** the survey the patent rested on, and this publication no longer
 implies that it is.
+
+## C-009 — "No dip chemistry is named for Orange County" is superseded (2026-07-20)
+
+**What was published.** Claim EM-019 carried, as counter-evidence: *"NO DIP CHEMISTRY IS NAMED
+for any Orange County location in any article located — the deaths are consistent with an
+arsenical dip, but the sources do not say so."* The executive summary and Chapter 8 repeated it.
+
+**What the primary source says.** The **California State Veterinarian's Fifth Biennial Report
+(1908)**, read directly:
+
+> The arsenical dip was first used in California during 1907, and such good results were
+> obtained that it has been our most effective remedy ever since.
+
+with the formula given on the same page — **arsenic 8 lb, carbonate of soda 24 lb, soap 24 lb,
+pine tar 1 gallon, water 500 gallons** — and the note that "This solution, being poisonous in
+nature, is carefully used."
+
+The same report then states:
+
+> One notable case occurred in Orange County, where a number of cattle were dipped in **this
+> solution**… due to the cattle drinking the dip **while swimming through the vat**.
+
+**"This solution" is the arsenical dip.** The chemistry is named, and it is named for Orange
+County specifically.
+
+**A second consequence — this partly reopens C-004.** The phrase "swimming through the vat"
+denotes a **swim vat**: the large permanent installation with a trench deep enough for cattle to
+swim, which *would* be visible on 1.15 ft/px aerial photography. C-004 downgraded the negative
+imagery finding on the grounds that California used cheap cage vats and wade tanks. That remains
+true as a general matter, **but at least one Orange County facility in this period was a swim
+vat.** The imagery argument regains some force — for whichever facility that was, wherever it
+stood.
+
+**What it does NOT establish.** The report gives **no location** for the Orange County vat. No
+ranch is named. It is not attributed to Rancho Mission Viejo and is not placed within the Ladera
+Ranch footprint. The gap between *an arsenical swim vat operated somewhere in Orange County* and
+*a vat stood here* is unchanged.
+
+**Also recorded:** the State Veterinarian **disputed** the arsenical-poisoning claim — "Upon
+autopsy not the slightest indication of arsenical poisoning could be found" — attributing the
+deaths to exhaustion after the cattle were "driven a distance of some 30 to 35 miles" on the day
+they were dipped. This is the official counter-narrative to the newspaper account of the
+Levengood claim, and the two are published together.

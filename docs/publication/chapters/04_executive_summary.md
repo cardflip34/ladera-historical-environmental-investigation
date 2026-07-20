@@ -63,8 +63,18 @@ companion article records a claim against the county after six cows died followi
 The nearest named location, **Capistrano, is 3.4 miles** from this community — inside the
 five-mile ring, outside the community itself. Trabuco Canyon, despite the shared drainage name,
 is **8.4 miles** away and outside the ring entirely. **No named dipping location falls inside
-Ladera Ranch**, none of the four ranches named is Rancho Mission Viejo, and **no article names
-the dip chemistry**.
+Ladera Ranch**, and none of the four ranches named is Rancho Mission Viejo.
+
+**The chemistry is now named.** The California State Veterinarian's 1908 report records that
+"the arsenical dip was first used in California during 1907" and gives its formula — 8 lb
+arsenic, 24 lb carbonate of soda, 24 lb soap, 1 gallon pine tar, 500 gallons water. It then
+describes "one notable case… in Orange County, where a number of cattle were dipped in **this
+solution**… while **swimming through the vat**."
+
+So: an **arsenical swim vat operated somewhere in Orange County** in this period. The report gives
+**no location**, names no ranch, and does not place it in this footprint. And the State
+Veterinarian *disputed* the poisoning claim, attributing the deaths to a 30–35 mile drive the same
+day.
 
 The Orange County quarantine ran roughly **February 1908 to March 1912** — narrower than the
 1907–1917 window this project had assumed, and it pushes the gap to the earliest aerial

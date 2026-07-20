@@ -2,7 +2,7 @@
 
 Claims this investigation regards as established: documented in a primary or official source, verified against that source, and reproducible by a reader who follows the citation. Each carries its limiting or contradictory evidence, because an established fact with no stated limits is usually an overstated one.
 
-**22 claims in this category.**
+**27 claims in this category.**
 
 
 ## EM-001 — Ladera Ranch sits on land that was part of the Rancho Mission Viejo cattle operation prior to development
@@ -143,7 +143,7 @@ Claims this investigation regards as established: documented in a primary or off
 
 **Supporting evidence.** Los Angeles Herald, 27 May 1908, p.10, datelined Santa Ana: reports Dr. Coleman, deputy state quarantine officer, consulting with Orange County cattle raisers, and states that 'several hundred head of stock have been treated by dipping at the ranch of J. C. Joplin in Trabuco canyon, six or seven hundred head are now being dipped at Capistrano and dipping is in progress at Yorba and at the Bixby ranch in Santa Ana canyon.' ARTICLE READ AND VERIFIED DIRECTLY at cdnc.ucr.edu. Corroborated by Los Angeles Herald 25 July 1908 (dipping ordered by county veterinarian Dr. W.S. McFarlane; Levengood claim for six cattle deaths) and Pacific Rural Press 15 Aug 1908.
 
-**Limiting or contradictory evidence.** Names RANCHES AND DISTRICTS, NOT vat coordinates. None of the four named locations is Rancho Mission Viejo, and none falls inside Zone A. Measured distances from the Ladera Ranch centroid: Capistrano 3.4 mi (inside Zone B), Trabuco Canyon 8.4 mi (OUTSIDE Zone B), Yorba 25.6 mi, Santa Ana Canyon 22.8 mi. NO DIP CHEMISTRY IS NAMED for any Orange County location in any article located. The only chemistry named for OC-origin cattle is crude oil (1898, and that dipping occurred in Riverside County). Do not conflate with the 14 Apr 1903 'Orange County Cattle Quarantine' item, which concerns ANTHRAX.
+**Limiting or contradictory evidence.** Names RANCHES AND DISTRICTS, NOT vat coordinates. None of the four named locations is Rancho Mission Viejo, and none falls inside Zone A. Measured distances from the Ladera Ranch centroid: Capistrano 3.4 mi (inside Zone B), Trabuco Canyon 8.4 mi (OUTSIDE Zone B), Yorba 25.6 mi, Santa Ana Canyon 22.8 mi. SUPERSEDED 2026-07-20: this field previously stated 'NO DIP CHEMISTRY IS NAMED for any Orange County location'. THAT IS NO LONGER TRUE - see EM-035 and EM-036. The California State Veterinarian's 1908 report names the arsenical dip, gives its formula, and describes an Orange County dipping incident using it. Do not cite the superseded wording.
 
 **Citation.** Los Angeles Herald, Vol.35 No.238, 27 May 1908, p.10, 'Hope to Save Cattle from the Texas Tick'. cdnc.ucr.edu/?a=d&d=LAH19080527.2.83.22.7.3
 
@@ -245,4 +245,59 @@ Claims this investigation regards as established: documented in a primary or off
 **Limiting or contradictory evidence.** A separate survey by J. C. Hays dated 19 December 1867 is indexed in Orange County GIS (LA Book 3/67-68). Being AFTER the 1866 patent it cannot be the survey the patent rested on. What it actually is - a resurvey, a county copy, something else - is UNRESOLVED. Some handwritten dates on the certificate are difficult to read with certainty; the 1858 survey approval date is clear, the signature date less so.
 
 **Citation.** Bancroft Library, US Land Commission case file 250 SD p.85; archived at evidence/documents/
+
+
+## EM-035 — Arsenical dip was the standard California cattle dipping solution from 1907, and its formula is documented
+
+**Confidence:** High  ·  **Status:** Verified
+
+**Supporting evidence.** California State Veterinarian, Fifth Biennial Report (1908), read directly: 'The arsenical dip was first used in California during 1907, and such good results were obtained that it has been our most effective remedy ever since.' The formula given: Arsenic 8 pounds, Carbonate of soda 24 pounds, Soap 24 pounds, Pine tar 1 gallon, Water 500 gallons. The report adds: 'This solution, being poisonous in nature, is carefully used in order that cattle dipped in same are not poisoned themselves.'
+
+**Limiting or contradictory evidence.** Statewide practice, not a site-specific finding. It establishes WHAT was used in California from 1907 onward. It does not establish that any vat existed on Rancho Mission Viejo or within the Ladera Ranch footprint.
+
+**Citation.** California State Veterinarian, Fifth Biennial Report (1908), p.10; archived at evidence/documents/
+
+
+## EM-036 — Orange County cattle were dipped in the arsenical solution, in a swim vat, in the 1907-1908 period
+
+**Confidence:** High  ·  **Status:** Verified
+
+**Supporting evidence.** California State Veterinarian, Fifth Biennial Report (1908), read directly: 'One notable case occurred in Orange County, where a number of cattle were dipped in this solution preparatory to moving them on to a tick free pasture. Subsequently several head of these cattle died from what was claimed to be arsenical poisoning, due to the cattle drinking the dip while swimming through the vat.' 'This solution' refers to the arsenical dip whose formula is given on the same page. 'SWIMMING THROUGH THE VAT' indicates a SWIM VAT - the large permanent design, not a cage vat or wade tank.
+
+**Limiting or contradictory evidence.** The State Veterinarian DISPUTED the arsenical-poisoning claim: 'Upon autopsy not the slightest indication of arsenical poisoning could be found.' He attributed the deaths to exhaustion, the cattle having been 'driven a distance of some 30 to 35 miles' on the day they were dipped. This is an OFFICIAL COUNTER-NARRATIVE to the newspaper account of the Levengood claim and the two should be read together. CRITICALLY: the vat is placed in 'Orange County' with NO location given. It is not attributed to Rancho Mission Viejo and not placed within the Ladera Ranch footprint.
+
+**Citation.** California State Veterinarian, Fifth Biennial Report (1908), pp.10-11; archived at evidence/documents/
+
+
+## EM-037 — Cattle were driven 30 to 35 miles in a single day to reach dipping facilities in Orange County
+
+**Confidence:** High  ·  **Status:** Verified
+
+**Supporting evidence.** California State Veterinarian, Fifth Biennial Report (1908): the cattle in the Orange County incident 'were driven a distance of some 30 to 35 miles' on the day they were dipped.
+
+**Limiting or contradictory evidence.** A single documented instance, not a general practice statement. It CUTS BOTH WAYS for this investigation: it shows cattle could be dipped very far from their home range, which REDUCES the necessity of an on-ranch vat - but equally shows cattle from a wide catchment converged on whichever facilities existed.
+
+**Citation.** California State Veterinarian, Fifth Biennial Report (1908), p.10
+
+
+## EM-038 — The Orange County quarantine was not fully lifted in March 1912; a small area in the extreme southwestern part of the county remained quarantined
+
+**Confidence:** High  ·  **Status:** Verified - boundary UNRESOLVED
+
+**Supporting evidence.** California State Veterinarian, Sixth Biennial Report (1912), read directly: 'March 7, 1912, by proclamation, your Excellency removed from quarantine all of Orange County EXCEPT A SMALL AREA IN THE EXTREME SOUTHWESTERN PART of said county. This leaves at the end of June 30, 1912, only San Diego County, that part of San Luis Obispo County lying west of...'
+
+**Limiting or contradictory evidence.** The residual area is NOT DELIMITED in the text beyond 'extreme southwestern'. That description most naturally denotes the coastal corner around San Juan Capistrano, Capistrano Beach and San Clemente. Ladera Ranch lies roughly 5 miles INLAND of that coastline and is not obviously within it. THIS MUST NOT BE READ AS PLACING LADERA RANCH IN THE RESIDUAL QUARANTINE AREA. The report reportedly carries a map of infested sections as of 30 June 1912, which has NOT yet been examined and would settle the boundary.
+
+**Citation.** California State Veterinarian, Sixth Biennial Report (1912); archived at evidence/documents/
+
+
+## EM-039 — Orange County was one of only three counties under strict quarantine in California in 1908
+
+**Confidence:** High  ·  **Status:** Verified
+
+**Supporting evidence.** California State Veterinarian, Fifth Biennial Report (1908): 'To sum up: San Diego, Imperial and Orange counties are at present the only strictly quarantined counties left in the state.'
+
+**Limiting or contradictory evidence.** A statement about regulatory status at one date, at county level. It indicates the tick problem in Orange County was among the most severe in California, but places no facility anywhere.
+
+**Citation.** California State Veterinarian, Fifth Biennial Report (1908)
 

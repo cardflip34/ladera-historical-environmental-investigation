@@ -123,9 +123,62 @@ of the preparation used." The *Pacific Rural Press* of 15 August 1908 carries th
 scale, and it killed cattle.**
 
 *Counter-evidence and limits.* These name **ranches and districts, not vat coordinates**. None
-of the four locations is Rancho Mission Viejo. **No dip chemistry is named** for any Orange
-County location in any article located — the deaths are consistent with an arsenical dip, but
-the sources do not say so.
+of the four locations is Rancho Mission Viejo.
+:::
+
+::: classification correction
+**Correction C-009 — the chemistry is now named.** This section previously stated that no dip
+chemistry was named for any Orange County location. **That is superseded.** See §8.4a.
+:::
+
+### 8.4a The chemistry, and an Orange County swim vat
+
+::: classification fact
+**EM-035 / EM-036 · ESTABLISHED FACT · Confidence: High**
+
+The **California State Veterinarian's Fifth Biennial Report (1908)**, read directly:
+
+> The arsenical dip was first used in California during 1907, and such good results were
+> obtained that it has been our most effective remedy ever since.
+
+The formula, given on the same page:
+
+| Ingredient | Quantity |
+|---|---|
+| Arsenic | 8 pounds |
+| Carbonate of soda | 24 pounds |
+| Soap | 24 pounds |
+| Pine tar | 1 gallon |
+| Water | 500 gallons |
+
+"This solution, being poisonous in nature, is carefully used in order that cattle dipped in same
+are not poisoned themselves."
+
+The report then records:
+
+> One notable case occurred in Orange County, where a number of cattle were dipped in **this
+> solution** preparatory to moving them on to a tick free pasture. Subsequently several head of
+> these cattle died from what was claimed to be arsenical poisoning, due to the cattle drinking
+> the dip **while swimming through the vat**.
+
+**Two things follow.** The chemistry used in Orange County was **arsenical**. And "swimming
+through the vat" denotes a **swim vat** — the large permanent design, not a cage vat or wade tank.
+
+*Counter-evidence.* **The report gives no location.** No ranch is named. It is not attributed to
+Rancho Mission Viejo and not placed within this footprint.
+
+And the State Veterinarian **disputed the poisoning**: "Upon autopsy not the slightest indication
+of arsenical poisoning could be found." He attributed the deaths to exhaustion, the cattle having
+been "driven a distance of some 30 to 35 miles" on the day they were dipped — which is itself
+notable, because it shows cattle were driven very long distances to reach dipping facilities.
+:::
+
+::: classification limit
+**This partly reopens correction C-004.** That correction downgraded the negative imagery finding
+because USDA documented cheap cage vats and wade tanks that need not be visible. That remains true
+generally — **but at least one Orange County facility in this period was a swim vat**, which
+*would* be visible at 1.15 ft/px. The imagery argument regains some force for that class of
+installation, wherever it stood.
 :::
 
 ### Where these locations actually are

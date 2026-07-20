@@ -2,9 +2,9 @@
 
 Every source consulted, graded on the fixed hierarchy set out in the methodology chapter. A record carries exactly one grade, and **a lower grade is never silently promoted** — a claim that appears in a newspaper becomes A1 only when the underlying official record is located and read.
 
-**90 sources.** Generated directly from the project's source registry, so this list cannot drift out of step with the registry itself.
+**91 sources.** Generated directly from the project's source registry, so this list cannot drift out of step with the registry itself.
 
-Distribution: **A1** 32 · **A2** 24 · **B1** 10 · **B2** 11 · **C** 11 · **D** 2
+Distribution: **A1** 33 · **A2** 24 · **B1** 10 · **B2** 11 · **C** 11 · **D** 2
 
 
 ## Grade A1
@@ -88,6 +88,11 @@ Distribution: **A1** 32 · **A2** 24 · **B1** 10 · **B2** 11 · **C** 11 · **
 
 - **CA Drinking Water Watch / SDWIS — PWS CA3010101** State Water Resources Control Board, 2023-01-01. <https://sdwis.waterboards.ca.gov/PDWW/> Retrieved 2026-07-18.  
   `SRC-WS-004`
+
+- Keane, Charles; and predecessors. **California State Veterinarian, Biennial Reports 1906, 1908, 1910, 1912** State of California, 1906-1912. <https://archive.org/> Retrieved 2026-07-20.  
+  `S-CASTATEVET`
+  
+  *Known limitations:* Reports at COUNTY level. The 1908 Orange County dipping incident is described with no location, ranch name, or vat site given. The State Veterinarian had an institutional interest in defending the dipping programme, and his dismissal of the arsenical-poisoning claim should be read with that in mind alongside the contemporaneous newspaper account.
 
 - **US Land Commission case files 250 SD (Mission Vieja/La Paz), 216 SD (Trabuco), 130 SD (Niguel)** The Bancroft Library, University of California, Berkeley, 1852-1866. <https://digicoll.lib.berkeley.edu/> Retrieved 2026-07-20.  
   `S-BANCROFT-250SD`
