@@ -200,3 +200,60 @@ carry a title claim alone.
 **Pattern note.** This is the same failure mode as C-001, C-003 and C-004: a convenient source
 was used without being checked against the primary record. Four of six corrections now share
 that shape.
+
+## C-007 — The Ladera Ranch footprint is NOT entirely unsectioned land (2026-07-20)
+
+**What was wrong.** This project recorded, and reaffirmed in C-001, that Ladera Ranch sits on
+**T7S R7W, section 00 (unsectioned)** land-grant land. That is true of the community *centroid*
+and was wrongly generalised to the whole footprint.
+
+**What the cadastral record actually shows.** Queried directly against the BLM CadNSDI PLSS
+service, section layer, across a west–east transect at latitude 33.5467 and a north–south
+transect at longitude −117.675:
+
+| Position | PLSS |
+|---|---|
+| −117.678, 33.5467 | T7S **R8W section 23** |
+| −117.672 and east | T7S R8W / R7W **section 00** |
+| −117.675, 33.525 → 33.572 | T7S R8W **sections 36, 25, 24, 24, 13, 12** |
+
+**The western edge of Zone A is sectioned land in T7S R8W.** Section 00 — genuine unsectioned
+grant land — begins roughly east of longitude −117.672.
+
+**Why it matters.** Ordinary **section-line survey field notes should exist for T7S R8W sections
+12, 13, 24, 25**, which run along the western boundary corridor of the study area. Field notes
+are where surveyors recorded springs, corrals, houses, fences and improvements that never
+reached a published plat. This project had ruled that avenue out on the incorrect premise that
+the whole footprint was unsectioned. **It is a live target.**
+
+Note the 1948 ranch structure at 33.55505, −117.65492 does fall in section 00, so its immediate
+ground has no interior survey — but the adjacent sectioned strip lies a short distance west.
+
+## C-008 — The survey underlying the patent is 1858, not 1867 (2026-07-20)
+
+**What was published.** The timeline recorded the US patent for Mission Vieja or La Paz as
+issued **6 August 1866**, alongside a Hays survey dated **19 December 1867**.
+
+**The chronological problem.** A survey dated 1867 cannot be the survey a patent issued in 1866
+rested upon.
+
+**The primary document.** US Land Commission case file 250 SD, page 85 — the Surveyor General's
+certificate of advertisement — was rendered at 500 dpi and **read directly**:
+
+> I, J. W. MANDEVILLE, United States Surveyor General, for the State of California, do hereby
+> certify that the Rancho "Mission Viejo" or "La Paz" confirmed to Juan Forster, has been
+> surveyed by this office, and that the survey and plat was approved by the U. S. Surveyor
+> General, on the **18th day of December, 1858**…
+
+The certificate goes on to record advertisement in the **San Bernardino Herald** (first
+publication 27 September 1861, last 16 October 1861) and the **Los Angeles Star** (29 September
+to 2 October 1861), and carries a later certification that it is a true copy of record, dated
+1866.
+
+**The corrected sequence:** survey approved **18 Dec 1858** → advertised **Sept–Oct 1861** →
+certified copy **1866** → **patent 6 Aug 1866**.
+
+**What the 1867 Hays survey is remains unresolved** — possibly a resurvey, or a county-office
+copy. It is indexed in Orange County's GIS as "Hayes 1867-12-19, Mission Viejo or La Paz, LA
+Book 3/67-68". It is **not** the survey the patent rested on, and this publication no longer
+implies that it is.

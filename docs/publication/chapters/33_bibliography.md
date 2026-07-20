@@ -2,9 +2,9 @@
 
 Every source consulted, graded on the fixed hierarchy set out in the methodology chapter. A record carries exactly one grade, and **a lower grade is never silently promoted** — a claim that appears in a newspaper becomes A1 only when the underlying official record is located and read.
 
-**88 sources.** Generated directly from the project's source registry, so this list cannot drift out of step with the registry itself.
+**90 sources.** Generated directly from the project's source registry, so this list cannot drift out of step with the registry itself.
 
-Distribution: **A1** 30 · **A2** 24 · **B1** 10 · **B2** 11 · **C** 11 · **D** 2
+Distribution: **A1** 32 · **A2** 24 · **B1** 10 · **B2** 11 · **C** 11 · **D** 2
 
 
 ## Grade A1
@@ -15,6 +15,11 @@ Distribution: **A1** 30 · **A2** 24 · **B1** 10 · **B2** 11 · **C** 11 · **
   `SRC-ATSDR-AS`
   
   *Known limitations:* Some chapters blocked by CDC server
+
+- **BLM National PLSS CadNSDI** Bureau of Land Management, n.d.. <https://gis.blm.gov/arcgis/rest/services/Cadastral/BLM_Natl_PLSS_CadNSDI/MapServer> Retrieved 2026-07-20.  
+  `S-BLM-CADNSDI`
+  
+  *Known limitations:* Modern cadastral representation of historical survey. Section 00 denotes unsectioned land-grant land with no interior survey; it does not mean data are missing.
 
 - **DTSC EnviroStor public feature service** CA DTSC, 2026-07-18. <https://www.envirostor.dtsc.ca.gov/> Retrieved 2026-07-18.  
   `SRC-ENV-ENVIROSTOR`
@@ -83,6 +88,11 @@ Distribution: **A1** 30 · **A2** 24 · **B1** 10 · **B2** 11 · **C** 11 · **
 
 - **CA Drinking Water Watch / SDWIS — PWS CA3010101** State Water Resources Control Board, 2023-01-01. <https://sdwis.waterboards.ca.gov/PDWW/> Retrieved 2026-07-18.  
   `SRC-WS-004`
+
+- **US Land Commission case files 250 SD (Mission Vieja/La Paz), 216 SD (Trabuco), 130 SD (Niguel)** The Bancroft Library, University of California, Berkeley, 1852-1866. <https://digicoll.lib.berkeley.edu/> Retrieved 2026-07-20.  
+  `S-BANCROFT-250SD`
+  
+  *Known limitations:* HANDWRITTEN CURSIVE, partly Spanish; the OCR layer is unusable. Keyword searches return false negatives. Requires palaeographic reading page by page. Only p.85 of 250 SD has been read to date.
 
 - **USGS 3DEP Elevation (1/3 arc-second)** U.S. Geological Survey, n.d.. <https://elevation.nationalmap.gov/arcgis/rest/services/3DEPElevation/ImageServer> Retrieved 2026-07-18.  
   `SRC-GEO-3DEP`

@@ -26,7 +26,11 @@ they were the investigation's decisive question and were pursued to primary sour
 | **Jul 1867** | **Plat of Rancho Santa Margarita y Las Flores** surveyed by Max Strobel, Deputy Surveyor; cartouche states **89,742 acres**. *San Diego County grant* | Bancroft Library, Land Case Map E-1362A [S-BANCROFT-E1362A] | High |
 | 1868, 1870 | Handwritten certifications added to the Strobel plat, later than the survey date | Same sheet, read directly | High |
 | c. 1863–64 | Forster acquires Santa Margarita y Las Flores by **purchase** from Pío Pico — not by grant | Secondary accounts, dates conflict | Low |
+| **18 Dec 1858** | **Survey and plat of Mission Viejo or La Paz approved by the US Surveyor General.** Certificate read directly: *"the survey and plat was approved by the U. S. Surveyor General, on the 18th day of December, 1858"* | **Land Commission case file 250 SD p.85 — READ DIRECTLY** [S-BANCROFT-250SD] | **High** |
+| Sep–Oct 1861 | Survey advertised in the *San Bernardino Herald* (27 Sep – 16 Oct) and *Los Angeles Star* (29 Sep – 2 Oct) | Same certificate | High |
 | **6 Aug 1866** | **US patent issued** for Mission Vieja or La Paz to Juan Forster, and for Trabuco | California Secretary of State, US Surveyor General grant-map list | High |
+| 19 Dec 1867 | A survey by **J. C. Hays** is indexed for Mission Viejo or La Paz (LA Book 3/67-68) and Rancho Trabuco (3/65-66). **Postdates the patent, so it is NOT the survey the patent rested on.** What it is remains unresolved | OC GIS `LMS/DocumentsandMaps` layer 999012 — **indexed, scan not retrieved** | Medium |
+| 19 Feb 1883 | **"Mission Viejo Ditch"** survey by Egan indexed (Book 1/66-67) — a water-infrastructure record | OC GIS, same layer — **indexed, not retrieved** | Medium |
 | 1879 | US patent for **Santa Margarita y Las Flores** (the San Diego County grant) reported issued to Pío Pico — *a different rancho from Mission Viejo, whose patent issued 1866* | **UNVERIFIED** — secondary | Low |
 | 20 Feb 1882 | Death of Juan (John) Forster | Secondary accounts | Low |
 | 1882 *or* 1884 | Sale to Richard O'Neill and James C. Flood. **Sources conflict on year, price ($457,000 vs ~$460,000), and whether ownership was equal or Flood-owned with O'Neill managing** | Secondary, grade B2–C — **UNVERIFIED** | Low |

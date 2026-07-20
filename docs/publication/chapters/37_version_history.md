@@ -2,7 +2,7 @@
 
 This project issues corrections **openly and in full**. Nothing is silently revised. Where a finding changed, the superseded reasoning is retained in the text alongside the correction, because a report that shows only what survived scrutiny is not an honest report.
 
-**Version 1.0** — 31 catalogued claims, 88 registered sources.
+**Version 1.0** — 34 catalogued claims, 90 registered sources.
 
 
 ## Corrections issued
@@ -15,6 +15,8 @@ This project issues corrections **openly and in full**. Nothing is silently revi
 | **C-004** | The "a corral complex would be unmistakable" claim was overconfident | 2026-07-19 |
 | **C-005** | The 1842 grant date circulating online is wrong | 2026-07-19 |
 | **C-006** | Armor (1921) was briefly treated as a land-title source | 2026-07-19 |
+| **C-007** | The Ladera Ranch footprint is NOT entirely unsectioned land | 2026-07-20 |
+| **C-008** | The survey underlying the patent is 1858, not 1867 | 2026-07-20 |
 
 Full text of every correction, including what was affected and what was not, is retained in `research/CORRECTIONS.md`.
 
@@ -34,6 +36,7 @@ Each was caught by going to a primary source or by rendering the data rather tha
 
 | Commit | Date | Change |
 |---|---|---|
+| `ed13357` | 2026-07-19 | Establish the development record; find why the entitlement EIR never surfaced |
 | `4d52e3a` | 2026-07-19 | Establish the land grant from the federal court record; correct Armor |
 | `ee4cfca` | 2026-07-19 | Add timeline, conclusion, and generated back matter; scripted PDF build |
 | `adb72a4` | 2026-07-19 | Environmental review audit: the historical window began in 1952 |

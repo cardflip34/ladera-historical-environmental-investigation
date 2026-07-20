@@ -86,17 +86,29 @@ are tracked here and in `FUTURE_EVIDENCE_GATES.md` rather than treated as blocke
 
 *Updated as clusters report.*
 
-## DE-007 — BLM General Land Office Records could not be searched (2026-07-19)
+## DE-007 — BLM GLO Records: bot-detection, NOT a login wall (2026-07-19, REVISED 2026-07-20)
 
-**Tried:** locating an early-20th-century plat and survey field notes for the townships covering
-the study area.
-**Result:** legacy GLO endpoints return HTTP 401; the current site redirects to **Login.gov**
-authentication. No account was created.
-**Consequence:** GLO remains the **most likely repository** for both a 1912-era plat and the
-survey field notes identified as the highest-value untapped cartographic source. This is an
-**unsearched archive, not a demonstrated absence**, and every statement in the publication about
-the 1912 plat is worded accordingly.
-**Route:** requires a signed-in human at glorecords.blm.gov.
+**Original entry said** GLO "requires Login.gov authentication" and needed "a signed-in human."
+**That was wrong, and the correction matters** because it turned a solvable obstacle into a
+recorded blocker.
+
+**What is actually happening.** The legacy endpoints return **401** and the new backend
+(`glo-entry-prod.blm.gov`) returns **418** from Cloudflare with `Authorization must be Bearer
+token` on its API paths — but `glorecords.blm.gov/s/` **loads normally in a real browser while
+logged out**, and a logged-out search for "Mission Viejo" returned **7,671 results**. The site's
+own text states that signing in is only "to save map bookmarks and preferences."
+
+**The remaining obstacle is a UI one, not an access one:** the results panel sits in *closed*
+shadow DOM, so scripted traversal cannot read it. A person at a keyboard has no difficulty.
+
+**Revised route.** `glorecords.blm.gov/s/` → Search Results → Filter by → Location: State CA,
+Meridian San Bernardino, Township 7S, Range 7W then 8W. **Check for a separate Field Notes
+record attached to each survey** — historically a distinct document, easy to miss. Per C-007,
+also pull the township subdivision notes for **T7S R8W sections 12, 13, 24, 25**.
+
+**Note on restraint:** `/s/advanced-search` currently exposes a debug harness with a "Fetch
+Token" button that prints a live JWT. It was deliberately not used; the normal interface was
+driven instead. Recorded here so the choice is visible, not so the shortcut is.
 
 ## DE-008 — No 1912 plat of Rancho Santa Margarita y Las Flores located (2026-07-19)
 
