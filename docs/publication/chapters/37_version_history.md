@@ -37,6 +37,7 @@ Each was caught by going to a primary source or by rendering the data rather tha
 
 | Commit | Date | Change |
 |---|---|---|
+| `7b8ac1c` | 2026-07-20 | Examine the 1912 infestation map; Ladera appears outside the residual area |
 | `2564067` | 2026-07-20 | C-009: the dip chemistry IS named, and Orange County had a swim vat |
 | `3601f1e` | 2026-07-20 | Complete all 37 chapters; add Andy Stavros's invitation to contribute |
 | `6f6876e` | 2026-07-20 | Correct the PLSS finding and the survey chronology; reopen the GLO route |

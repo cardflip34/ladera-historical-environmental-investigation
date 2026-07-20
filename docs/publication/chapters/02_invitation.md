@@ -2,12 +2,17 @@
 
 **From Andy Stavros**
 
-Before you read any further, I want to say plainly what this is and ask you for something.
+Having explained why I started, I want to ask you for something.
 
-I live here. I started looking into the history of this land after learning about the reported
-pediatric Ewing sarcoma cases in Ladera Ranch. I am not a scientist, a historian, an
-epidemiologist, or a regulator. I am one person, working from public records, using AI tools to
-organize and analyze material at a scale I could not manage on my own.
+I am one person, working from public records, using AI tools to organize and analyze material at
+a scale I could not manage alone. I am not a scientist, a historian, an epidemiologist, or a
+regulator, and — as the previous page says — I don't live in Ladera Ranch. I live in Newport
+Beach.
+
+That last point matters for how you read this. I have no property interest here, no stake in what
+the answer turns out to be, and no relationship to any family involved. What I have is a question
+that seemed worth answering carefully, and the same question applies to a lot of places besides
+this one.
 
 **One person is not enough for this.**
 

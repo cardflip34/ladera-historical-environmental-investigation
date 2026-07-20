@@ -5,11 +5,25 @@
 I started looking into the history of this land after learning about the reported pediatric
 Ewing sarcoma cases in Ladera Ranch.
 
-I am not a scientist. I am not a historian, an epidemiologist, or a regulator. I am a father
-and a problem solver, and I live here. What I had was a question that would not go away, and
-access to modern AI tools capable of organizing public records, historical maps, aerial
-photographs, government reports, and archival material at a scale I could not have managed
-alone.
+**I don't live in Ladera Ranch.** I live in Newport Beach, about twenty miles up the coast, and
+I want to be straightforward about that from the outset — this is not my neighborhood and these
+are not my neighbors.
+
+What pulled me in was the pesticide discussion that started circulating. Because the moment you
+look at what gets applied to maintain a master-planned community — the turf, the parks, the
+trails, the common areas — you realize those are the same products, applied by the same kinds of
+contractors, in the parks my own kids play in. And in the parks in your neighborhood. And in
+every other community across this county built on the same model, on land with the same
+agricultural past.
+
+That is what made this feel worth the effort. Not that something happened in one place, but that
+if there is a question worth asking about the ground under one master-planned community in
+Orange County, it is very likely worth asking about a great many of them.
+
+I am not a scientist. I am not a historian, an epidemiologist, or a regulator. I am a father and
+a problem solver. What I had was a question that would not go away, and access to modern AI tools
+capable of organizing public records, historical maps, aerial photographs, government reports,
+and archival material at a scale I could not have managed alone.
 
 I want to be precise about what this project is, because the subject invites people to hear
 something other than what is being said.
@@ -84,5 +98,5 @@ permanent constraint of the project, not a limitation of the available data.*
 ---
 
 *If you have documents, photographs, maps, or memories of this land, please see the invitation
-at the front of this report. This is one person's work, and it is not finished.*
+that follows. This is one person's work, and it is not finished.*
 
