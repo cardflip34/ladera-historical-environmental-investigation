@@ -18,8 +18,8 @@ States Department of Agriculture, Bureau of Animal Industry, Circular No. 174.**
 the 26th Annual Report of the Bureau of Animal Industry, 1909. 23 pages.
 
 A US Government work, and therefore public domain. Retrieved in full from the Internet Archive,
-contributed by the USDA National Agricultural Library. The federal government published a circular
-specifically about eradicating cattle ticks **in California**.
+contributed by the USDA National Agricultural Library. That the federal government published a
+circular specifically about eradicating cattle ticks **in California** is itself significant.
 
 @figure FIG-13
 
@@ -50,10 +50,10 @@ geographic scope — nothing more.
 
 @figure FIG-14
 
-Circular 174 also explains *why* California's losses were severe, in terms that describe this
-landscape specifically: the quarantined counties contained "high mountainous land, or dry land
-with very hot summers, where ticks do not thrive," so cattle raised there reached maturity
-without becoming infested and therefore without acquiring immunity. When drought or cold drove
+Circular 174 also explains *why* California's losses were severe: the quarantined counties
+contained "high mountainous land, or dry land with very hot summers, where ticks do not thrive,"
+so cattle raised there reached maturity without becoming infested and therefore without acquiring
+immunity. When drought or cold drove
 them "to more favorable feeding places, usually along the coast, which in the majority of cases
 were tick infested," they "would commence to die in wholesale numbers." Ranchers called it
 *coast fever* — exactly the seasonal movement pattern a coastal Orange County ranch would have
@@ -61,8 +61,7 @@ practised.
 
 ## 8.3 What this changes, and what it does not
 
-Six propositions must hold for the arsenical-dipping hypothesis to be true. Before this chapter,
-the first was unverified and the rest unevidenced.
+Six propositions must hold for the arsenical-dipping hypothesis to be true.
 
 | # | Proposition | Status before | Status now |
 |---|---|---|---|
@@ -174,8 +173,7 @@ installation, wherever it stood.
 
 ### Where these locations actually are
 
-This is where an investigation of this kind is most likely to overreach, so the distances are
-measured rather than described.
+This is where such an investigation is most likely to overreach, so the distances are measured.
 
 | 1908 dipping location | Miles from Ladera Ranch centroid | Zone |
 |---|---|---|
@@ -226,8 +224,8 @@ a small solid wedge at its extreme southern coastal corner**, where it adjoins S
 ::: classification limit
 **This is a reading of a small-scale map, not a boundary determination.**
 
-The proclamation text does not delimit the area. County outlines on a state-scale map are
-generalised, and the drafting cannot resolve a four-square-mile community.
+The proclamation text does not delimit the area, and county outlines on a state-scale map are too
+generalised to resolve a four-square-mile community.
 
 On the reading above, **Ladera Ranch — roughly 8 to 10 miles north of that corner — falls outside
 the residual quarantine area.** The map is consistent with that but cannot prove it; the
@@ -271,11 +269,11 @@ states that by 1910 only San Diego, Orange, Santa Barbara, and part of San Luis 
 remained under quarantine, with reinfestation attributed to cattle from Lower California.
 
 ::: classification limit
-**This corroboration is recorded as reported and has NOT been independently verified against the
-article itself.** It is graded B1 pending direct reading. It is consistent with Circular 174 and
-would, if confirmed, indicate that Orange County was among the *last* California counties under
-federal quarantine — which would extend the relevant activity window later than 1910. That
-inference is not relied upon anywhere in this publication until the source is read.
+**This corroboration is recorded as reported and NOT independently verified against the article
+itself.** It is graded B1 pending direct reading. It is consistent with Circular 174 and would,
+if confirmed, indicate that Orange County was among the *last* California counties under federal
+quarantine — extending the relevant activity window later than 1910. That inference is not relied
+upon anywhere in this publication until the source is read.
 :::
 
 ## 8.7 The state instrument, not yet obtained
@@ -300,11 +298,10 @@ before the eradication programme.
 ::: classification limit
 **These depict San Diego County, not Ladera Ranch.** The Santa Margarita ranch in these images
 is the Rancho Santa Margarita y Las Flores property — now largely Camp Pendleton. It shared
-ownership with Rancho Mission Viejo under the O'Neill and Flood interests, and the holdings were
-partitioned in the 1940s, but **they are different land**.
+O'Neill and Flood ownership with Rancho Mission Viejo, from which it was partitioned in the 1940s,
+but **they are different land**.
 
-They are included to show the scale and character of the cattle operation during the years the
-tick programme ran. They are **not** evidence about the study area, and must not be reproduced
-as depictions of it.
+They show the scale and character of the cattle operation during the years the tick programme
+ran, but are **not** evidence about the study area and must not be reproduced as depictions of it.
 :::
 

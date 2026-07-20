@@ -6,3 +6,6 @@ apps/web/public/assets/
 __pycache__/
 .DS_Store
 .env
+
+# B-roll video (public-domain archival, not versioned)
+docs/outreach/broll/*.mp4

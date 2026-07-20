@@ -125,16 +125,46 @@ list. Push in on "Orange."]*
 
 > **I found no vat. No corral. Nothing.**
 
-> And there has never — *never* — been a soil test for arsenic across the homes of Ladera
-> Ranch. Not one sample.
+*[Transition into the overlay. The 1930s aerial of the empty ranch, then the historic water
+sources light up as glowing dots — then the modern neighborhood dissolves in around them, the
+dots holding their exact positions as streets and rooftops appear.]*
+
+> But here's the thing. If a dipping vat *were* ever on this land — I know exactly where it
+> would be.
+
+> Cattle need water. They gather at it. And where cattle gather is where you work them — the
+> corrals, the chutes, and if there was one, the vat. So find the old water, and you've found the
+> handful of spots a vat could ever have stood.
+
+> I mapped every water source on the old ranch from the survey records — forty-one of them.
+> **If dipping ever happened here, this is where it would have been.**
+
+*[The overlay holds: the glowing water dots now sitting inside the current street grid of Ladera
+Ranch and Rancho Mission Viejo — in the parks, the greenbelts, the retention basins, the yards.]*
+
+> And here's where those water sources sit today. Every one of them is now in a neighborhood.
+> Half of them are within about two hundred feet of somebody's front door.
+
+*[Beat. To camera — this is the honesty check, do not let the overlay oversell it.]*
+
+> Now — I have to be careful, and this is important. That does **not** mean anyone built a home
+> on a vat. I tested that idea, and it failed. What it means is that this land got so completely
+> developed that the old ranch's water — the exact low ground where cattle would have been
+> worked — is now backyards and ballfields and storm basins.
+
+> If anyone ever wanted to actually test this theory, that map is where you'd start. That's where
+> you'd dig.
 
 *[Beat.]*
 
-> So let me be as clear as I know how: **I did not find contamination. I'm not telling you
-> arsenic is in anyone's yard, and I'm not telling you it caused anyone's illness. The science
-> doesn't show that, and neither do I.**
+> And here's what gets me. **Nobody ever has.** There has never — *never* — been a soil test for
+> arsenic across the homes of Ladera Ranch. Not one sample.
 
-> Anybody can post a scary video. I'm telling you what I *didn't* find, because that's the
+> So let me be as clear as I know how: **I did not find contamination. I'm not telling you arsenic
+> is in anyone's yard, and I'm not telling you it caused anyone's illness. The science doesn't
+> show that, and neither do I.**
+
+> Anybody can post a scary video. I'm telling you what I *didn't* find — because that's the
 > difference between an investigation and a rumor.
 
 ---
@@ -221,6 +251,25 @@ All of these are in the repo, `docs/publication/assets/images/`:
 
 Newspaper (1908) and the formula table: screen-record them from the report, or I can render
 clean title-card versions.
+
+## ARCHIVAL DIPPING FOOTAGE — public domain, ready to use
+
+`docs/outreach/broll/USDA_1922_MollieOfPineGroveVat_reel1_PUBLICDOMAIN.mp4`
+
+*Mollie of Pine Grove Vat*, USDA, 1922 — authentic footage of the same federal tick-eradication
+dipping program, in the public domain. Use it in **Act 2**, over "drive every animal through a
+dipping vat," to show what dipping actually looked like.
+
+**Two rules (see `broll/CREDITS.md`):**
+1. On-screen credit when it appears: *"Archival: Mollie of Pine Grove Vat, USDA, 1922."*
+2. It was filmed in the South, not here. Narrate it as *what dipping was* in general — never imply
+   it was shot on this land.
+
+## WATER OVERLAY — Act 3, made from your own data
+
+`broll/broll_A_1937_water.jpg` → `broll/broll_B_2022_water.jpg`. Cross-dissolve A into B: the
+water sources light up on the empty 1937 ranch, then hold their positions as the modern
+neighborhoods appear around them. This is the "if it were here, this is where it would be" beat.
 
 ---
 
