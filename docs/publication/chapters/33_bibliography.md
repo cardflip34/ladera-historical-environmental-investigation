@@ -2,9 +2,9 @@
 
 Every source consulted, graded on the fixed hierarchy set out in the methodology chapter. A record carries exactly one grade, and **a lower grade is never silently promoted** — a claim that appears in a newspaper becomes A1 only when the underlying official record is located and read.
 
-**85 sources.** Generated directly from the project's source registry, so this list cannot drift out of step with the registry itself.
+**87 sources.** Generated directly from the project's source registry, so this list cannot drift out of step with the registry itself.
 
-Distribution: **A1** 29 · **A2** 23 · **B1** 9 · **B2** 11 · **C** 11 · **D** 2
+Distribution: **A1** 30 · **A2** 23 · **B1** 10 · **B2** 11 · **C** 11 · **D** 2
 
 
 ## Grade A1
@@ -70,6 +70,11 @@ Distribution: **A1** 29 · **A2** 23 · **B1** 9 · **B2** 11 · **C** 11 · **D
 
 - McBride MB, et al.. **Arsenic and Lead Uptake by Vegetable Crops Grown on an Old Orchard Site** McBride et al. / Cornell Waste Management Institute, 2015-01-01. <https://cwmi.css.cornell.edu/Arsenic-Lead-Uptake-McBride.pdf> Retrieved 2026-07-18.  
   `SRC-MCBRIDE-AS`
+
+- Hoffman, Ogden. **Reports of Land Cases Determined in the U.S. District Court, Northern District of California** Numa Hubert, San Francisco, 1862. <https://archive.org/details/reportsoflandcas01hoff> Retrieved 2026-07-19.  
+  `S-HOFFMAN-1862`
+  
+  *Known limitations:* Published 1862, so it predates patents issued later - claim 396 carries no 'Patented' notation because the Mission Vieja patent issued in 1866. Records the claim and confirmation, not the subsequent chain of title. OCR renders some names imperfectly.
 
 - **Prima Deshecha Landfill (SWIS 30-AB-0019)** OC Waste & Recycling / San Diego RWQCB, 2026-01-01. <https://oclandfills.com/> Retrieved 2026-07-18.  
   `SRC-ENV-PRIMA`
@@ -269,6 +274,11 @@ Distribution: **A1** 29 · **A2** 23 · **B1** 9 · **B2** 11 · **C** 11 · **D
   `SRC-ARSENITE-HERB`
   
   *Known limitations:* Compiled history; CA-specific application records not located
+
+- Armor, Samuel (1843-). **History of Orange County, California, with Biographical Sketches** Historic Record Company, Los Angeles, 1921. <https://archive.org/details/historyoforangec00armo> Retrieved 2026-07-19.  
+  `S-ARMOR-1921`
+  
+  *Known limitations:* A county history compiled by a local author, not a title or land record. Armor qualifies his own grant list: 'So far as can be learned.' Gives no grant date or grantee for Mission Viejo. Ownership succession appears in a biographical sketch without dates, and conflicts in emphasis with the commonly repeated 1882 O'Neill-Flood partnership account. OCR renders 'Viejo' as \'iejo, defeating naive keyword search.
 
 - **The Epidemiology of Sarcoma** PMC / peer-reviewed review, 2013-01-01. <https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3564705/> Retrieved 2026-07-18.  
   `SRC-SARCOMA-EPI`

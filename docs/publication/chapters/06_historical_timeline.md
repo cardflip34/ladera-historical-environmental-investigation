@@ -15,11 +15,21 @@ they were the investigation's decisive question and were pursued to primary sour
 |---|---|---|---|
 | Pre-contact | Acjachemen (Juaneño) occupation of the San Juan Creek and Trabuco drainages | General historical record | Context |
 | 1776 | Mission San Juan Capistrano founded | General historical record | Context |
-| Mexican era | Rancho Mission Viejo (also *La Paz*) granted | **UNVERIFIED** — grantee, date and acreage under active research | Low |
-| 1867 | **Plat of Rancho Santa Margarita y Las Flores** surveyed by Max Strobel, Deputy Surveyor, July 1867; cartouche states **89,742 acres** | Bancroft Library, Land Case Map E-1362A [S-BANCROFT-E1362A] | High |
+| **10 May 1841** | **Rancho Santa Margarita y Las Flores** granted by Governor Alvarado to **Pío and Andrés Pico**, San Diego County | Hoffman (1862), claim 700 [S-HOFFMAN-1862] | **High** |
+| 16 Feb / 31 Jul 1841 | **Rancho Trabuco** — two leagues granted provisionally then finally by Governor Alvarado to Santiago Argüello et al. | Hoffman (1862), claim 412 | High |
+| **4 Apr 1845** | **Rancho Mission Vieja or La Paz granted by Governor Pío Pico to Agustín Olvera. 46,432.65 acres.** *Forster was the later claimant, not the grantee* | **Hoffman (1862), claim 396 — READ AND VERIFIED DIRECTLY** [S-HOFFMAN-1862] | **High** |
+| 21 Apr 1846 | Three further leagues of Trabuco granted to **Juan Forster** by Pío Pico | Hoffman (1862), claim 412 | High |
+| 1848 | Treaty of Guadalupe Hidalgo — existing property titles to be honoured | Armor (1921) | High |
+| 16 Oct 1852 | Forster files the Mission Vieja claim before the US Land Commission | Hoffman (1862) | High |
+| 31 Oct 1854 | Claim confirmed by the Commission | Hoffman (1862) | High |
+| 21 Feb 1857 | Confirmed by the District Court; appeal dismissed 4 Jun 1857 | Hoffman (1862) | High |
+| **Jul 1867** | **Plat of Rancho Santa Margarita y Las Flores** surveyed by Max Strobel, Deputy Surveyor; cartouche states **89,742 acres**. *San Diego County grant* | Bancroft Library, Land Case Map E-1362A [S-BANCROFT-E1362A] | High |
 | 1868, 1870 | Handwritten certifications added to the Strobel plat, later than the survey date | Same sheet, read directly | High |
-| 1879 | US patent issued for the grant | **UNVERIFIED** — referenced in secondary sources | Low |
-| 1882 | Richard O'Neill Sr. and James C. Flood acquire ranch holdings | **UNVERIFIED** — under active research | Low |
+| c. 1863–64 | Forster acquires Santa Margarita y Las Flores by **purchase** from Pío Pico — not by grant | Secondary accounts, dates conflict | Low |
+| **6 Aug 1866** | **US patent issued** for Mission Vieja or La Paz to Juan Forster, and for Trabuco | California Secretary of State, US Surveyor General grant-map list | High |
+| 1879 | US patent for **Santa Margarita y Las Flores** (the San Diego County grant) reported issued to Pío Pico — *a different rancho from Mission Viejo, whose patent issued 1866* | **UNVERIFIED** — secondary | Low |
+| 20 Feb 1882 | Death of Juan (John) Forster | Secondary accounts | Low |
+| 1882 *or* 1884 | Sale to Richard O'Neill and James C. Flood. **Sources conflict on year, price ($457,000 vs ~$460,000), and whether ownership was equal or Flood-owned with O'Neill managing** | Secondary, grade B2–C — **UNVERIFIED** | Low |
 | 1886 | **"Santa Marguerita Ranch — Vineyard and Winery"** photographed | USC / California Historical Society, CHS-2085 [S-USC-CHS] | High |
 | 1900 | Santa Margarita ranch cattle operations photographed (CHS-2358/2359/2360) | USC / California Historical Society [S-USC-CHS] | High |
 

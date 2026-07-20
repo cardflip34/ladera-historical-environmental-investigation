@@ -325,7 +325,13 @@ footer{padding:56px 30px 90px;border-top:1px solid var(--line);color:var(--ink-f
   .chapter hr:last-of-type{display:none}
   h1,h2,h3{page-break-after:avoid;color:#000}
   h2{border-top:1px solid #ccc}
-  figure,table,.ev,.mx-card{page-break-inside:avoid}
+  figure,.ev,.mx-card{page-break-inside:avoid}
+  /* Long tables (the timeline runs to ~50 rows) cannot fit on one page. Forbidding a break
+     inside them pushes the whole table to the next sheet and leaves a blank one behind, so
+     let the table break and keep individual rows intact instead. */
+  table{page-break-inside:auto}
+  tr{page-break-inside:avoid;page-break-after:auto}
+  thead{display:table-header-group}
   figure img{max-height:5in;object-fit:contain}
   .ev-label{color:#000;border:1px solid #666;background:#eee!important}
   a{color:#111;border:none}

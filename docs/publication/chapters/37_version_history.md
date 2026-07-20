@@ -2,7 +2,7 @@
 
 This project issues corrections **openly and in full**. Nothing is silently revised. Where a finding changed, the superseded reasoning is retained in the text alongside the correction, because a report that shows only what survived scrutiny is not an honest report.
 
-**Version 1.0** — 25 catalogued claims, 85 registered sources.
+**Version 1.0** — 29 catalogued claims, 87 registered sources.
 
 
 ## Corrections issued
@@ -13,6 +13,8 @@ This project issues corrections **openly and in full**. Nothing is silently revi
 | **C-002** | Creek misidentified in the historical-imagery analysis | 2026-07-18 |
 | **C-003** | "Earliest available imagery is 1948" was wrong | 2026-07-18 |
 | **C-004** | The "a corral complex would be unmistakable" claim was overconfident | 2026-07-19 |
+| **C-005** | The 1842 grant date circulating online is wrong | 2026-07-19 |
+| **C-006** | Armor (1921) was briefly treated as a land-title source | 2026-07-19 |
 
 Full text of every correction, including what was affected and what was not, is retained in `research/CORRECTIONS.md`.
 
@@ -32,6 +34,7 @@ Each was caught by going to a primary source or by rendering the data rather tha
 
 | Commit | Date | Change |
 |---|---|---|
+| `ee4cfca` | 2026-07-19 | Add timeline, conclusion, and generated back matter; scripted PDF build |
 | `adb72a4` | 2026-07-19 | Environmental review audit: the historical window began in 1952 |
 | `a6dfd3f` | 2026-07-19 | Locate 1908 Orange County dipping records; narrow the quarantine window |
 | `fea8ab1` | 2026-07-19 | Verify the decisive question from primary sources; downgrade own finding |

@@ -150,3 +150,53 @@ ten dollars in lumber.
 assumption about the physical evidence without checking the primary source first — C-003 assumed
 the imagery was inadequate; C-004 assumed the target would be large. Both assumptions were
 convenient. Both were wrong in the direction that made the analysis simpler.
+
+## C-005 — The 1842 grant date circulating online is wrong (2026-07-19)
+
+**What is wrong, in the wider record.** Several web sources give **1842** as the grant date for
+Rancho Mission Viejo / La Paz.
+
+**The primary record.** Ogden Hoffman, *Reports of Land Cases Determined in the U.S. District
+Court, Northern District of California* (1862), Appendix, claim no. 396:
+
+> Juan Foster, claimant for Mission Vieja or La Paz, in Los Angeles county, **granted April 4th,
+> 1845, by Pio Pico to Agustin Olvera**; claim filed October 16th, 1852, confirmed by the
+> Commission October 31st, 1854, by the District Court February 21st, 1857, and appeal dismissed
+> June 4th, 1857; containing 46,432.65 acres.
+
+Read and verified directly from the full text, and corroborated by the volume's own index.
+
+**Also corrected:** **Forster was the claimant, not the grantee.** The grantee was **Agustín
+Olvera**. Forster acquired the rancho later and pressed the claim in his own name. Several
+secondary accounts collapse this distinction.
+
+## C-006 — Armor (1921) was briefly treated as a land-title source (2026-07-19)
+
+**What was wrong.** An earlier version of chapter 7 reproduced Samuel Armor's ownership
+succession — Forster → Crocker → Flood → O'Neill — with only a general caveat that it was a
+biographical sketch rather than a deed abstract.
+
+**What checking against the primary record showed.** Armor contains several substantive errors
+in that very passage:
+
+- He calls the three ranchos "Spanish grants." All three were **Mexican**.
+- He states Mission Viejo "originally belonged to the Picos." Hoffman gives the grantee as
+  **Agustín Olvera**.
+- He describes Pío Pico as the last governor "under the Spanish regime." Pico was the last
+  **Mexican** governor.
+- In his rancho table he **conflates two different ranchos** — San Juan Cajón de Santa Ana
+  (confirmed to Ontiveros, 31,501.99 acres) and Cañón de Santa Ana (Bernardo Yorba, 13,328.53
+  acres).
+
+**The Charles Crocker link is uncorroborated** and appears in no other source consulted. It is
+now reported as *what Armor says*, not as established fact, and EM-027 is downgraded from
+ESTABLISHED FACT to **INVESTIGATIVE LEAD, Low confidence**.
+
+**Armor remains useful** — his acreage figures for Mission Viejo and Trabuco match Hoffman,
+Lewis (1890) and the California Secretary of State exactly. He is reliable on some things and
+not on others, which is precisely why source grading exists. He is graded **B1** and should not
+carry a title claim alone.
+
+**Pattern note.** This is the same failure mode as C-001, C-003 and C-004: a convenient source
+was used without being checked against the primary record. Four of six corrections now share
+that shape.
