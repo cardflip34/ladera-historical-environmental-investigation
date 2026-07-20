@@ -273,13 +273,21 @@ neighborhoods appear around them. This is the "if it were here, this is where it
 
 ---
 
-## MOTION GRAPHICS I CAN GENERATE FOR YOU
+## MOTION GRAPHICS — BUILT, ready to drop in
 
-Say the word and I'll produce, as video-ready clips or image sequences:
-1. **The 1929 → 2022 dissolve** — same ground, empty to built, on the identical map frame.
-2. **The forty-year-gap bar** — two timelines, the review window and the dipping window, with
-   the gap lit up.
-3. **The point-source-to-dust animation** — red dot → grading → thin wide band under rooftops.
-4. **An animated map** — the four 1908 dipping sites appearing with distance labels, showing
-   they sit *outside* the community, not inside.
-5. **The arsenic periodic-table cell** with the "doesn't break down" line.
+All five rendered as vertical **1080×1920** MP4 in `docs/outreach/broll/motion/`. Regenerate
+any time with `python3 scripts/build_broll_motion.py`.
+
+| File | Length | Use it in | Beat |
+|---|---|---|---|
+| `01_dissolve_1937_2022.mp4` | 6.8s | Hook B / Act 1 | empty ranch → built city, "the same ground" |
+| `02_forty_year_gap.mp4` | 6.8s | Act 4 | the two timeline bars, "40 years nobody looked at" |
+| `03_point_source_dust.mp4` | 7.0s | Act 4 | garage-sized spot → graded thin → airborne dust |
+| `04_dip_sites_map.mp4` | 7.0s | Act 3 | four 1908 dip sites, none inside the 5-mi ring |
+| `05_arsenic_card.mp4` | 5.8s | Act 4 | periodic cell, "an element — it doesn't break down" |
+
+Plus the two water-overlay stills (`broll_A_1937_water.jpg` → `broll_B_2022_water.jpg`) for the
+Act 3 cross-dissolve, and the public-domain 1922 USDA dipping film for Act 2.
+
+Every number in these graphics is drawn from the report: 1912/1952 dates, the 3.4 / 8.4 / 22.8 /
+25.6-mile distances, arsenic As-33. Nothing invented.

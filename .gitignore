@@ -9,3 +9,4 @@ __pycache__/
 
 # B-roll video (public-domain archival, not versioned)
 docs/outreach/broll/*.mp4
+docs/outreach/broll/motion/*.mp4
