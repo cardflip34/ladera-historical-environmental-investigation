@@ -70,10 +70,31 @@ The Orange County quarantine ran roughly **February 1908 to March 1912** — nar
 1907–1917 window this project had assumed, and it pushes the gap to the earliest aerial
 photography out to **seventeen years**.
 
-**No soil sampling for arsenic appears to have been conducted across the residential footprint.**
-Nearby *school* sites were assessed — California's Education Code requires it before a district
-acquires land — and arsenic was found at several. Residential subdivisions carry no equivalent
-statutory duty. This asymmetry is a matter of law, not of anyone's conduct.
+**The environmental review began in 1952 — forty years after the dipping era ended.** The
+Phase I assessments have now been obtained and read. EIR 589 Appendix I states across all nine
+Planning Areas: "Photographs dating from **1952** to 1999 were reviewed." The one assessed site
+inside Ladera Ranch reviewed five aerials: 1952, 1968, 1977, 1989, 1994.
+
+**No document obtained contains the terms "dip vat", "cattle dip", or "arsenical dip" anywhere.**
+The only "arsenic" hit in 582,000 characters concerns a mine-tailings reservoir; the only
+"dipping" hit is metal-finishing at an industrial plant.
+
+**The one assessed site inside the community was cleared with no soil sampling.** Oso Grande
+School — recorded by DTSC as past use "AGRICULTURAL – LIVESTOCK" — was cleared on a documentary
+and visual basis. Pesticides were discounted qualitatively; the geotechnical borings reviewed
+were checked for methane and organics, not pesticides or arsenic. Its EnviroStor status reads
+"NO CONTAMINANTS FOUND", which here means none were looked for in soil.
+
+**This is a gap in the historical window, not a failure.** A Phase I ESA must use *reasonably
+ascertainable* sources, and the aerial archive available to consultants in 2002 began in 1952.
+The 1929–1947 county imagery this project used is a modern digitisation. That is a reason to
+look again — not a reason to conclude anyone should have looked harder then.
+
+**And the most relevant document is still missing.** EIR 589 names it: Michael Brandman
+Associates, May 1995, *Appendix H — Hazardous Materials Environmental Site Assessment*, for the
+land Ladera Ranch was built on. It is not online. A complete CEQAnet sweep of Orange County
+filings for 1990–2000 returned no Ladera Ranch EIR at all. **This is the top-priority records
+request arising from this investigation.**
 
 ## The most important caution
 
