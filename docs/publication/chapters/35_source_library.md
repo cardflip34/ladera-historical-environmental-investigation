@@ -5,9 +5,9 @@ The bibliography lists sources. This lists **where the underlying material actua
 A citation to a document nobody opened is a weaker thing than a citation to one that was read, and this report distinguishes them.
 
 
-## Archived locally — 72 files
+## Archived locally — 74 files
 
-Total 972 MB under `evidence/`. Retained so every citation in this report can be checked against the document it came from.
+Total 974 MB under `evidence/`. Retained so every citation in this report can be checked against the document it came from.
 
 | File | Location | Size |
 |---|---|---|
@@ -37,6 +37,7 @@ Total 972 MB under `evidence/`. Retained so every citation in this report can be
 | `CA-StateVeterinarian-Report-1906_AppendixJournals-37thSession-v3.pdf` | `evidence/documents/` | 128.9 MB |
 | `CA-StateVeterinarian-Report-1908-EXTRACT.pdf` | `evidence/documents/` | 1.9 MB |
 | `CA-StateVeterinarian-Report-1908_AppendixJournals-38thSession-v2.pdf` | `evidence/documents/` | 155.4 MB |
+| `CAStateVet_1912_p11_TickInfestationMap_June30_1912.png` | `evidence/documents/` | 1.5 MB |
 | `CDNC_LAH19080725_Levengood_CattleDipping_Claim.txt` | `evidence/documents/` | 0.0 MB |
 | `CSA_diseno_MissionViejaOLaPaz_vol2_p119.jpg` | `evidence/documents/` | 24.1 MB |
 | `CSA_diseno_Trabuco_vol1_p662.jpg` | `evidence/documents/` | 27.4 MB |
@@ -52,6 +53,7 @@ Total 972 MB under `evidence/`. Retained so every citation in this report can be
 | `OsoGrande_Phase1_Addendum_2003.pdf` | `evidence/documents/` | 1.3 MB |
 | `RanchPlan_AffordableHousing_FinalPEIR_SCH2015051062_2016.pdf` | `evidence/documents/` | 50.5 MB |
 | `Vredenburgh_OrangeCounty_GLO_LandPatents_index.pdf` | `evidence/documents/` | 0.2 MB |
+| `zoom_1912map_OrangeSanDiego.png` | `evidence/documents/` | 0.9 MB |
 | `Bancroft_LandCaseMapE-1362A_1867_Plat_RanchoSantaMargaritaYLasFlores_Strobel.jpg` | `evidence/images/` | 0.2 MB |
 | `HABS_CA-48_SantaMargaritaRanchHouse_01_general_view_from_south.tif` | `evidence/images/` | 15.4 MB |
 | `HABS_CA-48_SantaMargaritaRanchHouse_02_nw_elevation_from_west.tif` | `evidence/images/` | 15.4 MB |

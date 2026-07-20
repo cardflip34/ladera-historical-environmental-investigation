@@ -214,6 +214,44 @@ in this county dipped, under county order, within a few miles of this land**.
 That materially raises the prior. It does not identify a facility, a chemistry, or a location
 within the study area.
 
+## 8.4b The residual quarantine area, mapped
+
+The 7 March 1912 proclamation did **not** clear the whole county. The State Veterinarian's Sixth
+Biennial Report records that it "removed from quarantine all of Orange County **except a small
+area in the extreme southwestern part** of said county."
+
+The same report carries a map of infested sections as of 30 June 1912. It has been examined.
+
+@figure FIG-25
+
+@figure FIG-26
+
+::: classification fact
+**EM-038 · ESTABLISHED FACT · Confidence: High (that a residual area existed)**
+
+San Diego County is hatched almost in its entirety. **Orange County is essentially clear except
+a small solid wedge at its extreme southern coastal corner**, where it adjoins San Diego County
+— the San Clemente / San Onofre area. The "ORANGE" label sits well north-west of it.
+:::
+
+::: classification limit
+**This is a reading of a small-scale map, not a boundary determination.**
+
+The proclamation text does not delimit the area. County outlines on a state-scale map are
+generalised, and the drafting cannot resolve a four-square-mile community.
+
+On the reading above, **Ladera Ranch — roughly 8 to 10 miles north of that corner — falls outside
+the residual quarantine area.** The map is consistent with that and cannot prove it. The
+underlying 7 March 1912 proclamation has not been obtained and would settle it.
+
+**One detail cuts the other way and belongs here.** The adjoining San Diego County land, hatched
+almost entirely on this map, was **Rancho Santa Margarita y Las Flores** — under the same
+O'Neill and Flood ownership as Rancho Mission Viejo, and not partitioned from it until the
+1940s. Cattle and management moved between the two holdings. That does not place infestation or a
+vat on this footprint, but it means the quarantine line and the ownership line were not the same
+line.
+:::
+
 ## 8.5 The quarantine window, narrowed
 
 ::: classification fact

@@ -282,11 +282,11 @@ Claims this investigation regards as established: documented in a primary or off
 
 ## EM-038 — The Orange County quarantine was not fully lifted in March 1912; a small area in the extreme southwestern part of the county remained quarantined
 
-**Confidence:** High  ·  **Status:** Verified - boundary UNRESOLVED
+**Confidence:** High  ·  **Status:** Verified - map examined; boundary indicative, not determinative
 
-**Supporting evidence.** California State Veterinarian, Sixth Biennial Report (1912), read directly: 'March 7, 1912, by proclamation, your Excellency removed from quarantine all of Orange County EXCEPT A SMALL AREA IN THE EXTREME SOUTHWESTERN PART of said county. This leaves at the end of June 30, 1912, only San Diego County, that part of San Luis Obispo County lying west of...'
+**Supporting evidence.** California State Veterinarian, Sixth Biennial Report (1912), read directly: 'March 7, 1912, by proclamation, your Excellency removed from quarantine all of Orange County EXCEPT A SMALL AREA IN THE EXTREME SOUTHWESTERN PART of said county. This leaves at the end of June 30, 1912, only San Diego County, that part of San Luis Obispo County lying west of...' THE MAP HAS NOW BEEN EXAMINED (p.11, rendered at 500 dpi and read directly). It shows San Diego County hatched almost entirely, and Orange County essentially clear EXCEPT a small solid wedge at its extreme southern coastal corner where it adjoins San Diego County - the San Clemente / San Onofre area.
 
-**Limiting or contradictory evidence.** The residual area is NOT DELIMITED in the text beyond 'extreme southwestern'. That description most naturally denotes the coastal corner around San Juan Capistrano, Capistrano Beach and San Clemente. Ladera Ranch lies roughly 5 miles INLAND of that coastline and is not obviously within it. THIS MUST NOT BE READ AS PLACING LADERA RANCH IN THE RESIDUAL QUARANTINE AREA. The report reportedly carries a map of infested sections as of 30 June 1912, which has NOT yet been examined and would settle the boundary.
+**Limiting or contradictory evidence.** The residual area is NOT delimited in the proclamation text. The map is STATE-SCALE: county outlines are generalised and the drafting cannot resolve a four-square-mile community. Reading the wedge as the San Clemente/San Onofre coastal corner is an INTERPRETATION OF A SMALL-SCALE MAP, not a boundary determination. On that reading Ladera Ranch, roughly 8-10 miles north, falls OUTSIDE the residual area - but the map cannot prove it, and the underlying 7 March 1912 proclamation has NOT been obtained. Note also that the adjoining San Diego County land was Rancho Santa Margarita y Las Flores, under the same O'Neill/Flood ownership as Rancho Mission Viejo.
 
 **Citation.** California State Veterinarian, Sixth Biennial Report (1912); archived at evidence/documents/
 

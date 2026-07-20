@@ -2,7 +2,7 @@
 
 Every image published, with its repository, rights status **as the repository states it**, and its interpretation boundary. Rights statements are reproduced rather than summarised, because a paraphrased licence is not a licence.
 
-**24 published figures.**
+**26 published figures.**
 
 Images held in the evidence archive but **not** published for rights reasons are listed at the end.
 
@@ -317,6 +317,32 @@ Images held in the evidence archive but **not** published for rights reasons are
 | Published as | assets/images/fig-24.jpg (1500x1155) |
 
 **Interpretation boundary.** NOT the 1912 plat sought. No 1912 plat has been located - see DE-008, and note that BLM GLO Records could not be searched at all (DE-007), so this is an unsearched archive rather than a demonstrated absence. Cartouche states 89,742 acres; handwritten certifications on the sheet are dated 1868 and 1870, later than the survey. SAN DIEGO COUNTY grant, adjoining but distinct from Rancho Mission Viejo. Land Case Map E-1362A.
+
+
+### FIG-25 — Sections infested with Southern cattle fever ticks and quarantined, 30 June 1912
+
+| | |
+|---|---|
+| Date | 1912 |
+| Repository | California State Veterinarian / State of California, via Internet Archive |
+| Rights | Public domain (California state government publication, 1912). |
+| Original | 2078x3540 — `evidence/documents/CAStateVet_1912_p11_TickInfestationMap_June30_1912.png` |
+| Published as | assets/images/fig-25.jpg (1057x1800) |
+
+**Interpretation boundary.** Dark areas represent infested and quarantined sections. San Diego County is hatched almost entirely. Orange County is essentially clear EXCEPT a small solid wedge at its extreme southern coastal corner where it adjoins San Diego County. STATE-SCALE MAP: county outlines are generalised and the drafting cannot resolve a four-square-mile community. It shows the residual area's approximate position, not its boundary.
+
+
+### FIG-26 — The same map, Orange / San Diego County detail
+
+| | |
+|---|---|
+| Date | 1912 |
+| Repository | California State Veterinarian / State of California, via Internet Archive |
+| Rights | Public domain (California state government publication, 1912). |
+| Original | 2492x2264 — `evidence/documents/zoom_1912map_OrangeSanDiego.png` |
+| Published as | assets/images/fig-26.jpg (1800x1635) |
+
+**Interpretation boundary.** The 'ORANGE' label sits well north-west of the solid dark wedge. The wedge lies at the coastal corner adjoining San Diego County - the San Clemente / San Onofre area. Ladera Ranch is roughly 8-10 miles north of that corner and appears OUTSIDE the residual quarantine area. THIS IS A READING OF A SMALL-SCALE MAP, NOT A BOUNDARY DETERMINATION. The proclamation text itself does not delimit the area.
 
 
 ---
