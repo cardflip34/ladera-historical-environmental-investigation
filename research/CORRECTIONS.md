@@ -109,3 +109,44 @@ resolution objection disappears entirely: at 1.15 ft/px a corral complex would b
 unmistakable. **The conclusion nevertheless stands — no dip vat or corral was found** — but it
 now rests on adequate imagery rather than on the imagery being inadequate. That is a
 materially different, and stronger, basis for the same negative finding.
+
+## C-004 — The "a corral complex would be unmistakable" claim was overconfident (2026-07-19)
+
+**What was wrong.** After correcting C-003 and obtaining 1.15 ft/px aerial photography, this
+investigation stated that the resolution objection to finding a dipping vat had "disappeared
+entirely" — that at that resolution "a two-metre vat is roughly six pixels across, and a corral
+complex … would span hundreds of pixels. It would be unmistakable."
+
+**What the primary source actually says.** USDA Bureau of Animal Industry Circular 174,
+*Eradicating Cattle Ticks in California* (1911), documents that California vats were frequently
+**small and cheap**:
+
+- The **cage vat**: materials cost **$55–65**. It "is installed near the corrals and requires
+  only a short chute leading from the corral to the cage." Critically: "Draining pens with such
+  vats are **not essential and are rarely used**, as the animal drains while the cage is being
+  raised." (p. 299)
+- The **wade tank**: "can be constructed with an outlay of **less than $10** for materials, thus
+  being cheaper than a good spray pump," and is "recommended only in the disinfection of very
+  small herds." Figure 10 shows a vertical section roughly **15 feet long and 4 feet deep**.
+  (p. 299)
+
+**Why this matters.** The earlier argument assumed the American swim-vat model: a long concrete
+trench with a sloped drip pen and substantial holding pens — a complex that would indeed be
+obvious from the air. Circular 174 shows that was **not the only California pattern**. A wooden
+cage vat or wade tank installed beside an existing corral, with no drip pen, is a fundamentally
+different photographic target: small, low-contrast, and easily lost against ranch infrastructure
+that was itself unremarkable.
+
+**Effect on the findings.** The negative imagery result stands as an observation — no vat or
+corral complex was identified — but its **evidential weight is substantially reduced**. Claim
+EM-003's confidence is downgraded from Medium to **Low**.
+
+The corrected position: the imagery search would likely have detected a **large swim-vat
+installation** and did not. It provides **weak to no evidence** against a small cage vat or wade
+tank, which the primary source indicates were common in California and which cost as little as
+ten dollars in lumber.
+
+**Pattern worth noting.** This is the second time this investigation has built an argument on an
+assumption about the physical evidence without checking the primary source first — C-003 assumed
+the imagery was inadequate; C-004 assumed the target would be large. Both assumptions were
+convenient. Both were wrong in the direction that made the analysis simpler.

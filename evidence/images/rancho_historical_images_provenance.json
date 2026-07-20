@@ -1,0 +1,253 @@
+{
+  "_note": "Provenance sidecar for historical image assets downloaded 2026-07-19. All metadata fields transcribed VERBATIM from the stated repository records. Dates are recorded exactly as the repository states them; requested/expected dates that did not match are flagged in 'date_discrepancy'. Do not edit by hand without re-verifying against the permanent links.",
+  "retrieved_date": "2026-07-19",
+  "targets_requested": {
+    "TARGET_B": "1887 photograph of the Santa Margarita ranch house and vineyards",
+    "TARGET_C": "1912 plat map of Rancho Santa Margarita y Las Flores",
+    "TARGET_D": "circa-1930 photograph of the Trabuco Adobe ruins, Orange County"
+  },
+  "items": [
+    {
+      "target": "TARGET_B",
+      "filename": "usc_chs2085_UC123008_santa_marguerita_ranch_vineyard_and_winery_1886.jpg",
+      "title_verbatim": "Santa Marguerita Ranch - Vineyard and Winery, 1886",
+      "title_note": "Repository spells the rancho name 'Marguerita', not 'Margarita'. This spelling variant is why keyword searches on 'Santa Margarita' do not return this item.",
+      "date_created_stated": "1886",
+      "date_precision": "Repository states 'Date Created: 1886' and 'Temporal Subject: 1886'. NOT described as circa or estimated. The title itself embeds '1886'.",
+      "date_discrepancy": "REQUESTED as an 1887 photograph. The repository dates this item 1886. The date has NOT been relabeled. A secondary blog (sandiegohistoryseeker.com, 2025-04-02) reproduces what appears to be this same image with the caption 'Above is a photo of a vineyard and the ranch house at the Rancho Santa Margarita taken in 1887' but states NO repository, credit line, or identifier. The '1887' figure is unverified and conflicts with the repository record. No 1887-dated photograph of this subject was located in any repository searched.",
+      "creator": null,
+      "creator_note": "NO creator/photographer is stated in the item record on either USC or Calisphere. The parent subcollection is the 'Title Insurance and Trust, and C.C. Pierce Photography Collection, 1860-1960', whose collection-level description names C.C. Pierce, George Wharton James and Charles Puck. Attribution of THIS negative to any of them is NOT stated by the repository and must not be asserted.",
+      "repository_name": "USC Libraries Special Collections",
+      "repository_location": "Doheny Memorial Library, Los Angeles, CA 90089-0189",
+      "repository_email": "specol@lib.usc.edu",
+      "contributing_institution_calisphere": "California Historical Society Collection at Stanford; University of Southern California Digital Library",
+      "collection": "California Historical Society Collection, 1860-1960",
+      "subcollection": "Title Insurance and Trust, and C.C. Pierce Photography Collection, 1860-1960",
+      "contributing_entity": "California Historical Society",
+      "identifiers": {
+        "record_id": "chs-m7221",
+        "call_number": "CHS-2085",
+        "accession_number": "2085",
+        "legacy_record_id": "USC-1-1-1-7348",
+        "legacy_identifier": "CHS-2085.tiff",
+        "microfiche_number": "1-33-",
+        "legacy_collection_record_id": "chs-m265",
+        "usc_asset_id": "2A3BF1BSYI1",
+        "delivered_asset_id": "UC123008"
+      },
+      "permanent_url_doi": "http://doi.org/10.25549/chs-m7221",
+      "usc_asset_page": "https://digitallibrary.usc.edu/asset-management/2A3BF1BSYI1",
+      "calisphere_permalink": "https://calisphere.org/item/49c1e46546ed530ea73ab66b06dd0004/",
+      "direct_download_url": "https://d2f4b68zyi14gl.cloudfront.net/USC/TR1/01/60/13/68/ee/v1_UC1/UC123008.jpg?Expires=...&Signature=...&Key-Pair-Id=K1U3QT649ZRWYA",
+      "direct_download_note": "Time-expiring CloudFront signed URL. NOT a stable citation target; cite the DOI. Obtained via rendered browser session (curl/WebFetch against digitallibrary.usc.edu return HTTP 403 / HTTP 202 empty body).",
+      "rights_statement_verbatim": "Public Domain. Release under the CC BY Attribution license--http://creativecommons.org/licenses/by/3.0/--Credit both “University of Southern California. Libraries” and “California Historical Society” as the source. Digitally reproduced by the USC Digital Library; From the California Historical Society Collection at the University of Southern California",
+      "access_conditions_verbatim": "Send requests to address or e-mail given",
+      "description_verbatim": "Photograph of an off-season vineyard in the foreground and a winery -- the Santa Marguerita Ranch -- in the background, 1886. The scraggly vines have been pruned back and the ground around them is covered with straw. Hills rise in the distance.",
+      "format_verbatim": "1 photograph : glass photonegative, b&w; 21 x 26 cm.; glass plate negatives (format); photographs (aat)",
+      "master_internet_media_type": "image/tiff",
+      "master_resolution_stated": "19.0 in × 14.8 in at 300dpi / 48.2 cm × 37.8 cm at 300dpi",
+      "place_verbatim": "California (states), Camp Pendleton (city or populated place), Oceanside (city or populated place), San Diego (counties), San Diguito (city or populated place), USA (countries)",
+      "subject_verbatim": "Adobe houses (lcsh), Ranches (lcsh), San Diego County Adobes Aerial #3 (file heading), Santa Marguerita Ranch (subject), Vineyards (lcsh), Wine industry (lcsh)",
+      "downloaded_derivative": {"dimensions": "1200x940", "bytes": 162459, "format": "JPEG, baseline, precision 8, grayscale (1 component)"},
+      "visual_confirmation": "Negative number reading '2085' is inscribed in the lower-left corner of the photograph itself, independently corroborating call number CHS-2085. Image shows a single-story building with tile roof and railed veranda/terrace on a rise, flanked by conifers and hedging, above a foreground of bare pruned grapevines, with bare hills behind."
+    },
+    {
+      "target": "TARGET_C",
+      "filename": "Bancroft_LandCaseMapE-1362A_1867_Plat_RanchoSantaMargaritaYLasFlores_Strobel.jpg",
+      "title_verbatim": "Plat of the Rancho Santa Margarita y Las Flores [Calif.] : finally confirmed to Pio Pico et al. / surveyed under instructions from the U.S. Surveyor General by Max Strobel, Dep. Sur., July 1867",
+      "date_created_stated": "1867",
+      "date_precision": "Repository states 'Date Created and/or Issued: 1867' (Calisphere) and 'Published: 1867' (UC Berkeley). Survey date July 1867 is embedded in the title.",
+      "date_discrepancy": "REQUESTED as a 1912 plat. THIS ITEM IS 1867 AND IS LABELED 1867. No 1912 plat of Rancho Santa Margarita y Las Flores was located in any repository searched. See 'negative_findings' below.",
+      "creator_verbatim": "Strobel, Max., author",
+      "related_name_verbatim": "United States. District Court (California : Southern District). Land case. 317, Related Name Indexing Term",
+      "repository_name": "The Bancroft Library",
+      "parent_institution": "UC Berkeley",
+      "collection": "Maps of Private Land Grant Cases of California, [ca. 1840-ca. 1892]",
+      "identifiers": {
+        "land_case_map_number": "Land Case Map E-1362A",
+        "ark": "ark:/13030/hb0199n5n8",
+        "calisphere_local_id": "lc_cubanc_36_2_00045145",
+        "digicoll_record": "79700",
+        "source_file_name": "cubanc00002169_46a_k.jpg"
+      },
+      "permanent_url": "https://digicoll.lib.berkeley.edu/record/79700",
+      "calisphere_permalink": "https://calisphere.org/item/ark:/13030/hb0199n5n8/",
+      "oac_url_note": "https://oac.cdlib.org/ark:/13030/hb0199n5n8/ now 301-redirects to the Calisphere item page.",
+      "direct_download_url": "https://digicoll.lib.berkeley.edu/record/79700/files/cubanc00002169_46a_k.jpg",
+      "rights_statement_verbatim": "Researchers may make free and open use of the UC Berkeley Library’s digitized public domain materials. However, some materials in our online collections may be protected by U.S. copyright law (Title 17, U.S.C.). Use or reproduction of materials protected by copyright beyond that allowed by fair use (Title 17, U.S.C. § 107) requires permission from the copyright owners. The use or reproduction of some materials may also be restricted by terms of University of California gift or purchase agreements, privacy and publicity rights, or trademark law. Responsibility for determining rights status and permissibility of any use or reproduction rests exclusively with the researcher. To learn more or make inquiries, please see our permissions policies (https://www.lib.berkeley.edu/about/permissions-policies).",
+      "description_verbatim": "Includes table of boundaries and Surveyor Generals' certifications.. From: U.S. District Court. California, Southern District. Land case 317 SD; land case map E-1362A (Bancroft Library).. Shows drainage, survey markers, boundaries, lot numbers, township lines, adjoining ranchos, Mission San Luis Rey, etc.. 4362 S35. Pen-and-ink on tracing cloth.",
+      "scale_verbatim": "Scale [1:63,360]. 80 chs. to 1 in. (W 117°25'/N 33°20').",
+      "extent_verbatim": "1 ms. map ; on sheet 56 x 78 cm.",
+      "downloaded_derivative": {"dimensions": "1500x1155", "bytes": 187953, "format": "JPEG, JFIF 1.02, 300x300 dpi"},
+      "visual_confirmation": "Cartouche on the map itself reads: 'PLAT of the Rancho SANTA MARGARITA Y LAS FLORES finally confirmed to PIO PICO et al. Surveyed under instructions from the U.S. SURVEYOR GENERAL by Max Strobel Dep. Sur. July 1867. Containing 89,742 acres.' This independently corroborates the title, surveyor and 1867 survey date. Sheet shows township/range grid (T8S-T11S, R4W-R7W), a boundaries table, a U.S. Surveyor General's certification, and an adjoining rancho labeled 'Rancho Mission Vieja or La Paz' along the northern edge. 'Santa Margarita Ranch House' is labeled within the grant. A digitization colour-calibration target is present along the bottom edge of the scan, outside the map sheet.",
+      "certification_date_note": "The handwritten certifications on the sheet carry later dates than the survey: one is dated 'June 11th 1868' and another references 1870. The repository nonetheless assigns the item the date 1867 (the survey date). Recorded as stated; not reconciled.",
+      "resolution_note": "1500x1155 is the ONLY file the repository record offers (stated size 188.0 kB; downloaded 187,953 bytes, exact match). No IIIF endpoint resolved on digicoll.lib.berkeley.edu."
+    },
+    {
+      "target": "TARGET_D",
+      "filename": "SantaAnaPL_11478002_TrabucoMesaAdobe_RanchoCanadaDeLosAlisos_1930.jpg",
+      "title_verbatim": "Trabuco Mesa Adobe on Rancho Canada de Los Alisos, 1930",
+      "date_created_stated": "1930 (issued)",
+      "date_precision": "Repository states '1930 (issued)'. Not described as circa or estimated. BEST MATCH for the requested circa-1930 Trabuco Adobe photograph.",
+      "creator": null,
+      "creator_note": "No photographer stated. Description field notes 'W. P. A. Adobes vol.', indicating the Works Progress Administration adobe survey volume.",
+      "repository_name": "Santa Ana Public Library",
+      "collection": "Santa Ana History Room photograph collection",
+      "identifiers": {"local_id": "11478002", "ark": "ark:/13030/kt7q2nc04d"},
+      "permanent_url": "http://ark.cdlib.org/ark:/13030/kt7q2nc04d",
+      "calisphere_permalink": "https://calisphere.org/item/ark:/13030/kt7q2nc04d/",
+      "direct_download_url": "https://calisphere.org/clip/2000x2000/19375/8bfab53e560fd210e765c2c15e7b8383",
+      "direct_download_note": "Calisphere-hosted derivative. The /clip/ endpoint caps at the stored derivative size; requesting dimensions above 720x475 returns the same 720x475 file. Requires a browser-like User-Agent and Referer header.",
+      "rights_statement_verbatim": "Copyright restrictions applying to use or reproduction of this image available from the Santa Ana Public Library.",
+      "description_verbatim": "Trabuco Mesa Adobe on Rancho Canada de Los Alisos, 1930. A few walls of the adobe stand in a field. It had a tile roof and was a sub-station of the San Juan Capistrano Mission where farming and cattle raising took place. \"The building was made with three large rooms in a row, east to west; with the west room of different and evidently of later construction.\"",
+      "format_verbatim": "Photoprint; 1 Print B&W 3.5 x 5 in.",
+      "downloaded_derivative": {"dimensions": "720x475", "bytes": 79956, "format": "JPEG, grayscale (1 component)"},
+      "visual_confirmation": "The photographic print itself carries the handwritten inscription 'Trabuco adobe 1930' across the sky at the top of the image, independently corroborating BOTH the subject identification and the 1930 date stated in the catalogue record. Image shows a long, low ruined adobe wall of roughly a dozen standing eroded piers/wall segments in open flat grassland, with a low tree line at left and distant hills at right. No roof survives.",
+      "location_note": "Repository places this adobe on 'Rancho Canada de Los Alisos', NOT on Rancho Trabuco. The repository's own association is with Mission San Juan Capistrano (as a sub-station). Recorded as stated; not reconciled."
+    },
+    {
+      "target": "TARGET_D",
+      "filename": "SantaAnaPL_11478028_TrabucoMesaAdobe_Wview_1936.jpg",
+      "title_verbatim": "W. view of the Trabuco Mesa Adobe on Rancho Canada de Los Alisos, 1936",
+      "date_created_stated": "1936 (issued)",
+      "date_precision": "Repository states '1936 (issued)'. Six years later than the requested circa-1930; retained as a companion view.",
+      "repository_name": "Santa Ana Public Library",
+      "collection": "Santa Ana History Room photograph collection",
+      "identifiers": {"local_id": "11478028", "ark": "ark:/13030/kt7s20140m"},
+      "permanent_url": "http://ark.cdlib.org/ark:/13030/kt7s20140m",
+      "calisphere_permalink": "https://calisphere.org/item/ark:/13030/kt7s20140m/",
+      "direct_download_url": "https://calisphere.org/clip/2000x2000/19375/890d5f31ca949cb0d151efc355561ced",
+      "rights_statement_verbatim": "Copyright restrictions applying to use or reproduction of this image available from the Santa Ana Public Library.",
+      "description_verbatim": "W. view of the Trabuco Mesa Adobe on Rancho Canada de Los Alisos, 1936. A few walls of the adobe stand with the entrance in view. The adobe home had a tile roof and was a sub-station of the San Juan Capistrano Mission where farming and cattle raising took place. \"The building was made with three large rooms in a row, east to west; with the west room of different and evidently of later construction.\"",
+      "format_verbatim": "Photoprint; 1 Print B&W 3.5 x 5 in.",
+      "downloaded_derivative": {"dimensions": "706x576", "bytes": 129809, "format": "JPEG, grayscale (1 component)"}
+    },
+    {
+      "target": "TARGET_D",
+      "filename": "SantaAnaPL_11478010_TrabucoMesaAdobe_SEview_undated.jpg",
+      "title_verbatim": "S. E. view of the Trabuco Mesa Adobe on Rancho Canada de Los Alisos",
+      "date_created_stated": null,
+      "date_precision": "NO date field is present in the repository record. Filed by Calisphere under decade 'unknown'. Do not infer a date from the companion 1930/1936 items.",
+      "repository_name": "Santa Ana Public Library",
+      "collection": "Santa Ana History Room photograph collection",
+      "identifiers": {"local_id": "11478010", "ark": "ark:/13030/kt2t1nb93w"},
+      "permanent_url": "http://ark.cdlib.org/ark:/13030/kt2t1nb93w",
+      "calisphere_permalink": "https://calisphere.org/item/ark:/13030/kt2t1nb93w/",
+      "direct_download_url": "https://calisphere.org/clip/2000x2000/19375/ce57f5c9a22c07f3d09dd4da8207b77c",
+      "rights_statement_verbatim": "Copyright restrictions applying to use or reproduction of this image available from the Santa Ana Public Library.",
+      "description_verbatim": "S. E. view of the Trabuco Mesa Adobe on Rancho Canada de Los Alisos. A few walls of the adobe stand with a hill in the background. The home had a tile roof and was a sub-station of the San Juan Capistrano Mission where farming and cattle raising took place. \"The building was made with three large rooms in a row, east to west; with the west room of different and evidently of later construction.\"",
+      "format_verbatim": "Photoprint; 1 Print B&W 3.5 x 5 in.",
+      "downloaded_derivative": {"dimensions": "720x460", "bytes": 78434, "format": "JPEG, grayscale (1 component)"}
+    },
+    {
+      "target": "TARGET_D",
+      "filename": "OCPL_OCArchives_TrabucoAdobeRuins_ONeillPark_dateUnknown_id1508.jpg",
+      "title_verbatim": "Trabuco Adobe ruins, O'Neill Park, Rancho Santa Margarita, Calif.",
+      "title_note": "Calisphere renders the title without the trailing period; the CONTENTdm source record includes it. This is the ONLY located item whose title uses the exact phrase 'Trabuco Adobe ruins'.",
+      "date_created_stated": "19--",
+      "date_precision": "Repository date field reads literally '19--', i.e. twentieth century, decade unspecified. This item is NOT dated to 1930 by the repository and must not be presented as circa-1930.",
+      "creator": null,
+      "contributor_verbatim": "OC Archives",
+      "repository_name": "OC Public Libraries",
+      "collection": "OC Stories Photos",
+      "identifiers": {"contentdm_collection": "p16838coll1", "contentdm_id": "1508", "dmrecord": "1508", "oclc": "ocn819760214", "find_file": "1514.jp2"},
+      "permanent_url": "http://cdm16838.contentdm.oclc.org/cdm/ref/collection/p16838coll1/id/1508",
+      "calisphere_permalink": "https://calisphere.org/item/a2da429c17465ae6679f2772bb76e56a/",
+      "direct_download_url": "https://cdm16838.contentdm.oclc.org/digital/iiif/p16838coll1/1508/full/full/0/default.jpg",
+      "rights_statement_verbatim": "Copyright status is unknown. Some materials in these collections may be protected by the U.S. Copyright Law (Title 17, U.S.C.). In addition, the reproduction of some materials may be restricted by terms of gift or purchase agreements, donor restrictions, privacy and publicity rights, licensing and trademarks. Transmission or reproduction of materials protected by copyright beyond that allowed by fair use requires the written permission of the copyright owners. Works not in the public domain cannot be commercially exploited without permission of the copyright owner. Responsibility for any use rests exclusively with the user.",
+      "description_verbatim": "Trabuco Adobe ruins, O'Neill Park, Rancho Santa Margarita, Calif.",
+      "format_verbatim": "1 photograph : b&w",
+      "downloaded_derivative": {"dimensions": "640x434", "bytes": 60439, "format": "JPEG, JFIF 1.01, 600x600 dpi"},
+      "resolution_note": "640x434 is the maximum the CONTENTdm IIIF service exposes (info.json reports width 640, height 434)."
+    },
+    {
+      "target": "BONUS_related_to_TARGET_B",
+      "filenames": [
+        "HABS_CA-48_SantaMargaritaRanchHouse_01_general_view_from_south.tif",
+        "HABS_CA-48_SantaMargaritaRanchHouse_02_nw_elevation_from_west.tif",
+        "HABS_CA-48_SantaMargaritaRanchHouse_03_nw_elevation_from_north.tif"
+      ],
+      "title_verbatim": "Casa del Rancho Santa Margarita y Los Flores, U.S. Highway 101, Oceanside, San Diego County, CA",
+      "title_note": "Repository spells 'Los Flores', not 'Las Flores'. Transcribed verbatim.",
+      "photo_captions_verbatim": [
+        "1.  Historic American Buildings Survey Photographed by Henry F. Withey May 1937 GENERAL VIEW (FROM SOUTH) - Casa del Rancho Santa Margarita y Los Flores, U.S. Highway 101, Oceanside, San Diego County, CA",
+        "2.  Historic American Buildings Survey Photographed by Henry F. Withey May 1937 N. W. ELEVATION FROM WEST. - Casa del Rancho Santa Margarita y Los Flores, U.S. Highway 101, Oceanside, San Diego County, CA",
+        "3.  Historic American Buildings Survey Photographed by Henry F. Withey May 1937 N. W. ELEVATION FROM NORTH. - Casa del Rancho Santa Margarita y Los Flores, U.S. Highway 101, Oceanside, San Diego County, CA"
+      ],
+      "date_created_published_verbatim": "Documentation compiled after 1933",
+      "date_precision": "Individual photo captions state 'Photographed by Henry F. Withey May 1937' (photo 10 of the survey states May 1936). This is NOT the requested 1887 photograph; it is a 1937 survey of the same ranch house, retained as corroborating documentation of the building.",
+      "creator_verbatim": "Historic American Buildings Survey, creator",
+      "photographer_verbatim": "Henry F. Withey",
+      "repository_verbatim": "Library of Congress Prints and Photographs Division Washington,      D.C. 20540 USA http://hdl.loc.gov/loc.pnp/pp.print",
+      "call_number": "HABS CAL,37-OCSI.V,2-",
+      "survey_number": "HABS CA-48",
+      "building_dates_verbatim": "ca. 1841 Initial Construction",
+      "medium_verbatim": "Photo(s): 14 ; Data Page(s): 2",
+      "permanent_url": "http://www.loc.gov/item/ca0579/",
+      "direct_download_urls": [
+        "https://tile.loc.gov/storage-services/master/pnp/habshaer/ca/ca0500/ca0579/photos/015167pu.tif",
+        "https://tile.loc.gov/storage-services/master/pnp/habshaer/ca/ca0500/ca0579/photos/015168pu.tif",
+        "https://tile.loc.gov/storage-services/master/pnp/habshaer/ca/ca0500/ca0579/photos/015169pu.tif"
+      ],
+      "rights_advisory_verbatim": "No known restrictions on images made by the U.S. Government; images     copied from other sources may be restricted.    https://www.loc.gov/rr/print/res/114_habs.html",
+      "rights_statement_verbatim": "The Library of Congress does not own rights to material in its collections. Therefore, it does not license or charge permission fees for use of such material and cannot grant or deny permission to publish or otherwise distribute the material. Ultimately, it is the researcher's obligation to assess copyright or other use restrictions and obtain permission from third parties when necessary before publishing or otherwise distributing materials found in the Library's collections. For information about reproducing, publishing, and citing material from this collection, as well as access to the original items, see: Historic American Buildings Survey/Historic American Engineering Record/Historic American Landscape Survey (HABS/HAER/HALS) Collection - Rights and Restrictions Information",
+      "downloaded_derivatives": [
+        {"file": "01_general_view_from_south", "bytes": 16137288, "stated_size": 16137288, "format": "TIFF, little-endian"},
+        {"file": "02_nw_elevation_from_west", "bytes": 16142288, "stated_size": 16142288, "format": "TIFF, little-endian"},
+        {"file": "03_nw_elevation_from_north", "bytes": 14997976, "stated_size": 14997976, "format": "TIFF, little-endian"}
+      ],
+      "download_note": "Full-resolution TIFF masters. Byte counts match the sizes stated in the loc.gov item JSON exactly. The survey contains 14 photographs total; only the three exterior general views were retrieved.",
+      "not_downloaded": "Photos 4-14 of HABS CA-48 (interior/detail views) and the 2 data pages remain available at the same URL pattern (015170pu.tif through 015180pu.tif)."
+    }
+  ],
+  "negative_findings": {
+    "no_1912_plat": {
+      "conclusion": "NO 1912 plat map of Rancho Santa Margarita y Las Flores was found in any accessible repository. The 1867 Max Strobel plat was downloaded instead and is labeled 1867.",
+      "queries_run": [
+        "loc.gov/maps/?q=Rancho+Santa+Margarita+y+Las+Flores&fo=json - 0 results",
+        "loc.gov/maps/?q=Las+Flores+rancho+plat&fo=json - 0 results",
+        "loc.gov/maps/?q=Santa+Margarita+rancho+San+Diego+map+1912&fo=json - 0 results",
+        "loc.gov/search/?q=Rancho+Santa+Margarita&fo=json - 6935 hits, no 1912 plat; top relevant hit was HABS ca0579",
+        "davidrumsey.com luna API q=Rancho+Santa+Margarita+y+Las+Flores - 0 results",
+        "davidrumsey.com luna API q=Santa+Margarita - 7 results, none a rancho plat",
+        "davidrumsey.com luna API q=Las+Flores - 6 results, all unrelated (Mexican maritime charts)",
+        "davidrumsey.com luna API q=San+Diego+County+rancho+plat - 0 results",
+        "archive.org advancedsearch q=\"Santa Margarita y Las Flores\" - 3 hits, all audio/video",
+        "calisphere.org/search/?q=%22Santa+Margarita+Ranch%22 - 30 items, no 1912 plat",
+        "WebSearch: 1912 plat map \"Rancho Santa Margarita y Las Flores\" - no 1912 item surfaced"
+      ],
+      "blocked": "BLM GLO (glorecords.blm.gov) could NOT be searched. All legacy endpoints return HTTP 401; the current site is a Salesforce Lightning SPA whose search redirects to Login.gov authentication. No account was created (prohibited). GLO survey-plat holdings for this rancho therefore remain UNVERIFIED - this is the single most likely remaining home for a 1912-dated survey plat and should be checked manually by a signed-in user.",
+      "structural_note": "Ranchos were private land grants confirmed via US District Court land cases; their plats live in the land case files (Bancroft / NARA) rather than in the GLO public-land township plat series. A 1912 date would postdate the 1879 patent, so any 1912 document is more likely a partition or subdivision map than a US Surveyor General plat."
+    },
+    "no_1887_photograph": {
+      "conclusion": "NO 1887-dated photograph of the Santa Margarita ranch house and vineyards was found. The matching image is dated 1886 by USC/California Historical Society and was downloaded under its stated 1886 date.",
+      "queries_run": [
+        "calisphere.org/search/?q=Santa+Margarita+ranch+house+vineyard - 0 results",
+        "calisphere.org/search/?q=%22Santa+Margarita+Ranch%22 - 30 items; 1880s facet = 2 items (both ca.1880 / ca.1875, neither 1887)",
+        "calisphere.org/search/?q=%22Santa+Marguerita%22 - 7 items; 1880s facet = 2 items (the 1886 vineyard photo and the ca.1875 adobe)",
+        "hdl.huntington.org search API searchterm/Santa Margarita - 13 items; no 1887 ranch house/vineyard photo (Mission Santa Margarita items are the San Luis Obispo County asistencia, a different place)",
+        "loc.gov/pictures/search/?q=Trabuco&fo=json and HABS collection searches",
+        "WebSearch: 1887 photograph \"Santa Margarita\" ranch house vineyard San Diego History Center"
+      ],
+      "blocked": "San Diego History Center (collections.sandiegohistory.org) returns HTTP 403 to curl and was not searched. SDSU Digital Collections (digitalcollections.sdsu.edu) is behind an Anubis JavaScript proof-of-work challenge and was not searched. Either could hold an additional or differently-dated print of this subject.",
+      "date_claim_note": "The '1887' date appears to originate from an uncredited blog reproduction. It is NOT supported by any repository record located."
+    },
+    "no_habs_trabuco": {
+      "conclusion": "The Library of Congress HABS/HAER/HALS collection contains NO Trabuco Adobe documentation.",
+      "queries_run": [
+        "loc.gov/pictures/search/?q=Trabuco&fo=json - 0 hits",
+        "HABS collection search q=Trabuco - 0 results",
+        "HABS collection search q=Las+Flores+Adobe - 0 results",
+        "HABS collection search q=Orange+County+California+adobe - 6 results, all Mission San Juan Capistrano structures or non-OC buildings"
+      ],
+      "note": "The most likely free/public-domain source for TARGET D therefore does NOT hold it. The Trabuco Adobe images that do exist are held by Santa Ana Public Library and OC Public Libraries under restrictive or unknown rights."
+    }
+  },
+  "access_notes": {
+    "calisphere_and_oac": "curl/WebFetch receive HTTP 202 with an empty body (bot gate). oac.cdlib.org and content.cdlib.org 301-redirect into the same gate. A rendered browser session works. Calisphere image endpoints (/clip/, /crop/) DO serve to curl when given a browser User-Agent and a Referer header.",
+    "usc": "digitallibrary.usc.edu returns HTTP 403 to curl/WebFetch. Images are delivered as time-expiring CloudFront signed URLs captured from a rendered browser session.",
+    "berkeley": "digicoll.lib.berkeley.edu HTML pages return HTTP 202 to curl, but the /record/<id>/files/<name> download path serves normally to curl.",
+    "loc": "loc.gov and tile.loc.gov work with curl. Large TIFF downloads may truncate silently - one 16 MB master initially returned only 7,234 bytes with HTTP 200; always compare the byte count against the size stated in the item JSON and retry with --retry / -C -.",
+    "contentdm": "cdm16838.contentdm.oclc.org serves both the dmwebservices JSON API and IIIF endpoints to curl without restriction."
+  }
+}

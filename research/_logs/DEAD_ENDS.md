@@ -85,3 +85,40 @@ are tracked here and in `FUTURE_EVIDENCE_GATES.md` rather than treated as blocke
 | LA Times / OC Register full archives | Commercial | Paywalled |
 
 *Updated as clusters report.*
+
+## DE-007 — BLM General Land Office Records could not be searched (2026-07-19)
+
+**Tried:** locating an early-20th-century plat and survey field notes for the townships covering
+the study area.
+**Result:** legacy GLO endpoints return HTTP 401; the current site redirects to **Login.gov**
+authentication. No account was created.
+**Consequence:** GLO remains the **most likely repository** for both a 1912-era plat and the
+survey field notes identified as the highest-value untapped cartographic source. This is an
+**unsearched archive, not a demonstrated absence**, and every statement in the publication about
+the 1912 plat is worded accordingly.
+**Route:** requires a signed-in human at glorecords.blm.gov.
+
+## DE-008 — No 1912 plat of Rancho Santa Margarita y Las Flores located (2026-07-19)
+
+**Searched:** Library of Congress maps and JSON API, David Rumsey Luna API, Calisphere, Online
+Archive of California, archive.org.
+**Found instead:** the **1867** Strobel survey plat (Bancroft Library, Land Case Map E-1362A,
+89,742 acres), which was acquired.
+**Note:** 1912 postdates the 1879 patent, so any 1912 document would more likely be a partition
+or subdivision map than a Surveyor General plat. Combined with DE-007, the question stays open.
+
+## DE-009 — USC full-resolution masters unavailable anonymously (2026-07-19)
+
+**Tried:** `/cdm/ref/collection/`, `/digital/iiif/`, `/iiif/2/`, and legacy `/archive/` routes
+for CHS-2085, 2358, 2359, 2360. All return 404 or 403.
+**Available:** 1200 px derivatives, which are sufficient for publication.
+**Route for masters (~5,280×4,200):** email specol@lib.usc.edu.
+**Caution recorded:** USC image URLs are **time-expiring CloudFront signed URLs** and are not
+stable citation targets. Cite the DOIs.
+
+## DE-010 — California Governor's cattle fever quarantine proclamation, 15 April 1907 (2026-07-19)
+
+**Located:** California State Library, executive-order collection, `5910-5913.pdf`.
+**Result:** HTTP **403 from CloudFront** ("Request blocked") to automated access.
+**Why it matters:** this is likely the founding state instrument of the quarantine and would
+date the programme precisely. Worth retrying from an ordinary browser.

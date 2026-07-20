@@ -24,8 +24,8 @@ been missed for a mechanical reason: an unconventional URL path. The 1937–38 f
 **1.15 feet per pixel**.
 
 **No cattle dipping vat or corral complex was found.** Zone A was divided into a grid and
-searched systematically, tile by tile, at full resolution — twenty-four tiles across two
-epochs. At 1.15 ft/px a corral complex would be unmistakable. Nothing was found.
+searched systematically, tile by tile, at full resolution — twenty-four tiles across two epochs.
+Nothing was found. **But this finding is weaker than it first appeared** — see below.
 
 @figure FIG-01
 
@@ -48,9 +48,13 @@ proximity to housing stopped carrying information.
 label, no photograph, no purchase record, no employee account, and no soil measurement places it
 here.
 
-More fundamentally: **it is not yet established that California's tick eradication programme
-applied to Orange County at all.** That is the first link in the hypothesis chain and it remains
-unverified against primary sources. A negative answer would close the question entirely.
+**But the programme did reach this county.** USDA Bureau of Animal Industry Circular 174,
+*Eradicating Cattle Ticks in California* (1911), lists Orange County among counties "heavily
+infested" with cattle ticks, south of the California quarantine line. The page was read and
+verified directly. This resolves the first link in the hypothesis chain — in the affirmative.
+
+It is a **county-level** classification. It places no vat on any parcel, on this ranch, or in
+this footprint. The remaining five links in the chain are still entirely unevidenced.
 
 **No soil sampling for arsenic appears to have been conducted across the residential footprint.**
 Nearby *school* sites were assessed — California's Education Code requires it before a district
@@ -68,7 +72,7 @@ the pathways examined.
 | Organochlorines at school sites | Strong | None |
 | Plugged oil/gas well proximity | Strong | **Suggestive, non-significant** |
 | Landscape pesticides | Unmeasurable from state data | None |
-| **Arsenical cattle dipping** | **None located** | **None** |
+| **Arsenical cattle dipping** | **County-level only; nothing site-specific** | **None** |
 
 Two plugged exploratory wells lie within about a mile of the community centroid — one at
 roughly a quarter-mile — and this is the only pathway with any published association with Ewing
@@ -80,11 +84,18 @@ for it.
 
 Both are published in full rather than quietly revised.
 
-**The imagery premise was wrong.** This project had argued that a dipping vat was undetectable
-*in principle* — the earliest imagery was 1948, three decades after dipping ended, at a
-resolution where a vat would be a single pixel. Aerial photography from 1929 exists, at
-resolution where a corral complex is obvious. The conclusion did not change; its basis did. It
-now rests on adequate imagery rather than on an excuse.
+**The imagery premise was wrong — twice, in opposite directions.** First this project argued a
+vat was undetectable *in principle*, because the earliest imagery was 1948 at a resolution where
+a vat would be one pixel. Photography from 1929 exists at 1.15 ft/px, so that was wrong (C-003).
+The project then swung the other way and claimed the resolution objection had "disappeared
+entirely" and a corral complex "would be unmistakable." **That was also wrong** (C-004). USDA
+Circular 174 documents that California used **cage vats** — installed beside an existing corral,
+no drip pen, $55–65 in materials — and **wade tanks** costing **under $10** and measuring about
+fifteen feet. Neither need be visible at all.
+
+The negative imagery finding is consequently downgraded to **Low** confidence. It has force
+against a large permanent swim vat, and little to none against the cheap designs the federal
+government was actually recommending for California.
 
 **A promising spatial pattern did not survive testing.** The observation that homes appear to
 sit exactly where the ranch water sources were is descriptively accurate and causally

@@ -50,9 +50,18 @@ Two things changed at once.
 dipping period ended — within the plausible survival window of an abandoned but not yet
 demolished facility.
 
-**The resolution objection disappeared entirely.** At 1.15 feet per pixel, a two-metre vat is
-roughly six pixels across, and a corral complex — the pens, chutes, and holding yards that
-necessarily accompany a vat — would span hundreds of pixels. It would be unmistakable.
+**The resolution objection appeared to disappear.** At 1.15 feet per pixel, a two-metre vat is
+roughly six pixels across, and a large swim-vat complex — trench, drip pen, and holding pens —
+would span hundreds of pixels.
+
+::: classification correction
+**This reasoning was later corrected. See C-004.** It assumed the swim-vat model. USDA Circular
+174 documents that California also used **cage vats** ($55–65 in materials, installed beside an
+existing corral, requiring only a short chute, and with **no drip pen**) and **wade tanks**
+(under **$10** in lumber, roughly fifteen feet long). Installations of that class need not be
+resolvable at 1.15 ft/px. Claim EM-003 is downgraded to **Low** confidence as a result. The
+imagery search retains force against a *large permanent* installation only.
+:::
 
 ::: classification fact
 **EM-004 · ESTABLISHED FACT · Confidence: High**
@@ -242,8 +251,10 @@ justifies a soil test, the other would justify conclusions this evidence cannot 
 
 Three limits, of which only the last two now apply:
 
-1. ~~**Resolution.**~~ **Resolved.** At 1.15 ft/px a vat is roughly six pixels and a corral
-   complex is unmissable. This objection no longer holds.
+1. **Resolution — partially, not wholly, resolved.** At 1.15 ft/px a large swim-vat installation
+   would be visible, and none was found. But per correction C-004, a cage vat or wade tank —
+   the cheap designs USDA documented for California — may produce no distinctive surface
+   structure at all. This objection is **weakened, not eliminated**.
 
 2. **Cartographic convention.** Dipping vats were essentially never mapped. USGS symbology has
    no vat symbol; a vat would at best fall under a generic structure dot, and usually was not
@@ -255,10 +266,11 @@ Three limits, of which only the last two now apply:
    concrete vats were commonly broken up and buried at the end of the programme. A facility
    decommissioned in 1917 could easily be invisible by 1929.
 
-The honest summary: **the imagery is now good enough that a surviving surface facility inside
-Zone A would probably have been seen, and none was.** That is weak evidence *against* a large
-surviving facility. It is no evidence at all about a demolished or buried one — which, given
-the twelve-year gap, is the more likely state of affairs if one ever existed.
+The honest summary, as revised: **the imagery would probably have shown a large permanent
+swim-vat installation inside Zone A, and none was found.** That is weak evidence against that
+specific design. It is **no evidence** about a small cage vat or wade tank, and no evidence about
+a demolished or buried facility of any size — which, given the twelve-year gap, is the more
+likely state of affairs if one ever existed.
 
 ---
 

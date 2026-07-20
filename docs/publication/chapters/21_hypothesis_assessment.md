@@ -26,11 +26,12 @@ Stated that way, it is a **chain of six propositions**, each of which must hold:
 5. Development disturbed, redistributed, or built over it
 6. A pathway to human exposure exists
 
-**Proposition 1 is currently unverified. Propositions 2 through 6 are entirely unevidenced.**
+**Proposition 1 is now ESTABLISHED. Propositions 2 through 6 remain entirely unevidenced.**
 
-A chain is only as strong as its weakest link, and the first link has not yet been tested
-against primary sources. This is worth stating at the outset because the hypothesis is often
-discussed as though it began at proposition 3.
+USDA Bureau of Animal Industry Circular 174 (1911) lists Orange County among counties "heavily
+infested" with cattle ticks, south of the California quarantine line — see chapter 8. The first
+link holds. The remaining five do not, and the gap between "the programme reached this county"
+and "a vat stood here" is unbridged by any documentary evidence.
 
 ---
 
@@ -91,17 +92,18 @@ currently contains more of it.
 ### No vat has been found on imagery good enough to show one
 
 ::: classification fact
-The systematic 24-tile survey of Zone A at 1.15 ft/px — a resolution at which a corral complex
-would be unmistakable — found **no vat, no corral, no pen, and no chute complex**. The 1929,
-1946–47, 1948, 1968, and 1974 sheets were also examined.
+The systematic 24-tile survey of Zone A at 1.15 ft/px found **no vat, no corral, no pen, and no
+chute complex**. The 1929, 1946–47, 1948, 1968, and 1974 sheets were also examined.
 
-This is the strongest single piece of counter-evidence in the investigation, and it became
-strong only after the imagery premise was corrected. Under the earlier and incorrect assumption
-that only 1948 imagery existed, the absence proved nothing. On 1929 and 1937–38 photography, it
-means something.
+This was previously described as the strongest counter-evidence in the investigation. **That
+assessment has been downgraded — see correction C-004.**
 
-*Its limit, stated precisely:* it is evidence against a **surviving surface facility in
-1929**. It is not evidence about a facility demolished and backfilled between 1917 and 1929.
+*Its limits, stated precisely:* it is evidence against a **large permanent swim-vat installation
+surviving to 1929**. USDA Circular 174 documents that California also used cage vats (installed
+beside an existing corral, no drip pen, $55–65) and wade tanks (under $10, ~15 ft long). The
+imagery has **little to no power** against those designs. It is also no evidence about any
+facility demolished and backfilled between 1917 and 1929. Claim EM-003 now carries **Low**
+confidence.
 :::
 
 ### No map labels a dipping vat
