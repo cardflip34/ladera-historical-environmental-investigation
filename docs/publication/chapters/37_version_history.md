@@ -36,6 +36,7 @@ Each was caught by going to a primary source or by rendering the data rather tha
 
 | Commit | Date | Change |
 |---|---|---|
+| `6f6876e` | 2026-07-20 | Correct the PLSS finding and the survey chronology; reopen the GLO route |
 | `ed13357` | 2026-07-19 | Establish the development record; find why the entitlement EIR never surfaced |
 | `4d52e3a` | 2026-07-19 | Establish the land grant from the federal court record; correct Armor |
 | `ee4cfca` | 2026-07-19 | Add timeline, conclusion, and generated back matter; scripted PDF build |

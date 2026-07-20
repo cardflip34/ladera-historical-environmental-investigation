@@ -1,0 +1,82 @@
+SOURCE RECORD — California Digital Newspaper Collection (CDNC)
+================================================================
+Publication:      Los Angeles Herald
+Issue:            Volume 35, Number 297, 25 July 1908, Page 8
+Article title:    DAIRYMAN SUING FOR INJURIES TO HIS CATTLE
+CDNC item ID:     LAH19080725.2.83.4.1
+Persistent link:  https://cdnc.ucr.edu/?a=d&d=LAH19080725.2.83.4.1
+Retrieved:        2026-07-20
+Retrieval method: CDNC public web interface (cdnc.ucr.edu). Site is behind a
+                  Cloudflare managed challenge; curl and plain HTTP fetch return
+                  HTTP 403. Text obtained by rendering the public article page in
+                  a browser and reading the displayed OCR text pane.
+Text status:      Uncorrected OCR as published by CDNC. Verbatim, including OCR
+                  errors (e.g. "flled" for "filed", "Estl. mated" for "Estimated",
+                  "Re. salted" for "Resulted", "Sldener" for "Sidener").
+Source grade:     B2 — reputable contemporaneous news outlet reporting a named
+                  public official (county veterinarian) and a named claimant, and
+                  describing a filed public claim against a county government.
+                  NOT the primary record. The underlying primary record is the
+                  Orange County Board of Supervisors claim/minute entry, which is
+                  NOT in hand.
+
+----------------------------------------------------------------
+VERBATIM OCR TEXT
+----------------------------------------------------------------
+
+DAIRYMAN SUING FOR INJURIES TO HIS CATTLE
+
+Dipping Ordered by Orange County Veterinarian Said to Have Re. ; salted In
+Damage Estl. .'-. mated at $400
+
+Special to The Herald. . SANTA ANA, July 24.-A claim for $400 was flled today by
+E. J. Levengood against the county of Orange as compensation for damages and
+loss to his herd of dairy cows, sustained by dipping for the cure of Texas tick.
+The dipping was done by order of the county veterinarian, Dr. W. S. McFarlane,
+and he it was who supervised the mixing of the preparation used. , , . Six of the
+cows, after coming out of the dip, sickened and died, and several others for days
+refused to eat and fell off In flesh to such an extent that their value was
+reduced at least one-half, according to the claim : made by the owner. : -y The
+state veterinarian visited the herd, and other veterinary surgeons were called in
+to pass Judgment as to where the blame should be placed, but none of them talked
+for publication and Levengood has been forced to take this step in order to
+preserve his standing in court.
+
+[Following unrelated item in same column, retained to show article boundary:]
+Blanche Sldener and William E Johnston, both residents of Los Angeles, were
+granted a marriage license here yesterday afternoon.
+
+----------------------------------------------------------------
+WHAT THIS ESTABLISHES (and what it does not)
+----------------------------------------------------------------
+
+ESTABLISHED (credible contemporaneous report, B2):
+  - A county-ordered cattle dipping program for "Texas tick" (cattle tick fever,
+    Rhipicephalus / Boophilus annulatus) was operating in Orange County, CA in
+    mid-1908.
+  - The dipping was ordered by, and the dip solution mixed under supervision of,
+    the Orange County veterinarian, named as Dr. W. S. McFarlane. This is a
+    NEW NAMED LEAD for locating the primary county record.
+  - E. J. Levengood, a Santa Ana-area dairyman, filed a $400 claim against the
+    County of Orange on 24 July 1908.
+  - Alleged harm: six cows died after the dip; others sickened and lost roughly
+    half their value.
+  - The State Veterinarian inspected the herd; other veterinary surgeons were
+    consulted; no finding was made public.
+
+NOT ESTABLISHED by this document:
+  - The chemical composition of the dip. (Era dips were typically arsenical --
+    sodium arsenite -- or crude-oil/creosote based, but this article does NOT
+    state the formulation. Do not infer.)
+  - The location of any dipping vat.
+  - Whether the Board of Supervisors allowed, rejected, or compromised the claim.
+  - Any connection to the Ladera Ranch study area. Santa Ana is outside Zone A.
+    Orange County in 1908 encompassed the study area, so a countywide program is
+    relevant context, but no site-specific link is shown.
+
+NEXT PRIMARY RECORD SOUGHT:
+  Orange County Board of Supervisors minutes, July-September 1908 -- the entry
+  acting on the Levengood claim, plus any 1907-1912 orders establishing the
+  dipping program, appropriations, and the appointment of Dr. W. S. McFarlane
+  as county veterinarian / quarantine officer. Held by the Orange County
+  Archives (see FUTURE_EVIDENCE_GATES). Not digitized as of this retrieval.

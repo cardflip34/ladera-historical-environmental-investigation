@@ -190,3 +190,91 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+
+# --- Evidence-category chapters, generated from the matrix -------------------------------
+
+CATEGORY_CHAPTERS = [
+    ("25_known_facts.md", "Known Facts", "ESTABLISHED FACT",
+     "Claims this investigation regards as established: documented in a primary or official "
+     "source, verified against that source, and reproducible by a reader who follows the "
+     "citation. Each carries its limiting or contradictory evidence, because an established "
+     "fact with no stated limits is usually an overstated one."),
+    ("26_historical_context.md", "Historical Context", "HISTORICAL CONTEXT",
+     "Accurate general background that situates the investigation but is **not itself a finding "
+     "about this specific land**. This distinction does most of the work in this report: that "
+     "arsenical dipping existed as a practice is context. That it happened here would be a "
+     "finding, and it is not one of these."),
+    ("27_investigative_leads.md", "Investigative Leads", "INVESTIGATIVE LEAD",
+     "Specific, testable propositions supported by partial evidence, each carrying a defined "
+     "next step. A lead is a question with a method attached. None of these is a finding, and "
+     "none should be cited as one."),
+    ("28_open_questions.md", "Open Questions", "OPEN QUESTION",
+     "Material questions this investigation has identified and cannot currently answer. These "
+     "are stated plainly rather than smoothed over, because the shape of what is unknown is "
+     "itself a result — and because a reader deserves to know where the floor gives way."),
+]
+
+
+def build_category_chapter(title, cls, intro):
+    rows = [r for r in csv.DictReader(open(MATRIX, encoding="utf-8"))
+            if (r.get("classification") or "").strip() == cls]
+    rows.sort(key=lambda r: r.get("claim_id", ""))
+    out = [f"# {title}\n", intro + "\n", f"**{len(rows)} claims in this category.**\n"]
+    if not rows:
+        out.append("*No claims currently carry this classification.*\n")
+        return "\n".join(out)
+    for r in rows:
+        conf = esc(r.get("confidence")) or "—"
+        out.append(f"\n## {esc(r['claim_id'])} — {esc(r['claim'])}\n")
+        out.append(f"**Confidence:** {conf}  ·  **Status:** {esc(r.get('status'))}\n")
+        out.append(f"**Supporting evidence.** {esc(r.get('supporting_evidence')) or '—'}\n")
+        ce = esc(r.get("counter_evidence"))
+        out.append(f"**Limiting or contradictory evidence.** {ce or '*None stated.*'}\n")
+        out.append(f"**Citation.** {esc(r.get('citation')) or '—'}\n")
+    return "\n".join(out)
+
+
+def build_source_library():
+    rows = list(csv.DictReader(open(SOURCES, encoding="utf-8")))
+    out = ["# Source Library\n",
+           "The bibliography lists sources. This lists **where the underlying material actually "
+           "is** — which documents were retrieved and archived locally, which were read, and "
+           "which are known to exist but could not be obtained.\n",
+           "A citation to a document nobody opened is a weaker thing than a citation to one that "
+           "was read, and this report distinguishes them.\n"]
+    ev = os.path.join(ROOT, "evidence")
+    held = []
+    for sub in ("documents", "images"):
+        d = os.path.join(ev, sub)
+        if os.path.isdir(d):
+            for fn in sorted(os.listdir(d)):
+                p = os.path.join(d, fn)
+                if os.path.isfile(p) and not fn.startswith("."):
+                    held.append((sub, fn, os.path.getsize(p) / 1048576))
+    out.append(f"\n## Archived locally — {len(held)} files\n")
+    tot = sum(s for _, _, s in held)
+    out.append(f"Total {tot:.0f} MB under `evidence/`. Retained so every citation in this "
+               "report can be checked against the document it came from.\n")
+    out.append("| File | Location | Size |\n|---|---|---|")
+    for sub, fn, sz in held:
+        out.append(f"| `{fn}` | `evidence/{sub}/` | {sz:.1f} MB |")
+    out.append("\n## Registered sources by grade\n")
+    out.append("| ID | Source | Grade |\n|---|---|---|")
+    for r in sorted(rows, key=lambda x: (x.get("reliabilityGrade", ""), x.get("id", ""))):
+        out.append(f"| `{esc(r.get('id'))}` | {esc(r.get('title'))[:96]} | {esc(r.get('reliabilityGrade'))} |")
+    return "\n".join(out)
+
+
+def main_extra():
+    for fn, title, cls, intro in CATEGORY_CHAPTERS:
+        path = os.path.join(CH, fn)
+        content = build_category_chapter(title, cls, intro)
+        open(path, "w", encoding="utf-8").write(content + "\n")
+        print(f"  generated {fn}  ({len(content.split()):,} words)")
+    sl = build_source_library()
+    open(os.path.join(CH, "35_source_library.md"), "w", encoding="utf-8").write(sl + "\n")
+    print(f"  generated 35_source_library.md  ({len(sl.split()):,} words)")
+
+
+main_extra()

@@ -1,5 +1,7 @@
 # Author's Note — Why This Investigation Began
 
+**By Andy Stavros**
+
 I started looking into the history of this land after learning about the reported pediatric
 Ewing sarcoma cases in Ladera Ranch.
 
@@ -44,9 +46,16 @@ The investigation initially concluded that the earliest available aerial photogr
 land was from 1948 — three decades after the cattle-dipping era — and that a dipping vat was
 therefore undetectable in principle. That was wrong. Orange County publishes aerial
 photography going back to **1929**, and the 1937–38 frames resolve at about 1.15 feet per
-pixel. At that resolution, a corral complex would be unmistakable. The imagery was searched
-systematically. **Nothing was found.** The conclusion did not change, but its meaning did:
-it now rests on adequate imagery rather than on the excuse that the imagery was inadequate.
+pixel. The imagery was searched systematically. **Nothing was found.**
+
+Then I made the opposite mistake. Having found better photographs, I claimed the resolution
+problem had disappeared entirely and that a corral complex "would be unmistakable." That was
+also wrong. The USDA's own 1911 circular for California describes cage vats costing sixty
+dollars, installed beside an existing corral with no drainage pen, and wade tanks costing under
+ten dollars in lumber. Neither would necessarily be visible at all.
+
+So the negative result stands as an observation and is now recorded at **low confidence**. I got
+it wrong in both directions before getting it right, and both attempts are still in the text.
 
 The second example is more personal. I noticed, looking at property listings, that the homes
 here seemed to sit exactly where the old ranch water sources had been — and water is where
@@ -71,3 +80,9 @@ issued so far are listed in the version history at the end, including the two ab
 *This publication contains no patient information, no residential addresses, no case
 locations, and no identifying details of any child or family. That is a deliberate and
 permanent constraint of the project, not a limitation of the available data.*
+
+---
+
+*If you have documents, photographs, maps, or memories of this land, please see the invitation
+at the front of this report. This is one person's work, and it is not finished.*
+
