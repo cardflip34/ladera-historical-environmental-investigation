@@ -116,10 +116,6 @@ would likely have detected a large swim-vat installation and did not. It provide
 evidence** against a small cage vat or wade tank.
 :::
 
-This is the second time this investigation has built an argument on an untested assumption about
-the physical evidence. C-003 assumed the imagery was inadequate; C-004 assumed the target would
-be large. Both assumptions made the analysis simpler, and both were wrong.
-
 ## 10.5 What a small vat means for contamination
 
 Counter-intuitively, a *small* vat is not a smaller contamination problem. It may be a worse one

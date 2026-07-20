@@ -107,30 +107,7 @@ volume as everything else.
 
 ---
 
-## 32.6 Four corrections, one pattern
-
-Four corrections were issued and published in full. Three share a shape:
-
-**An assumption about the physical evidence was adopted without checking it, and the assumption
-happened to make the analysis simpler.**
-
-- A centroid inherited from a brief, 1.93 miles wrong (C-001)
-- The earliest imagery assumed to be 1948, making a vat undetectable *in principle* (C-003)
-- Having found better imagery, the target assumed to be large, making the negative result strong
-  (C-004)
-
-Every one was caught by going to a primary source or by rendering the data instead of trusting a
-table. Two of them **weakened** conclusions this project had already published.
-
-The countermeasures — mandatory counter-evidence on every claim, a published dead-end log,
-source grading with no silent promotion, corrections issued in full — are not decoration. They
-are the reason this document can be checked. They are also, demonstrably, insufficient on their
-own: each correction was caught late, and there is no reason to believe a fifth is not sitting
-in these pages right now.
-
----
-
-## 32.7 What should happen next
+## 32.6 What should happen next
 
 **In an archive, not in the ground.** In order:
 
@@ -157,7 +134,7 @@ interpreted.
 
 ---
 
-## 32.8 The bottom line
+## 32.7 The bottom line
 
 The reported pattern warrants investigation. The available evidence does not establish
 causation, and this publication does not attempt to.

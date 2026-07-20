@@ -128,8 +128,7 @@ The countermeasures are visible throughout: every claim carries mandatory counte
 ends are published beside findings, sources are graded and never silently promoted, corrections
 are issued in full.
 
-**Those measures have already proven insufficient on their own.** Of the nine corrections issued,
-most share one shape — an assumption adopted without checking the primary source, in whichever
-direction made the analysis simpler. Read accordingly, and verify anything that matters to you
-against the citations. They are all listed at the end, with URLs.
+Read accordingly, and verify anything that matters to you against the citations — they are all
+listed at the end, with URLs. The corrections issued so far are logged in full in the version
+history.
 :::

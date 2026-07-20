@@ -6,35 +6,38 @@ recommendation that cannot fail is not a test.
 
 ---
 
-## 30.1 The decisive question, and it is cheap
+## 30.1 The decisive question has moved
+
+The first version of this chapter named the decisive question as *whether Orange County was ever
+in the eradication programme at all* — cheap to answer, and closing the hypothesis if the answer
+were no.
+
+**That question is now answered: yes.** USDA Circular 174 places the county in the programme; the
+1908 State Veterinarian report and newspaper record show arsenical dipping actually occurred in
+the county, at named sites and in at least one swim vat (Chapter 8).
+
+So the decisive open question is no longer *whether* but *where*:
 
 ::: classification open
-**Was Orange County ever within the California cattle tick quarantine and eradication area?**
+**Did an arsenical dipping facility stand within, or drain toward, the Ladera Ranch footprint —
+or was the county's dipping confined to the sites already documented, three or more miles away?**
 
-This is the first link in the hypothesis chain. If the answer is no, the entire arsenical-dipping
-hypothesis closes, and this investigation will have produced a clean negative result rather than
-an open question.
-
-It should be answerable from documents, at low cost, without anyone touching soil.
+Every documented site so far is outside the community. The question is whether that reflects
+where dipping happened, or only where the surviving record happens to point.
 :::
 
-**Where to look, in order:**
+The two records most likely to resolve it, and both are public:
 
-1. **USDA Bureau of Animal Industry annual reports.** Published annually through the eradication
-   era, they enumerate quarantine areas by state and county and record acreage released from
-   quarantine. Full-text searchable on the Internet Archive, HathiTrust, and Google Books.
-2. **California State Veterinarian biennial reports** and California State Board of Agriculture
-   reports. Same period, state-level detail.
-3. **California Department of Agriculture monthly bulletins.**
-4. **National Archives Record Group 17** (Bureau of Animal Industry) field records. Mostly not
-   digitised; reproduction request required.
-5. **Legal notices in period newspapers.** Quarantine proclamations and dipping orders were
-   published as legal notices. The California Digital Newspaper Collection at UC Riverside is
-   free and full-text searchable, as is Chronicling America.
+1. **Orange County Board of Supervisors minutes, 1907–1912.** County-ordered dipping generated
+   board action, appropriations, an inspector appointment, and the record of the 1908 Levengood
+   claim. These should name locations. Not digitised — held by the county.
+2. **The Anaheim Gazette and Santa Ana Blade.** The Orange County papers of record, which carried
+   quarantine proclamations as paid legal notices. Neither is digitised; both exist on microfilm
+   at the Orange County Archives, Santa Ana Public Library, or CSU Fullerton.
 
-**What a negative result means:** if the programme demonstrably did not extend to Orange County,
-the hypothesis is closed and should be publicly retired. That is a real and valuable outcome, and
-this project commits to publishing it as prominently as a positive one.
+Supporting, if the above are inconclusive: the **June 1912 State Veterinarian infestation map**
+(which would delimit the "extreme southwestern" residual quarantine area), National Archives
+Record Group 17, and the 1907 Governor's proclamations at the California State Library.
 
 ## 30.2 Rancho Mission Viejo's own records
 

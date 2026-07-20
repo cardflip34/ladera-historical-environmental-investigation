@@ -149,12 +149,12 @@ made it appealing.
 
 ## What should happen next
 
-**Archival, in priority order.** The County Agricultural Commissioner and California State
-Veterinarian tick-eradication files, and USDA Bureau of Animal Industry records — these can
-resolve whether Orange County was ever in the programme, which is cheap and decisive. Then
-Rancho Mission Viejo's own operating records. Then General Land Office survey **field notes**,
-in which surveyors recorded springs, corrals, and improvements that never reached the published
-plat.
+**Archival, in priority order.** The **1995 Michael Brandman hazardous-materials assessment**
+(below) — the one document that would show how far back the review of *this* land actually
+looked. Then Orange County Board of Supervisors minutes from 1907–1912, which should name the
+dipping locations the county ordered. Then Rancho Mission Viejo's own operating records, and
+General Land Office survey **field notes**, in which surveyors recorded springs, corrals and
+improvements that never reached the published plat.
 
 **Physical, if archival work supports it.** Ground-penetrating radar at the Trabuco ranch node
 and the mapped water bodies would detect buried concrete directly. Soil sampling should test

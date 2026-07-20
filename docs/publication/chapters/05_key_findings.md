@@ -118,11 +118,6 @@ It contains **no** patient information, residential addresses, or case locations
 ---
 
 ::: classification limit
-**Eight corrections have been issued and published in full.** Five share the same shape: an
-assumption about the physical evidence adopted without checking the primary source, in the
-direction that made the analysis simpler. Two of them weakened conclusions this project had
-already published.
-
-That pattern is the most useful thing this investigation has learned about its own method, and
-there is no reason to believe a ninth is not sitting in these pages right now.
+**Corrections are issued in full and never silently revised** — several have weakened conclusions
+this project had already published. They are logged in the version history.
 :::

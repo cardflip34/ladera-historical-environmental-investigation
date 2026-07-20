@@ -37,6 +37,7 @@ Each was caught by going to a primary source or by rendering the data rather tha
 
 | Commit | Date | Change |
 |---|---|---|
+| `746fc79` | 2026-07-20 | Reframe Ch.02 from a request for help to a statement of what is needed |
 | `8bf30df` | 2026-07-20 | Correct the author's residence and reframe the motivation; reorder front matter |
 | `7b8ac1c` | 2026-07-20 | Examine the 1912 infestation map; Ladera appears outside the residual area |
 | `2564067` | 2026-07-20 | C-009: the dip chemistry IS named, and Orange County had a swim vat |
@@ -48,4 +49,3 @@ Each was caught by going to a primary source or by rendering the data rather tha
 | `adb72a4` | 2026-07-19 | Environmental review audit: the historical window began in 1952 |
 | `a6dfd3f` | 2026-07-19 | Locate 1908 Orange County dipping records; narrow the quarantine window |
 | `fea8ab1` | 2026-07-19 | Verify the decisive question from primary sources; downgrade own finding |
-| `32bd238` | 2026-07-19 | Build Version 1.0 investigation publication with evidence infrastructure |
