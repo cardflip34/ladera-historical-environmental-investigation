@@ -151,3 +151,34 @@ Target windows: Feb 1908, May–Aug 1908, Mar–Apr 1910, Mar 1912.
 **Technical note for anyone repeating this:** CDNC blocks automated access via Cloudflare
 Turnstile — HTTP 403 to both scripted fetches and command-line tools. It works normally in a
 real browser.
+
+## DE-012 — CEQAnet's site-search endpoint does not search records (2026-07-19)
+
+**Tried:** re-running the entitlement search using the county's actual instrument name,
+**"Ladera"** (the zoning text is titled *Ladera Planned Community*, not *Ladera Ranch*), via
+`https://ceqanet.lci.ca.gov/Search/serp?q=Ladera`.
+
+**Result:** HTTP 200, zero matches.
+
+**Why that is NOT a negative finding.** A **control query** for `q=Irvine` — a term certain to
+appear across thousands of Orange County CEQA records — **also returned zero**. The `serp`
+endpoint is a site-content search, not the record search. It cannot answer this question either
+way.
+
+**Status:** the naming hypothesis (EM-031) is **untested**, not refuted. Testing it requires the
+structured record search, whose parameters are City, County, DevelopmentType, DocumentType,
+StartRange, EndRange, LeadAgency, LocalAction, ProjectIssue, Region, Sch, StateReviewAgency —
+**note there is no free-text title field at all**, which is itself why title-based searching has
+consistently failed here.
+
+**Route:** an Orange County public-records request naming the *Ladera Planned Community*
+directly, rather than any further attempt at title search. Contact: OC Planning, (714) 834-2166.
+
+## DE-013 — No sibling documents adjacent to the Ladera PC text (2026-07-19)
+
+**Tried:** probing `pwds.oc.gov/.../files/23431–23435.pdf` on the theory that the entitlement
+EIR might sit near the Planned Community text (`23433.pdf`) in the county's document store.
+
+**Result:** every adjacent ID returns a **93 KB HTML error page**, not a PDF. Verified by
+opening one: it is the county's "content not found" template. The numeric IDs are not
+sequentially meaningful.

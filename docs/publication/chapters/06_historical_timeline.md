@@ -94,6 +94,20 @@ inference dressed as fact.
 | 1952 | **Earliest aerial photograph reviewed in any environmental assessment obtained** | EIR 589 App. I; Oso Grande Phase I [S-EIR589, S-OSOGRANDE] | High |
 | 1968 | USGS 7.5′ quadrangle revised — maps 41 surface-water bodies in the footprint, plus a Water Tank, Terminal Reservoir, landing strip and gaging station | USGS [S-MAP-04] | High |
 | 1974 | USGS orthophoto quadrangle — still open rangeland | USGS | High |
+| **17 Oct 1995** | **Ladera Planned Community Program Text** — the county's adopted PC zoning instrument. Cover read directly: "LADERA PLANNED COMMUNITY / PROGRAM TEXT / OCTOBER 17, 1995". Statistical table: **2,390 gross acres, 8,100 maximum dwelling units** | **OC Public Works, 136 pp. — cover VERIFIED DIRECTLY** [S-LADERA-PC] | **High** |
+| 1997 | Rancho Mission Viejo's own account: "In 1997 the Ladera Ranch plan was approved by Orange County… approximately 2,400 acres and 8,100 dwelling units" | ranchomissionviejo.com — **conflicts with 1995** | Medium |
+| 1998 *or* 1999 | Construction begins. ULI gives 1998–2006; the developer's own portfolio and archived community FAQ give 1999. Plausibly grading vs homebuilding — **inference, unverified** | ULI case study; DMB Development | Medium |
+| Aug 1999 | First sales ("Dirt Tour Sales") | laderalife.com community timeline | Medium |
+| **14 Dec 1999** | **First resident moves in** | laderalife.com community timeline | Medium |
+| Mar 2000 | 562 homes; Oak Knoll Clubhouse opens — first village | laderalife.com | Medium |
+| Oct 2001 | Bridgepark Plaza, Town Green, Tesoro High School open | laderalife.com | Medium |
+| Jun 2002 | Avendale Village Clubhouse opens | laderalife.com | Medium |
+| Apr 2003 | 3,987 homes; population 6,112 | laderalife.com | Medium |
+| **30 Jul 2003** | PC Statistical Summary amended by the Orange County Planning Commission | PC Program Text cover, read directly [S-LADERA-PC] | High |
+| Dec 2004 | Flintridge and Covenant Hills Village Clubhouses open | laderalife.com | Medium |
+| Nov 2005 | Terramor Water Park opens — Terramor and Covenant Hills were the final two villages | laderalife.com; ULI | Medium |
+| **Apr 2007** | 6,585 homes — community sells out except custom lots | laderalife.com | Medium |
+| Jun 2014 | Final count **6,699 homes** — against 8,100 entitled | laderalife.com | Medium |
 | **Mar 1994** | Notice of Preparation, Antonio Parkway Alignment Study and Surrounding Land Use Plan (SCH 1994031075) — 5,000 acres, 9,800 units, three school sites. **Geography fits Ladera Ranch; the identification is inferred and unconfirmed** | CEQAnet | Medium |
 | **May 1995** | **Michael Brandman Associates, Appendix H — Hazardous Materials Environmental Site Assessment.** Cited by name in EIR 589 p. 21. **NOT ONLINE. Top-priority records request** | EIR 589 App. I [S-EIR589] | High (that it exists) |
 | Mar 1999 | Santa Margarita Water District negative declaration, "Phase 1 Ladera Development Area" water and sewer lines (SCH 1999031033) | CEQAnet | High |
@@ -102,6 +116,44 @@ inference dressed as fact.
 | Sep–Oct 2003 | DTSC requires a Preliminary Endangerment Assessment, then accepts an addendum and closes the site: "further environmental investigation of the site is not required" | DTSC letters [S-OSOGRANDE] | High |
 | **8 Nov 2004** | Final Program EIR 589 certified (Ranch Plan, 22,815 acres) | SCH 2003021141 [S-EIR589] | High |
 | 8 Nov 2016 | Final PEIR, OC Affordable Housing Implementation Plan — Ranch Plan (SCH 2015051062) | CEQAnet | High |
+
+::: classification limit
+**Development figures conflict across sources, and are reported rather than reconciled.**
+
+| Detail | Figures found |
+|---|---|
+| Entitlement year | **1995** (county PC text cover, verified) vs **1997** (developer's own site) |
+| Acreage | **2,390** gross (county PC statistical table) · ~2,400 developed (ULI, RMV) · ~1,600 open space · **4,000** total (ULI, DMB, Wikipedia) · **3,165** (2020 Census CDP land area) |
+| Construction start | **1998** (ULI) vs **1999** (developer portfolio, archived FAQ) |
+| Homes | **8,100** entitled vs **6,699** actually built (June 2014) |
+
+The county figures are arithmetically consistent with the 4,000-acre headline — 2,390 zoned plus
+~1,600 open space ≈ 3,990 — but **that reconciliation is an inference, not a sourced statement**,
+and it is not relied on anywhere in this publication.
+
+**Developers:** Rancho Mission Viejo (the O'Neill/Avery/Moiso ranch company) and **DMB
+Consolidated Holdings, LLC** of Scottsdale, Arizona. The *Mission Viejo Company* — developer of
+the city of Mission Viejo — has **no documented role** in Ladera Ranch.
+
+**"EIR 555" could not be verified.** No document reached ties any EIR number to the Ladera
+Planned Community. It is not asserted anywhere in this publication.
+:::
+
+::: classification lead
+**A search lesson worth recording.** The county's zoning instrument is titled **"Ladera Planned
+Community"** — *not* "Ladera Ranch." Every CEQAnet and county-repository search in this
+investigation used "Ladera Ranch" and returned nothing. The naming difference, not an absence of
+records, is the likeliest reason the entitlement EIR has never surfaced.
+
+Anyone repeating this search should query **"Ladera"** alone.
+
+**This was retested, and the retest was inconclusive.** Searching CEQAnet for "Ladera" returned
+nothing — but a control query for "Irvine", a term certain to appear in thousands of Orange
+County records, also returned nothing. That endpoint is a site-content search, not the record
+search, and the structured record search has **no free-text title field at all**. The hypothesis
+is untested rather than refuted, and the route forward is a records request naming the *Ladera
+Planned Community* directly, not another title search.
+:::
 
 ---
 

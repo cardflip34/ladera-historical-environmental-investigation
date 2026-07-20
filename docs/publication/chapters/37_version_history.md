@@ -2,7 +2,7 @@
 
 This project issues corrections **openly and in full**. Nothing is silently revised. Where a finding changed, the superseded reasoning is retained in the text alongside the correction, because a report that shows only what survived scrutiny is not an honest report.
 
-**Version 1.0** — 29 catalogued claims, 87 registered sources.
+**Version 1.0** — 31 catalogued claims, 88 registered sources.
 
 
 ## Corrections issued
@@ -34,6 +34,7 @@ Each was caught by going to a primary source or by rendering the data rather tha
 
 | Commit | Date | Change |
 |---|---|---|
+| `4d52e3a` | 2026-07-19 | Establish the land grant from the federal court record; correct Armor |
 | `ee4cfca` | 2026-07-19 | Add timeline, conclusion, and generated back matter; scripted PDF build |
 | `adb72a4` | 2026-07-19 | Environmental review audit: the historical window began in 1952 |
 | `a6dfd3f` | 2026-07-19 | Locate 1908 Orange County dipping records; narrow the quarantine window |

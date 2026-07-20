@@ -2,9 +2,9 @@
 
 Every source consulted, graded on the fixed hierarchy set out in the methodology chapter. A record carries exactly one grade, and **a lower grade is never silently promoted** — a claim that appears in a newspaper becomes A1 only when the underlying official record is located and read.
 
-**87 sources.** Generated directly from the project's source registry, so this list cannot drift out of step with the registry itself.
+**88 sources.** Generated directly from the project's source registry, so this list cannot drift out of step with the registry itself.
 
-Distribution: **A1** 30 · **A2** 23 · **B1** 10 · **B2** 11 · **C** 11 · **D** 2
+Distribution: **A1** 30 · **A2** 24 · **B1** 10 · **B2** 11 · **C** 11 · **D** 2
 
 
 ## Grade A1
@@ -190,6 +190,11 @@ Distribution: **A1** 30 · **A2** 23 · **B1** 10 · **B2** 11 · **C** 11 · **
   `S-EIR589`
   
   *Known limitations:* Covers the 22,815-acre Ranch Plan (RMV land east and south), NOT the Ladera Ranch residential footprint. Phase I ESAs are non-sampling by definition under ASTM 1527. Aerial photographic review begins 1952.
+
+- **Ladera Planned Community Program Text** County of Orange, OC Public Works / OC Development Services, 1995-10-17. <https://pwds.oc.gov/sites/ocpwocds/files/import/data/files/23433.pdf> Retrieved 2026-07-19.  
+  `S-LADERA-PC`
+  
+  *Known limitations:* SCANNED IMAGE PDF with no extractable text - only the cover was rendered and read directly; the remaining 135 pages were not OCR'd. No adopting ordinance number or Board of Supervisors action date located. Zones eight numbered Planning Areas, NOT the nine named villages, so it cannot supply a village-by-village build sequence. Cover date 1995 conflicts with the developer's stated 1997 approval.
 
 - **Cattle dipping vat arsenic contamination — assessment and remediation literature** Florida DEP / peer-reviewed (Environment International), 2016-08-19. <https://floridadep.gov/waste/district-business-support/content/cattle-dipping-vats-cdv> Retrieved 2026-07-18.  
   `SRC-DIPVAT-CONTAM`
