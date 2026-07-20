@@ -93,7 +93,99 @@ footprint is still unresolved. What has changed is that the question is now *wor
 a firmer basis than before: the programme demonstrably reached this county.
 :::
 
-## 8.4 Corroboration, and a caution about it
+## 8.4 Dipping in Orange County, at named locations
+
+Circular 174 establishes that Orange County was in the affected area. A contemporaneous
+newspaper report establishes that **dipping actually took place there, at named locations,
+under public supervision**.
+
+::: classification fact
+**EM-019 · ESTABLISHED FACT · Confidence: High**
+
+The *Los Angeles Herald* of **27 May 1908**, page 10, datelined Santa Ana, reports that Dr.
+Coleman, deputy state quarantine officer, had consulted with Orange County cattle raisers, and
+that within the previous ten days:
+
+> several hundred head of stock have been treated by dipping at the ranch of J. C. Joplin in
+> Trabuco canyon, six or seven hundred head are now being dipped at Capistrano and dipping is in
+> progress at Yorba and at the Bixby ranch in Santa Ana canyon.
+
+*The article was read and verified directly.* OCR in the source renders several names
+imperfectly — "Joplln", "Trabuca", "Capistranlo", "Blxby" — and the corrected readings above are
+this project's, not the newspaper's text.
+
+*Corroboration.* The *Herald* of 25 July 1908 reports a claim against Orange County by
+E. J. Levengood after six cows died following a dip, and states that "The dipping was done by
+order of the county veterinarian, Dr. W. S. McFarlane, and he it was who supervised the mixing
+of the preparation used." The *Pacific Rural Press* of 15 August 1908 carries the same suit.
+
+**Dipping in Orange County was therefore county-ordered, officially supervised, conducted at
+scale, and it killed cattle.**
+
+*Counter-evidence and limits.* These name **ranches and districts, not vat coordinates**. None
+of the four locations is Rancho Mission Viejo. **No dip chemistry is named** for any Orange
+County location in any article located — the deaths are consistent with an arsenical dip, but
+the sources do not say so.
+:::
+
+### Where these locations actually are
+
+This is the point at which an investigation of this kind is most likely to overreach, so the
+distances are measured rather than described.
+
+| 1908 dipping location | Miles from Ladera Ranch centroid | Zone |
+|---|---|---|
+| **Capistrano** | **3.4** | Inside Zone B |
+| **Trabuco Canyon (Joplin ranch)** | **8.4** | **Outside Zone B** |
+| Santa Ana Canyon (Bixby ranch) | 22.8 | Far outside |
+| Yorba | 25.6 | Far outside |
+
+::: classification limit
+**No named 1908 dipping location falls inside Zone A.** One — Capistrano — falls inside the
+five-mile Zone B ring at 3.4 miles. Trabuco Canyon, despite sharing a name with the drainage
+that crosses this study area, is a distinct place **8.4 miles away** and outside Zone B
+entirely.
+
+The temptation to read "dipping at Capistrano" and "Trabuco canyon" as bracketing Ladera Ranch
+should be resisted. "Capistrano" in 1908 usage is a district statement, and the Joplin ranch is
+in the upper Trabuco drainage in the Santa Ana Mountains foothills, not on the coastal plain
+where this community sits.
+:::
+
+### What it does and does not move
+
+**Proposition 2** of the hypothesis chain — *this ranch dipped cattle* — is **not** established.
+What is now established is the weaker but still substantial proposition that **cattle operations
+in this county dipped, under county order, within a few miles of this land**.
+
+That materially raises the prior. It does not identify a facility, a chemistry, or a location
+within the study area.
+
+## 8.5 The quarantine window, narrowed
+
+::: classification fact
+**EM-020 · ESTABLISHED FACT · Confidence: Medium**
+The Orange County cattle tick quarantine ran from approximately **February 1908 to March 1912**.
+
+*Supporting:* The *San Francisco Call* of 8 March 1912 reports that "A proclamation lifting the
+quarantine against the Texas fever [tick] in Orange county… was issued today by State
+Veterinarian Keane and signed by Governor Johnson." The *Herald* of 7 February 1909 cites a
+Gillett proclamation of 1 February 1908; a further proclamation is referenced on 31 March 1910.
+Tick presence in the county is reported as early as November 1898.
+
+*Counter-evidence:* This **refines and narrows** the "1907–1917" window used throughout this
+project's earlier work — a figure that was a general California or national approximation rather
+than an Orange County finding. These are newspaper reports *of* proclamations, graded B2; the
+proclamations themselves have not been read.
+:::
+
+**This cuts against the investigation's own imagery argument.** A quarantine ending in **March
+1912** means the gap to the earliest aerial photography (1929) is **seventeen years, not
+twelve**. Any facility decommissioned at the end of the programme had five more years to
+disappear than this publication previously assumed. Combined with correction C-004, the
+evidential weight of the negative imagery finding is reduced further.
+
+## 8.6 Corroboration, and a caution about it
 
 A secondary source — Pulling, *Journal of San Diego History* 11:1 (January 1965) — reportedly
 states that by 1910 only San Diego, Orange, Santa Barbara, and part of San Luis Obispo counties
@@ -107,7 +199,7 @@ federal quarantine — which would extend the relevant activity window later tha
 inference is not relied upon anywhere in this publication until the source is read.
 :::
 
-## 8.5 The state instrument, not yet obtained
+## 8.7 The state instrument, not yet obtained
 
 The California Governor's proclamation of **15 April 1907** establishing the cattle fever
 quarantine has been located in the California State Library's executive-order collection but
@@ -117,7 +209,7 @@ This document would likely date the programme's California commencement precisel
 boundaries in the state's own terms. It is recorded as dead end DE-010 and is retrievable by a
 person with an ordinary browser.
 
-## 8.6 Why this section was previously missing
+## 8.8 Why this section was previously missing
 
 This chapter did not exist in the first draft of this publication, and its absence was itself
 recorded as a limitation: two evidence-matrix claims were flagged **PENDING VERIFICATION**, and
@@ -136,7 +228,7 @@ Archival work should have come first. It is recorded here so the sequencing erro
 
 ---
 
-## 8.7 The operation, photographed
+## 8.9 The operation, photographed
 
 Photographs of the Santa Margarita ranch cattle operation survive from the period immediately
 before the eradication programme.

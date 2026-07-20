@@ -53,8 +53,22 @@ here.
 infested" with cattle ticks, south of the California quarantine line. The page was read and
 verified directly. This resolves the first link in the hypothesis chain — in the affirmative.
 
-It is a **county-level** classification. It places no vat on any parcel, on this ranch, or in
-this footprint. The remaining five links in the chain are still entirely unevidenced.
+It is a **county-level** classification. It places no vat on any parcel.
+
+**And dipping demonstrably happened here.** The *Los Angeles Herald* of 27 May 1908 — read and
+verified directly — reports cattle being dipped at four named Orange County locations, under
+order of the county veterinarian. Six hundred to seven hundred head at Capistrano alone. A
+companion article records a claim against the county after six cows died following a dip.
+
+The nearest named location, **Capistrano, is 3.4 miles** from this community — inside the
+five-mile ring, outside the community itself. Trabuco Canyon, despite the shared drainage name,
+is **8.4 miles** away and outside the ring entirely. **No named dipping location falls inside
+Ladera Ranch**, none of the four ranches named is Rancho Mission Viejo, and **no article names
+the dip chemistry**.
+
+The Orange County quarantine ran roughly **February 1908 to March 1912** — narrower than the
+1907–1917 window this project had assumed, and it pushes the gap to the earliest aerial
+photography out to **seventeen years**.
 
 **No soil sampling for arsenic appears to have been conducted across the residential footprint.**
 Nearby *school* sites were assessed — California's Education Code requires it before a district

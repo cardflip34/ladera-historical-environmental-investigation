@@ -122,3 +122,32 @@ stable citation targets. Cite the DOIs.
 **Result:** HTTP **403 from CloudFront** ("Request blocked") to automated access.
 **Why it matters:** this is likely the founding state instrument of the quarantine and would
 date the programme precisely. Worth retrying from an ordinary browser.
+
+## DE-011 — No Orange County newspaper covering the quarantine period is digitised (2026-07-19)
+
+**Searched:** California Digital Newspaper Collection and Chronicling America, for Orange County
+cattle quarantine legal notices and dipping orders, c. 1900–1925.
+
+**Result:** CDNC holds only **four** Orange County titles — Huntington Beach News, La Habra Star,
+Santa Ana Journal, Tustin News — and **none covers 1900–1909**. Chronicling America holds **zero**
+Orange County California titles, verified against a control (15 titles for Los Angeles County,
+1 for San Diego).
+
+**Consequence:** every Orange County finding in this investigation came from **out-of-county
+papers reporting inward** — the *Los Angeles Herald* and *Pacific Rural Press*. Searches inside
+the four OC titles held returned no Orange County dipping item at all; the apparent hits were
+national wire briefs (e.g. a 1935 "Cattle Dipped" item datelined Laredo, Texas).
+
+**This is a digitisation gap, not an absence of records.** The proclamations demonstrably
+existed — three are referenced by date in located articles (Gillett, 1 Feb 1908; Gillett/Keane,
+31 Mar 1910; Keane/Johnson, 7 Mar 1912). A *Pacific Rural Press* item of 1903 names the **Santa
+Ana Blade** and **Anaheim Gazette** as the papers of record. Neither is digitised anywhere
+searched. A county quarantine proclamation would have been published as a paid legal notice in
+exactly those titles.
+
+**Route:** microfilm at Orange County Archives, Santa Ana Public Library, or CSU Fullerton.
+Target windows: Feb 1908, May–Aug 1908, Mar–Apr 1910, Mar 1912.
+
+**Technical note for anyone repeating this:** CDNC blocks automated access via Cloudflare
+Turnstile — HTTP 403 to both scripted fetches and command-line tools. It works normally in a
+real browser.
