@@ -2,7 +2,7 @@
 
 Claims this investigation regards as established: documented in a primary or official source, verified against that source, and reproducible by a reader who follows the citation. Each carries its limiting or contradictory evidence, because an established fact with no stated limits is usually an overstated one.
 
-**28 claims in this category.**
+**29 claims in this category.**
 
 
 ## EM-001 — Ladera Ranch sits on land that was part of the Rancho Mission Viejo cattle operation prior to development
@@ -311,4 +311,15 @@ Claims this investigation regards as established: documented in a primary or off
 **Limiting or contradictory evidence.** The 1899 map is 1:125,000 - too coarse to show a single building or a vat - and it PRE-DATES the 1907-1912 dipping period, so it cannot show a vat regardless. It is a baseline of the landscape before dipping, not evidence of any facility. The imagery record for this land is now exhausted at both ends: nothing older than the 1899 map or the 1929 photo.
 
 **Citation.** USGS Historical Topographic Map Collection, Corona quadrangle 1902 (1899 survey) [S-USGS-CORONA]; UCSB FrameFinder flight indices
+
+
+## EM-044 — The Ladera Ranch environmental-review gap is the general case: 11 residential communities on former ranchos in dipping-quarantine counties all share it, two never reviewed at all
+
+**Confidence:** Medium  ·  **Status:** Verified - screening layer
+
+**Supporting evidence.** An automated per-community documentary scrub with adversarial verification ran the Ladera methodology across 11 residential targets in 5 counties (Orange, LA, San Diego, Ventura, San Bernardino, Riverside). Every one has an environmental-review historical floor post-dating the ~1912 dipping end-date by 15-34 years; Rancho Bernardo and the Rancho Santa Fe/Del Mar/Solana Beach area were built pre-CEQA with no historical-aerial review ever performed. Records in docs/statewide_program/results/.
+
+**Limiting or contradictory evidence.** A SCREENING LAYER, not per-community verified investigation. Primary-archive confirmation (CDNC, Library of Congress) was bounded by tooling access limits (403/404) during the run. Several gap figures rest on regional Phase I aerial-floor norms where a community's own review document was not retrieved. NO contamination is found or implied for any community; no vat is located anywhere; no soil is tested anywhere. Newhall/Santa Clarita is a partial counter-example where arsenic soil testing of farmed parcels WAS required (2013 RWQCB).
+
+**Citation.** Statewide screening program (statewide_sweep.workflow.js), 11 deep-dive records, this investigation [S-STATEWIDE]
 

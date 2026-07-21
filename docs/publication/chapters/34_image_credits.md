@@ -2,7 +2,7 @@
 
 Every image published, with its repository, rights status **as the repository states it**, and its interpretation boundary. Rights statements are reproduced rather than summarised, because a paraphrased licence is not a licence.
 
-**28 published figures.**
+**29 published figures.**
 
 Images held in the evidence archive but **not** published for rights reasons are listed at the end.
 
@@ -369,6 +369,19 @@ Images held in the evidence archive but **not** published for rights reasons are
 | Published as | assets/images/fig-28.jpg (1600x1387) |
 
 **Interpretation boundary.** PRIORITY-SEARCH ZONES ONLY. These are the eight places where a working facility would most likely have stood IF one existed, ranked by terrain logic (mapped water + flat ground + trail convergence). R1 is the one known 1948 structure; R2-R8 are water clusters. NO vat or corral was detected at any of them on the 1.15 ft/px imagery. They are where soil sampling should begin, NOT locations where anything has been found. Every candidate clusters on the western Trabuco corridor because that is the only water in the footprint.
+
+
+### FIG-29 — California dipping-program counties vs. modern development
+
+| | |
+|---|---|
+| Date | 1907-1915 / present |
+| Repository | This investigation (derived; base: US Census county boundaries, USDA Circular 174) |
+| Rights | Derived figure; base data public domain. |
+| Original | 1500x2000 — `research/statewide/CA_dipping_counties_vs_development.jpg` |
+| Published as | assets/images/fig-29.jpg (1200x1600) |
+
+**Interpretation boundary.** NOT a map of dip vats or contamination. It shades the 13 counties the USDA named in the 1907-1915 tick program and marks major communities on former ranchos, distinguishing residential ones from the big ranches now federal/farmland/unbuilt. Vat locations were never inventoried and are unknown; soil is unstudied everywhere except the Ladera footprint. Shows program reach vs. development ONLY.
 
 
 ---

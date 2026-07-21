@@ -2,7 +2,7 @@
 
 This project issues corrections **openly and in full**. Nothing is silently revised. Where a finding changed, the superseded reasoning is retained in the text alongside the correction, because a report that shows only what survived scrutiny is not an honest report.
 
-**Version 1.0** — 43 catalogued claims, 93 registered sources.
+**Version 1.0** — 44 catalogued claims, 94 registered sources.
 
 
 ## Corrections issued
@@ -37,15 +37,15 @@ Each was caught by going to a primary source or by rendering the data rather tha
 
 | Commit | Date | Change |
 |---|---|---|
+| `de74994` | 2026-07-21 | Statewide image hunt: 15 ranch inventories, complete index, 171 files downloaded |
+| `85a6b6e` | 2026-07-21 | Statewide sweep results: 11 deep-dive records + ranking |
+| `83e2152` | 2026-07-21 | Fix sweep: match triage results by index, not agent-echoed target_id |
+| `b367bcd` | 2026-07-21 | Add statewide ranch image-hunt workflow (deep archival photo/map/artifact layer) |
+| `9bb9932` | 2026-07-21 | Add statewide screening program: plan, target registry, workflow, CA map |
+| `21775b6` | 2026-07-21 | Integrate deep-search findings: 1899 baseline map, candidate regions, O'Neill link |
 | `3d63fca` | 2026-07-20 | Recommendations: add 'what the 1995 report can and cannot resolve' box |
 | `4b2b657` | 2026-07-20 | Add vertical B-roll motion graphics generator (5 clips, 1080x1920) |
 | `036da6d` | 2026-07-20 | Video: add water-overlay B-roll and public-domain dipping footage |
 | `f7fca4d` | 2026-07-20 | Concision pass: cut repeated correction meta-commentary; fix stale recs |
 | `746fc79` | 2026-07-20 | Reframe Ch.02 from a request for help to a statement of what is needed |
 | `8bf30df` | 2026-07-20 | Correct the author's residence and reframe the motivation; reorder front matter |
-| `7b8ac1c` | 2026-07-20 | Examine the 1912 infestation map; Ladera appears outside the residual area |
-| `2564067` | 2026-07-20 | C-009: the dip chemistry IS named, and Orange County had a swim vat |
-| `3601f1e` | 2026-07-20 | Complete all 37 chapters; add Andy Stavros's invitation to contribute |
-| `6f6876e` | 2026-07-20 | Correct the PLSS finding and the survey chronology; reopen the GLO route |
-| `ed13357` | 2026-07-19 | Establish the development record; find why the entitlement EIR never surfaced |
-| `4d52e3a` | 2026-07-19 | Establish the land grant from the federal court record; correct Armor |

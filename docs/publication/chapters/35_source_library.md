@@ -162,6 +162,7 @@ Total 1002 MB under `evidence/`. Retained so every citation in this report can b
 | `SRC-WS-002` | SMWD Recycled Water Program | A2 |
 | `S-ARCH-RMVPHOTO` | Rancho Mission Viejo (Orange County) photograph and map collections | B1 |
 | `S-ARMOR-1921` | History of Orange County, California, with Biographical Sketches | B1 |
+| `S-STATEWIDE` | Statewide land-use screening program (California ranchos in dipping-quarantine counties) | B1 |
 | `SRC-ARSENITE-HERB` | History of sodium arsenite as herbicide and soil sterilant | B1 |
 | `SRC-CATTLE-TICK` | California's Cattle-Range Industry: Decimation of the Herds 1870-1912 (tick quarantine and arsen | B1 |
 | `SRC-CITRUS-PEST` | California red scale control history — cyanide fumigation and oil sprays | B1 |

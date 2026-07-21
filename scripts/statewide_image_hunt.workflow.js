@@ -116,11 +116,17 @@ const dl = ok.reduce((s, h) => s + (h.items_downloaded || 0), 0)
 log(`Found ${found} items across ${ok.length} ranches; downloaded ${dl}.`)
 
 phase('Index')
+// Field-level truncation keeps every ranch in the input (an earlier run capped the whole
+// stringified array at 8000 chars and indexed only the first 7 of 15 ranches).
+const compact = ok.map(h => ({
+  id: h.target_id, found: h.items_found, downloaded: h.items_downloaded,
+  physical: (h.physical_only_collections || []).slice(0, 5),
+}))
 const indexPrompt = `${RULES}
 
-Build a MASTER IMAGE INDEX from these per-ranch inventories:
+Build a MASTER IMAGE INDEX from these per-ranch inventories (all ${compact.length} ranches -- index every one):
 
-${JSON.stringify(ok.map(h => ({ id: h.target_id, found: h.items_found, downloaded: h.items_downloaded, physical: h.physical_only_collections }))).slice(0, 8000)}
+${JSON.stringify(compact)}
 
 Write a markdown index to research/statewide/IMAGE_INDEX.md using your file tools: one section per ranch with a table (title, repository, date, rights, depicts, downloadable), a list of the physical-only collections worth an in-person visit or records request (with contacts), and a 2-paragraph summary of where the richest untapped visual archives are. Reiterate that rights-restricted items were catalogued but not downloaded, and that images depicting different land/counties are flagged as such. Return the INDEX_SCHEMA object.`
 const index = await agent(indexPrompt, { label: 'index', phase: 'Index', schema: INDEX_SCHEMA, agentType: 'general-purpose', effort: 'high' })

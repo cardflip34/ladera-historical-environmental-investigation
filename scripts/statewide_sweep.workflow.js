@@ -198,11 +198,19 @@ const results = await pipeline(
 // Synthesis
 phase('Synthesize')
 const clean = results.filter(Boolean)
+// Field-level truncation keeps EVERY target in the input (an earlier run capped the whole
+// stringified array at 8000 chars, so the synthesis only saw the first ~6 of 11 targets).
+const compact = clean.map(r => ({
+  id: r.target,
+  gap: String((r.deepdive && r.deepdive.review_gap_years) || '').slice(0, 240),
+  dipping: String((r.deepdive && r.deepdive.dipping_records_summary) || '').slice(0, 240),
+  conf: r.verdict && r.verdict.overall_confidence,
+}))
 const synthPrompt = `${RULES}
 
-SYNTHESIZE a statewide screening ranking from these per-target results:
+SYNTHESIZE a statewide screening ranking from these per-target results (all ${compact.length} of them -- rank every one):
 
-${JSON.stringify(clean.map(r => ({ id: r.target, gap: r.deepdive && r.deepdive.review_gap_years, dipping: r.deepdive && r.deepdive.dipping_records_summary, conf: r.verdict && r.verdict.overall_confidence }))).slice(0, 8000)}
+${JSON.stringify(compact)}
 
 Produce a ranking of communities by SCREENING PRIORITY = how wide the environmental-review gap is AND how plausible nearby dipping is. This is a ranking of WHERE AN UNANSWERED QUESTION IS WIDEST -- explicitly NOT a contamination ranking, and every row must be readable as such. Write a markdown table + 2-paragraph summary to docs/statewide_program/STATEWIDE_RANKING.md using your file tools, opening with the disclaimer that no community is asserted to be contaminated and the only resolver is a soil test. Return the SYNTH_SCHEMA object.`
 const synthesis = await agent(synthPrompt, { label: 'synthesize', phase: 'Synthesize', schema: SYNTH_SCHEMA, agentType: 'general-purpose', effort: 'high' })

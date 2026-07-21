@@ -2,9 +2,9 @@
 
 Every source consulted, graded on the fixed hierarchy set out in the methodology chapter. A record carries exactly one grade, and **a lower grade is never silently promoted** — a claim that appears in a newspaper becomes A1 only when the underlying official record is located and read.
 
-**93 sources.** Generated directly from the project's source registry, so this list cannot drift out of step with the registry itself.
+**94 sources.** Generated directly from the project's source registry, so this list cannot drift out of step with the registry itself.
 
-Distribution: **A1** 34 · **A2** 24 · **B1** 11 · **B2** 11 · **C** 11 · **D** 2
+Distribution: **A1** 34 · **A2** 24 · **B1** 12 · **B2** 11 · **C** 11 · **D** 2
 
 
 ## Grade A1
@@ -324,6 +324,11 @@ Distribution: **A1** 34 · **A2** 24 · **B1** 11 · **B2** 11 · **C** 11 · **
   `SRC-LIT-006`
   
   *Known limitations:* Tertiary textbook source
+
+- **Statewide land-use screening program (California ranchos in dipping-quarantine counties)** This investigation, 2026-07. Retrieved 2026-07-21.  
+  `S-STATEWIDE`
+  
+  *Known limitations:* A screening layer, not per-community verified investigation. Newspaper/Library-of-Congress archives blocked automated queries during the run, so primary confirmation was incomplete. Some review-gap figures use regional Phase I aerial-floor norms where a community's own document was not retrieved. No soil data for any community; no vat located; no contamination found or implied.
 
 - **California red scale control history — cyanide fumigation and oil sprays** UC IPM / Agriculture and Human Values, 2024-01-01. <https://ipm.ucanr.edu/agriculture/citrus/california-red-scale-and-yellow-scale/> Retrieved 2026-07-18.  
   `SRC-CITRUS-PEST`
