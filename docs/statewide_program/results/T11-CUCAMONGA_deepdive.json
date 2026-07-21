@@ -1,0 +1,80 @@
+{
+  "target_id": "T11-CUCAMONGA",
+  "community": "Rancho Cucamonga, San Bernardino County, California",
+  "methodology": "Ladera Ranch documentary deep-dive (hypothesis-neutral public-records screening). Soil status everywhere is 'unstudied'; nothing here asserts contamination.",
+  "earliest_imagery": "TOPO: USGS 'Cucamonga' 30-minute quadrangle. Pastmaps lists a 'Map of Cucamonga' at 1897 and 1900; USGS HTMC / LAPL catalog the earliest published Cucamonga edition as January 1903 (1:125,000), with reprints 1912/1917/1947 and a 1944 edition. Earliest defensible topo coverage of this land: ~1897-1903. AERIAL: no single confirmed frame covering this exact parcel set was retrieved; the regional floor for standard historical-aerial review (EDR / USDA / Fairchild) in the West End of San Bernardino County is ~1938. UCSB Fairchild Aerial Surveys holdings for southern California begin ~1927, so a late-1920s/1930s frame over Cucamonga Valley may exist but coverage of this specific land is unconfirmed in the searchable materials. Earliest reliably-usable aerial floor: ~1938.",
+  "review_start_year": "1938",
+  "review_gap_years": "~26 (regional aerial review floor ~1938 minus ~1912 end of the arsenical-dipping era = 26 years of the late dipping era sitting below the aerial floor; the 1897-1903 Cucamonga topo partially fills this window at coarse 1:125,000 resolution). CAVEAT: this uses the regional Phase-I aerial floor, NOT a confirmed Rancho Cucamonga development review -- no site-specific RC historical-aerial review was retrievable (see findings).",
+  "dipping_records_summary": "No cattle- or sheep-dipping vat is tied to Rancho Cucamonga / Rancho de Cucamonga by name in the searchable materials. California Digital Newspaper Collection (cdnc.ucr.edu) and Chronicling America (loc.gov) both returned HTTP 403 to automated fetch, so their full-text indexes could not be queried directly; web-search proxies over CDNC surfaced no Cucamonga dipping-vat article (the one 'cattle ranch' hit was a 1905 Los Angeles Herald story about a ranch in Chihuahua, Mexico). This is 'not identified in the searchable materials', NOT 'did not exist'. Independent of naming: California's arsenical cattle-dipping program was driven by the Texas cattle-fever tick, overwhelmingly a Southeastern-US problem, and Cucamonga's economy had shifted from early hide-and-tallow cattle (1839-1860s) to intensive viticulture/citrus well before the ~1890s-1912 arsenical-dip era, which further lowers the prior for an on-ranch arsenical cattle-dip here.",
+  "sampling_frame_plausibility": "Cucamonga Valley is an alluvial fan at the base of the San Gabriel Mountains, drained by Cucamonga Creek/Canyon, with documented historic water supply (artesian flows and 1887 Chinese-dug irrigation tunnels into Cucamonga Canyon). Water sufficient for a working livestock facility therefore existed, and the 13,045-acre Rancho de Cucamonga (granted to Tiburcio Tapia, 1839) did begin as a hide-and-tallow cattle operation. On terrain grounds alone a mid-19th-century working facility is not impossible. However, the ranch converted early and intensively to vineyards (California's first commercial winery site) and later citrus/olives, so by the arsenical-dipping era the dominant land use was orchard/vineyard agriculture, not open-range cattle. The more plausible arsenic-in-soil pathway for this land is historic lead-arsenate / calcium-arsenate vineyard-and-orchard pesticide residue, which is exactly what Phase I ESAs in this region screen for -- NOT a cattle-dip vat. No dip vat, working facility, or arsenic exceedance is asserted to exist; this paragraph only assesses relative plausibility of the sampling frame.",
+  "findings": [
+    {
+      "claim": "Rancho Cucamonga's dominant historical land use was viticulture (California's earliest commercial wine district) and citrus/olives, not sustained cattle ranching.",
+      "classification": "HISTORICAL CONTEXT",
+      "confidence": "High",
+      "supporting": "Multiple concordant secondary histories: the 1839 Mexican land grant to Tiburcio Tapia began as hide-and-tallow cattle but a Mission-variety vineyard and adobe winery were established early; by the late 19th-early 20th century the Cucamonga Valley was one of California's largest wine regions (Zinfandel/Grenache), plus olives, peaches, and citrus. Cucamonga Valley AVA and Central Park Historic Grapevines document the viticultural heritage.",
+      "counter_evidence": "The early Mexican land-grant era (1839-1860s) was genuinely a cattle hide-and-tallow economy, so cattle were present on this land before the vineyard economy dominated; 'not sustained' does not mean 'never'.",
+      "citation": "en.wikipedia.org/wiki/Rancho_Cucamonga ; en.wikipedia.org/wiki/Cucamonga_Valley_AVA ; cityofrc.us/centralparkvineyard ; scholarworks.calstate.edu/downloads/s4655j597"
+    },
+    {
+      "claim": "HEADLINE: The regional historical-aerial review floor for this land is ~1938, leaving roughly 26 years (1912-1938) of the late arsenical-dipping era below the aerial floor; the 1897-1903 Cucamonga topo only partially fills that window at 1:125,000.",
+      "classification": "INVESTIGATIVE LEAD",
+      "confidence": "Medium",
+      "supporting": "EDR/USDA/Fairchild aerial availability for the West End of San Bernardino County begins ~1938 (the standard earliest year cited by regional Phase I ESAs, e.g., the San Jacinto exemplar reviewed here reached exactly 1938 and stated 'Data gaps exist from 1901 to 1938'). USGS Cucamonga quadrangle earliest editions are 1897/1900/1903. 1938 - 1912 = 26.",
+      "counter_evidence": "The gap is only a true blind spot for AERIAL data: the 1897/1903 topographic maps DO cover the entire dipping era, and no evidence of any dipping activity on this land has been found, so there may be nothing in the gap to miss. UCSB Fairchild frames (from ~1927) could also lower the aerial floor if coverage of this exact land is confirmed.",
+      "citation": "pastmaps.com/explore/us/california/san-bernardino-county/rancho-cucamonga ; lapl.org historical USGS topo guide ; library.ucsb.edu Fairchild Aerial Surveys ; San Jacinto Tract 38066 Phase I ESA (regional-floor exemplar, NOT this site)"
+    },
+    {
+      "claim": "No Rancho Cucamonga development produced a site-specific historical-aerial environmental review that was retrievable online; the two Phase I ESAs filed under Rancho Cucamonga-labeled CEQA folders are in fact for San Jacinto, Riverside County.",
+      "classification": "OPEN QUESTION",
+      "confidence": "High",
+      "supporting": "Both PDFs on civiclive Server_10384345 ('CEQA/Valle Reseda' Tract 38066 and 'CEQA/The Magnet' Appendix E) were downloaded and text-extracted: each states the site is 'located in the City of San Jacinto, Riverside County' (State Street & West Ramona Expressway; Section 20/27, T4S R1W). The only 'Rancho Cucamonga' strings are the consultant's office address (Salem Engineering, 8711 Monroe Court). That civiclive instance hosts San Jacinto's CEQA files, not Rancho Cucamonga's.",
+      "counter_evidence": "Rancho Cucamonga's own General Plan Update Draft EIR (2021, ceqanet 2021050261) and the Etiwanda Heights Neighborhood & Conservation Plan EIR (ceqanet 2017091027) exist and address hazards/hazardous materials at program level; site-specific Phase I ESAs for RC projects very likely exist in city planning files (rcdocs.cityofrc.us) but were not surfaced by public web search.",
+      "citation": "cdnsm5-hosted.civiclive.com/.../CEQA/Valle Reseda/APPENDIX I... ; cdnsm5-hosted.civiclive.com/.../CEQA/The Magnet/Appendix E Phase_I.pdf (both San Jacinto) ; ceqanet.lci.ca.gov/2021050261 ; ceqanet.lci.ca.gov/2017091027"
+    },
+    {
+      "claim": "No cattle- or sheep-dipping vat is documented at Rancho Cucamonga / Rancho de Cucamonga by name in the searchable newspaper and historical materials.",
+      "classification": "ESTABLISHED FACT",
+      "confidence": "Medium",
+      "supporting": "Web-search proxies over CDNC and general web search for 'Cucamonga dipping vat / cattle dip / sheep dip / tick quarantine' returned no article tying a dipping facility to Cucamonga; the single CDNC 'biggest cattle ranch' hit (LA Herald, 21 Feb 1905) is about Chihuahua, Mexico.",
+      "counter_evidence": "Direct full-text queries to cdnc.ucr.edu and chroniclingamerica.loc.gov both failed with HTTP 403 to automated fetch, so their indexes were not exhaustively searched. Absence here is 'not identified in the searchable materials', not proof of non-existence. State Veterinarian / USDA BAI county dipping reports were not directly obtained.",
+      "citation": "cdnc.ucr.edu search proxy (LAH19050221.2.122) ; WebFetch 403 on cdnc.ucr.edu and loc.gov/chroniclingamerica"
+    },
+    {
+      "claim": "The most plausible arsenic-in-soil pathway for this land is historic vineyard/orchard lead-arsenate and calcium-arsenate pesticide residue, not an arsenical cattle-dip.",
+      "classification": "HISTORICAL CONTEXT",
+      "confidence": "Medium",
+      "supporting": "Lead-arsenate and calcium-arsenate were standard vineyard/citrus insecticides in early-20th-century California; Cucamonga's dominant land use was exactly that kind of agriculture. Regional Phase I ESAs routinely screen former agricultural land for arsenic and organochlorine pesticides on this basis. California's arsenical cattle-DIP program, by contrast, targeted the Texas cattle-fever tick, overwhelmingly a Southeastern-US problem.",
+      "counter_evidence": "Arsenical dips were used in some California livestock operations (cattle scab / sheep scab control also used lime-sulphur, nicotine, and arsenic), so a dip pathway cannot be fully excluded on chemistry alone; and 'plausible pathway' is not evidence that any arsenic exceedance exists on this land (soil status remains unstudied).",
+      "citation": "sciencedirect.com S0160412006001395 (dip-vat arsenic); UNT metadc85846 (cattle scab control methods); general USDA arsenical-dip history; medium.com/the-environment cattle-dipping history"
+    },
+    {
+      "claim": "Terrain and water history make a mid-19th-century working livestock facility physically possible on the rancho, but the early conversion to intensive viticulture lowers the plausibility of an on-ranch arsenical cattle-dip during the ~1890s-1912 dip era.",
+      "classification": "INVESTIGATIVE LEAD",
+      "confidence": "Low",
+      "supporting": "Cucamonga Valley is a well-watered alluvial fan: Cucamonga Creek/Canyon drainage, historic artesian flows, and 1887 Chinese-dug irrigation tunnels; the 13,045-acre rancho began as a cattle operation. Water and livestock both existed in the cattle era.",
+      "counter_evidence": "By the dipping era the land was dominated by vineyards/citrus, not open-range cattle; water presence indicates irrigation infrastructure, not a dip vat. No facility, structure, or vat has been identified on any imagery or record. This is a plausibility statement only.",
+      "citation": "en.wikipedia.org/wiki/Rancho_Cucamonga (grant acreage, 1887 tunnels); Cucamonga Valley wine histories"
+    },
+    {
+      "claim": "The oldest map imagery of this land (~1897-1903 Cucamonga topo) predates the earliest usable aerial (~1938) by roughly 35-40 years, so the deepest look into the dipping era comes from coarse 1:125,000 topographic maps rather than photography.",
+      "classification": "HISTORICAL CONTEXT",
+      "confidence": "High",
+      "supporting": "USGS Cucamonga 30-minute quadrangle editions 1897/1900/1903 (pastmaps, LAPL/HTMC) vs. ~1938 regional aerial floor. The topo scale (1:125,000) is far too coarse to resolve a single dip vat but does capture major land use, structures, and drainages.",
+      "counter_evidence": "Topographic maps at 1:125,000 cannot confirm or exclude a small working facility; and the 1897-1903 sheets are surveyed/compiled maps, not photographs, so they carry their own omission risk. UCSB Fairchild aerials (~1927+) may narrow the photo gap if a covering frame is confirmed.",
+      "citation": "pastmaps.com Rancho Cucamonga ; lapl.org historical USGS topo research guide ; ngmdb.usgs.gov/topoview"
+    }
+  ],
+  "dead_ends": [
+    "WebFetch to cdnc.ucr.edu (California Digital Newspaper Collection) query 'Cucamonga dipping vat' -> HTTP 403 Forbidden; full-text index could not be queried directly.",
+    "WebFetch to chroniclingamerica.loc.gov / www.loc.gov/chroniclingamerica JSON API, query state=California andtext='Cucamonga dipping' -> HTTP 403 Forbidden.",
+    "WebSearch 'Cucamonga rancho cattle dipping vat arsenic tick quarantine San Bernardino historical' -> no dipping facility tied to Cucamonga by name; only generic Florida/Southeast cattle-dip material and the Rancho Cucamonga land-grant summary.",
+    "WebSearch 'cdnc.ucr.edu Cucamonga sheep dipping OR cattle dip vat quarantine ranch' -> only hit was LA Herald 21 Feb 1905 'Mexico's Biggest Cattle Ranch' (Chihuahua, Mexico, not Cucamonga).",
+    "Downloaded civiclive 'Valle Reseda' Tract 38066 Phase I ESA and 'The Magnet' Appendix E Phase I ESA expecting Rancho Cucamonga sites; both are San Jacinto, Riverside County -- unusable for this target (recorded as a red-herring finding).",
+    "WebFetch of Rancho Cucamonga General Plan Update 'Appendix 2-1 Existing Conditions Reports' PDF and both San-Jacinto Phase I PDFs -> exceeded 10 MB WebFetch content limit (San Jacinto ones were retrieved instead via local curl + pypdf).",
+    "WebSearch restricted to cityofrc.us for a Rancho Cucamonga Phase I ESA with '1938 aerial photographs' and vineyard history -> no site-specific Phase I ESA surfaced; only General Plan, Existing Conditions (Hazards), and Resort North Specific Plan documents.",
+    "historicaerials.com/viewer -> static help page only; specific earliest-year coverage for Rancho Cucamonga requires an interactive session not available via WebFetch.",
+    "DTSC EnviroStor and State Water Board GeoTracker were not directly queried through their own interfaces for an agricultural/arsenic or dip-vat site on this land (the only EnviroStor references seen were the null-result database checks inside the mislabeled San Jacinto Phase I reports)."
+  ],
+  "output_file_written": "/Users/andystavros/Ladera-Ranch/docs/statewide_program/results/T11-CUCAMONGA_deepdive.json"
+}

@@ -1,0 +1,85 @@
+{
+  "target_id": "T12-JURUPA",
+  "target_name": "Rancho Jurupa (communities of Riverside and Jurupa Valley, Riverside County, CA)",
+  "retrieval_date": "2026-07-21",
+  "method_note": "Documentary half of the Ladera Ranch methodology. Hypothesis-neutral public-records screening. The only soil fact anywhere is 'unstudied'. No claim of contamination is made or implied. All year/acreage/source values are transcribed from the cited materials; failed searches are logged as dead ends with the exact query.",
+
+  "earliest_imagery": "Oldest topographic map covering the land: 1896 (a USGS 30-minute-series quadrangle of the San Bernardino / Riverside / Santa Ana River area; the 1896, 1898 and 1901 editions were all pulled and reviewed by the EDR historical database in the Atlas 2024 Phase I for 6464 33rd Street, Jurupa Valley, and 1896/1901 editions are independently confirmed to exist via USGS HTMC and secondary map dealers). Oldest aerial photograph covering the land: 1931 (earliest frame in the EDR aerial set reviewed by the same Phase I; the early-1930s is the standard floor for available Southern California aerial coverage). Temporal precision: single-year for both; exact quadrangle name for the 1896 topo was not independently re-confirmed beyond the EDR review list.",
+
+  "review_start_year": "1931",
+  "review_gap_years": "19",
+
+  "dipping_records_summary": "No dipping vat, cattle dip, sheep dip, arsenical dip, or tick/scabies-eradication facility tied to Rancho Jurupa BY NAME was identified in any searchable material. The Atlas 2024 Phase I ESA (6464 33rd Street) contains zero occurrences of 'dip', 'vat' (as cattle-dip), 'arsenic', 'tick', 'cattle', 'dairy', 'citrus', 'vineyard', or 'orchard'; its only agricultural note is a generic ASTM boilerplate that 'agriculturally related chemicals, including pesticides and herbicides, may have been used' on land it records as agricultural from ~1938. Newspaper searches returned nothing linking a named vat to Jurupa/Rubidoux: the California Digital Newspaper Collection direct query and the Chronicling America JSON API both returned HTTP 403 to the fetch tool; a domain-scoped CDNC web search surfaced only an unrelated 1965 Madera Tribune cattle-scabies notice. This is 'the searchable materials do not appear to identify a named vat', NOT 'no vat existed'. California's participation in the federal cattle-fever-tick / arsenical-dipping program was primarily quarantine and inspection rather than the dense fixed-vat network of the Gulf/Southern states, which further weakens the prior that a named fixed vat would appear in these records at all.",
+
+  "sampling_frame_plausibility": "Rancho Jurupa was a 40,569-acre Mexican land grant (granted to Juan Bandini, 1838; later the property of Louis Rubidoux) straddling both banks of the Santa Ana River across present-day Riverside and Jurupa Valley. It was an intensively used stock-raising rancho -- Bandini stocked it with cattle and horses, and Rubidoux was described in county-history compilations as one of the most prosperous stock raisers in Southern California, also running orchards, vineyards, grain and a grist mill. Perennial river water, tributary drainages and sustained high livestock intensity make an on-ranch working facility (corrals, and possibly a livestock dip) plausible IN THE ABSTRACT. Three factors caution against over-reading that plausibility: (1) the grant is enormous, so any single modern development parcel is a tiny fraction of it and the location of any historic working facility is unconstrained; (2) the one parcel with a documentary land-use reconstruction (6464 33rd St) reads as undeveloped land with only a bisecting road on the 1896-1936 maps, then agricultural land from 1938, then a lumber yard (Las Plumas) 1973-2009 -- no ranch-era working structures observed; (3) California's dip-vat density was lower than the Southern fever-tick states. No vat is asserted to exist. This is a plausibility note only.",
+
+  "findings": [
+    {
+      "claim": "The earliest map coverage of the Rancho Jurupa land is a USGS topographic quadrangle from 1896, and the earliest aerial photograph coverage is from 1931.",
+      "classification": "ESTABLISHED FACT",
+      "confidence": "High",
+      "supporting": "Atlas Technical Consultants Phase I ESA (recon date 15 May 2024, ASTM E1527-21) for 6464 33rd Street, Jurupa Valley reviewed EDR-supplied topographic maps for 1896, 1898, 1901, 1942, 1943, 1953... and aerial photographs for 1931, 1938, 1948, 1953, 1967... The 1896 and 1901 Riverside-area USGS editions are independently confirmed to exist (USGS Historical Topographic Map Collection; secondary map dealers).",
+      "counter_evidence": "The exact quadrangle name for the 1896 topo was not re-confirmed independently of the EDR review list; earlier aerials than 1931 are not known to exist for this area, so 1931 is a 'best available' floor, not a guarantee no earlier frame exists somewhere.",
+      "citation": "Atlas Technical Consultants LLC, Phase I ESA, 6464 33rd Street, Jurupa Valley (RCCD / IETTC EIR appendix E), pp. transcribed sect. 5.2; rccd.edu/admin/bfs/fpd/documents/eir/2026/iettc/technical_appendices/E_Phase_I_ESA_OCR_rfs.pdf. Corroboration: USGS topoView (ngmdb.usgs.gov/topoview); historicpictoric 1901 Riverside quad. Grade B1 (topo years), A1 (USGS HTMC existence)."
+    },
+    {
+      "claim": "HEADLINE: The environmental review's historical AERIAL floor is 1931 -- about 19 years above dipping's ~1912 end -- so the entire arsenical-dipping-era window (pre-1912) sits below the review's aerial floor and could not have been seen in any photograph the review examined.",
+      "classification": "ESTABLISHED FACT",
+      "confidence": "High",
+      "supporting": "The Atlas Phase I aerial set begins at 1931. 1931 minus ~1912 = 19 years of the dipping era lie beneath the aerial floor. Any ground disturbance, corral, or vat that had already been graded, filled, or revegetated before the 1931 frame would be invisible to an aerial-only review of the pre-development landscape.",
+      "counter_evidence": "Important partial mitigation: the SAME review's TOPOGRAPHIC map series reached 1896 -- i.e. it DOES have map coverage through the dipping era, and those 1896-1936 maps show the parcel as undeveloped land with only a bisecting road, no depicted facility. Topographic maps, however, rarely depict small livestock structures, so this is weak negative evidence, not proof of absence.",
+      "citation": "Atlas Phase I ESA (same document); aerial years 1931-2024, topo years 1896-2022. Dipping-era end ~1912 is the project heuristic. Grade B1."
+    },
+    {
+      "claim": "No cattle-dip, dipping-vat, arsenic, tick, dairy, cattle, citrus, vineyard, or orchard reference appears anywhere in the one parcel-level environmental review located for this target.",
+      "classification": "INVESTIGATIVE LEAD",
+      "confidence": "Medium",
+      "supporting": "Full-text keyword scan of the extracted 48-page Atlas Phase I returned 0 hits for 'dip', 0 for 'arsenic', 0 for 'tick', 0 for 'cattle', 0 for 'dairy', 0 for 'citrus', 0 for 'vineyard', 0 for 'orchard'. The only agricultural content is a generic ASTM statement that pesticides/herbicides 'may have been used' on land recorded as agricultural from ~1938, with near-surface soils typically removed during grading.",
+      "counter_evidence": "This is one 24.06-acre triangular parcel out of a 40,569-acre grant; its silence says nothing about the rest of the rancho. A Phase I is a records/reconnaissance screen, not a soil study -- absence of the word 'arsenic' is not absence of arsenic. Other parcel EIRs in Jurupa Valley (Vernola Ranch ~200 ac; The District ~244 ac) were located but their Phase I aerial floors were not opened in this pass.",
+      "citation": "Atlas Phase I ESA, keyword scan of extracted text (fitz/PyMuPDF, 48 pp, 90,656 chars). Grade B1."
+    },
+    {
+      "claim": "No dipping vat or dip facility tied to Rancho Jurupa BY NAME was found in any historical newspaper or state-veterinary source searched.",
+      "classification": "OPEN QUESTION",
+      "confidence": "None",
+      "supporting": "CDNC domain-scoped search for 'cattle dipping vat Riverside/Rubidoux/Jurupa scabies quarantine' surfaced only an unrelated 1965 Madera Tribune scabies notice. Google Books / general search for 'Rubidoux OR Rancho Jurupa dipping vat / cattle dip' surfaced only generic ranching material. No named vat located.",
+      "counter_evidence": "The search was INCOMPLETE and cannot support a negative conclusion: the CDNC direct-query URL and the Chronicling America JSON API both returned HTTP 403 to the fetch tool, so full-text newspaper corpora were not actually searched end-to-end. A named vat could still exist in un-fetched CDNC/Chronicling America pages, county agricultural-commissioner records, or state veterinarian reports.",
+      "citation": "cdnc.ucr.edu (403 on direct query; domain search returned MT19650827); loc.gov/chroniclingamerica JSON (403). Grade of the (empty) result set: not applicable; treat as dead end."
+    },
+    {
+      "claim": "Rancho Jurupa was a prominent 19th-century stock-raising rancho on the Santa Ana River, which makes historic livestock working facilities plausible in the abstract.",
+      "classification": "HISTORICAL CONTEXT",
+      "confidence": "Medium",
+      "supporting": "40,569-acre grant to Juan Bandini (1838), stocked with cattle and horses; later owned by Louis Rubidoux, described as one of the most prosperous stock raisers in Southern California, who also ran orchards, vineyards and grain. Perennial river water and drainages support the plausibility of corrals and possibly a dip.",
+      "counter_evidence": "The stock-raising superlatives come from lower-grade compilations (Wikipedia; a genealogy site) rather than a primary agricultural record. Plausibility of a working facility somewhere on 40,000+ acres does NOT locate one, does not date one to the arsenical-dip era, and does not intersect it with any specific modern development parcel.",
+      "citation": "en.wikipedia.org/wiki/Rancho_Jurupa (Grade C/D); californiagenealogy.org San Bernardino pastoral history (Grade C); Riverside County history page and CA Office of Historic Preservation (Grade A2, general). Overall land-use context Grade C, corroborated at A2 for the grant's existence/date."
+    },
+    {
+      "claim": "The arsenical cattle-dip / ~1912 heuristic is derived from the Southern-US fever-tick program; California participated mainly through quarantine and inspection, so the prior that a dense fixed-vat network existed on a California rancho is weaker than in Gulf-state contexts.",
+      "classification": "HISTORICAL CONTEXT",
+      "confidence": "Medium",
+      "supporting": "USDA National Agricultural Library records the Cattle Fever Tick Eradication Program (1906-1943) as centered on 14 Southern states plus California; the first arsenical dip solution was permitted in 1910. The dense fixed-vat landscape (Florida, Texas, Georgia, Arkansas) reflects Southern fever-tick geography, not Southern California's, where inspection/quarantine and scabies-focused dipping predominated.",
+      "counter_evidence": "California WAS a listed participant and cattle/sheep scabies dipping with lime-sulfur and arsenical dips did occur on California ranches, so the weaker prior is a matter of degree, not exclusion; a vat on Rancho Jurupa remains possible.",
+      "citation": "nal.usda.gov cattle-fever-tick collection; aphis.usda.gov cattle fever ticks. Grade B1. This finding is a caution on the methodology's transportability, offered for honesty."
+    },
+    {
+      "claim": "The one parcel with a full documentary land-use reconstruction shows undeveloped land (1896-~1936), then agricultural land (1938-1973), then the Las Plumas lumber yard (1973-2009) -- no ranch-era working structures observed.",
+      "classification": "HISTORICAL CONTEXT",
+      "confidence": "High",
+      "supporting": "Atlas Phase I 'Past Uses of Subject Property' table: 1896-circa 1936 undeveloped land with a bisecting road; 1938-1973 agricultural land (possibly vacant vegetated later); 1973-2009 Las Plumas Lumber yard with several buildings/shelters; adjacent parcels agricultural to the north/northwest.",
+      "counter_evidence": "Covers only the 24.06-acre 33rd Street parcel; the maps that cover the dipping era (1896-1936) would not necessarily depict a small livestock dip even if one had been present, so 'no structure depicted' is weak negative evidence.",
+      "citation": "Atlas Phase I ESA, sect. 5.2.1 Past Uses of Subject Property. Grade B1."
+    }
+  ],
+
+  "dead_ends": [
+    "WebFetch cdnc.ucr.edu direct query (a=q ... txq=cattle+dipping+vat+Jurupa) -> HTTP 403 Forbidden; full-text CDNC search not completed via fetch tool.",
+    "WebFetch chroniclingamerica.loc.gov -> 308 redirect to loc.gov/chroniclingamerica JSON API -> HTTP 403 Forbidden; Chronicling America corpus not searched end-to-end.",
+    "WebSearch (allowed_domains cdnc.ucr.edu) 'cattle dipping vat Riverside OR Rubidoux OR Jurupa scabies quarantine' -> only unrelated 1965 Madera Tribune scabies article (MT19650827.2.87); nothing tying a named vat to Jurupa/Rubidoux.",
+    "WebSearch 'Jurupa cattle dip OR dipping vat Riverside California 1900s historical newspaper' -> no named Jurupa/Rubidoux vat; only general cattle-dipping and out-of-state vats.",
+    "WebSearch (allowed_domains books.google.com, google.com) 'Rubidoux OR Rancho Jurupa dipping vat OR cattle dip livestock corral history' -> only generic ranching/livestock-management pages; no Jurupa/Rubidoux vat.",
+    "WebSearch 'Rancho Jurupa cattle dipping vat arsenic tick Riverside' -> general cattle-dipping background and out-of-state (AR/FL) vats only; nothing site-specific.",
+    "WebSearch 'EnviroStor Jurupa Valley cleanup site 33rd Street agricultural arsenic DTSC' -> surfaced only the unrelated Stringfellow Superfund site (Pyrite Canyon industrial disposal, 1956-1972) and a stored-contaminated-soil news item; NO agricultural-dipping / arsenic EnviroStor entry located, and these industrial sites are explicitly NOT treated as ranch-soil evidence. Direct EnviroStor site-search UI not queried programmatically.",
+    "The RCCD Phase I ESA PDF is a scanned/OCR file that returned as binary to WebFetch; text had to be extracted locally with PyMuPDF (fitz) to read the aerial/topo year lists."
+  ]
+}

@@ -1,0 +1,100 @@
+{
+  "target_id": "T01-TRABUCO",
+  "rancho": "Rancho Trabuco",
+  "county": "Orange",
+  "modern_communities": ["Coto de Caza", "Wagon Wheel", "Trabuco Canyon"],
+  "run_date": "2026-07-21",
+  "run_type": "deep_dive_documentary",
+
+  "earliest_imagery": "Oldest topographic map: USGS Santa Ana 30-minute quadrangle, 1:62,500, 1901 (with the Corona 30' sheet, 1902, covering the northern edge) -- these are the earliest USGS topos covering the Rancho Trabuco / Trabuco Canyon footprint (USGS HTMC / ScienceBase; grade A1). The Coto de Caza Phase I ESA independently reviewed topo maps 'dating between 1902 and 2016' but states that at their scale 'no inferences regarding land use ... could be ascertained.' Oldest AERIAL independently documented for the site: 1938 (USDA, flight date June 21, 1938, 1\"=500'), the earliest frame in the EDR Aerial Photo Decade Package reviewed by the 2018 Phase I ESA. Note: Orange County's own OC Survey 'Historic_Imagery' service holds county aerials back to 1929/1931 (established during the T00-LADERA imagery pass over the adjoining Rancho Mission Viejo footprint); those frames plausibly extend over Trabuco but were NOT independently confirmed to intersect this footprint in this pass, so the defensible earliest aerial here is 1938.",
+
+  "review_start_year": "1938",
+  "review_start_year_note": "Earliest AERIAL photograph year reached by the located environmental review (Group Delta Consultants Phase I ESA, EN382, Nov 19 2018 / issued June 2020, for 'California Grand Villages,' 23333 & 23335 Ave La Caza, Coto de Caza). Aerials reviewed: 1938, 1946, 1953, 1967, 1974, 1985, 1989, 1990, 1994, and later. Topographic maps were also pulled back to 1901/1902, but the ESA states no land-use inference was possible from them, so the effective land-use review floor is the 1938 aerial.",
+
+  "review_gap_years": "26",
+  "review_gap_years_calc": "1938 (earliest aerial photo reviewed) minus ~1912 (approximate end of the California cattle-tick dipping/quarantine era, the anchor used throughout this project) = 26 years of the dipping era sitting BELOW the environmental review's aerial floor. Caveat: the located ESA covers a single parcel (the Coto de Caza country-club / office area), not the whole community; a full-community historical review reaching further back may exist but was not located in this pass. The original community CEQA document, EIR 401 (SCH 1981112705, Draft EIR received May 4 1982, certified Sept 21 1982), predates the ASTM E1527 Phase I standard and its CEQAnet summary shows no historical-aerial review or dip/vat/arsenic search.",
+
+  "dipping_records_summary": "No dipping, dip-vat, or tick-quarantine record tied to Rancho Trabuco (or Trabuco Canyon / Coto de Caza) BY NAME was located. The 2018 Phase I ESA full text contains zero occurrences of 'dip', 'cattle dip', 'arsenic', 'sheep dip', 'cattle', or 'grazing' (the 86 'vat' substring hits are all false positives inside words such as obserVATion and priVATe). CDNC (cdnc.ucr.edu) could not be full-text queried -- WebFetch returned HTTP 403 and a site-scoped web search surfaced only an unrelated 1854 Shasta Courier item. A Chronicling America collection query for 'Trabuco cattle dipping' returned 17 loose OR-matches (e.g. San Francisco Call 1903, Atlanta 1923), none tying dipping to this ranch. This is an absence of located record, NOT evidence that no facility existed; the State Veterinarian and Orange County Agricultural Commissioner tick-eradication archives (the most likely primary source, per the T00-LADERA finding) are offline and were not searched.",
+
+  "sampling_frame_plausibility": "Rancho Trabuco was a 22,184-acre Mexican cattle rancho (granted 1841 to Arguello and 1846 to Forster; consolidated by John Forster, then held after 1882 by Richard O'Neill Sr. and James Flood -- the same ownership lineage as the adjoining Rancho Mission Viejo that anchors the T00-LADERA work). It was a working cattle operation, and Orange County fell within the California cattle-tick quarantine footprint (established in T00-LADERA from the USDA Circular 174 county list). The terrain reinforces plausibility of an on-ranch working/dipping facility SOMEWHERE on the grant: the land drains via Trabuco Creek, Canada Gobernadora, and Wagon Wheel Canyon, and the 2018 Phase I ESA explicitly notes that in the 1938-1967 aerials 'Two bodies of water appear to intersect the Site.' A dip vat needs a reliable water source and a stock-handling location, both present here. This establishes only that the setting is CONSISTENT with such a facility having existed -- it is NOT evidence that one did. No corral, vat, or dip structure has been identified in any imagery or record, and the earliest usable aerial (1938) postdates the dipping era by ~26 years, so a demolished or backfilled facility would leave no aerial trace.",
+
+  "findings": [
+    {
+      "claim": "The only ASTM-standard environmental review located for this land (Group Delta Phase I ESA, 2018) reviewed historical AERIALS no earlier than 1938; combined with an ~1912 end of the dipping era, 26 years of that era sit below the review's aerial floor.",
+      "classification": "ESTABLISHED FACT",
+      "confidence": "High",
+      "supporting": "Phase I ESA (Group Delta EN382, Nov 19 2018 / June 2020) Table 3 'Summary of Historical Review' lists aerials 1938-1967 and 1974-2016; the EDR Aerial Photo Decade Package lists the earliest frame as 1938 (flight date June 21, 1938, USDA). Text: 'Photographs and historical topographic maps dating between 1902 and 2016 were reviewed.' 1938 - 1912 = 26.",
+      "counter_evidence": "The ESA covers only the ~small California Grand Villages parcel (23333/23335 Ave La Caza, the country-club/office area), not the whole Coto de Caza community; a broader or older review may exist. The ~1912 dipping-end anchor is approximate and is carried from the project's prior work, not re-verified for Trabuco in this pass. The gap figure measures a documentary blind spot, not any exposure.",
+      "citation": "Group Delta Consultants Phase I ESA, Project EN382, dated Nov 19 2018 (issued June 2020), Table 3 and EDR Aerial Photo Decade Package. PDF: pwds.oc.gov/sites/ocpwocds/files/2020-12/Previous%20Appendix%20E_Phase%201%20Environmental%20Site%20Assessment.pdf. Grade B1 (consultant technical report with transparent methodology; the underlying EDR aerial/topo packages are A2)."
+    },
+    {
+      "claim": "The located Phase I ESA contains no mention of cattle dipping, dip vats, arsenic, sheep dip, cattle, or grazing.",
+      "classification": "ESTABLISHED FACT",
+      "confidence": "High",
+      "supporting": "Full-text extraction of all 218 pages: 'dip' 0 hits, 'cattle dip' 0, 'arsenic' 0, 'sheep dip' 0, 'cattle' 0, 'grazing' 0, 'orchard' 0. The 86 'vat' substring matches are all inside unrelated words (observation, private, etc.).",
+      "counter_evidence": "Absence in one parcel-scoped modern report is not evidence that no dip facility existed on the 22,184-acre rancho. The ASTM E1527 Phase I scope does not specifically search for pre-1912 cattle-dip vats and would not detect a backfilled one. 'Ranch' and 'farm' do appear, but only as business-name strings in the EDR city-directory/database listings, not as land-use history.",
+      "citation": "Full-text search of Group Delta Phase I ESA (EN382, 2018/2020), all pages. Grade B1."
+    },
+    {
+      "claim": "In the earliest usable aerials (1938-1967), the site and its surroundings appear undeveloped open land with two water bodies intersecting the site.",
+      "classification": "ESTABLISHED FACT",
+      "confidence": "High",
+      "supporting": "Phase I ESA Table 3, 1938-1967 aerials: 'The Site appears to be undeveloped. Two bodies of water appear to intersect the Site. The surrounding vicinity appears to be undeveloped. Adjacent properties ... North/South/East/West: Undeveloped.'",
+      "counter_evidence": "1938 postdates the ~1912 dipping era by 26 years; a small working/dip facility could have been dismantled and would not show. Aerials delivered at 1\"=500' but source-scan resolution limits detection of small structures. 'Undeveloped' describes gross land cover, not sub-surface history.",
+      "citation": "Group Delta Phase I ESA Table 3 (1938-1967 aerials). Grade B1 (underlying USDA/USGS aerials A2)."
+    },
+    {
+      "claim": "Rancho Trabuco was a genuine 19th-century cattle rancho in the O'Neill/Flood/Forster lineage that also owned adjoining Rancho Mission Viejo.",
+      "classification": "HISTORICAL CONTEXT",
+      "confidence": "High",
+      "supporting": "22,184-acre Mexican grant (2 leagues to Santiago Arguello 1841; 3 leagues to John Forster 1846), patented to Forster 1866; after Forster's 1882 death, Richard O'Neill Sr. and James Flood became partners; O'Neill Jr. retained the Orange County portions after the 1939 division. The grant ran along Trabuco Creek and Trabuco Canyon and encompasses present-day Coto de Caza and Trabuco Canyon.",
+      "counter_evidence": "Cattle ranching over a 22,000-acre grant does not place a dipping facility on any specific modern parcel, and the grant-era (1840s-1880s) predates the arsenical-dip quarantine era (~1906-1912); documented dipping operations on this ranch were not located. Much of the grant is now O'Neill Regional Park, not housing.",
+      "citation": "Wikipedia 'Rancho Trabuco' and OC Historyland (secondary summaries corroborated across sources). Grade C (encyclopedic/local-history secondary); grant/patent facts are themselves A2-level public-record derived."
+    },
+    {
+      "claim": "The earliest maps and imagery covering this land are the 1901 USGS Santa Ana 30-minute topo and (independently documented) 1938 aerials; county aerials may reach 1929 but were not confirmed over this footprint.",
+      "classification": "HISTORICAL CONTEXT",
+      "confidence": "Medium",
+      "supporting": "USGS Santa Ana 1:62,500 quadrangle 1901 and Corona 1902 on ScienceBase/HTMC cover the Trabuco area; the Phase I ESA independently reviewed topo maps from 1901/1902. OC Survey Historic_Imagery service holds county aerials from 1929/1931 (established T00-LADERA memory).",
+      "counter_evidence": "The 1901 topo at 1:62,500 shows no land-use detail (the ESA could draw 'no inferences' from pre-1975 topos). The 1929/1931 county frames were verified over the Rancho Mission Viejo footprint, NOT confirmed to intersect Rancho Trabuco in this pass, so the defensible earliest aerial remains 1938.",
+      "citation": "USGS ScienceBase item 5a8a4278... (Santa Ana 1901); Maps of the Past (Corona 1902, Santa Ana 1901); OC Survey Historic_Imagery service (project memory). Grades A1 (USGS quads), A2 (OC GIS service), C (map-reseller listing)."
+    },
+    {
+      "claim": "Orange County fell within the early-20th-century California cattle-tick dipping/quarantine footprint.",
+      "classification": "HISTORICAL CONTEXT",
+      "confidence": "Medium",
+      "supporting": "Established in the T00-LADERA work from the USDA Circular 174 quarantine county list (Orange County listed). California was one of the quarantine states in the federal Cattle Fever Tick Eradication Program (est. 1906); arsenical dips introduced 1911.",
+      "counter_evidence": "County-level quarantine inclusion does not locate any dip vat on Rancho Trabuco specifically. USDA Circular 174 was not re-fetched in this deep-dive pass; the classification therefore leans on the project's prior establishment of that fact rather than a fresh primary retrieval.",
+      "citation": "USDA Circular 174 quarantine county list (per T00-LADERA finding, not re-verified this pass); USDA NAL 'Cattle Fever Ticks' history. Grade A1 for the program history; the county-listing is carried at reduced confidence here."
+    },
+    {
+      "claim": "The terrain and ranching history make an on-ranch cattle-dip/working facility somewhere on the grant plausible as a sampling frame -- without asserting one existed.",
+      "classification": "INVESTIGATIVE LEAD",
+      "confidence": "Low",
+      "supporting": "Working cattle rancho + county in quarantine footprint + reliable water (Trabuco Creek, Canada Gobernadora, Wagon Wheel Canyon; ESA notes 'two bodies of water appear to intersect the Site') = the physical prerequisites for a dip facility are present.",
+      "counter_evidence": "Plausibility is not evidence. No vat, corral, or dip structure was identified in any imagery (1938 onward) or written record. The dipping era ended ~1912, 26 years before the earliest usable aerial, so a facility that existed and was removed would leave no detectable trace either way. This lead cannot be elevated without a primary record (State Vet / Ag Commissioner archive) or a targeted soil study.",
+      "citation": "Synthesis of Phase I ESA Table 3 (water bodies), grant/ranching history, and T00-LADERA quarantine finding. Grade C (inference; the inputs are graded above)."
+    },
+    {
+      "claim": "No primary record tying cattle dipping to Rancho Trabuco by name was located, and the most likely primary source (State Veterinarian / OC Agricultural Commissioner tick-eradication archives) was not searchable online.",
+      "classification": "OPEN QUESTION",
+      "confidence": "None",
+      "supporting": "CDNC full-text query blocked (HTTP 403); a site-scoped search returned only an unrelated 1854 item. Chronicling America 'Trabuco cattle dipping' returned 17 loose OR-matches, none ranch-specific. Named ranch dipping records are, per the master plan, expected to be absent for most targets.",
+      "counter_evidence": "This is absence of a LOCATED record via a limited online toolset, not absence of the underlying fact. CDNC and the county/state veterinary archives were not exhausted; a record could exist offline. Do not read this as 'no dipping occurred here.'",
+      "citation": "CDNC WebFetch 403; CDNC site search (unrelated 1854 Shasta Courier); Chronicling America collection API query (17 non-specific matches). Dead ends logged. Grade D (null result)."
+    }
+  ],
+
+  "dead_ends": [
+    "WebFetch of CDNC search URL (cdnc.ucr.edu/?a=q...txq=Trabuco+cattle+dipping) -> HTTP 403 Forbidden; CDNC not full-text queryable via available tools.",
+    "WebSearch site:cdnc.ucr.edu for '\"Trabuco\" cattle dipping OR dipping' -> single unrelated hit (Shasta Courier, April 15, 1854, Walker's Expedition); nothing on Trabuco dipping.",
+    "Chronicling America collection query q='Trabuco cattle dipping' (loc.gov/collections/chronicling-america, fo=json) -> 17 loose OR-matches (San Francisco Call 1903, Atlanta tri-weekly 1923, LA Herald 1894/1909, etc.), none tying dipping to Rancho Trabuco.",
+    "WebSearch 'Rancho Trabuco cattle dip vat tick eradication quarantine California' -> only generic national tick-program pages (USDA/APHIS, Florida/Texas vats), nothing ranch-specific.",
+    "Full-text search of the 218-page Phase I ESA for 'dip' / 'cattle dip' / 'arsenic' / 'sheep dip' / 'cattle' / 'grazing' / 'orchard' -> 0 hits each (86 'vat' hits all false-substring positives).",
+    "CEQAnet record 1981112705 (EIR 401) summary -> confirms the 1982 community EIR but shows no historical-aerial review window and no dip/vat/arsenic terms; the full 1982 EIR PDF (which predates ASTM Phase I standards) was not located for full-text search in this pass.",
+    "OC Survey Historic_Imagery 1929/1931 frames -> not confirmed in this pass to intersect the Rancho Trabuco footprint (verified only over Rancho Mission Viejo in T00-LADERA); left as an open imagery lead rather than a claimed earliest aerial.",
+    "State Veterinarian / Orange County Agricultural Commissioner tick-eradication archives (the most probable primary source for a named dip site) -> not available online; not searched."
+  ],
+
+  "headline": "review_gap_years = 26. The only ASTM-standard environmental review located for this land reached back only to 1938 in aerials (topos to 1901 yielded no land-use inference), leaving ~26 years of the cattle-tick dipping era (ended ~1912) below its documentary floor -- on a genuine former cattle rancho, in a quarantine-era county, with on-site water. No dip facility is asserted or identified; the only soil fact here remains 'unstudied.'"
+}

@@ -1,0 +1,81 @@
+{
+  "target_id": "T03-SIMI",
+  "rancho": "Rancho Simi (Rancho San Jose de Nuestra Senora de Altagracia y Simi)",
+  "county": "Ventura (grant extended into western Los Angeles County)",
+  "modern_communities": "Simi Valley; Moorpark edge; Santa Susana Knolls; Wood Ranch; Runkle Ranch/Canyon area",
+  "generated_utc": "2026-07-21",
+  "methodology": "Documentary half of the Ladera Ranch land-use screening methodology (Master Plan questions C-G). Hypothesis-neutral. No contamination asserted; the only soil fact anywhere is 'unstudied'.",
+
+  "earliest_imagery": "Earliest topographic map: USGS Camulos 30-minute quadrangle, 1:125,000, published 1903 (surveyed ~1900-1902) which explicitly enumerates 'Simi Valley' among its features; the adjacent USGS Santa Susana 15-minute quadrangle (1:62,500, surveyed 1900, published 1903, reprinted 1916/1939) covers the eastern valley. Earliest aerial photography: 1927 Fairchild Aerial Surveys (the earliest holding in the UCSB Library collection, covering southern/central California incl. the tri-county Ventura area); county/site-scale aerial coverage of Simi Valley is confirmed to exist from 1947 (Aerial Archives). No aerial imagery of this land predates the 1927 Fairchild era. Sources: USGS Historical Topographic Map Collection via ScienceBase/NGMDB (A2); UCSB Library aerial-photography holdings pages (A2/B1); Aerial Archives 1947 Simi Valley frame (B2).",
+
+  "review_start_year": "1927 (imagery-imposed floor). This is the earliest aerial photograph year that any historical-aerial review of this land could possibly use, because no aerial imagery of Simi Valley predates the 1927 Fairchild surveys. The Runkle Ranch/Canyon Specific Plan EIR (SCH 2002121143, City of Simi Valley, Draft EIR received 12/23/2003, Final EIR certified April 26 2004) is the identified environmental-review instrument for a large former-grazing tract here, but the specific earliest photo year its own Phase I / environmental assessment reviewed could not be retrieved from public materials (see dead ends). The regional Phase I norm for this area typically floors at 1938 (USDA) or 1947.",
+
+  "review_gap_years": ">=15 years, and structurally the entire pre-1912 dipping era. Computation per methodology: (earliest aerial year that any review of this land could use) minus (~1912, end of the arsenical cattle-tick dipping era) = 1927 - 1912 = 15. Because aerial photography of Simi Valley did not exist before 1927, the whole ~1906-1912 mandatory-dipping window and everything earlier sits BELOW the floor of any aerial-based historical review here -- no aerial review of this land can reach the dipping era at all. If the Runkle EIR's assessment used the common regional aerial floor of 1947 rather than 1927, the gap widens to 35 years (1947 - 1912). The exact floor the EIR reviewed is unretrieved, so 15 is reported as the minimum (best-case) gap and the headline figure.",
+
+  "dipping_records_summary": "No dipping vat, cattle dip, or sheep-dip facility tied to Rancho Simi or the Runkle Ranch parcel BY NAME was identified in any searchable material (California Digital Newspaper Collection via secondary search, Google Books, Museum of Ventura County journal articles, Strathearn Historical Park/Simi Valley Historical Society descriptions, Chatsworth-area ranch histories). What IS documented at the COUNTY level: search-surfaced historical accounts of the California cattle-tick eradication program state that federal inspectors examined 1,015 herds in eleven still-quarantined counties and found roughly half tick-infested, 'especially the herds in San Luis Obispo, Santa Barbara, Ventura, Fresno, San Diego, and Orange counties,' and that a 1907 California law provided for compulsory arsenical dipping directed by the State Veterinary (primary reference: MacKellar & Hart, 'Eradicating Cattle Ticks in California,' Calif. State Board of Agriculture / USDA BAI, 1911 -- named but not directly retrieved). This confirms Ventura County was a genuine quarantine/dipping county and that arsenical dipping was compelled there, but it does NOT place a vat on Rancho Simi. Absence of a named record is not absence of the fact.",
+
+  "sampling_frame_plausibility": "Rancho Simi supported livestock ranching at material intensity across more than a century, which makes an on-ranch stock-working facility plausible without asserting one existed. The Picos ran sheep, cattle and horses from the 1790s; under Jose de la Guerra (1842-1858) it became a major cattle enterprise with herds in the thousands (the family disposed of 4,000 head in 1862 before the 1863-64 drought decimated regional herds); American-era operators ran large sheep bands (Charles Hoar's partnership held ~13,000 sheep by 1880 on a 12,000-acre lease). Perennial water existed -- Tapo Creek (called a perennial 19th-century stream and the water source for the de la Guerra Tapo headquarters) and the Arroyo Simi drainage -- the kind of water a plunge/dip vat needs. The historic Runkle Ranch itself (3,000+ acres, cattle grazing continuing up to the 2000s development) sat on this terrain. However, plausibility is not evidence: sheep (dipped for scab with arsenic/lime-sulfur) were as prominent here as cattle; the 1863-64 drought and the post-1887 shift to farming and subdivision (Simi Land & Water Co.) mean the peak arsenical-dipping window (1906-1912) coincided with declining open-range ranching; and any vat could have been sited on a different part of the 113,009-acre grant, off the modern residential parcels. The terrain permits the question; it does not answer it.",
+
+  "findings": [
+    {
+      "claim": "The oldest topographic map covering the Rancho Simi / Simi Valley land is the USGS Camulos 30-minute quadrangle (published 1903, surveyed ~1900-1902), with the adjacent Santa Susana 15-minute quadrangle (surveyed 1900, published 1903) covering the eastern valley.",
+      "classification": "ESTABLISHED FACT",
+      "confidence": "High",
+      "supporting": "USGS Historical Topographic Map Collection records (ScienceBase item for Santa Susana 1903 1:62,500; NGMDB/Los Angeles Public Library and commercial map-store listings for Camulos 1903 1:125,000, which lists 'Simi Valley' among mapped features). Both are the earliest USGS sheets for this ground.",
+      "counter_evidence": "A topographic map depicts terrain and named features, not small stock-handling structures; a 1903 map surveyed ~1900 predates the 1906-1912 arsenical-dipping peak and so would not be expected to show a dip vat even if one later existed. Earlier General Land Office (GLO) plats may exist but were not retrieved.",
+      "citation": "USGS Camulos 30' quad 1903 & Santa Susana 15' quad 1903 (surveyed 1900), via ScienceBase (sciencebase.gov/catalog/item/5a8a4280e4b00f54eb3f0e76), NGMDB/topoView, and LAPL historical-topo guide. Grade A2."
+    },
+    {
+      "claim": "The oldest aerial photography of this land dates to the 1927 Fairchild Aerial Surveys; no aerial imagery of Simi Valley predates 1927, and confirmed site-scale coverage exists from 1947.",
+      "classification": "ESTABLISHED FACT",
+      "confidence": "High",
+      "supporting": "UCSB Library states the Fairchild Aerial Surveys collection contains the earliest (1927) photography it holds, covering southern/central California incl. the Ventura tri-county area. A 1947 Simi Valley aerial frame is catalogued by Aerial Archives, confirming coverage from at least 1947.",
+      "counter_evidence": "1927 is ~15 years after dipping ended (~1912) and 15-20 years after the 1906-1912 dipping window, so a decommissioned or filled vat could be invisible; whether the 1927 Fairchild flight lines actually cover the specific Runkle/Simi parcels (vs. only nearby) was not frame-verified in FrameFinder (viewer returned 403 to automated fetch).",
+      "citation": "UCSB Library, Fairchild Aerial Surveys & Significant Aerial Photography Holdings pages; Aerial Archives 1947 Simi Valley frame (aerialarchives.photoshelter.com/image/I0000d3UlbArjgGw). Grade A2/B2."
+    },
+    {
+      "claim": "HEADLINE: No aerial-based historical review of this land can reach the arsenical-dipping era. The earliest aerial imagery of Simi Valley is 1927; dipping ended ~1912; so the minimum review gap is 15 years and the entire pre-1912 dipping era lies below the floor of any aerial review. The identified development-era review instrument is the Runkle Ranch/Canyon Specific Plan EIR (SCH 2002121143, certified April 2004) for a 1,595-acre former-grazing tract.",
+      "classification": "INVESTIGATIVE LEAD",
+      "confidence": "Medium",
+      "supporting": "CEQAnet record 2002121143 confirms the Runkle Ranch Specific Plan Draft EIR (City of Simi Valley, received 12/23/2003; Final EIR certified 4/26/2004), 1,595 acres, present condition 'Vacant, Grazing, Open Space.' The imagery record independently fixes 1927 as the earliest possible aerial floor for any review of this ground (finding 2). 1927 - 1912 = 15.",
+      "counter_evidence": "The Runkle EIR's environmental attention was dominated by radiological questions (strontium-90 / proximity to the Santa Susana Field Laboratory), not agrichemical dipping; its historical land use is documented as grazing/vacant. The exact earliest photo year its own Phase I / hazards assessment reviewed could NOT be retrieved (DTSC and city PDFs returned 403 to automated fetch), so 15 years is the imagery-imposed minimum, not a confirmed statement of the EIR's own review floor -- a regional 1938/1947 floor would make the gap 26-35 years. This is a lead about a structural blind spot, not a finding that anything was missed at a specific vat.",
+      "citation": "CEQAnet SCH 2002121143 (ceqanet.lci.ca.gov/2002121143/2); City of Simi Valley Runkle Canyon Final EIR, certified April 2004; imagery floor per finding 2. Grade A2 (EIR record) + B1 (aerial-floor inference)."
+    },
+    {
+      "claim": "Ventura County was a genuine cattle-tick quarantine county in which arsenical dipping was compelled -- federal inspectors found roughly half of examined herds tick-infested 'especially' in Ventura (among SLO, Santa Barbara, Fresno, San Diego, Orange), and a 1907 California law required disinfection/dipping under the State Veterinary's direction.",
+      "classification": "HISTORICAL CONTEXT",
+      "confidence": "Medium",
+      "supporting": "Search-surfaced historical accounts of the 1906+ California cattle-tick eradication program name Ventura County among the heavily infested quarantined counties and describe the 1907 mandatory-dipping law; the named primary is MacKellar & Hart, 'Eradicating Cattle Ticks in California' (1911). This validates the registry's 'heavy' quarantine tier for this county.",
+      "counter_evidence": "This is a COUNTY-level statement, not tied to Rancho Simi. The specific secondary wording was surfaced via web search and the primary (MacKellar & Hart 1911) was not directly retrieved and read, so the exact county list and dates should be verified against the primary before relying on them. Ventura's infestation being high does not locate any vat on the study parcels.",
+      "citation": "MacKellar & Hart, 'Eradicating Cattle Ticks in California,' 1911 (named, not directly retrieved); corroborating secondary historical accounts of the CA tick program surfaced via web search. Grade B1 (primary named) / B2 (secondary wording). NEEDS primary verification."
+    },
+    {
+      "claim": "No dip vat or dipping facility tied to Rancho Simi or the Runkle Ranch by name was found in any searchable source.",
+      "classification": "OPEN QUESTION",
+      "confidence": "None",
+      "supporting": "Targeted searches across newspaper/archive and local-history sources (CDNC via secondary search, Google Books, Museum of Ventura County journal articles on Simi agriculture, Strathearn Historical Park/Simi Valley Historical Society, Chatsworth/Sage Ranch histories) returned no named dip-vat record for this ranch.",
+      "counter_evidence": "Absence of a record is NOT absence of the fact. The CDNC full-text search endpoint returned HTTP 403 to automated fetch, so newspaper searching was indirect; a manual CDNC/Chronicling America query, county assessor/State Veterinary annual reports, or the Strathearn museum's holdings could still surface a record. The methodology expects most ranches to have no named record.",
+      "citation": "Negative result across CDNC (indirect), Google Books, venturamuseum.org agricultural-history article, simihistory.com. Grade C (absence-of-record)."
+    },
+    {
+      "claim": "Rancho Simi sustained livestock ranching (thousands of cattle mid-19th century; ~13,000 sheep by 1880) with perennial water (Tapo Creek, Arroyo Simi), and the Runkle Ranch grazed cattle up to development -- a terrain that makes an on-ranch stock-working/dip facility plausible but unproven.",
+      "classification": "INVESTIGATIVE LEAD",
+      "confidence": "Low",
+      "supporting": "Museum of Ventura County agricultural-history article documents de la Guerra-era cattle in the thousands and Hoar-partnership sheep at ~13,000 head by 1880, with Tapo Creek a perennial 19th-century stream; secondary/news accounts describe the historic Runkle Ranch (3,000+ acres) with grazing cattle continuing to the 2000s.",
+      "counter_evidence": "Plausibility is not evidence of a vat. The 1863-64 drought decimated regional cattle; sheep (dipped for scab, not tick) were as prominent as cattle; the arsenical cattle-dip peak (1906-1912) coincided with the valley's shift to farming and subdivision after the 1887 Simi Land & Water Co. sale; and any facility could have sat elsewhere on the 113,009-acre grant, off the modern residential parcels. No corral, vat, or dip structure is documented on the study parcels.",
+      "citation": "venturamuseum.org 'The Changing Agricultural Landscape of the Simi Valley 1795-1960'; secondary/news accounts of Runkle Ranch. Grade B1 (museum) / B2 (news)."
+    }
+  ],
+
+  "dead_ends": [
+    "cdnc.ucr.edu full-text search URL (query 'Simi dipping cattle tick', txIN) returned HTTP 403 to automated fetch -- CDNC could not be queried directly; newspaper coverage assessed only via secondary/Google search.",
+    "WebSearch '\"Rancho Simi\" OR \"Simi Valley\" cattle dip vat OR dipping vat historic ranch' -- no dip-vat record identified.",
+    "WebSearch 'Ventura County sheep scab dipping vat arsenical OR lime sulfur Simi ranch 1900s history' -- confirmed county-level dipping context but no vat on Simi/Runkle.",
+    "DTSC PDF dtsc.ca.gov/.../Runkle_Canyon_CLRRA.pdf returned HTTP 403 to automated fetch -- Phase I / historical-aerial-year list not retrieved.",
+    "simivalley.org/Home/ShowDocument?id=172 (General Plan Technical Background Report) returned HTTP 403 to automated fetch -- could not extract its historical land-use / hazards narrative.",
+    "ngmdb.usgs.gov topoView viewer and historicaerials.com/viewer returned 403 to automated fetch -- exact earliest-aerial year for the specific Runkle parcel not machine-confirmed (relied on UCSB holdings + Aerial Archives catalog instead).",
+    "WebSearch for the Runkle Canyon Phase I ESA aerial-year list (1927/1938/1947) -- the document was not located in public search; the EIR's own stated aerial floor remains unretrieved."
+  ],
+
+  "output_file_written": "/Users/andystavros/Ladera-Ranch/docs/statewide_program/results/T03-SIMI_deepdive.json"
+}

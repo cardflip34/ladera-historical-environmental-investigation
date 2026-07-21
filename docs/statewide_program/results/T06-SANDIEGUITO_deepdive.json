@@ -1,0 +1,95 @@
+{
+  "target_id": "T06-SANDIEGUITO",
+  "target_name": "Rancho San Dieguito (Rancho Santa Fe / Del Mar / Solana Beach), San Diego County, CA",
+  "generated": "2026-07-21",
+  "method": "Documentary half of the Ladera Ranch LEHRP methodology. Hypothesis-neutral public-records screening. The only soil fact is 'unstudied'. No claim that any community is contaminated. No assertion that a dip vat exists.",
+
+  "earliest_imagery": "OLDEST TOPO: USGS 'San Luis Rey' 30-minute quadrangle, 1:125,000, published 1901 (field survey completed 1895). It covers latitude 33 deg 00' to 33 deg 30' N / longitude 117 deg 00' to 117 deg 30' W, which includes the northern study communities (Rancho Santa Fe ~33.02N, Solana Beach ~32.99N, Encinitas). Del Mar (~32.96N) sits just below the quad's southern edge and would fall on the adjacent southern 30' sheet -- so Del Mar's oldest topo coverage is not confirmed at 1901 (MEDIUM confidence on Del Mar specifically). At 1:125,000 no small working facility such as a dip vat would be resolvable. OLDEST AERIAL: ~1928 Fairchild Aerial Surveys coastal San Diego coverage (UCSB Library holds Fairchild imagery from 1927 onward; ~1928 is the commonly cited earliest coastal-SD flight). Routine environmental-review-grade coverage of this coast begins later, typically 1938-1953 (USDA/Fairchild). CRITICAL: the earliest aerial of this land (~1928) POSTDATES the end of arsenical cattle dipping (~1912) by ~16 years, so no aerial-photo-based review can ever image a dipping-era feature here regardless of how far back it reaches.",
+
+  "review_start_year": "No original-development environmental review exists. Rancho Santa Fe was platted/subdivided in 1922 (Santa Fe Land Improvement Co.), Del Mar founded 1885 (re-established 1908), Solana Beach developed in the 1920s -- all DECADES before CEQA (1970) and before ASTM Phase I ESA practice (late 1980s-1990s). No master-plan-scale EIR or Phase I with a historical-aerial-review component was located for the communities' original development. The best in-region proxy floor for routine infill/parcel Phase I ESAs in unincorporated San Diego County is ~1946 (representative earliest aerial reviewed; the same firm/owner's San Diego County Phase I ESA reviewed aerials from at least 1946). Representative review_start_year = 1946 (LOW-MEDIUM confidence; a proxy, not the community's own review).",
+
+  "review_gap_years": "34 (representative): 1946 (representative Phase I aerial floor) minus 1912 (end of arsenical dipping era) = 34 years of the dipping era sitting BELOW the review floor. MORE FUNDAMENTAL POINT: the entire arsenical cattle-dipping window on this land (c.1906 AT&SF acquisition / c.1910-1912 SD County tick quarantine, ending ~1912) predates ALL aerial photography of the tract -- earliest aerial ~1928. The dipping era is therefore >=16 years below the floor of the OLDEST POSSIBLE aerial and is structurally invisible to any aerial-based environmental review, whether that review reaches 1928, 1946, or 1953. There is no aerial record of the dipping era for this land, and no CEQA-era review of the communities' original development ever examined it.",
+
+  "dipping_records_summary": "NO cattle-dipping vat is named to Rancho San Dieguito, Rancho Santa Fe, Del Mar, or Solana Beach in the searchable materials examined (WebSearch across CDNC-indexed content, Chronicling America topics, Google-Books-indexed histories, and USDA/BAI tick-eradication summaries). CONTEXT that IS documented: (1) San Diego County was one of the last four Southern California counties under federal cattle-tick quarantine on 1 Apr 1910, and arsenical dipping (white arsenic + soda + pine tar, permitted 1910) was the standard eradication method; (2) the tract was a working Mexican-era cattle rancho (Osuna grant, 1840s) run on a hide-and-tallow / open-grazing model watered by the San Dieguito River and springs. CAVEAT (rule 6): the searchable materials do NOT appear to identify a vat here; this is NOT evidence that no vat existed. Direct CDNC query access returned HTTP 403 during this run, so the newspaper search was not exhaustive. State Veterinarian / BAI per-ranch dipping logs, if any survive, were not located online.",
+
+  "sampling_frame_plausibility": "Terrain and land-use make an on-ranch working facility TERRAIN-PLAUSIBLE but not demonstrated. The land was a genuine cattle operation for roughly a century (Osuna grant 1840s through Osuna-heir grazing into the late 1800s), with reliable water from the San Dieguito River and natural springs -- the surface-water and drainage conditions a fixed dipping or watering facility would need. However, TWO strong limiting factors cut against an on-ranch arsenical dip vat specifically: (a) the operation was an EXTENSIVE hide-and-tallow grazing rancho, not the intensive fixed-corral dairying that most concentrates permanent dip infrastructure; and (b) by the peak arsenical-dip / quarantine window (1906-1912) the tract was already transitioning OUT of cattle -- the last Osuna parcel sold in 1906 and the AT&SF was planting hundreds of thousands of eucalyptus (1906-1916) across the grant for a timber experiment. So the land most likely to host a 1910-1912 arsenical vat had, by that exact window, largely ceased to be an active cattle ranch. No vat is asserted.",
+
+  "findings": [
+    {
+      "claim": "The study land was a genuine Mexican/early-American-era cattle rancho (Rancho San Dieguito, Osuna grant ~1840, ~8,800 acres) run on a hide-and-tallow grazing model watered by the San Dieguito River and springs.",
+      "classification": "HISTORICAL CONTEXT",
+      "confidence": "High",
+      "supporting": "Multiple independent histories: Rancho Santa Fe Assn history; RSF Historical Society; Grokipedia synthesis all describe Juan Osuna's 1840 grant, an 1831-1840 adobe, hide-and-tallow exports, and grazing on San Dieguito River / spring water, with cattle ranching continuing under Osuna heirs into the late 19th century.",
+      "counter_evidence": "Hide-and-tallow open grazing is EXTENSIVE land use, not the intensive fixed-facility dairying that concentrates permanent dip/corral infrastructure; no fixed dipping or corral facility is documented on the tract in any source located.",
+      "citation": "Rancho Santa Fe Association, 'History' (A2, rsfassociation.org/at-a-glance/history); Rancho Santa Fe Historical Society, 'A Brief History' (B1, ranchosantafehistoricalsociety.org/brief); en.wikipedia.org/wiki/Rancho_San_Dieguito (C)."
+    },
+    {
+      "claim": "San Diego County was under federal cattle-tick quarantine in 1910-1911 and arsenical dipping was the standard eradication method of that period, so the dipping-era exposure pathway is regionally applicable to this county.",
+      "classification": "HISTORICAL CONTEXT",
+      "confidence": "High",
+      "supporting": "USDA/BAI tick-eradication histories and the San Diego History Center's 'California's Cattle-Range Industry 1870-1912' record that on 1 Apr 1910 only San Diego, Orange, Santa Barbara and part of San Luis Obispo remained quarantined, and that the first arsenical dip solution was officially permitted in 1910.",
+      "counter_evidence": "County-level quarantine status places NO vat on this specific tract; it establishes only that dipping occurred somewhere in the county. Reinfestation from Baja herds is cited as the reason SD County lagged, implying eradication (and its vats) may have concentrated near the border and stockyards, not necessarily on north-county coastal ranchos.",
+      "citation": "San Diego History Center Journal, Jan 1965, 'California's Cattle-Range Industry: Decimation of the Herds, 1870-1912' (B1, sandiegohistory.org/journal/1965/january/cattle); USDA National Agricultural Library, 'Cattle Fever Ticks / Tick Eradication Program' (A2, nal.usda.gov)."
+    },
+    {
+      "claim": "During the peak arsenical-dip window (~1906-1912) the tract was transitioning OUT of cattle: the last Osuna parcel sold in 1906 and the AT&SF planted hundreds of thousands of eucalyptus (1906-1916) across the former grant.",
+      "classification": "INVESTIGATIVE LEAD",
+      "confidence": "High",
+      "supporting": "RSF Association and RSF Historical Society histories: AT&SF bought the grant shortly after 1900, planted eucalyptus from 1906 as a timber experiment, abandoned it in 1916 after spikes split the lumber; the last Osuna family parcel (116 acres) was sold in 1906.",
+      "counter_evidence": "The transition was gradual and parcel-by-parcel; grazing could have continued on unplanted parcels or under lease during 1906-1912, and eucalyptus planting does not preclude a co-located stock-water or dip facility. Absence of a documented vat is not proof one did not exist.",
+      "citation": "Rancho Santa Fe Association, 'History' (A2); Rancho Santa Fe Historical Society, 'A Brief History' (B1); Grokipedia, 'Rancho Santa Fe, California' (C, corroborating dates only)."
+    },
+    {
+      "claim": "No environmental review with a historical-aerial-review component exists for the communities' original development, because they were built out decades before CEQA (1970) and before ASTM Phase I ESA practice.",
+      "classification": "OPEN QUESTION",
+      "confidence": "High",
+      "supporting": "Rancho Santa Fe subdivided 1921-1922; Del Mar founded 1885 / re-established 1908; Solana Beach developed in the 1920s. CEQA took effect 1970. A CEQAnet search for 'Rancho San Dieguito' returned no development EIR for the community. Located CEQA documents are all modern infill/roadway/parcel actions (e.g., RSF Roundabouts EIR; individual Phase I ESAs).",
+      "counter_evidence": "Modern infill CEQA documents DO exist and some include parcel-scale Phase I ESAs; the 'no review' statement applies to the master-planned/original development, not to every parcel. A community-development EIR could exist under a project name not matched by the queries run.",
+      "citation": "CEQAnet search 'Rancho San Dieguito' (A2, ceqanet.lci.ca.gov) -- no development EIR returned; Rancho Santa Fe subdivision date 1922 per RSF Association (A2)."
+    },
+    {
+      "claim": "The earliest aerial imagery of this land (~1928 Fairchild) postdates the ~1912 end of arsenical dipping by ~16 years, so any aerial-photo-based environmental review is structurally blind to a dipping-era feature here.",
+      "classification": "ESTABLISHED FACT",
+      "confidence": "High",
+      "supporting": "UCSB Library's Fairchild Aerial Surveys holdings begin 1927; commonly cited earliest coastal San Diego flights are ~1928. Photography of this tract simply did not exist during the 1906-1912 dipping window.",
+      "counter_evidence": "A dip vat can leave a durable soil scar, salt/vegetation anomaly, or concrete remnant visible in LATER aerials, so post-1928 imagery is not wholly uninformative; but many wooden/earthen vats were backfilled and leave no aerial signature, and a routine review would not know to look.",
+      "citation": "UCSB Library, 'Fairchild Aerial Surveys (FAS)' and 'Significant Aerial Photography Holdings' (A2, library.ucsb.edu/geospatial/airphotos)."
+    },
+    {
+      "claim": "No cattle-dipping vat is named to Rancho San Dieguito / Rancho Santa Fe / Del Mar / Solana Beach in the searchable newspaper and reference materials examined.",
+      "classification": "OPEN QUESTION",
+      "confidence": "None",
+      "supporting": "WebSearch queries combining the ranch/community names with 'dipping vat / cattle dip / arsenic / tick / 1910-1912' returned only generic national and regional dip history, no site-named vat. USDA/BAI summaries name no vat on this tract.",
+      "counter_evidence": "Digitized coverage of 1900s-1910s rural San Diego County newspapers is incomplete; the direct CDNC query returned HTTP 403 this run so the newspaper search was NOT exhaustive; surviving State Veterinarian / BAI per-ranch dip logs were not located. 'Not identified in searchable materials' is not 'did not happen'.",
+      "citation": "WebSearch (grade C/D aggregate): '\"San Dieguito\" OR \"Rancho Santa Fe\" cattle dipping vat arsenic newspaper 1910 1911 1912'; CDNC query blocked (HTTP 403) at cdnc.ucr.edu."
+    },
+    {
+      "claim": "The oldest topographic map covering the land is the 1901 USGS 'San Luis Rey' 30-minute quadrangle (1:125,000, surveyed 1895), which images the northern communities but likely not Del Mar.",
+      "classification": "HISTORICAL CONTEXT",
+      "confidence": "Medium",
+      "supporting": "The San Luis Rey 30' sheet spans 33 deg 00'-33 deg 30' N / 117 deg 00'-117 deg 30' W, covering Rancho Santa Fe (~33.02N), Solana Beach, and Encinitas; published 1901 from an 1895 survey.",
+      "counter_evidence": "Del Mar (~32.96N) falls just south of the sheet's 33 deg 00' edge and would be on the adjacent southern 30' quadrangle, so 1901 topo coverage of Del Mar itself is unconfirmed. At 1:125,000 no dip-vat-scale feature is resolvable, so the topo cannot confirm or exclude a facility either way.",
+      "citation": "USGS/NGMDB topoView (A2, ngmdb.usgs.gov/topoview); MyTopo 'Historic 1901 San Luis Rey 30x30' (C, coverage/scale metadata); UW-Madison / UCSB quad indices (A2)."
+    },
+    {
+      "claim": "Terrain (San Dieguito River, springs, drainages) plus a century of documented cattle use make an on-ranch working stock/dip facility terrain-plausible, but no vat is demonstrated and the arsenical window falls in the cattle-to-eucalyptus transition.",
+      "classification": "INVESTIGATIVE LEAD",
+      "confidence": "Low",
+      "supporting": "Documented reliable surface water (San Dieguito River + springs) and a long-lived cattle operation supply the physical preconditions a fixed watering/dipping facility would require.",
+      "counter_evidence": "Extensive hide-and-tallow grazing (not intensive dairying) is the low-infrastructure end of ranching; and by 1906-1912 the tract was being converted to eucalyptus with the last family parcel sold in 1906 -- so the exact arsenical-dip years coincide with the ranch winding down. Plausibility of terrain does NOT imply a vat existed.",
+      "citation": "Rancho Santa Fe Association 'History' (A2); RSF Historical Society (B1); San Diego History Center cattle-industry journal (B1)."
+    }
+  ],
+
+  "dead_ends": [
+    "WebFetch https://cdnc.ucr.edu/?a=q ... txq=%22dipping+vat%22+San+Dieguito -> HTTP 403 Forbidden; California Digital Newspaper Collection direct query not completed this run (newspaper search therefore not exhaustive).",
+    "WebSearch '\"San Dieguito\" OR \"Rancho Santa Fe\" cattle dipping vat arsenic newspaper 1910 1911 1912 tick dip' -> no site-named dip vat; only generic/national dip history returned.",
+    "WebSearch 'San Diego County cattle dipping vats locations tick eradication 1910 1911 quarantine ranches Escondido San Dieguito' -> county-level quarantine facts only; no vat located by ranch name.",
+    "WebFetch https://ceqanet.lci.ca.gov/search?q=Rancho+San+Dieguito -> 0 development EIRs for the community (442k-record corpus; no matching project surfaced).",
+    "WebFetch San Diego COUNTY .gov PDFs (Tractor Supply MUP Phase I ESA; RSF Roundabouts EIR appendices) -> HTTP 403 Forbidden to the fetcher; full text of county Phase I / EIR historical-aerial-review sections not retrieved. NOTE: the 'Tractor Supply' Phase I is a Valley Center property (Bell Holdings of RSF is only the owner), so it is NOT a valid in-community review-floor proxy.",
+    "WebFetch https://ngmdb.usgs.gov/prodesc/proddesc_TopoView.php (bbox product query) -> HTTP 403 Forbidden; topo enumeration done via WebSearch instead.",
+    "WebFetch http://www.muststayawake.com/SDAG/MapTopoList.html (SDAG online historical topo list for San Diego County) -> connection refused (ECONNREFUSED) both attempts; independent SDAG topo index not confirmed."
+  ],
+
+  "output_file_written": "/Users/andystavros/Ladera-Ranch/docs/statewide_program/results/T06-SANDIEGUITO_deepdive.json"
+}

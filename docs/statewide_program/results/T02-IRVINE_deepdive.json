@@ -1,0 +1,93 @@
+{
+  "target_id": "T02-IRVINE",
+  "target_name": "Irvine Ranch (Rancho San Joaquin + Rancho Lomas de Santiago)",
+  "county": "Orange",
+  "communities": ["Irvine", "Tustin", "Newport Coast", "Lake Forest", "Laguna Woods"],
+  "run_date": "2026-07-21",
+  "run_type": "documentary/archival half only (no GIS/imagery pipeline)",
+  "disclaimer": "Hypothesis-neutral public-records screening. Nothing here asserts that any community is contaminated. The only soil fact anywhere is 'unstudied'. Geographic or temporal overlap does not establish exposure or causation.",
+
+  "earliest_imagery": "OLDEST TOPO: USGS Santa Ana 30-minute quadrangle, 1:62,500 scale, published 1901 (field survey ~1894-1896); this sheet covers Santa Ana, Tustin, Myford/Irvine and Newport and therefore blankets the historic Irvine Ranch. Attested via USGS Historical Topographic Map Collection / ScienceBase catalog entry and reseller catalog listings (the ScienceBase and NGMDB pages themselves returned HTTP 403 to automated fetch). OLDEST AERIAL: the earliest systematic, verifiable aerial coverage of this land is the 1938 countywide flight (held by OC Survey and indexed by NETR historicaerials.com and UCSB). Fairchild Aerial Surveys hold Southern California frames from 1927 onward at UCSB (FrameFinder), which MAY include this parcel, but frame-level coverage of the Irvine Ranch footprint was not confirmed in this pass. Net: oldest topo = 1901; oldest confirmed aerial = 1938 (possibly 1927 via Fairchild, unverified).",
+
+  "review_start_year": "1938 (earliest aerial reviewed); 1935 (earliest topographic map reviewed)",
+  "review_gap_years": "26",
+  "review_gap_note": "review_gap_years = 1938 (earliest aerial photo the community's CEQA historical review examined) minus ~1912 (approximate close of the arsenical dipping/tick-eradication era). The entire pre-1912 dipping window sits BELOW the review's imagery floor. The headline review document (Irvine Gateway Village Project EIR, Section 4.5 Cultural Resources, prepared by Dudek for the City of Irvine, dated November 2024) explicitly lists the historical aerials it reviewed: 1938, 1946, 1952, 1963, 1967, 1972, 1980, 1981, 1985 and later; and topographic maps from 1935, 1944, 1950 and later. Important qualifier: this is a cultural-resources / archaeological review, not a hazardous-materials Phase I ESA; but it is the community's CEQA-level historical land-use review, and its imagery floor (1938) is identical to the standard Orange County Phase I floor, so the 26-year gap generalizes.",
+
+  "dipping_records_summary": "No record ties a cattle- or sheep-dipping vat to the Irvine Ranch by name in the public materials searched. Web searches pairing 'Irvine Ranch' with 'cattle dipping', 'dipping vat', 'arsenical dip', and 'tick eradication' returned only (a) generic U.S.-South (mostly Florida/Arkansas) dip-vat literature and (b) Irvine Ranch livestock history with no dipping reference. Programmatic queries to the California Digital Newspaper Collection and Chronicling America for 'Irvine Ranch dipping/vat/tick' could not be completed because the Library of Congress / CDNC JSON endpoints returned HTTP 403/404 to automated requests during this run (a tooling access limit, NOT a substantive negative). The Irvine Historical Society / Irvine Ranch Historic Park (24 preserved original ranch structures) holds primary ranch records that were not searched here and is the single most likely place a named dipping reference would survive. Conclusion: the searchable materials do not appear to identify an Irvine Ranch dip facility; this is NOT a finding that none existed.",
+
+  "sampling_frame_plausibility": "Plausibility of an on-ranch working/dip facility is moderate-to-high on terrain grounds, but this is a statement about physical plausibility ONLY and asserts NOTHING about whether any vat exists. The Irvine Ranch was among the largest livestock operations in California: assembled from Rancho San Joaquin (50,000 acres, acquired 1864) and Rancho Lomas de Santiago (47,000 acres, 1866), reaching ~93,000-110,000 acres. It ran large sheep flocks from 1868 and grazed cattle for decades (Peters Canyon was used for cattle grazing into the 20th century before its 1992 transfer). Abundant water and stock-handling drainages exist across the footprint (San Diego Creek and its tributary Peters Canyon Wash, plus Bommer, Bee, and Agua Chinon canyons), and later constructed reservoirs (Irvine Lake, filled 1933; Santiago Dam 1931-1932). Large flocks plus reliable water are the physical preconditions for a dip/handling facility. A stronger-than-cattle vector is SHEEP-SCAB dipping, which was mandated in California and directly applicable to Irvine's sheep operation. LIMITING CONSIDERATION: California's Texas-fever-tick dipping regime was far lighter than the U.S. South (California was declared substantially tick-free relatively early), so intensive cattle arsenical dipping may have been limited here; and no imagery or record reviewed in this pass locates any such facility.",
+
+  "findings": [
+    {
+      "claim": "HEADLINE: The most recent CEQA-level historical land-use review for an Irvine Ranch development (Irvine Gateway Village Project EIR, Cultural Resources, Dudek, Nov 2024) examined historical aerials only back to 1938 and topographic maps back to 1935, leaving roughly 26 years of the pre-1912 arsenical-dipping era entirely below its imagery floor.",
+      "classification": "INVESTIGATIVE LEAD",
+      "confidence": "High",
+      "supporting": "The EIR's Section 4.5 explicitly enumerates the reviewed aerials (1938, 1946, 1952, 1963, 1967, 1972, 1980, 1981, 1985, ...) and topos (1935, 1944, 1950, ...), citing NETR historicaerials.com and UCSB. 1938 minus ~1912 = 26-year unreviewed dipping window.",
+      "counter_evidence": "This is a cultural-resources/archaeological review, not a hazardous-materials Phase I ESA; its purpose is historic-property identification, so a dipping vat being 'below the floor' is expected and is a data-availability limitation, not evidence of a hazard. No dip facility is indicated in ANY reviewed year (1938 onward). The same 1938 floor is standard for OC Phase I ESAs because systematic aerial coverage simply does not predate it.",
+      "citation": "City of Irvine, Irvine Gateway Village Project EIR, Sec. 4.5 Cultural Resources (Dudek, dated Nov 2024), 'Historical Maps and Aerial Photographs Review' and Table 4.5-6; https://cityofirvine.gov/sites/default/files/legacy-documents/civica-36297-4.5_cultural-resources.pdf. Grade A2."
+    },
+    {
+      "claim": "The oldest topographic map covering the Irvine Ranch land is the USGS Santa Ana 30-minute quadrangle, 1:62,500, published 1901 (surveyed ~1894-1896).",
+      "classification": "ESTABLISHED FACT",
+      "confidence": "High",
+      "supporting": "USGS Historical Topographic Map Collection / ScienceBase catalog and multiple reseller/library listings attest a 1901 Santa Ana quad naming Santa Ana, Tustin, Myford/Irvine and Newport; this footprint contains the ranch.",
+      "counter_evidence": "At 1:62,500 the 1901 sheet is far too coarse to resolve a small dip vat or corral; it documents regional relief and named places only, so it neither shows nor rules out any working facility. The ScienceBase/NGMDB pages returned HTTP 403 to automated fetch, so the 1901 date rests on secondary attestations rather than a directly opened primary page in this run.",
+      "citation": "USGS HTMC 'Santa Ana, CA 1901' (ScienceBase item 5a8a4278e4b00f54eb3f0d59, 403 to fetch); corroborated by mapsofthepast.com and yellowmaps.com listings. Grade A2 (map itself A1, accessed secondhand)."
+    },
+    {
+      "claim": "The earliest confirmed aerial coverage of this land is the 1938 countywide flight; regional Fairchild frames exist from 1927 at UCSB but parcel-level coverage of the Irvine Ranch was not verified.",
+      "classification": "ESTABLISHED FACT",
+      "confidence": "Medium",
+      "supporting": "OC Survey historical-imagery holdings and NETR historicaerials.com both begin systematic Orange County countywide coverage at 1938; the Irvine Gateway Village EIR reviewed a 1938 aerial as its earliest. UCSB's Fairchild Aerial Surveys collection holds Southern California imagery from 1927.",
+      "counter_evidence": "1938 is already ~26 years after the dipping era's close; a vat demolished or backfilled before 1938 would leave no aerial signature, and no vat is visible in the 1938 frame anyway. Whether the 1927-1931 Fairchild flights actually image this specific footprint was NOT confirmed (FrameFinder not queried frame-by-frame in this pass), so 1927 cannot yet be claimed as coverage of this land.",
+      "citation": "OC Survey Historical Aerial Imagery (pwadmin.oc.gov) A2; NETR historicaerials.com B2; UCSB Fairchild Aerial Surveys (library.ucsb.edu/geospatial) A2; EIR Table 4.5-6 A2."
+    },
+    {
+      "claim": "The Irvine Ranch was one of California's largest livestock operations (sheep from 1868, decades of cattle grazing) with ample water and drainages, making an on-ranch stock-handling or dip facility physically plausible.",
+      "classification": "HISTORICAL CONTEXT",
+      "confidence": "Medium",
+      "supporting": "Ranch assembled from Rancho San Joaquin (50,000 ac, 1864) and Rancho Lomas de Santiago (47,000 ac, 1866); ~93,000-110,000 ac; devoted to sheep grazing from 1868; Peters Canyon used for cattle grazing into the 20th century; drainages include San Diego Creek and Peters Canyon Wash.",
+      "counter_evidence": "Physical plausibility is NOT evidence of existence. No image or record reviewed here locates any dip/corral facility. California's cattle-tick dipping regime was much lighter than the U.S. South, weakening the specifically-cattle-dipping version of the premise.",
+      "citation": "irvinehistory.org, Wikipedia 'Irvine, California' and 'Peters Canyon Wash', katiewheelerlibrary.wordpress.com/irvine-ranch. Grades B2/C."
+    },
+    {
+      "claim": "No dipping vat is tied to the Irvine Ranch by name in the public sources searched.",
+      "classification": "OPEN QUESTION",
+      "confidence": "Medium",
+      "supporting": "Targeted web searches pairing 'Irvine Ranch' with dipping/vat/arsenical-dip/tick returned only generic Southern-U.S. dip literature and Irvine livestock history with no dipping reference.",
+      "counter_evidence": "Absence reflects incomplete and partly inaccessible archives, not proof of absence: CDNC and Chronicling America JSON endpoints returned 403/404 to automated queries this run, and the Irvine Historical Society's primary ranch records and State Veterinarian / County Agricultural Commissioner tick-eradication archives were not searched. 'The searchable materials do not appear to identify X' is distinct from 'X did not happen.'",
+      "citation": "WebSearch queries (see dead_ends); Irvine Historical Society (irvinehistory.org), OC Parks Irvine Ranch Historic Park. Grade C (negative-search inference)."
+    },
+    {
+      "claim": "Sheep-scab dipping is a more applicable dip vector for the Irvine Ranch than cattle-tick dipping, given its large sheep flocks and California's mandatory scab-dipping regime.",
+      "classification": "HISTORICAL CONTEXT",
+      "confidence": "Low",
+      "supporting": "Irvine ran large sheep flocks from 1868; California enforced sheep-scab (scabies) control through dipping in this era, applicable statewide to major flocks.",
+      "counter_evidence": "No facility of any kind was located. Sheep dips historically used lime-sulfur or nicotine as well as arsenical formulations, so even if a dip existed the residual chemistry is unknown and would not necessarily be arsenic/persistent. This is a reasoning lead, not a documented facility.",
+      "citation": "General livestock-dipping history (USDA BAI context in project evidence set); Irvine sheep-grazing history irvinehistory.org / Wikipedia. Grade C."
+    },
+    {
+      "claim": "The soil status of these communities with respect to any ranch-era dip residue is unstudied; no DTSC/GeoTracker dip-vat cleanup listing for this footprint was identified in this pass.",
+      "classification": "OPEN QUESTION",
+      "confidence": "Medium",
+      "supporting": "No Irvine/Orange-County former-ranch cattle-dip-vat cleanup site surfaced in searching. DTSC's own 'Interim Guidance for Sampling Agricultural Properties' documents that historical agricultural arsenic/lead is a recognized residential-redevelopment concern, i.e., the class of hazard is real and screenable.",
+      "citation": "DTSC EnviroStor (envirostor.dtsc.ca.gov) and DTSC Ag Sampling Guidance (Rev.3, 2008). Grade A2.",
+      "counter_evidence": "EnviroStor and GeoTracker were not exhaustively queried site-by-site for this specific hazard in this run, so absence of a listing is not confirmation of absence; equally, no listing means there is no positive evidence of contamination. The only defensible soil fact remains 'unstudied'."
+    }
+  ],
+
+  "dead_ends": [
+    "WebSearch: 'Irvine Ranch California history cattle sheep grazing dipping vat arsenic' -- returned only generic livestock/arsenical-dip context, nothing tying a vat to the Irvine Ranch.",
+    "WebSearch: 'Irvine Ranch cattle dipping vat quarantine tick eradication Orange County 1910s' -- only Southern-U.S. (Florida/Mississippi/Arkansas) dip-vat material.",
+    "WebSearch: '\"Irvine Ranch\" cattle dipping vat OR \"dipping vat\" arsenical dip tick Orange County history museum' -- only Florida DEP lists + Irvine museum pages with no dipping content.",
+    "WebSearch: 'DTSC EnviroStor Irvine cleanup site cattle dip vat OR arsenic agricultural former ranch Orange County' -- no Irvine dip-vat cleanup site; only DTSC database/guidance generalities.",
+    "WebFetch CDNC search URL (cdnc.ucr.edu/?a=q ... txq=Irvine+Ranch+dipping+cattle) -- HTTP 403 Forbidden; could not retrieve result count.",
+    "curl Chronicling America JSON (chroniclingamerica.loc.gov/search/pages/results/?state=California&andtext=Irvine+Ranch+dipping&format=json) -- redirects to loc.gov and returns HTTP 404/403 to automated requests; also tried 'Irvine+Ranch+dipping+vat' and 'Irvine+Ranch+tick' with same failure.",
+    "curl loc.gov collections chronicling-america JSON (?q=\"Irvine Ranch\" dipping&fo=json) -- HTTP 403 Forbidden.",
+    "WebFetch USGS NGMDB topoView viewer -- HTTP 403 Forbidden (could not open interactive map to enumerate editions directly).",
+    "WebFetch ScienceBase item 5a8a4278e4b00f54eb3f0d59 (1901 Santa Ana quad record) -- HTTP 403 Forbidden; 1901 date confirmed via secondary listings instead.",
+    "WebFetch Irvine Gateway Village Cultural Resources PDF via summarizer -- returned as undecoded binary; recovered content by downloading and parsing the PDF text locally (successful) to extract the 1935/1938 review floors."
+  ],
+
+  "output_file_written": "/Users/andystavros/Ladera-Ranch/docs/statewide_program/results/T02-IRVINE_deepdive.json"
+}

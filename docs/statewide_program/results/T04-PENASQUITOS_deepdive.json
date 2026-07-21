@@ -1,0 +1,98 @@
+{
+  "target_id": "T04-PENASQUITOS",
+  "target_name": "Rancho Santa Maria de Los Penasquitos",
+  "county": "San Diego",
+  "communities": ["Rancho Penasquitos", "Mira Mesa", "Carmel Valley"],
+  "methodology": "Documentary half of the Ladera Ranch deep-dive: earliest imagery, environmental-review aerial floor, name-tied dipping records, sampling-frame plausibility. Hypothesis-neutral public-records screening. Soil status everywhere = UNSTUDIED.",
+  "retrieval_date": "2026-07-21",
+
+  "earliest_imagery": "Oldest topo: USGS 'La Jolla' 15-minute quadrangle, surveyed 1901, published 1903 (1:62,500) — the earliest USGS topographic sheet covering the Carmel Valley/Penasquitos area; the Debevoise/Carmel Valley Phase I ESA (Geocon 2018) explicitly logs topographic maps back to '1901/1903'. Oldest aerial: circa 1928. The Junipers cultural-resources study (Rancho Penasquitos) reviewed a 1928 aerial ('On the 1928 aerial photo, the project and the area surrounding it are shown as being undeveloped'); San Diego County's earliest systematic aerial coverage is the 1927-1928 Fairchild Aerial Surveys (held at UCSB Library / Whittier College). Aerial photography did not exist before ~1928, so no photographic record covers the 1823-1912 ranching/dipping era.",
+
+  "review_start_year": "1928 (The Junipers CEQA cultural/historical aerial review, Rancho Penasquitos) and 1939 (Debevoise Property Phase I ESA, Carmel Valley / Pacific Highlands Ranch). These are the earliest photo years the community-development environmental reviews actually reached.",
+
+  "review_gap_years": "16 to 27 years. HEADLINE: The environmental reviews for development on this former Rancho reached an aerial-photo floor of 1928 (The Junipers, on the former Carmel Highland Golf Course / Rancho Penasquitos grounds) to 1939 (Debevoise Property, Carmel Valley). Cattle dipping's regulatory end is ~1912. review_gap_years = review earliest photo year - 1912 = 1928-1912 = 16 years (Junipers) and 1939-1912 = 27 years (Debevoise). Even the deepest review floor (1928) sits 16 years AFTER dipping ended, meaning the ENTIRE ~1890s-1912 dipping window and the full 1823-1912 ranching era lie below any photographic record these reviews consulted. Topographic maps were consulted slightly deeper (1901/1903), overlapping only the final ~decade of the dipping era, but topo sheets do not resolve a working corral or dip vat.",
+
+  "dipping_records_summary": "No cattle-dipping vat, dip, or dip-site is tied to Rancho Santa Maria de Los Penasquitos by name in the searchable materials. Chronicling America (queried via loc.gov JSON API) returns 0 pages for 'Penasquitos dipping', 'Penasquitos cattle dip', 'Penasquitos scabies', and 'Penasquitos quarantine cattle'; the place-name 'Penasquitos' appears on only 7 pages in the entire digitized national newspaper corpus, so the collection is too sparse to be probative either way. The California Digital Newspaper Collection (cdnc.ucr.edu) could not be queried by automated fetch (Cloudflare interstitial challenge / 403) and would require an interactive browser session. Neither the Junipers CEQA cultural study nor the Debevoise Phase I ESA contains the strings 'dip', 'vat', or 'cattle dip'; both discuss cattle ranching in general terms only. CONCLUSION: the searchable materials do not appear to identify an on-ranch dipping facility -- this is an absence of record, NOT evidence that no facility existed.",
+
+  "sampling_frame_plausibility": "An on-ranch working facility (corral, chute, and possibly a dip vat) is terrain-plausible but entirely unproven. The rancho was a large, water-favored cattle operation: an 1823 Mexican land grant of ~8,486 acres centered on Los Penasquitos Canyon and its perennial creek and tributaries, expanded in 1834 to the lower canyon, and by 1962 spread over ~14,000 acres described as 'one of the largest cattle ranches in Southern California' after two cattlemen (Sawday and Sexton/Sexon) restocked it in 1921. Perennial water, canyon-bottom drainages, and sustained herd numbers are exactly the conditions under which a working/dipping facility would sit -- but California dipping was driven by episodic scabies/mange quarantines rather than the permanent tick-line infrastructure of the Gulf South, and the ranch's documented working core (corrals, the surviving adobe ranch house) lay along Los Penasquitos Canyon near the present Preserve, NOT necessarily within the modern residential footprints of Rancho Penasquitos, Mira Mesa, or Carmel Valley. No dip vat has been located on any reviewed imagery. Do NOT assert a vat exists.",
+
+  "findings": [
+    {
+      "claim": "The land is the former Rancho Santa Maria de Los Penasquitos, the first Mexican land grant in present-day San Diego County (1823, ~8,486 acres to Francisco Maria Ruiz), used for cattle ranching continuously from the 1820s until subdivision beginning in the 1960s.",
+      "classification": "HISTORICAL CONTEXT",
+      "confidence": "High",
+      "supporting": "Wikipedia/WikiProjectMed and San Diego History Center concur on the 1823 grant, ~8,486 acres, and cattle use; corroborated independently by The Junipers Cultural Resources Study (City of San Diego CEQA appendix): '1823, the first Mexican land grant in California, the Rancho de Penasquitos, was granted to Francisco de Maria Ruiz' and 'cattle ranching expanded and prevailed over agricultural activities.'",
+      "counter_evidence": "None identified. Land-use history is well documented; this finding makes no claim about soil residue.",
+      "citation": "en.wikipedia.org/wiki/Rancho_Santa_Maria_de_Los_Penasquitos (grade C, tertiary); sandiegohistory.org/journal/1965/january/cattle (B1); The Junipers Cultural Resources Study, sandiego.gov/.../appendices_i1_-i3.pdf (A2)."
+    },
+    {
+      "claim": "Post-1921 the ranch was an intensive, large-scale cattle operation (~14,000 acres by 1962, 'one of the largest cattle ranches in Southern California'), making a permanent on-ranch livestock working area highly probable somewhere on the historic rancho.",
+      "classification": "INVESTIGATIVE LEAD",
+      "confidence": "High",
+      "supporting": "Wikipedia/WikiProjectMed: 'In 1921 George Sawday and Oliver Sexon bought the ranch and stocked it with cattle... one of the largest cattle ranches in Southern California.' The Junipers cultural study: '1921, two cattlemen purchased the ranch, stocking it with cattle... By 1962, the ranch was spread over 14,000 acres.'",
+      "counter_evidence": "Large herd size and acreage establish that working infrastructure existed SOMEWHERE on the rancho; they do NOT locate it within the modern development footprints, and do NOT establish that a dip vat (as opposed to plain corrals/chutes) was ever built. The historic working core sat near the Los Penasquitos Canyon adobe, now inside the Preserve.",
+      "citation": "en.wikipedia.org/wiki/Rancho_Santa_Maria_de_Los_Penasquitos (C); The Junipers Cultural Resources Study (A2)."
+    },
+    {
+      "claim": "HEADLINE: The environmental reviews for development on this former Rancho reached an aerial-photograph floor of only 1928-1939, leaving the entire 1823-1912 ranching/dipping era below the photographic record (review_gap_years = 16 to 27 years past dipping's ~1912 end).",
+      "classification": "OPEN QUESTION",
+      "confidence": "High",
+      "supporting": "The Junipers Cultural Resources Study reviewed a 1928 aerial as its earliest photo ('On the 1928 aerial photo, the project and the area surrounding it are shown as being undeveloped'). The Debevoise Property Phase I ESA (Geocon 2018, Carmel Valley/Pacific Highlands Ranch) states 'We reviewed historical aerial photographs for the years 1939, 1949, 1953, 1964, 1966, 1970, 1979, 1985, 1989, 1996' -- floor 1939. 1928-1912=16; 1939-1912=27.",
+      "counter_evidence": "The Debevoise ESA and Junipers study consulted TOPOGRAPHIC maps deeper (1901/1903), which overlap the final decade of the dipping era; however topo sheets at 1:62,500 do not resolve a corral or dip vat, so the effective evidentiary floor for a working facility remains the aerial record.",
+      "citation": "The Junipers Cultural Resources Study (A2); Debevoise Property Phase I ESA, sandiego.gov/.../appendix_p_phase_i_environmental_assessment.pdf (A2 within CEQA record)."
+    },
+    {
+      "claim": "The site-specific environmental reviews did not screen for cattle-dip residue: the strings 'dip', 'vat', and 'cattle dip' do not appear, and the Debevoise Phase I ESA explicitly placed arsenic OUT of scope.",
+      "classification": "INVESTIGATIVE LEAD",
+      "confidence": "High",
+      "supporting": "Full-text search of both documents returns no 'dip'/'vat'/'cattle dip'. Debevoise Phase I ESA: 'Assessment for potential naturally occurring hazards such as asbestos and arsenic was also not [included]' and 'Historical arsenic ... hazards such as arsenic are not included in the scope of this Phase I ESA.'",
+      "counter_evidence": "A Phase I ESA to ASTM E1527 is not designed to detect historic agricultural/dip arsenic; its silence is a scope limitation, NOT a finding that residue is absent. Absence of the word 'vat' does not imply a vat did or did not exist.",
+      "citation": "Debevoise Property Phase I ESA (A2); The Junipers Cultural Resources Study (A2)."
+    },
+    {
+      "claim": "No cattle-dipping vat, quarantine, or scabies action is tied to Rancho Penasquitos by name in the accessible digitized newspaper record.",
+      "classification": "OPEN QUESTION",
+      "confidence": "Medium",
+      "supporting": "Chronicling America (via loc.gov JSON API) returns 0 pages for 'Penasquitos dipping', 'Penasquitos cattle dip', 'Penasquitos scabies', 'Penasquitos quarantine cattle'. The bare term 'Penasquitos' appears on only 7 pages collection-wide.",
+      "counter_evidence": "The digitized corpus for this place-name is extremely thin (7 total hits), and CDNC (cdnc.ucr.edu), the richer California-specific archive, was unreachable by automated fetch (Cloudflare challenge). Absence of a named record here is uninformative, not exculpatory or incriminating.",
+      "citation": "loc.gov/collections/chronicling-america JSON API queries, retrieved 2026-07-21 (A2 tool over A1 corpus)."
+    },
+    {
+      "claim": "A documented ARSENIC land-use source unrelated to cattle dipping exists nearby: a 1920s arsenic (and gold) mine on Black Mountain, whose arsenic was used as a boll-weevil pesticide.",
+      "classification": "HISTORICAL CONTEXT",
+      "confidence": "Medium",
+      "supporting": "The Junipers Cultural Resources Study: 'The 1920s saw the use of nearby Black Mountain for the mining of arsenic, which was used as pesticide for boll weevils, and gold. By 1927 the mine fell into disuse and was abandoned.' The Debevoise Phase I ESA independently notes 'A mining flume was identified northwest of the Site in the 1939 aerial photograph.'",
+      "counter_evidence": "This is a distinct, off-site source; it neither confirms nor rules out on-ranch dipping, but it means any future arsenic-in-soil signal near Black Mountain would have at least two candidate origins (mining vs. agricultural/dip) that would have to be disentangled. No contamination is asserted.",
+      "citation": "The Junipers Cultural Resources Study (A2); Debevoise Property Phase I ESA (A2)."
+    },
+    {
+      "claim": "The development parcels are not listed on regulatory environmental databases, and the soil itself remains UNSTUDIED for historic pesticide/dip residue.",
+      "classification": "OPEN QUESTION",
+      "confidence": "High",
+      "supporting": "Debevoise Phase I ESA: 'The Site is not listed on any of the databases searched by EDR' and 'The target property was not listed in any of the databases searched by EDR.' No DTSC EnviroStor / Water Board GeoTracker cleanup case was surfaced for these residential footprints.",
+      "counter_evidence": "'Not listed' means no reported release triggered a regulatory file; it does NOT mean the soil was tested for organochlorine/arsenical dip or agricultural residue. No targeted dip-residue soil sampling is documented anywhere -- the true soil status is 'unstudied', not 'clean'.",
+      "citation": "Debevoise Property Phase I ESA (A2); DTSC EnviroStor and Water Board GeoTracker (A1 registries, no case identified for the parcels)."
+    },
+    {
+      "claim": "Earliest map/imagery baseline for the land: USGS topo 1903 (La Jolla 15'); earliest aerial ~1928 (Fairchild Aerial Surveys era / reviewed in The Junipers CEQA study).",
+      "classification": "ESTABLISHED FACT",
+      "confidence": "High",
+      "supporting": "USGS La Jolla 15' quadrangle surveyed 1901, published 1903 (SDAG online historical topo list; old-maps.com; Debevoise ESA logs '1901/1903' topo). 1928 aerial reviewed by The Junipers cultural study; UCSB Library documents Fairchild Aerial Surveys as the earliest (1927-1928) systematic Southern California aerial coverage.",
+      "counter_evidence": "The exact 1928 aerial frame and provider for the Junipers parcel are not itemized in the summary text; the '1928' baseline is the earliest reviewed, and slightly earlier one-off obliques may exist in archives (Library of Congress ca. 1928 San Diego aerials) but none predate the ranching era.",
+      "citation": "muststayawake.com/SDAG/MapTopoList.html (B1); library.ucsb.edu/geospatial/airphotos/fairchild-aerial-surveys-fas (A2); The Junipers Cultural Resources Study (A2)."
+    }
+  ],
+
+  "dead_ends": [
+    "Chronicling America (loc.gov JSON API): q='Penasquitos dipping' -> 0 pages.",
+    "Chronicling America (loc.gov JSON API): q='Penasquitos cattle dip' -> 0 pages.",
+    "Chronicling America (loc.gov JSON API): q='Penasquitos scabies' -> 0 pages.",
+    "Chronicling America (loc.gov JSON API): q='Penasquitos quarantine cattle' -> 0 pages. (Bare 'Penasquitos' returns only 7 pages corpus-wide.)",
+    "CDNC cdnc.ucr.edu keyword search (Penasquitos+dipping, +dipping+vat, +cattle+quarantine, +scabies): blocked by Cloudflare interstitial challenge / HTTP 403 on automated fetch; NOT a zero-result finding -- requires an interactive browser session to resolve.",
+    "CEQAnet SCH 2018041032 (THE JUNIPERS): document record predates CEQAnet attachment hosting; note states 'To obtain the original attachments... please contact the lead agency' -- Phase I ESA not downloadable directly from CEQAnet; obtained the CEQA technical appendices from sandiego.gov instead.",
+    "sandiego.gov CEQA appendix filenames are recycled/mislabeled: 'appendix-h1-phase-i...' resolved to the Midway Rising (Sports Arena) ESA and 'app.i_phase_i...' resolved to the San Ysidro Community Plan ESA -- both OFF-TARGET and discarded; on-target Penasquitos-area reviews (Junipers cultural study; Debevoise Phase I ESA) were identified by verifying the subject-property address inside each PDF.",
+    "Full-text string search of the two on-target CEQA documents for 'dip', 'vat', 'cattle dip' -> no matches (only general 'cattle'/'ranch' land-use discussion)."
+  ],
+
+  "output_file_written": "/Users/andystavros/Ladera-Ranch/docs/statewide_program/results/T04-PENASQUITOS_deepdive.json"
+}

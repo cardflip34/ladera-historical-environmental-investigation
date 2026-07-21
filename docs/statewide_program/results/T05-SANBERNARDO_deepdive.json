@@ -1,0 +1,93 @@
+{
+  "target_id": "T05-SANBERNARDO",
+  "target_name": "Rancho San Bernardo (Snook), San Diego County",
+  "communities": ["Rancho Bernardo (City of San Diego)", "Poway western edge"],
+  "generated": "2026-07-21",
+  "methodology": "Ladera Ranch documentary half — hypothesis-neutral public-records screening. Soil status everywhere = UNSTUDIED. No claim of contamination.",
+
+  "earliest_imagery": "Oldest topo: USGS Escondido 15-minute quadrangle, 1893 edition (1:62,500); the Escondido sheet covers the Rancho Bernardo / San Pasqual area and explicitly labels 'San Bernardo.' A subsequent 1901 Escondido edition also covers it. Oldest aerial: San Diego County's earliest aerial photography is the Fairchild Aerial Surveys collection at UCSB, ~1927–1928; however those early flights concentrated on the coast/urban San Diego, and confirmed aerial coverage of the inland Rancho Bernardo footprint most likely begins later (commonly ~1938 USDA / ~1953 for inland South County), which was NOT confirmed for the exact parcels in this pass. Both the earliest topo (1893) and any inland aerial fall on opposite sides of the dipping window: the 1893 topo predates the mandated-dipping era, while the earliest usable inland AERIAL almost certainly postdates dipping's ~1912 end — so a dip-era working facility would predate all available photography.",
+
+  "review_start_year": "None identified for the original development. The Rancho Bernardo master plan (Hawn & Summers / Charles Luckman, 1962) and its buildout (~1962–1984, largely under AVCO Community Developers from 1968) predate CEQA (enacted 1970; extended to private projects by Friends of Mammoth, 1972). No community-scale EIR or Phase I with a historical-aerial review was prepared for the original community. The only CEQAnet records located for Rancho Bernardo are small, recent infill/public projects (branch library #1991105827; Community Park lighting #2024070689 and dog-park/ADA #2024050419; UCSD Health RB Healthcare Center MND 2024; 'Vista at Rancho Bernardo' #2005051093, 2005) — none of which perform a community-wide historical-aerial review of the ranch land.",
+
+  "review_gap_years": "HEADLINE: effectively the ENTIRE dipping era sits below the review floor, because for the original development there IS no review floor. The community was master-planned and largely built before CEQA existed (1962 plan; 1970/1972 CEQA), so no historical-aerial review of the ranch land was ever required or performed for its buildout. If a typical modern Phase I ESA inland-aerial floor of ~1938 is used as a proxy, review_gap_years ≈ 1938 − 1912 = ~26 years. Because San Diego County itself remained under federal cattle-tick quarantine with mandated arsenical dipping through at least 1910 (California program running ~1893–1917), the dip-era floor for THIS county may be as late as ~1917, so the effective gap could be larger still. Bottom line: no historical aerial review identified for this community reached anywhere near the 1907–1912 mandated-dipping window.",
+
+  "dipping_records_summary": "No cattle-dipping vat, dip charge, or arsenical-dip facility is tied to Rancho San Bernardo (Snook) BY NAME in the materials searched (web search across CDNC, Chronicling America framing, San Diego History Center, SOHO ranching survey, Wikipedia land-grant articles). Report this plainly: NONE BY NAME. What IS documented at the county/regional level: California passed a law in March 1907 compelling disinfection of tick-infested cattle by arsenical dip under the State Veterinarian; federal inspectors in the program's first year (~1906) found nearly half of examined cattle tick-infested in counties including San Diego; and as of April 1, 1910 only San Diego, Orange, Santa Barbara and part of San Luis Obispo counties remained under quarantine (San Diego History Center, 'California's Cattle-Range Industry,' 1965). So mandated arsenical dipping in San Diego County during ~1907–1912 is well established at the county scale — but no facility has been located on this specific ranch. Absence of a named record is NOT evidence that no facility existed; several relevant sources (SOHO '240 Years of Ranching' 6 MB scan; a nearby Sunrise Powerlink Phase I ESA on Rancho Bernardo Rd) are image-only PDFs with no text layer and were not OCR-searchable in this pass, and CDNC full-text could not be queried directly (403).",
+
+  "sampling_frame_plausibility": "Plausible but unproven — do NOT assert a vat exists. Rancho San Bernardo was one of the region's larger stock-raising operations: an ~8,846-acre grant to José Francisco Snook in 1842, expanded by Pío Pico in 1845 to ~17,763 acres, running cattle, sheep and horses. The terrain supports intensive cattle handling: the footprint straddles the San Dieguito River drainage and Lake Hodges / San Pasqual Valley, with reliable water and natural corral topography — exactly the conditions where a working facility (corrals, branding, and, during the 1907–1912 mandate, a plunge dip vat) would sit. Because San Diego County was under quarantine with legally compelled arsenical dipping in that window, a large resident herd would have had to be dipped somewhere. HOWEVER, dipping was frequently done at centralized/shared community or inspection vats rather than one-per-ranch, so a large ranch may have driven stock to an off-property vat rather than building its own; no on-ranch facility has been located in imagery or records, and the specific Rancho Bernardo community footprint is only a fraction of the historic grant. Soil status remains UNSTUDIED.",
+
+  "findings": [
+    {
+      "claim": "The Rancho Bernardo community and the Poway western edge sit on the historic Rancho San Bernardo (Snook), an 1842 Mexican land grant developed as a large cattle/stock ranch.",
+      "classification": "ESTABLISHED FACT",
+      "confidence": "High",
+      "supporting": "Governor Alvarado granted ~8,846 acres to José Francisco Snook (né Joseph Sevenoaks) in 1842; Pío Pico expanded it to ~17,763 acres in 1845; contemporary accounts describe it as one of the region's largest stock-raising operations running cattle, sheep and horses.",
+      "counter_evidence": "The modern Rancho Bernardo master-planned community occupies only a portion of the historic grant; ranching intensity on the exact residential footprint (vs. the grant as a whole) is not individually documented, and grant acreage figures vary by source.",
+      "citation": "Wikipedia, 'Rancho San Bernardo (Snook)'; San Diego History Center, sandiegohistory.org (B1/B2). Retrieved 2026-07-21."
+    },
+    {
+      "claim": "San Diego County was under federal cattle-tick quarantine with state-mandated arsenical dipping during roughly 1906–1912, making dip-era arsenical dipping in the county a documented fact at the county scale.",
+      "classification": "HISTORICAL CONTEXT",
+      "confidence": "High",
+      "supporting": "A California law of March 1907 compelled disinfection of tick-infested cattle by arsenical dip under the State Veterinarian; ~1906 federal inspection found nearly half of examined herds tick-infested in counties including San Diego; as of April 1, 1910, San Diego remained one of only four still-quarantined counties (San Diego History Center, 1965).",
+      "counter_evidence": "This is county/regional context only — it does not place any dipping facility on Rancho San Bernardo. It establishes that dipping occurred somewhere in the county, not where.",
+      "citation": "San Diego History Center, 'California's Cattle-Range Industry: Decimation of the Herds, 1870-1912,' Journal of San Diego History (1965) (B1). Retrieved 2026-07-21."
+    },
+    {
+      "claim": "HEADLINE: Rancho Bernardo's original development predates CEQA, so no community-scale historical-aerial review of the ranch land was ever performed — the entire dipping era lies below a review floor that does not exist.",
+      "classification": "INVESTIGATIVE LEAD",
+      "confidence": "High",
+      "supporting": "The master plan dates to 1962 (Hawn & Summers / Charles Luckman) with buildout ~1962–1984 under AVCO; CEQA was enacted in 1970 and extended to private projects in 1972. CEQAnet holds only small recent Rancho Bernardo projects (library, park improvements, a 2024 healthcare MND, 'Vista at Rancho Bernardo' 2005), none of which review the ranch land historically.",
+      "counter_evidence": "Absence of a single master EIR does not mean no parcel was ever assessed; individual modern infill projects carry Phase I ESAs, and some small CEQA documents exist. A pre-CEQA subdivision may still have had geotechnical/agricultural-history notes not surfaced here.",
+      "citation": "CalStateU thesis 'Rancho Bernardo as Reinvention of the Suburb'; aarondknopphistoryonline.net (AVCO); CEQAnet.lci.ca.gov records #1991105827, #2005051093, #2024070689, #2024050419 (B1/A2). Retrieved 2026-07-21."
+    },
+    {
+      "claim": "The oldest topographic map covering the land is the 1893 USGS Escondido 15-minute quadrangle, which predates the dipping era but is too coarse to depict a dip vat.",
+      "classification": "ESTABLISHED FACT",
+      "confidence": "High",
+      "supporting": "USGS Historical Topographic Map Collection / HQSP holds the 1893 Escondido 1:62,500 quad (61 historical Escondido maps span 1893–present); the sheet covers the Rancho Bernardo / San Pasqual area and labels 'San Bernardo.' A 1901 edition also exists.",
+      "counter_evidence": "At 1:62,500 a plunge vat (~30 ft) would not be depicted; the Rancho Bernardo community sits near the southern margin of the Escondido quad, so portions may be better shown on the adjacent Ramona sheet, and neither shows a vat.",
+      "citation": "USGS topoView / NGMDB; ScienceBase item 5a8a408ae4b00f54eb3ed727 (Escondido 1901); pastmaps.com Escondido (1893 earliest) (A2/B2). Retrieved 2026-07-21."
+    },
+    {
+      "claim": "The earliest available aerial photography almost certainly postdates the dipping era, so any dip-era working facility on the ranch would predate all aerial imagery.",
+      "classification": "ESTABLISHED FACT",
+      "confidence": "Medium",
+      "supporting": "San Diego County's earliest aerials are the Fairchild Aerial Surveys (~1927–1928) at UCSB — already ~15 years after dipping's ~1912 end; inland coverage of the Rancho Bernardo footprint most plausibly begins even later (~1938/1953).",
+      "counter_evidence": "It was not confirmed in this pass whether the 1927–1928 Fairchild flights actually imaged the inland Rancho Bernardo parcels; the exact earliest inland aerial year for this footprint remains unverified (historicaerials.com returned HTTP 500).",
+      "citation": "UCSB Library, Fairchild Aerial Surveys (FAS) collection; Library of Congress aerial views of San Diego ~1928 (A2/B1). Retrieved 2026-07-21."
+    },
+    {
+      "claim": "No cattle-dipping vat, arsenical-dip charge, or ranch working facility is tied to Rancho San Bernardo (Snook) by name in the searchable materials.",
+      "classification": "OPEN QUESTION",
+      "confidence": "High",
+      "supporting": "Targeted searches naming the ranch alongside 'dipping vat / arsenic / tick' returned only generic dipping-history and county-level material; no named facility surfaced in web search, San Diego History Center, or land-grant articles.",
+      "counter_evidence": "This is 'the searchable materials do not identify X,' NOT 'X did not happen.' Key sources were not fully searchable: the SOHO '240 Years of Ranching' PDF and a nearby Sunrise Powerlink Phase I ESA are image-only scans (0 extractable text), and CDNC full-text could not be queried (403). A named record could exist in un-OCR'd archives.",
+      "citation": "Web searches 2026-07-21 (see dead_ends); San Diego History Center; SOHO '240 Years of Ranching' (scanned) (B1/C for absence). Retrieved 2026-07-21."
+    },
+    {
+      "claim": "The ranch terrain makes an on-ranch working/dipping facility plausible during the 1907–1912 mandate, but no facility has been located and shared/centralized county vats are an equally plausible alternative.",
+      "classification": "INVESTIGATIVE LEAD",
+      "confidence": "Medium",
+      "supporting": "A large resident herd on a 17,000+ acre grant, legally required to dip in 1907–1912, plus reliable water and corral topography along the San Dieguito River / Lake Hodges / San Pasqual Valley, is a classic setting for corrals and a plunge vat.",
+      "counter_evidence": "Dipping was often done at centralized inspection/community vats rather than one per ranch; a large operation could have used an off-property vat. No corral/vat has been located in imagery or records, and the modern community is only part of the grant. Soil status: UNSTUDIED.",
+      "citation": "Inference from San Diego History Center (1907 mandate) + Rancho San Bernardo extent + San Dieguito/Lake Hodges hydrography (USGS). Model-based inference. Retrieved 2026-07-21."
+    },
+    {
+      "claim": "No dip-era arsenic or legacy-agricultural cleanup site on the Rancho Bernardo footprint was identified in state environmental databases in this pass; the soil status for dip-era arsenic is UNSTUDIED, not clean.",
+      "classification": "OPEN QUESTION",
+      "confidence": "Medium",
+      "supporting": "GeoTracker (Water Board) and EnviroStor (DTSC) index cleanup sites; a general San Diego County search surfaced no arsenic/pesticide legacy-ag site specifically flagged in the Rancho Bernardo residential footprint during this screening.",
+      "counter_evidence": "The databases were not queried parcel-by-parcel with mapped bounding boxes; absence in a broad search is NOT a clean bill. These programs also rarely investigate century-old dip-era arsenic unless a modern trigger exists.",
+      "citation": "GeoTracker (geotracker.waterboards.ca.gov); DTSC EnviroStor (dtsc.ca.gov/your-envirostor) — screening-level, not exhaustive (A2). Retrieved 2026-07-21."
+    }
+  ],
+
+  "dead_ends": [
+    "WebFetch CDNC full-text query cdnc.ucr.edu/?a=q ... txq=\"dipping vat\" \"San Pasqual\" -> HTTP 403 Forbidden; could not retrieve CDNC results directly.",
+    "pdftotext on SOHO '240 Years of Ranching' (sohosandiego.org/images/240yearsofranching.pdf, 6 MB) -> 0 extractable characters (scanned image PDF, no text layer).",
+    "pdftotext on Sunrise Powerlink Scripps Reconductoring Phase I ESA (10875 Rancho Bernardo Rd, ia.cpuc.ca.gov ...P-7a.pdf) -> 0 extractable characters (scanned image PDF); could not confirm its historical-aerial floor or any dip/arsenic mention.",
+    "WebFetch historicaerials.com/location/33.02/-117.07/Rancho%20Bernardo -> HTTP 500 Internal Server Error; could not confirm exact earliest inland aerial year for the footprint.",
+    "WebSearch '\"Rancho Bernardo\" OR \"Rancho San Bernardo\" cattle dipping vat arsenic tick fever San Diego' -> only generic dipping-history and unrelated vet-clinic results; no ranch-named dipping record.",
+    "WebSearch 'CEQAnet Rancho Bernardo environmental impact report' -> only small modern projects (branch library, park lighting/ADA, 2024 healthcare MND, 2005 'Vista at Rancho Bernardo'); no original community-scale EIR (development predates CEQA)."
+  ]
+}
