@@ -175,14 +175,15 @@ Your job is to REFUTE it. For each finding: is the citation real and does it sup
 // ---------------- run ----------------
 phase('Triage')
 log(`Triaging ${TARGETS.length} targets...`)
-const triaged = (await parallel(TARGETS.map(t => () =>
+// Keep nulls so index stays aligned with TARGETS (parallel preserves order).
+const triaged = await parallel(TARGETS.map(t => () =>
   agent(triagePrompt(t), { label: `triage:${t.id}`, phase: 'Triage', schema: TRIAGE_SCHEMA, effort: 'low' })
-))).filter(Boolean)
+))
 
-const go = TARGETS.filter(t => {
-  const tr = triaged.find(x => x.target_id === t.id)
-  return tr && tr.deep_dive_recommended
-})
+// Match by INDEX, not by the agent-returned target_id -- agents echo their own id strings
+// ("rancho_trabuco"), which don't match the registry ids ("T01-TRABUCO"). An earlier run lost
+// every deep-dive to that mismatch and synthesised on empty input.
+const go = TARGETS.filter((t, i) => triaged[i] && triaged[i].deep_dive_recommended)
 log(`${go.length} of ${TARGETS.length} targets passed triage for deep dive.`)
 
 // Deep dive -> verify, pipelined per target (no barrier)
@@ -207,4 +208,4 @@ Produce a ranking of communities by SCREENING PRIORITY = how wide the environmen
 const synthesis = await agent(synthPrompt, { label: 'synthesize', phase: 'Synthesize', schema: SYNTH_SCHEMA, agentType: 'general-purpose', effort: 'high' })
 
 log('Statewide sweep complete.')
-return { triaged, deep_dived: clean.length, synthesis }
+return { triaged: triaged.filter(Boolean), deep_dived: clean.length, synthesis }
