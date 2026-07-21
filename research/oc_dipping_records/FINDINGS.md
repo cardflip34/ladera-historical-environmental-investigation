@@ -82,8 +82,16 @@ south-and-west district, defined by metes and bounds *[A1/A2, official proclamat
 > "All that part of Orange County located **south and west** of a line beginning at the Pacific Ocean
 > in the town of **Newport Beach**; thence northeasterly following the **Newport-Tustin road** to the
 > **Santa Ana-Trabuco road**; thence southeasterly … to the **Aliso Canyon road**; thence
-> northeasterly … to the north line of **township 6 south** [range digit OCR-illegible — inferred];
-> thence east … to the eastern boundary of Orange County."
+> northeasterly … to the north line of **township 6 south, range 6 west**; thence east … to the
+> eastern boundary of Orange County."
+
+*Primary recovered:* the full proclamation was pulled from the **California State Library** scan
+(`proclamation_1912_johnson.pdf`, A2), confirming **"range 6 WEST"** (resolving the earlier illegible
+digit). Note it is a **cattle-MOVEMENT quarantine** — stock had to be certified tick-free before
+leaving the district; it **names no dip site and mandates no on-site vat**. The **T6S north line is
+~33.69°N**, so Ladera (33.55), San Juan Capistrano, Trabuco, Newport Coast, and Eastbluff are all
+**south of it = inside the March-7 district**; only the **June-30 remnant** shrank to the extreme SW
+corner.
 
 **What this district is:** the **southwest + south** third of Orange County — the coast from **Newport
 Beach south (Corona del Mar / the Newport Coast slopes)** and the **Trabuco / Aliso Canyon / San Juan
