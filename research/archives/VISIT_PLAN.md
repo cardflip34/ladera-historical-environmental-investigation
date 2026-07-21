@@ -43,11 +43,28 @@ ahead via Aeon.** Open Mon–Thu 9:00–3:00 (academic year). spcoll@uci.libansw
   & archaeology (1999–2002)** and the "Baldwin"/San Joaquin Fruit & Investment / Frances Mutual Water
   Company records (stock water).
 
-## Orange County Archives — county records (Santa Ana)
+## ⭐ Orange County Archives — county records (Santa Ana) — NOW THE #1 TARGET
 Old OC Courthouse, **Room 108, 211 W. Santa Ana Blvd.** Mon–Fri 9–12 & 1–4:30 · (714) 834-2536 ·
-ocrecorder.com/oc-archives [A2]. **Best public route to county veterinarian / agricultural
-commissioner / Board of Supervisors records** that could touch quarantine or dipping. Confirm surviving
-early-1900s ag/veterinary scope by phone first.
+ocrecorder.com/oc-archives [A2].
+
+**Why it jumped to #1 (from the records dig):** the definitive Irvine history (Cleland 1952) is
+*silent* on dipping, so the county government files are now the best route. Ask specifically for:
+- **Board of Supervisors minutes/proceedings, 1907–1912**, and the **county live-stock inspector /
+  county veterinarian monthly reports** filed with them. The decisive analog: neighboring **San Luis
+  Obispo's inspector reported "63 dipping vats in county"** to its Supervisors in 1908 — OC kept the
+  same office (**county veterinarian Dr. W. S. McFarlane**, 1908) and almost certainly filed a
+  comparable **vat count / location list**. This is the single document most likely to name OC vats.
+- Any **cattle-tick quarantine / dipping-cost claims** (e.g., the 1908 Levengood v. County of Orange
+  claim — dipping "by order of the county veterinarian").
+
+Also worth a microfilm request via OC Public Library / UC: **Santa Ana Register / Santa Ana Blade,
+1907–1912** (the county's own press, largely absent from the digitized CDNC — most likely to carry
+granular vat detail).
+
+*Context from the record:* the named 1908 OC dip sites are all **eastern/southern county** (Joplin
+ranch/Trabuco Canyon, Capistrano, Yorba, Bixby/Santa Ana Canyon) — **none on Irvine land** — so these
+county files, not the Irvine collections, are where an Irvine/San-Joaquin vat would be confirmed or
+ruled out. See `research/oc_dipping_records/FINDINGS.md`.
 
 ## Questions to ask the archivist (any of the three)
 1. Any **State Veterinarian, USDA Bureau of Animal Industry, tick-eradication, quarantine, or
