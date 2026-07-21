@@ -89,8 +89,21 @@ south-and-west district, defined by metes and bounds *[A1/A2, official proclamat
 Beach south (Corona del Mar / the Newport Coast slopes)** and the **Trabuco / Aliso Canyon / San Juan
 Capistrano / Rancho Mission Viejo backcountry (the greater Ladera region).** This is the ground where
 the tick — and therefore the compulsory arsenical dipping obligation — **persisted longest, to ~June
-1912.** Central/north **Irvine lies *north/east* of this line — i.e., outside the last-held district**
-(released earlier), consistent with the total absence of Irvine dipping records.
+1912.**
+
+*Honesty correction on Irvine:* the March-7 boundary **begins at Newport Beach and runs NE toward
+Tustin**, so **central Irvine sits right *on* that reconstructed NW edge** — whether it fell just
+inside or just outside the district depends on the exact 1912 Newport-Tustin road alignment, which is
+not georeferenced here. An earlier note said Irvine was "outside"; that over-stated it. What remains
+solid is the *records* finding: **no dipping is documented at Irvine** regardless of the line.
+
+**✅ The primary map plate was retrieved.** The 6th Report's **June 30, 1912 infestation map** (p.11,
+"Southern Cattle Fever," archive.org `appendixtojourna19132cali` leaf 1181) was pulled directly
+(`statevet_1912_infestation_map_leaf1181.jpg`). Its cross-hatched "dark areas" show the last
+quarantined ground — **and Orange County's cross-hatch is exactly the small SW corner** — beside the
+on-page text: *"removed from quarantine all of Orange County except a small area in the extreme
+southwestern part."* By June 30 the remnant had shrunk to that **extreme SW corner** (south coast /
+San Clemente vicinity) — smaller than, but inside, the larger March-7 district reconstructed above.
 
 **The "one large ranch" (≈21,000 head) is unnamed in every record — state and federal.** The
 41,906 / "one large ranch … lack of co-operation from the owner" phrasing is **federal only** (BAI /
