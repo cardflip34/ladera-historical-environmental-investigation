@@ -68,10 +68,59 @@ on any located evidence.
 5. **USDA BAI 26th Annual Report (1909) cooperative field files** — may name the unnamed "one large
    ranch."
 
+## State records (5th stream — California State Veterinarian biennial reports)
+
+Full-OCR grep of the 4th/5th/6th Biennial Reports of the **State Veterinarian, Dr. Charles Keane**
+(in the *Appendix to the Journals of the Senate & Assembly*, 1909/1911/1913). *[Premise correction:
+the State Veterinarian was **Keane**, Sacramento — Haring/Ward were the UC Experiment-Station vets.]*
+
+**⭐ The headline — an official 1912 proclamation defining WHERE in OC the tick held out longest.**
+The **6th Biennial Report** reproduces the **March 7, 1912 proclamation (Gov. Hiram Johnson, on
+Keane's certification)** releasing all of Orange County from quarantine **except** the
+south-and-west district, defined by metes and bounds *[A1/A2, official proclamation]*:
+
+> "All that part of Orange County located **south and west** of a line beginning at the Pacific Ocean
+> in the town of **Newport Beach**; thence northeasterly following the **Newport-Tustin road** to the
+> **Santa Ana-Trabuco road**; thence southeasterly … to the **Aliso Canyon road**; thence
+> northeasterly … to the north line of **township 6 south** [range digit OCR-illegible — inferred];
+> thence east … to the eastern boundary of Orange County."
+
+**What this district is:** the **southwest + south** third of Orange County — the coast from **Newport
+Beach south (Corona del Mar / the Newport Coast slopes)** and the **Trabuco / Aliso Canyon / San Juan
+Capistrano / Rancho Mission Viejo backcountry (the greater Ladera region).** This is the ground where
+the tick — and therefore the compulsory arsenical dipping obligation — **persisted longest, to ~June
+1912.** Central/north **Irvine lies *north/east* of this line — i.e., outside the last-held district**
+(released earlier), consistent with the total absence of Irvine dipping records.
+
+**The "one large ranch" (≈21,000 head) is unnamed in every record — state and federal.** The
+41,906 / "one large ranch … lack of co-operation from the owner" phrasing is **federal only** (BAI /
+MacKellar & Hart, 1909). State signals put the last holdouts in **San Diego County** (1910 quarantine
+*fines fell in San Diego + Kings, not Orange*; the 1912 report says the last infestation was "a few
+ranches in **San Diego County**"). **Best-supported location = San Diego County, by inference,
+county-level only — NOT Orange, NOT Irvine.** Every candidate name (Warner's, Vail, Santa Margarita,
+etc.) has **zero support**; the one geographically suggestive but **unconfirmed** possibility is
+**Rancho Santa Margarita y Las Flores** (the giant rough ocean-front grant on the SW-Orange/San-Diego
+line — today Camp Pendleton) — *must not be asserted.* The separate "**17,000-acre ocean-front grant**"
+where cattle were driven into the surf is an **unnamed, pre-eradication** crude method — not the
+refusal ranch, not a dipping site.
+
+**New retrievable lead:** the 6th Report contains **two infestation map plates** (1904 and 30 Jun
+1912) that graphically fix the SW-Orange district — image plates are in the archive.org page scans
+(`appendixtojourna19132cali`), not the OCR. Worth pulling as a visual.
+
+**Top un-digitized state sources:** CA State Archives — Office of the State Veterinarian quarantine
+case files 1907–12 (would name the San Diego convictions + SLO lien-suit parties); NARA RG 17 (BAI
+CA field files); SLO & San Diego Superior Court records; and the OC/SD Supervisors + livestock-
+inspector records.
+
 ## Bottom line
 Dipping in Orange County was **real, arsenical, and county-ordered**, documented at **four named
-eastern/southern ranches** in 1908 — none of them Irvine. No located source puts a vat on Irvine /
-San Joaquin / Bommer land, and the definitive Irvine history is silent on dipping. The named dipping
-clusters nearest **Ladera** (Trabuco Canyon); Irvine and Newport Coast remain preconditions-only, with
-Irvine's actual soil arsenic tracking orchards. The resolver everywhere is unchanged: OC Supervisors /
-county-vet vat records, then a soil test.
+eastern/southern ranches** in 1908 — none of them Irvine — and the 1912 state proclamation places the
+**last-held tick district in the south/southwest county: the Newport-Beach-to-coast strip and the
+Trabuco/Ladera backcountry.** No located source puts a vat on Irvine / San Joaquin / Bommer land, the
+definitive Irvine history is silent on dipping, and central Irvine sat *outside* the last quarantine
+district. **The documented dipping pressure is a south/southwest-OC phenomenon — strongest at Ladera,
+present along the Newport Coast strip, and absent (in the record) at central Irvine, whose soil arsenic
+tracks orchards.** The "one large ranch" is unnamed and best placed in San Diego County. The resolver
+is unchanged and now sharply targeted: **OC Supervisors / county-vet vat records for the March-1912
+south-west district**, then a soil test.
