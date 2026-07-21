@@ -48,6 +48,34 @@ cattle ranch and is **not** evidence of dipping; feature identification here is 
 confirmed with (a) the higher-resolution original frames (UCSB FrameFinder / OC Survey detail scans),
 (b) ranch maps naming the facilities, and (c) ground/records work.
 
+## Systematic 1938 sweep of the Irvine Ranch cattle core (done)
+
+`irvine_1938_sweep_montage.jpg` — a 3×2 grid (~2.5 mi/cell) over the southern ranch core
+(Bonita / Bommer-Shady / Quail Hill / Newport Coast / San Joaquin Hills / Laguna coast).
+
+**What the sweep shows (land use, ~15 ft/px overview):** the core splits cleanly into **cultivated
+farmland** in the north/northeast (geometric field patterns, tree-lined lanes — the orchard/row-crop
+zone where DTSC later found lead-arsenate arsenic) and **natural grazed canyon-ridge** toward the
+coast (cells D/E/F — the pre-grading Newport Coast/San Joaquin Hills terrain).
+
+**Structure clusters that resolve (INVESTIGATIVE LEAD · Confidence: Low for specifics):**
+1. **Bommer Canyon ranch-HQ complex** (already imaged) — the documented cattle-handling node.
+2. **A NE farmstead** (Quail Hill / Sand Canyon vicinity, `irvine_1938_pondcluster_zoom.jpg`) — 5–8
+   buildings at a hill base with a eucalyptus windrow lane, surrounded by **cultivated fields**. Reads
+   as a **farming** node (orchard/crop), not a cattle-dip site.
+
+**No dip vat is identifiable anywhere in the sweep** — at this resolution a ~30–60 ft trough is below
+the noise floor. The land-use split is itself informative: it matches the recon's key counter-evidence
+(arsenic tracks the *orchard/row-crop* ground, not the grazing core). Confirming any candidate needs
+higher-resolution original frames (UCSB FrameFinder / OC detail scans) + ranch maps + ground/records
+work. **No contamination or vat is claimed.**
+
+## Newport Coast before/after grading (done)
+
+`newport_coast_beforeafter_grading.jpg` — the *same frame* in 1938 (natural canyon-ridge grazing land,
+ranch roads) and 2022 (terraced master-planned development). A documentary record of the land-use
+transformation and the scale of terracing; it implies nothing about contamination.
+
 ## Next imagery steps (Phase 1/3, now executable)
 
 1. Pull 1931 + 1938 + 1952 over each candidate cattle-handling node (Bommer Canyon, and other Irvine
