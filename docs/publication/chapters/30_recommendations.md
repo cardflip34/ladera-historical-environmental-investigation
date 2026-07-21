@@ -125,6 +125,37 @@ to identify…"* — never *"they never studied…"*. A document sitting in a co
 invisible to this project and must not be declared nonexistent by it.
 :::
 
+### What the missing 1995 report can, and cannot, resolve
+
+The Michael Brandman 1995 hazardous-materials assessment is the single most valuable document to
+obtain — but it is worth being exact about what recovering it would and would not settle, because
+it is easy to over-read.
+
+It is a **Phase I** assessment. A Phase I is a **records-and-visual review** — historical maps,
+aerial photographs, agency databases, a site walk. **By the governing standard (ASTM E1527), a
+Phase I does not sample soil.** Collecting and laboratory-testing soil is a separate step — a
+**Phase II** — that must be specifically commissioned.
+
+The consequence is decisive for this investigation:
+
+| The 1995 report **can** tell us | The 1995 report **cannot** tell us |
+|---|---|
+| How far back the historical review reached (the review-window question) | Whether arsenic is actually present in the soil |
+| Whether "dipping", "vat", or "arsenic" appear anywhere in the review | Anything measured from the ground — it contains no soil data by design |
+| Whether other pathways (tanks, oil, visible ag use) were identified | Whether the cattle-era question was resolved, as opposed to never looked for |
+
+So a Phase I that "found no recognized environmental condition" means only *"the reviewers saw no
+reason to look further"* — **not** *"the soil was tested and arsenic was at background."* The
+first is a paperwork conclusion; only the second closes the physical question.
+
+::: classification limit
+**No records document — Brandman or any other — can answer whether arsenic is in this soil.**
+That question is physical, and only a soil test answers it (§30.7). The Brandman report matters
+because it tells us **whether anyone ever looked**; it cannot tell us **what is there.** Recover
+it to close the audit question. Do not expect it to close the arsenic question — nothing in a
+filing cabinet can.
+:::
+
 ## 30.7 Physical investigation, if the archival work supports it
 
 **Geophysics first.** Ground-penetrating radar or electromagnetic survey at the Trabuco ranch
