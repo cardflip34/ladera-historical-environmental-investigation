@@ -2,7 +2,7 @@
 
 Claims this investigation regards as established: documented in a primary or official source, verified against that source, and reproducible by a reader who follows the citation. Each carries its limiting or contradictory evidence, because an established fact with no stated limits is usually an overstated one.
 
-**29 claims in this category.**
+**30 claims in this category.**
 
 
 ## EM-001 — Ladera Ranch sits on land that was part of the Rancho Mission Viejo cattle operation prior to development
@@ -322,4 +322,15 @@ Claims this investigation regards as established: documented in a primary or off
 **Limiting or contradictory evidence.** A SCREENING LAYER, not per-community verified investigation. Primary-archive confirmation (CDNC, Library of Congress) was bounded by tooling access limits (403/404) during the run. Several gap figures rest on regional Phase I aerial-floor norms where a community's own review document was not retrieved. NO contamination is found or implied for any community; no vat is located anywhere; no soil is tested anywhere. Newhall/Santa Clarita is a partial counter-example where arsenic soil testing of farmed parcels WAS required (2013 RWQCB).
 
 **Citation.** Statewide screening program (statewide_sweep.workflow.js), 11 deep-dive records, this investigation [S-STATEWIDE]
+
+
+## EM-045 — The arsenical chemistry of the California cattle dip, its toxicity, and its capacity to contaminate feed and water were documented explicitly by the U.S. Department of Agriculture in 1911, including a required poison-warning sign posted on every vat.
+
+**Confidence:** High  ·  **Status:** Verified
+
+**Supporting evidence.** USDA BAI, Eradicating Cattle Ticks in California (reprinted from the 26th Annual Report, 1909; issued 1911): p.291 prints the dip formula (8 lb white arsenic per 500 gal, up to 9-10 lb for range cattle); p.293 reproduces the mandatory vat sign - 'The fluid in this vat is POISONOUS to man and all animals. Do not allow it to contaminate any feed or water supply.' Read directly.
+
+**Limiting or contradictory evidence.** The document's knowledge is county-level; it names no ranch and maps no individual vat. It establishes that the HAZARD was known, not that any specific site was recorded or located.
+
+**Citation.** USDA BAI, Eradicating Cattle Ticks in California (1911), pp.291, 293
 

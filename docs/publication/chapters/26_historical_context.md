@@ -2,7 +2,7 @@
 
 Accurate general background that situates the investigation but is **not itself a finding about this specific land**. This distinction does most of the work in this report: that arsenical dipping existed as a practice is context. That it happened here would be a finding, and it is not one of these.
 
-**5 claims in this category.**
+**6 claims in this category.**
 
 
 ## EM-014 — Residential subdivisions carry no legal duty of soil assessment equivalent to that imposed on school sites
@@ -58,4 +58,15 @@ Accurate general background that situates the investigation but is **not itself 
 **Limiting or contradictory evidence.** Established from Orange County local-history sources, not yet confirmed against a primary record for the exact dates. It places named management on the operation during the dipping period; it does NOT establish that the operation dipped cattle. No 1907-1912 on-site ranch foreman has been confirmed - a single grade-C secondary reference names 'Billy Magee' as an O'Neill ranch foreman but does not pin the era, and it is treated as an unverified lead only.
 
 **Citation.** Orange County local history (O'Neill family records; to be confirmed against Armor, History of Orange County, and Sherman Library holdings)
+
+
+## EM-046 — Other jurisdictions treat former arsenical cattle-dip sites as a mapped, recorded contamination class - New South Wales maintains a dip-site register, flags former sites on the property planning certificate, and issued residential clean-up guidelines; in the US Southeast thousands of vat sites are documented and some are remediated under federal Superfund authority. No comparable site-level inventory of California's 1907-1915 dipping vats has been located.
+
+**Confidence:** Medium  ·  **Status:** Credible report - precedent contrast
+
+**Supporting evidence.** NSW DPI: register of 1,600+ dip sites, Section 10.7 planning-certificate notation, 1996 residential clean-up guidelines [S-NSW-DIP]. Florida/UF: 3,000+ vat sites named in state records, arsenic-in-groundwater concern, many 'abandoned without recording their locations' [S-UF-VATS]. ITRC/USDA Forest Service: CERCLA remediation of dip-vat sites in Southern Region national forests [S-ITRC-CDV].
+
+**Limiting or contradictory evidence.** 'No California inventory located' is an absence of a located record, not proof none exists (a county agricultural-commissioner or historical-society file could hold one). Overseas programs addressed decades of intensive dipping; California's program was comparatively short, so fewer vats and less inventory would be expected regardless. Direct retrieval of the NSW DPI and ITRC pages was blocked during research; their figures are as reported by those pages via search.
+
+**Citation.** NSW DPI; University of Florida / Florida DEP; ITRC / USDA Forest Service
 

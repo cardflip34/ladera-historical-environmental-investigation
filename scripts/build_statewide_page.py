@@ -240,7 +240,7 @@ footer .fdisc{{border-top:1px solid var(--line);padding-top:18px;max-width:78ch;
   <div class="crumbs">
    <a href="index.html">← Full investigation (report)</a>
    <a href="index.html#the-general-case-why-this-isn-t-only-about-ladera-ranch">Ch. 24 · The General Case</a>
-   <a href="Ladera-Investigation-v1.0.pdf">PDF (282 pp)</a>
+   <a href="Ladera-Investigation-v1.0.pdf">PDF (288 pp)</a>
   </div>
   <p class="eyebrow">Statewide screening · companion to the Ladera Ranch investigation</p>
   <h1 class="serif">The General Case, and the archive behind it</h1>
@@ -314,7 +314,7 @@ footer .fdisc{{border-top:1px solid var(--line);padding-top:18px;max-width:78ch;
 <footer><div class="wrap">
  <p><a href="index.html">← Return to the full investigation</a> &nbsp;·&nbsp;
  <a href="index.html#the-general-case-why-this-isn-t-only-about-ladera-ranch">Chapter 24 in context</a> &nbsp;·&nbsp;
- <a href="Ladera-Investigation-v1.0.pdf">Download the 282-page PDF</a></p>
+ <a href="Ladera-Investigation-v1.0.pdf">Download the 288-page PDF</a></p>
  <p class="fdisc">{esc(DISCLAIMER)}</p>
 </div></footer>
 

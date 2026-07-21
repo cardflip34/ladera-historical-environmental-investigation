@@ -2,9 +2,9 @@
 
 Every source consulted, graded on the fixed hierarchy set out in the methodology chapter. A record carries exactly one grade, and **a lower grade is never silently promoted** — a claim that appears in a newspaper becomes A1 only when the underlying official record is located and read.
 
-**94 sources.** Generated directly from the project's source registry, so this list cannot drift out of step with the registry itself.
+**97 sources.** Generated directly from the project's source registry, so this list cannot drift out of step with the registry itself.
 
-Distribution: **A1** 34 · **A2** 24 · **B1** 12 · **B2** 11 · **C** 11 · **D** 2
+Distribution: **A1** 34 · **A2** 25 · **B1** 13 · **B2** 12 · **C** 11 · **D** 2
 
 
 ## Grade A1
@@ -229,6 +229,11 @@ Distribution: **A1** 34 · **A2** 24 · **B1** 12 · **B2** 11 · **C** 11 · **
   
   *Known limitations:* Reporting-unit (SBA) not per-parcel
 
+- **Arsenic and DDT residues at cattle dip yards (former cattle-tick dip site management)** New South Wales Department of Primary Industries (Australia), n.d.. <https://www.dpi.nsw.gov.au/agriculture/chemicals/animal-chemicals/cattle-dip-yards> Retrieved 2026-07-21.  
+  `S-NSW-DIP`
+  
+  *Known limitations:* Direct server retrieval was blocked by a bot filter during research; the figures (1,648 dip sites on the NSW North Coast; 254 demolished, 29 of them with residences built over; arsenic used until ~1955, then DDT; soil arsenic reported to 1,200-3,000 mg/kg) are as reported by this DPI page and reproduced consistently by two independent search extractions. Australian program - not evidence about any California site.
+
 - **Board of Supervisors 6/23 statement — herbicide/pesticide public-noticing vote (Item S94E)** Office of Supervisor Katrina Foley (bos5.oc.gov), 2026-06-23. <https://bos5.oc.gov/pr-bos-6-23-26> Retrieved 2026-07-18.  
   `SRC-OFF-001`
   
@@ -304,6 +309,11 @@ Distribution: **A1** 34 · **A2** 24 · **B1** 12 · **B2** 11 · **C** 11 · **
   `S-ARMOR-1921`
   
   *Known limitations:* A county history compiled by a local author, not a title or land record. Armor qualifies his own grant list: 'So far as can be learned.' Gives no grant date or grantee for Mission Viejo. Ownership succession appears in a biographical sketch without dates, and conflicts in emphasis with the commonly repeated 1882 O'Neill-Flood partnership account. OCR renders 'Viejo' as \'iejo, defeating naive keyword search.
+
+- **Road 1815 Cattle Dip Vat Site, Ozark National Forest, Arkansas (ITRC Bioavailability-in-Soil guidance case study)** Interstate Technology & Regulatory Council (ITRC), n.d.. <https://bcs-1.itrcweb.org/11-2-road-1815-cattle-dip-vat-site-ozark-national-forest-arkansas/> Retrieved 2026-07-21.  
+  `S-ITRC-CDV`
+  
+  *Known limitations:* Direct retrieval blocked during research; facts (USDA Forest Service investigated and remediated arsenic at cattle-dip-vat sites in Southern Region national forests under CERCLA/Superfund authority; vats used c.1900-1960) are from the ITRC page as indexed by search, not read in full.
 
 - **The Epidemiology of Sarcoma** PMC / peer-reviewed review, 2013-01-01. <https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3564705/> Retrieved 2026-07-18.  
   `SRC-SARCOMA-EPI`
@@ -392,6 +402,11 @@ Distribution: **A1** 34 · **A2** 24 · **B1** 12 · **B2** 11 · **C** 11 · **
   `SRC-NEWS-005`
   
   *Known limitations:* Local news aggregation
+
+- University of Florida / IFAS. **Arsenic and Old Vats: UF Researchers Uncover Hidden Contamination Sites** University of Florida (IFAS news release), 2004-11-09. <https://archive.news.ufl.edu/articles/2004/11/arsenic-and-old-vats-uf-researchers-uncover-hidden-contamination-sites.html> Retrieved 2026-07-21.  
+  `S-UF-VATS`
+  
+  *Known limitations:* University news release, not a technical report. Florida figures (>3,000 vat sites named in state records; ~100 assessed) are attributed within the article to Florida state officials. Southeastern-US program - not evidence about any California site.
 
 - **Ladera Ranch case study** Urban Land Institute, 2010-01-01. <https://casestudies.uli.org/ladera-ranch> Retrieved 2026-07-18.  
   `SRC-LU-ULI`

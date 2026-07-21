@@ -139,6 +139,7 @@ Total 1002 MB under `evidence/`. Retained so every citation in this report can b
 | `S-BANCROFT-E1362A` | Plat of the Rancho Santa Margarita y Las Flores, surveyed by Max Strobel, July 1867 | A2 |
 | `S-EIR589` | EIR 589 Appendix I - Phase I Environmental Site Assessment, Planning Areas 1-9 (Ranch Plan) | A2 |
 | `S-LADERA-PC` | Ladera Planned Community Program Text | A2 |
+| `S-NSW-DIP` | Arsenic and DDT residues at cattle dip yards (former cattle-tick dip site management) | A2 |
 | `S-SANTAANA-TRABUCO` | Trabuco Mesa Adobe photographs | A2 |
 | `S-USC-CHS` | California Historical Society Collection, 1860-1960 (Santa Margarita Ranch photographs) | A2 |
 | `SRC-CA-EDCODE` | California Education Code 17210/17213.1/17213.2 school site environmental assessment requirement | A2 |
@@ -162,6 +163,7 @@ Total 1002 MB under `evidence/`. Retained so every citation in this report can b
 | `SRC-WS-002` | SMWD Recycled Water Program | A2 |
 | `S-ARCH-RMVPHOTO` | Rancho Mission Viejo (Orange County) photograph and map collections | B1 |
 | `S-ARMOR-1921` | History of Orange County, California, with Biographical Sketches | B1 |
+| `S-ITRC-CDV` | Road 1815 Cattle Dip Vat Site, Ozark National Forest, Arkansas (ITRC Bioavailability-in-Soil gui | B1 |
 | `S-STATEWIDE` | Statewide land-use screening program (California ranchos in dipping-quarantine counties) | B1 |
 | `SRC-ARSENITE-HERB` | History of sodium arsenite as herbicide and soil sterilant | B1 |
 | `SRC-CATTLE-TICK` | California's Cattle-Range Industry: Decimation of the Herds 1870-1912 (tick quarantine and arsen | B1 |
@@ -174,6 +176,7 @@ Total 1002 MB under `evidence/`. Retained so every citation in this report can b
 | `SRC-SARCOMA-EPI` | The Epidemiology of Sarcoma | B1 |
 | `S-NEWS-CDNC` | California Digital Newspaper Collection | B2 |
 | `S-NEWS-LAH1908` | Los Angeles Herald, 27 May 1908 - 'Hope to Save Cattle from the Texas Tick' | B2 |
+| `S-UF-VATS` | Arsenic and Old Vats: UF Researchers Uncover Hidden Contamination Sites | B2 |
 | `SRC-CCR-METHOD` | California Cancer Registry cluster evaluation methodology (as reported) | B2 |
 | `SRC-GEO-OSMBLDG` | OpenStreetMap building footprints, Ladera Ranch extent | B2 |
 | `SRC-LU-ULI` | Ladera Ranch case study | B2 |

@@ -2,7 +2,7 @@
 
 This project issues corrections **openly and in full**. Nothing is silently revised. Where a finding changed, the superseded reasoning is retained in the text alongside the correction, because a report that shows only what survived scrutiny is not an honest report.
 
-**Version 1.0** — 44 catalogued claims, 94 registered sources.
+**Version 1.0** — 46 catalogued claims, 97 registered sources.
 
 
 ## Corrections issued
@@ -37,6 +37,8 @@ Each was caught by going to a primary source or by rendering the data rather tha
 
 | Commit | Date | Change |
 |---|---|---|
+| `a5f7c77` | 2026-07-21 | Add standalone statewide gallery page (map, ranking, 60-image archive) |
+| `d66b55a` | 2026-07-21 | Close out statewide program: complete ranking, truncation fixes, general-case chapter |
 | `de74994` | 2026-07-21 | Statewide image hunt: 15 ranch inventories, complete index, 171 files downloaded |
 | `85a6b6e` | 2026-07-21 | Statewide sweep results: 11 deep-dive records + ranking |
 | `83e2152` | 2026-07-21 | Fix sweep: match triage results by index, not agent-echoed target_id |
@@ -47,5 +49,3 @@ Each was caught by going to a primary source or by rendering the data rather tha
 | `4b2b657` | 2026-07-20 | Add vertical B-roll motion graphics generator (5 clips, 1080x1920) |
 | `036da6d` | 2026-07-20 | Video: add water-overlay B-roll and public-domain dipping footage |
 | `f7fca4d` | 2026-07-20 | Concision pass: cut repeated correction meta-commentary; fix stale recs |
-| `746fc79` | 2026-07-20 | Reframe Ch.02 from a request for help to a statement of what is needed |
-| `8bf30df` | 2026-07-20 | Correct the author's residence and reframe the motivation; reorder front matter |

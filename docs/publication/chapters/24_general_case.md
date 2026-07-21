@@ -122,7 +122,90 @@ archives named in the recommendations.
 
 ---
 
-## 24.5 What this does and does not mean
+## 24.5 The knowledge was never missing
+
+It would be easy to read everything above as a story about ignorance — that the danger of
+arsenical dipping was somehow unknown, and that is why no one looked. **That reading is false, and
+the primary record refutes it.**
+
+The United States Department of Agriculture documented the hazard, in plain language, in 1911. The
+Bureau of Animal Industry's own report on the California program — *Eradicating Cattle Ticks in
+California* — printed the working formula: *"Arsenic trioxid (white arsenic) pounds— 8"* to every
+500 gallons of water, with more added "up to 9 or 10 pounds" for range cattle. The same report
+instructed inspectors to post a sign on every vat:
+
+> **The fluid in this vat is POISONOUS to man and all animals. Do not allow it to contaminate any
+> feed or water supply.**
+
+::: classification fact
+**EM-045 · ESTABLISHED FACT · Confidence: High**
+The arsenical chemistry of the California dip, its toxicity, and its capacity to contaminate feed
+and water were documented explicitly by the U.S. Department of Agriculture in 1911 — including a
+required poison-warning sign posted on every vat.
+*Supporting:* USDA BAI, *Eradicating Cattle Ticks in California* (reprinted from the 26th Annual
+Report, 1909; issued 1911), p.291 (the formula) and p.293 (the required warning sign), read
+directly [S-USDA-C174].
+*Counter-evidence:* None identified — the document is a public-domain federal record. But its
+knowledge is county-level: it names no ranch and maps no individual vat. It establishes that the
+*hazard* was known, not that any *specific site* was ever recorded.
+:::
+
+So the question was never "did anyone know arsenic was dangerous." The government printed the danger
+on a sign and hung it over the vat. The real question is narrower and sharper: **once the vats were
+drained and the program ended, did anyone write down where they had been?** In California, the
+searchable record does not appear to say. And that is precisely where other jurisdictions did
+something California did not.
+
+## 24.6 Other places marked the ground — California has no located inventory
+
+The same hazard, where the dipping program ran longer and denser, was not left to memory. It was
+inventoried, recorded, and — critically — **flagged to whoever came next.**
+
+**New South Wales, Australia** dipped cattle on the same chemistry (arsenic until the ticks grew
+resistant around 1955, then DDT). When the contamination was recognised, the state did three things
+the California record shows no sign of: it **built a register** of its 1,600-plus known dip sites,
+maintained by the Department of Primary Industries; it **notes a former dip site on the property's
+planning certificate** — the Section 10.7 certificate a buyer receives — so the history travels
+with the land; and it published **residential clean-up guidelines** (1996) for building on former
+dip sites. New South Wales even knows the uncomfortable number California cannot state: of 254
+demolished dip sites, it has recorded that **29 now have houses over them** — a fact it can state
+only *because it kept the list.*
+
+The United States did the same on its own soil, if less tidily. In the Southeast — where the tick
+was endemic for decades — **Florida alone has more than 3,000 vat sites** named in old state
+records, of which only about a hundred have been assessed; a University of Florida team went
+looking precisely because so many had been **"abandoned without recording their locations."** The
+U.S. Forest Service now remediates arsenical dip-vat sites on national-forest land under the
+federal Superfund statute. People did, in other words, think to ask where the arsenic went — they
+asked hardest where the dipping was heaviest, and California, where the program was comparatively
+brief, is where the asking never systematically happened.
+
+::: classification context
+**EM-046 · HISTORICAL CONTEXT · Confidence: Medium**
+Other jurisdictions treat former arsenical cattle-dip sites as a mapped, recorded contamination
+class — New South Wales maintains a dip-site register, flags former sites on the property planning
+certificate, and issued residential clean-up guidelines; in the U.S. Southeast thousands of vat
+sites are documented and some are remediated under federal Superfund authority. **No comparable
+site-level inventory of California's 1907–1915 dipping vats has been located.**
+*Supporting:* NSW DPI dip-site register, Section 10.7 notation, and 1996 residential clean-up
+guidelines [S-NSW-DIP]; University of Florida / Florida DEP — 3,000+ Florida vat sites in state
+records, many "abandoned without recording their locations" [S-UF-VATS]; ITRC / USDA Forest Service
+CERCLA remediation of dip-vat sites in Southern Region national forests [S-ITRC-CDV].
+*Counter-evidence:* "No California inventory located" is an absence of a located record, not proof
+none exists — a county agricultural-commissioner or historical-society file could hold one. The
+overseas programs addressed decades of intensive dipping; California's was short, so fewer vats and
+less inventory would be expected regardless. Direct retrieval of the NSW and ITRC pages was blocked
+during research; their figures are as reported by those pages.
+:::
+
+**This is the honest shape of the gap.** Not a poison used in secret, but a well-documented poison
+whose California sites were never written down — so that a century later the general fact (printed
+by the USDA in 1911) and the specific ground (a particular parcel in a particular community) have
+no record connecting them. The forty-year review window is one half of that disconnect; the missing
+site inventory is the other. Neither is a scandal; both are ordinary. And both are closed by the
+same cheap act the overseas programs eventually performed: **putting a probe in the ground.**
+
+## 24.7 What this does and does not mean
 
 It **does** mean the question this report raised for Ladera Ranch is not peculiar to Ladera Ranch.
 The same forty-year blind spot exists, structurally, across at least eleven communities in five
