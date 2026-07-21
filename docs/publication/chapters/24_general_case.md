@@ -144,5 +144,8 @@ test**, which has been performed for none of them.
 :::
 
 The full ranking, the eleven per-community records, and the image index are in
-`docs/statewide_program/`. They are offered, like everything else in this project, to any agency,
-university, or researcher who wants to take them further.
+`docs/statewide_program/`. A companion page — **[the statewide map, the complete ranking, and the
+full image archive](statewide.html)** — presents every rights-clean photograph, map, and diseño
+located in the parallel archival hunt, each with its repository, date, and rights statement. They
+are offered, like everything else in this project, to any agency, university, or researcher who
+wants to take them further.

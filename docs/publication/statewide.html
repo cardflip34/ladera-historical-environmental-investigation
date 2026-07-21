@@ -1,0 +1,1004 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The General Case — Statewide Screening &amp; Archive · LEHRP</title>
+<style>
+:root{
+ --paper:#f6f4ef; --card:#fffefb; --ink:#14243a; --ink2:#42566e; --ink3:#6b7c90;
+ --line:#ded8ca; --line2:#ebe6da; --accent:#2f6087; --accent-soft:#e7eef4;
+ --brass:#a97e1f; --brass-soft:#f3ead2; --amber:#b06a1c;
+ --photo:#2f6087; --map:#3d7a63; --doc:#6b6f78; --artifact:#a97e1f;
+ --shadow:0 1px 2px rgba(20,36,58,.06),0 6px 20px rgba(20,36,58,.06);
+}
+@media (prefers-color-scheme:dark){
+ :root{ --paper:#0d1420; --card:#141d2b; --ink:#e9ecf2; --ink2:#aab6c6; --ink3:#7f8 da0;
+ --ink3:#7f8da0; --line:#26313f; --line2:#1d2734; --accent:#6fa9d6; --accent-soft:#182634;
+ --brass:#d6b25a; --brass-soft:#241f14; --amber:#d78a44; --photo:#6fa9d6; --map:#67b199;
+ --doc:#9aa2ad; --artifact:#d6b25a; --shadow:0 1px 2px rgba(0,0,0,.3),0 8px 24px rgba(0,0,0,.35);}
+}
+:root[data-theme="dark"]{ --paper:#0d1420; --card:#141d2b; --ink:#e9ecf2; --ink2:#aab6c6;
+ --line:#26313f; --line2:#1d2734; --accent:#6fa9d6; --accent-soft:#182634; --brass:#d6b25a;
+ --brass-soft:#241f14; --amber:#d78a44; --photo:#6fa9d6; --map:#67b199; --doc:#9aa2ad;
+ --artifact:#d6b25a; --shadow:0 1px 2px rgba(0,0,0,.3),0 8px 24px rgba(0,0,0,.35);}
+:root[data-theme="light"]{ --paper:#f6f4ef; --card:#fffefb; --ink:#14243a; --ink2:#42566e;
+ --line:#ded8ca; --line2:#ebe6da; --accent:#2f6087; --accent-soft:#e7eef4; --brass:#a97e1f;
+ --brass-soft:#f3ead2; --amber:#b06a1c; --photo:#2f6087; --map:#3d7a63; --doc:#6b6f78;
+ --artifact:#a97e1f; --shadow:0 1px 2px rgba(20,36,58,.06),0 6px 20px rgba(20,36,58,.06);}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);
+ font:16px/1.62 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+ -webkit-text-size-adjust:100%;}
+.serif{font-family:"Iowan Old Style",Georgia,"Times New Roman",serif;}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px;}
+a{color:var(--accent);text-underline-offset:2px;}
+/* header */
+header.top{border-bottom:1px solid var(--line);background:linear-gradient(180deg,var(--card),var(--paper));}
+.eyebrow{font-size:12.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);font-weight:600;margin:0 0 10px;}
+h1{font-family:"Iowan Old Style",Georgia,serif;font-weight:600;font-size:clamp(28px,5vw,44px);
+ line-height:1.12;margin:0 0 12px;text-wrap:balance;letter-spacing:-.01em;}
+.lede{font-size:clamp(16px,2.3vw,19px);color:var(--ink2);max-width:64ch;margin:0 0 4px;}
+.topmeta{display:flex;flex-wrap:wrap;gap:8px;margin:20px 0 4px;}
+.stat{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:8px 13px;font-size:13px;color:var(--ink2);}
+.stat b{color:var(--ink);font-variant-numeric:tabular-nums;font-size:15px;}
+.crumbs{display:flex;gap:14px;flex-wrap:wrap;font-size:13.5px;padding:14px 0;}
+.crumbs a{text-decoration:none;font-weight:500;}
+/* disclaimer strip */
+.disc{background:var(--brass-soft);border:1px solid var(--line);border-left:3px solid var(--brass);
+ border-radius:8px;padding:13px 16px;margin:18px 0;font-size:13.5px;color:var(--ink2);}
+.disc b{color:var(--ink);}
+section.band{padding:38px 0;border-bottom:1px solid var(--line2);}
+h2{font-family:"Iowan Old Style",Georgia,serif;font-size:clamp(21px,3.4vw,28px);font-weight:600;
+ margin:0 0 6px;letter-spacing:-.01em;}
+.sub{color:var(--ink2);margin:0 0 22px;max-width:70ch;}
+/* map */
+.mapfig{margin:0;border:1px solid var(--line);border-radius:14px;overflow:hidden;background:var(--card);box-shadow:var(--shadow);}
+.mapfig img{width:100%;display:block;height:auto;cursor:zoom-in;}
+.mapfig figcaption{padding:12px 16px;font-size:13px;color:var(--ink2);border-top:1px solid var(--line2);}
+/* table */
+.tablewrap{overflow-x:auto;border:1px solid var(--line);border-radius:12px;background:var(--card);box-shadow:var(--shadow);}
+table{border-collapse:collapse;width:100%;min-width:640px;font-size:14px;}
+thead th{text-align:left;font-size:11.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--ink3);
+ font-weight:600;padding:12px 14px;border-bottom:1px solid var(--line);white-space:nowrap;}
+tbody td{padding:12px 14px;border-bottom:1px solid var(--line2);vertical-align:middle;}
+tbody tr:last-child td{border-bottom:none;}
+.rk{font-variant-numeric:tabular-nums;color:var(--ink3);font-weight:600;width:34px;}
+.comm{font-weight:500;min-width:220px;}
+.dip{color:var(--ink2);font-size:13px;}
+.pill{display:inline-block;padding:2px 10px;border-radius:20px;font-size:12px;font-weight:600;white-space:nowrap;}
+.pri-high{background:var(--accent-soft);color:var(--accent);border:1px solid var(--accent);}
+.pri-med{background:transparent;color:var(--ink2);border:1px solid var(--line);}
+.tier{font-size:12px;color:var(--ink2);}
+.tier-heavy{color:var(--amber);font-weight:600;}
+.gapcell{font-weight:600;font-variant-numeric:tabular-nums;white-space:nowrap;}
+.gap-never{color:var(--amber);} .gap-wide{color:var(--brass);} .gap-mod{color:var(--ink2);}
+.note{font-size:13px;color:var(--ink2);margin-top:14px;display:flex;gap:8px;align-items:flex-start;}
+.note::before{content:"▲";color:var(--brass);font-size:10px;margin-top:4px;}
+/* gallery */
+.ranch{margin:0 0 30px;}
+.ranch-head h3{font-family:"Iowan Old Style",Georgia,serif;font-size:19px;font-weight:600;margin:0 0 3px;display:flex;flex-wrap:wrap;gap:10px;align-items:baseline;}
+.ranch-sub{color:var(--ink3);font-size:13px;margin:0 0 14px;}
+.rbadge{font-size:11px;font-weight:600;padding:2px 9px;border-radius:20px;letter-spacing:.02em;}
+.rbadge-res{background:var(--accent-soft);color:var(--accent);}
+.rbadge-non{background:var(--brass-soft);color:var(--brass);}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:16px;}
+.tile{margin:0;background:var(--card);border:1px solid var(--line);border-radius:12px;overflow:hidden;
+ cursor:zoom-in;box-shadow:var(--shadow);transition:transform .12s ease,box-shadow .12s ease;outline:none;}
+.tile:hover,.tile:focus{transform:translateY(-2px);box-shadow:0 4px 12px rgba(20,36,58,.14),0 12px 30px rgba(20,36,58,.12);border-color:var(--accent);}
+.thumbwrap{aspect-ratio:4/3;background:var(--line2);overflow:hidden;display:flex;align-items:center;justify-content:center;}
+.thumbwrap img{width:100%;height:100%;object-fit:cover;display:block;}
+figcaption{padding:10px 12px 12px;display:flex;flex-direction:column;gap:4px;}
+.cat{align-self:flex-start;font-size:10.5px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;padding:1px 7px;border-radius:5px;color:#fff;}
+.cat-photo{background:var(--photo);} .cat-map{background:var(--map);} .cat-document{background:var(--doc);} .cat-artifact{background:var(--artifact);} .cat-other{background:var(--doc);}
+.ttl{font-size:13px;line-height:1.35;color:var(--ink);font-weight:500;}
+.src{font-size:11.5px;color:var(--ink3);}
+/* lightbox */
+.lb{position:fixed;inset:0;background:rgba(8,12,18,.92);display:none;align-items:center;justify-content:center;
+ z-index:100;padding:22px;flex-direction:column;}
+.lb.open{display:flex;}
+.lb img{max-width:100%;max-height:72vh;border-radius:8px;box-shadow:0 20px 60px rgba(0,0,0,.6);}
+.lb .cap{color:#e9ecf2;max-width:760px;margin-top:16px;font-size:13.5px;line-height:1.55;text-align:center;}
+.lb .cap .lbt{font-weight:600;font-size:15px;display:block;margin-bottom:4px;}
+.lb .cap .lbm{color:#9fb0c2;}
+.lb .cap .lbr{color:#7f8da0;font-size:12px;margin-top:6px;display:block;}
+.lb .x{position:absolute;top:16px;right:20px;color:#cfd8e2;font-size:30px;cursor:pointer;line-height:1;background:none;border:none;}
+.lb a.open-src{color:#8fc0e8;font-size:12.5px;margin-top:8px;display:inline-block;}
+/* footer */
+footer{padding:34px 0 60px;color:var(--ink3);font-size:12.5px;}
+footer .fdisc{border-top:1px solid var(--line);padding-top:18px;max-width:78ch;}
+@media (max-width:560px){ .grid{grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:12px;} }
+</style>
+</head>
+<body>
+
+<header class="top">
+ <div class="wrap">
+  <div class="crumbs">
+   <a href="index.html">← Full investigation (report)</a>
+   <a href="index.html#the-general-case-why-this-isn-t-only-about-ladera-ranch">Ch. 24 · The General Case</a>
+   <a href="Ladera-Investigation-v1.0.pdf">PDF (282 pp)</a>
+  </div>
+  <p class="eyebrow">Statewide screening · companion to the Ladera Ranch investigation</p>
+  <h1 class="serif">The General Case, and the archive behind it</h1>
+  <p class="lede">Eleven California communities were run through the same documentary pipeline as
+  Ladera Ranch, and a parallel hunt located every rights-clean historical image of the ranches
+  underneath them. This page holds the map, the ranking, and the pictures.</p>
+  <div class="topmeta">
+   <span class="stat"><b>11</b> communities screened</span>
+   <span class="stat"><b>5</b> counties</span>
+   <span class="stat"><b>2</b> never reviewed at all</span>
+   <span class="stat"><b>60</b> images located</span>
+   <span class="stat"><b>26</b> photographs · <b>27</b> maps · <b>7</b> other</span>
+   <span class="stat"><b>0</b> dip vats visible in any image</span>
+  </div>
+  <div class="disc"><b>No community named on this page is asserted, implied, or found to be
+  contaminated.</b> The only measured soil fact anywhere in this program is <b>“unstudied.”</b>
+  What is ranked below is where an <em>unanswered question</em> is widest — never where any risk
+  is higher. The single fact that would answer it, for any community, is a direct soil arsenic
+  test, which has been run for none of them.</div>
+ </div>
+</header>
+
+<section class="band"><div class="wrap">
+ <h2 class="serif">Where the dipping program and modern development overlap</h2>
+ <p class="sub">The 1907–1915 USDA cattle-tick program covered essentially all of developed
+ Southern California. This is a <em>context</em> map of that county-level footprint against the
+ communities built on former ranchos — not a map of dip vats (their locations were never
+ inventoried) and not a map of contamination.</p>
+ <figure class="mapfig">
+  <img src="statewide_assets/CA_dipping_map.jpg" alt="California map: 1908 cattle-tick quarantine counties versus modern development"
+   data-full="statewide_assets/CA_dipping_map.jpg" data-title="California cattle-tick dipping program, 1907–1915 — county footprint vs. modern development"
+   data-meta="Context map · this investigation (FIG-29)" data-depicts="Statewide, all named counties" data-rights="Original figure, this project">
+  <figcaption>The largest dipping-era ranches — Camp Pendleton, Tejon, the Miller &amp; Lux
+  lands — became federal land, farmland, and unbuilt terrain, <em>not</em> housing. Tap to enlarge.</figcaption>
+ </figure>
+</div></section>
+
+<section class="band"><div class="wrap">
+ <h2 class="serif">The complete ranking — where the review gap is widest</h2>
+ <p class="sub">Review gap = how many years fall between the ~1912 end of arsenical dipping and the
+ earliest date any environmental review of that land actually reached. A high rank means
+ “worth asking next,” never “likely contaminated.”</p>
+ <div class="tablewrap">
+  <table>
+   <thead><tr><th>#</th><th>Priority</th><th>Community (rancho)</th><th>County tier</th><th>Review gap</th><th>Dipping tied to ranch?</th></tr></thead>
+   <tbody>
+   <tr>
+<td class="rk">1</td>
+<td><span class="pill pri-high">High</span></td>
+<td class="comm">Rancho Bernardo, Poway edge</td>
+<td><span class="tier tier-heavy">heavy</span></td>
+<td><span class="gapcell gap-never">NEVER reviewed (pre-CEQA)</span></td>
+<td class="dip">no vat named</td>
+</tr>
+<tr>
+<td class="rk">2</td>
+<td><span class="pill pri-high">High</span></td>
+<td class="comm">Rancho Santa Fe, Del Mar, Solana Beach</td>
+<td><span class="tier tier-heavy">heavy</span></td>
+<td><span class="gapcell gap-wide">~34 yr</span></td>
+<td class="dip">no vat named</td>
+</tr>
+<tr>
+<td class="rk">3</td>
+<td><span class="pill pri-high">High</span></td>
+<td class="comm">Rancho Peñasquitos, Mira Mesa, Carmel Valley</td>
+<td><span class="tier tier-heavy">heavy</span></td>
+<td><span class="gapcell gap-wide">~27 yr</span></td>
+<td class="dip">no vat named</td>
+</tr>
+<tr>
+<td class="rk">4</td>
+<td><span class="pill pri-high">High</span></td>
+<td class="comm">Coto de Caza, Wagon Wheel, Trabuco Canyon</td>
+<td><span class="tier tier-heavy">heavy</span></td>
+<td><span class="gapcell gap-wide">~26 yr</span></td>
+<td class="dip">no vat named</td>
+</tr>
+<tr>
+<td class="rk">5</td>
+<td><span class="pill pri-high">High</span></td>
+<td class="comm">Irvine, Tustin, Newport Coast, Lake Forest</td>
+<td><span class="tier tier-heavy">heavy</span></td>
+<td><span class="gapcell gap-wide">~26 yr</span></td>
+<td class="dip">no vat named</td>
+</tr>
+<tr>
+<td class="rk">6</td>
+<td><span class="pill pri-med">Medium</span></td>
+<td class="comm">Simi Valley, Moorpark edge</td>
+<td><span class="tier tier-heavy">heavy</span></td>
+<td><span class="gapcell gap-mod">~15 yr</span></td>
+<td class="dip">no vat named</td>
+</tr>
+<tr>
+<td class="rk">7</td>
+<td><span class="pill pri-med">Medium</span></td>
+<td class="comm">Rancho Cucamonga</td>
+<td><span class="tier tier-lesser">lesser</span></td>
+<td><span class="gapcell gap-wide">~26 yr</span></td>
+<td class="dip">no vat named</td>
+</tr>
+<tr>
+<td class="rk">8</td>
+<td><span class="pill pri-med">Medium</span></td>
+<td class="comm">Riverside, Jurupa Valley</td>
+<td><span class="tier tier-lesser">lesser</span></td>
+<td><span class="gapcell gap-mod">~19 yr</span></td>
+<td class="dip">no vat named</td>
+</tr>
+<tr>
+<td class="rk">9</td>
+<td><span class="pill pri-med">Medium</span></td>
+<td class="comm">Long Beach, Los Alamitos, Rossmoor, Seal Beach</td>
+<td><span class="tier tier-lesser">lesser</span></td>
+<td><span class="gapcell gap-mod">~16 yr</span></td>
+<td class="dip">no vat named</td>
+</tr>
+<tr>
+<td class="rk">10</td>
+<td><span class="pill pri-med">Medium</span></td>
+<td class="comm">Santa Clarita, Valencia, Newhall, Saugus</td>
+<td><span class="tier tier-lesser">lesser</span></td>
+<td><span class="gapcell gap-mod">~15 yr</span></td>
+<td class="dip">no vat named</td>
+</tr>
+<tr>
+<td class="rk">11</td>
+<td><span class="pill pri-med">Medium</span></td>
+<td class="comm">Long Beach, Lakewood, Cerritos, Bellflower</td>
+<td><span class="tier tier-lesser">lesser</span></td>
+<td><span class="gapcell gap-mod">~15 yr</span></td>
+<td class="dip">sheep dip attested (chemistry unknown)</td>
+</tr>
+   </tbody>
+  </table>
+ </div>
+ <p class="note">Every row shares two facts: <b>no cattle-dip vat is named</b> to any of the eleven
+ ranches, and <b>no soil arsenic test exists</b> for the dip question at any of them. “No vat named”
+ is an absence of a located record — bounded by archive-access limits during the run — never proof
+ of absence.</p>
+</div></section>
+
+<section class="band"><div class="wrap">
+ <h2 class="serif">The archive — every image located, by ranch</h2>
+ <p class="sub">A parallel hunt searched Calisphere, the Online Archive of California, the Bancroft,
+ Huntington, USC, the Library of Congress, and David Rumsey by <em>owner family</em> and photographer
+ — the way these collections are actually catalogued. Only clearly public-domain or openly-licensed
+ items were downloaded; each tile shows repository, date, and rights. Tap any image to read its full
+ provenance. <b>None depicts a cattle-dip vat</b> — the working-facility context the Ladera record lacked, but not the vat itself.</p>
+ <section class="ranch">
+  <div class="ranch-head">
+    <h3>Rancho Trabuco <span class="rbadge rbadge-res">residential today</span></h3>
+    <p class="ranch-sub">Orange County — Coto de Caza · Trabuco Canyon · south Orange County · 2 items</p>
+  </div>
+  <div class="grid"><figure class="tile" tabindex="0"
+  data-full="statewide_assets/view/T01-TRABUCO_00_trabuco-diseno-victoria-y-la-paz-bancroft-E-1251.jpg" data-title="Diagrama del Rancho de Victoria y la Paz : [Rancho Trabuco, Calif.] / Gaspar O&#x27;F"
+  data-meta="Map / diseño · 1846? (stated as &#x27;1846?&#x27; · UC Berkeley, Bancroft Library (via Calisphere; sou"
+  data-depicts="Rancho Trabuco, Orange County, California (titled &#x27;Rancho de" data-rights="Researchers may make free and open use o">
+  <div class="thumbwrap"><img loading="lazy" src="statewide_assets/thumbs/T01-TRABUCO_00_trabuco-diseno-victoria-y-la-paz-bancroft-E-1251.jpg" alt="Diagrama del Rancho de Victoria y la Paz : [Rancho Trabuco, Calif.] / Gaspar O&#x27;F"></div>
+  <figcaption>
+    <span class="cat cat-map">Map / diseño</span>
+    <span class="ttl">Diagrama del Rancho de Victoria y la Paz : [Rancho Trabuco, Calif.] / Gaspar O&#x27;F</span>
+    <span class="src">1846? (stated as &#x27;1846?&#x27; · UC Berkeley, Bancroft Library (via Calisphere; sou</span>
+  </figcaption>
+</figure><figure class="tile" tabindex="0"
+  data-full="statewide_assets/view/T01-TRABUCO_01_trabuco-diseno-CASA-vol1-p662-1840.jpg" data-title="Trabuco Rancho"
+  data-meta="Map / diseño · 1840 (stated) · California State Archives, a division of the Calif"
+  data-depicts="Rancho Trabuco, Orange County, California. Hand-drawn sketch" data-rights="There are no known coyright [copyright] ">
+  <div class="thumbwrap"><img loading="lazy" src="statewide_assets/thumbs/T01-TRABUCO_01_trabuco-diseno-CASA-vol1-p662-1840.jpg" alt="Trabuco Rancho"></div>
+  <figcaption>
+    <span class="cat cat-map">Map / diseño</span>
+    <span class="ttl">Trabuco Rancho</span>
+    <span class="src">1840 (stated) · California State Archives, a division of the Calif</span>
+  </figcaption>
+</figure></div>
+</section>
+<section class="ranch">
+  <div class="ranch-head">
+    <h3>Irvine Ranch <span class="rbadge rbadge-res">residential today</span></h3>
+    <p class="ranch-sub">Orange County — Irvine · Tustin · Newport Coast · 3 items</p>
+  </div>
+  <div class="grid"><figure class="tile" tabindex="0"
+  data-full="statewide_assets/view/T02-IRVINE_02_Bancroft-DisenoRanchoSanJoaquin-D-439-1842.jpg" data-title="[Diseño del Rancho San Joaquin : Orange County, Calif.]"
+  data-meta="Map / diseño · 1842? (stated on record; · UC Berkeley, Bancroft Library (Maps of private lan"
+  data-depicts="Rancho San Joaquin, Orange County, Calif. (José Andrés Sepúl" data-rights="Researchers may make free and open use o">
+  <div class="thumbwrap"><img loading="lazy" src="statewide_assets/thumbs/T02-IRVINE_02_Bancroft-DisenoRanchoSanJoaquin-D-439-1842.jpg" alt="[Diseño del Rancho San Joaquin : Orange County, Calif.]"></div>
+  <figcaption>
+    <span class="cat cat-map">Map / diseño</span>
+    <span class="ttl">[Diseño del Rancho San Joaquin : Orange County, Calif.]</span>
+    <span class="src">1842? (stated on record; · UC Berkeley, Bancroft Library (Maps of private lan</span>
+  </figcaption>
+</figure><figure class="tile" tabindex="0"
+  data-full="statewide_assets/view/T02-IRVINE_03_Bancroft-DisenoRanchoSantiagoDeSantaAna-D-1395-c1840.jpg" data-title="[Diseño del Rancho Santiago de Santa Ana : Calif.]"
+  data-meta="Map / diseño · c.1840 (citation_publica · UC Berkeley, Bancroft Library (Maps of private lan"
+  data-depicts="Rancho Santiago de Santa Ana, Orange County, Calif. (Grijalv" data-rights="UC Berkeley Library digitized public dom">
+  <div class="thumbwrap"><img loading="lazy" src="statewide_assets/thumbs/T02-IRVINE_03_Bancroft-DisenoRanchoSantiagoDeSantaAna-D-1395-c1840.jpg" alt="[Diseño del Rancho Santiago de Santa Ana : Calif.]"></div>
+  <figcaption>
+    <span class="cat cat-map">Map / diseño</span>
+    <span class="ttl">[Diseño del Rancho Santiago de Santa Ana : Calif.]</span>
+    <span class="src">c.1840 (citation_publica · UC Berkeley, Bancroft Library (Maps of private lan</span>
+  </figcaption>
+</figure><figure class="tile" tabindex="0"
+  data-full="statewide_assets/view/T02-IRVINE_04_Bancroft-DisenoLomeriaDeSantiago-TeodocioYorba-c1840.jpg" data-title="Diseño de la Lomeria de Santiago [Calif.] : pretendido por Teodocio Yorba"
+  data-meta="Map / diseño · c.1840 (citation_publica · UC Berkeley, Bancroft Library (Maps of private lan"
+  data-depicts="Rancho Lomas de Santiago (‘Lomeria de Santiago’), Orange Cou" data-rights="UC Berkeley Library digitized public dom">
+  <div class="thumbwrap"><img loading="lazy" src="statewide_assets/thumbs/T02-IRVINE_04_Bancroft-DisenoLomeriaDeSantiago-TeodocioYorba-c1840.jpg" alt="Diseño de la Lomeria de Santiago [Calif.] : pretendido por Teodocio Yorba"></div>
+  <figcaption>
+    <span class="cat cat-map">Map / diseño</span>
+    <span class="ttl">Diseño de la Lomeria de Santiago [Calif.] : pretendido por Teodocio Yorba</span>
+    <span class="src">c.1840 (citation_publica · UC Berkeley, Bancroft Library (Maps of private lan</span>
+  </figcaption>
+</figure></div>
+</section>
+<section class="ranch">
+  <div class="ranch-head">
+    <h3>Rancho Simi <span class="rbadge rbadge-res">residential today</span></h3>
+    <p class="ranch-sub">Ventura County — Simi Valley · 3 items</p>
+  </div>
+  <div class="grid"><figure class="tile" tabindex="0"
+  data-full="statewide_assets/view/T03-SIMI_05_bancroft-diseno-rancho-simi-1842-D-1091.jpg" data-title="[Diseno del Rancho Simi : Calif.]"
+  data-meta="Map / diseño · 1842? (stated on record  · UC Berkeley, Bancroft Library (Maps of private lan"
+  data-depicts="Rancho Simi land grant (Ventura/LA County). Original Mexican" data-rights="Researchers may make free and open use o">
+  <div class="thumbwrap"><img loading="lazy" src="statewide_assets/thumbs/T03-SIMI_05_bancroft-diseno-rancho-simi-1842-D-1091.jpg" alt="[Diseno del Rancho Simi : Calif.]"></div>
+  <figcaption>
+    <span class="cat cat-map">Map / diseño</span>
+    <span class="ttl">[Diseno del Rancho Simi : Calif.]</span>
+    <span class="src">1842? (stated on record  · UC Berkeley, Bancroft Library (Maps of private lan</span>
+  </figcaption>
+</figure><figure class="tile" tabindex="0"
+  data-full="statewide_assets/view/T03-SIMI_06_huntington-10756-simi-land-water-1888.jpg" data-title="Map of the lands of Rancho-Simi : in Ventura &amp; Los Angeles Co&#x27;s. California ; be"
+  data-meta="Map / diseño · 1888 (created by Stow &amp;  · The Huntington Library (Maps collection / Huntingt"
+  data-depicts="Rancho Simi lands (Ventura &amp; Los Angeles Counties), Simi Lan" data-rights="For information on use of Digital Librar">
+  <div class="thumbwrap"><img loading="lazy" src="statewide_assets/thumbs/T03-SIMI_06_huntington-10756-simi-land-water-1888.jpg" alt="Map of the lands of Rancho-Simi : in Ventura &amp; Los Angeles Co&#x27;s. California ; be"></div>
+  <figcaption>
+    <span class="cat cat-map">Map / diseño</span>
+    <span class="ttl">Map of the lands of Rancho-Simi : in Ventura &amp; Los Angeles Co&#x27;s. California ; be</span>
+    <span class="src">1888 (created by Stow &amp;  · The Huntington Library (Maps collection / Huntingt</span>
+  </figcaption>
+</figure><figure class="tile" tabindex="0"
+  data-full="statewide_assets/view/T03-SIMI_07_huntington-11655-simi-sanfrancisco-boundaries.jpg" data-title="Ranchos San Jose de Gracia de Simi and San Francisco, external boundaries"
+  data-meta="Map / diseño · undated; internal note r · The Huntington Library (Maps collection; Solano-Re"
+  data-depicts="External boundaries of Ranchos San Jose de Gracia de Simi an" data-rights="For information on use of Digital Librar">
+  <div class="thumbwrap"><img loading="lazy" src="statewide_assets/thumbs/T03-SIMI_07_huntington-11655-simi-sanfrancisco-boundaries.jpg" alt="Ranchos San Jose de Gracia de Simi and San Francisco, external boundaries"></div>
+  <figcaption>
+    <span class="cat cat-map">Map / diseño</span>
+    <span class="ttl">Ranchos San Jose de Gracia de Simi and San Francisco, external boundaries</span>
+    <span class="src">undated; internal note r · The Huntington Library (Maps collection; Solano-Re</span>
+  </figcaption>
+</figure></div>
+</section>
+<section class="ranch">
+  <div class="ranch-head">
+    <h3>Rancho San Bernardo <span class="rbadge rbadge-res">residential today</span></h3>
+    <p class="ranch-sub">San Diego County — Rancho Bernardo · Escondido · 3 items</p>
+  </div>
+  <div class="grid"><figure class="tile" tabindex="0"
+  data-full="statewide_assets/view/T05-SANBERNARDO_08_diseno-D-1387-San-Bernardo-Bancroft.jpg" data-title="[Diseño del Rancho San Bernardo : San Diego County, Calif.]"
+  data-meta="Map / diseño · 184-? (stated, undated o · UC Berkeley, Bancroft Library (via Calisphere / OA"
+  data-depicts="Rancho San Bernardo, San Diego County, Calif. Hand-drawn Spa" data-rights="Researchers may make free and open use o">
+  <div class="thumbwrap"><img loading="lazy" src="statewide_assets/thumbs/T05-SANBERNARDO_08_diseno-D-1387-San-Bernardo-Bancroft.jpg" alt="[Diseño del Rancho San Bernardo : San Diego County, Calif.]"></div>
+  <figcaption>
+    <span class="cat cat-map">Map / diseño</span>
+    <span class="ttl">[Diseño del Rancho San Bernardo : San Diego County, Calif.]</span>
+    <span class="src">184-? (stated, undated o · UC Berkeley, Bancroft Library (via Calisphere / OA</span>
+  </figcaption>
+</figure><figure class="tile" tabindex="0"
+  data-full="statewide_assets/view/T05-SANBERNARDO_09_diseno-D-1388-San-Bernardo-Bancroft.jpg" data-title="[Diseño del Rancho San Bernardo : San Diego County, Calif.]"
+  data-meta="Map / diseño · 184-? (stated, undated o · UC Berkeley, Bancroft Library (via Calisphere / OA"
+  data-depicts="Rancho San Bernardo, San Diego County, Calif. Second diseño " data-rights="Researchers may make free and open use o">
+  <div class="thumbwrap"><img loading="lazy" src="statewide_assets/thumbs/T05-SANBERNARDO_09_diseno-D-1388-San-Bernardo-Bancroft.jpg" alt="[Diseño del Rancho San Bernardo : San Diego County, Calif.]"></div>
+  <figcaption>
+    <span class="cat cat-map">Map / diseño</span>
+    <span class="ttl">[Diseño del Rancho San Bernardo : San Diego County, Calif.]</span>
+    <span class="src">184-? (stated, undated o · UC Berkeley, Bancroft Library (via Calisphere / OA</span>
+  </figcaption>
+</figure><figure class="tile" tabindex="0"
+  data-full="statewide_assets/view/T05-SANBERNARDO_10_Emory-1847-San-Pasqual-battle-sketch.jpg" data-title="Sketch of the Actions fought at San Pascal in Upper California between the Ameri"
+  data-meta="Map / diseño · 1847 (stated) · Geographicus Rare Antique Maps (digitized copy; or"
+  data-depicts="San Pasqual Valley, San Diego County -- land that fell withi" data-rights="Use your digital image any way you like!">
+  <div class="thumbwrap"><img loading="lazy" src="statewide_assets/thumbs/T05-SANBERNARDO_10_Emory-1847-San-Pasqual-battle-sketch.jpg" alt="Sketch of the Actions fought at San Pascal in Upper California between the Ameri"></div>
+  <figcaption>
+    <span class="cat cat-map">Map / diseño</span>
+    <span class="ttl">Sketch of the Actions fought at San Pascal in Upper California between the Ameri</span>
+    <span class="src">1847 (stated) · Geographicus Rare Antique Maps (digitized copy; or</span>
+  </figcaption>
+</figure></div>
+</section>
+<section class="ranch">
+  <div class="ranch-head">
+    <h3>Rancho Sespe <span class="rbadge rbadge-res">residential today</span></h3>
+    <p class="ranch-sub">Ventura County — Fillmore · Sespe · 3 items</p>
+  </div>
+  <div class="grid"><figure class="tile" tabindex="0"
+  data-full="statewide_assets/view/T07-SESPE_11_diseno-D-989-bancroft-79268.jpg" data-title="[Diseño del Rancho Sespe : Calif.]"
+  data-meta="Map / diseño · 184-? (estimated; from U · UC Berkeley, Bancroft Library (via digicoll.lib.be"
+  data-depicts="Rancho Sespe, Ventura County, CA (then Santa Barbara Co.). M" data-rights="Researchers may make free and open use o">
+  <div class="thumbwrap"><img loading="lazy" src="statewide_assets/thumbs/T07-SESPE_11_diseno-D-989-bancroft-79268.jpg" alt="[Diseño del Rancho Sespe : Calif.]"></div>
+  <figcaption>
+    <span class="cat cat-map">Map / diseño</span>
+    <span class="ttl">[Diseño del Rancho Sespe : Calif.]</span>
+    <span class="src">184-? (estimated; from U · UC Berkeley, Bancroft Library (via digicoll.lib.be</span>
+  </figcaption>
+</figure><figure class="tile" tabindex="0"
+  data-full="statewide_assets/view/T07-SESPE_12_diseno-B-990-bancroft-78806.jpg" data-title="[Diseño del Rancho Sespe : Calif.]"
+  data-meta="Map / diseño · 184-? (estimated; Land C · UC Berkeley, Bancroft Library (via digicoll.lib.be"
+  data-depicts="Rancho Sespe, Ventura County, CA. Pen-and-ink and watercolor" data-rights="Bancroft public-domain digitized materia">
+  <div class="thumbwrap"><img loading="lazy" src="statewide_assets/thumbs/T07-SESPE_12_diseno-B-990-bancroft-78806.jpg" alt="[Diseño del Rancho Sespe : Calif.]"></div>
+  <figcaption>
+    <span class="cat cat-map">Map / diseño</span>
+    <span class="ttl">[Diseño del Rancho Sespe : Calif.]</span>
+    <span class="src">184-? (estimated; Land C · UC Berkeley, Bancroft Library (via digicoll.lib.be</span>
+  </figcaption>
+</figure><figure class="tile" tabindex="0"
+  data-full="statewide_assets/view/T07-SESPE_13_diseno-B-1350-bancroft-78951.jpg" data-title="[Diseño del Rancho Sespe : Calif.]"
+  data-meta="Map / diseño · 184-? (estimated) · UC Berkeley, Bancroft Library (via digicoll.lib.be"
+  data-depicts="Rancho Sespe, Ventura County, CA. Pen-and-ink and watercolor" data-rights="Bancroft public-domain digitized materia">
+  <div class="thumbwrap"><img loading="lazy" src="statewide_assets/thumbs/T07-SESPE_13_diseno-B-1350-bancroft-78951.jpg" alt="[Diseño del Rancho Sespe : Calif.]"></div>
+  <figcaption>
+    <span class="cat cat-map">Map / diseño</span>
+    <span class="ttl">[Diseño del Rancho Sespe : Calif.]</span>
+    <span class="src">184-? (estimated) · UC Berkeley, Bancroft Library (via digicoll.lib.be</span>
+  </figcaption>
+</figure></div>
+</section>
+<section class="ranch">
+  <div class="ranch-head">
+    <h3>Rancho San Francisco / Newhall Ranch <span class="rbadge rbadge-res">residential today</span></h3>
+    <p class="ranch-sub">Los Angeles County — Santa Clarita · Valencia · Newhall · 4 items</p>
+  </div>
+  <div class="grid"><figure class="tile" tabindex="0"
+  data-full="statewide_assets/view/T08-NEWHALL_17_WikimediaCommons-CHL556-RanchoSanFrancisco-adobe-site-marker.jpg" data-title="California Historical Landmark No. 556 -- Rancho San Francisco (marker at the ad"
+  data-meta="Photograph · Photograph 10 Jun 2023 ( · Wikimedia Commons; uploader &#x27;Ponderosapine210&#x27;, ow"
+  data-depicts="The California Registered Historical Landmark No. 556 marker" data-rights="Creative Commons Attribution-Share Alike">
+  <div class="thumbwrap"><img loading="lazy" src="statewide_assets/thumbs/T08-NEWHALL_17_WikimediaCommons-CHL556-RanchoSanFrancisco-adobe-site-marker.jpg" alt="California Historical Landmark No. 556 -- Rancho San Francisco (marker at the ad"></div>
+  <figcaption>
+    <span class="cat cat-photo">Photograph</span>
+    <span class="ttl">California Historical Landmark No. 556 -- Rancho San Francisco (marker at the ad</span>
+    <span class="src">Photograph 10 Jun 2023 ( · Wikimedia Commons; uploader &#x27;Ponderosapine210&#x27;, ow</span>
+  </figcaption>
+</figure><figure class="tile" tabindex="0"
+  data-full="statewide_assets/view/T08-NEWHALL_15_WikimediaCommons-RanchoSanFrancisco-branding-iron-CCBYSA4.jpg" data-title="Head of a branding iron bearing the mark of Rancho San Francisco"
+  data-meta="Artifact · Photograph 29 May 2023 ( · Wikimedia Commons (photograph of the physical arti"
+  data-depicts="The head of the cattle branding iron carrying the Rancho San" data-rights="Creative Commons Attribution-Share Alike">
+  <div class="thumbwrap"><img loading="lazy" src="statewide_assets/thumbs/T08-NEWHALL_15_WikimediaCommons-RanchoSanFrancisco-branding-iron-CCBYSA4.jpg" alt="Head of a branding iron bearing the mark of Rancho San Francisco"></div>
+  <figcaption>
+    <span class="cat cat-artifact">Artifact</span>
+    <span class="ttl">Head of a branding iron bearing the mark of Rancho San Francisco</span>
+    <span class="src">Photograph 29 May 2023 ( · Wikimedia Commons (photograph of the physical arti</span>
+  </figcaption>
+</figure><figure class="tile" tabindex="0"
+  data-full="statewide_assets/view/T08-NEWHALL_14_WikimediaCommons-RanchoSanFrancisco-diseno-map-1843-PD.jpg" data-title="1843 map (diseno) of Rancho San Francisco"
+  data-meta="Map / diseño · 1843 (stated) · Wikimedia Commons (digital surrogate); source scan"
+  data-depicts="The 1843 boundary sketch/diseno of Rancho San Francisco, the" data-rights="Public domain (UsageTerms: &#x27;Public domai">
+  <div class="thumbwrap"><img loading="lazy" src="statewide_assets/thumbs/T08-NEWHALL_14_WikimediaCommons-RanchoSanFrancisco-diseno-map-1843-PD.jpg" alt="1843 map (diseno) of Rancho San Francisco"></div>
+  <figcaption>
+    <span class="cat cat-map">Map / diseño</span>
+    <span class="ttl">1843 map (diseno) of Rancho San Francisco</span>
+    <span class="src">1843 (stated) · Wikimedia Commons (digital surrogate); source scan</span>
+  </figcaption>
+</figure><figure class="tile" tabindex="0"
+  data-full="statewide_assets/view/T08-NEWHALL_16_WikimediaCommons-RanchoSanFrancisco-USGS-topo-1893-1904-crop.jpg" data-title="Topographical map of Rancho San Francisco (portion), USGS Southern California Sh"
+  data-meta="Map / diseño · Underlying survey 1893-1 · Wikimedia Commons (cropped derivative); uploader &#x27;"
+  data-depicts="USGS topographic coverage of the Rancho San Francisco area i" data-rights="Derivative crop licensed CC BY-SA 4.0 (u">
+  <div class="thumbwrap"><img loading="lazy" src="statewide_assets/thumbs/T08-NEWHALL_16_WikimediaCommons-RanchoSanFrancisco-USGS-topo-1893-1904-crop.jpg" alt="Topographical map of Rancho San Francisco (portion), USGS Southern California Sh"></div>
+  <figcaption>
+    <span class="cat cat-map">Map / diseño</span>
+    <span class="ttl">Topographical map of Rancho San Francisco (portion), USGS Southern California Sh</span>
+    <span class="src">Underlying survey 1893-1 · Wikimedia Commons (cropped derivative); uploader &#x27;</span>
+  </figcaption>
+</figure></div>
+</section>
+<section class="ranch">
+  <div class="ranch-head">
+    <h3>Rancho Los Alamitos <span class="rbadge rbadge-res">residential today</span></h3>
+    <p class="ranch-sub">Los Angeles County — Long Beach · Los Alamitos · 1 item</p>
+  </div>
+  <div class="grid"><figure class="tile" tabindex="0"
+  data-full="statewide_assets/view/T10-LOSALAMITOS_18_Hornbeck-LosAlamitos-LAC-diseno468-preview.jpg" data-title="Los Alamitos, Diseños 468, GLO 468, Los Angeles County, and associated historica"
+  data-meta="Map / diseño · diseño c.1834 (Mexican g · California State University, Monterey Bay - Digita"
+  data-depicts="Rancho Los Alamitos land grant boundaries, filed under Los A" data-rights="No explicit rights/license statement on ">
+  <div class="thumbwrap"><img loading="lazy" src="statewide_assets/thumbs/T10-LOSALAMITOS_18_Hornbeck-LosAlamitos-LAC-diseno468-preview.jpg" alt="Los Alamitos, Diseños 468, GLO 468, Los Angeles County, and associated historica"></div>
+  <figcaption>
+    <span class="cat cat-map">Map / diseño</span>
+    <span class="ttl">Los Alamitos, Diseños 468, GLO 468, Los Angeles County, and associated historica</span>
+    <span class="src">diseño c.1834 (Mexican g · California State University, Monterey Bay - Digita</span>
+  </figcaption>
+</figure></div>
+</section>
+<section class="ranch">
+  <div class="ranch-head">
+    <h3>Rancho Cucamonga <span class="rbadge rbadge-res">residential today</span></h3>
+    <p class="ranch-sub">San Bernardino County — Rancho Cucamonga · 5 items</p>
+  </div>
+  <div class="grid"><figure class="tile" tabindex="0"
+  data-full="statewide_assets/view/T11-CUCAMONGA_19_Huntington-SolanoReeve-MapOfRanchoCucamonga-S71-1893-11-id12.jpg" data-title="Map of the Rancho Cucamonga."
+  data-meta="Map / diseño · 1893-11 (stated: 1893 No · The Huntington Library, San Marino (Huntington Dig"
+  data-depicts="Rancho Cucamonga, San Bernardino County. Hand-colored ms. ma" data-rights="For information on use of Digital Librar">
+  <div class="thumbwrap"><img loading="lazy" src="statewide_assets/thumbs/T11-CUCAMONGA_19_Huntington-SolanoReeve-MapOfRanchoCucamonga-S71-1893-11-id12.jpg" alt="Map of the Rancho Cucamonga."></div>
+  <figcaption>
+    <span class="cat cat-map">Map / diseño</span>
+    <span class="ttl">Map of the Rancho Cucamonga.</span>
+    <span class="src">1893-11 (stated: 1893 No · The Huntington Library, San Marino (Huntington Dig</span>
+  </figcaption>
+</figure><figure class="tile" tabindex="0"
+  data-full="statewide_assets/view/T11-CUCAMONGA_20_Huntington-SolanoReeve-PartOfRanchoCucamonga-1876-05-20-id11.jpg" data-title="Part of Rancho Cucamonga.."
+  data-meta="Map / diseño · 1876-05-20 (stated) · The Huntington Library (Huntington Digital Library"
+  data-depicts="Rancho Cucamonga, San Bernardino County. Manuscript survey m" data-rights="For information on use of Digital Librar">
+  <div class="thumbwrap"><img loading="lazy" src="statewide_assets/thumbs/T11-CUCAMONGA_20_Huntington-SolanoReeve-PartOfRanchoCucamonga-1876-05-20-id11.jpg" alt="Part of Rancho Cucamonga.."></div>
+  <figcaption>
+    <span class="cat cat-map">Map / diseño</span>
+    <span class="ttl">Part of Rancho Cucamonga..</span>
+    <span class="src">1876-05-20 (stated) · The Huntington Library (Huntington Digital Library</span>
+  </figcaption>
+</figure><figure class="tile" tabindex="0"
+  data-full="statewide_assets/view/T11-CUCAMONGA_21_Huntington-SolanoReeve-HousesImprovements-Valdez-MartinezRui.jpg" data-title="Map showing the location of the houses and improvements of Valdez and Francisco "
+  data-meta="Map / diseño · 1872-02-29 (stated) · The Huntington Library (Huntington Digital Library"
+  data-depicts="Rancho Cucamonga, San Bernardino County. Land-use map locati" data-rights="For information on use of Digital Librar">
+  <div class="thumbwrap"><img loading="lazy" src="statewide_assets/thumbs/T11-CUCAMONGA_21_Huntington-SolanoReeve-HousesImprovements-Valdez-MartinezRui.jpg" alt="Map showing the location of the houses and improvements of Valdez and Francisco "></div>
+  <figcaption>
+    <span class="cat cat-map">Map / diseño</span>
+    <span class="ttl">Map showing the location of the houses and improvements of Valdez and Francisco </span>
+    <span class="src">1872-02-29 (stated) · The Huntington Library (Huntington Digital Library</span>
+  </figcaption>
+</figure><figure class="tile" tabindex="0"
+  data-full="statewide_assets/view/T11-CUCAMONGA_22_Huntington-SolanoReeve-CompositeGovtMap-RanchoCucamonga-Juru.jpg" data-title="Composite government map of T.1 S.R. 5-7 W., and parts of T.1N. R.7-8W. and T.1S"
+  data-meta="Map / diseño · 1852-1865 (stated span;  · The Huntington Library (Huntington Digital Library"
+  data-depicts="Rancho Cucamonga and neighboring grants (Jurupa, Santa Ana d" data-rights="For information on use of Digital Librar">
+  <div class="thumbwrap"><img loading="lazy" src="statewide_assets/thumbs/T11-CUCAMONGA_22_Huntington-SolanoReeve-CompositeGovtMap-RanchoCucamonga-Juru.jpg" alt="Composite government map of T.1 S.R. 5-7 W., and parts of T.1N. R.7-8W. and T.1S"></div>
+  <figcaption>
+    <span class="cat cat-map">Map / diseño</span>
+    <span class="ttl">Composite government map of T.1 S.R. 5-7 W., and parts of T.1N. R.7-8W. and T.1S</span>
+    <span class="src">1852-1865 (stated span;  · The Huntington Library (Huntington Digital Library</span>
+  </figcaption>
+</figure><figure class="tile" tabindex="0"
+  data-full="statewide_assets/view/T11-CUCAMONGA_23_Huntington-SolanoReeve-CucamongaCreek-1870-1880-id11383.jpg" data-title="Cucamonga Creek"
+  data-meta="Map / diseño · 1870-1880 (stated span) · The Huntington Library (Huntington Digital Library"
+  data-depicts="Rancho Cucamonga, San Bernardino County. Engineering profile" data-rights="For information on use of Digital Librar">
+  <div class="thumbwrap"><img loading="lazy" src="statewide_assets/thumbs/T11-CUCAMONGA_23_Huntington-SolanoReeve-CucamongaCreek-1870-1880-id11383.jpg" alt="Cucamonga Creek"></div>
+  <figcaption>
+    <span class="cat cat-map">Map / diseño</span>
+    <span class="ttl">Cucamonga Creek</span>
+    <span class="src">1870-1880 (stated span) · The Huntington Library (Huntington Digital Library</span>
+  </figcaption>
+</figure></div>
+</section>
+<section class="ranch">
+  <div class="ranch-head">
+    <h3>Rancho Jurupa <span class="rbadge rbadge-res">residential today</span></h3>
+    <p class="ranch-sub">Riverside County — Riverside · Jurupa Valley · 8 items</p>
+  </div>
+  <div class="grid"><figure class="tile" tabindex="0"
+  data-full="statewide_assets/view/T12-JURUPA_24_CHS-8976-rubidoux-ranch-house-ca1869.jpg" data-title="Exterior view of Louis Rubidoux&#x27;s (aka Louis Robidoux) Ranch House in Riverside,"
+  data-meta="Photograph · circa 1869 (stated) · California Historical Society Collection at Stanfo"
+  data-depicts="Louis Rubidoux&#x27;s two-story adobe ranch house, Rancho Jurupa," data-rights="Public Domain. Release under the CC BY A">
+  <div class="thumbwrap"><img loading="lazy" src="statewide_assets/thumbs/T12-JURUPA_24_CHS-8976-rubidoux-ranch-house-ca1869.jpg" alt="Exterior view of Louis Rubidoux&#x27;s (aka Louis Robidoux) Ranch House in Riverside,"></div>
+  <figcaption>
+    <span class="cat cat-photo">Photograph</span>
+    <span class="ttl">Exterior view of Louis Rubidoux&#x27;s (aka Louis Robidoux) Ranch House in Riverside,</span>
+    <span class="src">circa 1869 (stated) · California Historical Society Collection at Stanfo</span>
+  </figcaption>
+</figure><figure class="tile" tabindex="0"
+  data-full="statewide_assets/view/T12-JURUPA_25_CHS-12795-luis-rubidoux-ranch-house.jpg" data-title="Exterior view of Luis&#x27; Rubidoux&#x27;s Ranch House in Riverside"
+  data-meta="Photograph · undated (n.d. / [s.d.] i · California Historical Society Collection at Stanfo"
+  data-depicts="The Rubidoux rancho, Riverside County: a dirt path past yell" data-rights="Public Domain. Release under the CC BY A">
+  <div class="thumbwrap"><img loading="lazy" src="statewide_assets/thumbs/T12-JURUPA_25_CHS-12795-luis-rubidoux-ranch-house.jpg" alt="Exterior view of Luis&#x27; Rubidoux&#x27;s Ranch House in Riverside"></div>
+  <figcaption>
+    <span class="cat cat-photo">Photograph</span>
+    <span class="ttl">Exterior view of Luis&#x27; Rubidoux&#x27;s Ranch House in Riverside</span>
+    <span class="src">undated (n.d. / [s.d.] i · California Historical Society Collection at Stanfo</span>
+  </figcaption>
+</figure><figure class="tile" tabindex="0"
+  data-full="statewide_assets/view/T12-JURUPA_26_CHS-12796-rubidoux-rancho-blacksmith-shop-1960.jpg" data-title="Exterior view of the blacksmith&#x27;s shop on the Rubidoux Rancho, 1960"
+  data-meta="Photograph · 1960 (stated) · California Historical Society Collection at Stanfo"
+  data-depicts="One-story adobe blacksmith&#x27;s shop with a well and hitching-p" data-rights="Public Domain. Release under the CC BY A">
+  <div class="thumbwrap"><img loading="lazy" src="statewide_assets/thumbs/T12-JURUPA_26_CHS-12796-rubidoux-rancho-blacksmith-shop-1960.jpg" alt="Exterior view of the blacksmith&#x27;s shop on the Rubidoux Rancho, 1960"></div>
+  <figcaption>
+    <span class="cat cat-photo">Photograph</span>
+    <span class="ttl">Exterior view of the blacksmith&#x27;s shop on the Rubidoux Rancho, 1960</span>
+    <span class="src">1960 (stated) · California Historical Society Collection at Stanfo</span>
+  </figcaption>
+</figure><figure class="tile" tabindex="0"
+  data-full="statewide_assets/view/T12-JURUPA_27_CHS-12797-rubidoux-rancho-horse-trough-1960.jpg" data-title="Adobe horse trough on the Rubidoux rancho, 1960"
+  data-meta="Photograph · 1960 (stated) · California Historical Society Collection at Stanfo"
+  data-depicts="Adobe horse trough on the Rubidoux rancho (former Louis Rubi" data-rights="Public Domain. Release under the CC BY A">
+  <div class="thumbwrap"><img loading="lazy" src="statewide_assets/thumbs/T12-JURUPA_27_CHS-12797-rubidoux-rancho-horse-trough-1960.jpg" alt="Adobe horse trough on the Rubidoux rancho, 1960"></div>
+  <figcaption>
+    <span class="cat cat-photo">Photograph</span>
+    <span class="ttl">Adobe horse trough on the Rubidoux rancho, 1960</span>
+    <span class="src">1960 (stated) · California Historical Society Collection at Stanfo</span>
+  </figcaption>
+</figure><figure class="tile" tabindex="0"
+  data-full="statewide_assets/view/T12-JURUPA_28_CHS-12798-rubidoux-rancho-adobe-well-1960.jpg" data-title="Adobe well on the Rubidoux rancho, 1960"
+  data-meta="Photograph · 1960 (stated) · California Historical Society Collection at Stanfo"
+  data-depicts="Adobe well with metal winch on the Rubidoux rancho (former L" data-rights="Public Domain. Release under the CC BY A">
+  <div class="thumbwrap"><img loading="lazy" src="statewide_assets/thumbs/T12-JURUPA_28_CHS-12798-rubidoux-rancho-adobe-well-1960.jpg" alt="Adobe well on the Rubidoux rancho, 1960"></div>
+  <figcaption>
+    <span class="cat cat-photo">Photograph</span>
+    <span class="ttl">Adobe well on the Rubidoux rancho, 1960</span>
+    <span class="src">1960 (stated) · California Historical Society Collection at Stanfo</span>
+  </figcaption>
+</figure><figure class="tile" tabindex="0"
+  data-full="statewide_assets/view/T12-JURUPA_29_CHS-12799-rubidoux-rancho-adobe-entrance-1960.jpg" data-title="Two views of the entrance to an adobe on the Rubidoux rancho, showing a horse tr"
+  data-meta="Photograph · 1960 (stated) · California Historical Society Collection at Stanfo"
+  data-depicts="Adobe entrance and horse trough on the Rubidoux rancho (form" data-rights="Public Domain. Release under the CC BY A">
+  <div class="thumbwrap"><img loading="lazy" src="statewide_assets/thumbs/T12-JURUPA_29_CHS-12799-rubidoux-rancho-adobe-entrance-1960.jpg" alt="Two views of the entrance to an adobe on the Rubidoux rancho, showing a horse tr"></div>
+  <figcaption>
+    <span class="cat cat-photo">Photograph</span>
+    <span class="ttl">Two views of the entrance to an adobe on the Rubidoux rancho, showing a horse tr</span>
+    <span class="src">1960 (stated) · California Historical Society Collection at Stanfo</span>
+  </figcaption>
+</figure><figure class="tile" tabindex="0"
+  data-full="statewide_assets/view/T12-JURUPA_30_commons-Juan-Bandini-portrait.jpg" data-title="Juan Bandini portrait"
+  data-meta="Photograph · undated; within Bandini&#x27; · Wikimedia Commons (source: content.cdlib.org ark:/"
+  data-depicts="Portrait of Juan Bandini (1800–1859), original 1838 grantee " data-rights="This media file is in the public domain ">
+  <div class="thumbwrap"><img loading="lazy" src="statewide_assets/thumbs/T12-JURUPA_30_commons-Juan-Bandini-portrait.jpg" alt="Juan Bandini portrait"></div>
+  <figcaption>
+    <span class="cat cat-photo">Photograph</span>
+    <span class="ttl">Juan Bandini portrait</span>
+    <span class="src">undated; within Bandini&#x27; · Wikimedia Commons (source: content.cdlib.org ark:/</span>
+  </figcaption>
+</figure><figure class="tile" tabindex="0"
+  data-full="statewide_assets/view/T12-JURUPA_31_commons-Jensen-Alvarado-Ranch-Rubidoux.jpg" data-title="JENSEN ALVARADO RANCH, RUBIDOUX, RIVERSIDE COUNTY CA"
+  data-meta="Photograph · photographed 27 April 20 · Wikimedia Commons (own work, user Jerrye &amp; Roy Klo"
+  data-depicts="The Jensen-Alvarado Ranch (Cornelius Jensen&#x27;s Danish-vernacu" data-rights="Creative Commons Attribution-ShareAlike ">
+  <div class="thumbwrap"><img loading="lazy" src="statewide_assets/thumbs/T12-JURUPA_31_commons-Jensen-Alvarado-Ranch-Rubidoux.jpg" alt="JENSEN ALVARADO RANCH, RUBIDOUX, RIVERSIDE COUNTY CA"></div>
+  <figcaption>
+    <span class="cat cat-photo">Photograph</span>
+    <span class="ttl">JENSEN ALVARADO RANCH, RUBIDOUX, RIVERSIDE COUNTY CA</span>
+    <span class="src">photographed 27 April 20 · Wikimedia Commons (own work, user Jerrye &amp; Roy Klo</span>
+  </figcaption>
+</figure></div>
+</section>
+<section class="ranch">
+  <div class="ranch-head">
+    <h3>Rancho Santa Margarita y Las Flores <span class="rbadge rbadge-non">federal / farm / unbuilt today</span></h3>
+    <p class="ranch-sub">San Diego County — Camp Pendleton · San Onofre — federal land, NOT the Orange County city of the same name · 11 items</p>
+  </div>
+  <div class="grid"><figure class="tile" tabindex="0"
+  data-full="statewide_assets/view/T13-SANTAMARGARITA_35_herd-cattle-santa-margarita-1900-CHS-2360.jpg" data-title="Herd of cattle grazing on the Santa Margarita Ranch, San Diego County"
+  data-meta="Photograph · 1900 (stated) · California Historical Society Collection at Stanfo"
+  data-depicts="Santa Margarita Ranch (Rancho Santa Margarita y Las Flores)," data-rights="Public Domain. Release under the CC BY A">
+  <div class="thumbwrap"><img loading="lazy" src="statewide_assets/thumbs/T13-SANTAMARGARITA_35_herd-cattle-santa-margarita-1900-CHS-2360.jpg" alt="Herd of cattle grazing on the Santa Margarita Ranch, San Diego County"></div>
+  <figcaption>
+    <span class="cat cat-photo">Photograph</span>
+    <span class="ttl">Herd of cattle grazing on the Santa Margarita Ranch, San Diego County</span>
+    <span class="src">1900 (stated) · California Historical Society Collection at Stanfo</span>
+  </figcaption>
+</figure><figure class="tile" tabindex="0"
+  data-full="statewide_assets/view/T13-SANTAMARGARITA_36_lone-cowboy-santa-margarita-1900-CHS-2359.jpg" data-title="Lone mounted cowboy on the Santa Margarita cattle ranch, San Diego County"
+  data-meta="Photograph · 1900 (stated) · California Historical Society Collection at Stanfo"
+  data-depicts="Santa Margarita cattle ranch, San Diego County. Lone mounted" data-rights="Public Domain. Release under the CC BY A">
+  <div class="thumbwrap"><img loading="lazy" src="statewide_assets/thumbs/T13-SANTAMARGARITA_36_lone-cowboy-santa-margarita-1900-CHS-2359.jpg" alt="Lone mounted cowboy on the Santa Margarita cattle ranch, San Diego County"></div>
+  <figcaption>
+    <span class="cat cat-photo">Photograph</span>
+    <span class="ttl">Lone mounted cowboy on the Santa Margarita cattle ranch, San Diego County</span>
+    <span class="src">1900 (stated) · California Historical Society Collection at Stanfo</span>
+  </figcaption>
+</figure><figure class="tile" tabindex="0"
+  data-full="statewide_assets/view/T13-SANTAMARGARITA_37_cattle-stream-santa-margarita-1900-CHS-2358.jpg" data-title="Cattle grazing in the open near a small stream on the Santa Margarita cattle ran"
+  data-meta="Photograph · 1900 (stated) · California Historical Society Collection at Stanfo"
+  data-depicts="Santa Margarita cattle ranch, San Diego County. Small herd g" data-rights="Public Domain. Release under the CC BY A">
+  <div class="thumbwrap"><img loading="lazy" src="statewide_assets/thumbs/T13-SANTAMARGARITA_37_cattle-stream-santa-margarita-1900-CHS-2358.jpg" alt="Cattle grazing in the open near a small stream on the Santa Margarita cattle ran"></div>
+  <figcaption>
+    <span class="cat cat-photo">Photograph</span>
+    <span class="ttl">Cattle grazing in the open near a small stream on the Santa Margarita cattle ran</span>
+    <span class="src">1900 (stated) · California Historical Society Collection at Stanfo</span>
+  </figcaption>
+</figure><figure class="tile" tabindex="0"
+  data-full="statewide_assets/view/T13-SANTAMARGARITA_38_rancho-las-flores-front-c1875-CHS-12323.jpg" data-title="Exterior view of the front of Rancho Las Flores, ca.1875"
+  data-meta="Photograph · circa 1875 (stated) · California Historical Society Collection at Stanfo"
+  data-depicts="Rancho Las Flores (part of Rancho Santa Margarita y Las Flor" data-rights="Public Domain. Release under the CC BY A">
+  <div class="thumbwrap"><img loading="lazy" src="statewide_assets/thumbs/T13-SANTAMARGARITA_38_rancho-las-flores-front-c1875-CHS-12323.jpg" alt="Exterior view of the front of Rancho Las Flores, ca.1875"></div>
+  <figcaption>
+    <span class="cat cat-photo">Photograph</span>
+    <span class="ttl">Exterior view of the front of Rancho Las Flores, ca.1875</span>
+    <span class="src">circa 1875 (stated) · California Historical Society Collection at Stanfo</span>
+  </figcaption>
+</figure><figure class="tile" tabindex="0"
+  data-full="statewide_assets/view/T13-SANTAMARGARITA_39_adobe-las-flores-2story-Foster-1870-80-CHS-8598.jpg" data-title="Exterior view of an adobe on Rancho Las Flores, built by M.A. Foster, located 6 "
+  data-meta="Photograph · 1870/1880 (stated) · California Historical Society Collection at Stanfo"
+  data-depicts="Rancho Las Flores (Rancho Santa Margarita y Las Flores), 6 m" data-rights="Public Domain. Release under the CC BY A">
+  <div class="thumbwrap"><img loading="lazy" src="statewide_assets/thumbs/T13-SANTAMARGARITA_39_adobe-las-flores-2story-Foster-1870-80-CHS-8598.jpg" alt="Exterior view of an adobe on Rancho Las Flores, built by M.A. Foster, located 6 "></div>
+  <figcaption>
+    <span class="cat cat-photo">Photograph</span>
+    <span class="ttl">Exterior view of an adobe on Rancho Las Flores, built by M.A. Foster, located 6 </span>
+    <span class="src">1870/1880 (stated) · California Historical Society Collection at Stanfo</span>
+  </figcaption>
+</figure><figure class="tile" tabindex="0"
+  data-full="statewide_assets/view/T13-SANTAMARGARITA_40_adobe-las-flores-2story-Forester-1870-80-CHS-8602.jpg" data-title="Exterior view of an adobe, built by M.A. Forester, at the Rancho Las Flores, 187"
+  data-meta="Photograph · 1870/1880 (stated) · California Historical Society Collection at Stanfo"
+  data-depicts="Rancho Las Flores (Rancho Santa Margarita y Las Flores), San" data-rights="Public Domain. Release under the CC BY A">
+  <div class="thumbwrap"><img loading="lazy" src="statewide_assets/thumbs/T13-SANTAMARGARITA_40_adobe-las-flores-2story-Forester-1870-80-CHS-8602.jpg" alt="Exterior view of an adobe, built by M.A. Forester, at the Rancho Las Flores, 187"></div>
+  <figcaption>
+    <span class="cat cat-photo">Photograph</span>
+    <span class="ttl">Exterior view of an adobe, built by M.A. Forester, at the Rancho Las Flores, 187</span>
+    <span class="src">1870/1880 (stated) · California Historical Society Collection at Stanfo</span>
+  </figcaption>
+</figure><figure class="tile" tabindex="0"
+  data-full="statewide_assets/view/T13-SANTAMARGARITA_41_santa-marguerita-vineyard-winery-1886-CHS-2085.jpg" data-title="Santa Marguerita Ranch - Vineyard and Winery, 1886"
+  data-meta="Photograph · 1886 (stated) · California Historical Society Collection at Stanfo"
+  data-depicts="Santa Margarita Ranch (Rancho Santa Margarita y Las Flores)," data-rights="Public Domain. Release under the CC BY A">
+  <div class="thumbwrap"><img loading="lazy" src="statewide_assets/thumbs/T13-SANTAMARGARITA_41_santa-marguerita-vineyard-winery-1886-CHS-2085.jpg" alt="Santa Marguerita Ranch - Vineyard and Winery, 1886"></div>
+  <figcaption>
+    <span class="cat cat-photo">Photograph</span>
+    <span class="ttl">Santa Marguerita Ranch - Vineyard and Winery, 1886</span>
+    <span class="src">1886 (stated) · California Historical Society Collection at Stanfo</span>
+  </figcaption>
+</figure><figure class="tile" tabindex="0"
+  data-full="statewide_assets/view/T13-SANTAMARGARITA_42_adobe-santa-margarita-ranch-c1875-CHS-7672.jpg" data-title="Exterior view of an adobe at the Santa Margarita Ranch, San Diego, ca.1875"
+  data-meta="Photograph · 1870/1880 (stated; title · California Historical Society Collection at Stanfo"
+  data-depicts="Santa Margarita Ranch (Rancho Santa Margarita y Las Flores)," data-rights="Public Domain. Release under the CC BY A">
+  <div class="thumbwrap"><img loading="lazy" src="statewide_assets/thumbs/T13-SANTAMARGARITA_42_adobe-santa-margarita-ranch-c1875-CHS-7672.jpg" alt="Exterior view of an adobe at the Santa Margarita Ranch, San Diego, ca.1875"></div>
+  <figcaption>
+    <span class="cat cat-photo">Photograph</span>
+    <span class="ttl">Exterior view of an adobe at the Santa Margarita Ranch, San Diego, ca.1875</span>
+    <span class="src">1870/1880 (stated; title · California Historical Society Collection at Stanfo</span>
+  </figcaption>
+</figure><figure class="tile" tabindex="0"
+  data-full="statewide_assets/view/T13-SANTAMARGARITA_32_diseno-santa-margarita-1845-E-1362.jpg" data-title="Diseño del Rancho de Sta. Margarita [Calif.] : 1845 / Gaspar O&#x27;Farrell, agrimens"
+  data-meta="Map / diseño · 1845 (stated; exhibit to · UC Berkeley, Bancroft Library (Maps of Private Lan"
+  data-depicts="Rancho Santa Margarita y Las Flores, San Diego County (W 117" data-rights="Researchers may make free and open use o">
+  <div class="thumbwrap"><img loading="lazy" src="statewide_assets/thumbs/T13-SANTAMARGARITA_32_diseno-santa-margarita-1845-E-1362.jpg" alt="Diseño del Rancho de Sta. Margarita [Calif.] : 1845 / Gaspar O&#x27;Farrell, agrimens"></div>
+  <figcaption>
+    <span class="cat cat-map">Map / diseño</span>
+    <span class="ttl">Diseño del Rancho de Sta. Margarita [Calif.] : 1845 / Gaspar O&#x27;Farrell, agrimens</span>
+    <span class="src">1845 (stated; exhibit to · UC Berkeley, Bancroft Library (Maps of Private Lan</span>
+  </figcaption>
+</figure><figure class="tile" tabindex="0"
+  data-full="statewide_assets/view/T13-SANTAMARGARITA_33_sanonofrio-santa-margarita-184x-D-1413.jpg" data-title="Rancho de San Onofrio [i.e. Rancho Santa Margarita y las Flores, Calif.]"
+  data-meta="Map / diseño · 184-? (estimated; Land C · UC Berkeley, Bancroft Library (Maps of Private Lan"
+  data-depicts="Rancho Santa Margarita y Las Flores, San Diego County (W 117" data-rights="Researchers may make free and open use o">
+  <div class="thumbwrap"><img loading="lazy" src="statewide_assets/thumbs/T13-SANTAMARGARITA_33_sanonofrio-santa-margarita-184x-D-1413.jpg" alt="Rancho de San Onofrio [i.e. Rancho Santa Margarita y las Flores, Calif.]"></div>
+  <figcaption>
+    <span class="cat cat-map">Map / diseño</span>
+    <span class="ttl">Rancho de San Onofrio [i.e. Rancho Santa Margarita y las Flores, Calif.]</span>
+    <span class="src">184-? (estimated; Land C · UC Berkeley, Bancroft Library (Maps of Private Lan</span>
+  </figcaption>
+</figure><figure class="tile" tabindex="0"
+  data-full="statewide_assets/view/T13-SANTAMARGARITA_34_plat-santa-margarita-las-flores-1867-E-1362A.jpg" data-title="Plat of the Rancho Santa Margarita y Las Flores [Calif.] : finally confirmed to "
+  data-meta="Map / diseño · 1867 (stated) · UC Berkeley, Bancroft Library (Maps of Private Lan"
+  data-depicts="Rancho Santa Margarita y Las Flores, San Diego County. Offic" data-rights="Researchers may make free and open use o">
+  <div class="thumbwrap"><img loading="lazy" src="statewide_assets/thumbs/T13-SANTAMARGARITA_34_plat-santa-margarita-las-flores-1867-E-1362A.jpg" alt="Plat of the Rancho Santa Margarita y Las Flores [Calif.] : finally confirmed to "></div>
+  <figcaption>
+    <span class="cat cat-map">Map / diseño</span>
+    <span class="ttl">Plat of the Rancho Santa Margarita y Las Flores [Calif.] : finally confirmed to </span>
+    <span class="src">1867 (stated) · UC Berkeley, Bancroft Library (Maps of Private Lan</span>
+  </figcaption>
+</figure></div>
+</section>
+<section class="ranch">
+  <div class="ranch-head">
+    <h3>Tejon Ranch <span class="rbadge rbadge-non">federal / farm / unbuilt today</span></h3>
+    <p class="ranch-sub">Kern County — Tejon · Lebec — largely unbuilt ranch land · 16 items</p>
+  </div>
+  <div class="grid"><figure class="tile" tabindex="0"
+  data-full="statewide_assets/view/T14-TEJON_43_LOC-93511806.jpg" data-title="Residence Gen. Beale, Tejon ranch, Kern County, Cal."
+  data-meta="Photograph · 1888-01-01 · Library of Congress, Prints &amp; Photographs Division"
+  data-depicts="Kern County — Tejon Ranch (Beale ranch headquarters), Cal. P" data-rights="No known restrictions on publication.">
+  <div class="thumbwrap"><img loading="lazy" src="statewide_assets/thumbs/T14-TEJON_43_LOC-93511806.jpg" alt="Residence Gen. Beale, Tejon ranch, Kern County, Cal."></div>
+  <figcaption>
+    <span class="cat cat-photo">Photograph</span>
+    <span class="ttl">Residence Gen. Beale, Tejon ranch, Kern County, Cal.</span>
+    <span class="src">1888-01-01 · Library of Congress, Prints &amp; Photographs Division</span>
+  </figcaption>
+</figure><figure class="tile" tabindex="0"
+  data-full="statewide_assets/view/T14-TEJON_44_LOC-93511807.jpg" data-title="Tejon ranch.  Indian reservation ; the church"
+  data-meta="Photograph · 1888-01-01 · Library of Congress, Prints &amp; Photographs Division"
+  data-depicts="Kern County — Tejon Ranch (Sebastian/Tejon Indian Reservatio" data-rights="No known restrictions on publication.">
+  <div class="thumbwrap"><img loading="lazy" src="statewide_assets/thumbs/T14-TEJON_44_LOC-93511807.jpg" alt="Tejon ranch.  Indian reservation ; the church"></div>
+  <figcaption>
+    <span class="cat cat-photo">Photograph</span>
+    <span class="ttl">Tejon ranch.  Indian reservation ; the church</span>
+    <span class="src">1888-01-01 · Library of Congress, Prints &amp; Photographs Division</span>
+  </figcaption>
+</figure><figure class="tile" tabindex="0"
+  data-full="statewide_assets/view/T14-TEJON_45_LOC-93511809.jpg" data-title="Tejon ranch.  An Indian home and orchard"
+  data-meta="Photograph · 1888-01-01 · Library of Congress, Prints &amp; Photographs Division"
+  data-depicts="Kern County — Tejon Ranch (Indian home and orchard on the ra" data-rights="No known restrictions on publication.">
+  <div class="thumbwrap"><img loading="lazy" src="statewide_assets/thumbs/T14-TEJON_45_LOC-93511809.jpg" alt="Tejon ranch.  An Indian home and orchard"></div>
+  <figcaption>
+    <span class="cat cat-photo">Photograph</span>
+    <span class="ttl">Tejon ranch.  An Indian home and orchard</span>
+    <span class="src">1888-01-01 · Library of Congress, Prints &amp; Photographs Division</span>
+  </figcaption>
+</figure><figure class="tile" tabindex="0"
+  data-full="statewide_assets/view/T14-TEJON_46_LOC-2018654903.jpg" data-title="Tejon Ranch [California]"
+  data-meta="Photograph · 1890-01-01 · Library of Congress, Prints &amp; Photographs Division"
+  data-depicts="Kern County — Tejon Ranch, California." data-rights="No known restrictions on publication.">
+  <div class="thumbwrap"><img loading="lazy" src="statewide_assets/thumbs/T14-TEJON_46_LOC-2018654903.jpg" alt="Tejon Ranch [California]"></div>
+  <figcaption>
+    <span class="cat cat-photo">Photograph</span>
+    <span class="ttl">Tejon Ranch [California]</span>
+    <span class="src">1890-01-01 · Library of Congress, Prints &amp; Photographs Division</span>
+  </figcaption>
+</figure><figure class="tile" tabindex="0"
+  data-full="statewide_assets/view/T14-TEJON_47_LOC-2002706073.jpg" data-title="Tejon Ranch, Calif."
+  data-meta="Photograph · 1890-01-01 · Library of Congress, Prints &amp; Photographs Division"
+  data-depicts="Kern County — Tejon Ranch, California." data-rights="No known restrictions on publication.">
+  <div class="thumbwrap"><img loading="lazy" src="statewide_assets/thumbs/T14-TEJON_47_LOC-2002706073.jpg" alt="Tejon Ranch, Calif."></div>
+  <figcaption>
+    <span class="cat cat-photo">Photograph</span>
+    <span class="ttl">Tejon Ranch, Calif.</span>
+    <span class="src">1890-01-01 · Library of Congress, Prints &amp; Photographs Division</span>
+  </figcaption>
+</figure><figure class="tile" tabindex="0"
+  data-full="statewide_assets/view/T14-TEJON_48_LOC-2002737251.jpg" data-title="Tejon Ranch, Kern County, Cal."
+  data-meta="Photograph · 1888-01-01 · Library of Congress, Prints &amp; Photographs Division"
+  data-depicts="Kern County — Tejon Ranch." data-rights="No known restrictions on publication.">
+  <div class="thumbwrap"><img loading="lazy" src="statewide_assets/thumbs/T14-TEJON_48_LOC-2002737251.jpg" alt="Tejon Ranch, Kern County, Cal."></div>
+  <figcaption>
+    <span class="cat cat-photo">Photograph</span>
+    <span class="ttl">Tejon Ranch, Kern County, Cal.</span>
+    <span class="src">1888-01-01 · Library of Congress, Prints &amp; Photographs Division</span>
+  </figcaption>
+</figure><figure class="tile" tabindex="0"
+  data-full="statewide_assets/view/T14-TEJON_49_LOC-2003671025.jpg" data-title="Wild grape vines on the Tejon Ranch, Kern County, Calif."
+  data-meta="Photograph · 1890-01-01 · Library of Congress, Prints &amp; Photographs Division"
+  data-depicts="Kern County — Tejon Ranch (native grape vines / land cover)." data-rights="No known restrictions on publication.">
+  <div class="thumbwrap"><img loading="lazy" src="statewide_assets/thumbs/T14-TEJON_49_LOC-2003671025.jpg" alt="Wild grape vines on the Tejon Ranch, Kern County, Calif."></div>
+  <figcaption>
+    <span class="cat cat-photo">Photograph</span>
+    <span class="ttl">Wild grape vines on the Tejon Ranch, Kern County, Calif.</span>
+    <span class="src">1890-01-01 · Library of Congress, Prints &amp; Photographs Division</span>
+  </figcaption>
+</figure><figure class="tile" tabindex="0"
+  data-full="statewide_assets/view/T14-TEJON_50_LOC-2004668410.jpg" data-title="[Gigantic oak tree on the Tejon Ranch, Kern county, Calif.; Indian man, woman an"
+  data-meta="Photograph · 1888-01-01 · Library of Congress, Prints &amp; Photographs Division"
+  data-depicts="Kern County — Tejon Ranch (oak; Indian man)." data-rights="No known restrictions on publication.">
+  <div class="thumbwrap"><img loading="lazy" src="statewide_assets/thumbs/T14-TEJON_50_LOC-2004668410.jpg" alt="[Gigantic oak tree on the Tejon Ranch, Kern county, Calif.; Indian man, woman an"></div>
+  <figcaption>
+    <span class="cat cat-photo">Photograph</span>
+    <span class="ttl">[Gigantic oak tree on the Tejon Ranch, Kern county, Calif.; Indian man, woman an</span>
+    <span class="src">1888-01-01 · Library of Congress, Prints &amp; Photographs Division</span>
+  </figcaption>
+</figure><figure class="tile" tabindex="0"
+  data-full="statewide_assets/view/T14-TEJON_51_LOC-2006675573.jpg" data-title="Digger Indian family in front of adobe building and bough wigwam on reservation,"
+  data-meta="Photograph · 1880-01-01 · Library of Congress, Prints &amp; Photographs Division"
+  data-depicts="Kern County — Tejon Ranch / Sebastian (Tejon) Indian Reserva" data-rights="No known restrictions on publication.">
+  <div class="thumbwrap"><img loading="lazy" src="statewide_assets/thumbs/T14-TEJON_51_LOC-2006675573.jpg" alt="Digger Indian family in front of adobe building and bough wigwam on reservation,"></div>
+  <figcaption>
+    <span class="cat cat-photo">Photograph</span>
+    <span class="ttl">Digger Indian family in front of adobe building and bough wigwam on reservation,</span>
+    <span class="src">1880-01-01 · Library of Congress, Prints &amp; Photographs Division</span>
+  </figcaption>
+</figure><figure class="tile" tabindex="0"
+  data-full="statewide_assets/view/T14-TEJON_53_LOC-ca0189.jpg" data-title="Fort Tejon, Highway 99, Lebec, Kern County, CA"
+  data-meta="Survey / HABS · Documentation compiled a · Library of Congress (Historic American Buildings S"
+  data-depicts="Kern County (Lebec) — Fort Tejon, on land that was part of B" data-rights="No known restrictions on images made by ">
+  <div class="thumbwrap"><img loading="lazy" src="statewide_assets/thumbs/T14-TEJON_53_LOC-ca0189.jpg" alt="Fort Tejon, Highway 99, Lebec, Kern County, CA"></div>
+  <figcaption>
+    <span class="cat cat-document">Survey / HABS</span>
+    <span class="ttl">Fort Tejon, Highway 99, Lebec, Kern County, CA</span>
+    <span class="src">Documentation compiled a · Library of Congress (Historic American Buildings S</span>
+  </figcaption>
+</figure><figure class="tile" tabindex="0"
+  data-full="statewide_assets/view/T14-TEJON_54_LOC-ca0190.jpg" data-title="Fort Tejon, Barracks Number One, Highway 99, Lebec, Kern County, CA"
+  data-meta="Survey / HABS · Documentation compiled a · Library of Congress (Historic American Buildings S"
+  data-depicts="Kern County (Lebec) — Fort Tejon, on land that was part of B" data-rights="No known restrictions on images made by ">
+  <div class="thumbwrap"><img loading="lazy" src="statewide_assets/thumbs/T14-TEJON_54_LOC-ca0190.jpg" alt="Fort Tejon, Barracks Number One, Highway 99, Lebec, Kern County, CA"></div>
+  <figcaption>
+    <span class="cat cat-document">Survey / HABS</span>
+    <span class="ttl">Fort Tejon, Barracks Number One, Highway 99, Lebec, Kern County, CA</span>
+    <span class="src">Documentation compiled a · Library of Congress (Historic American Buildings S</span>
+  </figcaption>
+</figure><figure class="tile" tabindex="0"
+  data-full="statewide_assets/view/T14-TEJON_55_LOC-ca0191.jpg" data-title="Fort Tejon, Barracks Number Two, Highway 99, Lebec, Kern County, CA"
+  data-meta="Survey / HABS · Documentation compiled a · Library of Congress (Historic American Buildings S"
+  data-depicts="Kern County (Lebec) — Fort Tejon, on land that was part of B" data-rights="No known restrictions on images made by ">
+  <div class="thumbwrap"><img loading="lazy" src="statewide_assets/thumbs/T14-TEJON_55_LOC-ca0191.jpg" alt="Fort Tejon, Barracks Number Two, Highway 99, Lebec, Kern County, CA"></div>
+  <figcaption>
+    <span class="cat cat-document">Survey / HABS</span>
+    <span class="ttl">Fort Tejon, Barracks Number Two, Highway 99, Lebec, Kern County, CA</span>
+    <span class="src">Documentation compiled a · Library of Congress (Historic American Buildings S</span>
+  </figcaption>
+</figure><figure class="tile" tabindex="0"
+  data-full="statewide_assets/view/T14-TEJON_56_LOC-ca0192.jpg" data-title="Fort Tejon, Officers&#x27; Quarters, Highway 99, Lebec, Kern County, CA"
+  data-meta="Survey / HABS · Documentation compiled a · Library of Congress (Historic American Buildings S"
+  data-depicts="Kern County (Lebec) — Fort Tejon, on land that was part of B" data-rights="No known restrictions on images made by ">
+  <div class="thumbwrap"><img loading="lazy" src="statewide_assets/thumbs/T14-TEJON_56_LOC-ca0192.jpg" alt="Fort Tejon, Officers&#x27; Quarters, Highway 99, Lebec, Kern County, CA"></div>
+  <figcaption>
+    <span class="cat cat-document">Survey / HABS</span>
+    <span class="ttl">Fort Tejon, Officers&#x27; Quarters, Highway 99, Lebec, Kern County, CA</span>
+    <span class="src">Documentation compiled a · Library of Congress (Historic American Buildings S</span>
+  </figcaption>
+</figure><figure class="tile" tabindex="0"
+  data-full="statewide_assets/view/T14-TEJON_57_LOC-ca0193.jpg" data-title="Fort Tejon, Soldiers&#x27; Quarters, Highway 99, Lebec, Kern County, CA"
+  data-meta="Survey / HABS · Documentation compiled a · Library of Congress (Historic American Buildings S"
+  data-depicts="Kern County (Lebec) — Fort Tejon, on land that was part of B" data-rights="No known restrictions on images made by ">
+  <div class="thumbwrap"><img loading="lazy" src="statewide_assets/thumbs/T14-TEJON_57_LOC-ca0193.jpg" alt="Fort Tejon, Soldiers&#x27; Quarters, Highway 99, Lebec, Kern County, CA"></div>
+  <figcaption>
+    <span class="cat cat-document">Survey / HABS</span>
+    <span class="ttl">Fort Tejon, Soldiers&#x27; Quarters, Highway 99, Lebec, Kern County, CA</span>
+    <span class="src">Documentation compiled a · Library of Congress (Historic American Buildings S</span>
+  </figcaption>
+</figure><figure class="tile" tabindex="0"
+  data-full="statewide_assets/view/T14-TEJON_58_LOC-ca0194.jpg" data-title="Fort Tejon, Smokehouse, Highway 99, Lebec, Kern County, CA"
+  data-meta="Survey / HABS · Documentation compiled a · Library of Congress (Historic American Buildings S"
+  data-depicts="Kern County (Lebec) — Fort Tejon, on land that was part of B" data-rights="No known restrictions on images made by ">
+  <div class="thumbwrap"><img loading="lazy" src="statewide_assets/thumbs/T14-TEJON_58_LOC-ca0194.jpg" alt="Fort Tejon, Smokehouse, Highway 99, Lebec, Kern County, CA"></div>
+  <figcaption>
+    <span class="cat cat-document">Survey / HABS</span>
+    <span class="ttl">Fort Tejon, Smokehouse, Highway 99, Lebec, Kern County, CA</span>
+    <span class="src">Documentation compiled a · Library of Congress (Historic American Buildings S</span>
+  </figcaption>
+</figure><figure class="tile" tabindex="0"
+  data-full="statewide_assets/view/T14-TEJON_52_LOC-2010645756.jpg" data-title="Map of a portion of Kern County, California showing ranches, lakes, rivers, cana"
+  data-meta="Map / diseño · 1888 · Library of Congress, Prints &amp; Photographs Division"
+  data-depicts="Kern County — land-ownership/ranches map covering the Tejon " data-rights="No known restrictions on publication.">
+  <div class="thumbwrap"><img loading="lazy" src="statewide_assets/thumbs/T14-TEJON_52_LOC-2010645756.jpg" alt="Map of a portion of Kern County, California showing ranches, lakes, rivers, cana"></div>
+  <figcaption>
+    <span class="cat cat-map">Map / diseño</span>
+    <span class="ttl">Map of a portion of Kern County, California showing ranches, lakes, rivers, cana</span>
+    <span class="src">1888 · Library of Congress, Prints &amp; Photographs Division</span>
+  </figcaption>
+</figure></div>
+</section>
+<section class="ranch">
+  <div class="ranch-head">
+    <h3>Miller &amp; Lux <span class="rbadge rbadge-non">federal / farm / unbuilt today</span></h3>
+    <p class="ranch-sub">Fresno County — Los Baños · San Joaquin Valley — irrigated farmland · 1 item</p>
+  </div>
+  <div class="grid"><figure class="tile" tabindex="0"
+  data-full="statewide_assets/view/T15-MILLERLUX_59_LOC-KernCounty-ranches-1888-britton-rey.jpg" data-title="Map of a portion of Kern County, California showing ranches, lakes, rivers, cana"
+  data-meta="Map / diseño · 1888 (stated; [San Franc · Library of Congress, Prints &amp; Photographs Division"
+  data-depicts="KERN COUNTY, CA ranch lands (lakes, rivers, canals, sloughs," data-rights="&quot;No known restrictions on publication.&quot; ">
+  <div class="thumbwrap"><img loading="lazy" src="statewide_assets/thumbs/T15-MILLERLUX_59_LOC-KernCounty-ranches-1888-britton-rey.jpg" alt="Map of a portion of Kern County, California showing ranches, lakes, rivers, cana"></div>
+  <figcaption>
+    <span class="cat cat-map">Map / diseño</span>
+    <span class="ttl">Map of a portion of Kern County, California showing ranches, lakes, rivers, cana</span>
+    <span class="src">1888 (stated; [San Franc · Library of Congress, Prints &amp; Photographs Division</span>
+  </figcaption>
+</figure></div>
+</section>
+ <p class="note">The richest photograph troves belong to <b>Tejon Ranch</b> and the <b>Santa Margarita
+ y Las Flores</b> ranch (today Camp Pendleton) — land that is <em>not</em> under housing. The most
+ valuable remaining material is physical and undigitised, held in the historical societies and
+ title-company archives named in the report’s recommendations.</p>
+</div></section>
+
+<footer><div class="wrap">
+ <p><a href="index.html">← Return to the full investigation</a> &nbsp;·&nbsp;
+ <a href="index.html#the-general-case-why-this-isn-t-only-about-ladera-ranch">Chapter 24 in context</a> &nbsp;·&nbsp;
+ <a href="Ladera-Investigation-v1.0.pdf">Download the 282-page PDF</a></p>
+ <p class="fdisc">This platform is an independent research and data-organization project. It does not provide medical advice and does not establish that any pesticide, property, organization, employer, school, water provider, government agency, or other party caused any illness. Publicly reported health events may not have been independently medically verified. Geographic and temporal overlap does not establish exposure or causation. Formal conclusions require authorized epidemiological analysis, verified medical information, exposure assessment, toxicological review, and independent scientific evaluation.</p>
+</div></footer>
+
+<div class="lb" id="lb" role="dialog" aria-modal="true">
+ <button class="x" id="lbx" aria-label="Close">×</button>
+ <img id="lbi" src="" alt="">
+ <div class="cap">
+  <span class="lbt" id="lbt"></span>
+  <span class="lbm" id="lbm"></span>
+  <span class="lbr" id="lbr"></span>
+  <a class="open-src" id="lbo" href="#" target="_blank" rel="noopener">Open full-size image ↗</a>
+ </div>
+</div>
+
+<script>
+(function(){
+ var lb=document.getElementById('lb'),lbi=document.getElementById('lbi'),
+     lbt=document.getElementById('lbt'),lbm=document.getElementById('lbm'),
+     lbr=document.getElementById('lbr'),lbo=document.getElementById('lbo');
+ function open(el){
+   var full=el.getAttribute('data-full');
+   lbi.src=full; lbo.href=full;
+   lbt.textContent=el.getAttribute('data-title')||'';
+   var meta=el.getAttribute('data-meta')||'', dep=el.getAttribute('data-depicts')||'';
+   lbm.textContent=meta+(dep?'  ·  depicts: '+dep:'');
+   var r=el.getAttribute('data-rights'); lbr.textContent=r?('Rights: '+r):'';
+   lb.classList.add('open'); document.body.style.overflow='hidden';
+ }
+ function close(){ lb.classList.remove('open'); lbi.src=''; document.body.style.overflow=''; }
+ document.querySelectorAll('[data-full]').forEach(function(el){
+   el.addEventListener('click',function(){open(el);});
+   el.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();open(el);}});
+ });
+ document.getElementById('lbx').addEventListener('click',close);
+ lb.addEventListener('click',function(e){if(e.target===lb)close();});
+ document.addEventListener('keydown',function(e){if(e.key==='Escape')close();});
+})();
+</script>
+</body>
+</html>
