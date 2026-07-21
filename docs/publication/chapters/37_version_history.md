@@ -2,7 +2,7 @@
 
 This project issues corrections **openly and in full**. Nothing is silently revised. Where a finding changed, the superseded reasoning is retained in the text alongside the correction, because a report that shows only what survived scrutiny is not an honest report.
 
-**Version 1.0** — 39 catalogued claims, 91 registered sources.
+**Version 1.0** — 43 catalogued claims, 93 registered sources.
 
 
 ## Corrections issued
@@ -37,6 +37,10 @@ Each was caught by going to a primary source or by rendering the data rather tha
 
 | Commit | Date | Change |
 |---|---|---|
+| `3d63fca` | 2026-07-20 | Recommendations: add 'what the 1995 report can and cannot resolve' box |
+| `4b2b657` | 2026-07-20 | Add vertical B-roll motion graphics generator (5 clips, 1080x1920) |
+| `036da6d` | 2026-07-20 | Video: add water-overlay B-roll and public-domain dipping footage |
+| `f7fca4d` | 2026-07-20 | Concision pass: cut repeated correction meta-commentary; fix stale recs |
 | `746fc79` | 2026-07-20 | Reframe Ch.02 from a request for help to a statement of what is needed |
 | `8bf30df` | 2026-07-20 | Correct the author's residence and reframe the motivation; reorder front matter |
 | `7b8ac1c` | 2026-07-20 | Examine the 1912 infestation map; Ladera appears outside the residual area |
@@ -45,7 +49,3 @@ Each was caught by going to a primary source or by rendering the data rather tha
 | `6f6876e` | 2026-07-20 | Correct the PLSS finding and the survey chronology; reopen the GLO route |
 | `ed13357` | 2026-07-19 | Establish the development record; find why the entitlement EIR never surfaced |
 | `4d52e3a` | 2026-07-19 | Establish the land grant from the federal court record; correct Armor |
-| `ee4cfca` | 2026-07-19 | Add timeline, conclusion, and generated back matter; scripted PDF build |
-| `adb72a4` | 2026-07-19 | Environmental review audit: the historical window began in 1952 |
-| `a6dfd3f` | 2026-07-19 | Locate 1908 Orange County dipping records; narrow the quarantine window |
-| `fea8ab1` | 2026-07-19 | Verify the decisive question from primary sources; downgrade own finding |

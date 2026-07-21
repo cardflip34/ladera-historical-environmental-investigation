@@ -2,7 +2,7 @@
 
 Material questions this investigation has identified and cannot currently answer. These are stated plainly rather than smoothed over, because the shape of what is unknown is itself a result — and because a reader deserves to know where the floor gives way.
 
-**5 claims in this category.**
+**7 claims in this category.**
 
 
 ## EM-012 — Arsenical cattle dipping actually occurred within the Ladera Ranch footprint
@@ -58,4 +58,26 @@ Material questions this investigation has identified and cannot currently answer
 **Limiting or contradictory evidence.** Secondary accounts conflict on every material detail and none has been checked against a deed. US Land Commission case files - which frequently contain survey plats and testimony describing IMPROVEMENTS AND STRUCTURES, precisely what this investigation needs - are held by the National Archives and Bancroft and have NOT been obtained. BLM GLO records remain blocked behind Login.gov (DE-007).
 
 **Citation.** Gap identified from Armor (1921); primary sources not obtained
+
+
+## EM-041 — No located record ties cattle dipping to the O'Neill / Mission Viejo operation by name; the nearest documented dipping was a lessee's herd in Trabuco Canyon, on O'Neill-held Rancho Trabuco land but 8.4 miles from the footprint
+
+**Confidence:** Medium  ·  **Status:** Open
+
+**Supporting evidence.** Exhaustive California Digital Newspaper Collection searches for 'Mission Viejo', 'Santa Margarita', 'Trabuco', and 'O'Neill' combined with tick/dipping/quarantine, 1905-1918, surfaced no record tying dipping to the O'Neill operation by name. The 27 May 1908 Los Angeles Herald names J. C. Joplin's herd dipped in Trabuco Canyon; Joplin was a rancher/lessee, and Trabuco Canyon lies within or adjacent to the O'Neill-held Rancho Trabuco grant.
+
+**Limiting or contradictory evidence.** This TIGHTENS the association (dipping occurred on land the O'Neill interests held) WITHOUT moving a vat toward the Ladera footprint: Trabuco Canyon is 8.4 miles from the study area and outside Zone B. The dipping was attributed to Joplin, not the O'Neill operation. CDNC's Orange County newspaper coverage for 1905-1914 is thin, so this negative is bounded. The State Veterinarian's field records (naming Dr. Coleman's exact vat sites) would test any Joplin-to-O'Neill-land tie and are not yet obtained.
+
+**Citation.** Los Angeles Herald, 27 May 1908 [S-NEWS-LAH1908]; CDNC negative search, this investigation
+
+
+## EM-043 — No pre-1940 photograph of the Orange County ranch's cattle operations was located online; the early photographic record appears to be held physically and undigitised
+
+**Confidence:** High  ·  **Status:** Open - physical archives unsearched
+
+**Supporting evidence.** The digitised Orange County ranch working-cattle photographs are mid-20th-century (1966-1976, Mission Viejo Company era) and carry 'copyright status unknown'. The oldest OC ranch photos found online are 1940s. The 1900 Santa Margarita cattle photographs already held depict SAN DIEGO COUNTY, not this land.
+
+**Limiting or contradictory evidence.** This is a DIGITISATION gap, not an absence. The most likely homes for pre-1940 O'Neill ranch photographs are the Sherman Library & Gardens O'Neill collection (NOT described on the Online Archive of California - physical only) and the First American Title historical photo archive (12,500+ images, undigitised, appointment only). Neither has been searched in person. A single period photograph of the working facilities would materially change the imagery picture.
+
+**Citation.** OAC finding-aid audit (56 Sherman Library aids, none O'Neill/RMV); OC Public Libraries digital collections; this investigation
 

@@ -2,7 +2,7 @@
 
 Claims this investigation regards as established: documented in a primary or official source, verified against that source, and reproducible by a reader who follows the citation. Each carries its limiting or contradictory evidence, because an established fact with no stated limits is usually an overstated one.
 
-**27 claims in this category.**
+**28 claims in this category.**
 
 
 ## EM-001 — Ladera Ranch sits on land that was part of the Rancho Mission Viejo cattle operation prior to development
@@ -300,4 +300,15 @@ Claims this investigation regards as established: documented in a primary or off
 **Limiting or contradictory evidence.** A statement about regulatory status at one date, at county level. It indicates the tick problem in Orange County was among the most severe in California, but places no facility anywhere.
 
 **Citation.** California State Veterinarian, Fifth Biennial Report (1908)
+
+
+## EM-042 — The oldest depiction of this land is a USGS map field-surveyed in 1899; no photographic image predates the 1929 aerial
+
+**Confidence:** High  ·  **Status:** Verified
+
+**Supporting evidence.** USGS Corona 30-minute quadrangle, field-surveyed 1899, published 1902 at 1:125,000, covers the full footprint (georeferencing verified by inverse polyconic projection). No aerial predates 1929: the 1927-28 Fairchild flights over Orange County all stopped at the coast/metro west of SR-133, verified against the flight index reports; the study area is bare basemap on each.
+
+**Limiting or contradictory evidence.** The 1899 map is 1:125,000 - too coarse to show a single building or a vat - and it PRE-DATES the 1907-1912 dipping period, so it cannot show a vat regardless. It is a baseline of the landscape before dipping, not evidence of any facility. The imagery record for this land is now exhausted at both ends: nothing older than the 1899 map or the 1929 photo.
+
+**Citation.** USGS Historical Topographic Map Collection, Corona quadrangle 1902 (1899 survey) [S-USGS-CORONA]; UCSB FrameFinder flight indices
 

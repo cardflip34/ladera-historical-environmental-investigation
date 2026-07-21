@@ -1,0 +1,155 @@
+{
+  "_note": "Provenance sidecar for ORANGE COUNTY Rancho Mission Viejo (O'Neill ranch) image assets downloaded 2026-07-20. Metadata transcribed verbatim from the stated repository CONTENTdm records (dmGetItemInfo) and Calisphere item pages. Distinct from the San Diego County Santa Margarita/Camp Pendleton assets in the sibling provenance files. Do not edit by hand without re-verifying against the permanent links.",
+  "retrieved_date": "2026-07-20",
+  "geographic_scope": "Orange County, California — the O'Neill Rancho Mission Viejo / Rancho Trabuco (land under present-day Ladera Ranch, Mission Viejo, Rancho Santa Margarita). NOT the San Diego County Rancho Santa Margarita y Las Flores (Camp Pendleton).",
+  "access_notes": {
+    "calisphere": "Item HTML pages fetched same-origin from a rendered calisphere.org browser session (curl/WebFetch receive HTTP 202 bot gate).",
+    "contentdm_ocpl": "cdm16838.contentdm.oclc.org (OC Public Libraries) serves dmwebservices JSON API and IIIF endpoints to curl with a browser User-Agent + Calisphere Referer. IIIF full/full returns the stored derivative (capped, ~2000-3300 px).",
+    "contentdm_huntington": "hdl.huntington.org (Huntington Library) serves the same CONTENTdm JSON API and IIIF endpoints. Map masters are large (~10000 px); a 3000-3200 px wide derivative was requested via IIIF full/{w},/."
+  },
+  "photographs_OC_ranch_operations": {
+    "collection": "OC Stories Photos",
+    "contributing_institution": "OC Public Libraries",
+    "contentdm_alias": "p16838coll1",
+    "rights_statement_verbatim": "Copyright status is unknown. Some materials in these collections may be protected by the U.S. Copyright Law (Title 17, U.S.C.). In addition, the reproduction of some materials may be restricted by terms of gift or purchase agreements, donor restrictions, privacy and publicity rights, licensing and trademarks. Transmission or reproduction of materials protected by copyright beyond that allowed by fair use requires the written permission of the copyright owners. Responsibility for any use rests exclusively with the user.",
+    "rights_flag": "RIGHTS UNKNOWN — not asserted public domain. Retrieved as a research reference copy only. Publication requires clearance with OC Public Libraries.",
+    "date_caveat": "The digitized OC ranch working-cattle photographs in this collection date 1967-1976 (the late O'Neill / early Mission Viejo Company era), NOT the 1907-1912 study period. No pre-1940 digitized photograph of the Orange County ranch's cattle operations was located online in this session.",
+    "items": [
+      {
+        "filename": "OCPL_OCStories_MissionViejoRanch_roundup_1972_id1279.jpg",
+        "title_verbatim": "Mission Viejo Ranch round-up",
+        "description_verbatim": "Mission Viejo Ranch round-up. 1972.",
+        "date_stated": "1972",
+        "contentdm_id": "1279",
+        "permanent_url": "http://cdm16838.contentdm.oclc.org/cdm/ref/collection/p16838coll1/id/1279",
+        "calisphere_permalink": "https://calisphere.org/item/6b8f69df00129cee7e939043d2f32270/",
+        "iiif_download": "https://cdm16838.contentdm.oclc.org/digital/iiif/p16838coll1/1279/full/full/0/default.jpg",
+        "downloaded_derivative": {"dimensions": "1200x944", "bytes": 181825}
+      },
+      {
+        "filename": "OCPL_OCStories_MissionViejoRanch_CattleCorralEntrance_CHAA018_id1691.jpg",
+        "title_verbatim": "Corral entrance, Mission Viejo Ranch",
+        "description_verbatim": "Cattle Corral entrance, Mission Viejo Ranch",
+        "date_stated": "197-",
+        "identifier_verbatim": "CHAA018",
+        "contentdm_id": "1691",
+        "permanent_url": "http://cdm16838.contentdm.oclc.org/cdm/ref/collection/p16838coll1/id/1691",
+        "calisphere_permalink": "https://calisphere.org/item/40cc648922a8c5cae7070493569a366a/",
+        "iiif_download": "https://cdm16838.contentdm.oclc.org/digital/iiif/p16838coll1/1691/full/full/0/default.jpg",
+        "downloaded_derivative": {"dimensions": "2344x3336", "bytes": 688766}
+      },
+      {
+        "filename": "OCPL_OCStories_CattleAtRanchoMissionViejo_1972_CHAA112_id1785.jpg",
+        "title_verbatim": "Cattle at Rancho Mission Viejo",
+        "date_stated": "1972",
+        "identifier_verbatim": "CHAA112",
+        "contentdm_id": "1785",
+        "permanent_url": "http://cdm16838.contentdm.oclc.org/cdm/ref/collection/p16838coll1/id/1785",
+        "calisphere_permalink": "https://calisphere.org/item/e7c9bc93e27ee4060c66f169cfdc31c4/",
+        "iiif_download": "https://cdm16838.contentdm.oclc.org/digital/iiif/p16838coll1/1785/full/full/0/default.jpg",
+        "downloaded_derivative": {"dimensions": "2064x2056", "bytes": 344747}
+      },
+      {
+        "filename": "OCPL_OCStories_MissionViejoRanchWell_AliceChandler_dowsed_1971_id1690.jpg",
+        "title_verbatim": "Mission Viejo Ranch Well",
+        "description_verbatim": "Alice Chandler (right) at the well she \"witched\" (dowsed) for Mission Viejo Ranch",
+        "date_stated": "1971",
+        "relevance": "TARGET 3 water infrastructure — a Rancho Mission Viejo well; caption names Alice Chandler (of the O'Neill family).",
+        "contentdm_id": "1690",
+        "permanent_url": "http://cdm16838.contentdm.oclc.org/cdm/ref/collection/p16838coll1/id/1690",
+        "iiif_download": "https://cdm16838.contentdm.oclc.org/digital/iiif/p16838coll1/1690/full/full/0/default.jpg",
+        "downloaded_derivative": {"dimensions": "2112x2072", "bytes": 410315}
+      },
+      {
+        "filename": "OCPL_OCStories_MissionViejoRanch_branding_AliceChandler_ranchhand_1971_id1676.jpg",
+        "title_verbatim": "Alice Chandler and ranch hand at Mission Viejo Ranch branding event",
+        "date_stated": "1971",
+        "contentdm_id": "1676",
+        "permanent_url": "http://cdm16838.contentdm.oclc.org/cdm/ref/collection/p16838coll1/id/1676",
+        "iiif_download": "https://cdm16838.contentdm.oclc.org/digital/iiif/p16838coll1/1676/full/full/0/default.jpg",
+        "downloaded_derivative": {"dimensions": "2040x2056", "bytes": 374428}
+      }
+    ],
+    "cluster_not_downloaded_note": "The OC Stories Photos 'Mission Viejo Ranch' cluster holds ~34 items (dmQuery on p16838coll1), all 1967-1976, incl. multiple cattle-vaccination frames (ids 1280,1281,1283,1284,1285), 'Spectators at a round-up' (1282), 'Rodeo Show with Monte Montana' (1687), 'Southern California Cattlemen's Association Event' (1671), 'Two old Capistrano Ranchers' (1731), 'Maria, the cook for the Mission Viejo Ranch' (1278), 'Horse Cart' (1673), 'Mesa Top' (1288,1289), and TWO 1940s items 'Fred Nieblas Ranch, Rancho Santa Margarita' (ids 3430,3443, dated 194-) which are the OLDEST OC ranch photos in the collection."
+  },
+  "photographs_OC_ranch_LATimes": {
+    "filename_not_downloaded": "n/a",
+    "title_verbatim": "Ranchers branding, inoculating, and dehorning a calf at Rancho Mission Viejo, Calif.",
+    "caption_verbatim": "SWIFT SURGERY-This bovine operating table was unknown to old-time cowpokes, but the results are the same. A calf is branded, inoculated, dehorned and converted into steer in one operation, at Rancho Mission Viejo, 52,000-acre spread near San Juan Capistrano.",
+    "date_stated": "May 9, 1966 (1966-05-09)",
+    "contributing_institution": "UCLA, Library Special Collections, Charles E. Young Research Library",
+    "collection": "Los Angeles Times Photographic Archives",
+    "identifier_verbatim": "uclalat_1429_b574_232589 ark:/21198/zz0002v1r7",
+    "source_url": "https://digital.library.ucla.edu/catalog/ark:/21198/zz0002v1r7",
+    "calisphere_permalink": "https://calisphere.org/item/ark:/21198/zz0002v1r7/",
+    "rights_note": "Held by UCLA Library Special Collections (LA Times Photographic Archive). Rights/permissions via spec-coll@library.ucla.edu. NOT downloaded (rights); recorded as a confirmed holding. A UCLA IIIF derivative is available at the source catalog.",
+    "relevance": "TARGET 2 — an Orange County working-cattle image (branding/dehorning/inoculating), dated 1966."
+  },
+  "maps_OC_ranch": {
+    "contributing_institution": "The Huntington Library, Art Museum, and Botanical Gardens",
+    "collection": "Maps (CONTENTdm alias p15150coll4; identifiers prefixed LARM = Los Angeles Region Maps)",
+    "rights_statement_verbatim": "For information on use of Digital Library materials, please see Library Rights and Permissions: https://www.huntington.org/library-rights-permissions",
+    "rights_flag": "Huntington asserts a permissions policy over its digital reproductions. The underlying 1875/1877 manuscript county-survey maps are almost certainly public domain by age; use of the Huntington scan should be cleared per its permissions policy. Retrieved as research reference copies.",
+    "items": [
+      {
+        "filename": "Huntington_LARM_VolD_09-01_CountyRoad_SJC_to_south_line_RanchoMissionViejo_1875-08_id7242.jpg",
+        "title_verbatim": "County-Road, running from San Juan Capistrano to the southline of the Rancho Mission Viejo",
+        "date_stated": "1875-08",
+        "description_verbatim": "Shows landowners, topography, and Canada del Orno [Oro]. Includes color highlighting. Township/Range: T.7S.R.7W, Sec. 30, 31; T.7S.R.8W, Sec. 36; T.8S.R.8W, Sec. 1; T.8S.R.7W, Sec.6",
+        "identifier_verbatim": "LARM_Vol_D_09.01 / 306633",
+        "contentdm_id": "7242",
+        "permanent_url": "http://hdl.huntington.org/cdm/ref/collection/p15150coll4/id/7242",
+        "calisphere_permalink": "https://calisphere.org/item/d5bc4445a2385052cc4b5bb5d8a825c4/",
+        "iiif_download": "https://hdl.huntington.org/digital/iiif/p15150coll4/7242/full/3000,/0/default.jpg",
+        "iiif_master_size": "9972x7572",
+        "downloaded_derivative": {"dimensions": "2999x2277", "bytes": 429683},
+        "visual_confirmation": "Cartouche reads 'COUNTY-ROAD running from San Juan Capistrano to the Southline of the Rancho Mission Viejo.' Certified by the State of California, County of Los Angeles, County Surveyor's Office (Orange County was part of Los Angeles County until 1889); signed by the county surveyor (signature reads 'L. Seebold', August 1875). Grid T.7S/T.8S x R.7W/R.8W, Sec. 30/31/36/1/6. Road follows a canyon labelled 'Cañada del Oro'. Adjoining landowners labelled: J. G. Michner, W. Sheeham, Davis, H. Charles, Charles Abila, Ramon Abila, J. Sheeham. Kodak colour-calibration bar along the bottom edge (Huntington digitization)."
+      },
+      {
+        "filename": "Huntington_LARM_MissionViejo_topography_landowners_RanchoTrabuco_Niguel_undated_id7248.jpg",
+        "title_verbatim": "[Mission Viejo]",
+        "date_stated": "undated (repository date field empty)",
+        "description_verbatim": "Shows topography, landowners, Rancho Trabuco, and Niguel. Includes color highlighting. Township/Range: T.7S.R.8W, Sec. 1, 2, 11, 12, 13, 14, 23, 24",
+        "contentdm_id": "7248",
+        "permanent_url": "http://hdl.huntington.org/cdm/ref/collection/p15150coll4/id/7248",
+        "iiif_download": "https://hdl.huntington.org/digital/iiif/p15150coll4/7248/full/3200,/0/default.jpg",
+        "iiif_master_size": "10303x7668",
+        "downloaded_derivative": {"dimensions": "3200x2381", "bytes": 477469},
+        "relevance": "TARGET 3 — a topographic/landowner map covering the Rancho Mission Viejo / Rancho Trabuco / Niguel area (T.7S R.8W)."
+      },
+      {
+        "filename": "Huntington_LARM_TrabucoRoad_NEcorner_RanchoTrabuco_to_AnaheimTelegraphRoad_1877-06_id7284.jpg",
+        "title_verbatim": "Map of the Trabuco Road connecting the N.E. Corner of Rancho Trabuco with Anaheim Telegraph Road",
+        "date_stated": "1877-06",
+        "description_verbatim": "Shows Lomas de Santiago.",
+        "contentdm_id": "7284",
+        "permanent_url": "http://hdl.huntington.org/cdm/ref/collection/p15150coll4/id/7284",
+        "iiif_download": "https://hdl.huntington.org/digital/iiif/p15150coll4/7284/full/3200,/0/default.jpg",
+        "iiif_master_size": "9766x7788",
+        "downloaded_derivative": {"dimensions": "3200x2551", "bytes": 503472},
+        "relevance": "TARGET 3 — 1877 road survey tying the northeast corner of Rancho Trabuco (O'Neill land) to the Anaheim Telegraph Road, via the Lomas de Santiago."
+      }
+    ],
+    "huntington_maps_not_downloaded": [
+      {"id": "7287", "title": "Rancho Trabuco", "date": "undated", "desc": "Shows topography. Station 13 of Rancho Trabuco, Sec. 9,10,11,13,15,16,17,20,21,22,23", "permanent_url": "http://hdl.huntington.org/cdm/ref/collection/p15150coll4/id/7287"},
+      {"id": "7283", "title": "[Orange County]", "permanent_url": "http://hdl.huntington.org/cdm/ref/collection/p15150coll4/id/7283"},
+      {"id": "7268", "title": "Los Angeles and San Diego Road", "permanent_url": "http://hdl.huntington.org/cdm/ref/collection/p15150coll4/id/7268"},
+      {"id": "7324", "title": "[San Juan Capistrano]", "date": "1860", "permanent_url": "http://hdl.huntington.org/cdm/ref/collection/p15150coll4/id/7324"},
+      {"id": "11346", "title": "Map of San Juan Valley, San Juan Capistrano California", "date": "1888", "permanent_url": "http://hdl.huntington.org/cdm/ref/collection/p15150coll4/id/11346"}
+    ]
+  },
+  "primary_source_newspaper_TARGET1": {
+    "title_verbatim": "HOPE TO SAVE CATTLE FROM THE TEXAS TICK",
+    "publication": "Los Angeles Herald, Volume 35, Number 238, 27 May 1908, page 10 (dateline SANTA ANA, May 26)",
+    "article_id": "LAH19080527.2.83.22.7.3",
+    "persistent_link": "https://cdnc.ucr.edu/?a=d&d=LAH19080527.2.83.22.7.3",
+    "repository": "California Digital Newspaper Collection (CDNC), UC Riverside",
+    "ocr_text_verbatim": "SANTA ANA, May 26.—Dr. Coleman of Los Angeles, deputy state quarantine officer, was here today in consultation with Orange county cattle raisers on the subject of protection of their herds from the Texas tick. Within the last ten days several hundred head of stock have been treated by dipping at the ranch of J. C. Joplin in Trabuco canyon, six or seven hundred head are now being dipped at Capistrano and dipping is in progress at Yorba and at the Bixby ranch in Santa Ana canyon. Dr. Coleman speaks hopefully of the prospect of eradicating the cattle pest and predicts that Orange county herds will soon be given a clean bill of health.",
+    "significance": "This is the primary source underlying the previously-reported 'four 1908 Orange County dipping sites' (Joplin/Trabuco Canyon, Capistrano, Yorba, Bixby/Santa Ana Canyon). It names the state official (Dr. Coleman, deputy state quarantine officer). NONE of the four dipping sites is attributed to the O'Neill / Mission Viejo / Santa Margarita ranch. Grade B2 (reputable newspaper quoting a named official).",
+    "geographic_note": "J. C. Joplin's cattle were dipped 'in Trabuco canyon' — Trabuco Canyon lies within/adjacent to the O'Neill Rancho Trabuco, but the herd and dipping are attributed to Joplin (a lessee/rancher), not to the O'Neill operation."
+  },
+  "false_friend_flag": {
+    "item": "Map of the Mission Viejo or La Purisima Rancho [Calif.] ... Ralph W. Norris, May 1859 (UC Berkeley, Bancroft Library, Land Case Map D-1024, ark:/13030/hb9n39p2gd)",
+    "warning": "This is NOT the Orange County O'Neill Rancho Mission Viejo. It is 'Rancho La Misión Vieja de la Purísima', confirmed to Joaquín & José Carrillo, at approx. W 120°28'/N 34°37' — i.e. SANTA BARBARA COUNTY (Lompoc / La Purísima Mission area). The O'Neill OC ranch's own Mexican grant was 'Rancho Misión Vieja o La Paz' (Forster), a different land-case map. Do not conflate."
+  }
+}

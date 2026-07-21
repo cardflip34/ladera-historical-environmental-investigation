@@ -5,9 +5,9 @@ The bibliography lists sources. This lists **where the underlying material actua
 A citation to a document nobody opened is a weaker thing than a citation to one that was read, and this report distinguishes them.
 
 
-## Archived locally — 74 files
+## Archived locally — 86 files
 
-Total 974 MB under `evidence/`. Retained so every citation in this report can be checked against the document it came from.
+Total 1002 MB under `evidence/`. Retained so every citation in this report can be checked against the document it came from.
 
 | File | Location | Size |
 |---|---|---|
@@ -52,17 +52,29 @@ Total 974 MB under `evidence/`. Retained so every citation in this report can be
 | `OsoGrande_Phase1_2002.pdf` | `evidence/documents/` | 2.9 MB |
 | `OsoGrande_Phase1_Addendum_2003.pdf` | `evidence/documents/` | 1.3 MB |
 | `RanchPlan_AffordableHousing_FinalPEIR_SCH2015051062_2016.pdf` | `evidence/documents/` | 50.5 MB |
+| `USGS_HTMC_CA_Capistrano_299262_1902_125000_geo.tif` | `evidence/documents/` | 2.6 MB |
+| `USGS_HTMC_CA_Corona_299300_1902_125000_geo.tif` | `evidence/documents/` | 8.2 MB |
+| `USGS_HTMC_CA_Southern_California_Sheet_No_1_299898_1901_250000_geo.tif` | `evidence/documents/` | 13.9 MB |
 | `Vredenburgh_OrangeCounty_GLO_LandPatents_index.pdf` | `evidence/documents/` | 0.2 MB |
 | `zoom_1912map_OrangeSanDiego.png` | `evidence/documents/` | 0.9 MB |
 | `Bancroft_LandCaseMapE-1362A_1867_Plat_RanchoSantaMargaritaYLasFlores_Strobel.jpg` | `evidence/images/` | 0.2 MB |
 | `HABS_CA-48_SantaMargaritaRanchHouse_01_general_view_from_south.tif` | `evidence/images/` | 15.4 MB |
 | `HABS_CA-48_SantaMargaritaRanchHouse_02_nw_elevation_from_west.tif` | `evidence/images/` | 15.4 MB |
 | `HABS_CA-48_SantaMargaritaRanchHouse_03_nw_elevation_from_north.tif` | `evidence/images/` | 14.3 MB |
+| `Huntington_LARM_MissionViejo_topography_landowners_RanchoTrabuco_Niguel_undated_id7248.jpg` | `evidence/images/` | 0.5 MB |
+| `Huntington_LARM_TrabucoRoad_NEcorner_RanchoTrabuco_to_AnaheimTelegraphRoad_1877-06_id7284.jpg` | `evidence/images/` | 0.5 MB |
+| `Huntington_LARM_VolD_09-01_CountyRoad_SJC_to_south_line_RanchoMissionViejo_1875-08_id7242.jpg` | `evidence/images/` | 0.4 MB |
 | `OCPL_OCArchives_TrabucoAdobeRuins_ONeillPark_dateUnknown_id1508.jpg` | `evidence/images/` | 0.1 MB |
+| `OCPL_OCStories_CattleAtRanchoMissionViejo_1972_CHAA112_id1785.jpg` | `evidence/images/` | 0.3 MB |
+| `OCPL_OCStories_MissionViejoRanchWell_AliceChandler_dowsed_1971_id1690.jpg` | `evidence/images/` | 0.4 MB |
+| `OCPL_OCStories_MissionViejoRanch_CattleCorralEntrance_CHAA018_id1691.jpg` | `evidence/images/` | 0.7 MB |
+| `OCPL_OCStories_MissionViejoRanch_branding_AliceChandler_ranchhand_1971_id1676.jpg` | `evidence/images/` | 0.4 MB |
+| `OCPL_OCStories_MissionViejoRanch_roundup_1972_id1279.jpg` | `evidence/images/` | 0.2 MB |
 | `SantaAnaPL_11478002_TrabucoMesaAdobe_RanchoCanadaDeLosAlisos_1930.jpg` | `evidence/images/` | 0.1 MB |
 | `SantaAnaPL_11478010_TrabucoMesaAdobe_SEview_undated.jpg` | `evidence/images/` | 0.1 MB |
 | `SantaAnaPL_11478028_TrabucoMesaAdobe_Wview_1936.jpg` | `evidence/images/` | 0.1 MB |
 | `rancho_historical_images_provenance.json` | `evidence/images/` | 0.0 MB |
+| `rancho_mission_viejo_OC_provenance.json` | `evidence/images/` | 0.0 MB |
 | `santa_margarita_ranch_usc_chs_provenance.json` | `evidence/images/` | 0.0 MB |
 | `usc_chs2085_UC123008_santa_marguerita_ranch_vineyard_and_winery_1886.jpg` | `evidence/images/` | 0.2 MB |
 | `usc_chs2358_UC139843_cattle_grazing_near_small_stream_santa_margarita_ranch_sd_county_1900.jpg` | `evidence/images/` | 0.2 MB |
@@ -100,6 +112,7 @@ Total 974 MB under `evidence/`. Retained so every citation in this report can be
 | `S-USDA-C207` | Directions for constructing vats and dipping cattle to destroy ticks (BAI Circular No. 207) | A1 |
 | `S-USDA-FB1057` | Cattle-fever ticks and methods of eradication (Farmers' Bulletin No. 1057) | A1 |
 | `S-USDA-LEC1916` | Illustrated lecture on cattle-tick eradication | A1 |
+| `S-USGS-CORONA` | USGS Corona 30-minute quadrangle (field-surveyed 1899, published 1902), 1:125,000 | A1 |
 | `SRC-ATSDR-AS` | ToxGuide / Toxicological Profile for Arsenic | A1 |
 | `SRC-BLM-PLSS` | BLM National PLSS CadNSDI cadastral service | A1 |
 | `SRC-DEM-001` | Decennial Census 2010 & 2020 — Ladera Ranch CDP | A1 |
@@ -147,6 +160,7 @@ Total 974 MB under `evidence/`. Retained so every citation in this report can be
 | `SRC-WA-ORCHARD` | Model Remedies for Former Orchards; Building Homes on Former Orchard Lands | A2 |
 | `SRC-WS-001` | SMWD Consumer Confidence Reports 2016-2026 | A2 |
 | `SRC-WS-002` | SMWD Recycled Water Program | A2 |
+| `S-ARCH-RMVPHOTO` | Rancho Mission Viejo (Orange County) photograph and map collections | B1 |
 | `S-ARMOR-1921` | History of Orange County, California, with Biographical Sketches | B1 |
 | `SRC-ARSENITE-HERB` | History of sodium arsenite as herbicide and soil sterilant | B1 |
 | `SRC-CATTLE-TICK` | California's Cattle-Range Industry: Decimation of the Herds 1870-1912 (tick quarantine and arsen | B1 |

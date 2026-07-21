@@ -2,9 +2,9 @@
 
 Every source consulted, graded on the fixed hierarchy set out in the methodology chapter. A record carries exactly one grade, and **a lower grade is never silently promoted** — a claim that appears in a newspaper becomes A1 only when the underlying official record is located and read.
 
-**91 sources.** Generated directly from the project's source registry, so this list cannot drift out of step with the registry itself.
+**93 sources.** Generated directly from the project's source registry, so this list cannot drift out of step with the registry itself.
 
-Distribution: **A1** 33 · **A2** 24 · **B1** 10 · **B2** 11 · **C** 11 · **D** 2
+Distribution: **A1** 34 · **A2** 24 · **B1** 11 · **B2** 11 · **C** 11 · **D** 2
 
 
 ## Grade A1
@@ -103,6 +103,11 @@ Distribution: **A1** 33 · **A2** 24 · **B1** 10 · **B2** 11 · **C** 11 · **
   `SRC-GEO-3DEP`
   
   *Known limitations:* MODERN surface only. Ladera Ranch was mass-graded, so elevations and slopes inside the built area reflect engineered pads, NOT original landform. Cannot be used to infer pre-development terrain.
+
+- **USGS Corona 30-minute quadrangle (field-surveyed 1899, published 1902), 1:125,000** U.S. Geological Survey, 1902. <https://ngmdb.usgs.gov/topoview/> Retrieved 2026-07-20.  
+  `S-USGS-CORONA`
+  
+  *Known limitations:* 1:125,000 (two miles to the inch) - too coarse to resolve individual buildings or a dip vat. Field-surveyed 1899, so it pre-dates the 1907-1912 dipping period and cannot depict a vat. Value is as a pre-dipping landscape baseline.
 
 - **BLM National PLSS CadNSDI cadastral service** US Bureau of Land Management, 2026-07-18. <https://gis.blm.gov/arcgis/rest/services/Cadastral/BLM_Natl_PLSS_CadNSDI/MapServer> Retrieved 2026-07-18.  
   `SRC-BLM-PLSS`
@@ -309,6 +314,11 @@ Distribution: **A1** 33 · **A2** 24 · **B1** 10 · **B2** 11 · **C** 11 · **
   `SRC-CATTLE-TICK`
   
   *Known limitations:* Historical journal article; dipping procedure detail limited
+
+- **Rancho Mission Viejo (Orange County) photograph and map collections** Sherman Library & Gardens; First American Title; Huntington Library; OC Public Libraries, n.d.. <https://www.slgardens.org/> Retrieved 2026-07-20.  
+  `S-ARCH-RMVPHOTO`
+  
+  *Known limitations:* The pre-1940 O'Neill ranch photographic record is largely UNDIGITISED and physical-only. Sherman Library's O'Neill collection is not described on the Online Archive of California. First American's 12,500-image OC archive is appointment-only. Online OC ranch photos are mid-century (1966-1976) with 'copyright status unknown' and are NOT reproduced in this publication.
 
 - **Ewing Sarcoma. StatPearls. NCBI Bookshelf NBK559183.** StatPearls / NCBI, 2023-01-01. <https://www.ncbi.nlm.nih.gov/books/NBK559183/> Retrieved 2026-07-18.  
   `SRC-LIT-006`

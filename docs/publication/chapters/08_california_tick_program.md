@@ -201,6 +201,30 @@ What is now established is the weaker proposition that **cattle operations in th
 under county order, within a few miles of this land**. That materially raises the prior. It does
 not identify a facility, a chemistry, or a location within the study area.
 
+### The O'Neill land connection — real, but it does not reach the footprint
+
+Two findings tighten the association between this operation and documented dipping, without
+moving a vat toward the study area.
+
+First, the ranch was under **named management throughout the quarantine.** Richard O'Neill Sr.
+deeded his half-interest to his son **Jerome O'Neill** in 1907; Richard Sr. died in 1910; Jerome
+managed the ranch from 1907 to 1926 (EM-040). The dipping years fell squarely inside his tenure.
+
+Second, of the four 1908 dipping sites, the nearest — **J. C. Joplin's herd, dipped in Trabuco
+Canyon** — was dipped on or adjacent to **Rancho Trabuco, one of the grants the O'Neill interests
+held.**
+
+::: classification open
+**EM-041 · OPEN QUESTION.** This means dipping occurred *on land the O'Neill interests owned* —
+but the herd was **Joplin's**, a lessee or neighbouring rancher, **not the O'Neill operation**,
+and Trabuco Canyon is **8.4 miles** from the study footprint, outside Zone B. An exhaustive
+newspaper search tied no dipping to the Mission Viejo operation *by name*.
+
+So the association tightens — dipping on O'Neill-held land, under named management — while the
+distance to this footprint does not close at all. The record that would resolve it, the State
+Veterinarian's field reports naming Dr. Coleman's exact vat sites, has not been obtained.
+:::
+
 ## 8.4b The residual quarantine area, mapped
 
 The 7 March 1912 proclamation did **not** clear the whole county. The State Veterinarian's Sixth

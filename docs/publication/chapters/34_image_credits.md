@@ -2,7 +2,7 @@
 
 Every image published, with its repository, rights status **as the repository states it**, and its interpretation boundary. Rights statements are reproduced rather than summarised, because a paraphrased licence is not a licence.
 
-**26 published figures.**
+**28 published figures.**
 
 Images held in the evidence archive but **not** published for rights reasons are listed at the end.
 
@@ -343,6 +343,32 @@ Images held in the evidence archive but **not** published for rights reasons are
 | Published as | assets/images/fig-26.jpg (1800x1635) |
 
 **Interpretation boundary.** The 'ORANGE' label sits well north-west of the solid dark wedge. The wedge lies at the coastal corner adjoining San Diego County - the San Clemente / San Onofre area. Ladera Ranch is roughly 8-10 miles north of that corner and appears OUTSIDE the residual quarantine area. THIS IS A READING OF A SMALL-SCALE MAP, NOT A BOUNDARY DETERMINATION. The proclamation text itself does not delimit the area.
+
+
+### FIG-27 — USGS Corona quadrangle, field-surveyed 1899 — the pre-dipping baseline
+
+| | |
+|---|---|
+| Date | 1899 |
+| Repository | U.S. Geological Survey |
+| Rights | Public domain (U.S. Government work). |
+| Original | 4719x4761 — `research/historical_imagery/candidates/PREDIP_1899_corona_footprint.jpg` |
+| Published as | assets/images/fig-27.jpg (1784x1800) |
+
+**Interpretation boundary.** The OLDEST depiction of this land that exists: field-surveyed 1899, eight years before the dipping era and thirty years before the first aerial. At 1:125,000 it is too coarse to show a single building or a vat, and it PRE-DATES any dipping vat, so it cannot show one. It establishes the before picture: Arroyo Trabuco as the main drainage, the north-south corridor road, the R8W/R7W township line through the footprint (confirming the parcel straddles two ranges), and no settlement inside the footprint. Cyan box = the study footprint.
+
+
+### FIG-28 — Candidate working-area regions — a sampling frame, not vat detections
+
+| | |
+|---|---|
+| Date | 1937-38 |
+| Repository | This investigation (derived; base imagery OC Survey) |
+| Rights | Derived figure; base imagery public record. |
+| Original | 1600x1387 — `research/historical_imagery/candidates/REGIONS_1937.jpg` |
+| Published as | assets/images/fig-28.jpg (1600x1387) |
+
+**Interpretation boundary.** PRIORITY-SEARCH ZONES ONLY. These are the eight places where a working facility would most likely have stood IF one existed, ranked by terrain logic (mapped water + flat ground + trail convergence). R1 is the one known 1948 structure; R2-R8 are water clusters. NO vat or corral was detected at any of them on the 1.15 ft/px imagery. They are where soil sampling should begin, NOT locations where anything has been found. Every candidate clusters on the western Trabuco corridor because that is the only water in the footprint.
 
 
 ---

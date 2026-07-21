@@ -1,0 +1,92 @@
+[
+ {
+  "id": "C01",
+  "lat": 33.55505,
+  "lon": -117.65492,
+  "kind": "ranch_node",
+  "area_m2": 99999,
+  "in_zone_a": true,
+  "file": "research/historical_imagery/candidates/C01_1937.jpg"
+ },
+ {
+  "id": "C02",
+  "lat": 33.54394,
+  "lon": -117.66132,
+  "kind": "water",
+  "area_m2": 24745,
+  "in_zone_a": true,
+  "file": "research/historical_imagery/candidates/C02_1937.jpg"
+ },
+ {
+  "id": "C03",
+  "lat": 33.54123,
+  "lon": -117.66061,
+  "kind": "water",
+  "area_m2": 12395,
+  "in_zone_a": true,
+  "file": "research/historical_imagery/candidates/C03_1937.jpg"
+ },
+ {
+  "id": "C04",
+  "lat": 33.55857,
+  "lon": -117.65281,
+  "kind": "water",
+  "area_m2": 9111,
+  "in_zone_a": true,
+  "file": "research/historical_imagery/candidates/C04_1937.jpg"
+ },
+ {
+  "id": "C05",
+  "lat": 33.54793,
+  "lon": -117.65992,
+  "kind": "water",
+  "area_m2": 4661,
+  "in_zone_a": true,
+  "file": "research/historical_imagery/candidates/C05_1937.jpg"
+ },
+ {
+  "id": "C06",
+  "lat": 33.54763,
+  "lon": -117.65929,
+  "kind": "water",
+  "area_m2": 1307,
+  "in_zone_a": true,
+  "file": "research/historical_imagery/candidates/C06_1937.jpg"
+ },
+ {
+  "id": "C07",
+  "lat": 33.55057,
+  "lon": -117.66081,
+  "kind": "water",
+  "area_m2": 882,
+  "in_zone_a": true,
+  "file": "research/historical_imagery/candidates/C07_1937.jpg"
+ },
+ {
+  "id": "C08",
+  "lat": 33.55546,
+  "lon": -117.63687,
+  "kind": "water",
+  "area_m2": 734,
+  "in_zone_a": true,
+  "file": "research/historical_imagery/candidates/C08_1937.jpg"
+ },
+ {
+  "id": "C09",
+  "lat": 33.54593,
+  "lon": -117.66021,
+  "kind": "water",
+  "area_m2": 547,
+  "in_zone_a": true,
+  "file": "research/historical_imagery/candidates/C09_1937.jpg"
+ },
+ {
+  "id": "C10",
+  "lat": 33.5575,
+  "lon": -117.63615,
+  "kind": "water",
+  "area_m2": 508,
+  "in_zone_a": true,
+  "file": "research/historical_imagery/candidates/C10_1937.jpg"
+ }
+]

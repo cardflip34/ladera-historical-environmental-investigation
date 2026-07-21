@@ -230,3 +230,17 @@ What it produces is a **sampling frame**. If soil investigation is ever undertak
 look first — not because contamination is expected at them, but because they are the places
 where the historical activity of interest would have concentrated if it occurred at all. That
 recommendation is developed in the environmental investigation chapter.
+
+Consolidated and ranked by terrain logic, the frame reduces to eight priority regions:
+
+@figure FIG-28
+
+::: classification limit
+**These are priority-search zones, not vat locations.** The eight regions were derived by
+clustering the mapped water and ranking each by water area, flat ground, and trail convergence —
+the physical signature of where cattle were worked. **R1 is the one known 1948 structure; R2–R8
+are water clusters. No vat or corral was detected at any of them** on the 1.15 ft/px imagery.
+They are drawn so that a future soil investigation knows where to begin, and for no other reason.
+Every candidate falls on the western Trabuco corridor, because that is the only water in the
+footprint; the dry eastern ridges carry none.
+:::

@@ -274,11 +274,41 @@ likely state of affairs if one ever existed.
 
 ---
 
-## 14.7 Where the imagery avenue now stands
+## 14.7 The oldest depiction: an 1899 map, before dipping
 
-This line of inquiry is close to exhausted. The county's holdings have been enumerated and the
-pre-1950 frames retrieved and searched systematically. Further imagery work would mean
-pre-1929 photography, which for this area is unlikely to exist in useful form.
+The photographic record begins in 1929. The *cartographic* record reaches back three decades
+further. The oldest depiction of this land that exists is the **USGS Corona 30-minute
+quadrangle, field-surveyed in 1899** — eight years before the dipping era began.
+
+@figure FIG-27
+
+Georeferencing was verified by projecting the footprint corners into the sheet's NAD27 polyconic
+coordinate system; they land as a clean rectangle. Within that rectangle the 1899 surveyors drew
+Arroyo Trabuco as the main drainage, a north–south corridor road, the R8W/R7W township line
+(independent confirmation that the parcel straddles two ranges, correction C-007), benchmarks,
+and detailed contours. **No settlement or building appears inside the footprint** — Capistrano
+town is drawn at the sheet's southern edge; the study area is blank.
+
+::: classification limit
+**This map cannot show a dip vat, for two compounding reasons.** At 1:125,000 — two miles to the
+inch — a single ranch building is below the plotting threshold. And it was surveyed in **1899**,
+before any dipping vat would have been built. It is a *pre-dipping baseline*: the landscape the
+tick-era operation was laid onto, not a depiction of that operation.
+:::
+
+Its value is exactly that baseline, plus a hard closure: **the imagery record for this land is
+now exhausted at both ends.** Nothing older than the 1899 map exists cartographically, and
+nothing older than the 1929 frame exists photographically — the 1927–28 Fairchild aerial flights
+over Orange County all stopped at the coast and metro, west of today's SR-133, leaving the
+Mission Viejo backcountry as bare basemap.
+
+## 14.8 Where the imagery avenue now stands
+
+This line of inquiry is exhausted. The county's holdings have been enumerated, the pre-1950
+frames retrieved and searched systematically, and the record confirmed to bottom out at 1899
+(map) and 1929 (photograph). The one photographic avenue not yet closed is a *ground-level*
+period photograph of the ranch's working facilities — which, if it exists, is held physically
+and undigitised (§16 and the recommendations chapter).
 
 The productive leads are now documentary rather than photographic, and are set out in the
 recommendations chapter: Rancho Mission Viejo's own operating records, the County Agricultural

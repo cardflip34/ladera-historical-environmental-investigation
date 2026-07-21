@@ -1,0 +1,82 @@
+[
+ {
+  "region": "R1",
+  "lat": 33.55505,
+  "lon": -117.65492,
+  "kind": "ranch node (1948 structure)",
+  "water_bodies": 0,
+  "water_area_m2": 0,
+  "in_zone_a": true,
+  "rank_score": 9000000000.0
+ },
+ {
+  "region": "R2",
+  "lat": 33.54259,
+  "lon": -117.66096,
+  "kind": "water cluster",
+  "water_bodies": 2,
+  "water_area_m2": 37140,
+  "in_zone_a": true,
+  "rank_score": 313.2
+ },
+ {
+  "region": "R3",
+  "lat": 33.54802,
+  "lon": -117.66006,
+  "kind": "water cluster",
+  "water_bodies": 4,
+  "water_area_m2": 7397,
+  "in_zone_a": true,
+  "rank_score": 172.0
+ },
+ {
+  "region": "R4",
+  "lat": 33.53897,
+  "lon": -117.67632,
+  "kind": "water cluster",
+  "water_bodies": 4,
+  "water_area_m2": 9316,
+  "in_zone_a": false,
+  "rank_score": 154.4
+ },
+ {
+  "region": "R5",
+  "lat": 33.55857,
+  "lon": -117.65281,
+  "kind": "water cluster",
+  "water_bodies": 1,
+  "water_area_m2": 9111,
+  "in_zone_a": true,
+  "rank_score": 137.2
+ },
+ {
+  "region": "R6",
+  "lat": 33.53074,
+  "lon": -117.67091,
+  "kind": "water cluster",
+  "water_bodies": 1,
+  "water_area_m2": 13367,
+  "in_zone_a": false,
+  "rank_score": 133.0
+ },
+ {
+  "region": "R7",
+  "lat": 33.57264,
+  "lon": -117.67248,
+  "kind": "water cluster",
+  "water_bodies": 4,
+  "water_area_m2": 3410,
+  "in_zone_a": false,
+  "rank_score": 93.4
+ },
+ {
+  "region": "R8",
+  "lat": 33.52599,
+  "lon": -117.66196,
+  "kind": "water cluster",
+  "water_bodies": 1,
+  "water_area_m2": 3721,
+  "in_zone_a": false,
+  "rank_score": 70.1
+ }
+]

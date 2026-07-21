@@ -2,7 +2,7 @@
 
 Accurate general background that situates the investigation but is **not itself a finding about this specific land**. This distinction does most of the work in this report: that arsenical dipping existed as a practice is context. That it happened here would be a finding, and it is not one of these.
 
-**4 claims in this category.**
+**5 claims in this category.**
 
 
 ## EM-014 — Residential subdivisions carry no legal duty of soil assessment equivalent to that imposed on school sites
@@ -47,4 +47,15 @@ Accurate general background that situates the investigation but is **not itself 
 **Limiting or contradictory evidence.** CRITICAL INTERPRETATION BOUNDARY: the repository titles place these on the Santa Margarita ranch in SAN DIEGO COUNTY - the Rancho Santa Margarita y Las Flores property, now largely Camp Pendleton. That is NOT the Ladera Ranch footprint. The properties shared ownership under the O'Neill and Flood interests and were partitioned in the 1940s, but they are different land. These images illustrate the ranching operation generally and must NOT be presented as depicting Ladera Ranch. Also: the repository spells it 'Marguerita' for CHS-2085, and dates it 1886, not the 1887 commonly cited online.
 
 **Citation.** USC Libraries Special Collections, California Historical Society Collection 1860-1960; DOIs 10.25549/chs-m9636, m9635, m9638, m7221
+
+
+## EM-040 — Jerome O'Neill managed Rancho Mission Viejo from 1907 to 1926, spanning the entire Orange County cattle-dipping quarantine period
+
+**Confidence:** Medium  ·  **Status:** Context - dates pending primary confirmation
+
+**Supporting evidence.** Richard O'Neill Sr. was resident manager from 1882 and received a half-interest in 1906, which he deeded to his son Jerome O'Neill in 1907; Richard Sr. died in 1910. Jerome O'Neill managed the ranch 1907-1926. The Orange County tick quarantine ran approximately 1908-1912, entirely within Jerome O'Neill's management.
+
+**Limiting or contradictory evidence.** Established from Orange County local-history sources, not yet confirmed against a primary record for the exact dates. It places named management on the operation during the dipping period; it does NOT establish that the operation dipped cattle. No 1907-1912 on-site ranch foreman has been confirmed - a single grade-C secondary reference names 'Billy Magee' as an O'Neill ranch foreman but does not pin the era, and it is treated as an unverified lead only.
+
+**Citation.** Orange County local history (O'Neill family records; to be confirmed against Armor, History of Orange County, and Sherman Library holdings)
 
