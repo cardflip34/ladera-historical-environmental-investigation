@@ -76,6 +76,28 @@ work. **No contamination or vat is claimed.**
 ranch roads) and 2022 (terraced master-planned development). A documentary record of the land-use
 transformation and the scale of terracing; it implies nothing about contamination.
 
+## Correction — the imaged 1931 complex is developed, not the preserved camp
+
+The 1931 building complex imaged near (−117.804, 33.634) and first labeled "Bommer Canyon ranch-HQ"
+is, per the 1931-over-2022 overlay (`bommer_hq_overlay.jpg`), **now under residential + golf-course
+development** — so it is **NOT** the City-preserved (undeveloped) Bommer Canyon Cattle Camp. It is a
+**developed Irvine Ranch building node of unconfirmed identity** ~0.7 mi NW of the preserved camp
+(~33.627, −117.795, which was *not* precisely imaged here). *Discipline:* the earlier "Bommer HQ"
+label over-reached; treat the complex's identity as **open** pending the ranch maps (Sherman/UCI).
+This does not change the substance (a documented ranch complex now under homes) — only the name.
+
+## Land-use overlays built (1938/1931 over 2022)
+
+Reusable: `scripts/build_historical_overlay.py`. All at identical extent (EPSG:2230); land-use history
+only, neighborhood scale, no addresses/individuals, no contamination implied.
+- `pondcluster_beforeafter_overlay.jpg` / `pondcluster_water_highlight.jpg` — the NE farmstead + creek
+  now under homes + commercial; the water-highlight traces the 1938 drainage in blue.
+- `bommer_hq_overlay.jpg` — the (developed) 1931 ranch complex now under homes + golf.
+- `../ladera/imagery/ladera_overlay.jpg` — the 1938 Ladera drainage is now the community's central
+  greenbelt spine, with homes on the graded ridges either side.
+- `irvine_core_overlay.jpg` — the whole ~4-mi ranch core: now dense villages + reservoirs + preserved
+  open space.
+
 ## Next imagery steps (Phase 1/3, now executable)
 
 1. Pull 1931 + 1938 + 1952 over each candidate cattle-handling node (Bommer Canyon, and other Irvine
