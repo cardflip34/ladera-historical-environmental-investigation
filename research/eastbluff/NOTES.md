@@ -15,6 +15,22 @@
 **Read:** In 1927 this was open Irvine-Ranch mesa land beside the bay — consistent with cattle/ranch
 use. It was **not** developed until the 1960s.
 
+## Photo-interpretation — 1901 topo + 1931 mesa zooms (done)
+- **1901 USGS Santa Ana topo** (`imagery/eastbluff_1901_topo_crop.jpg`; the pre-dipping-era map, just
+  before the 1907–12 window): the uplands east of the Back Bay are printed **"SAN JOAQUIN"** — i.e.
+  the topo itself labels this ground as **Rancho San Joaquin**. In 1901 the mesa is **open ranch land
+  with contour relief and property/section lines — no town (Eastbluff didn't exist), and no labeled
+  ranch headquarters, corral, or large structure on the Eastbluff mesa itself.** The **Upper Newport
+  Bay ("Back Bay")** appears as the natural tidal estuary; **Newport Beach**, the **Southern Pacific**
+  branch, and the small settlements **Fairview** and **Thurin** sit to the NW.
+- **1931 mesa zooms** (`imagery/eastbluff_mesa_1931_zoomA/B.jpg`): the mesa is **open, grazed/fallow,
+  lightly-cultivated** — faint field boundaries, a shallow drainage swale, and a ranch road, meeting
+  the Back Bay marsh — but **no ranch buildings, corrals, or stock ponds** are visible.
+- **Conclusion:** across the 1901 topo and the 1927/1931 aerials, the Eastbluff mesa reads as **open
+  San Joaquin / Irvine Ranch land with no cattle-handling infrastructure on it.** Grazing/open-range
+  or early cropland is consistent with the record; **no corral or dip-relevant feature is located
+  here** (any cattle-handling node would be elsewhere on the ranch, as at inland Bommer Canyon).
+
 ## Land context (established from prior work)
 - Eastbluff and the Upper Newport Bay east-side uplands are on **Rancho San Joaquin → the Irvine
   Ranch** (James Irvine → Irvine Company). The Irvine Ranch ran **cattle**, then diversified the mesas
