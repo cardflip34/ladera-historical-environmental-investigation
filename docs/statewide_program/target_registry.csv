@@ -1,0 +1,17 @@
+target_id,rancho,county,quarantine_tier,land_status,modern_communities,priority,status
+T00-LADERA,Rancho Mission Viejo / La Paz,Orange,heavy,residential_mpc,"Ladera Ranch, Mission Viejo, Rancho Santa Margarita, Las Flores, RMV villages",DONE,complete
+T01-TRABUCO,Rancho Trabuco,Orange,heavy,residential_mpc,"Coto de Caza, Wagon Wheel, Trabuco Canyon",HIGH,pending
+T02-IRVINE,Irvine Ranch,Orange,heavy,residential_mpc,"Irvine, Tustin, Newport Coast, Lake Forest, Laguna Woods",HIGH,pending
+T03-SIMI,Rancho Simi,Ventura,heavy,residential_mpc,"Simi Valley, Moorpark edge",HIGH,pending
+T04-PENASQUITOS,Rancho Santa Maria de Los Penasquitos,San Diego,heavy,residential_mpc,"Rancho Penasquitos, Mira Mesa, Carmel Valley",HIGH,pending
+T05-SANBERNARDO,Rancho San Bernardo,San Diego,heavy,residential_mpc,"Rancho Bernardo, Poway edge",HIGH,pending
+T06-SANDIEGUITO,Rancho San Dieguito,San Diego,heavy,residential_mpc,"Rancho Santa Fe, Del Mar, Solana Beach",HIGH,pending
+T07-SESPE,Rancho Sespe,Ventura,heavy,agricultural_partial,"Fillmore, Rancho Sespe citrus",MED,pending
+T08-NEWHALL,Rancho San Francisco / Newhall Ranch,Los Angeles,lesser,residential_mpc,"Santa Clarita, Valencia, Newhall, Saugus, Canyon Country",HIGH,pending
+T09-LOSCERRITOS,Rancho Los Cerritos (Bixby),Los Angeles,lesser,residential_mpc,"Long Beach, Lakewood, Cerritos, Downey, Bellflower, Signal Hill",MED,pending
+T10-LOSALAMITOS,Rancho Los Alamitos (Bixby),Los Angeles,lesser,residential_mpc,"Long Beach, Los Alamitos, Rossmoor, Seal Beach, Cypress, Stanton",MED,pending
+T11-CUCAMONGA,Rancho Cucamonga,San Bernardino,lesser,residential_mpc,"Rancho Cucamonga",MED,pending
+T12-JURUPA,Rancho Jurupa,Riverside,lesser,residential_mpc,"Riverside, Jurupa Valley",MED,pending
+T13-SANTAMARGARITA,Rancho Santa Margarita y Las Flores,San Diego,heavy,federal_undeveloped,"Camp Pendleton, San Onofre State Beach",LOW,pending
+T14-TEJON,Tejon Ranch,Kern,lesser,largely_unbuilt,"Lebec; planned Centennial/Grapevine (unbuilt)",LOW,pending
+T15-MILLERLUX,Miller & Lux holdings,Fresno,heavy,agricultural,"Los Banos, Dos Palos, Firebaugh, Mendota (farmland)",LOW,pending
