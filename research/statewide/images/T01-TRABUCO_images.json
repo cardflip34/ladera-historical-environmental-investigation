@@ -1,0 +1,117 @@
+{
+  "target_id": "T01-TRABUCO",
+  "ranch": "Rancho Trabuco (Orange County, California)",
+  "grant_note": "22,184-acre Mexican land grant in present-day Orange County. Two square leagues granted 1841 by Gov. Alvarado to Santiago Arguello; three square leagues added 1846 by Gov. Pio Pico to John (Juan) Forster. Patented to Forster 1866. Acquired by Richard O'Neill Sr. and James Flood in 1882 and merged with the adjoining Rancho Mission Viejo under the O'Neill 'Rafter M' brand. Most of the former rancho is now O'Neill Regional Park, Coto de Caza, Rancho Santa Margarita, and Ladera Ranch/Rancho Mission Viejo lands.",
+  "land_attribution_warning": "Rancho Trabuco (Orange County) shares its owner families (Forster, O'Neill, Flood) with the San Diego County Rancho Santa Margarita y Las Flores (now Camp Pendleton). These are DIFFERENT lands. Items in this inventory are attributed to specific counties; San Diego items encountered during searching were excluded.",
+  "retrieval_date": "2026-07-21",
+  "items_found": 8,
+  "items_downloaded": 2,
+  "items": [
+    {
+      "title": "Diagrama del Rancho de Victoria y la Paz : [Rancho Trabuco, Calif.] / Gaspar O'Farrell, agrimensor",
+      "repository": "UC Berkeley, Bancroft Library (via Calisphere; source record at Berkeley Digital Collections)",
+      "identifier": "Land Case Map E-1251; ark:/13030/hb4w1005qw; lc_cubanc_36_2_00045134; digicoll record 79688",
+      "date": "1846? (stated as '1846?' by repository; estimated)",
+      "url": "https://calisphere.org/item/ark:/13030/hb4w1005qw/",
+      "rights": "Researchers may make free and open use of the UC Berkeley Library's digitized public domain materials. However, some materials in our online collections may be protected by U.S. copyright law (Title 17, U.S.C.)... Responsibility for determining rights status and permissibility of any use or reproduction rests exclusively with the researcher.",
+      "depicts": "Rancho Trabuco, Orange County, California (titled 'Rancho de Victoria y la Paz'; bracketed by cataloguer as Rancho Trabuco). Manuscript diseño / survey diagram showing survey markers and boundaries. Land case 216 SD (U.S. District Court, California, Southern District), page 70.",
+      "category": "map",
+      "downloadable": true,
+      "downloaded_path": "/Users/andystavros/Ladera-Ranch/evidence/images/T01-TRABUCO/trabuco_diseno_victoria_y_la_paz_bancroft_E-1251.jpg"
+    },
+    {
+      "title": "Trabuco Rancho",
+      "repository": "California State Archives, a division of the California Secretary of State's Office (Disenos Collection; Spanish and Mexican Land Grant Records, Secretary of State Records)",
+      "identifier": "Item Details 38223; Disenos Collection identifier 247; Volume 1, page 662",
+      "date": "1840 (stated)",
+      "url": "https://archives.sos.ca.gov/Items/Details/38223",
+      "rights": "There are no known coyright [copyright] restrictions associated with these digital images. We encourage the use of these images for personal, study, and educational purposes. Please credit 'Courtesy of California State Archives.' The California State Archives and the Friends of California Archives cannot be responsible for any use of these images, or any liability resulting from their use.",
+      "depicts": "Rancho Trabuco, Orange County, California. Hand-drawn sketch map (diseno) of Trabuco boundaries. High-resolution scan (400 DPI, 24-bit color, 6665x4806 px).",
+      "category": "map",
+      "downloadable": true,
+      "downloaded_path": "/Users/andystavros/Ladera-Ranch/evidence/images/T01-TRABUCO/trabuco_diseno_CASA_vol1_p662_1840.jpg"
+    },
+    {
+      "title": "Mission Vieja or La Paz Rancho",
+      "repository": "California State Archives (Disenos Collection; Spanish and Mexican Land Grant Records)",
+      "identifier": "Item Details 38549; Volume 2, page 119",
+      "date": "1843 (stated)",
+      "url": "https://archives.sos.ca.gov/Items/Details/38549",
+      "rights": "There are no known coyright [copyright] restrictions associated with these digital images... Please credit 'Courtesy of California State Archives.' (California State Archives standard Disenos Collection statement)",
+      "depicts": "Rancho Mission Viejo (a.k.a. La Paz), Orange County, California -- the adjoining Forster/O'Neill grant merged with Rancho Trabuco under the combined O'Neill Ranch. RELATED, not the Trabuco grant proper. Included because the two ranchos operated as one cattle operation and share the 'la Paz' toponym seen in the Bancroft Trabuco diseno title. Downloadable public-domain-equivalent but not downloaded (adjacent-grant, secondary to target).",
+      "category": "map",
+      "downloadable": true
+    },
+    {
+      "title": "[Presentation of Rancho Mission Viejo brand to Mission Viejo Company executives photograph]",
+      "repository": "Mission Viejo Library (Mission Viejo Heritage Committee Planned Community Collection; via Calisphere)",
+      "identifier": "ark:/13030/kt6q2nd4wv; camjl_037; M.V. - Symbols",
+      "date": "[1976?] (estimated; back stamped 'Received Feb 24 1976')",
+      "url": "https://calisphere.org/item/ark:/13030/kt6q2nd4wv/",
+      "rights": "Copyrighted. Transmission or reproduction of materials protected by copyright beyond that allowed by fair use requires the written permission of the copyright owners... Responsibility for any use rests exclusively with the user.",
+      "depicts": "Directly documents the Rancho Trabuco/Mission Viejo cattle operation's brand: Richard J. O'Neill presenting Rancho Mission Viejo's 'Rafter M' cattle brand to Mission Viejo Company executives (Reilly, Weissman, Moiso, Cullman, O'Neill, West, Cookman). Mission Viejo, Orange County -- former combined O'Neill Ranch land that included Rancho Trabuco.",
+      "category": "photo",
+      "downloadable": false
+    },
+    {
+      "title": "Trabuco Adobe ruins, O'Neill Park, Rancho Santa Margarita, Calif",
+      "repository": "OC Public Libraries (OC Stories Photos; contributor OC Archives; via Calisphere). Original credited elsewhere to First American Corp.",
+      "identifier": "Calisphere a2da429c17465ae6679f2772bb76e56a; contentdm p16838coll1 id/1508",
+      "date": "19-- (stated as '19--'; undated 20th century)",
+      "url": "https://calisphere.org/item/a2da429c17465ae6679f2772bb76e56a/",
+      "rights": "Copyright status is unknown. Some materials in these collections may be protected by the U.S. Copyright Law (Title 17, U.S.C.)... Responsibility for any use rests exclusively with the user.",
+      "depicts": "Ruins of the Trabuco Adobe (a San Juan Capistrano Mission-era outpost / estancia on Rancho Trabuco land) in O'Neill Regional Park. Modern location within the city of Rancho Santa Margarita, Orange County -- NOT the San Diego County Rancho Santa Margarita y Las Flores. Depicts former Rancho Trabuco land.",
+      "category": "photo",
+      "downloadable": false
+    },
+    {
+      "title": "Trabuco Mesa Adobe on Rancho Canada de Los Alisos, 1930",
+      "repository": "Santa Ana Public Library (Santa Ana History Room photograph collection; WPA Adobes survey; via Calisphere)",
+      "identifier": "ark:/13030/kt7q2nc04d; 11478002",
+      "date": "1930 (issued)",
+      "url": "https://calisphere.org/item/ark:/13030/kt7q2nc04d/",
+      "rights": "Copyright restrictions applying to use or reproduction of this image available from the Santa Ana Public Library.",
+      "depicts": "A ranch/mission adobe on the Trabuco Mesa. LAND AMBIGUITY FLAG: catalogued as on Rancho Canada de Los Alisos (Jose Serrano grant), an OC grant ADJACENT to Rancho Trabuco -- not the Trabuco grant itself, though it shares the 'Trabuco' toponym. Described as a San Juan Capistrano Mission sub-station used for farming and cattle raising. Orange County. Additional W. view and S.E. view frames of the same adobe exist in the same collection.",
+      "category": "photo",
+      "downloadable": false
+    },
+    {
+      "title": "Ranch, Coto de Caza, Calif., 1970",
+      "repository": "University of Southern California Digital Library (Wayne Thom Photography Collection)",
+      "identifier": "thom-7007-0317-24.tif; doi:10.25549/thom-c41-150",
+      "date": "1970-07 (stated)",
+      "url": "https://calisphere.org/item/c00cf27b093d91fe3873adab6eb469c5/",
+      "rights": "(c) University of Southern California. USC Libraries Special Collections, Doheny Memorial Library. Send requests to specol@usc.edu.",
+      "depicts": "Exterior/swimming-pool photograph at 23331 Via Venado, Coto de Caza, Trabuco Canyon, Orange County (Coto Valley Country Club; architects Bissell & August). Depicts 1970 recreational-ranch development on former Rancho Trabuco land, NOT the historical cattle operation. Multiple frames of this project exist in the collection. Marginal relevance (land only).",
+      "category": "photo",
+      "downloadable": false
+    },
+    {
+      "title": "United States Surveyor General map of Rancho Trabuco (patent survey plat)",
+      "repository": "California State Archives, United States Surveyor General Maps collection (index/grant list)",
+      "identifier": "Map reference MC 4:4-579; grantee 'Juan Forster'; acreage 22,184.47; patent date 8/6/1866",
+      "date": "1866 (patent survey era; late 1850s-1880s per collection)",
+      "url": "https://www.sos.ca.gov/archives/collections/ussg/grant-list",
+      "rights": "Not stated at item level; California State Archives government record (California State Archives materials generally carry no known copyright restrictions).",
+      "depicts": "Rancho Trabuco, Orange County -- the official U.S. Surveyor General survey plat underlying the 1866 Forster patent. LISTED in the CA State Archives USSG grant index but a digitized image was NOT located online in this pass (the Archives' Omeka portal exposes the Disenos but not this USSG plat). Likely available only as physical/microfilm at the California State Archives, or via the Bancroft land-case files.",
+      "category": "map",
+      "downloadable": false
+    }
+  ],
+  "physical_only_collections": [
+    "First American Historical Photo Collection (First American Title / First American Corp.), 5 First American Way, Santa Ana, CA. Historian's office by appointment only, phone 714.250.3298; public program at firstam.com/historyoc. Holds 12,500+ OC historical photographs organized by city, dating to the late 1800s; credited source of the circa-1930 Trabuco Adobe ruins photograph and likely other Rancho Trabuco / O'Neill Ranch imagery.",
+    "Camp Pendleton Historical Society (camppendletonhistoricalsociety.org). Holds Forster & O'Neill family/ranch material -- but PRIMARILY documents the San Diego County Rancho Santa Margarita y Las Flores (now Camp Pendleton), a DIFFERENT land from OC Rancho Trabuco; use with land-attribution caution.",
+    "San Jacinto Museum (San Jacinto, Riverside County) -- credited by OC Historyland as source of a circa-1940 photograph of the Trabuco Adobe ruins; digital availability unconfirmed.",
+    "Los Angeles Corral of Westerners, 'The Branding Iron' (quarterly), June 1953 issue -- published an early copy/tracing of the Rancho Trabuco diseno; a publication rather than an online image repository.",
+    "Orange County Archives (OC Clerk-Recorder), Santa Ana -- ocrecorder.com/oc-archives; historic property documents and OC photographs (contributor to OC Stories Photos on Calisphere)."
+  ],
+  "dead_ends": [
+    "Library of Congress (loc.gov) -- no Rancho Trabuco photographs, Sanborn maps, or HABS/HAER records surfaced (rural ranch land, no Sanborn coverage).",
+    "David Rumsey Map Collection (davidrumsey.com) -- no Trabuco-specific map found; only a general 1866 U.S. General Land Office map of California.",
+    "Huntington Digital Library (hdl.huntington.org) -- no confirmed Trabuco/O'Neill/Rancho Mission Viejo cattle photograph; only an unrelated 'Map of the Ranchos Belonging to Abel Stearns' (Stearns did not own Trabuco).",
+    "BLM GLO Records (glorecords.blm.gov) -- confirmed a Forster/Trabuco 1866 patent exists but no directly downloadable Rancho Trabuco survey-plat image was resolved in this pass.",
+    "California Archives portal query 'SearchText=Trabuco' returned only 3 diseno items (Trabuco Rancho, Niguil Rancho, Mission Vieja or La Paz Rancho); the USSG patent plat (MC 4:4-579) is not in the online Omeka portal.",
+    "USGS topoView -- only regional historical topo sheets covering Trabuco Canyon, nothing ranch-operation-specific; not catalogued as ranch imagery."
+  ],
+  "output_file_written": "/Users/andystavros/Ladera-Ranch/research/statewide/images/T01-TRABUCO_images.json"
+}

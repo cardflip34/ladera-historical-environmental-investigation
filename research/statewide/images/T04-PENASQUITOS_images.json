@@ -1,0 +1,177 @@
+{
+  "target_id": "T04-PENASQUITOS",
+  "target_name": "Rancho Santa Maria de Los Penasquitos",
+  "county": "San Diego County, California",
+  "note_on_land": "All items below depict the San Diego County Rancho Santa Maria de Los Penasquitos (grantee Francisco Maria Ruiz, 1823; bought by Francisco Maria Alvarado 1837; expanded by Capt. George Alonzo Johnson 1862; sold to Jacob Shell Taylor 1880 -> 'Johnson-Taylor'). This land became present-day Rancho Penasquitos / Mira Mesa / Carmel Valley, San Diego. It is NOT the Orange County city of Rancho Santa Margarita, and NOT the San Diego 'Santa Margarita y Las Flores' (Camp Pendleton). Two flagged records (SDHC Miramar/Meanley; an SDHC adobe album that also contains Rancho Santa Margarita, San Diego) are adjacent/different land and are noted per item.",
+  "retrieved": "2026-07-21",
+  "items": [
+    {
+      "title": "Johnson-Taylor Ranch House, Black Mountain Road vicinity, Rancho Penasquitos, San Diego County, CA",
+      "repository": "Library of Congress, Prints & Photographs Division, HABS (Historic American Buildings Survey CA-2072)",
+      "identifier": "HABS CAL,37-RANPE,1- ; LCCN/item ca0598",
+      "date": "Survey/documentation; photos undated by LC (measured drawings and photographs, HABS)",
+      "url": "https://www.loc.gov/item/ca0598/",
+      "rights": "No known restrictions on images made by the U.S. Government; images copied from other sources may be restricted. https://www.loc.gov/rr/print/res/114_habs.html",
+      "depicts": "Rancho Santa Maria de Los Penasquitos main adobe ranch house (Johnson-Taylor Adobe), San Diego County",
+      "category": "document",
+      "downloadable": true,
+      "downloaded_path": "evidence/images/T04-PENASQUITOS/ (see photo/sheet files 015244-46 and sheets 1-3)",
+      "children": [
+        {"file": "habs_ca2072_house_photo1_015244.jpg", "url": "https://tile.loc.gov/storage-services/service/pnp/habshaer/ca/ca0500/ca0598/photos/015244pr.jpg"},
+        {"file": "habs_ca2072_house_photo2_015245.jpg", "url": "https://tile.loc.gov/storage-services/service/pnp/habshaer/ca/ca0500/ca0598/photos/015245pr.jpg"},
+        {"file": "habs_ca2072_house_photo3_015246.jpg", "url": "https://tile.loc.gov/storage-services/service/pnp/habshaer/ca/ca0500/ca0598/photos/015246pr.jpg"},
+        {"file": "habs_ca2072_house_sheet1.jpg", "url": "https://tile.loc.gov/storage-services/service/pnp/habshaer/ca/ca0500/ca0598/sheet/00001r.jpg"},
+        {"file": "habs_ca2072_house_sheet2.jpg", "url": "https://tile.loc.gov/storage-services/service/pnp/habshaer/ca/ca0500/ca0598/sheet/00002r.jpg"},
+        {"file": "habs_ca2072_house_sheet3.jpg", "url": "https://tile.loc.gov/storage-services/service/pnp/habshaer/ca/ca0500/ca0598/sheet/00003r.jpg"}
+      ]
+    },
+    {
+      "title": "Johnson-Taylor Ranch, Barn, Black Mountain Road vicinity, Rancho Penasquitos, San Diego County, CA",
+      "repository": "Library of Congress, Prints & Photographs Division, HABS (Historic American Buildings Survey CA-2072-A)",
+      "identifier": "HABS CAL,37-RANPE,1-A- ; item ca1375",
+      "date": "Undated by LC (HABS photographs)",
+      "url": "https://www.loc.gov/item/ca1375/",
+      "rights": "No known restrictions on images made by the U.S. Government; images copied from other sources may be restricted. https://www.loc.gov/rr/print/res/114_habs.html",
+      "depicts": "Barn at the Johnson-Taylor Ranch, Rancho Santa Maria de Los Penasquitos, San Diego County",
+      "category": "document",
+      "downloadable": true,
+      "downloaded_path": "evidence/images/T04-PENASQUITOS/habs_ca2072A_barn_photo1_015247.jpg, habs_ca2072A_barn_photo2_015248.jpg",
+      "children": [
+        {"file": "habs_ca2072A_barn_photo1_015247.jpg", "url": "https://tile.loc.gov/storage-services/service/pnp/habshaer/ca/ca1300/ca1375/photos/015247pr.jpg"},
+        {"file": "habs_ca2072A_barn_photo2_015248.jpg", "url": "https://tile.loc.gov/storage-services/service/pnp/habshaer/ca/ca1300/ca1375/photos/015248pr.jpg"}
+      ]
+    },
+    {
+      "title": "National Register of Historic Places Inventory-Nomination: Johnson-Taylor Adobe Ranch House (Rancho de los Penasquitos)",
+      "repository": "National Park Service, NPGallery (National Register of Historic Places)",
+      "identifier": "NRHP ref (NR 751 in San Diego County file); NPGallery asset dd763f73-163a-480e-a8a4-f63a3565ef1d",
+      "date": "Listed on National Register 1980; nomination text/photos 1979-1980",
+      "url": "https://npgallery.nps.gov/GetAsset/dd763f73-163a-480e-a8a4-f63a3565ef1d",
+      "rights": "U.S. Government work (National Register nomination); no known copyright restrictions. Not stated verbatim on asset; NPS NRHP nominations are federal records in the public domain.",
+      "depicts": "Johnson-Taylor Adobe Ranch House and outbuildings on Rancho Santa Maria de Los Penasquitos, San Diego County; includes documentary photographs in nomination",
+      "category": "document",
+      "downloadable": true,
+      "downloaded_path": "evidence/images/T04-PENASQUITOS/nrhp_johnson_taylor_adobe_nomination.pdf"
+    },
+    {
+      "title": "Rancho Los Penasquitos Artifacts Interpretation Project (report with artifact photographs)",
+      "repository": "California Office of Historic Preservation (OHP), California State Parks",
+      "identifier": "ohp.parks.ca.gov/pages/1073 (rancho las penasquitos.pdf)",
+      "date": "Report (undated on cover; 3 pp. excerpt)",
+      "url": "https://ohp.parks.ca.gov/pages/1073/files/rancho%20las%20penasquitos.pdf",
+      "rights": "California State agency publication; no rights statement printed on the document. Treated as a government work; catalogued and downloaded for research reference.",
+      "depicts": "Excavated/collected artifacts associated with Rancho Los Penasquitos ranch operation, San Diego County",
+      "category": "artifact",
+      "downloadable": true,
+      "downloaded_path": "evidence/images/T04-PENASQUITOS/ohp_rancho_los_penasquitos_artifacts.pdf"
+    },
+    {
+      "title": "Penasquitos, Los -- U.S. Surveyor General plat / patent map (F. M. Ruiz, 8,486.01 acres)",
+      "repository": "California State Archives (Sacramento), United States Surveyor General Maps collection",
+      "identifier": "Map cabinet ref MC 4:4-406; patent 4/13/1876; grantee F. M. Ruiz; 8,486.01 acres",
+      "date": "Patent 1876 (survey plat, U.S. Surveyor General, late 1850s-1870s)",
+      "url": "https://www.sos.ca.gov/archives/collections/ussg/grant-list",
+      "rights": "Not stated online. California State Archives holds the original; U.S. Surveyor General plats are federal survey products (public domain). Physical/reproduction-on-request.",
+      "depicts": "Official U.S. survey plat of the confirmed exterior boundary of Rancho Santa Maria de Los Penasquitos, San Diego County",
+      "category": "map",
+      "downloadable": false
+    },
+    {
+      "title": "Exterior view of an abandoned building in Rancho Penasquitos, ca.1875",
+      "repository": "Calisphere (aggregator); contributing institution not confirmed in this session (search evidence points to California Historical Society / San Diego History Center)",
+      "identifier": "Calisphere item e9ec3205a3295751a53260c05254bebe",
+      "date": "ca. 1875 (stated)",
+      "url": "https://calisphere.org/item/e9ec3205a3295751a53260c05254bebe/",
+      "rights": "Rights statement not retrieved (Calisphere item page is JavaScript-rendered and was intermittently blocked to automated fetch). NOT downloaded pending verification of contributor and rights.",
+      "depicts": "L-shaped adobe ranch house (likely the Alvarado/Ruiz adobe) on Rancho Los Penasquitos, boarded windows, roof in disrepair; San Diego County",
+      "category": "photo",
+      "downloadable": false
+    },
+    {
+      "title": "San Diego Public Library - Rancho Penasquitos Library - Ground Breaking",
+      "repository": "Calisphere (aggregator); contributor San Diego Public Library",
+      "identifier": "Calisphere item bd7330487ac3624a00a38fdf37756a4d",
+      "date": "Modern (branch library ground-breaking; 20th c.)",
+      "url": "https://calisphere.org/item/bd7330487ac3624a00a38fdf37756a4d/",
+      "rights": "Rights statement not retrieved (JS-rendered page). Modern civic photo; NOT related to the historic ranch operation. Not downloaded.",
+      "depicts": "Ground-breaking for the modern Rancho Penasquitos branch library; place name only, NOT the historic rancho",
+      "category": "photo",
+      "downloadable": false
+    },
+    {
+      "title": "San Diego History Center photograph collection - Rancho de los Penasquitos (PastPerfect online catalog: 112 records for 'Penasquitos')",
+      "repository": "San Diego History Center (Research Archives / Booth Historical Photograph Archives), San Diego, CA",
+      "identifier": "PastPerfect online; representative object IDs below. Guide lists a 'Rancho de los Penasquitos' photograph file (7 books).",
+      "date": "ca. 1887 - ca. 2000s (mixed b/w film & glass-plate negatives; several ca.1887-1935)",
+      "url": "https://sandiegohistory.pastperfectonline.com/photo?search_criteria=Penasquitos",
+      "rights": "No rights statement printed on catalog pages. SDHC negatives are order-on-request (fee); images are NOT displayed online / NOT downloadable. Catalogued only.",
+      "depicts": "Rancho Santa Maria de Los Penasquitos ranch house, adobe ruins, courtyard, ranch operation, carriages, San Diego County. NOTE one record (87:16269-75) is Miramar Ranch / Thomas Meanley family = adjacent DIFFERENT San Diego rancho, and one SDHC adobe album also contains Rancho Santa Margarita (San Diego / Camp Pendleton) = different land.",
+      "category": "photo",
+      "downloadable": false,
+      "representative_records": [
+        {"object_id": "11363", "desc": "Panoramic view of Los Penasquitos and the Johnson-Taylor Adobe, ca.1887", "url": "https://sandiegohistory.pastperfectonline.com/photo/ECC964A3-DD98-4616-9475-203551313104"},
+        {"object_id": "13359", "desc": "Four-horse tally-ho carriage at Rancho Los Penasquitos, ca.1900", "url": "https://sandiegohistory.pastperfectonline.com/photo/89120BB6-F13E-49FF-B71F-196353846932"},
+        {"object_id": "20144", "desc": "Four people in courtyard/patio of Johnson-Taylor adobe, ca.1892", "url": "https://sandiegohistory.pastperfectonline.com/photo/45AC7D83-B4FB-458B-99EB-276106284721"},
+        {"object_id": "80:1600", "desc": "Ruins of adobe ranch house of Alvarado, Rancho Los Penasquitos (patio fountain)", "url": "https://sandiegohistory.pastperfectonline.com/photo/7287ED01-CA1D-4B32-A074-835919778167"},
+        {"object_id": "80:1601", "desc": "Ruins of adobe ranch house of Alvarado, Rancho Los Penasquitos", "url": "https://sandiegohistory.pastperfectonline.com/photo/EAA3D81C-E034-4E1C-ABC5-402199515651"},
+        {"object_id": "80:1602", "desc": "Ruins of Alvarado adobe (home of Don Diego Alvarado)", "url": "https://sandiegohistory.pastperfectonline.com/photo/28BA8CE3-2BD5-463F-8E37-642461312382"},
+        {"object_id": "80:1603", "desc": "Two views: ruins of Alvarado adobe ranch house", "url": "https://sandiegohistory.pastperfectonline.com/photo/B69FD963-BF6B-4EDF-BA4A-084537395233"},
+        {"object_id": "80:8104-196", "desc": "Ranch at Rancho Los Penasquitos ca.1935; envelope 'Ruiz Alvarado ranch' (Strahlmann Collection)", "url": "https://sandiegohistory.pastperfectonline.com/photo/AACCB727-0D63-4929-8754-422352770232"},
+        {"object_id": "80:8104-197", "desc": "Adobe ranch house at Rancho Los Penasquitos ca.1935 (Strahlmann Collection)", "url": "https://sandiegohistory.pastperfectonline.com/photo/9F09BFA5-99D8-4ECC-99B6-854010992570"},
+        {"object_id": "81:10316-17", "desc": "Chicken house and exterior of Johnson-Taylor Adobe, ca.1935", "url": "https://sandiegohistory.pastperfectonline.com/photo/0E3205ED-4731-4D60-AFF0-391539208683"},
+        {"object_id": "88:16763", "desc": "Lithograph of Los Penasquitos, residence of J. S. Taylor (copied from San Diego book)", "url": "https://sandiegohistory.pastperfectonline.com/photo/B4E38775-B4FB-4225-B851-310826022838"},
+        {"object_id": "88:16824", "desc": "Man and woman seated in patio of lower house at Rancho Los Penasquitos", "url": "https://sandiegohistory.pastperfectonline.com/photo/4FD587B3-70F3-42EE-833F-826718799247"},
+        {"object_id": "1899.4.157-206", "desc": "b/w nitrate negatives, ruins of adobes and other images (Old San Diego Historical Society Collection)", "url": "https://sandiegohistory.pastperfectonline.com/photo/B228721D-C917-47EF-B76E-779734208953"},
+        {"object_id": "87:16269-75", "desc": "FLAG: Miramar Ranch & Thomas Meanley family (adjacent DIFFERENT rancho, San Diego)", "url": "https://sandiegohistory.pastperfectonline.com/photo/C548ACFA-6FAF-4CC6-BC1E-197108553962"}
+      ]
+    },
+    {
+      "title": "Guide to the Carol Greentree Collection MS 305 (incl. Alvarado-Johnson Family Tree, Rancho Penasquitos; Johnson-Taylor Adobe NR nomination material)",
+      "repository": "San Diego History Center / Online Archive of California (OAC) finding aid",
+      "identifier": "MS 305; OAC ark:/13030/c83b64wg",
+      "date": "materials 1980-1994",
+      "url": "https://oac.cdlib.org/findaid/ark:/13030/c83b64wg/dsc/",
+      "rights": "Finding aid (collection-level). Physical archive; reproduction per SDHC policy. Not downloaded.",
+      "depicts": "Genealogical/documentary materials on Alvarado-Johnson family and the Johnson-Taylor Adobe, Rancho Los Penasquitos, San Diego County",
+      "category": "document",
+      "downloadable": false
+    },
+    {
+      "title": "Guide to the E Clampus Vitus Historic Sites Collection MS 49 (Los Penasquitos Rancho / Johnson-Taylor Adobe, 1862-1984)",
+      "repository": "San Diego History Center / Online Archive of California (OAC) finding aid",
+      "identifier": "MS 49; OAC ark:/13030/c8zp4bwd",
+      "date": "1862-1984",
+      "url": "https://oac.cdlib.org/findaid/ark:/13030/c8zp4bwd/entire_text/",
+      "rights": "Finding aid (collection-level). Physical archive. Not downloaded.",
+      "depicts": "Historic-site documentation on Los Penasquitos Rancho and the Johnson-Taylor Adobe, San Diego County",
+      "category": "document",
+      "downloadable": false
+    },
+    {
+      "title": "Guide to the Union Title Insurance and Trust Company Collection MS 294 (incl. Rancho Los Penasquitos Patent, April 13, 1876)",
+      "repository": "San Diego History Center / Online Archive of California (OAC) finding aid",
+      "identifier": "MS 294; OAC ark:/13030/c8474gpf",
+      "date": "Patent dated April 13, 1876",
+      "url": "https://oac.cdlib.org/findaid/ark:/13030/c8474gpf/entire_text/",
+      "rights": "Finding aid (collection-level). Physical title-company archive held by SDHC. Not downloaded.",
+      "depicts": "Land patent and title records for Rancho Los Penasquitos, San Diego County (may include plat/boundary map)",
+      "category": "map",
+      "downloadable": false
+    }
+  ],
+  "physical_only_collections": [
+    "San Diego History Center - Research Archives / Booth Historical Photograph Archives, 1649 El Prado, Suite 3, Balboa Park, San Diego, CA 92101. Phone (619) 232-6203; research library archives@sandiegohistory.org. Holds the largest body of Rancho Los Penasquitos / Johnson-Taylor photographs (>112 catalog records incl. Strahlmann Collection, SD Historical Society Negative Collection, glass-plate & nitrate negatives ca.1887-1935). Images are order-on-request; not displayed online. Also holds the 'Rancho de los Penasquitos' photograph file (7 books) and manuscript collections MS 305, MS 49, MS 294.",
+    "California State Archives, 1020 O Street, Sacramento, CA 95814, (916) 653-2246, ArchivesWeb@sos.ca.gov - United States Surveyor General Maps: 'Penasquitos, Los' plat, ref MC 4:4-406 (F. M. Ruiz, 8,486.01 ac, patent 1876). Reproduction on request.",
+    "The Bancroft Library, UC Berkeley - 'Maps of private land grant cases of California' (diseños/land-case maps). No Penasquitos diseno located in this session (see dead_ends); worth a direct on-site/finding-aid check for the Los Penasquitos land case file.",
+    "Friends of Los Penasquitos Canyon Preserve (penasquitos.org) and San Diego County Parks (Los Penasquitos Ranch House / Ranch House museum) - local historic-photo holdings and the on-site interpretive collection; contact via penasquitos.org.",
+    "IS Architecture (isarchitecture.com) - authored the Los Penasquitos Ranch Mohnike Adobe Barn Historic Structure Report (may contain historic photos of ranch outbuildings)."
+  ],
+  "dead_ends": [
+    "Bancroft 'Maps of private land grant cases of California' on Calisphere/OAC: no diseno or land-case map for Rancho Los Penasquitos found (many other ranchos present). The grant appears to have been confirmed via U.S. Surveyor General survey (California State Archives MC 4:4-406) rather than a surviving diseno.",
+    "David Rumsey Historical Map Collection search 'Penasquitos' -> totalResults 0.",
+    "LOC search API '?fo=json' for 'Penasquitos' returns mostly Zacatecas 'Penasquito' mine items; only ca0598 and ca1375 are the Rancho Penasquitos ranch (both captured).",
+    "USC Digital Library, UCLA Library Special Collections, and Huntington Digital Library: no Rancho Penasquitos ranch-specific item surfaced via web search (only general collection landing pages).",
+    "Calisphere item pages are JavaScript-rendered and were intermittently blocked to automated fetch; contributor/rights for item e9ec3205 (abandoned building ca.1875) could not be confirmed this session and it was therefore NOT downloaded.",
+    "OAC finding-aid 'entire_text' pages (hb8489p15p land-case maps; c83b64wg; c8474gpf) could not be fetched server-side (empty/403); details obtained via search snippets instead."
+  ]
+}

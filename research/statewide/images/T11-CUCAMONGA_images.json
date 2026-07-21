@@ -1,0 +1,175 @@
+{
+  "target_id": "T11-CUCAMONGA",
+  "rancho": "Rancho Cucamonga, San Bernardino County, California",
+  "disambiguation": "This is the SAN BERNARDINO COUNTY Rancho Cucamonga: a 13,045-acre Mexican land grant made in 1839 by Gov. Juan Bautista Alvarado to Tiburcio Tapia, in present-day City of Rancho Cucamonga (villages of Cucamonga, Alta Loma, Etiwanda). Ownership chain: Tiburcio Tapia (1839) -> daughter Maria Merced Tapia and husband Leon Victor Prudhomme (patent issued to Prudhomme, 1872) -> John Rains and Maria Merced Williams de Rains (purchased 1858, built the brick Casa/Rains House 1860-61) -> later owners; George and William Chaffey developed the adjacent Etiwanda/Ontario irrigation colonies from 1881 on former rancho-region land. NOT to be confused with any similarly named Southern California place; this is distinct from the Orange County city 'Rancho Santa Margarita' and from Malibu's Tapia family lands (Rancho Topanga Malibu Sequit). All items below depict San Bernardino County land unless flagged.",
+  "retrieval_date": "2026-07-21",
+  "visual_record_note": "The cattle-operation era of this rancho (Tapia 1839-1858; Rains 1858-1864) predates local photography. Tiburcio Tapia's adobe on Red Hill was abandoned in 1858 and disintegrated; no photographs of it or of the Tapia/Rains cattle operation are known to survive. The surviving visual record is therefore (a) 19th-century manuscript survey/subdivision maps (Huntington Solano-Reeve collection), (b) photographs of the surviving brick Rains House / Casa de Rancho Cucamonga (built 1860-61), and (c) later wine-industry photographs. This is a land-use image archive; no contamination claim is made.",
+  "items": [
+    {
+      "title": "Map of the Rancho Cucamonga.",
+      "repository": "The Huntington Library, San Marino (Huntington Digital Library); Solano-Reeve collection",
+      "identifier": "callid mssSolano SR_Box_21(05).06; ContentDM p15150coll4 id 12929; alt title 'Rancho Cucamonga: S71 : map of the Rancho Cucamonga.'; catalog record b1552510",
+      "date": "1893-11 (stated: 1893 November)",
+      "url": "https://hdl.huntington.org/digital/collection/p15150coll4/id/12929/",
+      "rights": "For information on use of Digital Library materials, please see Library Rights and Permissions: https://www.huntington.org/library-rights-permissions",
+      "depicts": "Rancho Cucamonga, San Bernardino County. Hand-colored ms. map (ink on tracing cloth, 23.25 x 23 in.) showing section & lot numbers, surface details, parcel owners, with vineyard to the south, plus extensive survey notes. Public domain by age (pre-1900; surveyor Alfred Solano / George Hansen). Downloaded high-res IIIF image.",
+      "category": "map",
+      "downloadable": true,
+      "downloaded_path": "/Users/andystavros/Ladera-Ranch/evidence/images/T11-CUCAMONGA/Huntington_SolanoReeve_MapOfRanchoCucamonga_S71_1893-11_id12929.jpg"
+    },
+    {
+      "title": "Part of Rancho Cucamonga..",
+      "repository": "The Huntington Library (Huntington Digital Library); Solano-Reeve collection",
+      "identifier": "callid mssSolano SR_Map_0059; ContentDM p15150coll4 id 11384",
+      "date": "1876-05-20 (stated)",
+      "url": "https://hdl.huntington.org/digital/collection/p15150coll4/id/11384/",
+      "rights": "For information on use of Digital Library materials, please see Library Rights and Permissions: https://www.huntington.org/library-rights-permissions",
+      "depicts": "Rancho Cucamonga, San Bernardino County. Manuscript survey map of part of the rancho, covered with calculations & coordinates. Public domain by age (1876). Downloaded high-res IIIF image.",
+      "category": "map",
+      "downloadable": true,
+      "downloaded_path": "/Users/andystavros/Ladera-Ranch/evidence/images/T11-CUCAMONGA/Huntington_SolanoReeve_PartOfRanchoCucamonga_1876-05-20_id11384.jpg"
+    },
+    {
+      "title": "Map showing the location of the houses and improvements of Valdez and Francisco Martinez Ruiz within Rancho Cucamonga.",
+      "repository": "The Huntington Library (Huntington Digital Library); Solano-Reeve collection",
+      "identifier": "callid mssSolano SR_Map_0053; ContentDM p15150coll4 id 11375",
+      "date": "1872-02-29 (stated)",
+      "url": "https://hdl.huntington.org/digital/collection/p15150coll4/id/11375/",
+      "rights": "For information on use of Digital Library materials, please see Library Rights and Permissions: https://www.huntington.org/library-rights-permissions",
+      "depicts": "Rancho Cucamonga, San Bernardino County. Land-use map locating the houses and improvements of Valdez and Francisco Martinez Ruiz within the rancho; shows Arroyo San Antonio, the rancho's northern boundary, color highlights and hachures marking fences. Directly documents on-the-ground ranch improvements/occupation. Public domain by age (1872). Downloaded high-res IIIF image.",
+      "category": "map",
+      "downloadable": true,
+      "downloaded_path": "/Users/andystavros/Ladera-Ranch/evidence/images/T11-CUCAMONGA/Huntington_SolanoReeve_HousesImprovements_Valdez_MartinezRuiz_RanchoCucamonga_1872-02-29_id11375.jpg"
+    },
+    {
+      "title": "Composite government map of T.1 S.R. 5-7 W., and parts of T.1N. R.7-8W. and T.1S. R. 8W. S.B.M., including Rancho Cucamonga; portions of ranchos Jurupa, Santa Ana del Chino",
+      "repository": "The Huntington Library (Huntington Digital Library); Solano-Reeve collection",
+      "identifier": "callid mssSolano SR_Map_0052.01; ContentDM p15150coll4 id 11373",
+      "date": "1852-1865 (stated span; surveys by Henry Hancock and Henry Washington)",
+      "url": "https://hdl.huntington.org/digital/collection/p15150coll4/id/11373/",
+      "rights": "For information on use of Digital Library materials, please see Library Rights and Permissions: https://www.huntington.org/library-rights-permissions",
+      "depicts": "Rancho Cucamonga and neighboring grants (Jurupa, Santa Ana del Chino, eastern border Rancho San Bernardino), San Bernardino County. Composite of U.S. government township surveys (Henry Hancock, Henry Washington) with insets tabulating verified survey data. Public domain (U.S. government surveys; pre-1900). Downloaded high-res IIIF image.",
+      "category": "map",
+      "downloadable": true,
+      "downloaded_path": "/Users/andystavros/Ladera-Ranch/evidence/images/T11-CUCAMONGA/Huntington_SolanoReeve_CompositeGovtMap_RanchoCucamonga_Jurupa_Chino_1852-1865_id11373.jpg"
+    },
+    {
+      "title": "Cucamonga Creek",
+      "repository": "The Huntington Library (Huntington Digital Library); Solano-Reeve collection",
+      "identifier": "callid mssSolano SR_Map_0058; ContentDM p15150coll4 id 11383",
+      "date": "1870-1880 (stated span)",
+      "url": "https://hdl.huntington.org/digital/collection/p15150coll4/id/11383/",
+      "rights": "For information on use of Digital Library materials, please see Library Rights and Permissions: https://www.huntington.org/library-rights-permissions",
+      "depicts": "Rancho Cucamonga, San Bernardino County. Engineering profile of Cucamonga Creek: gradient of creek bed and bluff, grade of the flume/pipe and bluff surface, with hachures and pencil annotations (water-conveyance / irrigation infrastructure on the rancho). Public domain by age. Downloaded high-res IIIF image.",
+      "category": "map",
+      "downloadable": true,
+      "downloaded_path": "/Users/andystavros/Ladera-Ranch/evidence/images/T11-CUCAMONGA/Huntington_SolanoReeve_CucamongaCreek_1870-1880_id11383.jpg"
+    },
+    {
+      "title": "Map of the Cucamonga Creek",
+      "repository": "The Huntington Library (Huntington Digital Library); Solano-Reeve collection",
+      "identifier": "callid mssSolano SR_Map_0057.01; ContentDM p15150coll4 id 11380",
+      "date": "1874-08 (stated)",
+      "url": "https://hdl.huntington.org/digital/collection/p15150coll4/id/11380/",
+      "rights": "For information on use of Digital Library materials, please see Library Rights and Permissions: https://www.huntington.org/library-rights-permissions",
+      "depicts": "Rancho Cucamonga, San Bernardino County. Meander of Cucamonga Creek from the falls to the head of the flume/pipe, and grade to the NW corner of Lot 3 Bl. 21 near the reservoir. Water-infrastructure land use. High-res image available (not downloaded; representative of the Cucamonga Creek series). Public domain by age.",
+      "category": "map",
+      "downloadable": true
+    },
+    {
+      "title": "Rancho Cucamonga: S88. [Sketch map with numbered parcels, \"house lots\" notation]",
+      "repository": "The Huntington Library (Huntington Digital Library); Solano-Reeve collection",
+      "identifier": "callid mssSolano SR_Box_21(06).02; ContentDM p15150coll4 id 11116 (also parent id 11117)",
+      "date": "1874-07-13 (stated)",
+      "url": "https://hdl.huntington.org/digital/collection/p15150coll4/id/11116/",
+      "rights": "For information on use of Digital Library materials, please see Library Rights and Permissions: https://www.huntington.org/library-rights-permissions",
+      "depicts": "Rancho Cucamonga, San Bernardino County. Pencil sketch map (7 x 8.5 in.) with numbered parcels and 'house lots' notation. CATALOGUE-ONLY: ContentDM record marked 'No Image on File' (no digital image available to download).",
+      "category": "map",
+      "downloadable": false
+    },
+    {
+      "title": "Cucamonga town site : copy certified by George Hansen of his map of August 1874",
+      "repository": "The Huntington Library (Huntington Digital Library); Solano-Reeve collection",
+      "identifier": "callid mssSolano SR_Map_0060; ContentDM p15150coll4 id 11385",
+      "date": "1893-07-10 (stated; of an August 1874 survey by George Hansen)",
+      "url": "https://hdl.huntington.org/digital/collection/p15150coll4/id/11385/",
+      "rights": "For information on use of Digital Library materials, please see Library Rights and Permissions: https://www.huntington.org/library-rights-permissions",
+      "depicts": "Cucamonga town site on former Rancho Cucamonga, San Bernardino County. Surveyor George Hansen's certified town-site plat. Public domain by age. High-res image available (not downloaded).",
+      "category": "map",
+      "downloadable": true
+    },
+    {
+      "title": "Rancho Cucamonga subdivision map, with George Hansen certification and affixed blank legal document of July 1893",
+      "repository": "The Huntington Library (Huntington Digital Library); Solano-Reeve collection",
+      "identifier": "callid mssSolano SR_Map_0054; ContentDM p15150coll4 id 11376 (duplicate variant SR_Map_0054B = id 12419)",
+      "date": "1874-08 and 1893-07-10 (stated)",
+      "url": "https://hdl.huntington.org/digital/collection/p15150coll4/id/11376/",
+      "rights": "For information on use of Digital Library materials, please see Library Rights and Permissions: https://www.huntington.org/library-rights-permissions",
+      "depicts": "Rancho Cucamonga, San Bernardino County. Subdivision map (blocks 1-24 bordered by Orange, Carnelian, Banyan & Sapphire streets; 120-acre town site, 24 blocks) surveyed by George Hansen. Public domain by age. High-res image available (not downloaded).",
+      "category": "map",
+      "downloadable": true
+    },
+    {
+      "title": "Map of the tract of land of the Cucamonga Homestead Association",
+      "repository": "The Huntington Library (Huntington Digital Library); Solano-Reeve collection",
+      "identifier": "callid mssSolano SR_Map_0056.01 (id 11378); related SR_Map_0055 (id 11377, 1874-07), SR_Map_0056.02 (id 11379), Calisphere item 4e3963fd17cef89faa8b923616833f29",
+      "date": "1874-08 and 1874-07 (stated)",
+      "url": "https://hdl.huntington.org/digital/collection/p15150coll4/id/11378/",
+      "rights": "For information on use of Digital Library materials, please see Library Rights and Permissions: https://www.huntington.org/library-rights-permissions",
+      "depicts": "Former Rancho Cucamonga, San Bernardino County. Subdivision map of the Cucamonga Homestead Association (120 acres, 24 blocks/lots and streets) based on a survey by G. Hansen; drawn by Alfred Solano. Public domain by age. High-res image available (not downloaded).",
+      "category": "map",
+      "downloadable": true
+    },
+    {
+      "title": "Rains House, aka Casa de Rancho Cucamonga",
+      "repository": "Los Angeles Public Library (Photo Collection, via TESSA); Security Pacific National Bank Collection; also surfaced via Calisphere",
+      "identifier": "order 00072536; location 'Rancho Cucamonga-Residences; A-008-808 4x5'; CARL0000075925; ContentDM cdm16703 photos id 114883; Calisphere item 6d320e119b95a5ac97d5d332e952d2e9",
+      "date": "1928 (stated)",
+      "url": "https://cdm16703.contentdm.oclc.org/digital/collection/photos/id/114883/",
+      "rights": "Images available for reproduction and use. Please see the Ordering & Use page at http://tessa.lapl.org/OrderingUse.html for additional information.",
+      "depicts": "Casa de Rancho Cucamonga / John Rains House, San Bernardino County -- front view of the 1860-61 brick residence of John Rains at 7869 Vineyard Ave. THE key photograph of the surviving rancho-era structure. CATALOGUE-ONLY: LAPL requires ordering/use terms (not an explicit open/PD license); not downloaded.",
+      "category": "photo",
+      "downloadable": false
+    },
+    {
+      "title": "Aerial photograph of Cucamonga Winery",
+      "repository": "Rancho Cucamonga Library Services (Collection of City of Rancho Cucamonga Local History Photographs), via Calisphere / Online Archive of California",
+      "identifier": "Calisphere/OAC ark:/13030/c8sj1hn8",
+      "date": "not stated (mid-20th c.; estimated)",
+      "url": "https://calisphere.org/item/ark:/13030/c8sj1hn8/",
+      "rights": "Copyright status unknown. Some materials may be protected by U.S. Copyright Law... Transmission or reproduction of materials protected by copyright beyond that allowed by fair use requires the written permission of the copyright owners. Property rights reside with the City of Rancho Cucamonga Library. Contact the library to publish or reproduce.",
+      "depicts": "Cucamonga Winery (Mission Winery), on former Rancho Cucamonga land, San Bernardino County. B&W aerial view of the winery amid buildings and fields -- wine-industry land use. CATALOGUE-ONLY: copyright status unknown; not downloaded.",
+      "category": "photo",
+      "downloadable": false
+    },
+    {
+      "title": "Rancho Cucamonga land grant -- U.S. General Land Office survey plat and patent (private land claim)",
+      "repository": "Bureau of Land Management, General Land Office (GLO) Records; also California State Archives (U.S. Surveyor General Maps)",
+      "identifier": "Private land claim, Rancho Cucamonga; patent issued to Leon V. Prudhomme, 1872 (claim filed with the U.S. Land Commission 1852). Candidate GLO references seen in indexes: survey dm_id 288883; patent accession 22286 / CACAAA 081621 -- NOT independently verified in this session (GLO detail pages are JavaScript/ASP.NET-rendered and could not be scraped).",
+      "date": "Survey/patent 1866-1872 (grant confirmed to Prudhomme, patented 1872)",
+      "url": "https://glorecords.blm.gov/search/",
+      "rights": "Public domain (work of the U.S. Government). Note: GLO survey plats and patents are federal public-domain records; images are served through the GLO interactive document viewer.",
+      "depicts": "Rancho Cucamonga, San Bernardino County -- the federally surveyed/patented boundary of the 13,045-acre grant. CATALOGUE-ONLY: the plat/patent image is public domain but is delivered via the GLO viewer and could not be auto-downloaded/verified this session; retrieve interactively at glorecords.blm.gov (search Cucamonga / Prudhomme, San Bernardino County) or via California State Archives U.S. Surveyor General Maps.",
+      "category": "map",
+      "downloadable": false
+    }
+  ],
+  "physical_only_collections": [
+    "Rancho Cucamonga Library Services (Archibald Library), 10500 Civic Center Drive, Rancho Cucamonga, CA 91730; (909) 477-2720; reference@cityofrc.us. Holds the 'Collection of City of Rancho Cucamonga Local History Photographs' (circa 1897-1980; ~200 items: photographs, maps, wine labels, records documenting the Virginia Dare / Thomas / Cucamonga wineries, agriculture, buildings, city views, floods, early residents). Collection is stored offsite at a remote storage facility; advance notice required for access. Only a subset is digitized on Calisphere/OAC (finding aid ark:/13030/kt0z09r4gs); rights: 'Property rights reside with the City of Rancho Cucamonga Library.'",
+    "San Bernardino County Museum -- Maria Merced Williams & John Rains House (Casa de Rancho Cucamonga), 8810 Hemlock St, Rancho Cucamonga, CA 91730 (branch of the San Bernardino County Museum, 2024 Orange Tree Lane, Redlands, CA 92374; (909) 307-2669). On-site interpretive/historic-house collection for the 1860-61 rancho brick house (NRHP #73000428). Historic images likely held on site / by the Casa de Rancho Cucamonga Historical Society.",
+    "California State Polytechnic University, Pomona -- Special Collections & Archives, University Library, 3801 W. Temple Ave, Pomona, CA 91768; (909) 869-3775; speccollections@cpp.edu. Holds the 'Southern California Wine and Wine Industry Photograph Collection, circa 1890-2013' (8.04 lin. ft.) incl. Cucamonga-region wineries (e.g., Virginia Dare Winery in Rancho Cucamonga), plus the Pomona Valley Historical Collection. Advance notice required; some items digitized. Rights: permission to publish must be secured from repository and copyright holder.",
+    "California State Archives, 1020 O Street, Sacramento, CA 95814; (916) 653-2246; ArchivesWeb@sos.ca.gov. U.S. Surveyor General Maps series includes the Rancho Cucamonga grant plat; reproduction on request.",
+    "The Bancroft Library, UC Berkeley -- 'Land Case Files' (collection 12346) for the Rancho Cucamonga private land claim (Prudhomme claimant, patented 1872). The case file / any surviving diseno was not found digitized on Calisphere this session; an on-site or finding-aid check is warranted."
+  ],
+  "dead_ends": [
+    "Library of Congress HABS/HAER: no Historic American Buildings Survey record found for the Casa de Rancho Cucamonga / John Rains House (loc.gov json search 'Casa de Rancho Cucamonga' and 'Rancho Cucamonga Rains' returned only tangential items -- e.g. the unrelated 'Goerlitz House' HABS ca2330 in Rancho Cucamonga, Pomona Valley histories, newspapers). The Rains House is on the National Register (#73000428) but does not appear to have a digitized HABS set at LOC.",
+    "Bancroft Library 'Maps of private land grant cases of California' (Calisphere collection 12347): no diseno or land-case map titled Cucamonga surfaced. Every 'Cucamonga' map hit on Calisphere resolves to the Huntington Solano-Reeve collection, not a Bancroft diseno. The Cucamonga grant appears to have been confirmed via the Prudhomme claim/U.S. survey rather than a digitized surviving diseno.",
+    "David Rumsey Historical Map Collection (LUNA API, q=Cucamonga): only 3 tangential hits -- 'Ontario. Detail Irrigation Map.', an irrigation-history chapter map, and a 'Wine Map of California' -- none is a Rancho-Cucamonga-specific ranch/land map.",
+    "Huntington Digital Library Photographs collection (p15150coll2), dmQuery title contains 'Cucamonga': 0 records. The Huntington's Cucamonga holdings are maps (Solano-Reeve, 22 records), not photographs.",
+    "USC Digital Library and UCLA Library Special Collections: no Rancho Cucamonga ranch-specific photograph or map surfaced via web search (only general landing pages and the Cal Poly Pomona wine collection).",
+    "BLM GLO Records detail pages (survey dm_id / patent accession for Cucamonga): pages are JavaScript/ASP.NET-rendered and returned identical shell HTML to curl and 401/403 to WebFetch; specific accession numbers (22286 / CACAAA 081621 / dm_id 288883) came from search-index snippets and could NOT be independently confirmed this session.",
+    "vredenburgh.org California GLO/BLM Land Patents table (to verify the Cucamonga patent accession): server returned HTTP 500; could not confirm the exact GLO document number for the Prudhomme/Cucamonga patent.",
+    "Calisphere item pages are client-side (React) rendered and return 0 bytes to curl and empty content to WebFetch; item metadata was obtained via the underlying ContentDM dmwebservices API (Huntington, LAPL) and via OAC finding aids / search snippets instead.",
+    "No photographs of the Tapia/Rains CATTLE operation or the original Tiburcio Tapia adobe (Red Hill) are known to exist: the adobe was abandoned in 1858 and disintegrated, and the cattle era (1839-1864) predates local photography. Guasti / Italian Vineyard Company imagery (e.g. Calisphere e4af6b8a) was EXCLUDED as it depicts Guasti (present-day Ontario area), which is adjacent to but not on the Tapia Rancho Cucamonga grant proper -- flagged to avoid conflation."
+  ]
+}

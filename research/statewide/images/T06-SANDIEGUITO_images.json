@@ -1,0 +1,126 @@
+{
+  "target_id": "T06-SANDIEGUITO",
+  "ranch": "Rancho San Dieguito",
+  "county": "San Diego County, California",
+  "grant_note": "8,824.71-acre Mexican land grant to Juan Maria Osuna (Alvarado 1840/41 + Pico 11 Aug 1845). Patented 18 Apr 1871 to Juliana Lopez Osuna et al. Renamed Rancho Santa Fe by the Santa Fe Land Improvement Co. in 1922. Grantee/owner families: Osuna, Ruiz (Juana Ruiz / Osuna family ties). DISTINCT from any Orange County land of similar name.",
+  "retrieved": "2026-07-21",
+  "items_found": 9,
+  "items_downloaded": 14,
+  "items": [
+    {
+      "title": "Juan Osuna House, Via de la Valle, Rancho Santa Fe, San Diego County, CA",
+      "repository": "Library of Congress, Prints & Photographs Division (Historic American Buildings Survey)",
+      "identifier": "HABS CAL,37-RANSF,28- ; digital id ca1719",
+      "date": "Documentation compiled after 1933 (photographs undated)",
+      "url": "https://www.loc.gov/item/ca1719/",
+      "rights": "The Library of Congress does not own rights to material in its collections... it does not license or charge permission fees. HABS documentation is produced by the U.S. Government and is in the public domain. See LOC HABS/HAER/HALS Rights and Restrictions.",
+      "depicts": "The Juan Maria Osuna adobe house on Rancho San Dieguito (later Rancho Santa Fe), San Diego County. 3 exterior photographs. This is the principal adobe the grantee built for himself.",
+      "category": "photo",
+      "downloadable": true,
+      "downloaded_path": "/Users/andystavros/Ladera-Ranch/evidence/images/T06-SANDIEGUITO/HABS_ca1719_JuanOsunaHouse_036715.tif ; _036716.tif ; _036717.tif (master TIFFs)"
+    },
+    {
+      "title": "Leandro Osuna House, Via de Santa Fe, Rancho Santa Fe, San Diego County, CA",
+      "repository": "Library of Congress, Prints & Photographs Division (Historic American Buildings Survey)",
+      "identifier": "HABS CAL,37-RANSF,27- ; digital id ca1718",
+      "date": "Documentation compiled after 1933",
+      "url": "https://www.loc.gov/item/ca1718/",
+      "rights": "U.S. Government HABS documentation, public domain; LOC holds no rights. See LOC HABS/HAER/HALS Rights and Restrictions.",
+      "depicts": "The adobe given by Juan Maria Osuna to his son Leandro Osuna on Rancho San Dieguito, San Diego County. No digitized photographs online; data pages and photo-caption page only.",
+      "category": "document",
+      "downloadable": true,
+      "downloaded_path": "/Users/andystavros/Ladera-Ranch/evidence/images/T06-SANDIEGUITO/HABS_ca1718_LeandroOsunaHouse_data.pdf ; _caption.pdf"
+    },
+    {
+      "title": "Rancho Santa Fe, Rancho Santa Fe, San Diego County, CA",
+      "repository": "Library of Congress, Prints & Photographs Division (Historic American Buildings Survey)",
+      "identifier": "HABS CAL,37-RANSF,11- ; digital id ca1694",
+      "date": "Documentation compiled after 1933 (photocopies of earlier photographs, incl. an aerial view)",
+      "url": "https://www.loc.gov/item/ca1694/",
+      "rights": "U.S. Government HABS documentation, public domain; LOC holds no rights. Individual photos are photocopies from the Rancho Santa Fe Historical Society Archives (photographer unknown).",
+      "depicts": "The Rancho Santa Fe historic district built in the 1920s on former Rancho San Dieguito (Osuna) land, San Diego County. 9 photographs incl. an aerial view of the ranches with Paseo Delicias, and Lilian Rice-designed houses; 1 measured drawing.",
+      "category": "photo",
+      "downloadable": true,
+      "downloaded_path": "/Users/andystavros/Ladera-Ranch/evidence/images/T06-SANDIEGUITO/HABS_ca1694_RanchoSantaFe_036660.jpg ... _036668.jpg (9 high-res JPEGs)"
+    },
+    {
+      "title": "San Dieguito (also called \"San Diego\") [San Diego County] Juliana Lopez de Osuna, et al, Claimants. Case no. 92, Southern District of California.",
+      "repository": "Bancroft Library, UC Berkeley (Berkeley Digital Collections)",
+      "identifier": "digicoll record 265838 ; U.S. District Court Land Case no. 92 SD",
+      "date": "Claim filed 1 Nov 1852; rejected 1854; confirmed 1858; patent 1871 (case-file compiled 1852-1871)",
+      "url": "https://digicoll.lib.berkeley.edu/record/265838",
+      "rights": "Bancroft: 'Responsibility for determining rights status and permissibility of any use or reproduction rests exclusively with the researcher.' No online image of the diseño/plat in this record (transcript-level case file).",
+      "depicts": "The federal land-claim case file for Rancho San Dieguito, San Diego County (Osuna claimants). The associated diseno (hand-drawn boundary map) and U.S. Surveyor General plat originate here but are not individually digitized in this record.",
+      "category": "document",
+      "downloadable": false
+    },
+    {
+      "title": "Restored adobe home of J.M. Osuna in Rancho San Diguito, ca.1875",
+      "repository": "USC Digital Library — California Historical Society Collection (also indexed on Calisphere)",
+      "identifier": "USC record 2A3BF1BS6KD ; Calisphere ark 083358dc8fc435dedd707e92b17c368d",
+      "date": "ca. 1875 (estimated, as stated by repository)",
+      "url": "https://calisphere.org/item/083358dc8fc435dedd707e92b17c368d/",
+      "rights": "NOT VERIFIED — page is JS-rendered and returned no fetchable body; USC/California Historical Society Collection rights unconfirmed. Not downloaded pending verified rights statement.",
+      "depicts": "The restored J.M. Osuna adobe on Rancho San Dieguito, San Diego County (the structure later associated with Bing Crosby's Rancho Santa Fe home).",
+      "category": "photo",
+      "downloadable": false
+    },
+    {
+      "title": "Osuna Ranch - Rancho Santa Fe - 1926",
+      "repository": "San Diego History Center (photostore / Research Archives)",
+      "identifier": "photostore product 3940",
+      "date": "1926 (as stated)",
+      "url": "https://photostore.sandiegohistory.org/product/osuna-ranch-rancho-santa-fe-1926-3940/",
+      "rights": "San Diego History Center copyright; commercial photo-store reproduction (purchase/licensing required). Catalogue only.",
+      "depicts": "Osuna Ranch / former Rancho San Dieguito, San Diego County, 1926.",
+      "category": "photo",
+      "downloadable": false
+    },
+    {
+      "title": "Osuna Ranch - Rancho Santa Fe - 1929",
+      "repository": "San Diego History Center (photostore / Research Archives)",
+      "identifier": "photostore product 4981",
+      "date": "1929 (as stated)",
+      "url": "https://photostore.sandiegohistory.org/product/osuna-ranch-rancho-santa-fe-1929-4981-2/",
+      "rights": "San Diego History Center copyright; commercial photo-store reproduction (purchase/licensing required). Catalogue only.",
+      "depicts": "Osuna Ranch / former Rancho San Dieguito, San Diego County, 1929.",
+      "category": "photo",
+      "downloadable": false
+    },
+    {
+      "title": "Land Case Maps, [ca. 1840-ca. 1892] (Bancroft diseno / plat collection finding aid)",
+      "repository": "Bancroft Library, UC Berkeley (via Online Archive of California)",
+      "identifier": "OAC finding aid ark:/13030/hb8489p15p",
+      "date": "ca. 1840-ca. 1892",
+      "url": "https://oac.cdlib.org/findaid/ark:/13030/hb8489p15p",
+      "rights": "Bancroft Library; reproduction subject to Bancroft permissions. Collection-level lead — the San Dieguito diseno/plat would reside here but was not found individually digitized.",
+      "depicts": "Collection of diseños and U.S. Surveyor General plats from California private land-claim cases, San Diego County ranchos included. Lead for the San Dieguito diseño/plat.",
+      "category": "map",
+      "downloadable": false
+    },
+    {
+      "title": "Charles Puck Collection of Negatives and Photographs (Historical Society of Southern California)",
+      "repository": "Historical Society of Southern California / USC (via Online Archive of California)",
+      "identifier": "OAC finding aid ark:/13030/tf2p30028s",
+      "date": "20th century",
+      "url": "https://oac.cdlib.org/findaid/ark:/13030/tf2p30028s/entire_text/",
+      "rights": "Reproduction per repository policy; finding aid returned via bot-protection, item-level rights unconfirmed. Catalogue lead — reported to contain Osuna Adobe imagery.",
+      "depicts": "Photographs/negatives of California adobes reported to include the Osuna Adobe, San Diego County. Lead requiring item-level confirmation.",
+      "category": "photo",
+      "downloadable": false
+    }
+  ],
+  "physical_only_collections": [
+    "Rancho Santa Fe Historical Society Archives — 6036 La Flecha (La Flecha House), Rancho Santa Fe, CA 92067; mailing P.O. Box 1, Rancho Santa Fe, CA 92067; 858.756.9291; info@rsfhs.org; Wed-Sat 10:00-15:00. Holds the ORIGINAL Osuna adobe photographs (the HABS ca1694 photos are photocopies from this archive) and the Osuna Adobe Cultural Landscape Report.",
+    "San Diego History Center — Research Archives & Photograph Collection, 1649 El Prado, Suite 3, Balboa Park, San Diego, CA 92101; (619) 232-6203; photostore.sandiegohistory.org. Holds Osuna Ranch / Rancho San Dieguito photographs (e.g., 1926, 1929) and adobe-building caption files.",
+    "San Dieguito Heritage Museum (The Heritage Ranch) — 450 Quail Gardens Drive, Encinitas, CA 92024; (760) 632-9711; TheHeritageRanch@gmail.com; sdheritage.org; Fri-Sat 12:00-16:00. Local history/photo archive of the San Dieguito River area incl. Rancho Santa Fe.",
+    "Bancroft Library, UC Berkeley — Land Case files (Case no. 92 SD, Osuna claimants) and Land Case Maps (diseno + Surveyor General plat) originals; request via Aeon."
+  ],
+  "dead_ends": [
+    "Calisphere/OAC searches for the San Dieguito diseño surfaced other ranchos' diseños (San Bernardo, Milijo, San Justo, San Miguelito, etc.) but NO digitized diseño for Rancho San Dieguito.",
+    "David Rumsey Map Collection: no map specifically of Rancho San Dieguito found.",
+    "LOC keyword search 'Osuna' returned only the 3 HABS records (ca1694, ca1718, ca1719) plus unrelated Santa Fe, New Mexico newspapers.",
+    "USC Digital Library and Calisphere item pages are JS-rendered and returned HTTP 202/empty to fetch tools; rights for the ca.1875 Osuna adobe photo could not be verified, so it was catalogued but not downloaded.",
+    "oac.cdlib.org returned HTTP 202 with empty body (bot protection); finding-aid item-level detail for the Charles Puck collection and Land Case Maps could not be confirmed programmatically."
+  ]
+}

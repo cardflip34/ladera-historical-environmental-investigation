@@ -1,0 +1,216 @@
+{
+  "target_id": "T09-LOSCERRITOS",
+  "ranch": "Rancho Los Cerritos",
+  "county": "Los Angeles County, California (Long Beach / Bixby Knolls / Lakewood area)",
+  "grantee_owner_families": ["Nieto", "Temple (John/Juan Temple)", "Flint", "Bixby (Jotham Bixby; Flint, Bixby & Co.)"],
+  "disambiguation_notes": [
+    "The TARGET is the Los Angeles County Rancho Los Cerritos (Long Beach), a partition of the 1784 Nieto grant; adobe built 1844 by John (Juan) Temple; sold 1866 to Flint, Bixby & Co.; sheep/cattle operation.",
+    "NAME COLLISION 1: Robert B. Honeyman Jr. called his private museum/residence near Mission San Juan Capistrano (ORANGE COUNTY) 'Rancho Los Cerritos'. Huntington photo items p15150coll5/16479-16486 depict THAT Orange County residence, NOT the Long Beach ranch. Excluded from this inventory.",
+    "NAME COLLISION 2: 'Rancho Potrero de los Cerritos' is in Alameda County -- different land.",
+    "NAME COLLISION 3: The modern City of Cerritos (LA County) and 'Los Cerritos' place-names near Placentia are later/other; Southern California Edison photo collection (Huntington p16003coll2) hits are the modern Cerritos area, not the ranch."
+  ],
+  "retrieval_date": "2026-07-21",
+  "items_found": 22,
+  "items_downloaded": 25,
+  "items": [
+    {
+      "title": "Casa de los Cerritos, 4600 American Avenue, Long Beach, Los Angeles County, CA -- HABS survey photographs (12 b&w photos)",
+      "repository": "Library of Congress, Prints & Photographs Division, Historic American Buildings Survey (HABS)",
+      "identifier": "HABS CAL,19-LONGBN,1- ; survey HABS CA-37-12 ; item ca0208 ; photos 011958-011969",
+      "date": "Photographed March 8, 1934 by Daniel (Dan) Cathcart (stated)",
+      "url": "https://www.loc.gov/item/ca0208/",
+      "rights": "The Library of Congress does not own rights to material in its collections. Therefore, it does not license or charge permission fees for use of such material... it is the researcher's obligation to assess copyright or other use restrictions (HABS/HAER/HALS Collection - Rights and Restrictions). Federal HABS documentation = public domain.",
+      "depicts": "Los Cerritos Ranch House (adobe) at Long Beach, LOS ANGELES COUNTY -- east/front elevation, views from SE/SW/NE, south side, patio, corridors, second-story porch, garage window; the 1844 Temple adobe as it stood in 1934 before the 1930 remodel.",
+      "category": "photo",
+      "downloadable": true,
+      "downloaded_path": "evidence/images/T09-LOSCERRITOS/ (12 files: HABS_ca0208_011958pv.jpg through HABS_ca0208_011969pv.jpg)"
+    },
+    {
+      "title": "Casa de los Cerritos -- HABS measured drawings (6 sheets, sheet 0-5)",
+      "repository": "Library of Congress, Prints & Photographs Division, Historic American Buildings Survey (HABS)",
+      "identifier": "HABS CAL,19-LONGBN,1- (sheets 0 of 5 through 5 of 5) ; item ca0208 ; sheet 00000-00005",
+      "date": "HABS CA-37-12 (survey 1930s)",
+      "url": "https://www.loc.gov/item/ca0208/",
+      "rights": "The Library of Congress does not own rights to material in its collections... researcher's obligation to assess copyright. Federal HABS = public domain.",
+      "depicts": "Measured architectural drawings (plans/elevations) of the Los Cerritos Ranch House adobe, Long Beach, LOS ANGELES COUNTY.",
+      "category": "document",
+      "downloadable": true,
+      "downloaded_path": "evidence/images/T09-LOSCERRITOS/ (6 files: HABS_ca0208_00000v.jpg through HABS_ca0208_00005v.jpg)"
+    },
+    {
+      "title": "Casa de los Cerritos -- HABS data pages and supplemental pages (PDF)",
+      "repository": "Library of Congress, HABS",
+      "identifier": "ca0208 data pages + supplemental pages",
+      "date": "HABS CA-37-12",
+      "url": "https://www.loc.gov/item/ca0208/",
+      "rights": "Federal HABS = public domain; Library of Congress does not own/charge rights.",
+      "depicts": "Written architectural/historical documentation of the Los Cerritos Ranch House adobe, Long Beach, LOS ANGELES COUNTY.",
+      "category": "document",
+      "downloadable": true,
+      "downloaded_path": "evidence/images/T09-LOSCERRITOS/HABS_ca0208_ca0208data.pdf ; HABS_ca0208_ca0208supp.pdf"
+    },
+    {
+      "title": "Exterior view of Rancho Los Cerritos ranch house in Long Beach, ca.1900",
+      "repository": "California Historical Society Collection at Stanford / University of Southern California Digital Library (via Calisphere)",
+      "identifier": "chs-m5891 ; call no. CHS-121 ; USC-1-1-1-5999 ; DOI 10.25549/chs-m5891",
+      "date": "circa 1900 (stated)",
+      "url": "https://calisphere.org/item/cbbbb360a74348563d703229fc1fd879/",
+      "rights": "Public Domain. Release under the CC BY Attribution license--http://creativecommons.org/licenses/by/3.0/--Credit both “University of Southern California. Libraries” and “California Historical Society” as the source. Digitally reproduced by the USC Digital Library; From the California Historical Society Collection at the University of Southern California",
+      "depicts": "Dilapidated two-story 1844 Temple adobe ranch house, Los Cerritos, Long Beach, LOS ANGELES COUNTY; one-story adobe/brick wing visible.",
+      "category": "photo",
+      "downloadable": true,
+      "downloaded_path": "evidence/images/T09-LOSCERRITOS/USC-CHS_CHS-121_cbbbb360_ranchhouse_ca1900.jpg (300px PD/CC-BY derivative)"
+    },
+    {
+      "title": "Flower garden at the Los Cerritos Ranch in Long Beach, ca.1870",
+      "repository": "California Historical Society Collection at Stanford / USC Digital Library (via Calisphere)",
+      "identifier": "chs-m5892 ; call no. CHS-6501 ; USC-1-1-1-6000 ; DOI 10.25549/chs-m5892",
+      "date": "circa 1870 (stated)",
+      "url": "https://calisphere.org/item/cae2a7b593f261dd7c81ff77672ddfe1/",
+      "rights": "Public Domain. Release under the CC BY Attribution license--http://creativecommons.org/licenses/by/3.0/--Credit both “University of Southern California. Libraries” and “California Historical Society” as the source. Digitally reproduced by the USC Digital Library; From the California Historical Society Collection at the University of Southern California",
+      "depicts": "South side of the one-story Los Cerritos residence behind garden foliage; man, woman and child walking. Long Beach, LOS ANGELES COUNTY.",
+      "category": "photo",
+      "downloadable": true,
+      "downloaded_path": "evidence/images/T09-LOSCERRITOS/USC-CHS_CHS-6501_cae2a7b5_flowergarden_ca1870.jpg (300px PD/CC-BY derivative)"
+    },
+    {
+      "title": "Exterior of the Los Cerritos Ranch House, Long Beach, ca.1890 (1885/1895)",
+      "repository": "California Historical Society Collection at Stanford / USC Digital Library (via Calisphere)",
+      "identifier": "chs-m5890 ; call no. CHS-7411 ; USC-1-1-1-5998 ; DOI 10.25549/chs-m5890",
+      "date": "1885/1895 (stated)",
+      "url": "https://calisphere.org/item/388c1ad4f3e5779d95e847bfd033ced6/",
+      "rights": "Public Domain. Release under the CC BY Attribution license--http://creativecommons.org/licenses/by/3.0/--Credit both “University of Southern California. Libraries” and “California Historical Society” as the source. Digitally reproduced by the USC Digital Library; From the California Historical Society Collection at the University of Southern California",
+      "depicts": "Man in horse-drawn carriage before the two adobe houses and two-story wooden BARN of the ranch (Temple 1844 adobe); a field in foreground. Long Beach, LOS ANGELES COUNTY. Strong ranch/agricultural-operation view.",
+      "category": "photo",
+      "downloadable": true,
+      "downloaded_path": "evidence/images/T09-LOSCERRITOS/USC-CHS_CHS-7411_388c1ad4_adobes_barn_ca1890.jpg (300px PD/CC-BY derivative)"
+    },
+    {
+      "title": "Los Cerritos Ranch House patio on the north side of the residence, Long Beach, 1868",
+      "repository": "California Historical Society Collection at Stanford / USC Digital Library (via Calisphere)",
+      "identifier": "chs-m5887 ; call no. CHS-7440 ; USC-1-1-1-5995 ; DOI 10.25549/chs-m5887",
+      "date": "1868 (stated)",
+      "url": "https://calisphere.org/item/30289a2f3c103e51524fb386a464a80f/",
+      "rights": "Public Domain. Release under the CC BY Attribution license--http://creativecommons.org/licenses/by/3.0/--Credit both “University of Southern California. Libraries” and “California Historical Society” as the source. Digitally reproduced by the USC Digital Library; From the California Historical Society Collection at the University of Southern California",
+      "depicts": "North-side patio of the long adobe ranch house (peeling paint/spackle), woman standing in foreground field. Early Bixby-era image. Long Beach, LOS ANGELES COUNTY.",
+      "category": "photo",
+      "downloadable": true,
+      "downloaded_path": "evidence/images/T09-LOSCERRITOS/USC-CHS_CHS-7440_30289a2f_patio_north_1868.jpg (300px PD/CC-BY derivative)"
+    },
+    {
+      "title": "Seaside residence of Jotham Bixby in Long Beach, ca.1910",
+      "repository": "California Historical Society Collection at Stanford / USC Digital Library (via Calisphere)",
+      "identifier": "chs-m5898 ; call no. CHS-9990 ; USC-1-1-1-6006 ; DOI 10.25549/chs-m5898",
+      "date": "circa 1910 (stated)",
+      "url": "https://calisphere.org/item/0d7ca42590443192ac03db30d16c3f1c/",
+      "rights": "Public Domain. Release under the CC BY Attribution license--http://creativecommons.org/licenses/by/3.0/--Credit both “University of Southern California. Libraries” and “California Historical Society” as the source. Digitally reproduced by the USC Digital Library; From the California Historical Society Collection at the University of Southern California",
+      "depicts": "Later Bixby-family (owner family) seaside mansion on a hill above the water, Long Beach, LOS ANGELES COUNTY. Owner-family context, not the rancho adobe itself.",
+      "category": "photo",
+      "downloadable": true,
+      "downloaded_path": "evidence/images/T09-LOSCERRITOS/USC-CHS_CHS-9990_0d7ca425_jothambixby_seaside_ca1910.jpg (300px PD/CC-BY derivative)"
+    },
+    {
+      "title": "Plat of the Rancho Los Cierritos [Cerritos] finally confirmed to Juan Temple",
+      "repository": "The Huntington Library, Solano-Reeve Collection (Huntington Digital Library)",
+      "identifier": "mssSolano SR_Map_0037 ; hdl item p15150coll4/11358",
+      "date": "US land-claim survey era, ca. 1852-1862; item date 'undated' -- surveyor Henry Hancock (1822-1883)",
+      "url": "https://hdl.huntington.org/digital/collection/p15150coll4/id/11358/",
+      "rights": "For information on use of Digital Library materials, please see Library Rights and Permissions: https://www.huntington.org/library-rights-permissions [ambiguous; not an explicit open/PD license, so NOT downloaded although map is PD by age]",
+      "depicts": "Official confirmation plat of Rancho Los Cerritos granted/confirmed to Juan (John) Temple, 22,194.35 acres; bordered by Ranchos Los Alamitos, San Pedro, Los Coyotes, Santa Gertrudes and the Pacific Ocean; San Gabriel River; Temple's house indicated. LOS ANGELES COUNTY.",
+      "category": "map",
+      "downloadable": false
+    },
+    {
+      "title": "Boundary along San Gabriel River between Ranchos San Pedro and Los Cerritos (survey, 1884) -- plus related boundary plats",
+      "repository": "The Huntington Library, Solano-Reeve Collection (Huntington Digital Library)",
+      "identifier": "mssSolano SR_Map_0216.02 ; hdl p15150coll4/11586 (siblings 11587-11591; related 11575 'Copy: Plat of Part of Boundary Between Ranchos San Pedro and Los Cerritos' 1885-01-03)",
+      "date": "1884-07-12 (stated); related copy 1885-01-03",
+      "url": "https://hdl.huntington.org/digital/collection/p15150coll4/id/11586/",
+      "rights": "For information on use of Digital Library materials, please see Library Rights and Permissions: https://www.huntington.org/library-rights-permissions [ambiguous; not downloaded]",
+      "depicts": "Surveyed boundary line along the San Gabriel River between Rancho San Pedro and Rancho Los Cerritos. LOS ANGELES COUNTY.",
+      "category": "map",
+      "downloadable": false
+    },
+    {
+      "title": "Portrait of Don Juan Temple, an early owner of the Ranch Los Cerritos in Long Beach",
+      "repository": "California Historical Society Collection at Stanford / USC Digital Library (via Calisphere)",
+      "identifier": "Calisphere item d141f775194a9088dbbd22a4ffdb590f (CHS call no. not captured -- Calisphere rate-limited during retrieval)",
+      "date": "not captured (19th c.)",
+      "url": "https://calisphere.org/item/d141f775194a9088dbbd22a4ffdb590f/",
+      "rights": "Public Domain. Release under the CC BY Attribution license (uniform CHS-at-USC collection rights) -- credit USC Libraries and California Historical Society. [Downloadable in principle; image not fetched because Calisphere returned HTTP 403 rate-limit before image ID could be captured.]",
+      "depicts": "Portrait of John (Juan) Temple, builder of the 1844 adobe and first named owner-operator of Rancho Los Cerritos. LOS ANGELES COUNTY (Long Beach) context.",
+      "category": "photo",
+      "downloadable": true
+    },
+    {
+      "title": "Brands of the California ranches, ca.1840-1900 (includes John Temple's Los Cerritos brand, registered 1844)",
+      "repository": "California Historical Society Collection at Stanford / USC Digital Library (via Calisphere)",
+      "identifier": "Calisphere item 221073b4588d77e0412dff50e7cb498f (CHS call no. not captured -- Calisphere rate-limited)",
+      "date": "ca.1840-1900 (stated)",
+      "url": "https://calisphere.org/item/221073b4588d77e0412dff50e7cb498f/",
+      "rights": "Public Domain. Release under the CC BY Attribution license (uniform CHS-at-USC collection rights). [Not fetched -- Calisphere 403 rate-limit.]",
+      "depicts": "Printed page of Southern California cattle/ranch brands including Temple's Los Cerritos brand -- direct documentation of the cattle operation. LOS ANGELES COUNTY.",
+      "category": "artifact",
+      "downloadable": true
+    },
+    {
+      "title": "Long Beach area showing Ranchos Los Alamitos and Los Cerritos (map)",
+      "repository": "California Historical Society Collection at Stanford / USC Digital Library (via Calisphere)",
+      "identifier": "Calisphere item afe090c7e7e4768caee5b71f61385590 (CHS call no. not captured -- Calisphere rate-limited)",
+      "date": "described as ca.1769-1961 coverage (not captured precisely)",
+      "url": "https://calisphere.org/item/afe090c7e7e4768caee5b71f61385590/",
+      "rights": "Public Domain. Release under the CC BY Attribution license (uniform CHS-at-USC collection rights). [Not fetched -- Calisphere 403 rate-limit.]",
+      "depicts": "Map of the Long Beach area showing the boundaries of Ranchos Los Alamitos and Los Cerritos. LOS ANGELES COUNTY.",
+      "category": "map",
+      "downloadable": true
+    },
+    {
+      "title": "Rancho Los Cerritos, side view from south of decaying house, Long Beach, 1930",
+      "repository": "UCLA Library Special Collections, Charles E. Young Research Library (Bartlett (Adelbert) Papers / via Calisphere)",
+      "identifier": "Calisphere item ark:/21198/zz002b65c1",
+      "date": "1930 (stated)",
+      "url": "https://calisphere.org/item/ark:/21198/zz002b65c1/",
+      "rights": "Not captured -- Calisphere returned HTTP 403 during retrieval; UCLA item-level rights unverified. Catalogued only, NOT downloaded.",
+      "depicts": "South-side view of the decaying Los Cerritos adobe just before the 1930 Bixby remodel. Long Beach, LOS ANGELES COUNTY.",
+      "category": "photo",
+      "downloadable": false
+    },
+    {
+      "title": "Additional Calisphere 'Los Cerritos Ranch' photographs (Huntington Photographs & UCLA collections)",
+      "repository": "Huntington Library (Photographs) and UCLA Library Special Collections, via Calisphere",
+      "identifier": "Group -- titles seen in Calisphere results but not individually retrieved (Calisphere 403): 'Los Cerritos Ranch house' (x3), 'Los Cerritos Ranch house from the west', 'Rancho Los Cerritos, ranch house courtyard, Long Beach, 1929', 'Patio of the Rancho Los Cerritos ranch house, ca.1890-1910', 'East front side of the Rancho Los Cerritos ranch house (later Bixby...)', 'Exterior view of the Los Cerritos Ranch House, Long Beach, 1890'",
+      "date": "1868-1929 range (mixed, stated per item)",
+      "url": "https://calisphere.org/search/?q=%22Los+Cerritos+Ranch%22",
+      "rights": "Per-item; Huntington items 'see Library Rights and Permissions' (ambiguous); UCLA per-item. Not downloaded -- Calisphere rate-limited; verify item-by-item when accessible.",
+      "depicts": "Various views of the Los Cerritos ranch house/courtyard/patio, Long Beach, LOS ANGELES COUNTY. (14 items total across 3 collections in Calisphere: CHS-at-USC, Huntington, UCLA.)",
+      "category": "photo",
+      "downloadable": false
+    },
+    {
+      "title": "Diseño of Rancho Los Cerritos / Long Beach area (Mexican land-grant sketch map), dated May 1, 1836",
+      "repository": "Reported held by USC Libraries / California Historical Society (original grant diseños also in National Archives land-case files, Bancroft Library)",
+      "identifier": "Exact Calisphere/USC item URL not pinned during this session (lead)",
+      "date": "May 1, 1836 (reported)",
+      "url": "https://calisphere.org/search/?q=dise%C3%B1o+Los+Cerritos",
+      "rights": "Presumed Public Domain / CC BY if via CHS-at-USC; verify item-level rights before download.",
+      "depicts": "Original Spanish-language diseño (boundary sketch) of the Nieto/Los Cerritos land grant. LOS ANGELES COUNTY. Verify against name-collisions before use.",
+      "category": "map",
+      "downloadable": false
+    }
+  ],
+  "physical_only_collections": [
+    "Rancho Los Cerritos Historic Site -- Research Library & Archives, 4600 Virginia Road, Long Beach, CA 90807. Email Rancho@RanchoLosCerritos.org (appointment only, Wed/Thu). Holds 15,000+ artifacts and archival material to the 1940s: the 1872 William Godfrey stereograph cards of the ranch (earliest in-situ farm-labor photos in CA, showing Chinese and Mexican ranch hands), 1,100+ historic photographic views of the rancho and occupants, 1930-remodel architectural blueprints, Sarah Bixby Smith and Llewellyn Bixby Jr. manuscript collections. City of Long Beach owns the site.",
+    "Historical Society of Long Beach -- Long Beach, CA (regional photo/manuscript archive for Long Beach & Bixby history).",
+    "Long Beach Public Library, Long Beach History & Special Collections (LBPL Digital Photo Archive) -- 200 W. Broadway, Long Beach, CA; Rancho Los Cerritos among documented locations.",
+    "The Huntington Library, San Marino, CA -- Solano-Reeve survey maps (p15150coll4) and Photographs collections; onsite reading room for higher-resolution/rights beyond the ambiguous web statement.",
+    "Bancroft Library, UC Berkeley -- Robert B. Honeyman Jr. Collection (OAC finding aid ark:/13030/tf9p3012wq); NOTE Honeyman's own 'Rancho Los Cerritos' was his SAN JUAN CAPISTRANO (Orange County) residence, a name-collision -- verify content before associating with the Long Beach ranch."
+  ],
+  "dead_ends": [
+    "davidrumsey.com site search ('Los Cerritos' / 'Los Nietos' rancho, Long Beach) returned no rancho-specific map hits via web search; David Rumsey may still hold county/regional maps but none surfaced for this ranch by name.",
+    "BLM GLO Records (glorecords.blm.gov): no public API and the ASP search interface could not be queried programmatically; the specific California private-land-claim patent for Rancho Los Cerritos (confirmee Juan Temple) was not retrieved this session -- flagged as a lead (search Land Patents, CA, confirmee Temple).",
+    "Huntington CONTENTdm search 'Nieto diseno' returned 0 results (the 1836 diseño is not in the Huntington digital collections under that term).",
+    "Calisphere item pages began returning HTTP 403 (rate-limit) after ~7 successful item retrievals; the Don Juan Temple portrait, 'Brands of the California ranches', the Los Alamitos/Los Cerritos map, the UCLA 1930 'decaying house' view, and ~6 further Huntington/UCLA 'Los Cerritos Ranch house' items could be catalogued (titles/URLs) but not fully verified or downloaded.",
+    "USC Digital Library full-resolution assets could not be fetched (asset-management endpoint returns 403); only the open ~300px CHS thumbnail derivatives (thumbnails.digitallibrary.usc.edu, PD/CC-BY) were downloadable, and that host required TLS cert-chain bypass (-k)."
+  ],
+  "output_file_written": "research/statewide/images/T09-LOSCERRITOS_images.json"
+}

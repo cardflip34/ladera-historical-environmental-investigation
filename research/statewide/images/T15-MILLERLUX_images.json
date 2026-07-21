@@ -1,0 +1,226 @@
+{
+  "target_id": "T15-MILLERLUX",
+  "ranch": "Miller & Lux (Fresno County / Los Banos, San Joaquin Valley)",
+  "owner_families": ["Henry Miller", "Charles Lux"],
+  "note": "Miller & Lux was a corporate cattle-and-land empire headquartered at Los Banos (Merced County) with core San Joaquin Valley holdings across Fresno, Merced, Madera, Stanislaus, plus major Kern County lands (Buena Vista / Kern River, subject of Lux v. Haggin) and Rancho lands in Monterey/San Benito/San Luis Obispo. Henry Miller's personal 'home ranch' Bloomfield was near Gilroy in SANTA CLARA County (Rancho Las Animas) and his Mt. Madonna homes are also Santa Clara -- these are flagged separately and are NOT the San Joaquin Valley cattle operation. Archival collections are catalogued under the family names (Henry Miller / Charles Lux) and the corporate name 'Miller & Lux', not by modern place names.",
+  "retrieval_date": "2026-07-21",
+  "items": [
+    {
+      "title": "USGS 1:31680-scale Quadrangle for Los Banos, CA 1921",
+      "repository": "U.S. Geological Survey / National Geologic Map Database (Historical Topographic Map Collection); item hosted on ScienceBase and USGS prd-tnm S3",
+      "identifier": "ScienceBase 5a8a51b8e4b00f54eb40c40a; USGS CA_Los Banos_296276_1921_31680",
+      "date": "1921 (stated publication year)",
+      "url": "https://www.sciencebase.gov/catalog/item/5a8a51b8e4b00f54eb40c40a",
+      "rights": "U.S. federal government publication (USGS) -- public domain, no copyright.",
+      "depicts": "Los Banos, MERCED COUNTY, CA -- the Miller & Lux corporate headquarters town and surrounding San Joaquin Valley ranch/canal lands (Miller & Lux irrigation canal network). Land-use topographic base map of the ranch's home district.",
+      "category": "map",
+      "downloadable": true,
+      "downloaded_path": "/Users/andystavros/Ladera-Ranch/evidence/images/T15-MILLERLUX/USGS_LosBanos_1921_31680_geo.pdf"
+    },
+    {
+      "title": "Map of a portion of Kern County, California showing ranches, lakes, rivers, canals, sloughs, and artesian wells",
+      "repository": "Library of Congress, Prints & Photographs Division, Washington, D.C.",
+      "identifier": "Digital id ds.16015 (also b&w neg cph.3c38702); LCCN via LOC pictures item 2010645756",
+      "date": "1888 (stated; [San Francisco]: [Britton & Rey], 1888)",
+      "url": "https://www.loc.gov/pictures/item/2010645756/",
+      "rights": "\"No known restrictions on publication.\" (LOC rights_information; item flagged unrestricted). Public domain.",
+      "depicts": "KERN COUNTY, CA ranch lands (lakes, rivers, canals, sloughs, artesian wells). Miller & Lux held large Kern County properties (Buena Vista / Kern River, the water at issue in Lux v. Haggin, 1886). FLAG: this is a GENERAL 1888 Kern ranch map; individual Miller & Lux parcels are not confirmed to be labeled by name -- catalogued as regional land-use context for the ranch's Kern operations, not as a Miller & Lux-titled document.",
+      "category": "map",
+      "downloadable": true,
+      "downloaded_path": "/Users/andystavros/Ladera-Ranch/evidence/images/T15-MILLERLUX/LOC_KernCounty_ranches_1888_britton-rey.jpg"
+    },
+    {
+      "title": "Map of Miller & Lux Incorporated San Joaquin Valley lands : in Stanislaus, Merced, Madera and Fresno counties [Calif.]",
+      "repository": "Internet Archive (uploaded by UC Davis Library, collection 'ucdavis'); a physical copy is held at UC Davis Special Collections (Miller & Lux Records, D-094)",
+      "identifier": "archive.org MapOfMillerLuxIncorporatedSanJoaquinValleyLandsInStanislaus; UC Davis call G4362.s4g461935.m2",
+      "date": "1935 (stated; Miller & Lux, Inc., San Francisco)",
+      "url": "https://archive.org/details/MapOfMillerLuxIncorporatedSanJoaquinValleyLandsInStanislaus",
+      "rights": "No rights/license statement provided in the Internet Archive metadata (no licenseurl, rights, or possible-copyright-status field; uploader rheyer@ucdavis.edu). Published 1935 -- copyright status UNDETERMINED. NOT downloaded (not clearly public domain).",
+      "depicts": "Miller & Lux Inc. San Joaquin Valley lands across STANISLAUS, MERCED, MADERA, and FRESNO counties, CA. Cadastral company map: sold lands orange, unsold yellow. Directly names and depicts the ranch's core holdings.",
+      "category": "map",
+      "downloadable": true
+    },
+    {
+      "title": "Map of Miller and Lux, Inc. San Joaquin Valley Lands in Stanislaus, Merced, Madera and Fresno Counties",
+      "repository": "The Bancroft Library, UC Berkeley (Miller & Lux records, BANC MSS C-G 163); digitized via OAC/Calisphere",
+      "identifier": "ark:/28722/bk0016v3r22",
+      "date": "1935 (stated)",
+      "url": "https://calisphere.org/item/ark:/28722/bk0016v3r22/",
+      "rights": "Per Miller & Lux records finding aid: copyright NOT assigned to The Bancroft Library; written permission from the Head of Public Services required to publish/reproduce; use of digital files restricted to research and educational purposes. Restricted -- catalogued, NOT downloaded.",
+      "depicts": "Same 1935 Miller & Lux cadastral map -- Stanislaus, Merced, Madera, Fresno counties, CA (Bancroft copy).",
+      "category": "map",
+      "downloadable": false
+    },
+    {
+      "title": "Miller and Lux Inc., irrigation wells, Buttonwillow area (blueprint map)",
+      "repository": "The Bancroft Library, UC Berkeley (Miller & Lux records, BANC MSS C-G 163); via OAC/Calisphere",
+      "identifier": "ark:/28722/bk0016v428h",
+      "date": "estimated -- not stated on record surface (Miller & Lux era, early 20th c.)",
+      "url": "https://calisphere.org/item/ark:/28722/bk0016v428h/",
+      "rights": "Bancroft Miller & Lux records: copyright not assigned to Bancroft; permission required; digital use for research/education only. Restricted -- NOT downloaded.",
+      "depicts": "Miller & Lux irrigation wells, Buttonwillow area, KERN COUNTY, CA (Miller & Lux Kern irrigation infrastructure).",
+      "category": "map",
+      "downloadable": false
+    },
+    {
+      "title": "Exhibit A, Buena Vista Water Storage District, Buttonwillow, Kern County, California (map)",
+      "repository": "The Bancroft Library, UC Berkeley (Miller & Lux records, BANC MSS C-G 163); via OAC/Calisphere",
+      "identifier": "ark:/28722/bk0016v4292",
+      "date": "estimated -- not stated on record surface",
+      "url": "https://calisphere.org/item/ark:/28722/bk0016v4292/",
+      "rights": "Bancroft Miller & Lux records: copyright not assigned to Bancroft; permission required; digital use research/education only. Restricted -- NOT downloaded.",
+      "depicts": "Buena Vista Water Storage District, Buttonwillow, KERN COUNTY, CA (Miller & Lux water/land holdings).",
+      "category": "map",
+      "downloadable": false
+    },
+    {
+      "title": "Buena Vista Water Storage District, Buttonwillow, California (map)",
+      "repository": "The Bancroft Library, UC Berkeley (Miller & Lux records, BANC MSS C-G 163); via OAC/Calisphere",
+      "identifier": "ark:/28722/bk0016v427z",
+      "date": "estimated -- not stated on record surface",
+      "url": "https://calisphere.org/item/ark:/28722/bk0016v427z/",
+      "rights": "Bancroft Miller & Lux records: copyright not assigned to Bancroft; permission required. Restricted -- NOT downloaded.",
+      "depicts": "Buena Vista Water Storage District, Buttonwillow, KERN COUNTY, CA.",
+      "category": "map",
+      "downloadable": false
+    },
+    {
+      "title": "Proposed extension of East Side Irrigation Canal (blueprint)",
+      "repository": "The Bancroft Library, UC Berkeley (Miller & Lux records, BANC MSS C-G 163); via OAC/Calisphere",
+      "identifier": "ark:/28722/bk0016v432q",
+      "date": "estimated -- not stated on record surface",
+      "url": "https://calisphere.org/item/ark:/28722/bk0016v432q/",
+      "rights": "Bancroft Miller & Lux records: copyright not assigned to Bancroft; permission required. Restricted -- NOT downloaded.",
+      "depicts": "Miller & Lux East Side (San Joaquin) Irrigation Canal system, San Joaquin Valley, CA (Merced/Fresno vicinity).",
+      "category": "map",
+      "downloadable": false
+    },
+    {
+      "title": "Letter from Peck & Hills Wholesale Furniture to Miller and Lux regarding the shipment of furniture to Templor [Temblor?] Ranch",
+      "repository": "The Bancroft Library, UC Berkeley (Miller & Lux records, BANC MSS C-G 163); via OAC/Calisphere",
+      "identifier": "ark:/28722/bk0016v4226",
+      "date": "estimated -- not stated on record surface",
+      "url": "https://calisphere.org/item/ark:/28722/bk0016v4226/",
+      "rights": "Bancroft Miller & Lux records: copyright not assigned to Bancroft; permission required. Restricted -- NOT downloaded.",
+      "depicts": "Business correspondence re Miller & Lux Temblor Ranch (Temblor Range area, KERN / western San Joaquin Valley, CA).",
+      "category": "document",
+      "downloadable": false
+    },
+    {
+      "title": "Marriage certificate of Henry Miller and Nancy Wilmarth Sheldon",
+      "repository": "The Bancroft Library, UC Berkeley (Miller & Lux records, BANC MSS C-G 163); via OAC/Calisphere",
+      "identifier": "ark:/28722/bk0016v426d",
+      "date": "estimated -- certificate documents 1858 marriage (per company history)",
+      "url": "https://calisphere.org/item/ark:/28722/bk0016v426d/",
+      "rights": "Bancroft Miller & Lux records: copyright not assigned to Bancroft; permission required. Restricted -- NOT downloaded.",
+      "depicts": "Personal/legal artifact of owner Henry Miller (marriage record). Not a place; associated with Miller & Lux founder.",
+      "category": "artifact",
+      "downloadable": false
+    },
+    {
+      "title": "[Los Banos barn and ranch buildings]",
+      "repository": "Contributing institution not resolved -- item served via Calisphere (JS-rendered page blocked fetch tools; catalog/local number 2009-1550). Aggregated on Calisphere.",
+      "identifier": "Calisphere item f79c635b3187af69e5ccb188d3ea1ced; local no. 2009-1550",
+      "date": "estimated -- not retrievable (Calisphere item page did not render to fetch tools)",
+      "url": "https://calisphere.org/item/f79c635b3187af69e5ccb188d3ea1ced/",
+      "rights": "Not retrievable via automated tools (Calisphere returns 403/empty to fetch). Rights UNKNOWN -- catalogued, NOT downloaded.",
+      "depicts": "A barn, stables, and other ranch buildings at LOS BANOS, MERCED COUNTY, CA -- the Miller & Lux headquarters town. Most directly on-topic photograph located, but repository/rights unverified.",
+      "category": "photo",
+      "downloadable": false
+    },
+    {
+      "title": "Henry Miller Papers (LSC.0110) -- includes Photographs series 1891-1978",
+      "repository": "UCLA Library Special Collections, Charles E. Young Research Library, University of California, Los Angeles",
+      "identifier": "LSC.0110",
+      "date": "1847-1978 (papers); Photographs series 1891-1978 (stated in finding aid)",
+      "url": "https://oac.cdlib.org/findaid/ark:/13030/tf9t1nb6z6/",
+      "rights": "\"Property rights to the physical objects belong to UCLA Library Special Collections. All other rights, including copyright, are retained by the creators and their heirs.\" Materials stored off-site; not digitized online. Catalogued, NOT downloaded.",
+      "depicts": "Photograph album(s) related to owner Henry Miller -- family, homes, and ranch operations (per published reproductions, includes Los Banos Farm and Bloomfield Farm cattle pens). Los Banos = MERCED COUNTY; Bloomfield = SANTA CLARA COUNTY (home ranch, flagged distinct).",
+      "category": "document",
+      "downloadable": false
+    },
+    {
+      "title": "Miller & Lux records, circa 1869-1965 (photographs transferred to Bancroft Pictorial Collections; maps to Bancroft Map Collection)",
+      "repository": "The Bancroft Library, UC Berkeley",
+      "identifier": "BANC MSS C-G 163",
+      "date": "circa 1869-1965 (stated)",
+      "url": "https://oac.cdlib.org/findaid/ark:/13030/tf7c600668/",
+      "rights": "Copyright has not been assigned to The Bancroft Library; written request to Head of Public Services required to publish/reproduce; use of digital files restricted to research and educational purposes. Catalogued (parent collection); photographs are the pictorial source for many digitized items above.",
+      "depicts": "The corporate Miller & Lux ranching enterprise, San Joaquin Valley + Kern County, CA. Finding aid notes: 'Photographs have been transferred to Pictorial Collections of The Bancroft Library' and maps to the Map Collection -- the primary photographic archive for the ranch.",
+      "category": "document",
+      "downloadable": false
+    },
+    {
+      "title": "Frank F. Latta Collection of Miller & Lux Records",
+      "repository": "The Huntington Library, Art Museum, and Botanical Gardens, San Marino, CA",
+      "identifier": "OAC finding aid ark:/13030/c8ns1195",
+      "date": "collection spans Miller & Lux era (19th-20th c.); 344.75 linear feet (247 boxes, 233 volumes, 51 oversize folders)",
+      "url": "https://oac.cdlib.org/findaid/ark:/13030/c8ns1195/",
+      "rights": "Access: 'Open for use by qualified researchers and by appointment. Please contact Reader Services at the Huntington Library.' Large physical collection; imagery not digitized online. Catalogued, NOT downloaded.",
+      "depicts": "Miller & Lux business, land, and ranch operation records assembled by historian Frank F. Latta -- San Joaquin Valley / Los Banos empire. Likely contains photographs and maps (physical, by appointment).",
+      "category": "document",
+      "downloadable": false
+    },
+    {
+      "title": "The Los Banos Henry Miller May Day celebrations",
+      "repository": "The Huntington Library (Huntington Digital Library / Collections)",
+      "identifier": "lib-476719",
+      "date": "estimated -- not retrievable (Huntington site behind Vercel bot protection; page did not resolve to fetch tools)",
+      "url": "https://www.huntington.org/collections/lib-476719",
+      "rights": "Not retrievable via automated tools. Rights UNKNOWN -- catalogued, NOT downloaded.",
+      "depicts": "Henry Miller / community May Day celebrations at LOS BANOS, MERCED COUNTY, CA (Miller & Lux company town). On-topic but metadata unverified.",
+      "category": "photo",
+      "downloadable": false
+    },
+    {
+      "title": "Miller and Lux, Inc. Archives (Miller & Lux Records, incl. cadastral maps 1900-1935)",
+      "repository": "UC Davis Library, Archives and Special Collections, Peter J. Shields Library, Davis, CA",
+      "identifier": "Collection call number D-094",
+      "date": "records incl. maps dated 1900, 1912, 1920, 1930, 1935 (stated in UC Davis feature)",
+      "url": "https://www.library.ucdavis.edu/special-collections/manuscript/miller-and-lux-inc-archives/",
+      "rights": "No online rights/reproduction statement provided in the UC Davis feature; by-appointment special collection. Catalogued, NOT downloaded.",
+      "depicts": "Miller & Lux company cadastral maps of holdings: Kings/Tulare/Kern/San Luis Obispo counties (1920, 1930); San Joaquin Valley -- Stanislaus/Merced/Madera/Fresno (1935); western Fresno County and Monterey/Fresno/San Benito 'peach tree' properties (1900); Rancho San Lorenzo & Peach Tree (1912).",
+      "category": "map",
+      "downloadable": false
+    },
+    {
+      "title": "Photographic views of Kern County, California (Carleton E. Watkins) -- incl. Buena Vista Farm views",
+      "repository": "Library of Congress, Prints & Photographs Division (LOT 3379); a copy also at Bancroft (Watkins Mammoth Plate Photograph Albums) and Getty (e.g., 'Headquarters, the Buena Vista Farm, Kern County', 107QY3)",
+      "identifier": "LOC item 2005690316 / LOT 3379; Getty object 107QY3",
+      "date": "photographs made 1881-1889; album assembled early 1890s (stated)",
+      "url": "https://www.loc.gov/item/2005690316/",
+      "rights": "LOC: photographs made for publication in the U.S. more than 95 years ago; 'no known restrictions on publication.' Public domain.",
+      "depicts": "KERN COUNTY, CA agriculture -- includes 'Buena Vista Farm' / 'Headquarters, Buena Vista Farm.' FLAG / AMBIGUITY: The Watkins Kern County album was commissioned by local land developers and Buena Vista Farm was principally a KERN COUNTY LAND COMPANY (Haggin/Tevis) showplace. A direct Miller & Lux ownership of the photographed Buena Vista Farm is NOT established -- do not conflate with the Miller & Lux 'Buena Vista Water Storage District, Buttonwillow' items above. Catalogued as region/ambiguous, NOT downloaded under Miller & Lux.",
+      "category": "photo",
+      "downloadable": true
+    },
+    {
+      "title": "Bloomfield Ranch, Gilroy (Henry Miller home ranch)",
+      "repository": "Aggregated via Calisphere (ark:/13030/kt9779r329)",
+      "identifier": "ark:/13030/kt9779r329",
+      "date": "estimated -- not retrievable (Calisphere JS page blocked fetch tools)",
+      "url": "https://calisphere.org/item/ark:/13030/kt9779r329/",
+      "rights": "Not retrievable via automated tools; rights UNKNOWN -- catalogued, NOT downloaded.",
+      "depicts": "Bloomfield / 'Bloomfield Farm', Henry Miller's home ranch on former Rancho Las Animas near Gilroy, SANTA CLARA COUNTY, CA. FLAG: this is Miller's personal home ranch, NOT the San Joaquin Valley (Fresno/Los Banos) cattle operation -- different county; included for owner-family completeness.",
+      "category": "photo",
+      "downloadable": false
+    }
+  ],
+  "physical_only_collections": [
+    "Ralph Leroy Milliken Museum (Los Banos Milliken Museum Society) -- 905 Pacheco Blvd, Los Banos, CA 93635; mailing PO Box 2294, Los Banos, CA 93635; phone (209) 826-5505; open Tue-Sun 1-4pm. Holds extensive Henry Miller / Miller & Lux artifacts, documents, oral histories, and photographs (collection begun 1954 by Ralph L. Milliken). Manuscript portion also described in OAC finding aid ark:/13030/c8r49zg0.",
+    "The Huntington Library, Art Museum & Botanical Gardens -- 1151 Oxford Rd, San Marino, CA 91108; Reader Services. Frank F. Latta Collection of Miller & Lux Records (344.75 linear feet; by appointment); also Miller & Lux business records, correspondence, ledgers, and maps.",
+    "UC Davis Library, Archives & Special Collections -- Peter J. Shields Library, Davis, CA 95616. Miller and Lux, Inc. Archives (call no. D-094): contracts, inventories, patents, leases, and company cadastral maps (1900-1935). By appointment.",
+    "UCLA Library Special Collections -- Charles E. Young Research Library, Los Angeles, CA. Henry Miller Papers (LSC.0110), incl. Photographs series 1891-1978; stored off-site, retrieved by request.",
+    "The Bancroft Library, UC Berkeley -- Berkeley, CA 94720. Miller & Lux records (BANC MSS C-G 163); photographs held in Bancroft Pictorial Collections and maps in the Bancroft Map Collection (permission required to publish/reproduce).",
+    "Autry Museum of the American West -- Griffith Park, Los Angeles, CA. Holds a 'Miller & Lux' subject/entity record (PE208964) but 0 digitized images currently linked; any associated objects are physical/by inquiry."
+  ],
+  "dead_ends": [
+    "WebSearch 'Miller and Lux Library of Congress photograph California cattle' -- no LOC photographs directly captioned/attributed to Miller & Lux were found (only maps and the region-wide Watkins Kern County album).",
+    "Autry Museum collections record PE208964 ('Miller & Lux') -- resolves to a subject/entity heading with 'view all 0' images; no digitized artifact behind it.",
+    "USC Digital Library search URL https://digitallibrary.usc.edu/search?q=Miller%20and%20Lux -- returned HTTP 404 (no reachable results page); no Miller & Lux items surfaced from USC.",
+    "Calisphere item pages (e.g. [Los Banos barn and ranch buildings] f79c635b..., Bloomfield Ranch kt9779r329, and the ark:/28722 Bancroft items) -- JavaScript-rendered; return HTTP 403/empty to WebFetch and 403 in the automation browser, so item-level dates/rights/contributing-institution could not be captured programmatically. Titles/URLs captured via search only.",
+    "Huntington Digital Library / huntington.org item 'The Los Banos Henry Miller May Day celebrations' (lib-476719) -- site behind Vercel bot protection ('Vercel Security Checkpoint'); metadata not retrievable via fetch or curl.",
+    "David Rumsey Map Collection (davidrumsey.com) search for 'Miller and Lux' / 'Henry Miller' San Joaquin -- no matching Miller & Lux ranch maps surfaced in search results."
+  ],
+  "downloads_dir": "/Users/andystavros/Ladera-Ranch/evidence/images/T15-MILLERLUX/"
+}

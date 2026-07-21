@@ -1,0 +1,200 @@
+{
+  "target_id": "T02-IRVINE",
+  "ranch": "Irvine Ranch, Orange County, California",
+  "component_ranchos": [
+    "Rancho San Joaquin (Sepúlveda grant) — coastal/core",
+    "Rancho Lomas de Santiago (Teodocio Yorba) — eastern foothills",
+    "part of Rancho Santiago de Santa Ana (Grijalva/Yorba/Peralta) — inland flatland"
+  ],
+  "generated": "2026-07-21",
+  "items": [
+    {
+      "title": "[Diseño del Rancho San Joaquin : Orange County, Calif.]",
+      "repository": "UC Berkeley, Bancroft Library (Maps of private land grant cases of California); digitized copy via Berkeley Digital Collections & Calisphere",
+      "identifier": "Land Case Map D-439; ark:/13030/hb8t1nb53g; lc_cubanc_36_2_00044555; digicoll record 79107",
+      "date": "1842? (stated on record; from US District Court, N. Dist. Calif. Land case 199 ND)",
+      "url": "https://calisphere.org/item/ark:/13030/hb8t1nb53g/",
+      "rights": "Researchers may make free and open use of the UC Berkeley Library’s digitized public domain materials. However, some materials in our online collections may be protected by U.S. copyright law (Title 17, U.S.C.). ... Responsibility for determining rights status and permissibility of any use or reproduction rests exclusively with the researcher. (VERBATIM excerpt)",
+      "depicts": "Rancho San Joaquin, Orange County, Calif. (José Andrés Sepúlveda grant; purchased 1864 and became the core/coastal portion of the Irvine Ranch). Pen-and-ink diseño oriented north-to-upper-left.",
+      "category": "map",
+      "downloadable": true,
+      "downloaded_path": "/Users/andystavros/Ladera-Ranch/evidence/images/T02-IRVINE/Bancroft_DisenoRanchoSanJoaquin_D-439_1842.jpg"
+    },
+    {
+      "title": "[Diseño del Rancho Santiago de Santa Ana : Calif.]",
+      "repository": "UC Berkeley, Bancroft Library (Maps of private land grant cases of California); digicoll record 79271; also Calisphere ark:/13030/hb496nb220",
+      "identifier": "Land Case Map D-1395; US District Court, S. Dist. Calif. Land case 346 SD, p.66; ark:/13030/hb496nb220; digicoll 79271",
+      "date": "c.1840 (citation_publication_date 1840)",
+      "url": "https://digicoll.lib.berkeley.edu/record/79271",
+      "rights": "UC Berkeley Library digitized public domain materials — free and open use; researcher responsible for determining rights status. (VERBATIM excerpt of Bancroft public-domain statement)",
+      "depicts": "Rancho Santiago de Santa Ana, Orange County, Calif. (Grijalva/Yorba/Peralta grant). The northern/inland part of this rancho was later absorbed into the Irvine Ranch. Pen-and-ink & watercolor diseño.",
+      "category": "map",
+      "downloadable": true,
+      "downloaded_path": "/Users/andystavros/Ladera-Ranch/evidence/images/T02-IRVINE/Bancroft_DisenoRanchoSantiagoDeSantaAna_D-1395_c1840.jpg"
+    },
+    {
+      "title": "Diseño de la Lomeria de Santiago [Calif.] : pretendido por Teodocio Yorba",
+      "repository": "UC Berkeley, Bancroft Library (Maps of private land grant cases of California); digicoll record 79331; also Calisphere ark:/13030/hb829008dp",
+      "identifier": "US District Court, S. Dist. Calif. Land case 186 SD; ark:/13030/hb829008dp; digicoll 79331",
+      "date": "c.1840 (citation_publication_date 1840)",
+      "url": "https://digicoll.lib.berkeley.edu/record/79331",
+      "rights": "UC Berkeley Library digitized public domain materials — free and open use; researcher responsible for determining rights status. (VERBATIM excerpt of Bancroft public-domain statement)",
+      "depicts": "Rancho Lomas de Santiago (‘Lomeria de Santiago’), Orange County, Calif., claimed by Teodocio Yorba. This grant became the eastern (foothill) portion of the Irvine Ranch. Diseño.",
+      "category": "map",
+      "downloadable": true,
+      "downloaded_path": "/Users/andystavros/Ladera-Ranch/evidence/images/T02-IRVINE/Bancroft_DisenoLomeriaDeSantiago_TeodocioYorba_c1840.jpg"
+    },
+    {
+      "title": "Irvine Ranch Agricultural Headquarters, Carillo Tenant House, Southwest of Intersection of San Diego & Santa Ana Freeways, Irvine, Orange County, CA",
+      "repository": "Library of Congress, Prints & Photographs Division, Historic American Buildings Survey (HABS)",
+      "identifier": "LOC item ca1549 (HABS CA); reproduction nos. incl. 014253pu / 362844–362871",
+      "date": "Documentation compiled after 1933 (HABS); buildings are Irvine Ranch era",
+      "url": "https://www.loc.gov/item/ca1549/",
+      "rights": "No known restrictions on images made by the U.S. Government; images copied from other sources may be restricted. https://www.loc.gov/rr/print/res/114_habs.html (VERBATIM rights_advisory)",
+      "depicts": "Irvine Ranch Agricultural Headquarters (Carillo Tenant House), Irvine, Orange County, Calif. — a building of the Irvine Ranch agricultural operation. ~35 measured photos + 12-page data pages.",
+      "category": "document",
+      "downloadable": true,
+      "downloaded_path": "/Users/andystavros/Ladera-Ranch/evidence/images/T02-IRVINE/LOC_HABS_ca1549_Carillo-Tenant-House_014253.jpg | /Users/andystavros/Ladera-Ranch/evidence/images/T02-IRVINE/LOC_HABS_ca1549_Carillo-Tenant-House_data.pdf (lead photo + data PDF; full set of ~35 TIFF/JPEG available at source)"
+    },
+    {
+      "title": "Irvine Ranch Agricultural Headquarters, Boyd Tenant House, Southeast of Intersection of San Diego & Santa Ana Freeways, Irvine, Orange County, CA",
+      "repository": "Library of Congress, Prints & Photographs Division, Historic American Buildings Survey (HABS)",
+      "identifier": "LOC item ca1550 (HABS CA); reproduction nos. 362872–362890",
+      "date": "Documentation compiled after 1933 (HABS)",
+      "url": "https://www.loc.gov/item/ca1550/",
+      "rights": "No known restrictions on images made by the U.S. Government; images copied from other sources may be restricted. https://www.loc.gov/rr/print/res/114_habs.html (VERBATIM rights_advisory)",
+      "depicts": "Irvine Ranch Agricultural Headquarters (Boyd Tenant House), Irvine, Orange County, Calif. — building of the Irvine Ranch agricultural operation. ~19 measured photos + 12-page data pages.",
+      "category": "document",
+      "downloadable": true,
+      "downloaded_path": "/Users/andystavros/Ladera-Ranch/evidence/images/T02-IRVINE/LOC_HABS_ca1550_Boyd-Tenant-House_362872.jpg | /Users/andystavros/Ladera-Ranch/evidence/images/T02-IRVINE/LOC_HABS_ca1550_Boyd-Tenant-House_data.pdf (lead photo + data PDF; full set available at source)"
+    },
+    {
+      "title": "Buffalo Ranch buildings (Office, Silo, Peartree, Lunch Room & Library, Garage, etc.), 2418 MacArthur Boulevard, Irvine, Orange County, CA",
+      "repository": "Library of Congress, Prints & Photographs Division, HABS",
+      "identifier": "LOC items ca1900–ca1916 (HABS CA)",
+      "date": "Documentation compiled after 1933 (HABS); Buffalo Ranch operated as a tourist attraction 1955–?",
+      "url": "https://www.loc.gov/item/ca1904/",
+      "rights": "No known restrictions on images made by the U.S. Government; images copied from other sources may be restricted. (VERBATIM rights_advisory)",
+      "depicts": "‘Buffalo Ranch’ tourist-attraction complex, built on FORMER Irvine Ranch land (MacArthur Blvd, Irvine, Orange County). On Irvine Ranch land but a 1950s roadside buffalo attraction, NOT part of the historic cattle/sheep operation — flagged as tangential.",
+      "category": "document",
+      "downloadable": true
+    },
+    {
+      "title": "Cochems (Edward W.) Photographs — Irvine Ranch subset (~80 images)",
+      "repository": "UC Irvine, Libraries, Orange County Regional History Collection (via Calisphere / OAC)",
+      "identifier": "Calisphere collection 19; OAC finding aid ark:/13030 (Cochems). Sample item: ‘Lima bean field at Irvine Ranch’ identifier 325",
+      "date": "ca.1919–ca.1949",
+      "url": "https://calisphere.org/collections/19/",
+      "rights": "Copyrighted. This material is provided for private study, scholarship, or research. Transmission or reproduction of any material protected by copyright beyond that allowed by fair use requires the written permission of the copyright owners. The creators of the material or their heirs may retain copyright to this material. (VERBATIM)",
+      "depicts": "Irvine Ranch, Orange County, Calif. Working agricultural/ranch views by Santa Ana photographer E.W. Cochems: lima bean fields & harvesting, bean elevator/bean house, reaper crew with machinery, SHEEP at Irvine Ranch (several), Big Peter Dam, Santiago Reservoir/Irvine Lake, salt bins & upper bay, packing houses (Frances packing house), Red & White Store, tomato harvest by Mexican nationals, Irvine Company car & employees. NOT downloaded (copyrighted).",
+      "category": "photo",
+      "downloadable": false
+    },
+    {
+      "title": "Raymond L. Watson slides on the Irvine Ranch (before 1997) — 88 images",
+      "repository": "UC Irvine, Special Collections & Archives / Orange County Regional History Collection (via Calisphere / OAC)",
+      "identifier": "Subseries of Raymond L. Watson papers; OAC ark:/13030/kt867nf5qj (parent). Sample item ‘Exterior view of the Irvine family home’ ark:/81235/d8qk56",
+      "date": "content spans Irvine Ranch history; collection 1954–2010",
+      "url": "https://calisphere.org/item/ark:/81235/d8qk56/",
+      "rights": "Property rights reside with the University of California. Literary rights are retained by the creators of the records and their heirs. (VERBATIM, from OAC finding aid)",
+      "depicts": "Irvine Ranch, Orange County, Calif. — Irvine family, Irvine family home (interior/exterior), portraits of James Irvine, crops/agricultural scenes on Irvine Ranch land, Irvine General Plan maps/charts. NOT downloaded.",
+      "category": "photo",
+      "downloadable": false
+    },
+    {
+      "title": "Irvine Ranch cattle roundup, 1961",
+      "repository": "UC Irvine, Libraries, Orange County Regional History Collection (via Calisphere)",
+      "identifier": "Calisphere item 467d0757c78c2f2e81115746861c7ad3",
+      "date": "1961 (stated)",
+      "url": "https://calisphere.org/item/467d0757c78c2f2e81115746861c7ad3/",
+      "rights": "UC Irvine Special Collections; typically ‘Copyrighted — provided for private study/scholarship/research’ (not fully re-verified this session due to Calisphere rate-limiting). NOT downloaded.",
+      "depicts": "Cattle roundup on the Irvine Ranch, Orange County, Calif., 1961 — directly documents the ranch cattle operation.",
+      "category": "photo",
+      "downloadable": false
+    },
+    {
+      "title": "Orange County Californio Families Portrait Photograph Album",
+      "repository": "Contributed via Calisphere (Orange County / UCI region collection)",
+      "identifier": "Calisphere collection 60",
+      "date": "19th century (studio portraits, cartes de visite, tintypes)",
+      "url": "https://calisphere.org/collections/60/",
+      "rights": "See item-level Calisphere rights (varies; several OC Californio items: ‘The copyright to this image has not been determined. These images are intended for personal or research use only.’). NOT downloaded.",
+      "depicts": "Portraits of early Californio land-grant families of the Orange County area including the Sepúlveda family (grantees of Rancho San Joaquin, later Irvine Ranch). People, not land — relevant to ownership/provenance.",
+      "category": "photo",
+      "downloadable": false
+    },
+    {
+      "title": "Plat of the Santiago de Santa Ana Rancho",
+      "repository": "via Calisphere (land-grant survey plat; repository Bancroft/US Surveyor General series)",
+      "identifier": "Calisphere item 5de282fd7837306a10e7def712f0a06a",
+      "date": "original survey 1857 Nov & Dec.; copied/confirmed by J. W. Mandeville to Bernardo Yorba et al.",
+      "url": "https://calisphere.org/item/5de282fd7837306a10e7def712f0a06a/",
+      "rights": "Not verified verbatim this session (Calisphere returned 403 on retry). Bancroft/US-survey plats of this era are generally public domain — confirm before reuse. NOT downloaded.",
+      "depicts": "US survey plat of Rancho Santiago de Santa Ana, Orange County, Calif., confirmed to Bernardo Yorba et al. — northern portion later part of Irvine Ranch.",
+      "category": "map",
+      "downloadable": false
+    },
+    {
+      "title": "Manuscript map of Rancho San Joaquin",
+      "repository": "UC Berkeley, Bancroft Library (via Calisphere)",
+      "identifier": "Calisphere ark:/13030/hb567nb2vj",
+      "date": "not confirmed this session",
+      "url": "https://calisphere.org/item/ark:/13030/hb567nb2vj/",
+      "rights": "Bancroft public-domain digitized-materials statement expected (not re-verified verbatim this session). NOT downloaded.",
+      "depicts": "Manuscript map of Rancho San Joaquin, Orange County, Calif. (Sepúlveda grant / Irvine Ranch core). Additional land-grant cartography.",
+      "category": "map",
+      "downloadable": false
+    },
+    {
+      "title": "S. E. view of the Bernardo Yorba adobe on Rancho Santiago de Santa Ana about 1918 / The original Yorba home / Yorba family burial grounds",
+      "repository": "via Calisphere (Orange County collections)",
+      "identifier": "Calisphere ark:/13030/kt1w1010bn ; items 7313a9666bc21e440fe00e27687ce3ee ; 557e8c4dadb9ec487b17ca47230b5f6f",
+      "date": "adobe built 1835; photo about 1918",
+      "url": "https://calisphere.org/item/ark:/13030/kt1w1010bn/",
+      "rights": "Item-level Calisphere rights (not re-verified verbatim this session). NOT downloaded.",
+      "depicts": "AMBIGUITY FLAG: Bernardo Yorba’s hacienda/adobe and Yorba burial grounds are in present-day YORBA LINDA on Rancho Cañón de Santa Ana — a DIFFERENT grant from the Rancho Santiago de Santa Ana flatland that became Irvine Ranch. Cataloguing the Yorba FAMILY connection only; this land is NOT Irvine Ranch. Do not conflate.",
+      "category": "photo",
+      "downloadable": false
+    },
+    {
+      "title": "USGS historical topographic quadrangles covering the Irvine Ranch (Santa Ana, Tustin, El Toro, Corona quadrangles)",
+      "repository": "U.S. Geological Survey — topoView / National Geologic Map Database (Historical Topographic Map Collection)",
+      "identifier": "Quads incl. Santa Ana (15′, 1896+), Tustin/El Toro (7.5′, mid-20th c.)",
+      "date": "1896–present (multiple editions)",
+      "url": "https://ngmdb.usgs.gov/topoview/",
+      "rights": "USGS maps are U.S. Government works — public domain (no copyright). Downloadable as GeoPDF/GeoTIFF/JPEG at source.",
+      "depicts": "Topographic coverage of the Irvine Ranch lands, Orange County, Calif. (Sept.-era through 20th-century development). Public domain — not downloaded this session because the ngmdb product/list API endpoints returned 302/404 (moved); retrievable interactively via topoView.",
+      "category": "map",
+      "downloadable": true
+    },
+    {
+      "title": "Edward W. Cochems Photographs — OAC finding aid",
+      "repository": "Online Archive of California (UC Irvine)",
+      "identifier": "OAC finding aid (Photographers’ collection ark:/13030/kt029002bm and Cochems guide)",
+      "date": "collection ca.1919–ca.1949",
+      "url": "https://oac.cdlib.org/findaid/ark:/13030/kt029002bm/",
+      "rights": "Finding aid — collection material Copyrighted (see Cochems item rights above).",
+      "depicts": "Finding aid documenting the Cochems Irvine Ranch photographs (Orange County). Reference document.",
+      "category": "document",
+      "downloadable": false
+    }
+  ],
+  "physical_only_collections": [
+    "Katie Wheeler Library (OC Public Libraries) — located in the reconstructed Irvine ranch house, Irvine Ranch Historic Park, 13711 Myford Rd, Irvine, CA 92602; (714) 669-8753. Local history focus on the Irvine Ranch/family.",
+    "Sherman Library & Gardens — 2647 East Coast Hwy, Corona del Mar, CA 92625; (949) 673-2261. Major research archive on the Pacific Southwest incl. Irvine Ranch & Orange County land/agriculture photos and documents.",
+    "Orange County Archives — Old Orange County Courthouse, 211 W. Santa Ana Blvd, Room 105, Santa Ana, CA 92701; (714) 973-4880. Historical Orange County photographs and records.",
+    "First American Corporation historical photo/map collection (First American Title) — Santa Ana, CA. Large Orange County historical photograph and land-title/map archive (access by arrangement).",
+    "Irvine Historical Society / Irvine Ranch Historical Museum (San Joaquin Ranch adobe) — Irvine, CA. Ranch-era artifacts and photographs.",
+    "Bowers Museum — 2002 N. Main St, Santa Ana, CA 92706; (714) 567-3600. Orange County history collections.",
+    "The Irvine Company corporate archives — private; historic Irvine Ranch records/photographs held by the successor company (not publicly catalogued)."
+  ],
+  "dead_ends": [
+    "LOC catalog search 'Irvine California Sanborn' and 'Tustin California Sanborn' — no Sanborn fire-insurance maps for Irvine/Tustin returned (only unrelated 19th-c. California books).",
+    "LOC search 'Rancho Lomas de Santiago' — returned only unrelated South-American / Land-Office publications; no OC rancho map at LOC.",
+    "LOC search 'San Joaquin rancho Orange County map' — no relevant OC map (results were San Joaquin Valley/County items — different place).",
+    "digicoll.lib.berkeley.edu/search (curl) — HTTP 202 async bot-shield, no body; had to run searches via the rendering browser instead.",
+    "calisphere.org direct curl and WebFetch — HTTP 202 / JS-rendered empty; browser rendering required. Late in session Calisphere returned HTTP 403 (rate-limited), blocking verbatim re-verification of a few item-level rights.",
+    "USGS ngmdb proddesc_json.php / topoview list API — HTTP 302 -> 404 (endpoints moved); no programmatic topo product list retrieved.",
+    "NOTE (not conflated): three 'Diseño del Rancho San Joaquin' records at Berkeley (digicoll 78885/78884/78416) depict the SAN BENITO COUNTY Rancho San Joaquin (Cervantes) — a different rancho — and were excluded; only Orange County record 79107 was used."
+  ]
+}
