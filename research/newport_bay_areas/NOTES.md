@@ -31,11 +31,40 @@ area of small farms and equestrian holdings — **not** open Irvine Ranch range.
   arsenic DTSC *actually* finds on former-farm land in OC — **more relevant here** than the cattle-dip
   vector. Its building complex + fields warrant the documentary check (small-farm chemistry ≠ dipping).
 
-## Open questions (documentary recon in progress)
-1. Development dates + exact land use (grazing vs. crop vs. equestrian) 1907–1912 for each.
-2. Any dipping / vat / corral record tied to any of the three by name (expected: none, per prior work).
-3. **EnviroStor / GeoTracker** for each — agricultural/livestock past-use or arsenic sites, and the
-   dominant modern contamination signature (esp. Santa Ana Heights, given its farm history).
+## Documentary recon — answers (done)
+
+**All three:** former **Rancho San Joaquin → Irvine Ranch** land; in 1907–12, **open Irvine Ranch land
+(grazing and/or dry-farmed bean/barley)**. **No dipping/vat/corral record located for any of the three
+by name** — consistent with all four named 1908 OC dip sites being eastern/southern county and Cleland
+1952 silent. Each area's **modern** contamination is **industrial/urban** (petroleum LUST,
+dry-cleaner PCE, aerospace/electronics, aviation/military); **the only arsenic signals are industrial**
+(circuit-board electroplating; Air National Guard) — none agricultural.
+
+- **The Bluffs** — Irvine Ranch east-bay mesa; confirmed by Albright, *"The Bluffs: A Planned Community
+  on the Irvine Ranch"* (Highway Research Record 97, 1965) [A1]. Developed mid/late **1960s**. New
+  land-use layer: the adjacent **Eastbluff flat was a WWII Naval Outlying Landing Field ("Palisades,"
+  ~1942–51)** [C/B2]. Env.: dry-cleaner PCE + retail petroleum. *1907–12: plausible-but-unrecorded;
+  dipping: No.*
+- **Big Canyon** — Irvine Ranch canyon draining to the bay; golf built **1968–71**. Pre-golf "Irvine
+  Ranch cow pastures" is **grade C only** (single realtor source; an uncorroborated "trash dump" claim
+  too). Env.: petroleum LUST + dry-cleaner + adjacent Ford/Loral aerospace. *1907–12:
+  plausible-but-unrecorded; dipping: No.*
+- **Santa Ana Heights — TEMPORAL CORRECTION.** Its small-farm/**equestrian** character is a
+  **mid-20th-century** development, **not** the 1907–12 condition (median home ~1980; <1% pre-1940;
+  the airport arrived 1923–28). So in the **dipping window it was open Irvine Ranch land**, and the
+  **cultivated fields/structures I saw in the 1938 aerial *postdate* the window** (1920s+ farming). The
+  orchard-lead-arsenate relevance therefore applies to the **later farming era**, not to 1907–12.
+  *Rancho ambiguity:* being on the west/NW bay, it **could** sit on **Rancho Santiago de Santa Ana**
+  (the Yorba/Bixby grant — interestingly the same grant name as two of the named 1908 dip sites)
+  rather than San Joaquin; airport-from-James-Irvine deeds (1923–28) favor Irvine Ranch, but the exact
+  grant line isn't crisply fixed. Env. (richest of the three): aviation + military + petroleum +
+  dry-cleaner + circuit-board electronics; **only arsenic is industrial electroplating / ANG.**
+  *1907–12: plausible-but-unrecorded; dipping: No.*
+
+**Honest caveat:** CDNC newspapers were **not searchable live this session** (Cloudflare bot-gate), so
+"no dipping record" rests on Google-indexed CDNC + prior verified work, not a fresh full-text run. And
+EnviroStor/GeoTracker track modern regulated sites, not century-old dip vats — "no ag sites" ≠ proof no
+dipping ever occurred.
 
 ## Discipline
 Open grazing mesa (Bluffs, Big Canyon) and small farms (Santa Ana Heights) are the *expected* land uses
