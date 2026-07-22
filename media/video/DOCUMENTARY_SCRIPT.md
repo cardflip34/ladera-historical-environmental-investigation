@@ -19,10 +19,12 @@
 A little over a hundred years ago, in 1907, California ordered ranchers, here in Orange County and
 across the state, to dip their cattle in arsenic.
 
-By 1908, it was happening on ranch after ranch across this county. It was part of a national campaign
-against a cattle disease, and the federal government supplied the formula. But it was California that
-made the dipping mandatory for its own ranchers, and then left it to each of them to build the vats,
-to run them, and to record them. No state agency ever compiled where they were.
+By 1908, it was happening on ranch after ranch across this county. The whole country was fighting the
+Texas fever tick, a parasite that spread a disease deadly to cattle and was draining the American
+livestock industry of millions. Wiping it out became a national campaign, and the federal government
+supplied the formula for the dip. But it was California that made the dipping mandatory for its own
+ranchers, and then left it to each of them to build the vats, to run them, and to record them. No
+state agency ever compiled where they were.
 
 The program ran until 1912. Then the quarantine was lifted, the cattle moved on, and the vats were
 left behind. This was not a small amount of poison. It was mixed to a federal formula and poured,
@@ -88,12 +90,11 @@ Long before the homes and the schools, this was cattle country. Part of the hist
 and what became Rancho Mission Viejo, one of the great cattle operations in Southern California. The
 same hills where families live and children play today were once an open range.
 
-And that is where it turns. In 1907, California joined a national campaign to wipe out the Texas fever
-tick. Orange County was placed under federal quarantine, and by 1908 ranchers here were legally
-required to dip their cattle in arsenic. This is not a rumor. It is written in the government's own
-records. The U.S. Department of Agriculture printed the entire program. The formula, eight pounds of
-white arsenic to five hundred gallons of water. The engineering drawings for the vats. Even the
-poison warnings meant to hang on every one.
+And that is where it turns. Because this was cattle country, it sat squarely inside that
+arsenic-dipping program. And this is not folklore, and it is not rumor. It is written in the
+government's own records. The U.S. Department of Agriculture printed the entire program. The formula,
+eight pounds of white arsenic to five hundred gallons of water. The engineering drawings for the
+vats. Even the poison warnings meant to hang on every one.
 
 Here is why that matters. Arsenic is an element. It does not break down. It binds to soil, and it
 stays. So if one of those vats operated somewhere, its arsenic is, in principle, still in the ground.
