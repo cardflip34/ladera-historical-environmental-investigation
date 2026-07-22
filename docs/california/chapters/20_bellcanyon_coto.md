@@ -59,10 +59,13 @@ statewide question.
 | Which arsenic signature | The one soil campaign targeted **shooting-range lead/PAH** — neither lead-arsenate (orchard) nor **arsenic trioxide (the dip poison)** has ever been analyzed here |
 | Verdict | **TESTED FOR THE WRONG SOURCE.** When a hazard was *documented* (the gun range), the machinery worked — Phase II, RAP, supervised closure. The 1908 dip was never in any database, so the same machinery **never engaged**. That asymmetry, on one property, is the report's thesis in miniature |
 
-## Schools
-Wagon Wheel ES · Tijeras Creek ES · Arroyo Vista K-8 (community assignments verified in
-`research/schools/AREA_SCHOOL_ROSTERS.md`); no EnviroStor school-investigation entries located for
-the Coto/Trabuco area [absence of entry ≠ clearance].
+## Schools — verified roster (`research/schools/AREA_SCHOOL_ROSTERS.md`)
+**No school exists inside the Coto de Caza gates.** The area's five verified schools sit in the
+surrounding communities: Wagon Wheel ES (1997, Wagon Wheel — directly west of the Joplin patent
+ground) · Trabuco ES (Trabuco Canyon) · Robinson ES (1994, Robinson Ranch) · Portola Hills ES
+(1992) · Dove Canyon Montessori. (Tijeras Creek ES verified to be in Rancho Santa Margarita, not
+Dove Canyon.) None has an EnviroStor school-investigation entry located [absence of entry ≠
+clearance; per-school EnviroStor checks pending interactive verification].
 
 ## Honest limits & counter-evidence
 - The **exact vat parcel is unknown** — "at the ranch of" spans ~766 acres; the home-corral inference

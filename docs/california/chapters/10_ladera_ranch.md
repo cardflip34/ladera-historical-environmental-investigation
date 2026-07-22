@@ -47,12 +47,13 @@ mass estimate if one existed: **~0 or ~100–500 lb of arsenic at a single unloc
 | Which arsenic signature | Not applicable — but the distinction matters for any future test: **lead-arsenate** (orchard pesticide → arsenic *with* lead) vs **arsenic trioxide** ("white arsenic," the cattle-dip poison → arsenic with little/no lead). Nearby school tests (Mission Viejo/Irvine) used the DTSC *orchard* protocol; **no California test anywhere has targeted the dip signature** |
 | Verdict | **NEVER TESTED** — "No Action Required" (10/7/2003) rests on paper review alone |
 
-## Schools (roster verified separately; EnviroStor status)
-Oso Grande ES (the ONLY Ladera school with any EnviroStor entry — paper-only, above) · Ladera Ranch
-ES · Ladera Ranch MS · Chaparral ES · plus private/charter — see
-`research/schools/AREA_SCHOOL_ROSTERS.md` for the verified table. All other schools: **no EnviroStor
-school-investigation entry located** (most predate or fall outside the 2000 school-siting law's
-trigger; absence of entry ≠ clearance).
+## Schools — 10 verified in Ladera Ranch (roster: `research/schools/AREA_SCHOOL_ROSTERS.md`)
+**CUSD public (4):** Chaparral ES (2001) · Ladera Ranch ES (2003) · Ladera Ranch MS (2003) ·
+**Oso Grande ES (2005)** — the ONLY school with any EnviroStor entry, and that entry is the
+paper-only Phase 1 above. **Private/preschool (5)** + 1 former campus (Stoneybrooke Christian,
+2003–2015). Every school except Oso Grande: **no EnviroStor school-investigation entry located**
+(absence of entry ≠ clearance; EnviroStor per-school checks were bot-gated to automated search —
+flagged for interactive verification).
 
 ## Honest limits & counter-evidence
 - **No vat found on adequate imagery** (1.15 ft/px would resolve a corral unmistakably) — weak

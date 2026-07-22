@@ -101,15 +101,18 @@ for fn,src,head,body in CLIPS:
     im.save(f"{OUT}/{fn}.jpg",quality=92)
 
 # B12/B13 — school boards
-SCH=[("B12_schools_ladera","LADERA RANCH — every school, and what the record shows",[
- ("Oso Grande Elementary","Phase 1 + Addendum only (2003) — PAPER REVIEW, no soil sampled, arsenic never an analyte"),
- ("Ladera Ranch Elementary","no EnviroStor school-investigation entry located"),
- ("Ladera Ranch Middle School","no EnviroStor school-investigation entry located"),
- ("Chaparral Elementary","no EnviroStor school-investigation entry located")]),
- ("B13_schools_coto","COTO DE CAZA / TRABUCO AREA — schools",[
- ("Wagon Wheel / Coto-area elementary","no EnviroStor school-investigation entry located"),
- ("Tijeras Creek Elementary","no EnviroStor school-investigation entry located"),
- ("Arroyo Vista K-8","no EnviroStor school-investigation entry located")])]
+SCH=[("B12_schools_ladera","LADERA RANCH — every public school, and what the record shows",[
+ ("Oso Grande Elementary (2005)","Phase 1 + Addendum only (2003) — PAPER REVIEW, no soil sampled, arsenic never an analyte"),
+ ("Ladera Ranch Elementary (2003)","no EnviroStor school-investigation entry located"),
+ ("Ladera Ranch Middle School (2003)","no EnviroStor school-investigation entry located"),
+ ("Chaparral Elementary (2001)","no EnviroStor school-investigation entry located"),
+ ("+ 5 private/preschool operators, 1 former campus","see verified roster — none with an entry")]),
+ ("B13_schools_coto","COTO / TRABUCO AREA — no school inside the gates; the surrounding five",[
+ ("Wagon Wheel Elementary (1997) — west of the Joplin patent ground","no EnviroStor school-investigation entry located"),
+ ("Trabuco Elementary (Trabuco Canyon)","no EnviroStor school-investigation entry located"),
+ ("Robinson Elementary (1994, Robinson Ranch)","no EnviroStor school-investigation entry located"),
+ ("Portola Hills Elementary (1992)","no EnviroStor school-investigation entry located"),
+ ("Dove Canyon Montessori","no EnviroStor school-investigation entry located")])]
 for fn,t,rows in SCH:
     im,dr=board(t)
     y=220
