@@ -1,0 +1,124 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>73 · Methods and Sources — The California Report</title><style>
+:root{--paper:#f7f5f0;--ink:#16233a;--ink2:#48586c;--line:#ddd7ca;--accent:#2f6087;--brass:#a97e1f}
+*{box-sizing:border-box}body{margin:0;background:#e9e6df;color:var(--ink);font:15.5px/1.55 -apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
+.page{max-width:900px;margin:22px auto;background:var(--paper);padding:44px 54px;box-shadow:0 2px 18px rgba(20,35,58,.12);border-radius:4px}
+h1{font-family:Georgia,serif;font-size:27px;margin:.2em 0 .4em}
+h2{font-family:Georgia,serif;font-size:19px;border-bottom:2px solid var(--brass);padding-bottom:4px;margin:26px 0 8px}
+h3{font-size:15px;color:var(--accent);margin:16px 0 4px}
+p{margin:7px 0}blockquote{border-left:3px solid var(--brass);background:#f4ecd6;margin:12px 0;padding:8px 14px;font-size:13px;color:#5a4a2c;border-radius:0 6px 6px 0}
+table{border-collapse:collapse;width:100%;margin:10px 0;font-size:13.5px}
+th,td{border:1px solid var(--line);padding:6px 9px;text-align:left;vertical-align:top}th{background:#efe9dc}
+img{max-width:100%;border:1px solid var(--line);border-radius:6px;margin:8px 0}
+code{background:#efe9dc;padding:1px 5px;border-radius:4px;font-size:12.5px}
+ul,ol{margin:6px 0;padding-left:22px}li{margin:4px 0}
+.nav{display:flex;justify-content:space-between;gap:10px;font-size:13px;margin:18px 0 0}
+.nav a{color:var(--accent);text-decoration:none;border:1px solid var(--line);border-radius:6px;padding:6px 12px;background:#fff}
+.crumb{font-size:12px;color:#7c8a9c;margin-bottom:6px}.crumb a{color:var(--accent);text-decoration:none}
+.toc a{color:var(--accent);text-decoration:none}.toc li{margin:5px 0}
+.foot{margin-top:22px;border-top:1px solid var(--line);padding-top:10px;color:var(--ink2);font-size:11px}
+@media print{body{background:#fff}.page{box-shadow:none;margin:0;max-width:none;padding:.45in .6in}.nav,.crumb{display:none}h1{page-break-before:always}h2{page-break-after:avoid}img{max-height:6.2in}}
+</style></head><body><div class="page">
+<div class="crumb"><a href="index.html">The California Report</a> · section 10 of 10</div>
+<h1>73 · Methods and Sources</h1>
+<blockquote>
+<p>The single methods chapter for The California Report. Every rule that governs the other chapters
+is stated here once, so the area and history chapters can carry a one-line footer instead of
+repeating boilerplate. This chapter is hypothesis-neutral by design: the grading and
+counter-evidence rules exist to keep any single hypothesis from being silently favored.</p>
+</blockquote>
+<hr />
+<h2>73.1 Source grading (A1–D)</h2>
+<p>Every record carries <strong>exactly one</strong> grade. A lower grade is never silently promoted to a higher
+one.</p>
+<table>
+<thead>
+<tr>
+<th>Grade</th>
+<th>Definition</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>A1</strong></td>
+<td>Official machine-readable government dataset; peer-reviewed primary research; official registry publication; official agency report.</td>
+</tr>
+<tr>
+<td><strong>A2</strong></td>
+<td>Official government webpage; regulatory filing; official meeting document; official GIS service.</td>
+</tr>
+<tr>
+<td><strong>B1</strong></td>
+<td>University / research-institution report; systematic review; nonprofit technical report with transparent methodology.</td>
+</tr>
+<tr>
+<td><strong>B2</strong></td>
+<td>Reputable news outlet quoting <strong>named</strong> sources or documents; public statements from identifiable stakeholders.</td>
+</tr>
+<tr>
+<td><strong>C</strong></td>
+<td>Advocacy materials; law-firm summaries; community petitions; social-media statements; unverified case counts; anonymous claims.</td>
+</tr>
+<tr>
+<td><strong>D</strong></td>
+<td>Speculation; unsourced reposts; unsupported online claims.</td>
+</tr>
+</tbody>
+</table>
+<p>Worked examples from this report: the USDA circulars and the 1912 Johnson proclamation are <strong>A1</strong>;
+the DTSC 2008 Interim Guidance and NSW dip-site register are <strong>A2</strong>; the statewide screening layer
+and the Pulling 1965 corroboration are <strong>B1</strong>; the 1908 <em>Los Angeles Herald</em> dipping items are
+<strong>B2</strong> (press quoting a named state officer).</p>
+<h2>73.2 Provenance and the source_id rule</h2>
+<p>No map object, database row, chemical assertion, case report, chart, or finding exists without a
+<code>source_id</code> linking to the source registry. Every <strong>inferred</strong> record additionally records:
+inference method, input sources, assumptions, confidence, and date created. OCR-corrected spellings
+(e.g. "Joplln" → Joplin) are flagged as this project's readings, not the source's text.</p>
+<h2>73.3 The counter-evidence rule</h2>
+<p>Every finding of substance carries an explicit <strong>counter-evidence and limits</strong> note. A finding is
+not allowed to stand on supporting evidence alone. Two absence-vs-proof cautions apply throughout:</p>
+<ul>
+<li><strong>Absence of record ≠ absence of fact.</strong> "No California dip inventory located" means no located
+  record — not proof none exists (a county agricultural-commissioner or historical-society file
+  could hold one).</li>
+<li><strong>County-level ≠ site-level.</strong> Every primary source in this report names <em>counties, districts,
+  and ranches</em> — never a vat coordinate. The gap between "the program reached this county" and "a
+  vat stood at this parcel" is never bridged by documentary evidence in the located record.</li>
+</ul>
+<h2>73.4 Confidence display and badges</h2>
+<p>Inferred or "likely" data is never displayed as an actual measurement. Every claim shows its
+confidence. Language is always disciplined to distinguish: <strong>Verified fact · Credible report ·
+Official statement · Scientific finding · Public allegation · Unverified case report · Model-based
+estimate · Inference · Hypothesis · Missing evidence.</strong> Model figures (chapter 72) are labelled
+<strong>MODEL ESTIMATE</strong> and carry the "could be off by ~10×" caveat wherever they appear. Confidence
+badges in the platform: Verified Official · Primary Scientific · Official Public Record · Credible
+Secondary · Public Allegation · Model Estimate · Unknown.</p>
+<h2>73.5 Time scope</h2>
+<p>Land-use and program history reach as far back as reliable public records allow (the tick program
+is 1907–1912 in Orange County). The health/investigation window is primary <strong>Jan 2005–present</strong>,
+extended <strong>Jan 2000–present</strong>. Every dataset records: publication date, observation/coverage
+period, retrieval date, temporal precision, and whether the record is current / historical /
+inferred / archived.</p>
+<h2>73.6 The source registry</h2>
+<p>The full graded source list — <strong>109 rows</strong> — is in <code>research/source_registry/sources.csv</code>, one row
+per source with: id, title, publisher, author, url, publication date, retrieval date, source type,
+geographic and time coverage, official/primary/peer-reviewed flags, data format, reliability grade,
+known limitations, and notes. Key IDs used across chapters 70–72: <strong>S-USDA-C174</strong> and
+<strong>S-USDA-C183</strong> (USDA BAI circulars, A1); the <strong>1912 Johnson proclamation</strong> (California State
+Library scan, A1/A2); the <strong>State Veterinarian Biennial Reports</strong> (A1/A2); <strong>S-NSW-DIP</strong> (A2),
+<strong>S-UF-VATS</strong> (B2/A1), <strong>S-ITRC-CDV</strong> (B1) for the jurisdiction comparison; <strong>S-STATEWIDE</strong> (B1)
+for the eleven-community screening layer; and the CDNC press items (B2).</p>
+<h2>73.7 Disclaimer</h2>
+<blockquote>
+<p>This platform is an independent research and data-organization project. It does not provide
+medical advice and does not establish that any pesticide, property, organization, employer,
+school, water provider, government agency, or other party caused any illness. Publicly reported
+health events may not have been independently medically verified. Geographic and temporal overlap
+does not establish exposure or causation. Formal conclusions require authorized epidemiological
+analysis, verified medical information, exposure assessment, toxicological review, and independent
+scientific evaluation.</p>
+</blockquote>
+<p><em>This is the standard disclaimer for The California Report. It appears once here; other chapters
+carry a one-line footer pointing to it.</em></p>
+<div class="nav"><a href="72_arsenic_model.html">← 72 · The Arsenic Model — a Mass Balanc</a><a href="index.html">Contents</a><span></span></div>
+<div class="foot">Independent research & data-organization project. No medical advice; no causation established; geographic and temporal overlap does not establish exposure or causation. No CA dip-site soil has been tested. Source grades A1–D per chapter 73; registry: research/source_registry/sources.csv.</div></div></body></html>
