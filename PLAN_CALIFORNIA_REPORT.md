@@ -60,10 +60,24 @@ Ladera best-guess + under-neighborhood classification + node-A zoom · Joplin pa
 balance model map · statewide gallery (60 images). New figures needed: per-area school-status maps;
 the environmental-review comparison table graphic; FL/CA process-comparison diagram.
 
-### 1.5 Build mechanics
-Restructure `docs/publication/chapters/` into area chapters; new build order in the site/PDF
-builders; every migrated claim keeps its source_id; new claims (quarantine lift, Levengood ID,
-patent, EnviroStor/GeoTracker reads) get registered in sources.csv first. Output: HTML + PDF, ~300 pp.
+### 1.5 CONDENSE — the fluff cut (user directive)
+The 250+ page report gets **shorter, not longer**. Target: **~120–150 pp** despite the statewide
+scope. Cut list:
+- Collapse repeated methodology/disclaimer boilerplate to ONE methods chapter + a one-line footer
+  per page (the full disclaimer appears once per section, not per subsection).
+- Merge the duplicative "framework/approach" chapters into a single tight intro.
+- Delete narrative recaps of prior chapters ("as we saw in…") and process narration (how searches
+  were run) — keep findings + sources only; move search logs to an appendix pointer.
+- Every area section: hard cap ~6–10 pages (priority areas up to ~15), figure-led.
+- Tables replace prose wherever a claim list exists (env-review table, school roster, source list).
+- Kill weak/duplicate figures; keep the strongest visual per point.
+
+### 1.6 Build mechanics & OUTPUT FORMAT (user directive)
+Restructure `docs/publication/chapters/` into area chapters; every migrated claim keeps its
+source_id; new claims (quarantine lift, Levengood ID, patent, EnviroStor/GeoTracker reads) get
+registered in sources.csv first. **Deliverables: (a) HTML broken down BY SECTION — an index page +
+one HTML page per area/section, cross-linked, each self-contained with its figures; (b) a SEPARATE
+single PDF of the whole condensed report.**
 
 ## PHASE 2 — THE VIDEO SCRIPT (5–10 min, ~1,100–1,500 words)
 Arc (California story, hypothesis-neutral): 
