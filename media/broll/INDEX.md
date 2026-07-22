@@ -21,7 +21,7 @@
 | Key | File | Beat |
 |---|---|---|
 | B3 | research/oc_dipping_records/statevet_1912_infestation_map_leaf1181.jpg | 2 — quarantine geography |
-| B4 | (1911 USDA warning-sign text — set-type board TBD or on-screen quote) | 2 |
+| B4 | boards/B4_usda_warning_sign.jpg | 2 — the printed hazard |
 | B8a | research/statewide/CA_dipping_probability_map.jpg | 6 — THE map (user-specified centerpiece) |
 | B8b | research/statewide/CA_dipping_satellite_overview.jpg + CA_dipping_satellite_atlas.jpg | 6 |
 | B8c | research/historical_imagery/11_timeseries_1929-2022_with_water.jpg | 6 — Ladera 1929→2022 |
@@ -34,6 +34,5 @@
 | — | docs/publication/statewide_assets/ (60-image gallery) | pickups |
 
 ## Still to produce (optional polish)
-- B4 set-type board of the 1911 vat warning sign.
 - 4K ken-burns crops of the large aerials (render at edit time).
 - Refresh B12/B13 from `research/schools/AREA_SCHOOL_ROSTERS.md` once the verified roster lands.
