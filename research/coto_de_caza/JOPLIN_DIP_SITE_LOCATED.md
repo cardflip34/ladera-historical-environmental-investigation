@@ -3,6 +3,16 @@
 > Hypothesis-neutral. Working file — not part of the publication. No contamination is asserted; the
 > exact vat parcel is unknown and no soil has been tested anywhere.
 
+> **⚠ CORRECTION (superseding the "Starr Ranch / preserved open space" headline below).** The BLM GLO
+> homestead patent (retrieved this session — `GLO_PATENT_JOPLIN.md`, Accession SER-96513) fixes Joplin's
+> *patented residence* to **T6S R7W SBM, Sections 24 & 25**, which georeference to **today's northeastern
+> Coto de Caza community** (residential streets, golf course, and a reservoir on the west half; open
+> foothill on the east half) — **NOT** the Starr Ranch Sanctuary. Starr Ranch is the *eastern* part of the
+> family's *broader* holdings that Starr bought in 1927; the *homestead core*, where a ranch dip vat is
+> most likely to have stood, is **partly built over by Coto de Caza.** Read the headline section below in
+> light of this. No soil tested; exact vat parcel unknown; a dip could also have sat on the still-open
+> eastern foothill portion.
+
 ## The finding
 The **#1 DOCUMENTED** Orange County arsenical cattle-dip site — *"the ranch of J. C. Joplin in Trabuco
 canyon,"* named as a county-ordered dip site in the *Los Angeles Herald*, 27 May 1908 [B2] — is now
