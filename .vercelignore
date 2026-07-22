@@ -1,0 +1,21 @@
+# Deploy only the report site (docs/california) + media. Exclude source, data, and the app.
+apps/
+packages/
+pipelines/
+notebooks/
+tests/
+research/
+evidence/
+data/
+scripts/
+reports/
+docs/publication/
+node_modules/
+.venv/
+__pycache__/
+*.py
+*.pyc
+docker-compose.yml
+Makefile
+project_state.json
+sb.json
