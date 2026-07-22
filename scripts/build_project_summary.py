@@ -140,14 +140,17 @@ sit, which is why the concern survives the loss of the "targeting" explanation.<
 (orange)</b>, on 2022 imagery. The strongest node is greenbelt; the embedded candidates are smaller ponds
 in the east villages. Graded inference; no contamination implied.</figcaption></figure>
 
-<div class="lead"><h3 style="margin-top:0">The single strongest result</h3>
+<div class="lead"><h3 style="margin-top:0">The single strongest result — now pinned to the survey section</h3>
 <p>The one place in the entire investigation where a cattle dip is <b>documented</b> — Josiah C.
-Joplin's 1908 ranch "in Trabuco canyon" — was identified from the primary record and located to his
-<b>Belle (Bell) Canyon homestead</b>. That land is now the <b>National Audubon Society's Starr Ranch
-Sanctuary</b> — ~4,000 acres of protected open space. <b>The documented dip site was preserved, not
-built over.</b> The adjacent Coto de Caza / Dove Canyon homes sit <em>near</em> it, not on it — and
-because the ground is undisturbed, it is the rare documented dip ranch where an authorized soil test
-could actually be sited.</p></div>
+Joplin's 1908 ranch — is now located by his actual <b>1909 federal homestead patent (BLM GLO
+SER-96513): T6S R7W SBM, Sections 24–25</b>, georeferenced with BLM's own survey polygons. The
+picture it gives is two-part. The <b>patented grazing core is partly under northeastern Coto de
+Caza</b> (homes, golf, a reservoir on its west half). But the <b>home place itself</b> — the 1938
+aerial shows the ranchstead compound (buildings, orchard, fenced fields) just east in <b>Bell
+Canyon</b> — sits on ground that <b>remains undeveloped open canyon</b> beside the Starr Ranch
+Sanctuary. Since a ranch's dip vat most plausibly stood at the home corrals, the dip-likeliest
+ground is probably <em>not</em> under homes — while part of the documented ranch's range <em>is</em>.
+Exact vat parcel unknown; no soil tested; no contamination asserted.</p></div>
 
 <figure><img src="{FIG_JOPLIN}" alt="Joplin dip site then and now">
 <figcaption>The documented 1908 Joplin dip site: <b>1938</b> open cattle-and-grain ranch land →

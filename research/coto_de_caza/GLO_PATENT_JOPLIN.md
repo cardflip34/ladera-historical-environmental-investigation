@@ -52,6 +52,30 @@ Coto/Joplin case resemble the Ladera concern rather than being its reassuring op
 vat parcel within the homestead is unknown; no soil tested; a dip could also have sat on the eastern
 foothill portion, which remains open. No contamination is asserted.)*
 
+## The 1938 imagery pass over the patent (this session) — the home place FOUND
+High-res 1938 (1.15 ft/px) + 1953 + modern pulls over the patent
+(`imagery/joplin_patent_*.jpg`, `imagery/joplin_z*_1938/1953/modern.jpg`):
+- **Inside the patent:** graded ranch road across Sec 24 with a drainage-crossing oak clump (no
+  structure confirmable); large cleared field along the west boundary; no corral/vat geometry seen.
+- **THE RANCHSTEAD:** immediately **east of the patent line, in Bell Canyon** (~33.6285, −117.5557,
+  ±150 m, non-residential ground) — a full **ranch compound in 1938: buildings, a planted orchard
+  grid, fenced fields**, beside the county cartographer's "Bell Cr." ink label. Persists in 1953.
+  This fits the primary record exactly: the 1920 *La Habra Star*'s "**the old Joplin place in Bell
+  canyon**" (then W. K. Robinson's), on the **Southern-Pacific/railroad-section land Joplin bought**
+  beyond his patent (Armor's 766 ac vs the ~120-ac patent).
+- **That ground today:** still **open canyon** — a small rural compound (corrals, low buildings,
+  parking row) consistent with the **Starr Ranch Sanctuary field-station area** [ownership to verify
+  against the county parcel layer / Audubon before stating as fact].
+
+### Refined two-part conclusion (supersedes both earlier one-liners)
+1. The **patented grazing core** (Sec 24/25) is **partly under NE Coto de Caza** (homes/golf/
+   reservoir on its west half; open foothill east).
+2. The **home place / working ranchstead** — where a ranch's dip vat most plausibly stood (home
+   corrals) — sits **just east in Bell Canyon on ground that remains undeveloped** (apparently the
+   sanctuary's facility area). So the dip-likeliest ground is probably NOT under homes, while part
+   of the patented range IS. Both statements are now parcel-precise and imagery-backed. No vat
+   identified; no soil tested; no contamination asserted.
+
 ## Why this matters
 - Upgrades the Joplin site from "the canyon" to an **exact survey section** — the unit a soil-sampling
   plan, a records request, or a parcel-history search is actually written against.
