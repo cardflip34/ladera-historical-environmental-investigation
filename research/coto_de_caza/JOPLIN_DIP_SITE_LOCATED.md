@@ -10,15 +10,19 @@ canyon,"* named as a county-ordered dip site in the *Los Angeles Herald*, 27 May
 housing.**
 
 ## Identity — Josiah C. Joplin *(verified against the in-repo primary source)*
-"J. C. Joplin" = **Josiah C. Joplin** (b. Bedford Co., Virginia, 15 Sep 1844; Confederate cavalry vet).
-From **Armor, *History of Orange County* (1921)**, `evidence/documents/Armor_1921…txt` (lines 18218–18274,
-read directly): came to (future) Orange County **1876**; **located a 160-acre homestead in "Belle
-Canyon,"** later adding 320 acres (adjoining settlers) + 286 acres (Southern Pacific RR) ≈ **766 acres**,
-"engaging principally in **stock raising and bee culture**"; organizer of the **Trabuco school district /
-precinct**; four-term **county treasurer** (1898–1922). **Corroborated** independently by a **BLM GLO
-land patent to "Josiah C. Joplin," Orange County, issued 1909** [A2, land-patent index]. *(So he was a
-**homesteader on federal land**, not an O'Neill/Forster ranch lessee — the 1908 dipping was on his own
-herd/land.)*
+"J. C. Joplin" = **Josiah C. Joplin** (b. Bedford Co., Virginia, 15 Sep 1844; Confederate cavalry vet;
+**d. June 1933, age 89**). From **Armor, *History of Orange County* (1921)**, `evidence/documents/Armor_1921…txt`
+(lines 18218–18274, read directly): came to (future) Orange County **1876**; **located a 160-acre homestead
+in "Belle Canyon,"** later adding 320 acres (adjoining settlers) + 286 acres (Southern Pacific RR) ≈ **766
+acres**, "engaging principally in **stock raising and bee culture**"; organizer of the **Trabuco school
+district / precinct**; four-plus-term **county treasurer** (1898–1922). **Corroborated** independently by a
+**BLM GLO land patent to "Josiah C. Joplin," Orange County, issued 1909** [A2, land-patent index] and by a
+full run of **contemporaneous Orange County press** (CDNC, read this session, [B2]): re-elected treasurer
+1918 & 1922 ("PIONEER TREASURER SEEKS RE-ELECTION," *La Habra Star* 14 Jun 1922); reputation for honesty
+(returned a $12,825 tax over-collection, 1922); the 1908–09 county-warrant dispute; a 1923 game-law scrape;
+land dealings as far as the **Coalinga oil belt** (*Fresno Bee* 18 Nov 1911); and his **obituary — *La Habra
+Star*, 23 Jun 1933, "Josiah C. Joplin, 89, Orange county pioneer."** *(So he was a **homesteader on federal
+land**, not an O'Neill/Forster ranch lessee — the 1908 dipping was on his own herd/land.)*
 
 ## Location — now the Starr Ranch Audubon Sanctuary *(verified)*
 **Belle Canyon = Bell Canyon**, a Trabuco-Creek-system canyon in the Santa Ana Mtn foothills. That land
@@ -53,17 +57,19 @@ family parcel. **The 1908 "J. C." dip site is the father's Belle Canyon homestea
 - **Two arsenic vectors, one discriminator:** DTSC EnviroStor logs **Carl Hankey Elementary, Mission
   Viejo (ID 10224): former *orchard*, contaminants Arsenic + Lead** — the classic **lead-arsenate**
   orchard signature (As *with* Pb). A cattle-**dip** would leave arsenic-trioxide (As, little/no Pb) at a
-  vat. Any future soil work must distinguish the two. *(The 1938 orchard at the Trabuco Canyon mouth is
-  likely the Osterman ranch; orchard ≠ residue.)*
+  vat. Any future soil work must distinguish the two. *(The 1938 orchard at the Trabuco Canyon mouth was
+  previously guessed to be "the Osterman ranch," but a direct CDNC search found **no Osterman ranch in the
+  canyon** — the orchard owner is **currently unidentified**; orchard ≠ residue regardless.)*
 - **Hydrology (kills an old thread):** Trabuco/Bell Canyon drains to **San Juan Creek downstream of
   Ladera Ranch** — there is **no surface-water pathway from the Joplin dip site toward Ladera.**
 
 ## Caveats (honest limits)
 - The **exact vat parcel is unknown**; located to canyon/homestead level only. **No soil tested; no
   contamination implied.**
-- The 27 May 1908 article was read in a *prior* project session (CDNC), not re-fetched now (CDNC/LoC
-  403 to scripts this run); the Joplin-dipping fact rests on that prior verified read + the independent
-  1909 land-patent name/date match.
+- The 27 May 1908 dip article and its follow-ups were **re-verified directly on CDNC this session** (via
+  the browser; the bot-gate blocks only scripts). The dipping chain, "Bell Canyon," the Joplin biography
+  (1844–1933), and the county-order (Dr. McFarlane) all now rest on primary press read first-hand — see
+  `CDNC_DEEP_SEARCH.md`.
 - "Dr. W. S. McFarlane" (county vet) appears in the 1908 press but not in Circular 174 — confirm via OC
   Supervisors/county records.
 

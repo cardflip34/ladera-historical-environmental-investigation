@@ -48,11 +48,55 @@ Two contemporaneous sources say **"Bell Canyon"** (matching the modern name / St
 This is thorough, independent confirmation of Armor 1921: Josiah C. Joplin, stock-raiser and beekeeper,
 Bell Canyon homestead in the Trabuco precinct — the man named in the 1908 dip article.
 
-## The other named 1908 sites
+### Public life & death — the fuller biography (Phase B, this session)
+The man in the 1908 dip article was, for the same quarter-century, **Orange County's treasurer** — so his
+life is unusually well-documented in the county press, which sharpens the identification:
+- **County treasurer 1898–1922, repeatedly re-elected:** *La Habra Star* 9 & 23 Aug 1918 ("**J. C. JOPLIN
+  FOR TREASURER**"); 30 Aug 1918 election returns ("For Treasurer — J. C. [Joplin]…"); **14 Jun 1922
+  "PIONEER TREASURER SEEKS RE-ELECTION"**; 30 Aug 1922 "Treasurer Joplin… **re-elected**." Campaign ad
+  25 Aug 1922: "**old-fashioned honesty** brought about the selection of J. C. Joplin as county treasurer."
+- **Reputation / civic role:** returned a **$12,825.28 tax over-collection to taxpayers** (*La Habra Star*
+  3 & 10 Feb 1922); with Dr. Freeman of Fullerton **compiled the county's WWI service record** (5 & 12 Jul
+  1918).
+- **The 1908–09 warrant dispute:** as treasurer he **held county warrants ($20,750)** rather than cash
+  them; taxpayers sued to compel payment (*LA Herald* 6 Aug 1908 "WOULD COMPEL TREASURER TO CASH THEIR
+  WARRANTS"; *Press-Telegram* 21 Oct 1909).
+- **A game-law scrape (the mountain man):** charged with a **state game-law violation, 1923**, fined in
+  justice court, appealed (*La Habra Star* 14 Sep 1923, 21 Dec 1923, 9 Jan 1924) — of a piece with the
+  1902 lion-and-hogs and 1921 "escapes death in the hills" items; he was a backcountry rancher-hunter.
+- **Land dealings beyond Trabuco:** *Fresno Bee* 18 Nov 1911 "REALTY TRANSFERS" records **Josiah C. Joplin
+  (with Susan V. Moore) conveying a Coalinga lot to Guy L. Butler** — i.e. he also held **west-side
+  Fresno-County (Coalinga oil-belt) property**, not only the Bell Canyon homestead.
+- **Death:** ***La Habra Star*, 23 Jun 1933** — "funeral services for **Josiah C. Joplin, 89, Orange
+  county pioneer**." He **died June 1933, age 89** (b. 15 Sep 1844 ✓). Descendants carried the family's
+  "Boyd" name (*Santa Ana Journal* 19 Nov 1935, "Miss Boyd Joplin").
+
+**Net:** the "J. C. Joplin" of the 1908 dip article is fixed beyond reasonable doubt as **Josiah C. Joplin,
+1844–1933**, Bell-Canyon homesteader and four-plus-term county treasurer — the same man Armor 1921, the
+1909 GLO patent, and the Starr Ranch history describe.
+
+## The other named 1908 sites (Phase B — searched directly this session)
 - **Bixby ranch in Santa Ana canyon** — confirmed as a real ranch (*Enterprise*, Riverside, 11 Sep 1907:
   "a fire Sunday on the **Bixby ranch in Santa Ana canyon**"). This is a *different* Bixby holding from
   the Long Beach Bixby operations that dominate the search noise.
-- **Capistrano** and **Yorba** — named in the 27 May 1908 article; no granular follow-up in CDNC.
+- **San Juan Capistrano** — the 600–700-head dipping there had an organized basis: *Blade Tribune*
+  **18 Jan 1908** reports a **"meeting of stockmen at San Juan Capistrano"** whose "principal question…
+  had to do with [the cattle tick]" — a **January-1908 stockmen's meeting on the tick**, four months
+  before the May dipping. No parcel-level detail beyond that.
+- **Yorba** — a dedicated `Yorba dipping` search returns **only the 27 May 1908 article itself**; no
+  separate granular Yorba record survives in CDNC. Absence-of-record, not absence-of-fact.
+
+## The Trabuco homestead families (Phase B)
+- **Straw family (confirmed):** the family into which Andrew Joplin married (Izella Straw, 1896) is an
+  independently attested Trabuco homestead line — **"Gus W. Straw of Trabuco"** (*LA Herald* 16 Oct 1902)
+  and **"Mrs. P. W. Straw"**, an "old resident," d. 1910 (*LA Herald* 7 Jan 1910). Corroborates the
+  Joplin–Straw homestead cluster around Live Oak / Trabuco Canyon.
+- **Osterman (NOT confirmed — correction):** an `Osterman Trabuco` search returns **no Osterman ranch in
+  the canyon** (only an unrelated 1935 CCC-fire recollection). The prior working note that the 1938
+  canyon-mouth **orchard** was "likely the Osterman ranch" is **not supported by the primary press** and
+  should be treated as an **unverified attribution** — the orchard owner is currently unidentified. The
+  substantive point (orchard ⇒ possible lead-arsenate vector, distinct from cattle-dip arsenic) stands
+  regardless of who owned it.
 
 ## The county-vat model (the SLO analog — what OC's un-digitized records would show)
 CDNC has **San Luis Obispo's** county live-stock inspector (Mazza) monthly reports: **54 dipping vats**
@@ -67,6 +111,11 @@ coverage in CDNC = the *LA Herald* items above; the granular vat detail is in th
 Ana local press + the county-veterinarian records** — the Tier-1 physical targets.
 
 ## New sources to register (B2, primary press, cdnc.ucr.edu)
-`SPDN19080811.2.24` · `SJMN19080626.2.106` · `LAH19080725.2.83.4.1` · La Habra Star 17 Mar 1920 · LA
-Herald 25 Oct 1892 / 27 Jan 1894 / 23 Sep 1894 / 12 Dec 1896 / 16 Apr 1902 · Pacific Rural Press 3 May
-1902 · Morning Free Press 22 Aug 1908 · Press-Telegram 10 Jun 1910 · Enterprise (Riverside) 11 Sep 1907.
+**Phase A:** `SPDN19080811.2.24` · `SJMN19080626.2.106` · `LAH19080725.2.83.4.1` · La Habra Star 17 Mar
+1920 · LA Herald 25 Oct 1892 / 27 Jan 1894 / 23 Sep 1894 / 12 Dec 1896 / 16 Apr 1902 · Pacific Rural
+Press 3 May 1902 · Morning Free Press 22 Aug 1908 · Press-Telegram 10 Jun 1910 · Enterprise (Riverside)
+11 Sep 1907.
+**Phase B (this session):** La Habra Star **23 Jun 1933** (Joplin obituary) / 14 Jun 1922 / 25 Aug 1922
+/ 3 & 10 Feb 1922 / 9 & 23 & 30 Aug 1918 / 5 & 12 Jul 1918 / 14 Sep 1923 / 21 Dec 1923 / 9 Jan 1924 · LA
+Herald 6 Aug 1908 · Press-Telegram 21 Oct 1909 · Fresno Bee 18 Nov 1911 (Joplin realty transfer) · Blade
+Tribune 18 Jan 1908 (Capistrano stockmen's meeting) · LA Herald 16 Oct 1902 & 7 Jan 1910 (Straw family).
