@@ -38,7 +38,7 @@ def b64img(path,maxw=1080,q=68):
     buf=io.BytesIO(); im.save(buf,"JPEG",quality=q)
     return "data:image/jpeg;base64,"+base64.b64encode(buf.getvalue()).decode()
 
-IMGPAT=re.compile(r'`((?:research|docs|media)/[^`]+?\.(?:jpg|png))`')
+IMGPAT=re.compile(r'`((?:research|docs|media|evidence)/[^`]+?\.(?:jpg|png))`')
 def embed_figures(md_text):
     """Replace `path/to/img.jpg` code-refs with embedded images + caption line."""
     def rep(m):

@@ -13,11 +13,37 @@ survey named six California counties "heavily infested" — San Luis Obispo, San
 Diego, **Orange**, Fresno, Ventura [A1, USDA BAI Circular 174]. A federal quarantine line went
 around them, and California passed a law compelling cattle owners to dip.
 
+The federal government's own instructions to California ranchers survive — *Eradicating Cattle
+Ticks in California* (USDA BAI Circular 174, 1911), the document at the center of this history:
+
+`evidence/images/usda_bai_circ174_1911_cover.jpg`
+
 **The mandate.** The prescribed bath was arsenical: **8 pounds of white arsenic (arsenic trioxide),
 24 pounds of sal soda, and a gallon of pine tar to every 500 gallons of water** — roughly 1,450 mg
 of arsenic per liter, potent enough that the USDA printed a standing warning for every vat [A1]:
 
+`evidence/images/usda_bai_circ174_1911_p293_VAT_POISON_WARNING_sign_text.png`
+
 `media/broll/boards/B4_usda_warning_sign.jpg`
+
+**How the vats were built.** The government supplied standardized engineering drawings — long,
+narrow, deep concrete or brick troughs cattle were forced to swim through, with an entrance chute
+and a draining pen. These are the plans California ranchers built from:
+
+`evidence/images/usda_bai_circ174_1911_p295_fig7_swim_vat_plans.png`
+
+`evidence/images/usda_bai_circ207_1912_fig1_concrete_dipping_vat_plan.png`
+
+`evidence/images/usda_bai_circ183_1911_concrete_vat_plate.png`
+
+**What it looked like.** Cattle were driven single-file down the chute and plunged through the
+arsenic bath, swimming its length and climbing out into a drain pen where the fluid ran back toward
+the vat. The process is unchanged where fever-tick dipping still operates today:
+
+`evidence/images/illustrative/USDA_ARS_cattle_fever_tick_dipping_vat_PD.jpg`
+*Illustrative — U.S. Department of Agriculture, Agricultural Research Service (public domain): cattle
+going through a fever-tick dipping vat in the still-active Texas–Mexico border quarantine. The same
+national program and vat design; not a photograph of the California operation.*
 
 **The program in Orange County ran ~1907 to March 1912.** Four dip sites are named in the 1908
 press — the Joplin ranch in Trabuco Canyon/Bell Canyon, San Juan Capistrano, Yorba, and the Bixby

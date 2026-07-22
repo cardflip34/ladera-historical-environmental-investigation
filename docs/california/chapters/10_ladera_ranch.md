@@ -8,6 +8,32 @@ arsenic. Every environmental review that touched Ladera was a records-and-walk r
 event. The question this report exists to pose is therefore genuinely open: **never looked, not
 looked-and-cleared.**
 
+## The ranch this land was
+For a century before the master plan, this was cattle country — the O'Neill / Rancho Mission Viejo
+range. The Rancho Santa Margarita y Las Flores and Mission Viejo lands passed from the Forster family
+to Charles Crocker, then James Flood, and finally **Richard O'Neill**, whose sons **Jerome O'Neill**
+(who ran the Trabuco Mesa division "ten miles above El Toro") and **James O'Neill** worked the herds
+under the **"Rafter M"** brand [B1/B2, Armor 1921; RMV company history]. The operation ran on
+vaqueros and foremen — the Baumgartner and Chandler ranch families among the names that recur in the
+county's ranch photography and oral histories.
+
+`evidence/images/usc_chs2360_UC139844_herd_of_cattle_grazing_santa_margarita_ranch_sd_county_1900.jpg`
+*Herd grazing on the O'Neill Santa Margarita ranch, c. 1900 [A2, USC California Historical Society].*
+
+`evidence/images/usc_chs2358_UC139843_cattle_grazing_near_small_stream_santa_margarita_ranch_sd_county_1900.jpg`
+*Cattle grazing at a stream on the ranch, c. 1900 — the everyday reality that made dipping necessary:
+cattle concentrate at water, and water is where ticks and working grounds both gathered [A2].*
+
+`evidence/images/OCPL_OCStories_MissionViejoRanch_roundup_1972_id1279.jpg`
+*Roundup on Rancho Mission Viejo, 1972 — the cattle operation persisted on this land until
+development [A2, OC Public Library / OC Stories].*
+
+`evidence/images/OCPL_OCStories_MissionViejoRanch_CattleCorralEntrance_CHAA018_id1691.jpg`
+*Corral entrance, Mission Viejo ranch — the kind of working node where a dip vat would have stood
+[A2]. Branding and a hand-dowsed ranch well are documented in the same 1971–72 OC Stories set
+(`OCPL_OCStories_MissionViejoRanch_branding_AliceChandler_ranchhand_1971_id1676.jpg`,
+`OCPL_OCStories_MissionViejoRanchWell_AliceChandler_dowsed_1971_id1690.jpg`).*
+
 ## Ranch-era history
 - The footprint was O'Neill/RMV grazing land from 1882 to development; DTSC itself codes the one
   reviewed Ladera parcel's past use **"AGRICULTURAL – LIVESTOCK"** [A1, EnviroStor export].
@@ -62,6 +88,17 @@ paper-only Phase 1 above. **Private/preschool (5)** + 1 former campus (Stoneybro
 2003–2015). Every school except Oso Grande: **no EnviroStor school-investigation entry located**
 (absence of entry ≠ clearance; EnviroStor per-school checks were bot-gated to automated search —
 flagged for interactive verification).
+
+## What would locate a vat here, and where to test
+Because imagery is exhausted, the Ladera answer is now **documentary + a spade**:
+- **Archives to pull** — the RMV/O'Neill ranch books, foreman logs, dipping receipts, and ranch
+  photo albums (Sherman Library first; then UCI Special Collections, San Juan Capistrano Historical
+  Society, the private RMV archive). See Chapter *"What we're looking for."*
+- **Where to test** — screening samples in the **preserved Trabuco greenbelt** and the neighborhood
+  **parks and common areas** (the child-contact 0–6 in horizon), plus any volunteered yard soil;
+  total + bioavailable arsenic, **with lead alongside** to separate dip- from orchard-signature, plus
+  speciation. Grading likely diluted any residue, so a null is not a full clearance and a hit is
+  significant.
 
 ## Honest limits & counter-evidence
 - **No vat found on adequate imagery** (1.15 ft/px would resolve a corral unmistakably) — weak

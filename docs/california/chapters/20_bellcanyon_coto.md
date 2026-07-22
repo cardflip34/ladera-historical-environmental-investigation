@@ -41,6 +41,19 @@ Veterinary Surgeon & Stock Inspector, in office Oct 1907–Mar 1909 [B1, Armor r
 Arsenical, county-ordered, lethal to stock, on named ground — the reference case for the whole
 statewide question.
 
+## The ranch, in pictures
+`evidence/images/OCPL_OCArchives_TrabucoAdobeRuins_ONeillPark_dateUnknown_id1508.jpg`
+*Trabuco adobe ruins, O'Neill Park — the O'Neill ranch fabric that surrounded the Joplin inholding
+[A2, OC Archives].*
+
+`evidence/images/usc_chs2359_UC139832_lone_mounted_cowboy_santa_margarita_ranch_sd_county_1900.jpg`
+*A vaquero on the O'Neill range, c. 1900 [A2, USC CHS] — the working world into which the county
+veterinarian's 1908 dip order arrived.*
+
+`evidence/images/Bancroft_LandCaseMapE-1362A_1867_Plat_RanchoSantaMargaritaYLasFlores_Strobel.jpg`
+*The 1867 land-case plat of the rancho [A2, Bancroft] — the survey framework Joplin's 1909 homestead
+patent (Sec 24/25) was later carved from.*
+
 ## Figures
 - `research/coto_de_caza/joplin_patent_section_overlay.jpg` — the patent polygons on today's imagery.
 - `research/coto_de_caza/imagery/joplin_patent_1938_annotated.jpg` (+ 1953, modern, triptych) — the
