@@ -28,6 +28,14 @@ ranch's dip typically sat at its central working corrals, which were not in this
 mass estimate if one existed: **~0 or ~100–500 lb of arsenic at a single unlocated working area**
 [MODEL ESTIMATE].
 
+**"Node A" — demoted after re-examination (2026-07-22).** The one built feature ever mapped inside
+the footprint (a 1948 USGS topo structure symbol on the Trabuco corridor) was re-examined at native
+1937 resolution: the frame shows **oak woodland and a clearing — no building geometry, no corral,
+no complex**. A structure surveyed in 1948, 36 years after dipping ended and invisible in 1937, is
+weak evidence of a dipping-era working site. It remains in the record as a mapped feature, **not a
+priority**. The honest Ladera picture: imagery offers *no* compelling dip candidate anywhere in the
+footprint — the resolver here is documentary (RMV ranch books, county/state ledgers), not aerial.
+
 ## Figures
 - `research/historical_imagery/11_timeseries_1929-2022_with_water.jpg` — the footprint 1929→2022 with
   all 41 surveyed water bodies.
