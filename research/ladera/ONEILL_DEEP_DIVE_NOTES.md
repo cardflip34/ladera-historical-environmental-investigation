@@ -27,9 +27,13 @@
   developer-era machinery engages **only when the historical source is documented** — the core blind-
   spot mechanism, now demonstrated on the same rancho.
 
-## Open items for this deep dive (as agent results land)
-1. Map every named O'Neill working site on the OC side (HQ, cow camps, corrals, shipping points) —
-   then overlay against Ladera Zone A + 1929/1937 imagery.
-2. Identify the 33.55505,−117.65492 Trabuco-corridor structure (node A) from ranch-feature records.
-3. UCSB FrameFinder pre-1950 flights over the footprint → order list.
-4. Locate the physical home of RMV/O'Neill business records 1900–1920 (Sherman? UCI? private).
+## Open items — status 2026-07-22 (the two agent dossiers were CANCELLED before returning)
+1. Map every named O'Neill working site on the OC side — **open; now a physical-archive task**
+   (Sherman Library RMV/O'Neill collections, Camp Pendleton Hist. Soc., San Juan Capistrano Hist.
+   Soc.) per `research/archives/RECORDS_REQUESTS_2026-07.md`.
+2. Node A (33.55505,−117.65492) — **resolved by re-examination instead**: 1937 native-res frame
+   shows woodland + clearing, no building geometry; 1948 topo symbol post-dates dipping by 36 yrs.
+   **Demoted; not a priority** (carried into the California Report, Ladera chapter).
+3. UCSB FrameFinder pre-1950 flight list — **open** (quick digital task for a future session).
+4. Physical home of RMV/O'Neill business records 1900–1920 — **open; Sherman Library is the
+   first-visit target.**
