@@ -12,6 +12,8 @@ def b64(path, width=1120, q=74):
 
 FIG_MAP=b64("research/statewide/CA_dipping_probability_map.jpg", 900, 72)
 FIG_JOPLIN=b64("research/coto_de_caza/joplin_dip_site_then_and_now.jpg", 1120, 74)
+FIG_LADERA=b64("research/ladera/imagery/ladera_dip_bestguess_thennow.jpg", 1120, 74)
+FIG_LADERA_HOUSES=b64("research/ladera/imagery/ladera_candidates_under_neighborhood.jpg", 1000, 74)
 
 HTML=f"""<!doctype html><html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -113,6 +115,30 @@ Ladera and the coast.</p>
 surface. <b>Irvine</b> — the strongest cattle-<em>operations</em> profile (the Bommer Canyon
 headquarters), yet its measured soil arsenic tracks <b>former orchards (lead-arsenate), not grazing</b>
 — a crucial competing explanation.</p>
+
+<h3>Ladera Ranch — the best-guess siting, held to graded inference</h3>
+<p>The sharpest pre-development aerial (<b>1937–38, 1.15 ft/px</b>) shows open cattle rangeland; the one
+resolvable man-made structure inside the footprint sits on the <b>Trabuco Creek corridor</b> — the single
+strongest candidate for a ranch working/dip location. It is <b>not</b> an identified vat, and none was
+found on any frame 1929–2022. Crucially, that node and the main stock-water cluster are today
+<b>preserved greenbelt, not under houses.</b></p>
+
+<figure><img src="{FIG_LADERA}" alt="Ladera best-guess dip siting, 1937-38 vs 2022">
+<figcaption>Best-guess siting (<b>graded inference, not a location</b>): the 1937–38 ranch node (A) and
+stock-water bodies (B–E) over the <b>1937–38 aerial and 2022 imagery</b>. The strongest candidates lie in
+today's Trabuco greenbelt. No vat found; no soil tested.</figcaption></figure>
+
+<p>A fair question is whether any candidate ground lies <em>inside</em> the neighborhoods. Of the 16
+surface-water bodies mapped inside the footprint, <b>9 are in greenbelt</b> (including the strongest node)
+and <b>6 are now under or beside the central-east villages</b> — smaller stock ponds, with houses as close
+as 8–35 m. A ranch's dip was usually one central facility at its working corral (the greenbelt node), so
+these are <em>weaker</em> dip candidates — but they are exactly where any built-over ranch ground would now
+sit, which is why the concern survives the loss of the "targeting" explanation.</p>
+
+<figure><img src="{FIG_LADERA_HOUSES}" alt="Ladera candidates greenbelt vs under neighborhood">
+<figcaption>Which candidates are under houses today: <b>greenbelt (blue)</b> vs <b>under the neighborhood
+(orange)</b>, on 2022 imagery. The strongest node is greenbelt; the embedded candidates are smaller ponds
+in the east villages. Graded inference; no contamination implied.</figcaption></figure>
 
 <div class="lead"><h3 style="margin-top:0">The single strongest result</h3>
 <p>The one place in the entire investigation where a cattle dip is <b>documented</b> — Josiah C.
