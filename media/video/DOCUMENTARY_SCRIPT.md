@@ -129,12 +129,19 @@ the public materials I could find, I saw no sign that this specific early ranchi
 reconstructed or evaluated. It was not hidden. It simply came before the window everyone was looking
 through.
 
-There is one more distinction that decides almost everything, and it is easy to miss. Where
-California has tested soil for arsenic, it was mostly on old orchard land, looking for a farm
-pesticide called lead arsenate, which is arsenic bound together with lead. A cattle dip leaves a
-different fingerprint. Arsenic trioxide. Arsenic with little or no lead. As far as I could find, no
-test in these communities has ever gone looking for that second signature. So it has never been ruled
-in, and it has never been ruled out.
+There is one more distinction that decides almost everything, and it is easy to miss. There are two
+very different kinds of arsenic in this story. The first is lead arsenate. It was a farm pesticide,
+sprayed for decades on orchards, and it leaves a telltale fingerprint: arsenic bound together with
+lead. The second is arsenic trioxide. That was the cattle-dip poison, and it leaves the opposite
+fingerprint: arsenic with little or no lead.
+
+That difference is everything, because of where the testing has, and has not, happened. In the
+handful of places where California did test local soil for arsenic, including at some school sites
+that were built on former orchards, it was looking for the pesticide. The lead-arsenate signature. As
+far as I could find, no test in these communities has ever gone looking for the other one. The
+dipping signature. The arsenic trioxide. The schools, the parks, and the homes built on the old
+ranch and grazing land were never checked for it. So it has never been ruled in, and it has never
+been ruled out.
 
 Now let me be as clear as I possibly can about what this is not. None of this establishes
 contamination. None of it establishes exposure. And none of it establishes that anything caused
