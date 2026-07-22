@@ -16,20 +16,22 @@
 
 ---
 
-A little over a hundred years ago, California ordered ranchers, here in Orange County and across the
-state, to dip their cattle in arsenic.
+A little over a hundred years ago, in 1907, California ordered ranchers, here in Orange County and
+across the state, to dip their cattle in arsenic.
 
-It was part of a national campaign against a cattle disease, and the federal government supplied the
-formula. But it was California that made the dipping mandatory for its own ranchers, and then left it
-to each rancher to build the vats, to run them, and to record them. No state agency ever compiled
-where they were. And in the decades that followed, California never went back to check.
+By 1908, it was happening on ranch after ranch across this county. It was part of a national campaign
+against a cattle disease, and the federal government supplied the formula. But it was California that
+made the dipping mandatory for its own ranchers, and then left it to each of them to build the vats,
+to run them, and to record them. No state agency ever compiled where they were.
 
-This was not a small amount of poison. It was mixed to a federal formula and poured, season after
-season, into the same ground that would one day become some of Southern California's most
-sought-after neighborhoods. And then, quietly, it was forgotten.
+The program ran until 1912. Then the quarantine was lifted, the cattle moved on, and the vats were
+left behind. This was not a small amount of poison. It was mixed to a federal formula and poured,
+season after season, into the same ground that would one day become some of Southern California's
+most sought-after neighborhoods. And in the decades that followed, California never went back to
+check.
 
 It was mandatory. Every detail of how to do it was written down. Where it was done never was. And when
-the program ended, those locations slipped out of history.
+the program ended, those locations quietly slipped out of history.
 
 My name is Andy Stavros. I'm not a scientist. I'm not a doctor. I'm not an activist. I'm a father in
 Newport Beach.
