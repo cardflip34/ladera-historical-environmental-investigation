@@ -12,7 +12,8 @@ CSS="""
 :root{--paper:#f7f5f0;--ink:#16233a;--ink2:#48586c;--line:#ddd7ca;--accent:#2f6087;--brass:#a97e1f}
 *{box-sizing:border-box}body{margin:0;background:#e9e6df;color:var(--ink);font:15.5px/1.55 -apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
 .page{max-width:900px;margin:22px auto;background:var(--paper);padding:44px 54px;box-shadow:0 2px 18px rgba(20,35,58,.12);border-radius:4px}
-h1{font-family:Georgia,serif;font-size:27px;margin:.2em 0 .4em}
+h1{font-family:Georgia,serif;font-size:30px;margin:.2em 0 .1em;letter-spacing:-.01em}
+.subtitle{font-family:Georgia,serif;font-style:italic;font-size:19px;color:var(--ink2);margin:0 0 16px}
 h2{font-family:Georgia,serif;font-size:19px;border-bottom:2px solid var(--brass);padding-bottom:4px;margin:26px 0 8px}
 h3{font-size:15px;color:var(--accent);margin:16px 0 4px}
 p{margin:7px 0}blockquote{border-left:3px solid var(--brass);background:#f4ecd6;margin:12px 0;padding:8px 14px;font-size:13px;color:#5a4a2c;border-radius:0 6px 6px 0}
@@ -30,7 +31,7 @@ ul,ol{margin:6px 0;padding-left:22px}li{margin:4px 0}
 """
 FOOT=("Independent research & data-organization project. No medical advice; no causation established; "
       "geographic and temporal overlap does not establish exposure or causation. No CA dip-site soil has been tested. "
-      "Source grades A1–D per chapter 73; registry: research/source_registry/sources.csv.")
+      "Source grades A1-D per chapter 73; registry: research/source_registry/sources.csv.")
 
 def b64img(path,maxw=1080,q=68):
     im=Image.open(path); im=im.convert("RGB")
@@ -63,8 +64,8 @@ for i,(slug,title,raw) in enumerate(chaps):
     prev_=f'<a href="{chaps[i-1][0]}.html">← {chaps[i-1][1][:38]}</a>' if i>0 else '<span></span>'
     next_=f'<a href="{chaps[i+1][0]}.html">{chaps[i+1][1][:38]} →</a>' if i<len(chaps)-1 else '<span></span>'
     html=f"""<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<title>{title} — The California Report</title><style>{CSS}</style></head><body><div class="page">
-<div class="crumb"><a href="index.html">The California Report</a> · section {i} of {len(chaps)-1}</div>
+<title>{title} · California's Forgotten Past</title><style>{CSS}</style></head><body><div class="page">
+<div class="crumb"><a href="index.html">California's Forgotten Past</a> · section {i} of {len(chaps)-1}</div>
 {body}
 <div class="nav">{prev_}<a href="index.html">Contents</a>{next_}</div>
 <div class="foot">{FOOT}</div></div></body></html>"""
@@ -73,9 +74,10 @@ for i,(slug,title,raw) in enumerate(chaps):
 # index
 items="".join(f'<li><a href="{s}.html">{t}</a></li>' for s,t,_ in chaps)
 idx=f"""<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<title>The California Report — contents</title><style>{CSS}</style></head><body><div class="page">
-<h1>The Arsenic Under the Master Plan — a California investigation</h1>
-<p>Condensed, area-based report. Priority areas first. Each section is a self-contained page.</p>
+<title>California's Forgotten Past · The Arsenic Cattle-Dipping Era</title><style>{CSS}</style></head><body><div class="page">
+<h1>California's Forgotten Past</h1>
+<p class="subtitle">The Arsenic Cattle-Dipping Era</p>
+<p>An independent, area-based investigation. Priority areas first. Each section is a self-contained page.</p>
 <blockquote>{FOOT}</blockquote>
 <h2>Contents</h2><ul class="toc">{items}</ul>
 <p class="foot">Also available as a single PDF: <a href="California_Report.pdf">California_Report.pdf</a></p>
@@ -84,7 +86,12 @@ open(os.path.join(OUTD,"index.html"),"w").write(idx)
 
 # single print HTML (for PDF)
 allbody="".join(markdown.markdown(embed_figures(raw),extensions=["tables"]) for _,_,raw in chaps)
-print_html=f"""<!doctype html><html lang="en"><head><meta charset="utf-8"><title>The California Report</title>
-<style>{CSS}</style></head><body><div class="page">{allbody}<div class="foot">{FOOT}</div></div></body></html>"""
+titleblock=("<div style=\"text-align:center;padding:1.7in 0 2.2in\">"
+  "<div style=\"font-family:Georgia,serif;font-size:40px;color:#16233a;letter-spacing:-.01em\">California's Forgotten Past</div>"
+  "<div style=\"font-family:Georgia,serif;font-style:italic;font-size:22px;color:#48586c;margin-top:10px\">The Arsenic Cattle-Dipping Era</div>"
+  "<div style=\"width:60px;border-top:2px solid #a97e1f;margin:22px auto\"></div>"
+  "<div style=\"font-size:13px;color:#7c8a9c\">An independent research &amp; data-organization project</div></div>")
+print_html=f"""<!doctype html><html lang="en"><head><meta charset="utf-8"><title>California's Forgotten Past · The Arsenic Cattle-Dipping Era</title>
+<style>{CSS}</style></head><body><div class="page">{titleblock}{allbody}<div class="foot">{FOOT}</div></div></body></html>"""
 open(os.path.join(OUTD,"_print.html"),"w").write(print_html)
 print("built",len(chaps),"sections + index + _print.html")

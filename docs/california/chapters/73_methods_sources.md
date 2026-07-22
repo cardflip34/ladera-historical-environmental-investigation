@@ -7,7 +7,7 @@
 
 ---
 
-## 73.1 Source grading (A1–D)
+## 73.1 Source grading (A1-D)
 
 Every record carries **exactly one** grade. A lower grade is never silently promoted to a higher
 one.
@@ -39,10 +39,10 @@ Every finding of substance carries an explicit **counter-evidence and limits** n
 not allowed to stand on supporting evidence alone. Two absence-vs-proof cautions apply throughout:
 
 - **Absence of record ≠ absence of fact.** "No California dip inventory located" means no located
-  record — not proof none exists (a county agricultural-commissioner or historical-society file
+  record, not proof none exists (a county agricultural-commissioner or historical-society file
   could hold one).
 - **County-level ≠ site-level.** Every primary source in this report names *counties, districts,
-  and ranches* — never a vat coordinate. The gap between "the program reached this county" and "a
+  and ranches*, never a vat coordinate. The gap between "the program reached this county" and "a
   vat stood at this parcel" is never bridged by documentary evidence in the located record.
 
 ## 73.4 Confidence display and badges
@@ -58,17 +58,17 @@ Secondary · Public Allegation · Model Estimate · Unknown.
 ## 73.5 Time scope
 
 Land-use and program history reach as far back as reliable public records allow (the tick program
-is 1907–1912 in Orange County). The health/investigation window is primary **Jan 2005–present**,
-extended **Jan 2000–present**. Every dataset records: publication date, observation/coverage
+is 1907-1912 in Orange County). The health/investigation window is primary **Jan 2005-present**,
+extended **Jan 2000-present**. Every dataset records: publication date, observation/coverage
 period, retrieval date, temporal precision, and whether the record is current / historical /
 inferred / archived.
 
 ## 73.6 The source registry
 
-The full graded source list — **109 rows** — is in `research/source_registry/sources.csv`, one row
+The full graded source list, **109 rows**, is in `research/source_registry/sources.csv`, one row
 per source with: id, title, publisher, author, url, publication date, retrieval date, source type,
 geographic and time coverage, official/primary/peer-reviewed flags, data format, reliability grade,
-known limitations, and notes. Key IDs used across chapters 70–72: **S-USDA-C174** and
+known limitations, and notes. Key IDs used across chapters 70-72: **S-USDA-C174** and
 **S-USDA-C183** (USDA BAI circulars, A1); the **1912 Johnson proclamation** (California State
 Library scan, A1/A2); the **State Veterinarian Biennial Reports** (A1/A2); **S-NSW-DIP** (A2),
 **S-UF-VATS** (B2/A1), **S-ITRC-CDV** (B1) for the jurisdiction comparison; **S-STATEWIDE** (B1)
