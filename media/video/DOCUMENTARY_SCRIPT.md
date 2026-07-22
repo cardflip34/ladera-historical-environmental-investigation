@@ -68,10 +68,11 @@ parent I would want every reasonable question explored as thoroughly as possible
 So that became the purpose. Not to prove a theory. Not to accuse anyone. Not to tell anyone what to
 believe. Just to ask one thing. Have we looked at everything?
 
-What started as a few hours on a weekend became an all-consuming investigation. And the more I dug
-into Ladera Ranch, the faster I realized this was bigger than Ladera Ranch. It was bigger than me.
-What I had pulled on was not a story about one neighborhood, or one family, or one theory of mine. It
-was a thread of California's history that reached far beyond the place where I started.
+What started as a few hours over a weekend turned into a three-day investigation, squeezed in around
+summer life with the kids and work. And a few days later, here we are. The more I dug into Ladera
+Ranch, the faster I realized this was bigger than Ladera Ranch. It was bigger than me. What I had
+pulled on was not a story about one neighborhood, or one family, or one theory of mine. It was a
+thread of California's history that reached far beyond the place where I started.
 
 I used modern AI the
 way I believe investigators and journalists increasingly will: not to generate answers, but to
