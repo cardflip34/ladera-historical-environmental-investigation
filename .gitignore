@@ -13,3 +13,16 @@ docs/outreach/broll/motion/*.mp4
 
 # statewide image-hunt downloads (large, regenerable via inventory JSONs)
 evidence/images/T[0-9]*/
+
+# --- Large primary-source files held offline (>50MB, exceed GitHub limits) ---
+# See evidence/documents/OFFLINE_LARGE_FILES.md. Kept on disk, excluded from the repo.
+evidence/documents/CA-StateVeterinarian-Report-1908_AppendixJournals-38thSession-v2.pdf
+evidence/documents/CA-StateVeterinarian-Report-1906_AppendixJournals-37thSession-v3.pdf
+evidence/documents/CA-StateVeterinarian-5thBiennialReport-1910_AppendixJournals-39thSession-v2.pdf
+evidence/documents/CA-StateVeterinarian-6thBiennialReport-1912_AppendixJournals-40thSession-v2.pdf
+evidence/documents/Bancroft_LandCaseFile_250SD_MissionVieja_LaPaz_Forster.pdf
+evidence/documents/Bancroft_LandCaseFile_130SD_Niguel_Abila.pdf
+evidence/images/COTO/Bancroft_LandCaseFile_SD216_RanchoTrabuco_JuanForster.pdf
+evidence/documents/Bancroft_LandCaseFile_216SD_Trabuco_Forster.pdf
+reports/Ladera-Historical-Imagery.zip
+evidence/documents/RanchPlan_AffordableHousing_FinalPEIR_SCH2015051062_2016.pdf
