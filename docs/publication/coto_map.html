@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Coto de Caza — 1908 dipping district (interactive)</title>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+<style>
+  html,body{margin:0;height:100%;background:#0d1016;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
+  #map{position:absolute;inset:96px 0 0 0}
+  header{position:absolute;inset:0 0 auto 0;height:96px;box-sizing:border-box;padding:12px 18px;
+    background:linear-gradient(180deg,#11151d,#0d1016);border-bottom:1px solid #232c3a;color:#e9ecf2;z-index:1200}
+  header h1{margin:0;font-size:19px;color:#e9ecf2;font-weight:600}
+  header p{margin:4px 0 0;font-size:12.5px;color:#c88a5a;max-width:none}
+  header .disc{color:#8a93a2;font-size:11.5px;margin-top:3px}
+  .panel{position:absolute;top:110px;right:12px;z-index:1200;background:rgba(16,20,28,.92);
+    border:1px solid #2a3444;border-radius:10px;padding:12px 14px;color:#dce3ec;font-size:13px;width:210px}
+  .panel label{display:block;font-weight:600;margin-bottom:6px}
+  .panel input[type=range]{width:100%}
+  .panel .row{display:flex;align-items:center;gap:8px;margin-top:8px;font-size:12px;color:#aab6c6}
+  .swatch{width:14px;height:14px;border-radius:3px;border:1px solid #fff}
+  .leaflet-popup-content{font-size:13px;line-height:1.5}
+  .lab{background:rgba(0,0,0,.6);color:#ffe6b0;border:none;border-radius:4px;padding:2px 7px;font-size:12px;font-weight:600;white-space:nowrap}
+</style>
+</head>
+<body>
+<header>
+  <h1>Coto de Caza — the documented 1908 cattle-dipping district</h1>
+  <p>“the ranch of J. C. Joplin in Trabuco canyon” — named as a county-ordered arsenical dip site in 1908 (LA Herald). District-level, <b>not a vat coordinate.</b></p>
+  <p class="disc">Zoom/pan the live satellite; fade the 1938 aerial with the slider. Documentary land-use history only — NOT a contamination map · no vat located · no soil tested anywhere · nothing here asserts anything about any home or resident.</p>
+</header>
+<div id="map"></div>
+<div class="panel">
+  <label>1938 aerial overlay</label>
+  <input id="op" type="range" min="0" max="100" value="55">
+  <div class="row"><span id="opv">55%</span> opacity — fade to compare with today</div>
+  <div class="row"><span class="swatch" style="background:#d9a53f"></span> documented 1908 dip district (approx.)</div>
+</div>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script>
+  var map = L.map('map',{center:[33.5925,-117.585], zoom:15, minZoom:11, maxZoom:19});
+  var esri = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}',
+    {maxZoom:19, attribution:'Imagery © Esri, Maxar et al.'}).addTo(map);
+  var bounds = [[33.56,-117.618],[33.624,-117.552]];
+  var hist = L.imageOverlay('coto_assets/coto_1938_overlay.jpg', bounds, {opacity:0.55}).addTo(map);
+  var op = document.getElementById('op'), opv=document.getElementById('opv');
+  op.addEventListener('input', function(){ hist.setOpacity(op.value/100); opv.textContent=op.value+'%'; });
+
+  // documented dip DISTRICT — a general area, not a point (source is district-level)
+  L.circle([33.5925,-117.585], {radius:1500, color:'#d9a53f', weight:2, dashArray:'6 6', fill:true, fillColor:'#d9a53f', fillOpacity:0.06})
+    .addTo(map)
+    .bindPopup('<b>Documented 1908 dipping DISTRICT</b><br>The 1908 press named “the ranch of J. C. Joplin in Trabuco canyon” as a county-ordered arsenical dip site — at <b>district level, not a survey coordinate</b>. The 1938 aerial (fade it in) shows this was open cattle rangeland (grazing, cattle trails, a creek). <b>No dip vat or ranch-HQ is identifiable</b>, no soil has been tested, and no contamination is implied.');
+
+  function tag(lat,lon,txt){ L.marker([lat,lon],{opacity:0}).addTo(map)
+    .bindTooltip(txt,{permanent:true,direction:'center',className:'lab'}); }
+  tag(33.600,-117.583,'Golf & Racquet Club — the old creek/grazing valley floor');
+  tag(33.585,-117.593,'Los Ranchos Estates');
+  tag(33.593,-117.585,'COTO DE CAZA (guard-gated) · Trabuco Canyon, OC');
+  tag(33.582,-117.580,'Equestrian Center');
+  L.control.scale({imperial:true,metric:true}).addTo(map);
+</script>
+</body>
+</html>
