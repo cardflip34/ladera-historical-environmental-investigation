@@ -110,6 +110,24 @@ CDNC is **fully accessible via the browser** (the bot-gate is only for scripts).
 coverage in CDNC = the *LA Herald* items above; the granular vat detail is in the **un-digitized Santa
 Ana local press + the county-veterinarian records** — the Tier-1 physical targets.
 
+## Phase C — final scrub (this session): the era's END dated; Levengood ID nailed; O'Neill absence
+- **Orange County released from federal tick quarantine, March 1912:** *SF Call* 8 Mar 1912
+  ("QUARANTINE AGAINST FEVER TICK IS RAISED"); *Visalia Times Delta* 15 Mar 1912 (federal order text:
+  "In California, the county of Orange is released from quarantine"); *SB Sun* 9 Mar 1912 ("LIFT THE
+  QUARANTINE… Orange County No Longer Dangerous"). **OC's arsenical-dipping era ≈ 1907–Mar 1912** —
+  same month as the state's last-district (T6S R6W) proclamation. Timeline closed.
+- **E. J. Levengood identified:** the 1908 claimant was a **Santa Ana** man — "the well known horseman
+  and chariot racer" (*LA Herald* 7 Oct 1909; racing items 1907–09 "of Santa Ana") — who moved to
+  **Pomona ~1910** (racing items 1910–14 "of Pomona"), exactly matching Armor 1921's "Mrs. E. J.
+  Levengood of Pomona." Suit outcome NOT in digitized papers → OC Archives claim register.
+- **O'Neill scale, dip year:** *LA Herald* 1 Sep 1908 — Richard O'Neil's ranches "cover nearly half the
+  southern portion of Orange" county. But **no O'Neill dipping item exists in CDNC** (all variants
+  searched), and the *LA Herald* has only 2 generic "dipping vat" hits 1907–12. The granular OC vat
+  record is exclusively in un-digitized local press + county/state ledgers. (Beware the *SLO-county*
+  "Santa Margarita ranch" dip items — a different ranch.)
+- **State Vet reports circulated** (*Pacific Rural Press* 1 Feb 1913 "Report of State Veterinarian") —
+  the record class for vat counts exists in print → State Archives / HathiTrust.
+
 ## New sources to register (B2, primary press, cdnc.ucr.edu)
 **Phase A:** `SPDN19080811.2.24` · `SJMN19080626.2.106` · `LAH19080725.2.83.4.1` · La Habra Star 17 Mar
 1920 · LA Herald 25 Oct 1892 / 27 Jan 1894 / 23 Sep 1894 / 12 Dec 1896 / 16 Apr 1902 · Pacific Rural
