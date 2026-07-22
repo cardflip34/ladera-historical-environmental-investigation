@@ -1,0 +1,67 @@
+# Ladera Ranch — the priority area
+
+**Summary.** Ladera Ranch (~4,000 acres, built 1999–2006) sits entirely on former O'Neill / Rancho
+Mission Viejo cattle range — land inside the 1907–1912 arsenical tick-dipping quarantine zone whose
+ranches "cover[ed] nearly half the southern portion of Orange" county [B2, LA Herald 1 Sep 1908].
+No dipping vat has been documented or found on the footprint; no soil there has ever been tested for
+arsenic. Every environmental review that touched Ladera was a records-and-walk review, not a sampling
+event. The question this report exists to pose is therefore genuinely open: **never looked, not
+looked-and-cleared.**
+
+## Ranch-era history
+- The footprint was O'Neill/RMV grazing land from 1882 to development; DTSC itself codes the one
+  reviewed Ladera parcel's past use **"AGRICULTURAL – LIVESTOCK"** [A1, EnviroStor export].
+- Orange County was named "heavily infested" in the USDA's founding tick survey and stayed under
+  federal quarantine until **March 1912** [A1, BAI Circ. 174; B2, SF Call 8 Mar 1912].
+- Compulsory arsenical dipping (8 lb white arsenic / 500 gal, USDA formula) ran county-wide
+  1907–1912; four OC dip sites are named in the 1908 press — none inside Ladera, all on or beside
+  the same rancho system [B2, LA Herald 27 May 1908].
+- Pre-1950 aerials (1929/1931/1937–38/1946–47, best 1.15 ft/px) show the footprint as **open cattle
+  rangeland throughout**; the only man-made feature resolvable inside Zone A is one structure on the
+  Trabuco corridor ("node A", 1937) [A2, OC Survey imagery].
+
+## Dipping-evidence tier: HIGHLY PROBABLE (practice on the ranch system), UNKNOWN (footprint)
+The O'Neill operation was the dominant herd inside a compulsory-dipping quarantine county — legal
+compliance implies dipping *somewhere* on the ranch system [inference, flagged]. Whether a vat stood
+inside the Ladera slice is **unknown**: no record names one; imagery shows none surviving 1929+; a
+ranch's dip typically sat at its central working corrals, which were not in this slice. Conditional
+mass estimate if one existed: **~0 or ~100–500 lb of arsenic at a single unlocated working area**
+[MODEL ESTIMATE].
+
+## Figures
+- `research/historical_imagery/11_timeseries_1929-2022_with_water.jpg` — the footprint 1929→2022 with
+  all 41 surveyed water bodies.
+- `research/ladera/imagery/ladera_dip_bestguess_thennow.jpg` — best-guess siting (graded inference):
+  node A + stock waters over 1937–38 vs 2022.
+- `research/ladera/imagery/ladera_candidates_under_neighborhood.jpg` — which candidate ground is
+  greenbelt (9 of 16) vs under/beside homes (6 of 16; houses 8–35 m).
+- `research/ladera/imagery/ladera_nodeA_zoom_thennow.jpg` — node A at full resolution; now greenbelt.
+
+## Environmental review — what was actually done
+| Field | Finding |
+|---|---|
+| What review exists | **1995 Michael Brandman Phase I ESA** (Antonio Pkwy EIR App. H) [A2, cited in EIR 589 App. I]; **2003 Oso Grande School Phase 1 + Phase 1 Addendum** (EnviroStor 30020004) [A2, read first-hand 2026-07-21] |
+| Did anything sample soil? | **NO.** Both were Phase 1s — records review + visual walk, no sampling by definition. EnviroStor lists no sampling event of any kind; GeoTracker holds **zero** Ladera cleanup/investigation cases (2 routine gas-station tank permits only) [A2] |
+| Analytes tested | **None** — nothing was ever analyzed in Ladera soil |
+| Arsenic tested? | **Never** |
+| Which arsenic signature | Not applicable — but the distinction matters for any future test: **lead-arsenate** (orchard pesticide → arsenic *with* lead) vs **arsenic trioxide** ("white arsenic," the cattle-dip poison → arsenic with little/no lead). Nearby school tests (Mission Viejo/Irvine) used the DTSC *orchard* protocol; **no California test anywhere has targeted the dip signature** |
+| Verdict | **NEVER TESTED** — "No Action Required" (10/7/2003) rests on paper review alone |
+
+## Schools (roster verified separately; EnviroStor status)
+Oso Grande ES (the ONLY Ladera school with any EnviroStor entry — paper-only, above) · Ladera Ranch
+ES · Ladera Ranch MS · Chaparral ES · plus private/charter — see
+`research/schools/AREA_SCHOOL_ROSTERS.md` for the verified table. All other schools: **no EnviroStor
+school-investigation entry located** (most predate or fall outside the 2000 school-siting law's
+trigger; absence of entry ≠ clearance).
+
+## Honest limits & counter-evidence
+- **No vat found on adequate imagery** (1.15 ft/px would resolve a corral unmistakably) — weak
+  evidence against a *surviving surface* facility; says nothing about one demolished ~1917.
+- **Homes are NOT preferentially sited on ranch-era water** (enrichment 0.97×, p = 0.51) — the
+  "developers built on the cattle grounds" mechanism is rejected; near-total development means any
+  ranch-era residue would sit under or beside housing regardless.
+- The reported pediatric-cancer pattern **may be explained by** population structure, diagnostic or
+  referral patterns, or chance; the available evidence does not establish causation, and this report
+  does not claim otherwise.
+- Resolver: **a direct soil arsenic (+ lead, + speciation) test** at the greenbelt node/corridor —
+  never performed.
