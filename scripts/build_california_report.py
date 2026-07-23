@@ -103,6 +103,27 @@ def figurize_tables(html):
         return f'<div class="figset">{"".join(figs)}</div>'
     return re.sub(r'<table>.*?</table>',conv,html,flags=re.S)
 
+def dedupe_images(html):
+    """Show each image only once in the single long-scroll: keep the first appearance,
+    strip later repeats. Removes only the duplicate image and its own caption/label,
+    never surrounding prose, so all narrative text and section order are preserved."""
+    seen=set()
+    def rep(m):
+        b=m.group(0)
+        mm=re.search(r'<img[^>]*src="(assets/[^"]+)"',b)
+        if not mm: return b
+        if mm.group(1) in seen: return ''
+        seen.add(mm.group(1)); return b
+    pat=re.compile(
+        r'<figure class="fig">.*?</figure>'                       # a figure card (image + its caption)
+        r'|<img[^>]*src="assets/[^"]+"[^>]*>\s*'                   # or an inline image
+        r'(?:<br\s*/?>\s*<em class="fig-cap">.*?</em>)?',          #   with its optional label
+        re.S)
+    html=pat.sub(rep,html)
+    html=re.sub(r'<div class="figset">\s*</div>','',html)         # drop galleries left empty
+    html=re.sub(r'<p>\s*</p>','',html)                            # drop image-only paras left empty
+    return html
+
 files=sorted(glob.glob(os.path.join(CH,"[0-9]*.md")))
 chaps=[]
 for f in files:
@@ -239,6 +260,8 @@ sections=sections.replace('<img ','<img loading="lazy" ')
 sections=figurize_tables(sections)
 # tag only image-provenance captions (the <em> right after an <img>), not body emphasis
 sections=re.sub(r'(<img[^>]*>)\s*<em>',r'\1<br><em class="fig-cap">',sections)
+# show each image once in the long scroll (keep first, drop later repeats), keeping all text
+sections=dedupe_images(sections)
 contents="".join(f'<li><a href="#{s}">{t}</a></li>' for s,t,_ in chaps)
 DESC=("An independent, hypothesis-neutral investigation into California's state-mandated arsenical "
       "cattle-tick dipping program (1907 to 1912) and the South Orange County communities built on the former ranch land.")
