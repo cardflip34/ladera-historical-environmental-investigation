@@ -37,51 +37,80 @@ ul,ol{margin:6px 0;padding-left:22px}li{margin:4px 0}
 .foot{margin-top:22px;border-top:1px solid var(--line);padding-top:10px;color:var(--ink2);font-size:11px}
 @media print{body{background:#fff}.page{box-shadow:none;margin:0;max-width:none;padding:.45in .6in}.nav,.crumb{display:none}h1{page-break-before:always}h2{page-break-after:avoid}img{max-height:6.2in}}
 
-body{background:#e9e6df}
+/* Match the landing page palette (blue accent), and support light + dark like it does. */
+:root{--paper:#f7f5f0;--ink:#16233a;--ink2:#48586c;--line:#ddd7ca;--accent:#2f6087;--brass:#a97e1f;
+  --brassbg:#f4ecd6;--card:#fffdf8;--mat:#e9e6df;--chip:#efe9dc;--quote:#5a4a2c;--muted:#7c8a9c;
+  --barbg:rgba(247,245,240,.94);--shadow:0 2px 18px rgba(20,35,58,.12)}
+@media (prefers-color-scheme:dark){:root{--paper:#141a24;--ink:#eef2f7;--ink2:#a9b6c6;--line:#2b3746;--accent:#7fb0d6;
+  --brass:#d8b662;--brassbg:#20293a;--card:#1b2330;--mat:#0e131b;--chip:#202a38;--quote:#d7c8a4;--muted:#8493a6;
+  --barbg:rgba(20,26,36,.92);--shadow:0 2px 20px rgba(0,0,0,.45)}}
+:root[data-theme="light"]{--paper:#f7f5f0;--ink:#16233a;--ink2:#48586c;--line:#ddd7ca;--accent:#2f6087;--brass:#a97e1f;--brassbg:#f4ecd6;--card:#fffdf8;--mat:#e9e6df;--chip:#efe9dc;--quote:#5a4a2c;--muted:#7c8a9c;--barbg:rgba(247,245,240,.94);--shadow:0 2px 18px rgba(20,35,58,.12)}
+:root[data-theme="dark"]{--paper:#141a24;--ink:#eef2f7;--ink2:#a9b6c6;--line:#2b3746;--accent:#7fb0d6;--brass:#d8b662;--brassbg:#20293a;--card:#1b2330;--mat:#0e131b;--chip:#202a38;--quote:#d7c8a4;--muted:#8493a6;--barbg:rgba(20,26,36,.92);--shadow:0 2px 20px rgba(0,0,0,.45)}
+/* re-skin the shared base rules so they follow the theme and lead with blue */
+body{background:var(--mat)}
+.page{background:var(--paper);box-shadow:var(--shadow)}
+a{color:var(--accent)}
+h2{border-bottom-color:var(--accent)}
+h3{color:var(--accent)}
+blockquote{background:var(--brassbg);border-left-color:var(--accent);color:var(--quote)}
+th{background:var(--chip)}
+th,td{border-color:var(--line)}
+img{border-color:var(--line)}
+code{background:var(--chip);color:var(--ink)}
+.foot{border-top-color:var(--line);color:var(--ink2)}
 .topbar{position:sticky;top:0;z-index:50;display:flex;align-items:center;justify-content:space-between;gap:12px;
-  background:rgba(247,245,240,.94);backdrop-filter:blur(7px);-webkit-backdrop-filter:blur(7px);
+  background:var(--barbg);backdrop-filter:blur(7px);-webkit-backdrop-filter:blur(7px);
   border-bottom:1px solid var(--line);padding:9px clamp(14px,4vw,26px)}
 .tb-title{font-family:Georgia,serif;font-weight:700;color:var(--ink);text-decoration:none;font-size:15px;
   white-space:nowrap;overflow:hidden;text-overflow:ellipsis;min-width:0}
-.tb-actions{display:flex;align-items:center;gap:10px;flex:0 0 auto}
-.tb-link{color:var(--accent);text-decoration:none;font-size:13.5px;font-weight:600;white-space:nowrap}
-.tb-btn{background:var(--accent);color:#fff;text-decoration:none;font-weight:600;font-size:13.5px;
-  padding:8px 14px;border-radius:8px;white-space:nowrap}
-.tb-btn:hover{filter:brightness(1.07)}
-.hero{padding:6px 0 2px}
+.tb-actions{display:flex;align-items:center;gap:16px;flex:0 0 auto}
+.tb-link{color:var(--accent);text-decoration:none;font-size:13.5px;font-weight:700;white-space:nowrap}
+.tb-link:hover{text-decoration:underline}
+.hero{padding:8px 0 2px}
 .eyebrow{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--brass);font-weight:700;margin:0 0 10px}
-.hero h1{font-size:clamp(28px,5.6vw,42px);line-height:1.08;margin:0 0 6px;border:0}
+.hero h1{font-size:clamp(28px,5.6vw,42px);line-height:1.08;margin:0 0 6px;border:0;color:var(--ink)}
 .tagline{font-family:Georgia,serif;font-style:italic;font-size:clamp(17px,3vw,23px);color:var(--brass);margin:0 0 14px}
-.hero .sub{color:var(--ink2);font-size:16.5px;max-width:62ch;margin:0 0 18px}
+.hero .sub{color:var(--ink2);font-size:16.5px;max-width:62ch;margin:0 0 16px}
+/* video slot: swap the .videobox for the real thumbnail/embed when ready */
+.videobox{position:relative;width:100%;max-width:680px;aspect-ratio:16/9;margin:6px 0 16px;border-radius:12px;
+  border:1px solid var(--line);background:linear-gradient(150deg,var(--card),var(--paper));
+  display:flex;align-items:center;justify-content:center;overflow:hidden}
+.videobox .glow{position:absolute;inset:0;background:radial-gradient(60% 55% at 50% 42%,rgba(47,96,135,.16),transparent 70%)}
+.vb-inner{position:relative;text-align:center;padding:16px}
+.vb-play{width:66px;height:66px;border-radius:50%;background:var(--accent);display:flex;align-items:center;
+  justify-content:center;margin:0 auto 12px;box-shadow:0 6px 18px rgba(20,35,58,.28)}
+.vb-play::after{content:"";border-style:solid;border-width:11px 0 11px 19px;
+  border-color:transparent transparent transparent #fff;margin-left:5px}
+.vb-label{color:var(--ink2);font-size:13px;font-weight:700;letter-spacing:.05em;text-transform:uppercase}
 .hero-actions{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 6px}
 .hero-actions a{display:inline-flex;align-items:center;gap:7px;text-decoration:none;font-weight:600;font-size:14.5px;
-  padding:11px 18px;border-radius:9px;border:1px solid var(--line);color:var(--ink);background:#fff}
+  padding:10px 17px;border-radius:9px;border:1px solid var(--line);color:var(--ink);background:var(--card)}
+.hero-actions a:hover{border-color:var(--accent)}
 .hero-actions a.primary{background:var(--accent);border-color:var(--accent);color:#fff}
-.hero-actions a:hover{filter:brightness(1.04)}
-.disc{background:#f4ecd6;border:1px solid var(--line);border-left:3px solid var(--brass);border-radius:8px;
-  padding:13px 16px;font-size:12.5px;color:#5a4a2c;margin:16px 0}
+.disc{background:var(--brassbg);border:1px solid var(--line);border-left:3px solid var(--accent);border-radius:8px;
+  padding:13px 16px;font-size:12.5px;color:var(--quote);margin:16px 0}
 .disc b{color:var(--ink)}
-.contents{background:#fff;border:1px solid var(--line);border-radius:8px;padding:12px 20px;margin:18px 0 8px}
-.contents h2{border:0;margin:2px 0 8px;font-size:16px}
+.contents{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:12px 20px;margin:18px 0 8px}
+.contents h2{border:0;margin:2px 0 8px;font-size:16px;color:var(--ink)}
 .contents ol{columns:2;column-gap:28px;margin:0;padding-left:20px;font-size:14px}
 .contents li{margin:5px 0;break-inside:avoid}
 .contents a{color:var(--accent);text-decoration:none}
 .contents a:hover{text-decoration:underline}
 .chapter{scroll-margin-top:62px;border-top:1px solid var(--line);margin-top:30px;padding-top:8px}
 .chapter:first-of-type{border-top:0;margin-top:10px}
-.chapter h1{font-size:26px;page-break-before:auto}
-.fig-cap{color:#7c8a9c;font-size:11.5px;font-style:italic}
+.chapter h1{font-size:26px;page-break-before:auto;color:var(--ink)}
+.fig-cap{color:var(--muted);font-size:11.5px;font-style:italic}
 @media (max-width:600px){
   .page{margin:0;padding:22px 18px;border-radius:0;box-shadow:none}
   .contents ol{columns:1}
-  .tb-title{display:none}
+  .tb-title{max-width:56vw}
 }
 </style></head><body>
 <div class="topbar">
   <a class="tb-title" href="#top">California's Forgotten Past</a>
   <div class="tb-actions">
     <a class="tb-link" href="#contents">Contents</a>
-    <a class="tb-btn" href="California_Report.pdf" download>Download PDF</a>
+    <a class="tb-link" href="/contact.html">Contact</a>
   </div>
 </div>
 <div class="page" id="top">
@@ -90,8 +119,16 @@ body{background:#e9e6df}
     <h1>California's Forgotten Past</h1>
     <p class="tagline">The Arsenic Cattle-Dipping Era</p>
     <p class="sub">An independent, hypothesis-neutral investigation into California's state-mandated arsenical cattle-tick dipping program (1907 to 1912) and the South Orange County communities built on the former ranch land.</p>
+    <!-- VIDEO: replace this .videobox with the real thumbnail or embed when the video is ready,
+         e.g. <a href="VIDEO_URL"><img src="/path/to/thumbnail.jpg" alt="Watch the documentary"></a> -->
+    <div class="videobox" role="img" aria-label="Documentary video coming soon">
+      <span class="glow"></span>
+      <div class="vb-inner">
+        <div class="vb-play"></div>
+        <div class="vb-label">Documentary video coming soon</div>
+      </div>
+    </div>
     <div class="hero-actions">
-      <a class="primary" href="California_Report.pdf" download>Download the PDF &middot; single file</a>
       <a href="#contents">Jump to contents</a>
       <a href="index.html">Section-by-section view</a>
       <a href="/contact.html">Contact</a>
