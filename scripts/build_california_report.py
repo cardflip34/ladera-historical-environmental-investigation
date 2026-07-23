@@ -74,6 +74,35 @@ def ext_figures(md_text):
         return m.group(0)
     return IMGPAT.sub(rep,md_text)
 
+def figurize_tables(html):
+    """Turn the 'Figure | Path' markdown tables (which render as a small image beside a
+    tall, mostly-empty text cell) into a responsive grid of figures: a large image with a
+    small caption underneath. Data tables without images are left untouched."""
+    def conv(m):
+        tbl=m.group(0)
+        if '<img' not in tbl: return tbl
+        figs=[]; cur=[None]
+        def flush():
+            if cur[0] is None: return
+            c=cur[0]; cur[0]=None
+            src=f'<span class="fig-src">{c["path"]}</span>' if c["path"] else ''
+            cap=re.sub(r'\s+',' ',c["desc"]).strip()
+            fc=f'<figcaption>{cap} {src}</figcaption>' if (cap or src) else ''
+            figs.append(f'<figure class="fig">{c["img"]}{fc}</figure>')
+        for r in re.findall(r'<tr[^>]*>(.*?)</tr>',tbl,re.S):
+            tds=re.findall(r'<t[dh][^>]*>(.*?)</t[dh]>',r,re.S)
+            imgcell=next((c for c in tds if '<img' in c),None)
+            if imgcell is not None:
+                flush()
+                cur[0]={'img':imgcell.strip(),'desc':' '.join(c for c in tds if '<img' not in c),'path':''}
+            else:
+                em=re.search(r'<em[^>]*>(.*?)</em>',r,re.S)
+                if em and cur[0] is not None and not cur[0]['path']:
+                    cur[0]['path']=em.group(1).strip()
+        flush()
+        return f'<div class="figset">{"".join(figs)}</div>'
+    return re.sub(r'<table>.*?</table>',conv,html,flags=re.S)
+
 files=sorted(glob.glob(os.path.join(CH,"[0-9]*.md")))
 chaps=[]
 for f in files:
@@ -186,9 +215,17 @@ code{background:var(--chip);color:var(--ink)}
 .chapter:first-of-type{border-top:0;margin-top:10px}
 .chapter h1{font-size:26px;page-break-before:auto;color:var(--ink)}
 .fig-cap{color:var(--muted);font-size:11.5px;font-style:italic}
+/* figure grid: big images, small caption underneath (replaces the tiny-image tables) */
+.figset{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,340px),1fr));gap:16px;margin:18px 0}
+.fig{margin:0;border:1px solid var(--line);border-radius:10px;overflow:hidden;background:var(--card);
+  display:flex;flex-direction:column}
+.fig img{width:100%;height:auto;display:block;border:0;border-radius:0;margin:0}
+.fig figcaption{padding:9px 13px;font-size:13px;line-height:1.42;color:var(--ink2)}
+.fig figcaption .fig-src{display:block;margin-top:4px;color:var(--muted);font-size:11px;font-style:italic;word-break:break-word}
 @media (max-width:600px){
   .page{margin:0;padding:22px 18px;border-radius:0;box-shadow:none}
   .contents ol{columns:1}
+  .figset{grid-template-columns:1fr}
   .tb-title{max-width:56vw}
 }
 """
@@ -198,6 +235,8 @@ for slug,title,raw in chaps:
     secs.append(f'<section id="{slug}" class="chapter">{body}</section>')
 sections="".join(secs)
 sections=sections.replace('<img ','<img loading="lazy" ')
+# turn "Figure | Path" tables into a big-image / small-caption grid
+sections=figurize_tables(sections)
 # tag only image-provenance captions (the <em> right after an <img>), not body emphasis
 sections=re.sub(r'(<img[^>]*>)\s*<em>',r'\1<br><em class="fig-cap">',sections)
 contents="".join(f'<li><a href="#{s}">{t}</a></li>' for s,t,_ in chaps)

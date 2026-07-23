@@ -100,9 +100,17 @@ code{background:var(--chip);color:var(--ink)}
 .chapter:first-of-type{border-top:0;margin-top:10px}
 .chapter h1{font-size:26px;page-break-before:auto;color:var(--ink)}
 .fig-cap{color:var(--muted);font-size:11.5px;font-style:italic}
+/* figure grid: big images, small caption underneath (replaces the tiny-image tables) */
+.figset{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,340px),1fr));gap:16px;margin:18px 0}
+.fig{margin:0;border:1px solid var(--line);border-radius:10px;overflow:hidden;background:var(--card);
+  display:flex;flex-direction:column}
+.fig img{width:100%;height:auto;display:block;border:0;border-radius:0;margin:0}
+.fig figcaption{padding:9px 13px;font-size:13px;line-height:1.42;color:var(--ink2)}
+.fig figcaption .fig-src{display:block;margin-top:4px;color:var(--muted);font-size:11px;font-style:italic;word-break:break-word}
 @media (max-width:600px){
   .page{margin:0;padding:22px 18px;border-radius:0;box-shadow:none}
   .contents ol{columns:1}
+  .figset{grid-template-columns:1fr}
   .tb-title{max-width:56vw}
 }
 </style></head><body>
@@ -898,64 +906,7 @@ law makes dipping <em>somewhere on the ranch</em> highly probable, but <strong>n
 this land</strong>, and the documented use here is extensive grazing, not stock handling. The tier describes
 the probability of the <em>practice</em>, not residue or contamination.</p>
 <h2>Figures</h2>
-<table>
-<thead>
-<tr>
-<th>Figure</th>
-<th>Path</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Newport Coast slopes, 1931 (pre-grading)</td>
-<td><img loading="lazy" alt="newport_coast_1931_pregrading.jpg" src="assets/research_newport_coast_newport_coast_1931_pregrading.jpg" /></td>
-</tr>
-<tr>
-<td><em>research/newport_coast/newport_coast_1931_pregrading.jpg</em></td>
-<td></td>
-</tr>
-<tr>
-<td>Newport Coast slopes, 1938 (pre-grading)</td>
-<td><img loading="lazy" alt="newport_coast_1938_pregrading.jpg" src="assets/research_newport_coast_newport_coast_1938_pregrading.jpg" /></td>
-</tr>
-<tr>
-<td><em>research/newport_coast/newport_coast_1938_pregrading.jpg</em></td>
-<td></td>
-</tr>
-<tr>
-<td>Same frame, 1938 vs 2022, the grading transformation</td>
-<td><img loading="lazy" alt="newport_coast_beforeafter_grading.jpg" src="assets/research_newport_coast_newport_coast_beforeafter_grading.jpg" /></td>
-</tr>
-<tr>
-<td><em>research/newport_coast/newport_coast_beforeafter_grading.jpg</em></td>
-<td></td>
-</tr>
-<tr>
-<td>1938 sweep of the Irvine Ranch southern core (cells D-F = Newport Coast terrain)</td>
-<td><img loading="lazy" alt="irvine_1938_sweep_montage.jpg" src="assets/research_irvine_imagery_irvine_1938_sweep_montage.jpg" /></td>
-</tr>
-<tr>
-<td><em>research/irvine/imagery/irvine_1938_sweep_montage.jpg</em></td>
-<td></td>
-</tr>
-<tr>
-<td>OC dipping geography, named 1908 sites vs this coast</td>
-<td><img loading="lazy" alt="oc_dipping_geography_map.jpg" src="assets/research_oc_dipping_records_oc_dipping_geography_map.jpg" /></td>
-</tr>
-<tr>
-<td><em>research/oc_dipping_records/oc_dipping_geography_map.jpg</em></td>
-<td></td>
-</tr>
-<tr>
-<td>State Veterinarian 1912 infestation map (last-held OC ground)</td>
-<td><img loading="lazy" alt="statevet_1912_infestation_map_leaf1181.jpg" src="assets/research_oc_dipping_records_statevet_1912_infestation_map_leaf1181.jpg" /></td>
-</tr>
-<tr>
-<td><em>research/oc_dipping_records/statevet_1912_infestation_map_leaf1181.jpg</em></td>
-<td></td>
-</tr>
-</tbody>
-</table>
+<div class="figset"><figure class="fig"><img loading="lazy" alt="newport_coast_1931_pregrading.jpg" src="assets/research_newport_coast_newport_coast_1931_pregrading.jpg" /><figcaption>Newport Coast slopes, 1931 (pre-grading) <span class="fig-src">research/newport_coast/newport_coast_1931_pregrading.jpg</span></figcaption></figure><figure class="fig"><img loading="lazy" alt="newport_coast_1938_pregrading.jpg" src="assets/research_newport_coast_newport_coast_1938_pregrading.jpg" /><figcaption>Newport Coast slopes, 1938 (pre-grading) <span class="fig-src">research/newport_coast/newport_coast_1938_pregrading.jpg</span></figcaption></figure><figure class="fig"><img loading="lazy" alt="newport_coast_beforeafter_grading.jpg" src="assets/research_newport_coast_newport_coast_beforeafter_grading.jpg" /><figcaption>Same frame, 1938 vs 2022, the grading transformation <span class="fig-src">research/newport_coast/newport_coast_beforeafter_grading.jpg</span></figcaption></figure><figure class="fig"><img loading="lazy" alt="irvine_1938_sweep_montage.jpg" src="assets/research_irvine_imagery_irvine_1938_sweep_montage.jpg" /><figcaption>1938 sweep of the Irvine Ranch southern core (cells D-F = Newport Coast terrain) <span class="fig-src">research/irvine/imagery/irvine_1938_sweep_montage.jpg</span></figcaption></figure><figure class="fig"><img loading="lazy" alt="oc_dipping_geography_map.jpg" src="assets/research_oc_dipping_records_oc_dipping_geography_map.jpg" /><figcaption>OC dipping geography, named 1908 sites vs this coast <span class="fig-src">research/oc_dipping_records/oc_dipping_geography_map.jpg</span></figcaption></figure><figure class="fig"><img loading="lazy" alt="statevet_1912_infestation_map_leaf1181.jpg" src="assets/research_oc_dipping_records_statevet_1912_infestation_map_leaf1181.jpg" /><figcaption>State Veterinarian 1912 infestation map (last-held OC ground) <span class="fig-src">research/oc_dipping_records/statevet_1912_infestation_map_leaf1181.jpg</span></figcaption></figure></div>
 <h2>Environmental review</h2>
 <table>
 <thead>
@@ -1044,80 +995,7 @@ located</strong>, and central Irvine sat on (possibly outside) the NW edge of th
 quarantine district, the exact 1912 road alignment is not georeferenced. The tier ranks the
 probability of the practice only.</p>
 <h2>Figures</h2>
-<table>
-<thead>
-<tr>
-<th>Figure</th>
-<th>Path</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>1931 Irvine Ranch aerial, ranch building complex (identity unconfirmed)</td>
-<td><img loading="lazy" alt="bommer_1931_equalized.jpg" src="assets/research_irvine_imagery_bommer_1931_equalized.jpg" /></td>
-</tr>
-<tr>
-<td><em>research/irvine/imagery/bommer_1931_equalized.jpg</em></td>
-<td></td>
-</tr>
-<tr>
-<td>1931 structures zoom</td>
-<td><img loading="lazy" alt="bommer_1931_structures_zoom.jpg" src="assets/research_irvine_imagery_bommer_1931_structures_zoom.jpg" /></td>
-</tr>
-<tr>
-<td><em>research/irvine/imagery/bommer_1931_structures_zoom.jpg</em></td>
-<td></td>
-</tr>
-<tr>
-<td>The 1931 complex over 2022, now under homes + golf</td>
-<td><img loading="lazy" alt="bommer_hq_overlay.jpg" src="assets/research_irvine_imagery_bommer_hq_overlay.jpg" /></td>
-</tr>
-<tr>
-<td><em>research/irvine/imagery/bommer_hq_overlay.jpg</em></td>
-<td></td>
-</tr>
-<tr>
-<td>1938 systematic sweep of the southern ranch core (3×2 grid)</td>
-<td><img loading="lazy" alt="irvine_1938_sweep_montage.jpg" src="assets/research_irvine_imagery_irvine_1938_sweep_montage.jpg" /></td>
-</tr>
-<tr>
-<td><em>research/irvine/imagery/irvine_1938_sweep_montage.jpg</em></td>
-<td></td>
-</tr>
-<tr>
-<td>NE farmstead (orchard/crop node), 1938 zoom</td>
-<td><img loading="lazy" alt="irvine_1938_pondcluster_zoom.jpg" src="assets/research_irvine_imagery_irvine_1938_pondcluster_zoom.jpg" /></td>
-</tr>
-<tr>
-<td><em>research/irvine/imagery/irvine_1938_pondcluster_zoom.jpg</em></td>
-<td></td>
-</tr>
-<tr>
-<td>NE farmstead then/now</td>
-<td><img loading="lazy" alt="pondcluster_beforeafter_overlay.jpg" src="assets/research_irvine_imagery_pondcluster_beforeafter_overlay.jpg" /></td>
-</tr>
-<tr>
-<td><em>research/irvine/imagery/pondcluster_beforeafter_overlay.jpg</em></td>
-<td></td>
-</tr>
-<tr>
-<td>1938 drainage traced under the modern city</td>
-<td><img loading="lazy" alt="pondcluster_water_highlight.jpg" src="assets/research_irvine_imagery_pondcluster_water_highlight.jpg" /></td>
-</tr>
-<tr>
-<td><em>research/irvine/imagery/pondcluster_water_highlight.jpg</em></td>
-<td></td>
-</tr>
-<tr>
-<td>The whole ~4-mi ranch core, 1938 vs 2022</td>
-<td><img loading="lazy" alt="irvine_core_overlay.jpg" src="assets/research_irvine_imagery_irvine_core_overlay.jpg" /></td>
-</tr>
-<tr>
-<td><em>research/irvine/imagery/irvine_core_overlay.jpg</em></td>
-<td></td>
-</tr>
-</tbody>
-</table>
+<div class="figset"><figure class="fig"><img loading="lazy" alt="bommer_1931_equalized.jpg" src="assets/research_irvine_imagery_bommer_1931_equalized.jpg" /><figcaption>1931 Irvine Ranch aerial, ranch building complex (identity unconfirmed) <span class="fig-src">research/irvine/imagery/bommer_1931_equalized.jpg</span></figcaption></figure><figure class="fig"><img loading="lazy" alt="bommer_1931_structures_zoom.jpg" src="assets/research_irvine_imagery_bommer_1931_structures_zoom.jpg" /><figcaption>1931 structures zoom <span class="fig-src">research/irvine/imagery/bommer_1931_structures_zoom.jpg</span></figcaption></figure><figure class="fig"><img loading="lazy" alt="bommer_hq_overlay.jpg" src="assets/research_irvine_imagery_bommer_hq_overlay.jpg" /><figcaption>The 1931 complex over 2022, now under homes + golf <span class="fig-src">research/irvine/imagery/bommer_hq_overlay.jpg</span></figcaption></figure><figure class="fig"><img loading="lazy" alt="irvine_1938_sweep_montage.jpg" src="assets/research_irvine_imagery_irvine_1938_sweep_montage.jpg" /><figcaption>1938 systematic sweep of the southern ranch core (3×2 grid) <span class="fig-src">research/irvine/imagery/irvine_1938_sweep_montage.jpg</span></figcaption></figure><figure class="fig"><img loading="lazy" alt="irvine_1938_pondcluster_zoom.jpg" src="assets/research_irvine_imagery_irvine_1938_pondcluster_zoom.jpg" /><figcaption>NE farmstead (orchard/crop node), 1938 zoom <span class="fig-src">research/irvine/imagery/irvine_1938_pondcluster_zoom.jpg</span></figcaption></figure><figure class="fig"><img loading="lazy" alt="pondcluster_beforeafter_overlay.jpg" src="assets/research_irvine_imagery_pondcluster_beforeafter_overlay.jpg" /><figcaption>NE farmstead then/now <span class="fig-src">research/irvine/imagery/pondcluster_beforeafter_overlay.jpg</span></figcaption></figure><figure class="fig"><img loading="lazy" alt="pondcluster_water_highlight.jpg" src="assets/research_irvine_imagery_pondcluster_water_highlight.jpg" /><figcaption>1938 drainage traced under the modern city <span class="fig-src">research/irvine/imagery/pondcluster_water_highlight.jpg</span></figcaption></figure><figure class="fig"><img loading="lazy" alt="irvine_core_overlay.jpg" src="assets/research_irvine_imagery_irvine_core_overlay.jpg" /><figcaption>The whole ~4-mi ranch core, 1938 vs 2022 <span class="fig-src">research/irvine/imagery/irvine_core_overlay.jpg</span></figcaption></figure></div>
 <p><em>Imagery discipline: no dip vat is identifiable in any frame, a ~30-60 ft trough is at or below
 resolution. The 1931 complex first labeled "Bommer HQ" is a developed ranch node of unconfirmed
 identity ~0.7 mi NW of the preserved camp; its name remains open pending ranch maps (Sherman/UCI).</em></p>
@@ -1210,76 +1088,7 @@ places a vat, corral, or cattle-handling node at any of these four areas. The im
 grazed/fallow mesa, the <em>expected</em> land use everywhere on the ranch and <strong>not</strong> a dipping
 indicator. This is the weaker end of the county's dip question.</p>
 <h2>Figures</h2>
-<table>
-<thead>
-<tr>
-<th>Figure</th>
-<th>Path</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>1901 USGS topo, "SAN JOAQUIN" uplands, natural estuary</td>
-<td><img loading="lazy" alt="eastbluff_1901_topo_crop.jpg" src="assets/research_eastbluff_imagery_eastbluff_1901_topo_crop.jpg" /></td>
-</tr>
-<tr>
-<td><em>research/eastbluff/imagery/eastbluff_1901_topo_crop.jpg</em></td>
-<td></td>
-</tr>
-<tr>
-<td>Eastbluff mesa + Back Bay, 1927 aerial (15 yr after dipping ended)</td>
-<td><img loading="lazy" alt="eastbluff_backbay_1927.jpg" src="assets/research_eastbluff_imagery_eastbluff_backbay_1927.jpg" /></td>
-</tr>
-<tr>
-<td><em>research/eastbluff/imagery/eastbluff_backbay_1927.jpg</em></td>
-<td></td>
-</tr>
-<tr>
-<td>Eastbluff 1927 vs 2022 overlay</td>
-<td><img loading="lazy" alt="eastbluff_backbay_overlay.jpg" src="assets/research_eastbluff_imagery_eastbluff_backbay_overlay.jpg" /></td>
-</tr>
-<tr>
-<td><em>research/eastbluff/imagery/eastbluff_backbay_overlay.jpg</em></td>
-<td></td>
-</tr>
-<tr>
-<td>Eastbluff mesa 1931 zooms (no buildings, corrals, or stock ponds)</td>
-<td><img loading="lazy" alt="eastbluff_mesa_1931_zoomA.jpg" src="assets/research_eastbluff_imagery_eastbluff_mesa_1931_zoomA.jpg" /></td>
-</tr>
-<tr>
-<td><em>research/eastbluff/imagery/eastbluff_mesa_1931_zoomA.jpg</em> · <img loading="lazy" alt="eastbluff_mesa_1931_zoomB.jpg" src="assets/research_eastbluff_imagery_eastbluff_mesa_1931_zoomB.jpg" /></td>
-<td></td>
-</tr>
-<tr>
-<td><em>research/eastbluff/imagery/eastbluff_mesa_1931_zoomB.jpg</em></td>
-<td></td>
-</tr>
-<tr>
-<td>The Bluffs, 1938 vs today</td>
-<td><img loading="lazy" alt="bluffs_overlay.jpg" src="assets/research_newport_bay_areas_imagery_bluffs_overlay.jpg" /></td>
-</tr>
-<tr>
-<td><em>research/newport_bay_areas/imagery/bluffs_overlay.jpg</em></td>
-<td></td>
-</tr>
-<tr>
-<td>Big Canyon, 1938 vs today (one possible structure at canyon mouth, unconfirmed)</td>
-<td><img loading="lazy" alt="bigcanyon_overlay.jpg" src="assets/research_newport_bay_areas_imagery_bigcanyon_overlay.jpg" /></td>
-</tr>
-<tr>
-<td><em>research/newport_bay_areas/imagery/bigcanyon_overlay.jpg</em></td>
-<td></td>
-</tr>
-<tr>
-<td>Santa Ana Heights, 1938 vs today (small farms, post-window)</td>
-<td><img loading="lazy" alt="santaanaheights_overlay.jpg" src="assets/research_newport_bay_areas_imagery_santaanaheights_overlay.jpg" /></td>
-</tr>
-<tr>
-<td><em>research/newport_bay_areas/imagery/santaanaheights_overlay.jpg</em></td>
-<td></td>
-</tr>
-</tbody>
-</table>
+<div class="figset"><figure class="fig"><img loading="lazy" alt="eastbluff_1901_topo_crop.jpg" src="assets/research_eastbluff_imagery_eastbluff_1901_topo_crop.jpg" /><figcaption>1901 USGS topo, "SAN JOAQUIN" uplands, natural estuary <span class="fig-src">research/eastbluff/imagery/eastbluff_1901_topo_crop.jpg</span></figcaption></figure><figure class="fig"><img loading="lazy" alt="eastbluff_backbay_1927.jpg" src="assets/research_eastbluff_imagery_eastbluff_backbay_1927.jpg" /><figcaption>Eastbluff mesa + Back Bay, 1927 aerial (15 yr after dipping ended) <span class="fig-src">research/eastbluff/imagery/eastbluff_backbay_1927.jpg</span></figcaption></figure><figure class="fig"><img loading="lazy" alt="eastbluff_backbay_overlay.jpg" src="assets/research_eastbluff_imagery_eastbluff_backbay_overlay.jpg" /><figcaption>Eastbluff 1927 vs 2022 overlay <span class="fig-src">research/eastbluff/imagery/eastbluff_backbay_overlay.jpg</span></figcaption></figure><figure class="fig"><img loading="lazy" alt="eastbluff_mesa_1931_zoomA.jpg" src="assets/research_eastbluff_imagery_eastbluff_mesa_1931_zoomA.jpg" /><figcaption>Eastbluff mesa 1931 zooms (no buildings, corrals, or stock ponds) </figcaption></figure><figure class="fig"><em>research/eastbluff/imagery/eastbluff_mesa_1931_zoomA.jpg</em> · <img loading="lazy" alt="eastbluff_mesa_1931_zoomB.jpg" src="assets/research_eastbluff_imagery_eastbluff_mesa_1931_zoomB.jpg" /><figcaption> <span class="fig-src">research/eastbluff/imagery/eastbluff_mesa_1931_zoomB.jpg</span></figcaption></figure><figure class="fig"><img loading="lazy" alt="bluffs_overlay.jpg" src="assets/research_newport_bay_areas_imagery_bluffs_overlay.jpg" /><figcaption>The Bluffs, 1938 vs today <span class="fig-src">research/newport_bay_areas/imagery/bluffs_overlay.jpg</span></figcaption></figure><figure class="fig"><img loading="lazy" alt="bigcanyon_overlay.jpg" src="assets/research_newport_bay_areas_imagery_bigcanyon_overlay.jpg" /><figcaption>Big Canyon, 1938 vs today (one possible structure at canyon mouth, unconfirmed) <span class="fig-src">research/newport_bay_areas/imagery/bigcanyon_overlay.jpg</span></figcaption></figure><figure class="fig"><img loading="lazy" alt="santaanaheights_overlay.jpg" src="assets/research_newport_bay_areas_imagery_santaanaheights_overlay.jpg" /><figcaption>Santa Ana Heights, 1938 vs today (small farms, post-window) <span class="fig-src">research/newport_bay_areas/imagery/santaanaheights_overlay.jpg</span></figcaption></figure></div>
 <h2>Environmental review</h2>
 <table>
 <thead>
@@ -1351,56 +1160,7 @@ opposed to the lead-arsenate orchard signature (arsenic <em>with</em> lead). Thi
 probability-map community one spread. Full rubric and per-ranch rationale:
 <code>research/statewide/DIPPING_PROBABILITY_RATIONALE.md</code>.</p>
 <p><strong>Chapter figures (all communities):</strong></p>
-<table>
-<thead>
-<tr>
-<th>Figure</th>
-<th>Path</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>CA dipping-probability map (tiered, 19 ranches)</td>
-<td><img loading="lazy" alt="CA_dipping_probability_map.jpg" src="assets/research_statewide_CA_dipping_probability_map.jpg" /></td>
-</tr>
-<tr>
-<td><em>research/statewide/CA_dipping_probability_map.jpg</em></td>
-<td></td>
-</tr>
-<tr>
-<td>Satellite overview, the tiered communities today</td>
-<td><img loading="lazy" alt="CA_dipping_satellite_overview.jpg" src="assets/research_statewide_CA_dipping_satellite_overview.jpg" /></td>
-</tr>
-<tr>
-<td><em>research/statewide/CA_dipping_satellite_overview.jpg</em></td>
-<td></td>
-</tr>
-<tr>
-<td>19-tile satellite atlas</td>
-<td><img loading="lazy" alt="CA_dipping_satellite_atlas.jpg" src="assets/research_statewide_CA_dipping_satellite_atlas.jpg" /></td>
-</tr>
-<tr>
-<td><em>research/statewide/CA_dipping_satellite_atlas.jpg</em></td>
-<td></td>
-</tr>
-<tr>
-<td>Dipping counties vs modern development</td>
-<td><img loading="lazy" alt="CA_dipping_counties_vs_development.jpg" src="assets/research_statewide_CA_dipping_counties_vs_development.jpg" /></td>
-</tr>
-<tr>
-<td><em>research/statewide/CA_dipping_counties_vs_development.jpg</em></td>
-<td></td>
-</tr>
-<tr>
-<td>Arsenic legacy mass-balance model map (MODEL ESTIMATE)</td>
-<td><img loading="lazy" alt="CA_arsenic_legacy_model_map.jpg" src="assets/research_arsenic_model_CA_arsenic_legacy_model_map.jpg" /></td>
-</tr>
-<tr>
-<td><em>research/arsenic_model/CA_arsenic_legacy_model_map.jpg</em></td>
-<td></td>
-</tr>
-</tbody>
-</table>
+<div class="figset"><figure class="fig"><img loading="lazy" alt="CA_dipping_probability_map.jpg" src="assets/research_statewide_CA_dipping_probability_map.jpg" /><figcaption>CA dipping-probability map (tiered, 19 ranches) <span class="fig-src">research/statewide/CA_dipping_probability_map.jpg</span></figcaption></figure><figure class="fig"><img loading="lazy" alt="CA_dipping_satellite_overview.jpg" src="assets/research_statewide_CA_dipping_satellite_overview.jpg" /><figcaption>Satellite overview, the tiered communities today <span class="fig-src">research/statewide/CA_dipping_satellite_overview.jpg</span></figcaption></figure><figure class="fig"><img loading="lazy" alt="CA_dipping_satellite_atlas.jpg" src="assets/research_statewide_CA_dipping_satellite_atlas.jpg" /><figcaption>19-tile satellite atlas <span class="fig-src">research/statewide/CA_dipping_satellite_atlas.jpg</span></figcaption></figure><figure class="fig"><img loading="lazy" alt="CA_dipping_counties_vs_development.jpg" src="assets/research_statewide_CA_dipping_counties_vs_development.jpg" /><figcaption>Dipping counties vs modern development <span class="fig-src">research/statewide/CA_dipping_counties_vs_development.jpg</span></figcaption></figure><figure class="fig"><img loading="lazy" alt="CA_arsenic_legacy_model_map.jpg" src="assets/research_arsenic_model_CA_arsenic_legacy_model_map.jpg" /><figcaption>Arsenic legacy mass-balance model map (MODEL ESTIMATE) <span class="fig-src">research/arsenic_model/CA_arsenic_legacy_model_map.jpg</span></figcaption></figure></div>
 <hr />
 <h2>San Juan Capistrano</h2>
 <h3>History</h3>
