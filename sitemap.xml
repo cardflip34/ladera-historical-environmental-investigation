@@ -3,6 +3,7 @@
   <url><loc>https://ladera-historical-environmental-inv.vercel.app/</loc><changefreq>monthly</changefreq><priority>1.0</priority></url>
   <url><loc>https://ladera-historical-environmental-inv.vercel.app/docs/california/report.html</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
   <url><loc>https://ladera-historical-environmental-inv.vercel.app/docs/california/index.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://ladera-historical-environmental-inv.vercel.app/contact.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://ladera-historical-environmental-inv.vercel.app/docs/california/California_Report.pdf</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
   <url><loc>https://ladera-historical-environmental-inv.vercel.app/docs/california/00_authors_note.html</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
   <url><loc>https://ladera-historical-environmental-inv.vercel.app/docs/california/00_intro.html</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>

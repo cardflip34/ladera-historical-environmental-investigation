@@ -69,6 +69,7 @@ yourself.
 If you're a researcher, an agency, a journalist, a physician, or just another parent who knows
 something I don't, I would like to hear from you.
 
-> Contact: [contact form / email to be added by the author].
+> Contact: I would genuinely rather hear from you than not. Please use the [contact form](/contact.html)
+> on the project website. Every message reaches me directly.
 
 Andy Stavros, Newport Beach, California

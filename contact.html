@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact &middot; California's Forgotten Past</title>
+<meta name="description" content="Contact the author of California's Forgotten Past: The Arsenic Cattle-Dipping Era. Researchers, agencies, journalists, physicians, and residents welcome.">
+<meta name="robots" content="index,follow">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" href="/favicon.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="California's Forgotten Past">
+<meta property="og:title" content="Contact &middot; California's Forgotten Past">
+<meta property="og:description" content="Reach the author of California's Forgotten Past: The Arsenic Cattle-Dipping Era.">
+<meta property="og:image" content="https://ladera-historical-environmental-inv.vercel.app/share-card.jpg">
+<meta property="og:url" content="https://ladera-historical-environmental-inv.vercel.app/contact.html">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://ladera-historical-environmental-inv.vercel.app/share-card.jpg">
+<style>
+  :root{
+    --paper:#f7f5f0; --ink:#16233a; --ink2:#48586c; --line:#ddd7ca;
+    --accent:#2f6087; --brass:#a97e1f; --brassbg:#f4ecd6; --card:#fffdf8; --field:#fff;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{ --paper:#141a24; --ink:#eef2f7; --ink2:#a9b6c6; --line:#2b3746;
+           --accent:#7fb0d6; --brass:#d8b662; --brassbg:#20293a; --card:#1b2330; --field:#111823; }
+  }
+  :root[data-theme="light"]{ --paper:#f7f5f0; --ink:#16233a; --ink2:#48586c; --line:#ddd7ca; --accent:#2f6087; --brass:#a97e1f; --brassbg:#f4ecd6; --card:#fffdf8; --field:#fff; }
+  :root[data-theme="dark"]{ --paper:#141a24; --ink:#eef2f7; --ink2:#a9b6c6; --line:#2b3746; --accent:#7fb0d6; --brass:#d8b662; --brassbg:#20293a; --card:#1b2330; --field:#111823; }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--paper);color:var(--ink);
+    font:16.5px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    display:flex;min-height:100vh;align-items:flex-start;justify-content:center;padding:40px 24px}
+  .wrap{max-width:620px;width:100%}
+  .eyebrow{font-size:12.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--brass);font-weight:700;margin:0 0 12px}
+  h1{font-family:"Iowan Old Style",Georgia,"Times New Roman",serif;font-size:clamp(28px,6vw,40px);
+    line-height:1.1;letter-spacing:-.01em;margin:0 0 10px}
+  .sub{color:var(--ink2);font-size:16.5px;margin:0 0 26px}
+  form{display:flex;flex-direction:column;gap:14px}
+  label{font-weight:600;font-size:14px;margin:0 0 5px;display:block}
+  .req{color:var(--brass)}
+  input,textarea{width:100%;font:inherit;color:var(--ink);background:var(--field);
+    border:1px solid var(--line);border-radius:9px;padding:11px 13px;transition:border-color .15s}
+  input:focus,textarea:focus{outline:none;border-color:var(--accent)}
+  textarea{min-height:150px;resize:vertical}
+  .hp{position:absolute;left:-9999px;top:-9999px}
+  button{align-self:flex-start;cursor:pointer;font-weight:600;font-size:15.5px;
+    padding:12px 24px;border-radius:9px;border:1px solid var(--accent);background:var(--accent);color:#fff;transition:.15s}
+  button:hover{filter:brightness(1.07)}
+  button:disabled{opacity:.6;cursor:default}
+  #result{font-size:15px;margin:4px 0 0;min-height:1.2em}
+  #result.ok{color:#2e7d4f;font-weight:600}
+  #result.err{color:#b23b3b;font-weight:600}
+  .note{background:var(--brassbg);border:1px solid var(--line);border-left:3px solid var(--brass);
+    border-radius:8px;padding:12px 15px;font-size:13px;color:var(--ink2);margin:24px 0 0}
+  .note b{color:var(--ink)}
+  .back{display:inline-block;margin:26px 0 0;color:var(--accent);text-decoration:none;font-size:14.5px;font-weight:600}
+  .back:hover{text-decoration:underline}
+</style>
+</head>
+<body>
+  <main class="wrap">
+    <p class="eyebrow">California's Forgotten Past</p>
+    <h1>Contact</h1>
+    <p class="sub">If you are a researcher, an agency, a journalist, a physician, or just another
+      parent who knows something I don't, I would like to hear from you. Messages come straight to me.</p>
+
+    <form id="cform" novalidate>
+      <input type="hidden" name="access_key" value="REPLACE_WITH_WEB3FORMS_ACCESS_KEY">
+      <input type="hidden" name="subject" value="New message from California's Forgotten Past">
+      <input type="hidden" name="from_name" value="California's Forgotten Past contact form">
+      <!-- honeypot: bots fill this, humans never see it -->
+      <input type="checkbox" name="botcheck" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+
+      <div>
+        <label for="name">Name <span style="font-weight:400;color:var(--ink2)">(optional)</span></label>
+        <input id="name" type="text" name="name" autocomplete="name">
+      </div>
+      <div>
+        <label for="email">Your email <span class="req">*</span> <span style="font-weight:400;color:var(--ink2)">(so I can reply)</span></label>
+        <input id="email" type="email" name="email" required autocomplete="email">
+      </div>
+      <div>
+        <label for="message">Message <span class="req">*</span></label>
+        <textarea id="message" name="message" required></textarea>
+      </div>
+      <button type="submit" id="send">Send message</button>
+      <p id="result" role="status" aria-live="polite"></p>
+    </form>
+
+    <p class="note"><b>Privacy.</b> This form sends your message to the project inbox and is used only
+      to reply to you. Please do not include private medical information or details that could identify
+      an individual child. This remains an independent, hypothesis-neutral research project and does not
+      provide medical advice.</p>
+
+    <a class="back" href="/docs/california/report.html">&larr; Back to the report</a>
+  </main>
+
+<script>
+  var form = document.getElementById('cform');
+  var result = document.getElementById('result');
+  var send = document.getElementById('send');
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    var data = Object.fromEntries(new FormData(form));
+    if (String(data.access_key).indexOf('REPLACE_WITH_') === 0) {
+      result.textContent = 'The contact form is being set up. Please check back shortly.';
+      result.className = 'err';
+      return;
+    }
+    result.textContent = 'Sending...';
+    result.className = '';
+    send.disabled = true;
+    fetch('https://api.web3forms.com/submit', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+      body: JSON.stringify(data)
+    }).then(function (r) { return r.json(); }).then(function (j) {
+      if (j.success) {
+        form.reset();
+        result.textContent = 'Thank you. Your message has been sent.';
+        result.className = 'ok';
+      } else {
+        result.textContent = 'Sorry, something went wrong. Please try again in a moment.';
+        result.className = 'err';
+      }
+      send.disabled = false;
+    }).catch(function () {
+      result.textContent = 'Sorry, something went wrong. Please try again in a moment.';
+      result.className = 'err';
+      send.disabled = false;
+    });
+  });
+</script>
+</body>
+</html>

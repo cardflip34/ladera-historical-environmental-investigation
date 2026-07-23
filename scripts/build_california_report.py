@@ -210,6 +210,7 @@ report_html=f"""<!doctype html><html lang="en"><head>
       <a class="primary" href="California_Report.pdf" download>Download the PDF &middot; single file</a>
       <a href="#contents">Jump to contents</a>
       <a href="index.html">Section-by-section view</a>
+      <a href="/contact.html">Contact</a>
     </div>
   </div>
   <div class="disc"><b>This is an independent research and data-organization project. It does not provide
@@ -226,7 +227,7 @@ open(os.path.join(OUTD,"report.html"),"w").write(report_html)
 
 # sitemap.xml + robots.txt at the site root (for search engines / social crawlers)
 urls=[("/",1.0),("/docs/california/report.html",0.9),("/docs/california/index.html",0.7),
-      ("/docs/california/California_Report.pdf",0.5)]
+      ("/contact.html",0.6),("/docs/california/California_Report.pdf",0.5)]
 urls+=[(f"/docs/california/{s}.html",0.5) for s,_,_ in chaps]
 sm=['<?xml version="1.0" encoding="UTF-8"?>','<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']
 sm+=[f'  <url><loc>{SITE}{u}</loc><changefreq>monthly</changefreq><priority>{p}</priority></url>' for u,p in urls]
