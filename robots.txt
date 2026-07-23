@@ -1,3 +1,3 @@
 User-agent: *
 Allow: /
-Sitemap: https://ladera-historical-environmental-inv.vercel.app/sitemap.xml
+Sitemap: https://www.californiasforgottenpast.org/sitemap.xml

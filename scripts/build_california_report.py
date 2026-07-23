@@ -8,8 +8,8 @@ ROOT=os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 CH=os.path.join(ROOT,"docs/california/chapters")
 OUTD=os.path.join(ROOT,"docs/california"); os.makedirs(OUTD,exist_ok=True)
 ASSETS=os.path.join(OUTD,"assets")
-# Canonical deploy origin (update after a custom domain is connected in Vercel).
-SITE="https://ladera-historical-environmental-inv.vercel.app"
+# Canonical production origin (custom domain; apex 308-redirects to www).
+SITE="https://www.californiasforgottenpast.org"
 OGIMG=SITE+"/share-card.jpg"
 
 CSS="""
