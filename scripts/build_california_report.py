@@ -8,6 +8,7 @@ ROOT=os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 CH=os.path.join(ROOT,"docs/california/chapters")
 OUTD=os.path.join(ROOT,"docs/california"); os.makedirs(OUTD,exist_ok=True)
 ASSETS=os.path.join(OUTD,"assets")
+FILESDIR=os.path.join(OUTD,"files")
 # Canonical production origin (custom domain; apex 308-redirects to www).
 SITE="https://www.californiasforgottenpast.org"
 OGIMG=SITE+"/share-card.jpg"
@@ -124,6 +125,20 @@ def dedupe_images(html):
     html=re.sub(r'<p>\s*</p>','',html)                            # drop image-only paras left empty
     return html
 
+FILEPAT=re.compile(r'`((?:research|evidence|docs|media|data)/[^`]+?\.(?:pdf|md|csv|json|geojson|txt|xlsx))`')
+def host_files_md(md_text):
+    """For the web report: copy each referenced non-image source file into docs/california/files/
+    and turn its named path into a clickable link, so every document/dataset the report cites is
+    actually reachable on the site rather than only named. Large offline files are left as text."""
+    def rep(m):
+        rel=m.group(1); src=os.path.join(ROOT,rel)
+        if os.path.exists(src) and os.path.getsize(src)<40*1024*1024:
+            name=re.sub(r'[^A-Za-z0-9._-]','_',rel)
+            shutil.copyfile(src,os.path.join(FILESDIR,name))
+            return f'[`{rel}`](files/{name})'
+        return m.group(0)
+    return FILEPAT.sub(rep,md_text)
+
 files=sorted(glob.glob(os.path.join(CH,"[0-9]*.md")))
 chaps=[]
 for f in files:
@@ -172,6 +187,7 @@ open(os.path.join(OUTD,"_print.html"),"w").write(print_html)
 
 # single long-scroll report page (whole report, external lazy-loaded images)
 shutil.rmtree(ASSETS,ignore_errors=True); os.makedirs(ASSETS,exist_ok=True)
+shutil.rmtree(FILESDIR,ignore_errors=True); os.makedirs(FILESDIR,exist_ok=True)
 REPORT_CSS="""
 /* Match the landing page palette (blue accent), and support light + dark like it does. */
 :root{--paper:#f7f5f0;--ink:#16233a;--ink2:#48586c;--line:#ddd7ca;--accent:#2f6087;--brass:#a97e1f;
@@ -208,7 +224,7 @@ code{background:var(--chip);color:var(--ink)}
 .tagline{font-family:Georgia,serif;font-style:italic;font-size:clamp(17px,3vw,23px);color:var(--brass);margin:0 0 14px}
 .hero .sub{color:var(--ink2);font-size:16.5px;max-width:62ch;margin:0 0 16px}
 /* video slot: swap the .videobox for the real thumbnail/embed when ready */
-.videobox{position:relative;width:100%;max-width:680px;aspect-ratio:16/9;margin:6px 0 16px;border-radius:12px;
+.videobox{position:relative;width:100%;max-width:330px;aspect-ratio:9/16;margin:6px 0 18px;border-radius:14px;
   border:1px solid var(--line);background:linear-gradient(150deg,var(--card),var(--paper));
   display:flex;align-items:center;justify-content:center;overflow:hidden}
 .videobox .glow{position:absolute;inset:0;background:radial-gradient(60% 55% at 50% 42%,rgba(47,96,135,.16),transparent 70%)}
@@ -252,7 +268,7 @@ code{background:var(--chip);color:var(--ink)}
 """
 secs=[]
 for slug,title,raw in chaps:
-    body=markdown.markdown(ext_figures(raw),extensions=["tables"])
+    body=markdown.markdown(host_files_md(ext_figures(raw)),extensions=["tables"])
     secs.append(f'<section id="{slug}" class="chapter">{body}</section>')
 sections="".join(secs)
 sections=sections.replace('<img ','<img loading="lazy" ')
@@ -297,8 +313,9 @@ report_html=f"""<!doctype html><html lang="en"><head>
     <h1>California's Forgotten Past</h1>
     <p class="tagline">The Arsenic Cattle-Dipping Era</p>
     <p class="sub">{DESC}</p>
-    <!-- VIDEO: replace this .videobox with the real thumbnail or embed when the video is ready,
-         e.g. <a href="VIDEO_URL"><img src="/path/to/thumbnail.jpg" alt="Watch the documentary"></a> -->
+    <!-- VIDEO: 9:16 vertical (Instagram/Reel) slot. Replace this .videobox with the real
+         thumbnail or embed when ready, e.g.
+         <a href="VIDEO_URL"><img src="/path/to/thumbnail_9x16.jpg" alt="Watch the documentary"></a> -->
     <div class="videobox" role="img" aria-label="Documentary video coming soon">
       <span class="glow"></span>
       <div class="vb-inner">
