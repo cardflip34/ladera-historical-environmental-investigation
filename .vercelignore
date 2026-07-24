@@ -1,4 +1,7 @@
 # Deploy only the report site (docs/california) + media. Exclude source, data, and the app.
+# PDF download intentionally disabled for now: keep the file in the repo but do not serve it.
+docs/california/California_Report.pdf
+docs/california/_print.html
 apps/
 packages/
 pipelines/

@@ -37,51 +37,88 @@ ul,ol{margin:6px 0;padding-left:22px}li{margin:4px 0}
 .foot{margin-top:22px;border-top:1px solid var(--line);padding-top:10px;color:var(--ink2);font-size:11px}
 @media print{body{background:#fff}.page{box-shadow:none;margin:0;max-width:none;padding:.45in .6in}.nav,.crumb{display:none}h1{page-break-before:always}h2{page-break-after:avoid}img{max-height:6.2in}}
 
-body{background:#e9e6df}
+/* Match the landing page palette (blue accent), and support light + dark like it does. */
+:root{--paper:#f7f5f0;--ink:#16233a;--ink2:#48586c;--line:#ddd7ca;--accent:#2f6087;--brass:#a97e1f;
+  --brassbg:#f4ecd6;--card:#fffdf8;--mat:#e9e6df;--chip:#efe9dc;--quote:#5a4a2c;--muted:#7c8a9c;
+  --barbg:rgba(247,245,240,.94);--shadow:0 2px 18px rgba(20,35,58,.12)}
+@media (prefers-color-scheme:dark){:root{--paper:#141a24;--ink:#eef2f7;--ink2:#a9b6c6;--line:#2b3746;--accent:#7fb0d6;
+  --brass:#d8b662;--brassbg:#20293a;--card:#1b2330;--mat:#0e131b;--chip:#202a38;--quote:#d7c8a4;--muted:#8493a6;
+  --barbg:rgba(20,26,36,.92);--shadow:0 2px 20px rgba(0,0,0,.45)}}
+:root[data-theme="light"]{--paper:#f7f5f0;--ink:#16233a;--ink2:#48586c;--line:#ddd7ca;--accent:#2f6087;--brass:#a97e1f;--brassbg:#f4ecd6;--card:#fffdf8;--mat:#e9e6df;--chip:#efe9dc;--quote:#5a4a2c;--muted:#7c8a9c;--barbg:rgba(247,245,240,.94);--shadow:0 2px 18px rgba(20,35,58,.12)}
+:root[data-theme="dark"]{--paper:#141a24;--ink:#eef2f7;--ink2:#a9b6c6;--line:#2b3746;--accent:#7fb0d6;--brass:#d8b662;--brassbg:#20293a;--card:#1b2330;--mat:#0e131b;--chip:#202a38;--quote:#d7c8a4;--muted:#8493a6;--barbg:rgba(20,26,36,.92);--shadow:0 2px 20px rgba(0,0,0,.45)}
+/* re-skin the shared base rules so they follow the theme and lead with blue */
+body{background:var(--mat)}
+.page{background:var(--paper);box-shadow:var(--shadow)}
+a{color:var(--accent)}
+h2{border-bottom-color:var(--accent)}
+h3{color:var(--accent)}
+blockquote{background:var(--brassbg);border-left-color:var(--accent);color:var(--quote)}
+th{background:var(--chip)}
+th,td{border-color:var(--line)}
+img{border-color:var(--line)}
+code{background:var(--chip);color:var(--ink)}
+.foot{border-top-color:var(--line);color:var(--ink2)}
 .topbar{position:sticky;top:0;z-index:50;display:flex;align-items:center;justify-content:space-between;gap:12px;
-  background:rgba(247,245,240,.94);backdrop-filter:blur(7px);-webkit-backdrop-filter:blur(7px);
+  background:var(--barbg);backdrop-filter:blur(7px);-webkit-backdrop-filter:blur(7px);
   border-bottom:1px solid var(--line);padding:9px clamp(14px,4vw,26px)}
 .tb-title{font-family:Georgia,serif;font-weight:700;color:var(--ink);text-decoration:none;font-size:15px;
   white-space:nowrap;overflow:hidden;text-overflow:ellipsis;min-width:0}
-.tb-actions{display:flex;align-items:center;gap:10px;flex:0 0 auto}
-.tb-link{color:var(--accent);text-decoration:none;font-size:13.5px;font-weight:600;white-space:nowrap}
-.tb-btn{background:var(--accent);color:#fff;text-decoration:none;font-weight:600;font-size:13.5px;
-  padding:8px 14px;border-radius:8px;white-space:nowrap}
-.tb-btn:hover{filter:brightness(1.07)}
-.hero{padding:6px 0 2px}
+.tb-actions{display:flex;align-items:center;gap:16px;flex:0 0 auto}
+.tb-link{color:var(--accent);text-decoration:none;font-size:13.5px;font-weight:700;white-space:nowrap}
+.tb-link:hover{text-decoration:underline}
+.hero{padding:8px 0 2px}
 .eyebrow{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--brass);font-weight:700;margin:0 0 10px}
-.hero h1{font-size:clamp(28px,5.6vw,42px);line-height:1.08;margin:0 0 6px;border:0}
+.hero h1{font-size:clamp(28px,5.6vw,42px);line-height:1.08;margin:0 0 6px;border:0;color:var(--ink)}
 .tagline{font-family:Georgia,serif;font-style:italic;font-size:clamp(17px,3vw,23px);color:var(--brass);margin:0 0 14px}
-.hero .sub{color:var(--ink2);font-size:16.5px;max-width:62ch;margin:0 0 18px}
+.hero .sub{color:var(--ink2);font-size:16.5px;max-width:62ch;margin:0 0 16px}
+/* video slot: swap the .videobox for the real thumbnail/embed when ready */
+.videobox{position:relative;width:100%;max-width:330px;aspect-ratio:9/16;margin:6px 0 18px;border-radius:14px;
+  border:1px solid var(--line);background:linear-gradient(150deg,var(--card),var(--paper));
+  display:flex;align-items:center;justify-content:center;overflow:hidden}
+.videobox .glow{position:absolute;inset:0;background:radial-gradient(60% 55% at 50% 42%,rgba(47,96,135,.16),transparent 70%)}
+.vb-inner{position:relative;text-align:center;padding:16px}
+.vb-play{width:66px;height:66px;border-radius:50%;background:var(--accent);display:flex;align-items:center;
+  justify-content:center;margin:0 auto 12px;box-shadow:0 6px 18px rgba(20,35,58,.28)}
+.vb-play::after{content:"";border-style:solid;border-width:11px 0 11px 19px;
+  border-color:transparent transparent transparent #fff;margin-left:5px}
+.vb-label{color:var(--ink2);font-size:13px;font-weight:700;letter-spacing:.05em;text-transform:uppercase}
 .hero-actions{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 6px}
 .hero-actions a{display:inline-flex;align-items:center;gap:7px;text-decoration:none;font-weight:600;font-size:14.5px;
-  padding:11px 18px;border-radius:9px;border:1px solid var(--line);color:var(--ink);background:#fff}
+  padding:10px 17px;border-radius:9px;border:1px solid var(--line);color:var(--ink);background:var(--card)}
+.hero-actions a:hover{border-color:var(--accent)}
 .hero-actions a.primary{background:var(--accent);border-color:var(--accent);color:#fff}
-.hero-actions a:hover{filter:brightness(1.04)}
-.disc{background:#f4ecd6;border:1px solid var(--line);border-left:3px solid var(--brass);border-radius:8px;
-  padding:13px 16px;font-size:12.5px;color:#5a4a2c;margin:16px 0}
+.disc{background:var(--brassbg);border:1px solid var(--line);border-left:3px solid var(--accent);border-radius:8px;
+  padding:13px 16px;font-size:12.5px;color:var(--quote);margin:16px 0}
 .disc b{color:var(--ink)}
-.contents{background:#fff;border:1px solid var(--line);border-radius:8px;padding:12px 20px;margin:18px 0 8px}
-.contents h2{border:0;margin:2px 0 8px;font-size:16px}
+.contents{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:12px 20px;margin:18px 0 8px}
+.contents h2{border:0;margin:2px 0 8px;font-size:16px;color:var(--ink)}
 .contents ol{columns:2;column-gap:28px;margin:0;padding-left:20px;font-size:14px}
 .contents li{margin:5px 0;break-inside:avoid}
 .contents a{color:var(--accent);text-decoration:none}
 .contents a:hover{text-decoration:underline}
 .chapter{scroll-margin-top:62px;border-top:1px solid var(--line);margin-top:30px;padding-top:8px}
 .chapter:first-of-type{border-top:0;margin-top:10px}
-.chapter h1{font-size:26px;page-break-before:auto}
-.fig-cap{color:#7c8a9c;font-size:11.5px;font-style:italic}
+.chapter h1{font-size:26px;page-break-before:auto;color:var(--ink)}
+.fig-cap{color:var(--muted);font-size:11.5px;font-style:italic}
+/* figure grid: big images, small caption underneath (replaces the tiny-image tables) */
+.figset{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,340px),1fr));gap:16px;margin:18px 0}
+.fig{margin:0;border:1px solid var(--line);border-radius:10px;overflow:hidden;background:var(--card);
+  display:flex;flex-direction:column}
+.fig img{width:100%;height:auto;display:block;border:0;border-radius:0;margin:0}
+.fig figcaption{padding:9px 13px;font-size:13px;line-height:1.42;color:var(--ink2)}
+.fig figcaption .fig-src{display:block;margin-top:4px;color:var(--muted);font-size:11px;font-style:italic;word-break:break-word}
 @media (max-width:600px){
   .page{margin:0;padding:22px 18px;border-radius:0;box-shadow:none}
   .contents ol{columns:1}
-  .tb-title{display:none}
+  .figset{grid-template-columns:1fr}
+  .tb-title{max-width:56vw}
 }
 </style></head><body>
 <div class="topbar">
   <a class="tb-title" href="#top">California's Forgotten Past</a>
   <div class="tb-actions">
     <a class="tb-link" href="#contents">Contents</a>
-    <a class="tb-btn" href="California_Report.pdf" download>Download PDF</a>
+    <a class="tb-link" href="/contact.html">Contact</a>
   </div>
 </div>
 <div class="page" id="top">
@@ -90,8 +127,17 @@ body{background:#e9e6df}
     <h1>California's Forgotten Past</h1>
     <p class="tagline">The Arsenic Cattle-Dipping Era</p>
     <p class="sub">An independent, hypothesis-neutral investigation into California's state-mandated arsenical cattle-tick dipping program (1907 to 1912) and the South Orange County communities built on the former ranch land.</p>
+    <!-- VIDEO: 9:16 vertical (Instagram/Reel) slot. Replace this .videobox with the real
+         thumbnail or embed when ready, e.g.
+         <a href="VIDEO_URL"><img src="/path/to/thumbnail_9x16.jpg" alt="Watch the documentary"></a> -->
+    <div class="videobox" role="img" aria-label="Documentary video coming soon">
+      <span class="glow"></span>
+      <div class="vb-inner">
+        <div class="vb-play"></div>
+        <div class="vb-label">Documentary video coming soon</div>
+      </div>
+    </div>
     <div class="hero-actions">
-      <a class="primary" href="California_Report.pdf" download>Download the PDF &middot; single file</a>
       <a href="#contents">Jump to contents</a>
       <a href="index.html">Section-by-section view</a>
       <a href="/contact.html">Contact</a>
@@ -462,7 +508,7 @@ footprint, the resolver here is documentary (RMV ranch books, county/state ledge
 </tr>
 </tbody>
 </table>
-<h2>Schools: 10 verified in Ladera Ranch (roster: <code>research/schools/AREA_SCHOOL_ROSTERS.md</code>)</h2>
+<h2>Schools: 10 verified in Ladera Ranch (roster: <a href="files/research_schools_AREA_SCHOOL_ROSTERS.md"><code>research/schools/AREA_SCHOOL_ROSTERS.md</code></a>)</h2>
 <p><strong>CUSD public (4):</strong> Chaparral ES (2001) · Ladera Ranch ES (2003) · Ladera Ranch MS (2003) ·
 <strong>Oso Grande ES (2005)</strong>, the ONLY school with any EnviroStor entry, and that entry is the
 paper-only Phase 1 above. <strong>Private/preschool (5)</strong> + 1 former campus (Stoneybrooke Christian,
@@ -682,7 +728,7 @@ the single most important, and most fixable, gap in the record.</p>
 <p><em>No school exists inside the Coto de Caza gates;</em> Coto children attend the schools above plus Tijeras
 Creek ES / Arroyo Vista TK-8 / Tesoro HS in neighboring Rancho Santa Margarita. Full rosters for
 Rancho Santa Margarita (15), Las Flores (2), Newport Coast (2), and Eastbluff/Santa Ana Heights (6)
-are in <code>research/schools/AREA_SCHOOL_ROSTERS.md</code>.</p>
+are in <a href="files/research_schools_AREA_SCHOOL_ROSTERS.md"><code>research/schools/AREA_SCHOOL_ROSTERS.md</code></a>.</p>
 <h2>The one honest caveat on "none located"</h2>
 <p>"None located" is <strong>not</strong> a clean bill of health, it means no DTSC school-investigation soil study
 was found in the public record, and EnviroStor's per-school pages were bot-gated to automated
@@ -814,7 +860,7 @@ patent (Sec 24/25) was later carved from.</em></p>
 </tr>
 </tbody>
 </table>
-<h2>Schools: verified roster (<code>research/schools/AREA_SCHOOL_ROSTERS.md</code>)</h2>
+<h2>Schools: verified roster (<a href="files/research_schools_AREA_SCHOOL_ROSTERS.md"><code>research/schools/AREA_SCHOOL_ROSTERS.md</code></a>)</h2>
 <p><strong>No school exists inside the Coto de Caza gates.</strong> The area's five verified schools sit in the
 surrounding communities: Wagon Wheel ES (1997, Wagon Wheel, directly west of the Joplin patent
 ground) · Trabuco ES (Trabuco Canyon) · Robinson ES (1994, Robinson Ranch) · Portola Hills ES
@@ -861,64 +907,7 @@ law makes dipping <em>somewhere on the ranch</em> highly probable, but <strong>n
 this land</strong>, and the documented use here is extensive grazing, not stock handling. The tier describes
 the probability of the <em>practice</em>, not residue or contamination.</p>
 <h2>Figures</h2>
-<table>
-<thead>
-<tr>
-<th>Figure</th>
-<th>Path</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Newport Coast slopes, 1931 (pre-grading)</td>
-<td><img loading="lazy" alt="newport_coast_1931_pregrading.jpg" src="assets/research_newport_coast_newport_coast_1931_pregrading.jpg" /></td>
-</tr>
-<tr>
-<td><em>research/newport_coast/newport_coast_1931_pregrading.jpg</em></td>
-<td></td>
-</tr>
-<tr>
-<td>Newport Coast slopes, 1938 (pre-grading)</td>
-<td><img loading="lazy" alt="newport_coast_1938_pregrading.jpg" src="assets/research_newport_coast_newport_coast_1938_pregrading.jpg" /></td>
-</tr>
-<tr>
-<td><em>research/newport_coast/newport_coast_1938_pregrading.jpg</em></td>
-<td></td>
-</tr>
-<tr>
-<td>Same frame, 1938 vs 2022, the grading transformation</td>
-<td><img loading="lazy" alt="newport_coast_beforeafter_grading.jpg" src="assets/research_newport_coast_newport_coast_beforeafter_grading.jpg" /></td>
-</tr>
-<tr>
-<td><em>research/newport_coast/newport_coast_beforeafter_grading.jpg</em></td>
-<td></td>
-</tr>
-<tr>
-<td>1938 sweep of the Irvine Ranch southern core (cells D-F = Newport Coast terrain)</td>
-<td><img loading="lazy" alt="irvine_1938_sweep_montage.jpg" src="assets/research_irvine_imagery_irvine_1938_sweep_montage.jpg" /></td>
-</tr>
-<tr>
-<td><em>research/irvine/imagery/irvine_1938_sweep_montage.jpg</em></td>
-<td></td>
-</tr>
-<tr>
-<td>OC dipping geography, named 1908 sites vs this coast</td>
-<td><img loading="lazy" alt="oc_dipping_geography_map.jpg" src="assets/research_oc_dipping_records_oc_dipping_geography_map.jpg" /></td>
-</tr>
-<tr>
-<td><em>research/oc_dipping_records/oc_dipping_geography_map.jpg</em></td>
-<td></td>
-</tr>
-<tr>
-<td>State Veterinarian 1912 infestation map (last-held OC ground)</td>
-<td><img loading="lazy" alt="statevet_1912_infestation_map_leaf1181.jpg" src="assets/research_oc_dipping_records_statevet_1912_infestation_map_leaf1181.jpg" /></td>
-</tr>
-<tr>
-<td><em>research/oc_dipping_records/statevet_1912_infestation_map_leaf1181.jpg</em></td>
-<td></td>
-</tr>
-</tbody>
-</table>
+<div class="figset"><figure class="fig"><img loading="lazy" alt="newport_coast_1931_pregrading.jpg" src="assets/research_newport_coast_newport_coast_1931_pregrading.jpg" /><figcaption>Newport Coast slopes, 1931 (pre-grading) <span class="fig-src">research/newport_coast/newport_coast_1931_pregrading.jpg</span></figcaption></figure><figure class="fig"><img loading="lazy" alt="newport_coast_1938_pregrading.jpg" src="assets/research_newport_coast_newport_coast_1938_pregrading.jpg" /><figcaption>Newport Coast slopes, 1938 (pre-grading) <span class="fig-src">research/newport_coast/newport_coast_1938_pregrading.jpg</span></figcaption></figure><figure class="fig"><img loading="lazy" alt="newport_coast_beforeafter_grading.jpg" src="assets/research_newport_coast_newport_coast_beforeafter_grading.jpg" /><figcaption>Same frame, 1938 vs 2022, the grading transformation <span class="fig-src">research/newport_coast/newport_coast_beforeafter_grading.jpg</span></figcaption></figure><figure class="fig"><img loading="lazy" alt="irvine_1938_sweep_montage.jpg" src="assets/research_irvine_imagery_irvine_1938_sweep_montage.jpg" /><figcaption>1938 sweep of the Irvine Ranch southern core (cells D-F = Newport Coast terrain) <span class="fig-src">research/irvine/imagery/irvine_1938_sweep_montage.jpg</span></figcaption></figure></div>
 <h2>Environmental review</h2>
 <table>
 <thead>
@@ -1007,80 +996,7 @@ located</strong>, and central Irvine sat on (possibly outside) the NW edge of th
 quarantine district, the exact 1912 road alignment is not georeferenced. The tier ranks the
 probability of the practice only.</p>
 <h2>Figures</h2>
-<table>
-<thead>
-<tr>
-<th>Figure</th>
-<th>Path</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>1931 Irvine Ranch aerial, ranch building complex (identity unconfirmed)</td>
-<td><img loading="lazy" alt="bommer_1931_equalized.jpg" src="assets/research_irvine_imagery_bommer_1931_equalized.jpg" /></td>
-</tr>
-<tr>
-<td><em>research/irvine/imagery/bommer_1931_equalized.jpg</em></td>
-<td></td>
-</tr>
-<tr>
-<td>1931 structures zoom</td>
-<td><img loading="lazy" alt="bommer_1931_structures_zoom.jpg" src="assets/research_irvine_imagery_bommer_1931_structures_zoom.jpg" /></td>
-</tr>
-<tr>
-<td><em>research/irvine/imagery/bommer_1931_structures_zoom.jpg</em></td>
-<td></td>
-</tr>
-<tr>
-<td>The 1931 complex over 2022, now under homes + golf</td>
-<td><img loading="lazy" alt="bommer_hq_overlay.jpg" src="assets/research_irvine_imagery_bommer_hq_overlay.jpg" /></td>
-</tr>
-<tr>
-<td><em>research/irvine/imagery/bommer_hq_overlay.jpg</em></td>
-<td></td>
-</tr>
-<tr>
-<td>1938 systematic sweep of the southern ranch core (3×2 grid)</td>
-<td><img loading="lazy" alt="irvine_1938_sweep_montage.jpg" src="assets/research_irvine_imagery_irvine_1938_sweep_montage.jpg" /></td>
-</tr>
-<tr>
-<td><em>research/irvine/imagery/irvine_1938_sweep_montage.jpg</em></td>
-<td></td>
-</tr>
-<tr>
-<td>NE farmstead (orchard/crop node), 1938 zoom</td>
-<td><img loading="lazy" alt="irvine_1938_pondcluster_zoom.jpg" src="assets/research_irvine_imagery_irvine_1938_pondcluster_zoom.jpg" /></td>
-</tr>
-<tr>
-<td><em>research/irvine/imagery/irvine_1938_pondcluster_zoom.jpg</em></td>
-<td></td>
-</tr>
-<tr>
-<td>NE farmstead then/now</td>
-<td><img loading="lazy" alt="pondcluster_beforeafter_overlay.jpg" src="assets/research_irvine_imagery_pondcluster_beforeafter_overlay.jpg" /></td>
-</tr>
-<tr>
-<td><em>research/irvine/imagery/pondcluster_beforeafter_overlay.jpg</em></td>
-<td></td>
-</tr>
-<tr>
-<td>1938 drainage traced under the modern city</td>
-<td><img loading="lazy" alt="pondcluster_water_highlight.jpg" src="assets/research_irvine_imagery_pondcluster_water_highlight.jpg" /></td>
-</tr>
-<tr>
-<td><em>research/irvine/imagery/pondcluster_water_highlight.jpg</em></td>
-<td></td>
-</tr>
-<tr>
-<td>The whole ~4-mi ranch core, 1938 vs 2022</td>
-<td><img loading="lazy" alt="irvine_core_overlay.jpg" src="assets/research_irvine_imagery_irvine_core_overlay.jpg" /></td>
-</tr>
-<tr>
-<td><em>research/irvine/imagery/irvine_core_overlay.jpg</em></td>
-<td></td>
-</tr>
-</tbody>
-</table>
+<div class="figset"><figure class="fig"><img loading="lazy" alt="bommer_1931_equalized.jpg" src="assets/research_irvine_imagery_bommer_1931_equalized.jpg" /><figcaption>1931 Irvine Ranch aerial, ranch building complex (identity unconfirmed) <span class="fig-src">research/irvine/imagery/bommer_1931_equalized.jpg</span></figcaption></figure><figure class="fig"><img loading="lazy" alt="bommer_1931_structures_zoom.jpg" src="assets/research_irvine_imagery_bommer_1931_structures_zoom.jpg" /><figcaption>1931 structures zoom <span class="fig-src">research/irvine/imagery/bommer_1931_structures_zoom.jpg</span></figcaption></figure><figure class="fig"><img loading="lazy" alt="bommer_hq_overlay.jpg" src="assets/research_irvine_imagery_bommer_hq_overlay.jpg" /><figcaption>The 1931 complex over 2022, now under homes + golf <span class="fig-src">research/irvine/imagery/bommer_hq_overlay.jpg</span></figcaption></figure><figure class="fig"><img loading="lazy" alt="irvine_1938_pondcluster_zoom.jpg" src="assets/research_irvine_imagery_irvine_1938_pondcluster_zoom.jpg" /><figcaption>NE farmstead (orchard/crop node), 1938 zoom <span class="fig-src">research/irvine/imagery/irvine_1938_pondcluster_zoom.jpg</span></figcaption></figure><figure class="fig"><img loading="lazy" alt="pondcluster_beforeafter_overlay.jpg" src="assets/research_irvine_imagery_pondcluster_beforeafter_overlay.jpg" /><figcaption>NE farmstead then/now <span class="fig-src">research/irvine/imagery/pondcluster_beforeafter_overlay.jpg</span></figcaption></figure><figure class="fig"><img loading="lazy" alt="pondcluster_water_highlight.jpg" src="assets/research_irvine_imagery_pondcluster_water_highlight.jpg" /><figcaption>1938 drainage traced under the modern city <span class="fig-src">research/irvine/imagery/pondcluster_water_highlight.jpg</span></figcaption></figure><figure class="fig"><img loading="lazy" alt="irvine_core_overlay.jpg" src="assets/research_irvine_imagery_irvine_core_overlay.jpg" /><figcaption>The whole ~4-mi ranch core, 1938 vs 2022 <span class="fig-src">research/irvine/imagery/irvine_core_overlay.jpg</span></figcaption></figure></div>
 <p><em>Imagery discipline: no dip vat is identifiable in any frame, a ~30-60 ft trough is at or below
 resolution. The 1931 complex first labeled "Bommer HQ" is a developed ranch node of unconfirmed
 identity ~0.7 mi NW of the preserved camp; its name remains open pending ranch maps (Sherman/UCI).</em></p>
@@ -1173,76 +1089,7 @@ places a vat, corral, or cattle-handling node at any of these four areas. The im
 grazed/fallow mesa, the <em>expected</em> land use everywhere on the ranch and <strong>not</strong> a dipping
 indicator. This is the weaker end of the county's dip question.</p>
 <h2>Figures</h2>
-<table>
-<thead>
-<tr>
-<th>Figure</th>
-<th>Path</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>1901 USGS topo, "SAN JOAQUIN" uplands, natural estuary</td>
-<td><img loading="lazy" alt="eastbluff_1901_topo_crop.jpg" src="assets/research_eastbluff_imagery_eastbluff_1901_topo_crop.jpg" /></td>
-</tr>
-<tr>
-<td><em>research/eastbluff/imagery/eastbluff_1901_topo_crop.jpg</em></td>
-<td></td>
-</tr>
-<tr>
-<td>Eastbluff mesa + Back Bay, 1927 aerial (15 yr after dipping ended)</td>
-<td><img loading="lazy" alt="eastbluff_backbay_1927.jpg" src="assets/research_eastbluff_imagery_eastbluff_backbay_1927.jpg" /></td>
-</tr>
-<tr>
-<td><em>research/eastbluff/imagery/eastbluff_backbay_1927.jpg</em></td>
-<td></td>
-</tr>
-<tr>
-<td>Eastbluff 1927 vs 2022 overlay</td>
-<td><img loading="lazy" alt="eastbluff_backbay_overlay.jpg" src="assets/research_eastbluff_imagery_eastbluff_backbay_overlay.jpg" /></td>
-</tr>
-<tr>
-<td><em>research/eastbluff/imagery/eastbluff_backbay_overlay.jpg</em></td>
-<td></td>
-</tr>
-<tr>
-<td>Eastbluff mesa 1931 zooms (no buildings, corrals, or stock ponds)</td>
-<td><img loading="lazy" alt="eastbluff_mesa_1931_zoomA.jpg" src="assets/research_eastbluff_imagery_eastbluff_mesa_1931_zoomA.jpg" /></td>
-</tr>
-<tr>
-<td><em>research/eastbluff/imagery/eastbluff_mesa_1931_zoomA.jpg</em> · <img loading="lazy" alt="eastbluff_mesa_1931_zoomB.jpg" src="assets/research_eastbluff_imagery_eastbluff_mesa_1931_zoomB.jpg" /></td>
-<td></td>
-</tr>
-<tr>
-<td><em>research/eastbluff/imagery/eastbluff_mesa_1931_zoomB.jpg</em></td>
-<td></td>
-</tr>
-<tr>
-<td>The Bluffs, 1938 vs today</td>
-<td><img loading="lazy" alt="bluffs_overlay.jpg" src="assets/research_newport_bay_areas_imagery_bluffs_overlay.jpg" /></td>
-</tr>
-<tr>
-<td><em>research/newport_bay_areas/imagery/bluffs_overlay.jpg</em></td>
-<td></td>
-</tr>
-<tr>
-<td>Big Canyon, 1938 vs today (one possible structure at canyon mouth, unconfirmed)</td>
-<td><img loading="lazy" alt="bigcanyon_overlay.jpg" src="assets/research_newport_bay_areas_imagery_bigcanyon_overlay.jpg" /></td>
-</tr>
-<tr>
-<td><em>research/newport_bay_areas/imagery/bigcanyon_overlay.jpg</em></td>
-<td></td>
-</tr>
-<tr>
-<td>Santa Ana Heights, 1938 vs today (small farms, post-window)</td>
-<td><img loading="lazy" alt="santaanaheights_overlay.jpg" src="assets/research_newport_bay_areas_imagery_santaanaheights_overlay.jpg" /></td>
-</tr>
-<tr>
-<td><em>research/newport_bay_areas/imagery/santaanaheights_overlay.jpg</em></td>
-<td></td>
-</tr>
-</tbody>
-</table>
+<div class="figset"><figure class="fig"><img loading="lazy" alt="eastbluff_1901_topo_crop.jpg" src="assets/research_eastbluff_imagery_eastbluff_1901_topo_crop.jpg" /><figcaption>1901 USGS topo, "SAN JOAQUIN" uplands, natural estuary <span class="fig-src">research/eastbluff/imagery/eastbluff_1901_topo_crop.jpg</span></figcaption></figure><figure class="fig"><img loading="lazy" alt="eastbluff_backbay_1927.jpg" src="assets/research_eastbluff_imagery_eastbluff_backbay_1927.jpg" /><figcaption>Eastbluff mesa + Back Bay, 1927 aerial (15 yr after dipping ended) <span class="fig-src">research/eastbluff/imagery/eastbluff_backbay_1927.jpg</span></figcaption></figure><figure class="fig"><img loading="lazy" alt="eastbluff_backbay_overlay.jpg" src="assets/research_eastbluff_imagery_eastbluff_backbay_overlay.jpg" /><figcaption>Eastbluff 1927 vs 2022 overlay <span class="fig-src">research/eastbluff/imagery/eastbluff_backbay_overlay.jpg</span></figcaption></figure><figure class="fig"><img loading="lazy" alt="eastbluff_mesa_1931_zoomA.jpg" src="assets/research_eastbluff_imagery_eastbluff_mesa_1931_zoomA.jpg" /><figcaption>Eastbluff mesa 1931 zooms (no buildings, corrals, or stock ponds) </figcaption></figure><figure class="fig"><em>research/eastbluff/imagery/eastbluff_mesa_1931_zoomA.jpg</em> · <img loading="lazy" alt="eastbluff_mesa_1931_zoomB.jpg" src="assets/research_eastbluff_imagery_eastbluff_mesa_1931_zoomB.jpg" /><figcaption> <span class="fig-src">research/eastbluff/imagery/eastbluff_mesa_1931_zoomB.jpg</span></figcaption></figure><figure class="fig"><img loading="lazy" alt="bluffs_overlay.jpg" src="assets/research_newport_bay_areas_imagery_bluffs_overlay.jpg" /><figcaption>The Bluffs, 1938 vs today <span class="fig-src">research/newport_bay_areas/imagery/bluffs_overlay.jpg</span></figcaption></figure><figure class="fig"><img loading="lazy" alt="bigcanyon_overlay.jpg" src="assets/research_newport_bay_areas_imagery_bigcanyon_overlay.jpg" /><figcaption>Big Canyon, 1938 vs today (one possible structure at canyon mouth, unconfirmed) <span class="fig-src">research/newport_bay_areas/imagery/bigcanyon_overlay.jpg</span></figcaption></figure><figure class="fig"><img loading="lazy" alt="santaanaheights_overlay.jpg" src="assets/research_newport_bay_areas_imagery_santaanaheights_overlay.jpg" /><figcaption>Santa Ana Heights, 1938 vs today (small farms, post-window) <span class="fig-src">research/newport_bay_areas/imagery/santaanaheights_overlay.jpg</span></figcaption></figure></div>
 <h2>Environmental review</h2>
 <table>
 <thead>
@@ -1312,58 +1159,9 @@ question has been run anywhere in California</strong>, and no California test an
 dip signature, arsenic with little or no lead (arsenic trioxide, the cattle-dip poison), as
 opposed to the lead-arsenate orchard signature (arsenic <em>with</em> lead). This chapter gives each
 probability-map community one spread. Full rubric and per-ranch rationale:
-<code>research/statewide/DIPPING_PROBABILITY_RATIONALE.md</code>.</p>
+<a href="files/research_statewide_DIPPING_PROBABILITY_RATIONALE.md"><code>research/statewide/DIPPING_PROBABILITY_RATIONALE.md</code></a>.</p>
 <p><strong>Chapter figures (all communities):</strong></p>
-<table>
-<thead>
-<tr>
-<th>Figure</th>
-<th>Path</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>CA dipping-probability map (tiered, 19 ranches)</td>
-<td><img loading="lazy" alt="CA_dipping_probability_map.jpg" src="assets/research_statewide_CA_dipping_probability_map.jpg" /></td>
-</tr>
-<tr>
-<td><em>research/statewide/CA_dipping_probability_map.jpg</em></td>
-<td></td>
-</tr>
-<tr>
-<td>Satellite overview, the tiered communities today</td>
-<td><img loading="lazy" alt="CA_dipping_satellite_overview.jpg" src="assets/research_statewide_CA_dipping_satellite_overview.jpg" /></td>
-</tr>
-<tr>
-<td><em>research/statewide/CA_dipping_satellite_overview.jpg</em></td>
-<td></td>
-</tr>
-<tr>
-<td>19-tile satellite atlas</td>
-<td><img loading="lazy" alt="CA_dipping_satellite_atlas.jpg" src="assets/research_statewide_CA_dipping_satellite_atlas.jpg" /></td>
-</tr>
-<tr>
-<td><em>research/statewide/CA_dipping_satellite_atlas.jpg</em></td>
-<td></td>
-</tr>
-<tr>
-<td>Dipping counties vs modern development</td>
-<td><img loading="lazy" alt="CA_dipping_counties_vs_development.jpg" src="assets/research_statewide_CA_dipping_counties_vs_development.jpg" /></td>
-</tr>
-<tr>
-<td><em>research/statewide/CA_dipping_counties_vs_development.jpg</em></td>
-<td></td>
-</tr>
-<tr>
-<td>Arsenic legacy mass-balance model map (MODEL ESTIMATE)</td>
-<td><img loading="lazy" alt="CA_arsenic_legacy_model_map.jpg" src="assets/research_arsenic_model_CA_arsenic_legacy_model_map.jpg" /></td>
-</tr>
-<tr>
-<td><em>research/arsenic_model/CA_arsenic_legacy_model_map.jpg</em></td>
-<td></td>
-</tr>
-</tbody>
-</table>
+<div class="figset"><figure class="fig"><img loading="lazy" alt="CA_dipping_satellite_atlas.jpg" src="assets/research_statewide_CA_dipping_satellite_atlas.jpg" /><figcaption>19-tile satellite atlas <span class="fig-src">research/statewide/CA_dipping_satellite_atlas.jpg</span></figcaption></figure><figure class="fig"><img loading="lazy" alt="CA_dipping_counties_vs_development.jpg" src="assets/research_statewide_CA_dipping_counties_vs_development.jpg" /><figcaption>Dipping counties vs modern development <span class="fig-src">research/statewide/CA_dipping_counties_vs_development.jpg</span></figcaption></figure><figure class="fig"><img loading="lazy" alt="CA_arsenic_legacy_model_map.jpg" src="assets/research_arsenic_model_CA_arsenic_legacy_model_map.jpg" /><figcaption>Arsenic legacy mass-balance model map (MODEL ESTIMATE) <span class="fig-src">research/arsenic_model/CA_arsenic_legacy_model_map.jpg</span></figcaption></figure></div>
 <hr />
 <h2>San Juan Capistrano</h2>
 <h3>History</h3>
@@ -1380,8 +1178,8 @@ probability-map community one spread. Full rubric and per-ranch rationale:
 <p><strong>DOCUMENTED</strong>, named as a 1908 dipping locality in the primary press; the county program was
 arsenical. The <em>parcel</em> dipped within San Juan Capistrano is unrecorded.</p>
 <h3>Figures</h3>
-<p><img loading="lazy" alt="oc_dipping_geography_map.jpg" src="assets/research_oc_dipping_records_oc_dipping_geography_map.jpg" /><br><em class="fig-cap">research/oc_dipping_records/oc_dipping_geography_map.jpg</em> ·
-<img loading="lazy" alt="statevet_1912_infestation_map_leaf1181.jpg" src="assets/research_oc_dipping_records_statevet_1912_infestation_map_leaf1181.jpg" /><br><em class="fig-cap">research/oc_dipping_records/statevet_1912_infestation_map_leaf1181.jpg</em></p>
+<p> ·
+</p>
 <h3>Environmental review</h3>
 <table>
 <thead>
@@ -1436,8 +1234,8 @@ of fact, and equally, the documented <em>practice</em> implies nothing about res
 <p><strong>DOCUMENTED</strong>, named 1908 dipping locality under the county-ordered arsenical program; no
 parcel-level detail survives in digitized sources.</p>
 <h3>Figures</h3>
-<p><img loading="lazy" alt="oc_dipping_geography_map.jpg" src="assets/research_oc_dipping_records_oc_dipping_geography_map.jpg" /><br><em class="fig-cap">research/oc_dipping_records/oc_dipping_geography_map.jpg</em> ·
-<img loading="lazy" alt="CA_dipping_satellite_atlas.jpg" src="assets/research_statewide_CA_dipping_satellite_atlas.jpg" /><br><em class="fig-cap">research/statewide/CA_dipping_satellite_atlas.jpg</em></p>
+<p> ·
+</p>
 <h3>Environmental review</h3>
 <table>
 <thead>
@@ -1490,8 +1288,8 @@ of finer detail.</p>
 <h3>Dipping evidence tier</h3>
 <p><strong>DOCUMENTED</strong>, named 1908 dipping locality under the county-ordered arsenical program.</p>
 <h3>Figures</h3>
-<p><img loading="lazy" alt="oc_dipping_geography_map.jpg" src="assets/research_oc_dipping_records_oc_dipping_geography_map.jpg" /><br><em class="fig-cap">research/oc_dipping_records/oc_dipping_geography_map.jpg</em> ·
-<img loading="lazy" alt="CA_dipping_satellite_atlas.jpg" src="assets/research_statewide_CA_dipping_satellite_atlas.jpg" /><br><em class="fig-cap">research/statewide/CA_dipping_satellite_atlas.jpg</em></p>
+<p> ·
+</p>
 <h3>Environmental review</h3>
 <table>
 <thead>
@@ -2118,7 +1916,7 @@ mostly not under housing (green-ring context).</p>
 <h3>Figures</h3>
 <p><img loading="lazy" alt="LOC_2002706073.jpg" src="assets/evidence_images_T14-TEJON_LOC_2002706073.jpg" /><br><em class="fig-cap">evidence/images/T14-TEJON/LOC_2002706073.jpg</em> and companion LOC photographs (1888-1890) and Fort
 Tejon HABS documentation in <code>evidence/images/T14-TEJON/</code>, item-level attribution in
-<code>research/statewide/IMAGE_INDEX.md</code>.</p>
+<a href="files/research_statewide_IMAGE_INDEX.md"><code>research/statewide/IMAGE_INDEX.md</code></a>.</p>
 <h3>Environmental review</h3>
 <table>
 <thead>
@@ -2280,7 +2078,7 @@ county records. In rough order of likely payoff:</p>
 </tbody>
 </table>
 <p>Detailed pull-lists and draft request letters are staged in
-<code>research/archives/RECORDS_REQUESTS_2026-07.md</code>.</p>
+<a href="files/research_archives_RECORDS_REQUESTS_2026-07.md"><code>research/archives/RECORDS_REQUESTS_2026-07.md</code></a>.</p>
 <h2>Part 2: Where soil testing should take place</h2>
 <p>Testing is the resolver the whole report keeps arriving at. It should be <strong>authorized, landowner-
 permitted, and analyte-correct.</strong> The universal protocol, at every location: sample the <strong>0-6 inch</strong>
@@ -2289,21 +2087,21 @@ arsenic</strong> (not total alone), <strong>always run lead alongside arsenic</s
 add <strong>arsenic speciation</strong>, and include <strong>indoor house dust</strong> where possible (the pathway least
 affected by surface cover).</p>
 <p><strong>The two signatures, one more time, because the whole test design hinges on it:</strong></p>
-<p><img loading="lazy" alt="B5_two_arsenics.jpg" src="assets/media_broll_boards_B5_two_arsenics.jpg" /><br><em class="fig-cap">media/broll/boards/B5_two_arsenics.jpg</em></p>
+
 <p>Priority grounds:</p>
 <p><strong>1 · Bell Canyon / Coto de Caza, the documented dip ranch (highest priority).</strong> This is the only
 place we can name a dip from the record, and the old Joplin <strong>home place</strong> in Bell Canyon appears to
 remain undeveloped open ground (apparently the Starr Ranch Sanctuary facility area). A short
 soil-arsenic transect there, with Audubon's permission, is the single cleanest test in the entire
 investigation: documented dipping, undisturbed ground, no houses in the way.</p>
-<p><img loading="lazy" alt="joplin_z3_bellcanyon_east_1938.jpg" src="assets/research_coto_de_caza_imagery_joplin_z3_bellcanyon_east_1938.jpg" /><br><em class="fig-cap">research/coto_de_caza/imagery/joplin_z3_bellcanyon_east_1938.jpg</em></p>
+
 <p><strong>2 · Ladera Ranch, the open-space corridor and parks.</strong> No vat is documented in the footprint and
 imagery shows none, so Ladera testing is <strong>screening, not confirmation</strong>: sample the preserved
 Trabuco greenbelt and the neighborhood parks/common areas (the child-contact zones), plus any yard
 soil a homeowner volunteers. Because mass grading (1999-2006) likely diluted and scrambled any
 surface residue, a <strong>null result would not fully clear the site</strong> and a <strong>hit would be significant</strong>,
 design and interpret accordingly.</p>
-<p><img loading="lazy" alt="ladera_candidates_under_neighborhood.jpg" src="assets/research_ladera_imagery_ladera_candidates_under_neighborhood.jpg" /><br><em class="fig-cap">research/ladera/imagery/ladera_candidates_under_neighborhood.jpg</em></p>
+
 <p><strong>3 · The school grounds, the fixable gap.</strong> Where arsenic was tested (Carl Hankey), it was the
 orchard signature; where it wasn't (Oso Grande and the rest), nothing was sampled. A <strong>targeted
 arsenic-plus-lead screen of the play areas</strong> at the community schools would close a gap that costs
@@ -2311,7 +2109,7 @@ little and reassures, or informs, a lot.</p>
 <p><strong>4 · The statewide tier, as prioritised by the map.</strong> The documented and highly-probable ranches
 (Chapter 60) are where any broader screening program should begin. The California probability map is
 the sampling plan's front page:</p>
-<p><img loading="lazy" alt="CA_dipping_probability_map.jpg" src="assets/research_statewide_CA_dipping_probability_map.jpg" /><br><em class="fig-cap">research/statewide/CA_dipping_probability_map.jpg</em></p>
+
 <p><strong>What a result would mean.</strong> A dip-signature hit (arsenic well above ~11-12 mg/kg background, with
 <em>low lead</em>) on documented ground would convert a century-old paper hazard into a measured,
 manageable fact. A clean result would retire the question honestly. Either outcome is worth having,
@@ -2813,7 +2611,7 @@ extended <strong>Jan 2000-present</strong>. Every dataset records: publication d
 period, retrieval date, temporal precision, and whether the record is current / historical /
 inferred / archived.</p>
 <h2>73.6 The source registry</h2>
-<p>The full graded source list, <strong>109 rows</strong>, is in <code>research/source_registry/sources.csv</code>, one row
+<p>The full graded source list, <strong>109 rows</strong>, is in <a href="files/research_source_registry_sources.csv"><code>research/source_registry/sources.csv</code></a>, one row
 per source with: id, title, publisher, author, url, publication date, retrieval date, source type,
 geographic and time coverage, official/primary/peer-reviewed flags, data format, reliability grade,
 known limitations, and notes. Key IDs used across chapters 70-72: <strong>S-USDA-C174</strong> and

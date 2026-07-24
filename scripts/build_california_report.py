@@ -8,6 +8,7 @@ ROOT=os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 CH=os.path.join(ROOT,"docs/california/chapters")
 OUTD=os.path.join(ROOT,"docs/california"); os.makedirs(OUTD,exist_ok=True)
 ASSETS=os.path.join(OUTD,"assets")
+FILESDIR=os.path.join(OUTD,"files")
 # Canonical production origin (custom domain; apex 308-redirects to www).
 SITE="https://www.californiasforgottenpast.org"
 OGIMG=SITE+"/share-card.jpg"
@@ -74,6 +75,70 @@ def ext_figures(md_text):
         return m.group(0)
     return IMGPAT.sub(rep,md_text)
 
+def figurize_tables(html):
+    """Turn the 'Figure | Path' markdown tables (which render as a small image beside a
+    tall, mostly-empty text cell) into a responsive grid of figures: a large image with a
+    small caption underneath. Data tables without images are left untouched."""
+    def conv(m):
+        tbl=m.group(0)
+        if '<img' not in tbl: return tbl
+        figs=[]; cur=[None]
+        def flush():
+            if cur[0] is None: return
+            c=cur[0]; cur[0]=None
+            src=f'<span class="fig-src">{c["path"]}</span>' if c["path"] else ''
+            cap=re.sub(r'\s+',' ',c["desc"]).strip()
+            fc=f'<figcaption>{cap} {src}</figcaption>' if (cap or src) else ''
+            figs.append(f'<figure class="fig">{c["img"]}{fc}</figure>')
+        for r in re.findall(r'<tr[^>]*>(.*?)</tr>',tbl,re.S):
+            tds=re.findall(r'<t[dh][^>]*>(.*?)</t[dh]>',r,re.S)
+            imgcell=next((c for c in tds if '<img' in c),None)
+            if imgcell is not None:
+                flush()
+                cur[0]={'img':imgcell.strip(),'desc':' '.join(c for c in tds if '<img' not in c),'path':''}
+            else:
+                em=re.search(r'<em[^>]*>(.*?)</em>',r,re.S)
+                if em and cur[0] is not None and not cur[0]['path']:
+                    cur[0]['path']=em.group(1).strip()
+        flush()
+        return f'<div class="figset">{"".join(figs)}</div>'
+    return re.sub(r'<table>.*?</table>',conv,html,flags=re.S)
+
+def dedupe_images(html):
+    """Show each image only once in the single long-scroll: keep the first appearance,
+    strip later repeats. Removes only the duplicate image and its own caption/label,
+    never surrounding prose, so all narrative text and section order are preserved."""
+    seen=set()
+    def rep(m):
+        b=m.group(0)
+        mm=re.search(r'<img[^>]*src="(assets/[^"]+)"',b)
+        if not mm: return b
+        if mm.group(1) in seen: return ''
+        seen.add(mm.group(1)); return b
+    pat=re.compile(
+        r'<figure class="fig">.*?</figure>'                       # a figure card (image + its caption)
+        r'|<img[^>]*src="assets/[^"]+"[^>]*>\s*'                   # or an inline image
+        r'(?:<br\s*/?>\s*<em class="fig-cap">.*?</em>)?',          #   with its optional label
+        re.S)
+    html=pat.sub(rep,html)
+    html=re.sub(r'<div class="figset">\s*</div>','',html)         # drop galleries left empty
+    html=re.sub(r'<p>\s*</p>','',html)                            # drop image-only paras left empty
+    return html
+
+FILEPAT=re.compile(r'`((?:research|evidence|docs|media|data)/[^`]+?\.(?:pdf|md|csv|json|geojson|txt|xlsx))`')
+def host_files_md(md_text):
+    """For the web report: copy each referenced non-image source file into docs/california/files/
+    and turn its named path into a clickable link, so every document/dataset the report cites is
+    actually reachable on the site rather than only named. Large offline files are left as text."""
+    def rep(m):
+        rel=m.group(1); src=os.path.join(ROOT,rel)
+        if os.path.exists(src) and os.path.getsize(src)<40*1024*1024:
+            name=re.sub(r'[^A-Za-z0-9._-]','_',rel)
+            shutil.copyfile(src,os.path.join(FILESDIR,name))
+            return f'[`{rel}`](files/{name})'
+        return m.group(0)
+    return FILEPAT.sub(rep,md_text)
+
 files=sorted(glob.glob(os.path.join(CH,"[0-9]*.md")))
 chaps=[]
 for f in files:
@@ -105,7 +170,7 @@ idx=f"""<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="v
 <p>An independent, area-based investigation. Priority areas first. Each section is a self-contained page.</p>
 <blockquote>{FOOT}</blockquote>
 <h2>Contents</h2><ul class="toc">{items}</ul>
-<p class="foot">Also available as a single PDF: <a href="California_Report.pdf">California_Report.pdf</a></p>
+<p class="foot">Prefer one long page? Read <a href="report.html">the full report on a single page</a>.</p>
 </div></body></html>"""
 open(os.path.join(OUTD,"index.html"),"w").write(idx)
 
@@ -122,55 +187,97 @@ open(os.path.join(OUTD,"_print.html"),"w").write(print_html)
 
 # single long-scroll report page (whole report, external lazy-loaded images)
 shutil.rmtree(ASSETS,ignore_errors=True); os.makedirs(ASSETS,exist_ok=True)
+shutil.rmtree(FILESDIR,ignore_errors=True); os.makedirs(FILESDIR,exist_ok=True)
 REPORT_CSS="""
-body{background:#e9e6df}
+/* Match the landing page palette (blue accent), and support light + dark like it does. */
+:root{--paper:#f7f5f0;--ink:#16233a;--ink2:#48586c;--line:#ddd7ca;--accent:#2f6087;--brass:#a97e1f;
+  --brassbg:#f4ecd6;--card:#fffdf8;--mat:#e9e6df;--chip:#efe9dc;--quote:#5a4a2c;--muted:#7c8a9c;
+  --barbg:rgba(247,245,240,.94);--shadow:0 2px 18px rgba(20,35,58,.12)}
+@media (prefers-color-scheme:dark){:root{--paper:#141a24;--ink:#eef2f7;--ink2:#a9b6c6;--line:#2b3746;--accent:#7fb0d6;
+  --brass:#d8b662;--brassbg:#20293a;--card:#1b2330;--mat:#0e131b;--chip:#202a38;--quote:#d7c8a4;--muted:#8493a6;
+  --barbg:rgba(20,26,36,.92);--shadow:0 2px 20px rgba(0,0,0,.45)}}
+:root[data-theme="light"]{--paper:#f7f5f0;--ink:#16233a;--ink2:#48586c;--line:#ddd7ca;--accent:#2f6087;--brass:#a97e1f;--brassbg:#f4ecd6;--card:#fffdf8;--mat:#e9e6df;--chip:#efe9dc;--quote:#5a4a2c;--muted:#7c8a9c;--barbg:rgba(247,245,240,.94);--shadow:0 2px 18px rgba(20,35,58,.12)}
+:root[data-theme="dark"]{--paper:#141a24;--ink:#eef2f7;--ink2:#a9b6c6;--line:#2b3746;--accent:#7fb0d6;--brass:#d8b662;--brassbg:#20293a;--card:#1b2330;--mat:#0e131b;--chip:#202a38;--quote:#d7c8a4;--muted:#8493a6;--barbg:rgba(20,26,36,.92);--shadow:0 2px 20px rgba(0,0,0,.45)}
+/* re-skin the shared base rules so they follow the theme and lead with blue */
+body{background:var(--mat)}
+.page{background:var(--paper);box-shadow:var(--shadow)}
+a{color:var(--accent)}
+h2{border-bottom-color:var(--accent)}
+h3{color:var(--accent)}
+blockquote{background:var(--brassbg);border-left-color:var(--accent);color:var(--quote)}
+th{background:var(--chip)}
+th,td{border-color:var(--line)}
+img{border-color:var(--line)}
+code{background:var(--chip);color:var(--ink)}
+.foot{border-top-color:var(--line);color:var(--ink2)}
 .topbar{position:sticky;top:0;z-index:50;display:flex;align-items:center;justify-content:space-between;gap:12px;
-  background:rgba(247,245,240,.94);backdrop-filter:blur(7px);-webkit-backdrop-filter:blur(7px);
+  background:var(--barbg);backdrop-filter:blur(7px);-webkit-backdrop-filter:blur(7px);
   border-bottom:1px solid var(--line);padding:9px clamp(14px,4vw,26px)}
 .tb-title{font-family:Georgia,serif;font-weight:700;color:var(--ink);text-decoration:none;font-size:15px;
   white-space:nowrap;overflow:hidden;text-overflow:ellipsis;min-width:0}
-.tb-actions{display:flex;align-items:center;gap:10px;flex:0 0 auto}
-.tb-link{color:var(--accent);text-decoration:none;font-size:13.5px;font-weight:600;white-space:nowrap}
-.tb-btn{background:var(--accent);color:#fff;text-decoration:none;font-weight:600;font-size:13.5px;
-  padding:8px 14px;border-radius:8px;white-space:nowrap}
-.tb-btn:hover{filter:brightness(1.07)}
-.hero{padding:6px 0 2px}
+.tb-actions{display:flex;align-items:center;gap:16px;flex:0 0 auto}
+.tb-link{color:var(--accent);text-decoration:none;font-size:13.5px;font-weight:700;white-space:nowrap}
+.tb-link:hover{text-decoration:underline}
+.hero{padding:8px 0 2px}
 .eyebrow{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--brass);font-weight:700;margin:0 0 10px}
-.hero h1{font-size:clamp(28px,5.6vw,42px);line-height:1.08;margin:0 0 6px;border:0}
+.hero h1{font-size:clamp(28px,5.6vw,42px);line-height:1.08;margin:0 0 6px;border:0;color:var(--ink)}
 .tagline{font-family:Georgia,serif;font-style:italic;font-size:clamp(17px,3vw,23px);color:var(--brass);margin:0 0 14px}
-.hero .sub{color:var(--ink2);font-size:16.5px;max-width:62ch;margin:0 0 18px}
+.hero .sub{color:var(--ink2);font-size:16.5px;max-width:62ch;margin:0 0 16px}
+/* video slot: swap the .videobox for the real thumbnail/embed when ready */
+.videobox{position:relative;width:100%;max-width:330px;aspect-ratio:9/16;margin:6px 0 18px;border-radius:14px;
+  border:1px solid var(--line);background:linear-gradient(150deg,var(--card),var(--paper));
+  display:flex;align-items:center;justify-content:center;overflow:hidden}
+.videobox .glow{position:absolute;inset:0;background:radial-gradient(60% 55% at 50% 42%,rgba(47,96,135,.16),transparent 70%)}
+.vb-inner{position:relative;text-align:center;padding:16px}
+.vb-play{width:66px;height:66px;border-radius:50%;background:var(--accent);display:flex;align-items:center;
+  justify-content:center;margin:0 auto 12px;box-shadow:0 6px 18px rgba(20,35,58,.28)}
+.vb-play::after{content:"";border-style:solid;border-width:11px 0 11px 19px;
+  border-color:transparent transparent transparent #fff;margin-left:5px}
+.vb-label{color:var(--ink2);font-size:13px;font-weight:700;letter-spacing:.05em;text-transform:uppercase}
 .hero-actions{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 6px}
 .hero-actions a{display:inline-flex;align-items:center;gap:7px;text-decoration:none;font-weight:600;font-size:14.5px;
-  padding:11px 18px;border-radius:9px;border:1px solid var(--line);color:var(--ink);background:#fff}
+  padding:10px 17px;border-radius:9px;border:1px solid var(--line);color:var(--ink);background:var(--card)}
+.hero-actions a:hover{border-color:var(--accent)}
 .hero-actions a.primary{background:var(--accent);border-color:var(--accent);color:#fff}
-.hero-actions a:hover{filter:brightness(1.04)}
-.disc{background:#f4ecd6;border:1px solid var(--line);border-left:3px solid var(--brass);border-radius:8px;
-  padding:13px 16px;font-size:12.5px;color:#5a4a2c;margin:16px 0}
+.disc{background:var(--brassbg);border:1px solid var(--line);border-left:3px solid var(--accent);border-radius:8px;
+  padding:13px 16px;font-size:12.5px;color:var(--quote);margin:16px 0}
 .disc b{color:var(--ink)}
-.contents{background:#fff;border:1px solid var(--line);border-radius:8px;padding:12px 20px;margin:18px 0 8px}
-.contents h2{border:0;margin:2px 0 8px;font-size:16px}
+.contents{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:12px 20px;margin:18px 0 8px}
+.contents h2{border:0;margin:2px 0 8px;font-size:16px;color:var(--ink)}
 .contents ol{columns:2;column-gap:28px;margin:0;padding-left:20px;font-size:14px}
 .contents li{margin:5px 0;break-inside:avoid}
 .contents a{color:var(--accent);text-decoration:none}
 .contents a:hover{text-decoration:underline}
 .chapter{scroll-margin-top:62px;border-top:1px solid var(--line);margin-top:30px;padding-top:8px}
 .chapter:first-of-type{border-top:0;margin-top:10px}
-.chapter h1{font-size:26px;page-break-before:auto}
-.fig-cap{color:#7c8a9c;font-size:11.5px;font-style:italic}
+.chapter h1{font-size:26px;page-break-before:auto;color:var(--ink)}
+.fig-cap{color:var(--muted);font-size:11.5px;font-style:italic}
+/* figure grid: big images, small caption underneath (replaces the tiny-image tables) */
+.figset{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,340px),1fr));gap:16px;margin:18px 0}
+.fig{margin:0;border:1px solid var(--line);border-radius:10px;overflow:hidden;background:var(--card);
+  display:flex;flex-direction:column}
+.fig img{width:100%;height:auto;display:block;border:0;border-radius:0;margin:0}
+.fig figcaption{padding:9px 13px;font-size:13px;line-height:1.42;color:var(--ink2)}
+.fig figcaption .fig-src{display:block;margin-top:4px;color:var(--muted);font-size:11px;font-style:italic;word-break:break-word}
 @media (max-width:600px){
   .page{margin:0;padding:22px 18px;border-radius:0;box-shadow:none}
   .contents ol{columns:1}
-  .tb-title{display:none}
+  .figset{grid-template-columns:1fr}
+  .tb-title{max-width:56vw}
 }
 """
 secs=[]
 for slug,title,raw in chaps:
-    body=markdown.markdown(ext_figures(raw),extensions=["tables"])
+    body=markdown.markdown(host_files_md(ext_figures(raw)),extensions=["tables"])
     secs.append(f'<section id="{slug}" class="chapter">{body}</section>')
 sections="".join(secs)
 sections=sections.replace('<img ','<img loading="lazy" ')
+# turn "Figure | Path" tables into a big-image / small-caption grid
+sections=figurize_tables(sections)
 # tag only image-provenance captions (the <em> right after an <img>), not body emphasis
 sections=re.sub(r'(<img[^>]*>)\s*<em>',r'\1<br><em class="fig-cap">',sections)
+# show each image once in the long scroll (keep first, drop later repeats), keeping all text
+sections=dedupe_images(sections)
 contents="".join(f'<li><a href="#{s}">{t}</a></li>' for s,t,_ in chaps)
 DESC=("An independent, hypothesis-neutral investigation into California's state-mandated arsenical "
       "cattle-tick dipping program (1907 to 1912) and the South Orange County communities built on the former ranch land.")
@@ -197,7 +304,7 @@ report_html=f"""<!doctype html><html lang="en"><head>
   <a class="tb-title" href="#top">California's Forgotten Past</a>
   <div class="tb-actions">
     <a class="tb-link" href="#contents">Contents</a>
-    <a class="tb-btn" href="California_Report.pdf" download>Download PDF</a>
+    <a class="tb-link" href="/contact.html">Contact</a>
   </div>
 </div>
 <div class="page" id="top">
@@ -206,8 +313,17 @@ report_html=f"""<!doctype html><html lang="en"><head>
     <h1>California's Forgotten Past</h1>
     <p class="tagline">The Arsenic Cattle-Dipping Era</p>
     <p class="sub">{DESC}</p>
+    <!-- VIDEO: 9:16 vertical (Instagram/Reel) slot. Replace this .videobox with the real
+         thumbnail or embed when ready, e.g.
+         <a href="VIDEO_URL"><img src="/path/to/thumbnail_9x16.jpg" alt="Watch the documentary"></a> -->
+    <div class="videobox" role="img" aria-label="Documentary video coming soon">
+      <span class="glow"></span>
+      <div class="vb-inner">
+        <div class="vb-play"></div>
+        <div class="vb-label">Documentary video coming soon</div>
+      </div>
+    </div>
     <div class="hero-actions">
-      <a class="primary" href="California_Report.pdf" download>Download the PDF &middot; single file</a>
       <a href="#contents">Jump to contents</a>
       <a href="index.html">Section-by-section view</a>
       <a href="/contact.html">Contact</a>
@@ -227,7 +343,7 @@ open(os.path.join(OUTD,"report.html"),"w").write(report_html)
 
 # sitemap.xml + robots.txt at the site root (for search engines / social crawlers)
 urls=[("/",1.0),("/docs/california/report.html",0.9),("/docs/california/index.html",0.7),
-      ("/contact.html",0.6),("/docs/california/California_Report.pdf",0.5)]
+      ("/contact.html",0.6)]
 urls+=[(f"/docs/california/{s}.html",0.5) for s,_,_ in chaps]
 sm=['<?xml version="1.0" encoding="UTF-8"?>','<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']
 sm+=[f'  <url><loc>{SITE}{u}</loc><changefreq>monthly</changefreq><priority>{p}</priority></url>' for u,p in urls]
