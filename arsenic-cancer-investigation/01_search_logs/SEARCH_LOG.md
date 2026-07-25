@@ -46,3 +46,9 @@ NTP, IARC, ATSDR, EPA IRIS, OEHHA, ClinicalTrials.gov. Record filters, counts, e
 | SL-15 | arsenic MOA AOP key characteristics IARC | 8 | dominant MOA cytotoxicity/regeneration, oft non-genotoxic (S021,S022) -> tempers plausibility |
 | SL-16 | As2O3/arsenite/arsenate dip formulation CAS toxicity | 8 | arsenite from As2O3+NaOH; arsenite 10x arsenate; sulfhydryl MOA (S026) |
 | SL-17 | former cattle-dip vat soil arsenic contamination Australia | 8 | up to ~3000 mg/kg As + DDT; persists decades; residential exceedances (S023,S024,S025) |
+
+## 2026-07-23 session 5 (molecular signatures)
+| id | query | results | action |
+|---|---|---|---|
+| SL-18 | arsenic mutational/methylation signature tumor WGS | 8 | As lung T>G signature (S027); 255-CpG methylation (S028) |
+| SL-19 | Ewing genomic landscape low mutation burden STAG2 | 7 | 0.15 mut/Mb -> low signature power (S029) |
