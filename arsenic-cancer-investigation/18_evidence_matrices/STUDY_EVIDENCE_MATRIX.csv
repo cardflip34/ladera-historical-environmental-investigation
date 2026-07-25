@@ -1,0 +1,1 @@
+evidence_id,disease,exposure,arsenic_species,exposure_route,exposure_window,study_type,population_or_model,sample_size,outcome,effect_estimate,ci,significance,dose_response,mechanism,supports,contradicts,neutral,directness,relevance,risk_of_bias,key_limitations,replication_status,citation,doi,pmid,url,access_date,full_text,notes,reviewer,verification_status

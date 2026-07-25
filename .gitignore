@@ -26,3 +26,8 @@ evidence/images/COTO/Bancroft_LandCaseFile_SD216_RanchoTrabuco_JuanForster.pdf
 evidence/documents/Bancroft_LandCaseFile_216SD_Trabuco_Forster.pdf
 reports/Ladera-Historical-Imagery.zip
 evidence/documents/RanchPlan_AffordableHousing_FinalPEIR_SCH2015051062_2016.pdf
+
+# --- PRIVACY: arsenic-cancer investigation private patient data (NEVER commit) ---
+arsenic-cancer-investigation/04_cancer_registry_private/
+arsenic-cancer-investigation/**/*PRIVATE*
+arsenic-cancer-investigation/**/*_PHI*
