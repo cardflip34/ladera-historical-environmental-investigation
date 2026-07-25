@@ -1,1 +1,10 @@
 claim_id,claim_text,domain,source_ids,classification,evidence_level,notes,reviewer
+C01,Arsenic can cause Ewing sarcoma,medical causation,—,unsupported,g,no direct study,RE
+C02,Arsenic is a human carcinogen,toxicology,S001,verified,a,bladder/lung/skin,RE
+C03,Arsenic can cause a human sarcoma,toxicology,S001,verified,a,hepatic angiosarcoma,RE
+C04,Arsenic suppresses high-fidelity DSB repair,mechanism,S003;S004,verified,a/b,"HR down, NHEJ intact",RE
+C05,Arsenic mis-repair produces the EWSR1 fusion,mechanism,—,plausible_unverified,d,never tested,RE
+C06,Ewing is associated with farm/pesticide exposure,epidemiology,S007;S008;S009,partially_verified,c,not arsenic-specific,RE
+C07,Historical exposure is reconstructable years pre-diagnosis,biomarker,S011;S012;S013,verified,a/b,teeth/nails/blood-spots,RE
+C08,Cancer incidence in the community is statistically elevated,epidemiology,—,needs_epi,g,requires CDC/ATSDR + verified counts,RE
+C09,Dip vats existed within the development footprint,exposure,—,needs_env_testing,g,statewide rule != parcel proof,RE

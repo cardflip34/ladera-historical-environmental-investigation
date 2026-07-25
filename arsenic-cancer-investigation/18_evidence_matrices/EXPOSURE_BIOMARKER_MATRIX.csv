@@ -1,1 +1,6 @@
 biomarker,exposure_window,detects_historical,contamination_risk,clinical_validity,forensic_validity,sample_reqs,storage_limits,destructive,chain_of_custody,labs,used_in_pediatric_cancer,notes
+Deciduous teeth (dentine rings),"2nd trimester -> early childhood, weekly res",recovers historical,low,high (metals),promising,shed tooth,stable if kept,micro-destructive (LA-ICP-MS),needed,LA-ICP-MS labs,yes (Pb/Mn validated; As feasible),S011
+Infant/adult toenails,in-utero + months prior,recovers historical,moderate (external As),validated As biomarker,usable,clippings,stable,yes,needed,trace-metal labs,yes,S012
+Hair,recent months,partial,high external contamination,moderate,weaker,strand,stable,yes,needed,,some,S001
+Archived newborn dried blood spots,at birth,birth-state exposure + methylation,low,high,strong (banked),punch,"state-banked, retention limits",yes,needed,state biobank labs,yes,S013
+FFPE tumor arsenic/metallomics,at diagnosis,tumor burden,moderate,emerging,usable,archived block,hospital retention,yes,needed,metallomics labs,emerging,—

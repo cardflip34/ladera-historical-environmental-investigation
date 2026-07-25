@@ -1,1 +1,6 @@
 question,current_consensus,best_supporting,best_contradictory,evidence_level,major_limitations,relevance_ladera,research_needed
+Defining lesion,EWSR1::FLI1 (FET::ETS) fusion in >85%,S005;S006,,a,,defines disease,—
+Cell of origin,"Mesenchymal stem/progenitor, embryonic-stage permissive",S005;S006,debate remains,b,model-dependent,exposure-timing relevance,confirm human in-vivo origin
+Environmental risk factors,"Officially ""none established""; farm/pesticide signal in case-control",S007;S008;S009,GWAS emphasize germline (S014),c,pesticide not arsenic-specific,direct to Ladera,isolate arsenical exposure
+Germline/ancestry,Multiple loci; low incidence African ancestry,S014,,b,,confounder,—
+Arsenic tested as exposure,Never isolated; grouped under pesticides at best,—,,g,,core gap,native-db confirm + reanalysis

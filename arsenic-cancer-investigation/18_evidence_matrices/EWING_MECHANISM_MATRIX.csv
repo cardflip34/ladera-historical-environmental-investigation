@@ -1,1 +1,5 @@
 bridge_id,mechanism_statement,pathway,arsenic_form,concentration,model,human_relevance,directness_to_ewing,replication_status,supporting,contradictory,confidence,critical_missing_experiment
+A,"As suppresses HR, shifts to error-prone repair linked to translocations",HR/NHEJ balance,arsenic trioxide,experimental,human Nalm-6 pre-B,moderate,indirect (not EWSR1/MSC),single-ish,S003;S004,As2O3 treats APL (S010); EWS-FLI1 needs cofactors (S006),d-plausible,Env-relevant iAs -> EWSR1 DSB/mis-repair in MSC
+B,Genomic instability / LINE-1 derepression,retrotransposon/genome stability,inorganic As,—,human cell/tumor,moderate,indirect,review,S004,,d,As dose vs structural-variant burden in MSC
+C,Epigenetic PRC2/H3K27me3 disruption,polycomb/chromatin,inorganic As,—,human cell,low-mod,very indirect,single,S002,,d/e,overlap of As epigenome with Ewing enhancers
+D,Developmental-window susceptibility (embryonic MSC),cell-of-origin/timing,inorganic As (placental transfer),—,human embryonic MSC,moderate,indirect,—,S005;S006,strong germline component (S014),d/e,prenatal As timing vs fusion acquisition

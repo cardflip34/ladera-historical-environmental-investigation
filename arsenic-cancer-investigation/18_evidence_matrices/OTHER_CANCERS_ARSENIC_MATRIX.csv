@@ -1,1 +1,11 @@
 cancer,arsenic_relationship_class,best_evidence,contradictory_evidence,evidence_level,notes,reviewer
+Bladder,established causal,S001,,a,epithelial,RE
+Lung,established causal,S001,,a,epithelial,RE
+Skin (NMSC),established causal,S001,,a,epithelial,RE
+Kidney,suggestive,S001,,c,positive association,RE
+Liver / hepatic angiosarcoma,angiosarcoma established,STS review,,a/c,angiosarcoma is a sarcoma,RE
+Prostate,suggestive,S001,,c,,RE
+Soft-tissue sarcoma,limited/occupational,vineyard-worker STS,,c,arsenical pesticide exposed,RE
+Osteosarcoma,no direct evidence,—,pesticide signal not As-specific,g,bone,RE
+Ewing sarcoma,no direct evidence,—,,g,primary question,RE
+Leukemia/lymphoma,limited & inconsistent,S010,As2O3 treats APL,c/g,dual effect,RE

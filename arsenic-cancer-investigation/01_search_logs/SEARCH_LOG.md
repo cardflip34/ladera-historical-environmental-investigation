@@ -19,3 +19,15 @@ arsenic AND "DNA double-strand breaks"; arsenic AND "nonhomologous end joining";
 arsenic AND "homologous recombination"; arsenic AND chromothripsis; arsenic AND "genomic instability".
 Databases: PubMed, PMC, Europe PMC, Crossref, OpenAlex, Semantic Scholar, Scholar, ProQuest,
 NTP, IARC, ATSDR, EPA IRIS, OEHHA, ClinicalTrials.gov. Record filters, counts, exclusions each run.
+
+## 2026-07-23 session 2 (mechanism, etiology, other cancers, biomarkers)
+| id | query | results | action |
+|---|---|---|---|
+| SL-2026-07-23-03 | arsenic DNA double-strand breaks NHEJ HR repair inhibition | 6 | As2O3 lowers HR not NHEJ (PMID 37530740) -> Bridge A |
+| SL-2026-07-23-04 | Ewing cell of origin MSC EWSR1-FLI1 fusion timing prenatal | 8 | embryonic MSC origin; fusion impairs repair (PMC2952797; Nat Commun 2025) |
+| SL-2026-07-23-05 | Ewing environmental risk agricultural pesticide parental occupation | 7 | farm/pesticide case-control signal (PMID 12020108;1311140;15551353) |
+| SL-2026-07-23-06 | arsenic chromosomal translocation gene fusion carcinogenesis | 8 | error-prone repair -> translocations; As2O3 treats APL (PMC5421966) |
+| SL-2026-07-23-07 | arsenic osteosarcoma/bone/soft-tissue sarcoma | 9 | STS (angiosarcoma est.; vineyard STS); osteosarcoma no direct |
+| SL-2026-07-23-08 | arsenic leukemia/lymphoma/kidney/liver | 10 | kidney/liver suggestive; leuk/lymph inconsistent (PMC9099091) |
+| SL-2026-07-23-09 | deciduous teeth arsenic reconstruction biomarker | 6 | tooth-ring metal biomarker validated (s41370-021-00400-x) |
+| SL-2026-07-23-10 | newborn blood spots / toenail / hair arsenic biomarker | 6 | toenail in-utero As (jes201438); banked DBS (Clin Chem 2026) |
