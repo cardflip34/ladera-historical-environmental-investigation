@@ -39,3 +39,10 @@ NTP, IARC, ATSDR, EPA IRIS, OEHHA, ClinicalTrials.gov. Record filters, counts, e
 | SL-12 | Ewing incidence per million SEER age-specific | 9 | ~2.93-3/M <20; peak 10-15; M:F 3:1; 9x white (S017) |
 | SL-13 | SaTScan spatial scan Poisson Bayesian SIR | 8 | SaTScan methods; multi-scale scans (S020) |
 | SL-14 | cluster pitfalls Texas sharpshooter multiple comparisons | 8 | silent multiplicity; pre-specify boundaries; source-before-test (S018,S019) |
+
+## 2026-07-23 session 4 (causal MOA / dip chemistry / fate)
+| id | query | results | action |
+|---|---|---|---|
+| SL-15 | arsenic MOA AOP key characteristics IARC | 8 | dominant MOA cytotoxicity/regeneration, oft non-genotoxic (S021,S022) -> tempers plausibility |
+| SL-16 | As2O3/arsenite/arsenate dip formulation CAS toxicity | 8 | arsenite from As2O3+NaOH; arsenite 10x arsenate; sulfhydryl MOA (S026) |
+| SL-17 | former cattle-dip vat soil arsenic contamination Australia | 8 | up to ~3000 mg/kg As + DDT; persists decades; residential exceedances (S023,S024,S025) |

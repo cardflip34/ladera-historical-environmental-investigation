@@ -11,3 +11,7 @@ C09,Dip vats existed within the development footprint,exposure,—,needs_env_tes
 C10,Cancer boundaries must be pre-specified (avoid Texas Sharpshooter),epi method,S019,verified,a,,RE
 C11,Ewing baseline ~3 per million/yr <20; 9x higher in white,epi baseline,S017,verified,a,ancestry adj mandatory,RE
 C12,Expected Ewing count in a ~10k-child community over 20y is <1,epi framework,S017,plausible_unverified,f,illustrative; needs ACS + CCR,RE
+C13,"Dominant arsenic carcinogenic MOA is cytotoxicity/regeneration, not translocation-formation",mechanism,S021;S022,verified,a/b,tempers Ewing plausibility,RE
+C14,Former cattle-dip sites retain high arsenic (up to ~3000 mg/kg) decades later,env fate,S023;S024;S025,verified (analog sites),a/b,elsewhere; local unmeasured,RE
+C15,"Cattle-dip = arsenic trioxide->arsenite, low-lead signature; distinct from orchard lead-arsenate",chemistry,S026,verified,a,speciation is discriminator,RE
+C16,Weight of evidence for arsenic->Ewing is currently weak/unestablished,synthesis,—,verified (as a state of evidence),a,most Bradford-Hill unmet/unstudied,RE
