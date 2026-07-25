@@ -8,3 +8,6 @@ C06,Ewing is associated with farm/pesticide exposure,epidemiology,S007;S008;S009
 C07,Historical exposure is reconstructable years pre-diagnosis,biomarker,S011;S012;S013,verified,a/b,teeth/nails/blood-spots,RE
 C08,Cancer incidence in the community is statistically elevated,epidemiology,—,needs_epi,g,requires CDC/ATSDR + verified counts,RE
 C09,Dip vats existed within the development footprint,exposure,—,needs_env_testing,g,statewide rule != parcel proof,RE
+C10,Cancer boundaries must be pre-specified (avoid Texas Sharpshooter),epi method,S019,verified,a,,RE
+C11,Ewing baseline ~3 per million/yr <20; 9x higher in white,epi baseline,S017,verified,a,ancestry adj mandatory,RE
+C12,Expected Ewing count in a ~10k-child community over 20y is <1,epi framework,S017,plausible_unverified,f,illustrative; needs ACS + CCR,RE

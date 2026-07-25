@@ -31,3 +31,11 @@ NTP, IARC, ATSDR, EPA IRIS, OEHHA, ClinicalTrials.gov. Record filters, counts, e
 | SL-2026-07-23-08 | arsenic leukemia/lymphoma/kidney/liver | 10 | kidney/liver suggestive; leuk/lymph inconsistent (PMC9099091) |
 | SL-2026-07-23-09 | deciduous teeth arsenic reconstruction biomarker | 6 | tooth-ring metal biomarker validated (s41370-021-00400-x) |
 | SL-2026-07-23-10 | newborn blood spots / toenail / hair arsenic biomarker | 6 | toenail in-utero As (jes201438); banked DBS (Clin Chem 2026) |
+
+## 2026-07-23 session 3 (epidemiology / spatial)
+| id | query | results | action |
+|---|---|---|---|
+| SL-11 | CDC ATSDR cancer cluster guidelines 2022 criteria | 10 | 2022 guidelines; cluster def; 10-criteria; de-emphasize significance (S016) |
+| SL-12 | Ewing incidence per million SEER age-specific | 9 | ~2.93-3/M <20; peak 10-15; M:F 3:1; 9x white (S017) |
+| SL-13 | SaTScan spatial scan Poisson Bayesian SIR | 8 | SaTScan methods; multi-scale scans (S020) |
+| SL-14 | cluster pitfalls Texas sharpshooter multiple comparisons | 8 | silent multiplicity; pre-specify boundaries; source-before-test (S018,S019) |
