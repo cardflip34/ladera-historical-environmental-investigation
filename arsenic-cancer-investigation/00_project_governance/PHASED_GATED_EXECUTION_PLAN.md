@@ -138,7 +138,9 @@ relevant specimens/sites, because those items degrade.
 | Confounder neglect (orchard lead-arsenate, DDT, ancestry) | biased inference | Workstream 13 + ancestry standardization |
 
 ## 6. PROGRESS TRACKER
-- Phase 0 ✅ · Phase 1 ◐ (WS 3,4,5,8,10,11 first pass done; 6,7,9,13, native-db, dual-review remaining)
+- Phase 0 ✅ · Phase 1 ✅ (all WS first pass + native-db done; dual-review = GATE A, human)
+- Phase 2 ◐ DRAFTS complete: soil SAP (E1), biomarker protocol (E2), blinded tumor protocol (E3), epi
+  preregistration form, draft preservation/records letters — all pending GATE A review + GATE B authorization
 - Gates A–E: not yet reached.
 
 ## 7. IMMEDIATE NEXT (auto, Phase 1) — proceeding under full authority
