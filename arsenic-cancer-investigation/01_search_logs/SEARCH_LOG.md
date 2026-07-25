@@ -52,3 +52,8 @@ NTP, IARC, ATSDR, EPA IRIS, OEHHA, ClinicalTrials.gov. Record filters, counts, e
 |---|---|---|---|
 | SL-18 | arsenic mutational/methylation signature tumor WGS | 8 | As lung T>G signature (S027); 255-CpG methylation (S028) |
 | SL-19 | Ewing genomic landscape low mutation burden STAG2 | 7 | 0.15 mut/Mb -> low signature power (S029) |
+
+## 2026-07-23 session 6 (NATIVE DB re-runs, reproducible counts)
+Ran 12 Workstream-3 strings vs PubMed E-utilities + Europe PMC REST (see NATIVE_DB_SEARCH_RESULTS.md).
+Key: arsenic+"Ewing sarcoma" PubMed=8 (ALL therapeutic ATO), arsenic+EWSR1=0, arsenic+EWS-FLI1=0,
+"inorganic arsenic"+Ewing=0. Characterized the 8 hits by title (all ATO-as-therapy).

@@ -15,3 +15,4 @@ C13,"Dominant arsenic carcinogenic MOA is cytotoxicity/regeneration, not translo
 C14,Former cattle-dip sites retain high arsenic (up to ~3000 mg/kg) decades later,env fate,S023;S024;S025,verified (analog sites),a/b,elsewhere; local unmeasured,RE
 C15,"Cattle-dip = arsenic trioxide->arsenite, low-lead signature; distinct from orchard lead-arsenate",chemistry,S026,verified,a,speciation is discriminator,RE
 C16,Weight of evidence for arsenic->Ewing is currently weak/unestablished,synthesis,—,verified (as a state of evidence),a,most Bradford-Hill unmet/unstudied,RE
+C17,"All published arsenic-Ewing literature is therapeutic (ATO kills Ewing), zero etiologic",literature,S030;S031;S032,verified,a,reproducible native-db result; counter-direction,RE

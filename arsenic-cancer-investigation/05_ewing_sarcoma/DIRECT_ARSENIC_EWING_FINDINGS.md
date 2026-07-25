@@ -79,3 +79,16 @@ epigenetic dysregulation.
 
 *Single-reviewer pass. Consequential items (Findings 1–3) flagged for dual-reviewer verification and
 for full source-record capture per DATABASE_SCHEMA before use in any physician/attorney brief.*
+
+---
+## UPDATE 2026-07-23 — native-database confirmation (decisive)
+Native PubMed/Europe PMC re-runs (01_search_logs/NATIVE_DB_SEARCH_RESULTS.md) confirm Finding 1 with
+reproducible counts AND add a decisive nuance:
+- `arsenic AND EWSR1` = **0** PubMed; `arsenic AND EWS-FLI1` = **0**; `"inorganic arsenic" AND Ewing` = **0**.
+- The only `arsenic + Ewing` PubMed hits (n=8) are **arsenic trioxide as a candidate THERAPY** (kills
+  Ewing cells / blocks Hedgehog), **not** arsenic as a cause.
+**Upgraded statement (level a):** there is **zero etiologic literature** connecting arsenic to Ewing,
+and the sole existing arsenic-Ewing science shows arsenic **killing** Ewing cells - the opposite
+direction. This is a *documented absence of causal research* plus a *directional counter-signal*; it is
+still not evidence of "no relationship," but any claim that arsenic causes Ewing has **no literature
+support whatsoever.**

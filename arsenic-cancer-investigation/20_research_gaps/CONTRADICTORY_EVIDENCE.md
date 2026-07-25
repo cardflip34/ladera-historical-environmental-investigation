@@ -24,3 +24,7 @@ Consolidated so the case against the arsenic->Ewing hypothesis is as visible as 
 
 **Net:** these do not disprove the hypothesis, but they make **causation currently unsupported** and
 define why measurement (not assertion) is the only defensible path.
+
+11. **Directional counter-signal (native-db, reproducible):** the entire published arsenic-Ewing
+    literature is **arsenic trioxide as a *treatment*** (it kills Ewing cells, like it treats APL) -
+    `arsenic AND EWSR1` = 0, `arsenic AND EWS-FLI1` = 0 in PubMed. Zero etiologic studies exist.
