@@ -1,1 +1,11 @@
 expert_id,name_or_role,discipline,institution_type,relevant_workstream,contacted(NO),notes
+E01,Pediatric oncologist (Ewing/sarcoma),pediatric oncology,academic cancer center,"1,5,10",NO,clinical + case interpretation
+E02,Molecular pathologist / cytogeneticist,molecular pathology,academic/reference lab,"1,9",NO,"EWSR1 fusion, breakpoint, tumor molecular"
+E03,Environmental toxicologist (arsenic),toxicology,university/agency,"6,7,12",NO,"speciation, MOA, dose"
+E04,"Exposure scientist (dental/nail biomarkers, LA-ICP-MS)",exposure science,university lab,"8,10",NO,biomarker reconstruction
+E05,Environmental epidemiologist,epidemiology,university/health dept,"10,12,13",NO,"cluster design, confounding"
+E06,Biostatistician (rare-event/spatial),biostatistics,university,"10,11",NO,SIR/Bayesian/SaTScan
+E07,Geochemist / soil scientist,geochemistry,university/consultancy,"7,9,14",NO,"soil fate, bioaccessibility, sampling"
+E08,Molecular biologist (DNA repair/genome instability),molecular biology,university,"2,4",NO,EWSR1 break/repair experiments
+E09,Cancer registry epidemiologist,registry science,California Cancer Registry,"1,10",NO,"verified counts, denominators"
+E10,Bioethicist / IRB,research ethics,IRB,all real-world,NO,"human subjects, specimens, PHI"

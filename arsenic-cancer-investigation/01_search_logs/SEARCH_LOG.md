@@ -57,3 +57,8 @@ NTP, IARC, ATSDR, EPA IRIS, OEHHA, ClinicalTrials.gov. Record filters, counts, e
 Ran 12 Workstream-3 strings vs PubMed E-utilities + Europe PMC REST (see NATIVE_DB_SEARCH_RESULTS.md).
 Key: arsenic+"Ewing sarcoma" PubMed=8 (ALL therapeutic ATO), arsenic+EWSR1=0, arsenic+EWS-FLI1=0,
 "inorganic arsenic"+Ewing=0. Characterized the 8 hits by title (all ATO-as-therapy).
+
+## 2026-07-23 session 7 (TOP-100 native capture)
+Captured 76 real PubMed records across 20 topical strings (relevance-sorted) -> 02_source_library/
+TOP_100_MOST_RELEVANT_SOURCES.csv. Notable new: arsenite impairs BRCA1-dependent DSB repair (37762697);
+BRCA2-HR needed for arsenite lesions (19553191) - strengthen Bridge A with specific citations.

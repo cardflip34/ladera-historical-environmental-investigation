@@ -1,0 +1,77 @@
+topic,pmid,year,journal,title,url
+mechanism-HR,37530740,2023,The FEBS journal,Arsenic affects homologous recombination and single-strand annealing but not end-joining pathways during DNA double-strand break repair.,https://pubmed.ncbi.nlm.nih.gov/37530740/
+mechanism-HR,10712745,2000,Environmental and molecular mutagenesis,Arsenic[III] and heavy metal ions induce intrachromosomal homologous recombination in the hprt gene of V79 Chinese hamster cells.,https://pubmed.ncbi.nlm.nih.gov/10712745/
+mechanism-HR,19553191,2009,Nucleic acids research,BRCA2-dependent homologous recombination is required for repair of Arsenite-induced replication lesions in mammalian cells.,https://pubmed.ncbi.nlm.nih.gov/19553191/
+mechanism-HR,28521962,2018,Mutation research,The functional roles of PML nuclear bodies in genome maintenance.,https://pubmed.ncbi.nlm.nih.gov/28521962/
+mechanism-DSB,37762697,2023,International journal of molecular scien,"Arsenite Impairs BRCA1-Dependent DNA Double-Strand Break Repair, a Mechanism Potentially Contributing to Genomic Instability.",https://pubmed.ncbi.nlm.nih.gov/37762697/
+mechanism-DSB,35752363,2022,The Journal of biological chemistry,DEAD box 1 (DDX1) protein binds to and protects cytoplasmic stress response mRNAs in cells exposed to oxidative stress.,https://pubmed.ncbi.nlm.nih.gov/35752363/
+mechanism-DSB,28262482,2017,Experimental and toxicologic pathology :,Cytotoxicity and genotoxicity effects of arsenic trioxide on SQ20B human laryngeal carcinoma cells.,https://pubmed.ncbi.nlm.nih.gov/28262482/
+mechanism-DSB,28472378,2017,Toxicological sciences : an official jou,Efflux Transporters Regulate Arsenite-Induced Genotoxicity in Double Negative and Double Positive T Cells.,https://pubmed.ncbi.nlm.nih.gov/28472378/
+mechanism-epigen,37958445,2023,Cancers,DNA Methylation Aberrations in Dimethylarsinic Acid-Induced Bladder Carcinogenesis.,https://pubmed.ncbi.nlm.nih.gov/37958445/
+mechanism-epigen,20514360,2010,Epigenomics,Effects of arsenic exposure on DNA methylation and epigenetic gene regulation.,https://pubmed.ncbi.nlm.nih.gov/20514360/
+mechanism-epigen,32971865,2020,Biomolecules,Arsenic Methyltransferase and Methylation of Inorganic Arsenic.,https://pubmed.ncbi.nlm.nih.gov/32971865/
+mechanism-epigen,38052388,2024,The Science of the total environment,Targeting the 'DNA methylation mark': Analysis of early epigenetic-alterations in children chronically exposed to arsenic.,https://pubmed.ncbi.nlm.nih.gov/38052388/
+MOA,16430879,2006,Chemico-biological interactions,"Free radicals, metals and antioxidants in oxidative stress-induced cancer.",https://pubmed.ncbi.nlm.nih.gov/16430879/
+MOA,12505428,2003,Toxicology letters,Oxidative stress as a possible mode of action for arsenic carcinogenesis.,https://pubmed.ncbi.nlm.nih.gov/12505428/
+MOA,20035570,2010,Chemical research in toxicology,Arsenic-induced carcinogenesis--oxidative stress as a possible mode of action and future research needs for more biologically based risk assessment.,https://pubmed.ncbi.nlm.nih.gov/20035570/
+MOA,29846715,2018,Toxicological sciences : an official jou,Arsenic-Induced Carcinogenesis: The Impact of miRNA Dysregulation.,https://pubmed.ncbi.nlm.nih.gov/29846715/
+AS3MT,25156000,2015,Environmental and molecular mutagenesis,"Genetic variation in arsenic (+3 oxidation state) methyltransferase (AS3MT), arsenic metabolism and risk of basal cell carcinoma in a European populat",https://pubmed.ncbi.nlm.nih.gov/25156000/
+AS3MT,19680750,2009,Cancer causes & control : CCC,"Polymorphisms in arsenic metabolism genes, urinary arsenic methylation profile and cancer.",https://pubmed.ncbi.nlm.nih.gov/19680750/
+AS3MT,18414634,2008,Environmental health perspectives,"Genetic variants associated with arsenic susceptibility: study of purine nucleoside phosphorylase, arsenic (+3) methyltransferase, and glutathione S-t",https://pubmed.ncbi.nlm.nih.gov/18414634/
+AS3MT,26411936,2015,Nihon eiseigaku zasshi. Japanese journal,[Relationship between Arsenic (+3 Oxidation State) Methyltransferase Genetic Polymorphisms and Methylation Capacity of Inorganic Arsenic].,https://pubmed.ncbi.nlm.nih.gov/26411936/
+biomarker-teeth,40679250,2025,Environmental science & technology,Dentin Metal and Trace Elements in Deciduous Teeth: Findings from Project Viva.,https://pubmed.ncbi.nlm.nih.gov/40679250/
+biomarker-teeth,31056909,2019,Environmental science & technology,Lead and Arsenic in Shed Deciduous Teeth of Children Living Near a Lead-Acid Battery Smelter.,https://pubmed.ncbi.nlm.nih.gov/31056909/
+biomarker-teeth,26752082,2016,Environmental research,Tracing fetal and childhood exposure to lead using isotope analysis of deciduous teeth.,https://pubmed.ncbi.nlm.nih.gov/26752082/
+biomarker-teeth,34750512,2022,Journal of exposure science & environmen,Multiple metals in children's deciduous teeth: results from a community-initiated pilot study.,https://pubmed.ncbi.nlm.nih.gov/34750512/
+biomarker-nail,37337116,2023,Current environmental health reports,A State-of-the-Science Review on Metal Biomarkers.,https://pubmed.ncbi.nlm.nih.gov/37337116/
+biomarker-nail,33075355,2021,Environmental research,Toenails as a biomarker of exposure to arsenic: A review.,https://pubmed.ncbi.nlm.nih.gov/33075355/
+biomarker-nail,16442520,2006,Environmental research,Validity of human nails as a biomarker of arsenic and selenium exposure: A review.,https://pubmed.ncbi.nlm.nih.gov/16442520/
+biomarker-nail,24896769,2014,Journal of exposure science & environmen,Infant toenails as a biomarker of in utero arsenic exposure.,https://pubmed.ncbi.nlm.nih.gov/24896769/
+biomarker-DBS,38130370,2023,EJC paediatric oncology,The neonatal blood spot metabolome in retinoblastoma.,https://pubmed.ncbi.nlm.nih.gov/38130370/
+angiosarcoma,6891179,1981,American journal of industrial medicine,Arsenic-related hepatic angiosarcoma.,https://pubmed.ncbi.nlm.nih.gov/6891179/
+angiosarcoma,22200164,2011,BMC gastroenterology,"Arsenic, vinyl chloride, viral hepatitis, and hepatic angiosarcoma: a hospital-based study and review of literature in Taiwan.",https://pubmed.ncbi.nlm.nih.gov/22200164/
+angiosarcoma,15216405,2004,Journal of the Formosan Medical Associat,Hepatic angiosarcoma presenting as hepatic rupture in a patient with long-term ingestion of arsenic.,https://pubmed.ncbi.nlm.nih.gov/15216405/
+angiosarcoma,30855812,2026,,Liver Angiosarcoma.,https://pubmed.ncbi.nlm.nih.gov/30855812/
+inutero,31174534,2019,Environmental health : a global access s,Exposure to arsenic in utero is associated with various types of DNA damage and micronuclei in newborns: a birth cohort study.,https://pubmed.ncbi.nlm.nih.gov/31174534/
+inutero,16882542,2006,Environmental health perspectives,Increased mortality from lung cancer and bronchiectasis in young adults after exposure to arsenic in utero and in early childhood.,https://pubmed.ncbi.nlm.nih.gov/16882542/
+inutero,23769261,2013,Environmental research,In utero arsenic exposure and infant infection in a United States cohort: a prospective study.,https://pubmed.ncbi.nlm.nih.gov/23769261/
+inutero,22949133,2012,Environmental health perspectives,Mortality in young adults following in utero and childhood exposure to arsenic in drinking water.,https://pubmed.ncbi.nlm.nih.gov/22949133/
+ewing-etiology,31656020,2020,Pathology oncology research : POR,Review: Ewing Sarcoma Predisposition.,https://pubmed.ncbi.nlm.nih.gov/31656020/
+ewing-etiology,39984867,2025,BMC cancer,"Bone tumors: a systematic review of prevalence, risk determinants, and survival patterns.",https://pubmed.ncbi.nlm.nih.gov/39984867/
+ewing-etiology,36768203,2023,International journal of molecular scien,Fli1 and Tissue Fibrosis in Various Diseases.,https://pubmed.ncbi.nlm.nih.gov/36768203/
+ewing-etiology,9646054,1998,Environmental health perspectives,Pesticides and childhood cancer.,https://pubmed.ncbi.nlm.nih.gov/9646054/
+ewing-pesticide,15551353,2005,International journal of cancer,Parental occupational exposures and Ewing's sarcoma.,https://pubmed.ncbi.nlm.nih.gov/15551353/
+ewing-pesticide,12020108,2002,Cancer causes & control : CCC,"Farm exposures, parental occupation, and risk of Ewing's sarcoma in Australia: a national case-control study.",https://pubmed.ncbi.nlm.nih.gov/12020108/
+ewing-pesticide,16324620,2005,"Anales de pediatria (Barcelona, Spain : ",[Risk factors for pediatric malignant bone tumors].,https://pubmed.ncbi.nlm.nih.gov/16324620/
+ewing-genomics,25186949,2014,Cancer discovery,The genomic landscape of pediatric Ewing sarcoma.,https://pubmed.ncbi.nlm.nih.gov/25186949/
+ewing-genomics,32225029,2020,Cells,Breakthrough Technologies Reshape the Ewing Sarcoma Molecular Landscape.,https://pubmed.ncbi.nlm.nih.gov/32225029/
+ewing-genomics,25010205,2014,PLoS genetics,The genomic landscape of the Ewing Sarcoma family of tumors reveals recurrent STAG2 mutation.,https://pubmed.ncbi.nlm.nih.gov/25010205/
+ewing-genomics,35079231,2021,"Contemporary oncology (Poznan, Poland)",Mutational landscape of primary and recurrent Ewing sarcoma.,https://pubmed.ncbi.nlm.nih.gov/35079231/
+cluster-method,16435334,2006,Statistics in medicine,An elliptic spatial scan statistic.,https://pubmed.ncbi.nlm.nih.gov/16435334/
+cluster-method,35772615,2022,Annals of epidemiology,A Flexible Method for Identifying Spatial Clusters of Breast Cancer Using Individual-Level Data.,https://pubmed.ncbi.nlm.nih.gov/35772615/
+cluster-method,38212533,2024,Cancer causes & control : CCC,Geographic variation of HPV-associated cancer incidence in Kentucky using spatial scan statistics.,https://pubmed.ncbi.nlm.nih.gov/38212533/
+cluster-method,35691644,2022,Spatial and spatio-temporal epidemiology,Regularized spatial and spatio-temporal cluster detection.,https://pubmed.ncbi.nlm.nih.gov/35691644/
+cluster-cdc,29362479,2018,Cell death and differentiation,Molecular mechanisms of cell death: recommendations of the Nomenclature Committee on Cell Death 2018.,https://pubmed.ncbi.nlm.nih.gov/29362479/
+cluster-cdc,39956121,2025,The Lancet. Infectious diseases,Global guideline for the diagnosis and management of candidiasis: an initiative of the ECMM in cooperation with ISHAM and ASM.,https://pubmed.ncbi.nlm.nih.gov/39956121/
+cluster-cdc,38594320,2024,Supportive care in cancer : official jou,"2020 ASCO, 2023 NCCN, 2023 MASCC/ESMO, and 2019 CCO: a comparison of antiemetic guidelines for the treatment of chemotherapy-induced nausea and vomiti",https://pubmed.ncbi.nlm.nih.gov/38594320/
+cluster-cdc,36307055,2023,Annals of oncology : official journal of,Risk reduction and screening of cancer in hereditary breast-ovarian cancer syndromes: ESMO Clinical Practice Guideline.,https://pubmed.ncbi.nlm.nih.gov/36307055/
+dipsite,22103445,2011,Environmental science & technology,"Evaluation of spatial variability of soil arsenic adjacent to a disused cattle-dip site, using model-based geostatistics.",https://pubmed.ncbi.nlm.nih.gov/22103445/
+dipsite,17407787,2007,The Science of the total environment,The characteristics of rhizosphere microbes associated with plants in arsenic-contaminated soils from cattle dip sites.,https://pubmed.ncbi.nlm.nih.gov/17407787/
+dipsite,17701088,2007,Bulletin of environmental contamination ,Arsenic status and distribution in soils at disused cattle dip in South Africa.,https://pubmed.ncbi.nlm.nih.gov/17701088/
+dipsite,12011490,2002,Toxicological sciences : an official jou,Measurement of arsenic bioavailability in soil using a primate model.,https://pubmed.ncbi.nlm.nih.gov/12011490/
+arsenic-bioavail,34706629,2022,Journal of toxicology and environmental ,Interconnected soil iron and arsenic speciation effects on arsenic bioaccessibility and bioavailability: a scoping review.,https://pubmed.ncbi.nlm.nih.gov/34706629/
+arsenic-bioavail,38493633,2024,Journal of hazardous materials,"Arsenic, cadmium, lead, antimony bioaccessibility and relative bioavailability in legacy gold mining waste.",https://pubmed.ncbi.nlm.nih.gov/38493633/
+arsenic-bioavail,21749965,2011,Environmental health perspectives,Relative bioavailability and bioaccessibility and speciation of arsenic in contaminated soils.,https://pubmed.ncbi.nlm.nih.gov/21749965/
+arsenic-bioavail,29336680,2018,Journal of toxicology and environmental ,Relating soil geochemical properties to arsenic bioaccessibility through hierarchical modeling.,https://pubmed.ncbi.nlm.nih.gov/29336680/
+arsenic-bladder,17159272,2006,International journal of environmental r,Inorganic arsenic in drinking water and bladder cancer: a meta-analysis for dose-response assessment.,https://pubmed.ncbi.nlm.nih.gov/17159272/
+arsenic-bladder,24007431,2013,Journal of environmental science and hea,Bladder cancer and arsenic through drinking water: a systematic review of epidemiologic evidence.,https://pubmed.ncbi.nlm.nih.gov/24007431/
+arsenic-bladder,18288323,2008,Environmental health perspectives,Arsenic in drinking-water and risk for cancer in Denmark.,https://pubmed.ncbi.nlm.nih.gov/18288323/
+arsenic-bladder,35570949,2022,Frontiers in public health,Arsenic in Drinking Water and Incidences of Leukemia and Lymphoma: Implication for Its Dual Effects in Carcinogenicity.,https://pubmed.ncbi.nlm.nih.gov/35570949/
+arsenic-sarcoma,28722978,2026,,Skin Cancer.,https://pubmed.ncbi.nlm.nih.gov/28722978/
+arsenic-sarcoma,9344316,1997,Seminars in oncology,The epidemiology of soft tissue sarcoma.,https://pubmed.ncbi.nlm.nih.gov/9344316/
+arsenic-sarcoma,9498903,1997,Cancer causes & control : CCC,Pesticides and cancer.,https://pubmed.ncbi.nlm.nih.gov/9498903/
+arsenic-sarcoma,39456132,2021,Report on carcinogens : carcinogen profi,15th Report on Carcinogens.,https://pubmed.ncbi.nlm.nih.gov/39456132/
+msc-origin,31016597,2019,Advances in experimental medicine and bi,Sarcoma Stem Cell Heterogeneity.,https://pubmed.ncbi.nlm.nih.gov/31016597/
+msc-origin,24294922,2014,Current stem cell research & therapy,Ewing's sarcoma cancer stem cell targeted therapy.,https://pubmed.ncbi.nlm.nih.gov/24294922/
+msc-origin,20953407,2011,Sarcoma,Mesenchymal Stem Cells and the Origin of Ewing's Sarcoma.,https://pubmed.ncbi.nlm.nih.gov/20953407/
+msc-origin,34341072,2021,Cancer research,Unraveling Ewing Sarcoma Tumorigenesis Originating from Patient-Derived Mesenchymal Stem Cells.,https://pubmed.ncbi.nlm.nih.gov/34341072/
