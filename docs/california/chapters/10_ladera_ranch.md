@@ -81,6 +81,36 @@ footprint, the resolver here is documentary (RMV ranch books, county/state ledge
 | Which arsenic signature | Not applicable, but the distinction matters for any future test: **lead-arsenate** (orchard pesticide → arsenic *with* lead) vs **arsenic trioxide** ("white arsenic," the cattle-dip poison → arsenic with little/no lead). Nearby school tests (Mission Viejo/Irvine) used the DTSC *orchard* protocol; **no California test anywhere has targeted the dip signature** |
 | Verdict | **NEVER TESTED**, "No Action Required" (10/7/2003) rests on paper review alone |
 
+### Update, 2026-07-26: two large environmental reviews now full-text searched
+Two documents previously held offline and marked "unread" have now been read in full, by programmatic
+full-text extraction against a fixed term list (arsenic in every form and spacing, cattle dip, dipping
+vat, tick eradication, quarantine, lead-arsenate, organochlorines, "EIR 555"), with every hit opened
+and read in context:
+
+- **2016 RanchPlan Affordable Housing Final PEIR** (SCH 2015051062), 1,737 pages [A2, full-text searched
+  2026-07-26]: **zero** mentions of arsenic trioxide, cattle dipping, tick eradication, or lead-arsenate.
+- **FEIR 589, Appendix I Phase I ESA** (Planning Areas 1 to 9), 218 pages [A2, full-text searched
+  2026-07-26]: zero mentions of cattle dipping, tick eradication, or lead-arsenate. Its one genuine
+  arsenic mention (page 119) is unrelated to Ladera and to dipping: groundwater above the drinking-water
+  limit at a silica-sand mine tailings site in a **different** planning area (Planning Area 5), reported
+  by a standard total-metals panel that was **not speciated for arsenic trioxide**, and outside the
+  Ladera Ranch footprint.
+
+Both documents are therefore **consistent with, and do not contradict,** the "never tested for arsenic
+trioxide" finding in the table above. Method note, for transparency: the PEIR's only "trioxide" matches
+were "sulfur trioxide," an unrelated air-quality term, counted as false positives once read; this project
+reads every hit in context rather than reporting raw keyword counts.
+
+**This narrows the gap; it does not close it.** The Ladera master entitlement EIR itself (referenced in
+county records as **EIR 555**, roughly 1997) has still **not been located** as a document this project
+holds [unlocated]. The 1995 "Ladera Planned Community Program Text" on file is a **scanned image PDF with
+no extractable text** (no OCR toolchain was available this pass, so it is a disclosed limitation, not a
+null result), and by its title is likely the zoning ordinance rather than the EIR. Case 94IC011
+(pre-digital), the TTM 17325 laboratory appendices, and the physical archives listed later remain
+**unread** [unlocated / unread]. Full method and results: `research/land_use/ARSENIC_FULLTEXT_SEARCH_2026-07-26.md`.
+A four-page plain-language summary of how this was checked is a citable download:
+[How we know: the Ladera arsenic-trioxide testing question (PDF)](research/land_use/Ladera_Arsenic_Trioxide_Testing_HowWeKnow.pdf).
+
 ## Schools: 10 verified in Ladera Ranch (roster: `research/schools/AREA_SCHOOL_ROSTERS.md`)
 **CUSD public (4):** Chaparral ES (2001) · Ladera Ranch ES (2003) · Ladera Ranch MS (2003) ·
 **Oso Grande ES (2005)**, the ONLY school with any EnviroStor entry, and that entry is the
