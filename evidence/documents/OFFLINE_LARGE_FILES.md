@@ -1,9 +1,13 @@
-# Large primary-source files held offline (not in this repository)
+# Large primary-source files excluded from the GitHub push (present on disk)
 
-The following scanned primary-source documents exceed GitHub's file-size limits and are **kept
-offline** to keep the repository clonable. They are held by the project author and available on
-request. The report does **not** depend on these raw scans — it embeds small derived JPG crops of
-the relevant pages, which are included in the repo.
+The following primary-source documents exceed GitHub's file-size limits and are **excluded from the
+git repository only** (`.gitignore`) to keep the clone size manageable — they remain present in full
+on disk at the paths below and are fully accessible for search/analysis. This is a git-push exclusion,
+not an access restriction; do not describe these as "unread" without checking. The report does not
+depend on the raw scans for its embedded figures — those are small derived JPG crops, included in the
+repo — but the full documents can and have been full-text searched directly (see
+`research/land_use/ARSENIC_FULLTEXT_SEARCH_2026-07-26.md` for the RanchPlan PEIR, searched 2026-07-26,
+1,737 pages, zero arsenic/cattle-dip hits).
 
 | File | Size | What it is | Source |
 |---|---|---|---|

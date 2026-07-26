@@ -47,10 +47,26 @@ legacy arsenic/pesticide-laden soil as respirable/ingestible dust. This ties the
 soil-residue hypothesis to a concrete exposure route and is worth a construction-timeline
 vs residency-timeline analysis.
 
+## UPDATE 2026-07-26 — full-text search of the 2016 PEIR + FEIR 589 Phase I ESA appendix
+Both documents were held on file; full-text searched this pass (see
+`ARSENIC_FULLTEXT_SEARCH_2026-07-26.md` for method and complete results). **Zero** mentions of
+arsenic trioxide, cattle dipping, tick eradication, or lead-arsenate in either document. One unrelated,
+real arsenic mention (groundwater, an industrial silica-mine tailings site in a different planning
+area, non-speciated method) does not change the conclusion. This corroborates, and does not weaken,
+the "never tested" finding for the Ladera footprint and its immediately adjacent Ranch Plan lands.
+
 ## Not resolved / evidence gates
 
-- Ladera Ranch master Program EIR (referenced as EIR 555) SCH number and soil-testing
-  appendix — not found online; records request to OC Development Services.
+- **Ladera Ranch master Program EIR** (referenced in county records as **EIR 555**, ~1997) — its SCH
+  number and any soil-testing appendix have still not been located as a document this project holds.
+  A 1995 "Ladera Planned Community Program Text" is on file but is a **scanned image PDF with no
+  extractable text** (no OCR toolchain available this pass — a disclosed, not resolved, gap), and by
+  its title is likely the zoning ordinance rather than the EIR regardless.
+- Case 94IC011 (Coto de Caza LOP case, closed 1998) — pre-digital county file; contents unknown.
+- TTM 17325 laboratory appendices (BulkFile1/2) — never confirmed whether arsenic was run alongside
+  lead in the metals suite.
 - Grading/imported-fill volumes and geotechnical appendix — PDF exceeded fetch limits.
+- Physical/non-digitized archives (Sherman Library, OC Archives, CA State Archives, Starr Ranch/
+  Audubon) — records requests drafted, not sent.
 - Whether the residential footprint itself was tested for DDT/arsenic before or during
   development — unknown; candidate for archived-soil or current-soil screening.
