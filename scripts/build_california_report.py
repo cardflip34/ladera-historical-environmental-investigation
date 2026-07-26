@@ -125,19 +125,28 @@ def dedupe_images(html):
     html=re.sub(r'<p>\s*</p>','',html)                            # drop image-only paras left empty
     return html
 
-FILEPAT=re.compile(r'`((?:research|evidence|docs|media|data)/[^`]+?\.(?:pdf|md|csv|json|geojson|txt|xlsx))`')
+FILE_EXT=r'(?:pdf|md|csv|json|geojson|txt|xlsx)'
+FILEPAT=re.compile(r'`((?:research|evidence|docs|media|data)/[^`]+?\.'+FILE_EXT+r')`')
+LINKPAT=re.compile(r'\]\(((?:research|evidence|docs|media|data)/[^)]+?\.'+FILE_EXT+r')\)')
+def _host_file(rel):
+    src=os.path.join(ROOT,rel)
+    if os.path.exists(src) and os.path.getsize(src)<40*1024*1024:
+        name=re.sub(r'[^A-Za-z0-9._-]','_',rel)
+        shutil.copyfile(src,os.path.join(FILESDIR,name))
+        return "files/"+name
+    return None
 def host_files_md(md_text):
     """For the web report: copy each referenced non-image source file into docs/california/files/
-    and turn its named path into a clickable link, so every document/dataset the report cites is
-    actually reachable on the site rather than only named. Large offline files are left as text."""
-    def rep(m):
-        rel=m.group(1); src=os.path.join(ROOT,rel)
-        if os.path.exists(src) and os.path.getsize(src)<40*1024*1024:
-            name=re.sub(r'[^A-Za-z0-9._-]','_',rel)
-            shutil.copyfile(src,os.path.join(FILESDIR,name))
-            return f'[`{rel}`](files/{name})'
-        return m.group(0)
-    return FILEPAT.sub(rep,md_text)
+    and make it a clickable link, so every document/dataset the report cites is actually reachable
+    on the site rather than only named. Handles both markdown links [text](path) and bare `path`
+    code references. Large offline files are left as text."""
+    def rep_link(m):
+        url=_host_file(m.group(1)); return f']({url})' if url else m.group(0)
+    def rep_code(m):
+        rel=m.group(1); url=_host_file(rel); return f'[`{rel}`]({url})' if url else m.group(0)
+    md_text=LINKPAT.sub(rep_link,md_text)   # [text](research/....pdf) -> hosted
+    md_text=FILEPAT.sub(rep_code,md_text)   # bare `research/....pdf`   -> hosted, path shown
+    return md_text
 
 files=sorted(glob.glob(os.path.join(CH,"[0-9]*.md")))
 chaps=[]
