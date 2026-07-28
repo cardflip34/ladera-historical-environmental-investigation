@@ -19,6 +19,10 @@ CSS="""
 .page{max-width:900px;margin:22px auto;background:var(--paper);padding:44px 54px;box-shadow:0 2px 18px rgba(20,35,58,.12);border-radius:4px}
 h1{font-family:Georgia,serif;font-size:30px;margin:.2em 0 .1em;letter-spacing:-.01em}
 .subtitle{font-family:Georgia,serif;font-style:italic;font-size:19px;color:var(--ink2);margin:0 0 16px}
+.masthead{margin:.15em 0 .1em}
+.mh-brand{display:block;font-family:"Iowan Old Style",Georgia,serif;font-style:italic;font-weight:500;color:var(--brass);font-size:clamp(17px,3vw,23px);line-height:1.15;letter-spacing:.01em;margin:0 0 4px}
+.mh-title{display:block;font-family:"Iowan Old Style",Georgia,serif;font-weight:600;color:var(--ink);font-size:clamp(27px,5.6vw,42px);line-height:1.05;letter-spacing:-.015em;text-wrap:balance;margin:0}
+.wordmark-rule{width:66px;height:3px;background:var(--brass);border-radius:2px;margin:14px 0 18px}
 h2{font-family:Georgia,serif;font-size:19px;border-bottom:2px solid var(--brass);padding-bottom:4px;margin:26px 0 8px}
 h3{font-size:15px;color:var(--accent);margin:16px 0 4px}
 p{margin:7px 0}blockquote{border-left:3px solid var(--brass);background:#f4ecd6;margin:12px 0;padding:8px 14px;font-size:13px;color:#5a4a2c;border-radius:0 6px 6px 0}
@@ -174,8 +178,8 @@ for i,(slug,title,raw) in enumerate(chaps):
 items="".join(f'<li><a href="{s}.html">{t}</a></li>' for s,t,_ in chaps)
 idx=f"""<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <title>California's Forgotten Past · The Arsenic Cattle-Dipping Era</title><style>{CSS}</style></head><body><div class="page">
-<h1>California's Forgotten Past</h1>
-<p class="subtitle">The Arsenic Cattle-Dipping Era</p>
+<h1 class="masthead"><span class="mh-brand">California's Forgotten Past</span><span class="mh-title">The Arsenic Cattle-Dipping Era</span></h1>
+<div class="wordmark-rule" aria-hidden="true"></div>
 <p>An independent, area-based investigation. Priority areas first. Each section is a self-contained page.</p>
 <blockquote>{FOOT}</blockquote>
 <h2>Contents</h2><ul class="toc">{items}</ul>
@@ -186,9 +190,9 @@ open(os.path.join(OUTD,"index.html"),"w").write(idx)
 # single print HTML (for PDF)
 allbody="".join(markdown.markdown(embed_figures(raw),extensions=["tables"]) for _,_,raw in chaps)
 titleblock=("<div style=\"text-align:center;padding:1.7in 0 2.2in\">"
-  "<div style=\"font-family:Georgia,serif;font-size:40px;color:#16233a;letter-spacing:-.01em\">California's Forgotten Past</div>"
-  "<div style=\"font-family:Georgia,serif;font-style:italic;font-size:22px;color:#48586c;margin-top:10px\">The Arsenic Cattle-Dipping Era</div>"
-  "<div style=\"width:60px;border-top:2px solid #a97e1f;margin:22px auto\"></div>"
+  "<div style=\"font-family:Georgia,serif;font-style:italic;font-size:24px;color:#a97e1f;letter-spacing:.01em\">California's Forgotten Past</div>"
+  "<div style=\"font-family:Georgia,serif;font-weight:600;font-size:46px;color:#16233a;letter-spacing:-.015em;line-height:1.05;margin-top:8px\">The Arsenic Cattle-Dipping Era</div>"
+  "<div style=\"width:72px;border-top:2px solid #a97e1f;margin:22px auto\"></div>"
   "<div style=\"font-size:13px;color:#7c8a9c\">An independent research &amp; data-organization project</div></div>")
 print_html=f"""<!doctype html><html lang="en"><head><meta charset="utf-8"><title>California's Forgotten Past · The Arsenic Cattle-Dipping Era</title>
 <style>{CSS}</style></head><body><div class="page">{titleblock}{allbody}<div class="foot">{FOOT}</div></div></body></html>"""
@@ -227,11 +231,12 @@ code{background:var(--chip);color:var(--ink)}
 .tb-actions{display:flex;align-items:center;gap:16px;flex:0 0 auto}
 .tb-link{color:var(--accent);text-decoration:none;font-size:13.5px;font-weight:700;white-space:nowrap}
 .tb-link:hover{text-decoration:underline}
-.hero{padding:8px 0 2px}
+.hero{padding:10px 0 2px}
 .eyebrow{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--brass);font-weight:700;margin:0 0 10px}
-.hero h1{font-size:clamp(28px,5.6vw,42px);line-height:1.08;margin:0 0 6px;border:0;color:var(--ink)}
-.tagline{font-family:Georgia,serif;font-style:italic;font-size:clamp(20px,3.4vw,30px);color:var(--brass);margin:0 0 12px;letter-spacing:.005em}
-.wordmark-rule{width:54px;height:3px;background:var(--brass);border-radius:2px;margin:0 0 18px}
+.hero .masthead{margin:0;border:0}
+.hero .mh-brand{font-size:clamp(19px,3.4vw,27px);margin:0 0 5px}
+.hero .mh-title{font-size:clamp(31px,6.6vw,52px);line-height:1.03}
+.wordmark-rule{width:72px;height:3px;background:var(--brass);border-radius:2px;margin:18px 0 22px}
 .hero .sub{color:var(--ink2);font-size:16.5px;max-width:62ch;margin:0 0 16px}
 /* video: 16:9 landscape (YouTube). Click-to-load facade -> loads the player only on click. */
 .videobox{position:relative;width:100%;max-width:720px;aspect-ratio:16/9;margin:8px 0 6px;border-radius:14px;
@@ -340,8 +345,10 @@ report_html=f"""<!doctype html><html lang="en"><head>
 <div class="page" id="top">
   <div class="hero">
     <p class="eyebrow">Independent research &amp; data-organization project</p>
-    <h1>California's Forgotten Past</h1>
-    <p class="tagline">The Arsenic Cattle-Dipping Era</p>
+    <h1 class="masthead">
+      <span class="mh-brand">California's Forgotten Past</span>
+      <span class="mh-title">The Arsenic Cattle-Dipping Era</span>
+    </h1>
     <div class="wordmark-rule" aria-hidden="true"></div>
     <p class="sub">{DESC}</p>
     <!-- VIDEO: 16:9 YouTube embed (click-to-load facade; loads the player only on click) -->
