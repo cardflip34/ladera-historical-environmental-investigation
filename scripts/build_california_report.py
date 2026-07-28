@@ -232,17 +232,19 @@ code{background:var(--chip);color:var(--ink)}
 .hero h1{font-size:clamp(28px,5.6vw,42px);line-height:1.08;margin:0 0 6px;border:0;color:var(--ink)}
 .tagline{font-family:Georgia,serif;font-style:italic;font-size:clamp(17px,3vw,23px);color:var(--brass);margin:0 0 14px}
 .hero .sub{color:var(--ink2);font-size:16.5px;max-width:62ch;margin:0 0 16px}
-/* video slot: swap the .videobox for the real thumbnail/embed when ready */
-.videobox{position:relative;width:100%;max-width:330px;aspect-ratio:9/16;margin:6px 0 18px;border-radius:14px;
-  border:1px solid var(--line);background:linear-gradient(150deg,var(--card),var(--paper));
-  display:flex;align-items:center;justify-content:center;overflow:hidden}
-.videobox .glow{position:absolute;inset:0;background:radial-gradient(60% 55% at 50% 42%,rgba(47,96,135,.16),transparent 70%)}
-.vb-inner{position:relative;text-align:center;padding:16px}
-.vb-play{width:66px;height:66px;border-radius:50%;background:var(--accent);display:flex;align-items:center;
-  justify-content:center;margin:0 auto 12px;box-shadow:0 6px 18px rgba(20,35,58,.28)}
-.vb-play::after{content:"";border-style:solid;border-width:11px 0 11px 19px;
+/* video: 16:9 landscape (YouTube). Click-to-load facade -> loads the player only on click. */
+.videobox{position:relative;width:100%;max-width:720px;aspect-ratio:16/9;margin:8px 0 6px;border-radius:14px;
+  border:1px solid var(--line);background:#0b0f16;overflow:hidden;cursor:pointer;display:block}
+.vb-poster{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;border:0;margin:0;display:block}
+.videobox .glow{position:absolute;inset:0;background:radial-gradient(60% 60% at 50% 50%,rgba(0,0,0,.12),rgba(0,0,0,.34))}
+.vb-play{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:76px;height:76px;border-radius:50%;
+  background:var(--accent);display:flex;align-items:center;justify-content:center;margin:0;
+  box-shadow:0 6px 22px rgba(0,0,0,.42);transition:transform .12s}
+.videobox:hover .vb-play,.videobox:focus-visible .vb-play{transform:translate(-50%,-50%) scale(1.07)}
+.vb-play::after{content:"";border-style:solid;border-width:12px 0 12px 20px;
   border-color:transparent transparent transparent #fff;margin-left:5px}
-.vb-label{color:var(--ink2);font-size:13px;font-weight:700;letter-spacing:.05em;text-transform:uppercase}
+.videobox iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.vb-cap{color:var(--ink2);font-size:13.5px;margin:0 0 16px}
 .hero-actions{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 6px}
 .hero-actions a{display:inline-flex;align-items:center;gap:7px;text-decoration:none;font-weight:600;font-size:14.5px;
   padding:10px 17px;border-radius:9px;border:1px solid var(--line);color:var(--ink);background:var(--card)}
@@ -290,6 +292,24 @@ sections=dedupe_images(sections)
 contents="".join(f'<li><a href="#{s}">{t}</a></li>' for s,t,_ in chaps)
 DESC=("An independent, hypothesis-neutral investigation into California's state-mandated arsenical "
       "cattle-tick dipping program (1907 to 1912) and the South Orange County communities built on the former ranch land.")
+VIDEO_JS="""<script>
+(function(){
+  var f=document.getElementById("ytfacade");
+  if(!f) return;
+  function load(){
+    var id=f.getAttribute("data-yt");
+    var ifr=document.createElement("iframe");
+    ifr.src="https://www.youtube-nocookie.com/embed/"+id+"?autoplay=1&rel=0&modestbranding=1";
+    ifr.title="Documentary";
+    ifr.allow="autoplay; encrypted-media; picture-in-picture; fullscreen";
+    ifr.setAttribute("allowfullscreen","");
+    f.innerHTML="";
+    f.appendChild(ifr);
+  }
+  f.addEventListener("click",load);
+  f.addEventListener("keydown",function(e){ if(e.key==="Enter"||e.key===" "){ e.preventDefault(); load(); } });
+})();
+</script>"""
 report_html=f"""<!doctype html><html lang="en"><head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <title>California's Forgotten Past: The Arsenic Cattle-Dipping Era</title>
@@ -322,16 +342,14 @@ report_html=f"""<!doctype html><html lang="en"><head>
     <h1>California's Forgotten Past</h1>
     <p class="tagline">The Arsenic Cattle-Dipping Era</p>
     <p class="sub">{DESC}</p>
-    <!-- VIDEO: 9:16 vertical (Instagram/Reel) slot. Replace this .videobox with the real
-         thumbnail or embed when ready, e.g.
-         <a href="VIDEO_URL"><img src="/path/to/thumbnail_9x16.jpg" alt="Watch the documentary"></a> -->
-    <div class="videobox" role="img" aria-label="Documentary video coming soon">
+    <!-- VIDEO: 16:9 YouTube embed (click-to-load facade; loads the player only on click) -->
+    <div class="videobox" id="ytfacade" data-yt="QDGB_R92jns" role="button" tabindex="0"
+         aria-label="Play the documentary: Ladera Ranch Investigation Leads to California's Forgotten Past">
+      <img class="vb-poster" src="https://i.ytimg.com/vi/QDGB_R92jns/maxresdefault.jpg" alt="">
       <span class="glow"></span>
-      <div class="vb-inner">
-        <div class="vb-play"></div>
-        <div class="vb-label">Documentary video coming soon</div>
-      </div>
+      <div class="vb-play"></div>
     </div>
+    <p class="vb-cap">Watch: a short documentary on the investigation, by the Stavros Group.</p>
     <div class="hero-actions">
       <a href="#contents">Jump to contents</a>
       <a href="index.html">Section-by-section view</a>
@@ -347,7 +365,9 @@ report_html=f"""<!doctype html><html lang="en"><head>
   <nav class="contents" id="contents"><h2>Contents</h2><ol>{contents}</ol></nav>
   {sections}
   <div class="foot">{FOOT}</div>
-</div></body></html>"""
+</div>
+{VIDEO_JS}
+</body></html>"""
 open(os.path.join(OUTD,"report.html"),"w").write(report_html)
 
 # sitemap.xml + robots.txt at the site root (for search engines / social crawlers)
