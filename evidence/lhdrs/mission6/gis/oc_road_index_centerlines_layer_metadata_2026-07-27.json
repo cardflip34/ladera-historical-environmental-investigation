@@ -1,0 +1,719 @@
+{
+ "currentVersion": 11.5,
+ "cimVersion": "3.5.0",
+ "id": 0,
+ "name": "Road Index Centerlines",
+ "type": "Feature Layer",
+ "parentLayer": null,
+ "defaultVisibility": true,
+ "minScale": 0,
+ "maxScale": 0,
+ "canScaleSymbols": false,
+ "geometryType": "esriGeometryPolyline",
+ "description": "",
+ "copyrightText": "",
+ "editFieldsInfo": null,
+ "ownershipBasedAccessControlForFeatures": null,
+ "syncCanReturnChanges": false,
+ "relationships": [],
+ "isDataVersioned": false,
+ "isDataArchived": false,
+ "infoInEstimates": [
+  "extent",
+  "count"
+ ],
+ "isDataBranchVersioned": false,
+ "isDataReplicaTracked": false,
+ "isCoGoEnabled": false,
+ "modelName": "GP_271666137",
+ "supportsRollbackOnFailureParameter": true,
+ "archivingInfo": {
+  "supportsQueryWithHistoricMoment": false,
+  "startArchivingMoment": -1
+ },
+ "supportsStatistics": true,
+ "supportsExceedsLimitStatistics": true,
+ "supportsAdvancedQueries": true,
+ "supportsValidateSQL": true,
+ "supportsCoordinatesQuantization": true,
+ "supportsQuantizationEditMode": true,
+ "supportsCalculate": true,
+ "supportsASyncCalculate": true,
+ "supportsDatumTransformation": true,
+ "advancedQueryCapabilities": {
+  "supportsPagination": true,
+  "supportsQueryWithDistance": true,
+  "supportsReturningQueryExtent": true,
+  "supportsStatistics": true,
+  "supportsPercentileStatistics": true,
+  "supportsHavingClause": true,
+  "supportsOrderBy": true,
+  "supportsDistinct": true,
+  "supportsCountDistinct": true,
+  "supportsAdvancedQueryRelated": true,
+  "supportsQueryRelatedPagination": true,
+  "supportsCurrentUserQueries": true,
+  "supportsFullTextSearch": true,
+  "fullTextSearchCapabilities": {
+   "supportsSearchOperator": true,
+   "supportsOperator": false,
+   "supportsSqlExpressionInFullText": true
+  },
+  "fullTextSearchableFields": [],
+  "supportsQueryWithResultType": true,
+  "supportsReturningGeometryCentroid": false,
+  "supportsReturningGeometryEnvelope": true,
+  "supportsSqlExpression": true,
+  "supportsQueryWithDatumTransformation": true,
+  "supportsLod": false,
+  "supportsQueryWithLodSR": false,
+  "supportsQueryAnalytic": true,
+  "supportsTrueCurve": true,
+  "supportedCurveTypes": [
+   "esriGeometryCircularArc",
+   "esriGeometryEllipticArc",
+   "esriGeometryBezier3Curve"
+  ],
+  "supportsQueryWithCacheHint": false
+ },
+ "advancedQueryAnalyticCapabilities": {
+  "supportsLinearRegression": true,
+  "supportsAsync": true,
+  "supportsPercentileAnalytic": true
+ },
+ "advancedEditingCapabilities": {
+  "supportedSqlFormatsInCalculate": [
+   "standard"
+  ],
+  "supportsAsyncApplyEdits": true,
+  "supportsApplyEditsbyUploadID": true,
+  "supportedApplyEditsUploadIDFormats": "JSON,PBF"
+ },
+ "hasGeometryProperties": true,
+ "geometryProperties": {
+  "shapeLengthFieldName": "Shape__Length",
+  "units": "esriFeet"
+ },
+ "hasMetadata": false,
+ "extent": {
+  "xmin": 6001792.005479723,
+  "ymin": 2112074.4995877296,
+  "xmax": 6178835.514909059,
+  "ymax": 2292241.375473723,
+  "spatialReference": {
+   "wkid": 102646,
+   "latestWkid": 2230,
+   "xyTolerance": 0.003280833333333333,
+   "zTolerance": 0.001,
+   "mTolerance": 0.001,
+   "falseX": -118608900,
+   "falseY": -91259500,
+   "xyUnits": 3.597970630767777E7,
+   "falseZ": -100000,
+   "zUnits": 10000,
+   "falseM": -100000,
+   "mUnits": 10000
+  }
+ },
+ "spatialReference": {
+  "wkid": 102646,
+  "latestWkid": 2230,
+  "xyTolerance": 0.003280833333333333,
+  "zTolerance": 0.001,
+  "mTolerance": 0.001,
+  "falseX": -118608900,
+  "falseY": -91259500,
+  "xyUnits": 3.597970630767777E7,
+  "falseZ": -100000,
+  "zUnits": 10000,
+  "falseM": -100000,
+  "mUnits": 10000
+ },
+ "sourceSpatialReference": {
+  "wkid": 102646,
+  "latestWkid": 2230,
+  "xyTolerance": 0.003280833333333333,
+  "zTolerance": 0.001,
+  "mTolerance": 0.001,
+  "falseX": -118608900,
+  "falseY": -91259500,
+  "xyUnits": 3048.0060960121928,
+  "falseZ": 0,
+  "zUnits": 1,
+  "falseM": 0,
+  "mUnits": 1
+ },
+ "drawingInfo": {
+  "renderer": {
+   "type": "simple",
+   "symbol": {
+    "type": "esriSLS",
+    "style": "esriSLSSolid",
+    "color": [
+     0,
+     0,
+     0,
+     255
+    ],
+    "width": 1
+   }
+  },
+  "scaleSymbols": true,
+  "transparency": 0,
+  "labelingInfo": null
+ },
+ "hasM": false,
+ "hasZ": false,
+ "allowGeometryUpdates": true,
+ "allowTrueCurvesUpdates": false,
+ "onlyAllowTrueCurveUpdatesByTrueCurveClients": false,
+ "hasAttachments": false,
+ "supportsApplyEditsWithGlobalIds": false,
+ "htmlPopupType": "esriServerHTMLPopupTypeAsHTMLText",
+ "objectIdField": "OBJECTID",
+ "globalIdField": "",
+ "displayField": "ROADNAME",
+ "typeIdField": "",
+ "subtypeField": "",
+ "fields": [
+  {
+   "name": "BASE_THIK",
+   "type": "esriFieldTypeString",
+   "alias": "BASE THICKNESS",
+   "domain": null,
+   "editable": true,
+   "nullable": true,
+   "length": 255,
+   "defaultValue": null,
+   "modelName": "BASE_THIK"
+  },
+  {
+   "name": "BASE_TYPE",
+   "type": "esriFieldTypeString",
+   "alias": "BASE TYPE",
+   "domain": null,
+   "editable": true,
+   "nullable": true,
+   "length": 255,
+   "defaultValue": null,
+   "modelName": "BASE_TYPE"
+  },
+  {
+   "name": "BIKELANETYPE",
+   "type": "esriFieldTypeString",
+   "alias": "BIKE LANE TYPE",
+   "domain": null,
+   "editable": true,
+   "nullable": true,
+   "length": 255,
+   "defaultValue": null,
+   "modelName": "BIKELANETYPE"
+  },
+  {
+   "name": "DIST",
+   "type": "esriFieldTypeString",
+   "alias": "DIST",
+   "domain": null,
+   "editable": true,
+   "nullable": true,
+   "length": 255,
+   "defaultValue": null,
+   "modelName": "DIST"
+  },
+  {
+   "name": "SHLTYPE",
+   "type": "esriFieldTypeString",
+   "alias": "EDGE TYPE",
+   "domain": null,
+   "editable": true,
+   "nullable": true,
+   "length": 255,
+   "defaultValue": null,
+   "modelName": "SHLTYPE"
+  },
+  {
+   "name": "FEDCLS",
+   "type": "esriFieldTypeString",
+   "alias": "FEDERAL",
+   "domain": null,
+   "editable": true,
+   "nullable": true,
+   "length": 255,
+   "defaultValue": null,
+   "modelName": "FEDCLS"
+  },
+  {
+   "name": "Inactive",
+   "type": "esriFieldTypeString",
+   "alias": "Inactive",
+   "domain": null,
+   "editable": true,
+   "nullable": true,
+   "length": 3,
+   "defaultValue": null,
+   "modelName": "Inactive"
+  },
+  {
+   "name": "KEYNUM",
+   "type": "esriFieldTypeString",
+   "alias": "KEYNUM",
+   "domain": null,
+   "editable": true,
+   "nullable": true,
+   "length": 255,
+   "defaultValue": null,
+   "modelName": "KEYNUM"
+  },
+  {
+   "name": "LANES",
+   "type": "esriFieldTypeString",
+   "alias": "LANES",
+   "domain": null,
+   "editable": true,
+   "nullable": true,
+   "length": 255,
+   "defaultValue": null,
+   "modelName": "LANES"
+  },
+  {
+   "name": "YEARMAIN",
+   "type": "esriFieldTypeDate",
+   "alias": "LAST MAINTAINED",
+   "domain": null,
+   "editable": true,
+   "nullable": true,
+   "length": 8,
+   "defaultValue": null,
+   "modelName": "YEARMAIN"
+  },
+  {
+   "name": "LIMITS",
+   "type": "esriFieldTypeString",
+   "alias": "LIMITS",
+   "domain": null,
+   "editable": true,
+   "nullable": true,
+   "length": 255,
+   "defaultValue": null,
+   "modelName": "LIMITS"
+  },
+  {
+   "name": "LASTTYPEMNT",
+   "type": "esriFieldTypeString",
+   "alias": "MAINTENANCE TYPE",
+   "domain": null,
+   "editable": true,
+   "nullable": true,
+   "length": 255,
+   "defaultValue": null,
+   "modelName": "LASTTYPEMNT"
+  },
+  {
+   "name": "MEDIANTYPE",
+   "type": "esriFieldTypeString",
+   "alias": "MEDIAN TYPE",
+   "domain": null,
+   "editable": true,
+   "nullable": true,
+   "length": 255,
+   "defaultValue": null,
+   "modelName": "MEDIANTYPE"
+  },
+  {
+   "name": "GIS_MILES",
+   "type": "esriFieldTypeSingle",
+   "alias": "MILES",
+   "domain": null,
+   "editable": true,
+   "nullable": true,
+   "defaultValue": null,
+   "modelName": "GIS_MILES"
+  },
+  {
+   "name": "MPAHCLS",
+   "type": "esriFieldTypeString",
+   "alias": "MPAH",
+   "domain": null,
+   "editable": true,
+   "nullable": true,
+   "length": 255,
+   "defaultValue": null,
+   "modelName": "MPAHCLS"
+  },
+  {
+   "name": "OBJECTID",
+   "type": "esriFieldTypeOID",
+   "alias": "OBJECTID",
+   "domain": null,
+   "editable": false,
+   "nullable": false,
+   "defaultValue": null,
+   "modelName": "OBJECTID"
+  },
+  {
+   "name": "PAVE_THIK",
+   "type": "esriFieldTypeDouble",
+   "alias": "PAVEMENT THICKNESS",
+   "domain": null,
+   "editable": true,
+   "nullable": true,
+   "defaultValue": null,
+   "modelName": "PAVE_THIK"
+  },
+  {
+   "name": "PAVE_TYPE",
+   "type": "esriFieldTypeString",
+   "alias": "PAVEMENT TYPE",
+   "domain": null,
+   "editable": true,
+   "nullable": true,
+   "length": 255,
+   "defaultValue": null,
+   "modelName": "PAVE_TYPE"
+  },
+  {
+   "name": "PAVE_W",
+   "type": "esriFieldTypeString",
+   "alias": "PAVEMENT WIDTH(ft)",
+   "domain": null,
+   "editable": true,
+   "nullable": true,
+   "length": 255,
+   "defaultValue": null,
+   "modelName": "PAVE_W"
+  },
+  {
+   "name": "PAVE_WFT",
+   "type": "esriFieldTypeDouble",
+   "alias": "RIGHT OF WAY WIDTH(ft)",
+   "domain": null,
+   "editable": true,
+   "nullable": true,
+   "defaultValue": null,
+   "modelName": "PAVE_WFT"
+  },
+  {
+   "name": "ROADNAME",
+   "type": "esriFieldTypeString",
+   "alias": "ROADNAME",
+   "domain": null,
+   "editable": true,
+   "nullable": true,
+   "length": 255,
+   "defaultValue": null,
+   "modelName": "ROADNAME"
+  },
+  {
+   "name": "SERVICE_AREA",
+   "type": "esriFieldTypeString",
+   "alias": "SERVICE AREA",
+   "domain": null,
+   "editable": true,
+   "nullable": true,
+   "length": 255,
+   "defaultValue": null,
+   "modelName": "SERVICE_AREA"
+  },
+  {
+   "name": "TRACTNO",
+   "type": "esriFieldTypeString",
+   "alias": "SOURCE",
+   "domain": null,
+   "editable": true,
+   "nullable": true,
+   "length": 255,
+   "defaultValue": null,
+   "modelName": "TRACTNO"
+  },
+  {
+   "name": "STATECLS",
+   "type": "esriFieldTypeString",
+   "alias": "STATE",
+   "domain": null,
+   "editable": true,
+   "nullable": true,
+   "length": 255,
+   "defaultValue": null,
+   "modelName": "STATECLS"
+  },
+  {
+   "name": "STATUS",
+   "type": "esriFieldTypeString",
+   "alias": "STATUS",
+   "domain": null,
+   "editable": true,
+   "nullable": true,
+   "length": 255,
+   "defaultValue": null,
+   "modelName": "STATUS"
+  },
+  {
+   "name": "THMSCOR",
+   "type": "esriFieldTypeString",
+   "alias": "THMSCOR",
+   "domain": null,
+   "editable": true,
+   "nullable": true,
+   "length": 255,
+   "defaultValue": null,
+   "modelName": "THMSCOR"
+  },
+  {
+   "name": "THMSPGE",
+   "type": "esriFieldTypeString",
+   "alias": "THMSPGE",
+   "domain": null,
+   "editable": true,
+   "nullable": true,
+   "length": 255,
+   "defaultValue": null,
+   "modelName": "THMSPGE"
+  },
+  {
+   "name": "TRACT_ACCEPT_DATE",
+   "type": "esriFieldTypeDate",
+   "alias": "TRACT ACCEPTANCE DATE",
+   "domain": null,
+   "editable": true,
+   "nullable": true,
+   "length": 8,
+   "defaultValue": null,
+   "modelName": "TRACT_ACCEPT_DATE"
+  },
+  {
+   "name": "Property_ID",
+   "type": "esriFieldTypeString",
+   "alias": "AIM Property ID",
+   "domain": null,
+   "editable": true,
+   "nullable": true,
+   "length": 50,
+   "defaultValue": null,
+   "modelName": "Property_ID"
+  },
+  {
+   "name": "Current_OM_Inspector",
+   "type": "esriFieldTypeString",
+   "alias": "Current OM Inspector",
+   "domain": null,
+   "editable": true,
+   "nullable": true,
+   "length": 100,
+   "defaultValue": null,
+   "modelName": "Current_OM_Inspector"
+  },
+  {
+   "name": "Day_Swept",
+   "type": "esriFieldTypeString",
+   "alias": "Day Swept",
+   "domain": null,
+   "editable": true,
+   "nullable": true,
+   "length": 50,
+   "defaultValue": null,
+   "modelName": "Day_Swept"
+  },
+  {
+   "name": "Time_Swept",
+   "type": "esriFieldTypeString",
+   "alias": "Time Swept",
+   "domain": null,
+   "editable": true,
+   "nullable": true,
+   "length": 50,
+   "defaultValue": null,
+   "modelName": "Time_Swept"
+  },
+  {
+   "name": "Road_Closed",
+   "type": "esriFieldTypeString",
+   "alias": "Road Closed",
+   "domain": {
+    "type": "codedValue",
+    "name": "YesNo",
+    "description": "Yes or No",
+    "codedValues": [
+     {
+      "name": "No",
+      "code": "0"
+     },
+     {
+      "name": "Yes",
+      "code": "1"
+     }
+    ],
+    "mergePolicy": "esriMPTDefaultValue",
+    "splitPolicy": "esriSPTDefaultValue"
+   },
+   "editable": true,
+   "nullable": true,
+   "length": 5,
+   "defaultValue": null,
+   "modelName": "Road_Closed"
+  },
+  {
+   "name": "Charge_Number",
+   "type": "esriFieldTypeString",
+   "alias": "Charge Number",
+   "domain": null,
+   "editable": true,
+   "nullable": true,
+   "length": 25,
+   "defaultValue": null,
+   "modelName": "Charge_Number"
+  },
+  {
+   "name": "STREETLIGHT_INSEPCT_STATUS",
+   "type": "esriFieldTypeString",
+   "alias": "Streetlight Inspect Status",
+   "domain": {
+    "type": "codedValue",
+    "name": "StreetlightInspectionStatus",
+    "description": "",
+    "codedValues": [
+     {
+      "name": "Complete",
+      "code": "Complete"
+     },
+     {
+      "name": "Incomplete",
+      "code": "Incomplete"
+     }
+    ],
+    "mergePolicy": "esriMPTDefaultValue",
+    "splitPolicy": "esriSPTDefaultValue"
+   },
+   "editable": true,
+   "nullable": true,
+   "length": 10,
+   "defaultValue": null,
+   "modelName": "STREETLIGHT_INSEPCT_STATUS"
+  },
+  {
+   "name": "SECONDARY_ISLAND_INFO",
+   "type": "esriFieldTypeString",
+   "alias": "SECONDARY ISLAND INFO",
+   "domain": null,
+   "editable": true,
+   "nullable": true,
+   "length": 50,
+   "defaultValue": null,
+   "modelName": "SECONDARY_ISLAND_INFO"
+  },
+  {
+   "name": "LAFCO_ISLAND_NUMBER",
+   "type": "esriFieldTypeString",
+   "alias": "LAFCO ISLAND NUMBER",
+   "domain": null,
+   "editable": true,
+   "nullable": true,
+   "length": 50,
+   "defaultValue": null,
+   "modelName": "LAFCO_ISLAND_NUMBER"
+  }
+ ],
+ "geometryField": {
+  "name": "SHAPE",
+  "type": "esriFieldTypeGeometry",
+  "alias": "SHAPE",
+  "domain": null,
+  "editable": true,
+  "nullable": true,
+  "defaultValue": null,
+  "modelName": "SHAPE"
+ },
+ "indexes": [
+  {
+   "name": "R1264_pk",
+   "isAscending": true,
+   "isUnique": true,
+   "description": "",
+   "fields": "OBJECTID"
+  },
+  {
+   "name": "S1139_idx",
+   "isAscending": true,
+   "isUnique": true,
+   "description": "",
+   "fields": "SHAPE"
+  }
+ ],
+ "datesInUnknownTimezone": false,
+ "dateFieldsTimeReference": {
+  "timeZone": "UTC",
+  "timeZoneIANA": "Etc/UTC",
+  "respectsDaylightSaving": false
+ },
+ "preferredTimeReference": null,
+ "types": [],
+ "templates": [
+  {
+   "name": "Road Index Centerlines",
+   "description": "",
+   "prototype": {
+    "attributes": {
+     "SECONDARY_ISLAND_INFO": null,
+     "BASE_THIK": null,
+     "BASE_TYPE": null,
+     "BIKELANETYPE": null,
+     "DIST": null,
+     "SHLTYPE": null,
+     "FEDCLS": null,
+     "Inactive": null,
+     "KEYNUM": null,
+     "LANES": null,
+     "YEARMAIN": null,
+     "LIMITS": null,
+     "LASTTYPEMNT": null,
+     "MEDIANTYPE": null,
+     "GIS_MILES": null,
+     "MPAHCLS": null,
+     "LAFCO_ISLAND_NUMBER": null,
+     "PAVE_THIK": null,
+     "PAVE_TYPE": null,
+     "PAVE_W": null,
+     "PAVE_WFT": null,
+     "ROADNAME": null,
+     "SERVICE_AREA": null,
+     "TRACTNO": null,
+     "STATECLS": null,
+     "STATUS": null,
+     "THMSCOR": null,
+     "THMSPGE": null,
+     "TRACT_ACCEPT_DATE": null,
+     "Property_ID": null,
+     "Current_OM_Inspector": null,
+     "Day_Swept": null,
+     "Time_Swept": null,
+     "Road_Closed": null,
+     "Charge_Number": null,
+     "STREETLIGHT_INSEPCT_STATUS": null
+    }
+   },
+   "drawingTool": "esriFeatureEditToolLine"
+  }
+ ],
+ "maxRecordCount": 2000,
+ "supportedQueryFormats": "JSON, geoJSON, PBF",
+ "supportedExportFormats": "sqlite,filegdb,shapefile,csv,geojson",
+ "capabilities": "Query",
+ "useStandardizedQueries": true,
+ "bigIntegerRestrictedTo53Bits": true,
+ "supportedSpatialRelationships": [
+  "esriSpatialRelIntersects",
+  "esriSpatialRelContains",
+  "esriSpatialRelCrosses",
+  "esriSpatialRelEnvelopeIntersects",
+  "esriSpatialRelIndexIntersects",
+  "esriSpatialRelOverlaps",
+  "esriSpatialRelTouches",
+  "esriSpatialRelWithin",
+  "esriSpatialRelRelation"
+ ],
+ "supportsAppend": true,
+ "supportedAppendFormats": "FILEGDB,PBF",
+ "standardMaxRecordCount": 8000,
+ "tileMaxRecordCount": 4000,
+ "standardMaxRecordCountNoGeometry": 32000,
+ "maxRecordCountFactor": 1
+}

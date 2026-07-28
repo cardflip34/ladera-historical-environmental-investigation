@@ -1,0 +1,281 @@
+{
+  "manifest_id": "LHDRS-M6-STAGING-2026-07-27",
+  "mission": 6,
+  "retrieved_at": "2026-07-27",
+  "status": "temporary_staging_pending_repository_access",
+  "submission_status": "no_external_requests_submitted",
+  "proximity_gate": "blocked",
+  "items": [
+    {
+      "path": "../sources/lhdrs_road_index_2024.pdf",
+      "sha256": "7f26bd50de1e4ab31b647a0c8cb8cd14c027f9e2980de34ba87ebf73b516ac48",
+      "bytes": 1206000,
+      "media_type": "application/pdf",
+      "source_url": "https://cams.ocgov.com/Web_Publisher_sam/Agenda05_21_2024_files/images/O01424-000282A.PDF",
+      "source_owner": "County of Orange / OC Public Works",
+      "source_type": "official_board_attachment",
+      "role": "board_certified_road_index_snapshot",
+      "notes": "Attachment E to the May 21, 2024 Board agenda. Preserve as the dated certification snapshot and cross-check against the live FeatureServer."
+    },
+    {
+      "path": "../sources/oc_road_index_ladera_2026-07-27.geojson",
+      "sha256": "595d51eb909fc8096e01fc5e1ce1b0b4785a2e7973f8ac269f876e689153db59",
+      "bytes": 474879,
+      "media_type": "application/geo+json",
+      "source_url": "https://ocgis.com/arcpub/rest/services/Map_Layers/Road_Index_Centerlines/FeatureServer/0/query?where=SERVICE_AREA%20LIKE%20%27%25LADERA%25%27&outFields=*&returnGeometry=true&outSR=4326&orderByFields=TRACTNO%2CTRACT_ACCEPT_DATE%2CROADNAME&f=geojson",
+      "source_owner": "Orange County Survey / OC Public Works",
+      "source_type": "official_live_feature_service",
+      "role": "georeferenced_road_segment_acceptance_evidence",
+      "notes": "288 features: 286 tract-linked road segments across 76 tract sources plus two non-tract arterial records. Every feature has a tract acceptance date. These are road-segment acceptance facts, not certificates of occupancy or whole-tract completion dates."
+    },
+    {
+      "path": "../sources/oc_road_index_centerlines_layer_metadata_2026-07-27.json",
+      "sha256": "0e659968ee1570bafeeaef383953f909ff63f3b51ebb88e95e080ba02535992f",
+      "bytes": 16037,
+      "media_type": "application/json",
+      "source_url": "https://ocgis.com/arcpub/rest/services/Map_Layers/Road_Index_Centerlines/FeatureServer/0?f=pjson",
+      "source_owner": "Orange County Survey / OC Public Works",
+      "source_type": "official_service_metadata",
+      "role": "road_index_schema_and_provenance"
+    },
+    {
+      "path": "../sources/oc_road_index_tr17588_live_2026-07-27.json",
+      "sha256": "a69ece65302e3aa22ea3afa1becb60c20b2bcd8fe65f08802dcf30f449da13ac",
+      "bytes": 7335,
+      "media_type": "application/json",
+      "source_url": "https://ocgis.com/arcpub/rest/services/Map_Layers/Road_Index_Centerlines/FeatureServer/0/query?where=TRACTNO%20LIKE%20%27%2517588%25%27&outFields=*&returnGeometry=true&outSR=4326&f=pjson",
+      "source_owner": "Orange County Survey / OC Public Works",
+      "source_type": "official_live_feature_service",
+      "role": "source_version_discrepancy_evidence",
+      "notes": "The live service classifies Ambito Street / TR 17588 as Rancho Mission Viejo. The 2024 Board PDF labels the segment Ladera Ranch. Exclude from Ladera counts unless the project tract or AOI crosswalk independently includes it; preserve the disagreement."
+    },
+    {
+      "path": "../sources/oc_historical_aerial_ladera_1995.tif",
+      "sha256": "f1bead5842e3bc1d63f6d2681c4bb8319af0a43f04f6ce669b1c5d66f15ffb63",
+      "bytes": 31733520,
+      "media_type": "image/tiff; application=geotiff",
+      "source_url": "https://www.ocgis.com/arcpub/rest/services/Historic_Imagery/Historic_Imagery/ImageServer/",
+      "source_owner": "Orange County Survey",
+      "source_type": "official_image_service_export",
+      "role": "georeferenced_predevelopment_baseline",
+      "object_id": 4,
+      "catalog_name": "Antonio Parkway 1995",
+      "date_current": 1995,
+      "date_on_map": 1994,
+      "export_bbox_wgs84": [
+        -117.67,
+        33.52,
+        -117.61,
+        33.58
+      ],
+      "dimensions": [
+        5000,
+        5000
+      ],
+      "notes": "RGBA GeoTIFF in EPSG:4326. Do not infer an exact image-capture date from the catalog year fields."
+    },
+    {
+      "path": "../sources/oc_historical_aerial_ladera_1998.tif",
+      "sha256": "0b785a9da2c9e1da9e055249d137e80e0cca8b79a126461076b7578853a34c0e",
+      "bytes": 57816848,
+      "media_type": "image/tiff; application=geotiff",
+      "source_url": "https://www.ocgis.com/arcpub/rest/services/Historic_Imagery/Historic_Imagery/ImageServer/",
+      "source_owner": "Orange County Survey",
+      "source_type": "official_image_service_export",
+      "role": "georeferenced_predevelopment_baseline",
+      "object_id": 33,
+      "catalog_name": "O'Neil Regional Park (June) 1998",
+      "date_current": 1998,
+      "date_on_map": 1997,
+      "export_bbox_wgs84": [
+        -117.67,
+        33.52,
+        -117.61,
+        33.58
+      ],
+      "dimensions": [
+        5000,
+        5000
+      ],
+      "notes": "RGBA GeoTIFF in EPSG:4326. The source footprint covers only part of the requested bounding box; transparency must be honored."
+    },
+    {
+      "path": "../sources/ladera_planned_community_alternative_development_standards_v4.pdf",
+      "sha256": "b0fcbcdc7896d14d0c680290120591e82e0c24ad9382527add5e4f1d7b48d2c1",
+      "bytes": 6399561,
+      "media_type": "application/pdf",
+      "source_url": "https://ocds.ocpublicworks.com/sites/ocpwocds/files/import/data/files/9270.pdf",
+      "source_owner": "County of Orange / OC Development Services",
+      "source_type": "official_planning_record",
+      "role": "planned_community_approval_chronology",
+      "notes": "Version 4 incorporates original and supplemental approvals from March 1998 through October 2002. Scanned document; visually verified."
+    },
+    {
+      "path": "../sources/oc_board_agenda_1999-05-04.html",
+      "sha256": "9132e40eafe14214baaab1f11854189c8a128d1e583a4a7f5a0e09c3bba893bd",
+      "bytes": 38811,
+      "media_type": "text/html",
+      "source_url": "https://bos.ocgov.com/legacycob/opinion/agenda/agenda.htm",
+      "source_owner": "Orange County Board of Supervisors",
+      "source_type": "official_board_agenda",
+      "role": "early_tract_and_infrastructure_record_identifiers",
+      "notes": "May 4, 1999 agenda item 20 identifies Tract 15626 and construction agreement S299-2612. Item 24 records Antonio Parkway Phase IV completion on March 26, 1999. Items 25 and 28 identify SDG&E agreements D98-027, D97-038, and D97-053."
+    },
+    {
+      "path": "../sources/cusd_2022_sarc_chaparral_elementary.pdf",
+      "sha256": "ef76f10afdc4803d0456f263638b46d3013b151ff098b16aa105e220162e9b83",
+      "bytes": 723075,
+      "media_type": "application/pdf",
+      "source_url": "https://www.capousd.org/documents/Schools/SARCS/Elementary/2022-SARC-Chaparral-Elementary-School.pdf",
+      "source_owner": "Capistrano Unified School District",
+      "source_type": "official_school_accountability_report",
+      "role": "school_opening_chronology",
+      "notes": "Page 2 states that Ladera Ranch became home to Chaparral Elementary as of September 2001."
+    },
+    {
+      "path": "../sources/cusd_2022_sarc_ladera_ranch_middle.pdf",
+      "sha256": "0e91c02f9cec22470a6ebf0c482f5d5b4f589ad99b744d71af88f32a5d77d160",
+      "bytes": 678719,
+      "media_type": "application/pdf",
+      "source_url": "https://www.capousd.org/documents/Schools/SARCS/Middle/2022-SARC-Ladera-Ranch-Middle-School.pdf",
+      "source_owner": "Capistrano Unified School District",
+      "source_type": "official_school_accountability_report",
+      "role": "school_and_library_opening_chronology",
+      "notes": "Page 2 states that Ladera Ranch School opened August 27, 2003 and split into elementary and middle schools in 2004; it also describes the library partnership."
+    },
+    {
+      "path": "../sources/cusd_oso_grande_kindergarten_roundup_2022-2023.pdf",
+      "sha256": "ea8493809293845dcb3c40f49043cb56a2657bc735936cd46d9a43f0d04147eb",
+      "bytes": 1730378,
+      "media_type": "application/pdf",
+      "source_url": "https://osogrizzlies.capousd.org/documents/School-Info/Registration-Information/Kindergarten-Roundup-2022-2023-rev.pdf",
+      "source_owner": "Capistrano Unified School District / Oso Grande Elementary",
+      "source_type": "official_school_publication",
+      "role": "school_opening_chronology",
+      "notes": "Page 4 states that Oso Grande opened in 2005 with 305 students."
+    },
+    {
+      "path": "../sources/cusd_tesoro_general_2026-07-27.html",
+      "sha256": "cab8efbdc9f8614b0ef033b08ce2a38da348055cb77c3e028e411c70253bd86f",
+      "bytes": 77777,
+      "media_type": "text/html",
+      "source_url": "https://tesoro.capousd.org/General/",
+      "source_owner": "Capistrano Unified School District / Tesoro High School",
+      "source_type": "official_school_webpage",
+      "role": "school_opening_chronology",
+      "notes": "States that Tesoro opened in fall 2001."
+    },
+    {
+      "path": "../sources/cusd_ladera_ranch_elementary_about_2026-07-27.html",
+      "sha256": "f0733439d413d3a5eee3e57e22b70ae0bab6c6036f03f14bc75c83f6358b86bf",
+      "bytes": 54973,
+      "media_type": "text/html",
+      "source_url": "https://lres.capousd.org/School-Info/About-Us/index.html",
+      "source_owner": "Capistrano Unified School District / Ladera Ranch Elementary",
+      "source_type": "official_school_webpage",
+      "role": "school_opening_chronology",
+      "notes": "States that Ladera Ranch Elementary opened August 27, 2003."
+    },
+    {
+      "path": "../sources/cusd_board_policy_5116_school_attendance_boundaries.pdf",
+      "sha256": "7c9475219f1a7dee18398b20d0458a34126b2b24bbf692a4398e129ab84bb4f1",
+      "bytes": 43879,
+      "media_type": "application/pdf",
+      "source_url": "https://www.capousd.org/documents/Board/Board-Policies/Article-5-Students/4398085411636825825.pdf",
+      "source_owner": "Capistrano Unified School District",
+      "source_type": "official_board_policy",
+      "role": "boundary_record_request_authority",
+      "notes": "Board Policy 5116 establishes Board responsibility for attendance boundaries. Historical maps and supporting Board records remain a manual GovQA acquisition target."
+    },
+    {
+      "path": "../sources/smwd_history_2026-07-27.html",
+      "sha256": "31f930416e2be5221799ac8856c1cc3229e529121c46820a0c69540ae78bf4cc",
+      "bytes": 108488,
+      "media_type": "text/html",
+      "source_url": "https://www.smwd.com/244/History",
+      "source_owner": "Santa Margarita Water District",
+      "source_type": "official_agency_history",
+      "role": "utility_chronology",
+      "notes": "Records completion of the Chiquita Water Reclamation Plant expansion in 2001 and construction beginning in 2005 on two subterranean reservoirs intended to supply Ladera Ranch."
+    },
+    {
+      "path": "../sources/smwd_public_records_policy.pdf",
+      "sha256": "24f69e85dcbbae6d527f38f7f9278e11c0f0867c9ff621a4c0f14b35163cd6f1",
+      "bytes": 352121,
+      "media_type": "application/pdf",
+      "source_url": "https://www.smwd.com/DocumentCenter/View/4854/5j-Public-Record-Policy",
+      "source_owner": "Santa Margarita Water District",
+      "source_type": "official_records_policy",
+      "role": "utility_records_request_authority"
+    },
+    {
+      "path": "../sources/laderalife_explore_ladera_ranch_2026-07-27.html",
+      "sha256": "2c2bfac90432cfb585898806f0d9b13cf8fc2bf1da1e3b54d662183df9bc4fa7",
+      "bytes": 87700,
+      "media_type": "text/html",
+      "source_url": "https://laderalife.com/about/explore-ladera-ranch",
+      "source_owner": "Ladera Ranch Maintenance Corporation / LaderaLife",
+      "source_type": "private_hoa_self_published_timeline",
+      "role": "facility_commercial_sales_and_custom_lot_chronology",
+      "notes": "Secondary evidence only. Provides month-level 1999-2010 milestones, including facility and commercial openings and the April 2007 statement that Ladera sold out except for custom lots. Request underlying minutes and turnover records before treating it as primary evidence."
+    },
+    {
+      "path": "../sources/larmac_bylaws_with_amendments.pdf",
+      "sha256": "e03329d9dd2fb00ba14ee2515f83988e0269defedbd8ea871946e986ae796f41",
+      "bytes": 228747,
+      "media_type": "application/pdf",
+      "source_url": "https://laderalife.com/forms/bylaws-with-amendments-",
+      "source_owner": "Ladera Ranch Maintenance Corporation",
+      "source_type": "private_hoa_governing_document",
+      "role": "member_inspection_request_authority",
+      "notes": "Section 8.5 makes specified records and meeting minutes available to a member or duly appointed representative for a membership-related purpose. Do not submit without user/member authority."
+    },
+    {
+      "path": "../sources/orange_county_records_management_policy_3.0.pdf",
+      "sha256": "c749c5354a07922af1180b49ce151003420d415f584b4cffa039a4701ceaa631",
+      "bytes": 462647,
+      "media_type": "application/pdf",
+      "source_url": "https://recordcenter.ocpublicworks.com/County%20Records%20Management%20Policy%203.0.pdf",
+      "source_owner": "County of Orange Records Management",
+      "source_type": "official_records_policy",
+      "role": "county_retention_and_hold_request_authority"
+    }
+  ],
+  "known_analysis": {
+    "road_index": {
+      "live_ladera_features": 288,
+      "tract_linked_features": 286,
+      "tract_source_count": 76,
+      "nontract_source_count": 2,
+      "tract_acceptance_range": [
+        "2001-07-24",
+        "2007-10-16"
+      ],
+      "multi_date_tracts": {
+        "TR 15615": [
+          "2001-07-24",
+          "2002-07-24"
+        ],
+        "TR 16116": [
+          "2004-05-11",
+          "2004-10-09"
+        ],
+        "TR 16121": [
+          "2003-11-23",
+          "2004-11-23"
+        ]
+      },
+      "interpretation": "Preserve road-segment dates individually; do not collapse them into whole-tract completion dates or builder conflicts."
+    },
+    "imagery": {
+      "new_georeferenced_exports": 2,
+      "construction_interval_gap_remaining": "No County historical explorer coverage after the 1998 catalog item for the study point until existing 2005 imagery; USDA and USGS prior-year search/request remains required."
+    },
+    "gates": {
+      "permit_occupancy_gate": "not_satisfied",
+      "address_lifecycle_gate": "not_satisfied",
+      "aerial_interval_gate": "not_satisfied",
+      "proximity_analysis": "blocked"
+    }
+  }
+}

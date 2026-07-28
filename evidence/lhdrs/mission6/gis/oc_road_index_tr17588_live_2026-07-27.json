@@ -1,0 +1,405 @@
+{
+ "objectIdFieldName": "OBJECTID",
+ "globalIdFieldName": "",
+ "geometryType": "esriGeometryPolyline",
+ "spatialReference": {
+  "wkid": 4326,
+  "latestWkid": 4326
+ },
+ "fields": [
+  {
+   "name": "BASE_THIK",
+   "alias": "BASE THICKNESS",
+   "type": "esriFieldTypeString",
+   "length": 255
+  },
+  {
+   "name": "BASE_TYPE",
+   "alias": "BASE TYPE",
+   "type": "esriFieldTypeString",
+   "length": 255
+  },
+  {
+   "name": "BIKELANETYPE",
+   "alias": "BIKE LANE TYPE",
+   "type": "esriFieldTypeString",
+   "length": 255
+  },
+  {
+   "name": "DIST",
+   "alias": "DIST",
+   "type": "esriFieldTypeString",
+   "length": 255
+  },
+  {
+   "name": "SHLTYPE",
+   "alias": "EDGE TYPE",
+   "type": "esriFieldTypeString",
+   "length": 255
+  },
+  {
+   "name": "FEDCLS",
+   "alias": "FEDERAL",
+   "type": "esriFieldTypeString",
+   "length": 255
+  },
+  {
+   "name": "Inactive",
+   "alias": "Inactive",
+   "type": "esriFieldTypeString",
+   "length": 3
+  },
+  {
+   "name": "KEYNUM",
+   "alias": "KEYNUM",
+   "type": "esriFieldTypeString",
+   "length": 255
+  },
+  {
+   "name": "LANES",
+   "alias": "LANES",
+   "type": "esriFieldTypeString",
+   "length": 255
+  },
+  {
+   "name": "YEARMAIN",
+   "alias": "LAST MAINTAINED",
+   "type": "esriFieldTypeDate",
+   "length": 8
+  },
+  {
+   "name": "LIMITS",
+   "alias": "LIMITS",
+   "type": "esriFieldTypeString",
+   "length": 255
+  },
+  {
+   "name": "LASTTYPEMNT",
+   "alias": "MAINTENANCE TYPE",
+   "type": "esriFieldTypeString",
+   "length": 255
+  },
+  {
+   "name": "MEDIANTYPE",
+   "alias": "MEDIAN TYPE",
+   "type": "esriFieldTypeString",
+   "length": 255
+  },
+  {
+   "name": "GIS_MILES",
+   "alias": "MILES",
+   "type": "esriFieldTypeSingle"
+  },
+  {
+   "name": "MPAHCLS",
+   "alias": "MPAH",
+   "type": "esriFieldTypeString",
+   "length": 255
+  },
+  {
+   "name": "OBJECTID",
+   "alias": "OBJECTID",
+   "type": "esriFieldTypeOID"
+  },
+  {
+   "name": "PAVE_THIK",
+   "alias": "PAVEMENT THICKNESS",
+   "type": "esriFieldTypeDouble"
+  },
+  {
+   "name": "PAVE_TYPE",
+   "alias": "PAVEMENT TYPE",
+   "type": "esriFieldTypeString",
+   "length": 255
+  },
+  {
+   "name": "PAVE_W",
+   "alias": "PAVEMENT WIDTH(ft)",
+   "type": "esriFieldTypeString",
+   "length": 255
+  },
+  {
+   "name": "PAVE_WFT",
+   "alias": "RIGHT OF WAY WIDTH(ft)",
+   "type": "esriFieldTypeDouble"
+  },
+  {
+   "name": "ROADNAME",
+   "alias": "ROADNAME",
+   "type": "esriFieldTypeString",
+   "length": 255
+  },
+  {
+   "name": "SERVICE_AREA",
+   "alias": "SERVICE AREA",
+   "type": "esriFieldTypeString",
+   "length": 255
+  },
+  {
+   "name": "TRACTNO",
+   "alias": "SOURCE",
+   "type": "esriFieldTypeString",
+   "length": 255
+  },
+  {
+   "name": "STATECLS",
+   "alias": "STATE",
+   "type": "esriFieldTypeString",
+   "length": 255
+  },
+  {
+   "name": "STATUS",
+   "alias": "STATUS",
+   "type": "esriFieldTypeString",
+   "length": 255
+  },
+  {
+   "name": "THMSCOR",
+   "alias": "THMSCOR",
+   "type": "esriFieldTypeString",
+   "length": 255
+  },
+  {
+   "name": "THMSPGE",
+   "alias": "THMSPGE",
+   "type": "esriFieldTypeString",
+   "length": 255
+  },
+  {
+   "name": "TRACT_ACCEPT_DATE",
+   "alias": "TRACT ACCEPTANCE DATE",
+   "type": "esriFieldTypeDate",
+   "length": 8
+  },
+  {
+   "name": "Property_ID",
+   "alias": "AIM Property ID",
+   "type": "esriFieldTypeString",
+   "length": 50
+  },
+  {
+   "name": "Current_OM_Inspector",
+   "alias": "Current OM Inspector",
+   "type": "esriFieldTypeString",
+   "length": 100
+  },
+  {
+   "name": "Day_Swept",
+   "alias": "Day Swept",
+   "type": "esriFieldTypeString",
+   "length": 50
+  },
+  {
+   "name": "Time_Swept",
+   "alias": "Time Swept",
+   "type": "esriFieldTypeString",
+   "length": 50
+  },
+  {
+   "name": "Road_Closed",
+   "alias": "Road Closed",
+   "type": "esriFieldTypeString",
+   "length": 5
+  },
+  {
+   "name": "Charge_Number",
+   "alias": "Charge Number",
+   "type": "esriFieldTypeString",
+   "length": 25
+  },
+  {
+   "name": "STREETLIGHT_INSEPCT_STATUS",
+   "alias": "Streetlight Inspect Status",
+   "type": "esriFieldTypeString",
+   "length": 10
+  },
+  {
+   "name": "SECONDARY_ISLAND_INFO",
+   "alias": "SECONDARY ISLAND INFO",
+   "type": "esriFieldTypeString",
+   "length": 50
+  },
+  {
+   "name": "LAFCO_ISLAND_NUMBER",
+   "alias": "LAFCO ISLAND NUMBER",
+   "type": "esriFieldTypeString",
+   "length": 50
+  }
+ ],
+ "features": [
+  {
+   "attributes": {
+    "BASE_THIK": "0.50",
+    "BASE_TYPE": "AB",
+    "BIKELANETYPE": "0",
+    "DIST": "5",
+    "SHLTYPE": "CG",
+    "FEDCLS": "LOC",
+    "Inactive": "N",
+    "KEYNUM": "16169",
+    "LANES": "2",
+    "YEARMAIN": null,
+    "LIMITS": "597' S/ TO AIROSO ST.",
+    "LASTTYPEMNT": null,
+    "MEDIANTYPE": "0",
+    "GIS_MILES": 0.12,
+    "MPAHCLS": "L",
+    "OBJECTID": 39143,
+    "PAVE_THIK": 0.3,
+    "PAVE_TYPE": "AC",
+    "PAVE_W": null,
+    "PAVE_WFT": 36.0,
+    "ROADNAME": "AMBITO STREET",
+    "SERVICE_AREA": "RANCHO MISSION VIEJO",
+    "TRACTNO": "TR 17588",
+    "STATECLS": "M",
+    "STATUS": "M",
+    "THMSCOR": "A3",
+    "THMSPGE": "953",
+    "TRACT_ACCEPT_DATE": 1627344000000,
+    "Property_ID": "A0796",
+    "Current_OM_Inspector": "Nick Nelson",
+    "Day_Swept": null,
+    "Time_Swept": null,
+    "Road_Closed": "0",
+    "Charge_Number": "ER19503",
+    "STREETLIGHT_INSEPCT_STATUS": "Complete",
+    "SECONDARY_ISLAND_INFO": null,
+    "LAFCO_ISLAND_NUMBER": null
+   },
+   "geometry": {
+    "paths": [
+     [
+      [
+       -117.59812935553896,
+       33.540226484259385
+      ],
+      [
+       -117.59813802382033,
+       33.540217074837983
+      ]
+     ],
+     [
+      [
+       -117.59812935553896,
+       33.540226484259385
+      ],
+      [
+       -117.598181351452,
+       33.540260068980082
+      ]
+     ],
+     [
+      [
+       -117.59725498300881,
+       33.541621032963803
+      ],
+      [
+       -117.59724122064607,
+       33.541538227342954
+      ],
+      [
+       -117.59723687575372,
+       33.541507665839042
+      ],
+      [
+       -117.5972356847454,
+       33.541495659844664
+      ],
+      [
+       -117.59723351483105,
+       33.541452801392232
+      ],
+      [
+       -117.59723441840728,
+       33.541409897557635
+      ],
+      [
+       -117.59723974046979,
+       33.541356550663195
+      ],
+      [
+       -117.59724973409813,
+       33.541303878631822
+      ],
+      [
+       -117.59726432182848,
+       33.541252289741358
+      ],
+      [
+       -117.59728331204451,
+       33.5412021992015
+      ],
+      [
+       -117.59730628661569,
+       33.541153806437904
+      ],
+      [
+       -117.59733309537033,
+       33.541107427766484
+      ],
+      [
+       -117.59736356307491,
+       33.54106336633815
+      ],
+      [
+       -117.5973866408804,
+       33.541034119143177
+      ],
+      [
+       -117.59741118495121,
+       33.541006091083879
+      ],
+      [
+       -117.59749137074671,
+       33.540919046018239
+      ],
+      [
+       -117.59766299647765,
+       33.5407327401795
+      ],
+      [
+       -117.59796565137768,
+       33.540404194685983
+      ],
+      [
+       -117.59812935553896,
+       33.540226484259385
+      ]
+     ]
+    ],
+    "ids": [
+     [
+      5530793,
+      5530794
+     ],
+     [
+      5530793,
+      5530109
+     ],
+     [
+      5288983,
+      5530784,
+      0,
+      0,
+      0,
+      5530786,
+      0,
+      0,
+      5530787,
+      0,
+      0,
+      0,
+      5530788,
+      0,
+      5530789,
+      5530790,
+      5530791,
+      5530792,
+      5530793
+     ]
+    ]
+   }
+  }
+ ]
+}
