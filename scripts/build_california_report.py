@@ -349,7 +349,7 @@ report_html=f"""<!doctype html><html lang="en"><head>
       <span class="glow"></span>
       <div class="vb-play"></div>
     </div>
-    <p class="vb-cap">Watch: a short documentary on the investigation, by the Stavros Group.</p>
+    <p class="vb-cap">Watch: a short documentary on the investigation, by Andy Stavros.</p>
     <div class="hero-actions">
       <a href="#contents">Jump to contents</a>
       <a href="index.html">Section-by-section view</a>
