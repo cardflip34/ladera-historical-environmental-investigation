@@ -1,0 +1,348 @@
+{
+  "features": [
+    {
+      "attributes": {
+        "Category": 1,
+        "CenterX": -13097435.935878612,
+        "CenterY": 3974383.916553714,
+        "GroupName": "11052000091817300030.RPDef",
+        "HighPS": 1,
+        "LowPS": 1,
+        "MaxPS": 3,
+        "MinPS": 0,
+        "Name": "m_3311727_ne_11_1_20100501.tif",
+        "OBJECTID": 1031,
+        "ProductName": "",
+        "Shape_Area": 70570924.98890714,
+        "Shape_Length": 33717.357984303824,
+        "Tag": "Dataset",
+        "ZOrder": 0
+      },
+      "geometry": {
+        "rings": [
+          [
+            [
+              -117.69128037721532,
+              33.627704098203516
+            ],
+            [
+              -117.62177444034062,
+              33.62807308385791
+            ],
+            [
+              -117.62128476059443,
+              33.55979938621979
+            ],
+            [
+              -117.69073596671213,
+              33.55943134728914
+            ],
+            [
+              -117.69128037721532,
+              33.627704098203516
+            ]
+          ]
+        ],
+        "spatialReference": {
+          "latestWkid": 4326,
+          "wkid": 4326
+        }
+      }
+    },
+    {
+      "attributes": {
+        "Category": 1,
+        "CenterX": -13097436.073683104,
+        "CenterY": 3966033.9198525692,
+        "GroupName": "11052000091828300032.RPDef",
+        "HighPS": 1,
+        "LowPS": 1,
+        "MaxPS": 3,
+        "MinPS": 0,
+        "Name": "m_3311727_se_11_1_20100501.tif",
+        "OBJECTID": 1033,
+        "ProductName": "",
+        "Shape_Area": 70513509.65397874,
+        "Shape_Length": 33702.788570751254,
+        "Tag": "Dataset",
+        "ZOrder": 0
+      },
+      "geometry": {
+        "rings": [
+          [
+            [
+              -117.69127749272496,
+              33.565200679330545
+            ],
+            [
+              -117.62177858067577,
+              33.56556929249447
+            ],
+            [
+              -117.62129005346807,
+              33.4972949039096
+            ],
+            [
+              -117.69073437040585,
+              33.49692723784967
+            ],
+            [
+              -117.69127749272496,
+              33.565200679330545
+            ]
+          ]
+        ],
+        "spatialReference": {
+          "latestWkid": 4326,
+          "wkid": 4326
+        }
+      }
+    },
+    {
+      "attributes": {
+        "Category": 1,
+        "CenterX": -13090477.506668033,
+        "CenterY": 3974382.7208157377,
+        "GroupName": "11052000091845400035.RPDef",
+        "HighPS": 1,
+        "LowPS": 1,
+        "MaxPS": 3,
+        "MinPS": 0,
+        "Name": "m_3311728_nw_11_1_20100501.tif",
+        "OBJECTID": 1036,
+        "ProductName": "",
+        "Shape_Area": 70491028.27751398,
+        "Shape_Length": 33698.394099891164,
+        "Tag": "Dataset",
+        "ZOrder": 0
+      },
+      "geometry": {
+        "rings": [
+          [
+            [
+              -117.62872583487616,
+              33.627695207648294
+            ],
+            [
+              -117.55926221404125,
+              33.62802884219434
+            ],
+            [
+              -117.55882199733122,
+              33.55979045048561
+            ],
+            [
+              -117.62823094849459,
+              33.55945767251649
+            ],
+            [
+              -117.62872583487616,
+              33.627695207648294
+            ]
+          ]
+        ],
+        "spatialReference": {
+          "latestWkid": 4326,
+          "wkid": 4326
+        }
+      }
+    },
+    {
+      "attributes": {
+        "Category": 1,
+        "CenterX": -13090477.860650955,
+        "CenterY": 3966032.684874463,
+        "GroupName": "11052000091856400037.RPDef",
+        "HighPS": 1,
+        "LowPS": 1,
+        "MaxPS": 3,
+        "MinPS": 0,
+        "Name": "m_3311728_sw_11_1_20100501.tif",
+        "OBJECTID": 1038,
+        "ProductName": "",
+        "Shape_Area": 70433705.4014743,
+        "Shape_Length": 33683.838447992784,
+        "Tag": "Dataset",
+        "ZOrder": 0
+      },
+      "geometry": {
+        "rings": [
+          [
+            [
+              -117.62872496710361,
+              33.56519146944551
+            ],
+            [
+              -117.5592683405515,
+              33.56552476874987
+            ],
+            [
+              -117.55882915780235,
+              33.49728568678844
+            ],
+            [
+              -117.6282312494302,
+              33.49695324425989
+            ],
+            [
+              -117.62872496710361,
+              33.56519146944551
+            ]
+          ]
+        ],
+        "spatialReference": {
+          "latestWkid": 4326,
+          "wkid": 4326
+        }
+      }
+    }
+  ],
+  "fields": [
+    {
+      "alias": "OBJECTID",
+      "domain": null,
+      "name": "OBJECTID",
+      "type": "esriFieldTypeOID"
+    },
+    {
+      "alias": "Shape",
+      "domain": null,
+      "name": "Shape",
+      "type": "esriFieldTypeGeometry"
+    },
+    {
+      "alias": "Name",
+      "domain": null,
+      "length": 50,
+      "name": "Name",
+      "type": "esriFieldTypeString"
+    },
+    {
+      "alias": "MinPS",
+      "domain": null,
+      "name": "MinPS",
+      "type": "esriFieldTypeDouble"
+    },
+    {
+      "alias": "MaxPS",
+      "domain": null,
+      "name": "MaxPS",
+      "type": "esriFieldTypeDouble"
+    },
+    {
+      "alias": "LowPS",
+      "domain": null,
+      "name": "LowPS",
+      "type": "esriFieldTypeDouble"
+    },
+    {
+      "alias": "HighPS",
+      "domain": null,
+      "name": "HighPS",
+      "type": "esriFieldTypeDouble"
+    },
+    {
+      "alias": "Category",
+      "domain": {
+        "codedValues": [
+          {
+            "code": 0,
+            "name": "Unknown"
+          },
+          {
+            "code": 1,
+            "name": "Primary"
+          },
+          {
+            "code": 2,
+            "name": "Overview"
+          },
+          {
+            "code": 3,
+            "name": "Unprocessed Overview"
+          },
+          {
+            "code": 4,
+            "name": "Partial Overview"
+          },
+          {
+            "code": 253,
+            "name": "Uploaded"
+          },
+          {
+            "code": 254,
+            "name": "Incomplete"
+          },
+          {
+            "code": 255,
+            "name": "Custom"
+          }
+        ],
+        "description": "Catalog item categories.",
+        "mergePolicy": "esriMPTDefaultValue",
+        "name": "MosaicCatalogItemCategoryDomain",
+        "splitPolicy": "esriSPTDefaultValue",
+        "type": "codedValue"
+      },
+      "name": "Category",
+      "type": "esriFieldTypeInteger"
+    },
+    {
+      "alias": "Tag",
+      "domain": null,
+      "length": 20,
+      "name": "Tag",
+      "type": "esriFieldTypeString"
+    },
+    {
+      "alias": "GroupName",
+      "domain": null,
+      "length": 50,
+      "name": "GroupName",
+      "type": "esriFieldTypeString"
+    },
+    {
+      "alias": "ProductName",
+      "domain": null,
+      "length": 50,
+      "name": "ProductName",
+      "type": "esriFieldTypeString"
+    },
+    {
+      "alias": "CenterX",
+      "domain": null,
+      "name": "CenterX",
+      "type": "esriFieldTypeDouble"
+    },
+    {
+      "alias": "CenterY",
+      "domain": null,
+      "name": "CenterY",
+      "type": "esriFieldTypeDouble"
+    },
+    {
+      "alias": "ZOrder",
+      "domain": null,
+      "name": "ZOrder",
+      "type": "esriFieldTypeInteger"
+    },
+    {
+      "alias": "Shape_Length",
+      "domain": null,
+      "name": "Shape_Length",
+      "type": "esriFieldTypeDouble"
+    },
+    {
+      "alias": "Shape_Area",
+      "domain": null,
+      "name": "Shape_Area",
+      "type": "esriFieldTypeDouble"
+    }
+  ],
+  "geometryType": "esriGeometryPolygon",
+  "objectIdFieldName": "OBJECTID",
+  "spatialReference": {
+    "latestWkid": 4326,
+    "wkid": 4326
+  }
+}

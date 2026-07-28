@@ -1,0 +1,9 @@
+{
+  "ambiguousDirectoryMatches": 12,
+  "crosswalkRelationships": 147,
+  "distinctLeafTracts": 116,
+  "distinctNeighborhoods": 128,
+  "matchedPointRows": 6446,
+  "sourceAddressPointCount": 20253,
+  "unmatchedOrOutOfScopeAddressPoints": 13791
+}

@@ -1,0 +1,25 @@
+{
+  "accessInformation": "",
+  "catalogPath": "",
+  "culture": "en-US",
+  "description": "",
+  "guid": "",
+  "licenseInfo": "",
+  "name": "oc_dem_1m_2021_tif_AGOL_Tile",
+  "snippet": "Orange County DEM, 1 meter resolution, Elevation in US Feet, Derived from LIDAR flown in 2011,2018 by USGS for the 3DEP project",
+  "spatialReference": "WGS_1984_Web_Mercator_Auxiliary_Sphere",
+  "summary": "Orange County DEM, 1 meter resolution, Elevation in US Feet, Derived from LIDAR flown in 2011,2018 by USGS for the 3DEP project",
+  "tags": [
+    "Elevation"
+  ],
+  "thumbnail": "",
+  "title": "oc_dem_1m_2021_tif_AGOL_Tile",
+  "type": "Image Service",
+  "typeKeywords": [
+    "Data",
+    "Service",
+    "Image Service",
+    "ArcGIS Server"
+  ],
+  "url": "https://spocdarcpub1201.arcgis.gov.local:6443/arcgis/admin"
+}

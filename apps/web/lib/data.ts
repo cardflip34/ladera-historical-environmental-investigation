@@ -16,6 +16,13 @@ export const getWaterQuality = () => readCsv("research/water/water_quality.csv")
 export const getDemographics = () => readCsv("research/demographics/population_estimates.csv");
 export const getIncidenceRates = () => readCsv("research/demographics/incidence_rates.csv");
 export const getLandUse = () => readCsv("research/land_use/historical_land_use.csv");
+export const getDevelopmentSources = () => readCsv("research/development_chronology/sources.csv");
+export const getDevelopmentEvents = () => readCsv("research/development_chronology/events.csv");
+export const getDevelopmentSnapshots = () => readCsv("research/development_chronology/annual_snapshots.csv");
+export const getSecondEditionSnapshots = () => readCsv("research/development_chronology/annual_phase_snapshot_manifest.csv");
+export const getDevelopmentSchools = () => readCsv("research/development_chronology/schools.csv");
+export const getDevelopmentPlanningAreas = () => readCsv("research/development_chronology/planning_areas.csv");
+export const getDevelopmentObligations = () => readCsv("research/development_chronology/development_obligations.csv");
 
 export const getTimeline = () =>
   readJson<Record<string, unknown>>("research/cancer_reports/timeline.json", {});

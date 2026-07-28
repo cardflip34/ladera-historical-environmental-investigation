@@ -1,0 +1,146 @@
+{
+  "retrievedAt": "2026-07-26T16:23:07.772631+00:00",
+  "userAgent": "LHDRS/1.0 public historical-development research",
+  "records": [
+    {
+      "sourceId": "LH-SRC-OC-MAP",
+      "url": "https://pwds.oc.gov/sites/ocpwocds/files/import/data/files/9268.pdf",
+      "localFilePath": "evidence/lhdrs/county/Ladera_Ranch_Planned_Community_Map.pdf",
+      "bytes": 115835,
+      "checksumSha256": "42cb618abcd8e67c38418688191f18c857e91d18f2c22f3db907e5bbd5c72527",
+      "status": "retrieved"
+    },
+    {
+      "sourceId": "LH-SRC-OC-DA",
+      "url": "https://pwds.oc.gov/sites/ocpwocds/files/import/data/files/9272.pdf",
+      "localFilePath": "evidence/lhdrs/county/Ladera_Ranch_Development_Agreement.pdf",
+      "bytes": 7149886,
+      "checksumSha256": "7e9f9d1eb783f77e011bea4eaca2f72334c78a3a6d3f0a245a5d8b9c6692dff3",
+      "status": "retrieved"
+    },
+    {
+      "sourceId": "LH-SRC-OC-ADS",
+      "url": "https://pwds.oc.gov/sites/ocpwocds/files/import/data/files/9270.pdf",
+      "localFilePath": "evidence/lhdrs/county/Ladera_Ranch_Alternative_Development_Standards.pdf",
+      "bytes": 6399561,
+      "checksumSha256": "b0fcbcdc7896d14d0c680290120591e82e0c24ad9382527add5e4f1d7b48d2c1",
+      "status": "retrieved"
+    },
+    {
+      "sourceId": "LH-SRC-OC-EIR-CERT",
+      "url": "https://ocds.ocpublicworks.com/sites/ocpwocds/files/import/data/files/80931.pdf",
+      "localFilePath": "evidence/lhdrs/county/PA180010_Zoning_Administrator_Record.pdf",
+      "bytes": 215014,
+      "checksumSha256": "a0ddfcc3f3a49776381a982348e7ad9cdabf3162961ec3d9cdfd6b75a4174003",
+      "status": "retrieved"
+    },
+    {
+      "sourceId": "LH-SRC-CUSD-CHAPARRAL",
+      "url": "https://www.capousd.org/documents/Schools/SARCS/Elementary/2022-SARC-Chaparral-Elementary-School.pdf",
+      "localFilePath": "evidence/lhdrs/schools/2022_SARC_Chaparral_Elementary.pdf",
+      "bytes": 723075,
+      "checksumSha256": "ef76f10afdc4803d0456f263638b46d3013b151ff098b16aa105e220162e9b83",
+      "status": "retrieved"
+    },
+    {
+      "sourceId": "LH-SRC-CUSD-LRES",
+      "url": "https://www.capousd.org/documents/Schools/SARCS/Elementary/2022-SARC-Ladera-Ranch-Elementary-School.pdf",
+      "localFilePath": "evidence/lhdrs/schools/2022_SARC_Ladera_Ranch_Elementary.pdf",
+      "bytes": 719029,
+      "checksumSha256": "732341b973b527b90ebebeb4bdb8bbac40f447115742443061f7cd2ff57a1f39",
+      "status": "retrieved"
+    },
+    {
+      "sourceId": "LH-SRC-CUSD-LRMS",
+      "url": "https://www.capousd.org/documents/Schools/SARCS/Middle/2022-SARC-Ladera-Ranch-Middle-School.pdf",
+      "localFilePath": "evidence/lhdrs/schools/2022_SARC_Ladera_Ranch_Middle.pdf",
+      "bytes": 678719,
+      "checksumSha256": "0e91c02f9cec22470a6ebf0c482f5d5b4f589ad99b744d71af88f32a5d77d160",
+      "status": "retrieved"
+    },
+    {
+      "sourceId": "LH-SRC-ULI-CASE",
+      "url": "https://casestudies.uli.org/wp-content/uploads/2016/06/Ladera-Ranch.pdf",
+      "localFilePath": "evidence/lhdrs/publications/ULI_Ladera_Ranch_Case_Study.pdf",
+      "status": "failed",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "sourceId": "LH-SRC-CEQANET-UTILITIES",
+      "url": "https://ceqanet.lci.ca.gov/1999031033",
+      "localFilePath": "evidence/lhdrs/web/ceqanet_1999031033.html",
+      "bytes": 22135,
+      "checksumSha256": "cb0297fbdb002c48783e7b4902597cb89c95928009f9364955a2537cd44e15b7",
+      "status": "retrieved"
+    },
+    {
+      "sourceId": "LH-SRC-RMV-PLANNING",
+      "url": "https://www.ranchomissionviejo.com/about/responsible-planning",
+      "localFilePath": "evidence/lhdrs/web/rmv_responsible_planning.html",
+      "status": "failed",
+      "error": "HTTP Error 503: Service Unavailable"
+    },
+    {
+      "sourceId": "LH-SRC-LARMAC-TIMELINE",
+      "url": "https://laderalife.com/about/explore-ladera-ranch",
+      "localFilePath": "evidence/lhdrs/web/laderalife_timeline.html",
+      "bytes": 87700,
+      "checksumSha256": "2c2bfac90432cfb585898806f0d9b13cf8fc2bf1da1e3b54d662183df9bc4fa7",
+      "status": "retrieved"
+    },
+    {
+      "sourceId": "LH-SRC-CDE-OSO",
+      "url": "https://www.cde.ca.gov/schooldirectory/details?cdscode=30664640108704",
+      "localFilePath": "evidence/lhdrs/web/cde_oso_grande.html",
+      "bytes": 15077,
+      "checksumSha256": "3ae6cd0afc006449c6408f1a9290a57afe096e59b1d6d5d548039650927291c4",
+      "status": "retrieved"
+    },
+    {
+      "sourceId": "LH-SRC-NWS-ELTORO",
+      "url": "https://www.weather.gov/sgx/orange-eltoro",
+      "localFilePath": "evidence/lhdrs/web/nws_el_toro_climate.html",
+      "bytes": 56235,
+      "checksumSha256": "92a899492004d9d4bbfaf53cf6222c6f66597d64289c59b7a9dbae985afcdf8c",
+      "status": "retrieved"
+    },
+    {
+      "sourceId": "LH-SRC-NWS-SANTA-ANA",
+      "url": "https://www.weather.gov/safety/wind-mountain-valley",
+      "localFilePath": "evidence/lhdrs/web/nws_santa_ana_winds.html",
+      "bytes": 26108,
+      "checksumSha256": "88756fb69d5f87cf814d4da56c7852644e42f8973623330fc89e49c31e3ec416",
+      "status": "retrieved"
+    },
+    {
+      "sourceId": "LH-SRC-CENSUS-CDP",
+      "url": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Places_CouSub_ConCity_SubMCD/MapServer/5/query",
+      "localFilePath": "data/development/ladera_ranch_cdp.geojson",
+      "checksumSha256": "d41979ffa6f9ccc685021d74d83201c2e884d4e2bc36320013f97e561c69b040",
+      "status": "generated_archive"
+    },
+    {
+      "sourceId": "LH-SRC-OC-TRACTS",
+      "url": "https://ocgis.com/arcpub/rest/services/Map_Layers/Tract_Maps/MapServer/0/query",
+      "localFilePath": "data/development/tract_maps.geojson",
+      "checksumSha256": "18a875915f02608d2c8ddf50af2e9c3832a787680ba5ecb06f8166158606cc61",
+      "status": "generated_archive",
+      "featureCount": 123,
+      "allIntersectingFeatureCount": 129
+    },
+    {
+      "sourceId": "LH-SRC-OC-IMAGERY",
+      "url": "https://ocgis.com/arcpub/rest/services/Historic_Imagery/Historic_Imagery_v2/ImageServer/exportImage",
+      "localFilePath": "evidence/lhdrs/imagery/ladera_1997_1998.png",
+      "checksumSha256": "8bf3ab9ae294f1198e00791df5f2aaf91604a8db822e0e05738cc3a622b175da",
+      "status": "retrieved",
+      "bytes": 3218075
+    },
+    {
+      "sourceId": "LH-SRC-OC-PC",
+      "localFilePath": "evidence/documents/Ladera_Planned_Community_Program_Text_1995_rev2003.pdf",
+      "checksumSha256": "1922b1c9ca24097885ced31fb88dc2e971dc72a55b63e956f97178b91cbcfb9c",
+      "status": "local_copy"
+    }
+  ]
+}

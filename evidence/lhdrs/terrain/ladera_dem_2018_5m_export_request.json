@@ -1,0 +1,29 @@
+{
+  "parameters": {
+    "bbox": "1869033.026,651612.252,1872471.530,657198.647",
+    "bboxSR": "26946",
+    "f": "json",
+    "format": "tiff",
+    "imageSR": "26946",
+    "interpolation": "RSP_BilinearInterpolation",
+    "pixelType": "F32",
+    "size": "688,1118"
+  },
+  "response": {
+    "extent": {
+      "spatialReference": {
+        "latestWkid": 26946,
+        "wkid": 26946
+      },
+      "xmax": 1872471.53,
+      "xmin": 1869033.026,
+      "ymax": 657199.2339999999,
+      "ymin": 651611.665
+    },
+    "height": 1118,
+    "href": "https://ocgis.com/arcpub/rest/directories/arcgisoutput/Elevation/oc_dem_1m_2018_ImageServer/_ags_f45e316b_2ec3_438f_bf9e_6c6e3a737016.tif",
+    "scale": 0,
+    "width": 688
+  },
+  "service": "https://ocgis.com/arcpub/rest/services/Elevation/oc_dem_1m_2018/ImageServer"
+}

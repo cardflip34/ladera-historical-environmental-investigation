@@ -1,0 +1,28 @@
+{
+  "analysisCrs": "EPSG:26946",
+  "analysisCrsReason": "NAD83 / California zone 6 provides projected meter units for local distance analysis.",
+  "buffersFeetExact": [
+    82.02099737532808,
+    164.04199475065616,
+    328.0839895013123,
+    820.2099737532808,
+    1640.4199475065616,
+    3280.839895013123
+  ],
+  "buffersMeters": [
+    25,
+    50,
+    100,
+    250,
+    500,
+    1000
+  ],
+  "limitations": "No metric distances were calculated because both evidence gates are unsatisfied.",
+  "notEvidenceOfAbsence": true,
+  "resultCount": 0,
+  "status": "blocked",
+  "subjectGate": "dated geometry with supported habitable, occupied, school, park, or facility interval",
+  "subjectGateSatisfied": false,
+  "targetGate": "dated active-construction geometry with supported activity class and interval",
+  "targetGateSatisfied": false
+}

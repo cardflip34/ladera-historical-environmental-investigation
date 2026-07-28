@@ -1,0 +1,266 @@
+{
+  "advancedQueryCapabilities": {
+    "supportsDistinct": true,
+    "supportsOrderBy": true,
+    "supportsPagination": true,
+    "supportsStatistics": true,
+    "useStandardizedQueries": true
+  },
+  "allowAnalysis": true,
+  "allowComputeTiePoints": false,
+  "allowCopy": true,
+  "allowRasterFunction": true,
+  "allowedFields": "Name,MinPS,MaxPS,LowPS,HighPS,Tag,GroupName,ProductName,CenterX,CenterY,ZOrder,Shape_Length,Shape_Area",
+  "allowedMosaicMethods": "Center,NorthWest,LockRaster,ByAttribute,Nadir,Viewpoint,Seamline,None",
+  "bandCount": 3,
+  "bandNames": [
+    "Band_1",
+    "Band_2",
+    "Band_3"
+  ],
+  "blockHeight": 256,
+  "blockWidth": 2048,
+  "capabilities": "Image,Metadata,Catalog",
+  "compressionType": "None",
+  "copyrightText": "",
+  "currentVersion": 11.5,
+  "datasetFormat": "AMD",
+  "defaultCompressionQuality": 75,
+  "defaultMosaicMethod": "Center",
+  "defaultResamplingMethod": "Bilinear",
+  "description": "",
+  "editFieldsInfo": null,
+  "exportTilesAllowed": false,
+  "extent": {
+    "spatialReference": {
+      "latestWkid": 3857,
+      "wkid": 102100
+    },
+    "xmax": -12703702.7672,
+    "xmin": -13852877.7672,
+    "ymax": 5170895.086199999,
+    "ymin": 3828745.086199999
+  },
+  "fields": [
+    {
+      "alias": "OBJECTID",
+      "domain": null,
+      "name": "OBJECTID",
+      "type": "esriFieldTypeOID"
+    },
+    {
+      "alias": "Shape",
+      "domain": null,
+      "name": "Shape",
+      "type": "esriFieldTypeGeometry"
+    },
+    {
+      "alias": "Name",
+      "domain": null,
+      "length": 50,
+      "name": "Name",
+      "type": "esriFieldTypeString"
+    },
+    {
+      "alias": "MinPS",
+      "domain": null,
+      "name": "MinPS",
+      "type": "esriFieldTypeDouble"
+    },
+    {
+      "alias": "MaxPS",
+      "domain": null,
+      "name": "MaxPS",
+      "type": "esriFieldTypeDouble"
+    },
+    {
+      "alias": "LowPS",
+      "domain": null,
+      "name": "LowPS",
+      "type": "esriFieldTypeDouble"
+    },
+    {
+      "alias": "HighPS",
+      "domain": null,
+      "name": "HighPS",
+      "type": "esriFieldTypeDouble"
+    },
+    {
+      "alias": "Category",
+      "domain": {
+        "codedValues": [
+          {
+            "code": 0,
+            "name": "Unknown"
+          },
+          {
+            "code": 1,
+            "name": "Primary"
+          },
+          {
+            "code": 2,
+            "name": "Overview"
+          },
+          {
+            "code": 3,
+            "name": "Unprocessed Overview"
+          },
+          {
+            "code": 4,
+            "name": "Partial Overview"
+          },
+          {
+            "code": 253,
+            "name": "Uploaded"
+          },
+          {
+            "code": 254,
+            "name": "Incomplete"
+          },
+          {
+            "code": 255,
+            "name": "Custom"
+          }
+        ],
+        "description": "Catalog item categories.",
+        "mergePolicy": "esriMPTDefaultValue",
+        "name": "MosaicCatalogItemCategoryDomain",
+        "splitPolicy": "esriSPTDefaultValue",
+        "type": "codedValue"
+      },
+      "name": "Category",
+      "type": "esriFieldTypeInteger"
+    },
+    {
+      "alias": "Tag",
+      "domain": null,
+      "length": 20,
+      "name": "Tag",
+      "type": "esriFieldTypeString"
+    },
+    {
+      "alias": "GroupName",
+      "domain": null,
+      "length": 50,
+      "name": "GroupName",
+      "type": "esriFieldTypeString"
+    },
+    {
+      "alias": "ProductName",
+      "domain": null,
+      "length": 50,
+      "name": "ProductName",
+      "type": "esriFieldTypeString"
+    },
+    {
+      "alias": "CenterX",
+      "domain": null,
+      "name": "CenterX",
+      "type": "esriFieldTypeDouble"
+    },
+    {
+      "alias": "CenterY",
+      "domain": null,
+      "name": "CenterY",
+      "type": "esriFieldTypeDouble"
+    },
+    {
+      "alias": "ZOrder",
+      "domain": null,
+      "name": "ZOrder",
+      "type": "esriFieldTypeInteger"
+    },
+    {
+      "alias": "Shape_Length",
+      "domain": null,
+      "name": "Shape_Length",
+      "type": "esriFieldTypeDouble"
+    },
+    {
+      "alias": "Shape_Area",
+      "domain": null,
+      "name": "Shape_Area",
+      "type": "esriFieldTypeDouble"
+    }
+  ],
+  "fullExtent": {
+    "spatialReference": {
+      "latestWkid": 3857,
+      "wkid": 102100
+    },
+    "xmax": -12703702.7672,
+    "xmin": -13852877.7672,
+    "ymax": 5170895.086199999,
+    "ymin": 3828745.086199999
+  },
+  "hasColormap": false,
+  "hasHistograms": false,
+  "hasMultidimensions": false,
+  "hasRasterAttributeTable": false,
+  "initialExtent": {
+    "spatialReference": {
+      "latestWkid": 3857,
+      "wkid": 102100
+    },
+    "xmax": -12703702.7672,
+    "xmin": -13852877.7672,
+    "ymax": 5170895.086199999,
+    "ymin": 3828745.086199999
+  },
+  "inspectionCapabilities": "",
+  "itemAccess": false,
+  "maxDownloadImageCount": 20,
+  "maxDownloadSizeLimit": 2048,
+  "maxImageHeight": 4100,
+  "maxImageWidth": 15000,
+  "maxMosaicImageCount": 20,
+  "maxPixelSize": 0,
+  "maxRecordCount": 1000,
+  "maxScale": 0,
+  "maxValues": [],
+  "meanPixelSize": 1,
+  "meanValues": [],
+  "mensurationCapabilities": "None",
+  "minPixelSize": 0,
+  "minScale": 0,
+  "minValues": [],
+  "mosaicOperator": "First",
+  "name": "Base_Remote_Sensing/NAIP_2009",
+  "objectIdField": "OBJECTID",
+  "ownershipBasedAccessControlForRasters": null,
+  "pixelSizeX": 1,
+  "pixelSizeY": 1,
+  "pixelType": "U8",
+  "rasterFunctionInfos": [
+    {
+      "description": "",
+      "help": "",
+      "name": "None"
+    }
+  ],
+  "rasterTypeInfos": [
+    {
+      "description": "Supports all ArcGIS Raster Datasets",
+      "help": "",
+      "name": "Raster Dataset"
+    }
+  ],
+  "serviceDataType": "esriImageServiceDataTypeRGB",
+  "serviceDescription": "Base_Remote_Sensing/NAIP_2009",
+  "serviceItemId": "f8486640a56040b7a31888a4345ce369",
+  "serviceProperties": "<ImageServer><ImageServiceProperties><MosaicMethod>Center</MosaicMethod><MosaicOperator>First</MosaicOperator><SortAscending>true</SortAscending><LockImageID></LockImageID><TileOrderField>Name</TileOrderField><TileOrderBase>0</TileOrderBase><AvgImageSpacingX>600.000000</AvgImageSpacingX><AvgImageSpacingY>300.000000</AvgImageSpacingY><ViewPointX>0.0</ViewPointX><ViewPointY>0.0</ViewPointY><ViewPointDefShiftX>0.0</ViewPointDefShiftX><ViewPointDefShiftY>0.0</ViewPointDefShiftY><CompressionMethod>JPEG</CompressionMethod><CompressionQuality>75</CompressionQuality><CompressionTolerance>0.010000</CompressionTolerance><SamplingMethod>Bilinear</SamplingMethod></ImageServiceProperties></ImageServer>",
+  "serviceSourceType": "esriImageServiceSourceTypeMosaicDataset",
+  "sortAscending": true,
+  "sortField": "",
+  "sortValue": null,
+  "sortableFields": "MinPS,MaxPS,LowPS,HighPS,CenterX,CenterY,ZOrder,Shape_Length,Shape_Area",
+  "spatialReference": {
+    "latestWkid": 3857,
+    "wkid": 102100
+  },
+  "stdvValues": [],
+  "supportsAdvancedQueries": true,
+  "supportsStatistics": true,
+  "uncompressedSize": 4627095678750,
+  "useStandardizedQueries": true
+}

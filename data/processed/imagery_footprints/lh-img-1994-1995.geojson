@@ -1,0 +1,45 @@
+{
+  "features": [
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              -117.64103648612443,
+              33.577504000093114
+            ],
+            [
+              -117.62213599983149,
+              33.577504000093114
+            ],
+            [
+              -117.62213599983149,
+              33.524791000292176
+            ],
+            [
+              -117.64103648612443,
+              33.524791000292176
+            ],
+            [
+              -117.64103648612443,
+              33.577504000093114
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "properties": {
+        "dateEarliest": "1994-01-01",
+        "dateLatest": "1995-12-31",
+        "geometryMethod": "polygonized_nonzero_alpha_mask",
+        "imageryId": "LH-IMG-1994-1995",
+        "limitations": "Footprint measures image data coverage, not interpretable construction coverage.",
+        "originalCrs": "EPSG:4326",
+        "sourceId": "LH-SRC-OC-IMAGERY",
+        "spatialPrecision": "export_pixel_footprint"
+      },
+      "type": "Feature"
+    }
+  ],
+  "type": "FeatureCollection"
+}

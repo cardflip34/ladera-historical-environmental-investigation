@@ -1,0 +1,15 @@
+{
+  "activeConstructionGeometryStatus": "not_supported",
+  "confidence": "medium",
+  "habitableGeometryStatus": "not_supported",
+  "includedAnnualSnapshotIds": "LH-SNAPSHOT-M4-2000;LH-SNAPSHOT-M4-2001",
+  "limitations": "Phase grouping summarizes documented milestones and does not manufacture physical state transitions between observations.",
+  "occupiedGeometryStatus": "not_supported",
+  "phaseName": "early_occupancy",
+  "phaseSnapshotId": "LH-PHASE-M4-03",
+  "proximityStatus": "blocked_missing_dated_subject_and_target_geometry",
+  "sourceIds": "LH-SRC-CUSD-CHAPARRAL;LH-SRC-LARMAC-TIMELINE;LH-SRC-OC-ADS",
+  "summary": "Community sales growth and first local school and facilities",
+  "validFromYear": 2000,
+  "validToYear": 2001
+}

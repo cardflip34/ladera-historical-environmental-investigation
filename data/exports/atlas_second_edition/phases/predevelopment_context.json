@@ -1,0 +1,15 @@
+{
+  "activeConstructionGeometryStatus": "not_supported",
+  "confidence": "low",
+  "habitableGeometryStatus": "not_supported",
+  "includedAnnualSnapshotIds": "",
+  "limitations": "Phase grouping summarizes documented milestones and does not manufacture physical state transitions between observations.",
+  "occupiedGeometryStatus": "not_supported",
+  "phaseName": "predevelopment_context",
+  "phaseSnapshotId": "LH-PHASE-M4-01",
+  "proximityStatus": "blocked_missing_dated_subject_and_target_geometry",
+  "sourceIds": "",
+  "summary": "Partial pre-development imagery context",
+  "validFromYear": 1994,
+  "validToYear": 1995
+}

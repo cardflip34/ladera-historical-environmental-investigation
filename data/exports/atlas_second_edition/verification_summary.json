@@ -1,0 +1,80 @@
+{
+  "buildWorkspace": "temporary local mirror of the exact repository app, lockfile, schema, research, and generated data",
+  "checkCount": 7,
+  "checks": [
+    {
+      "command": "python3 tests/test_data_integrity.py",
+      "durationSeconds": 0.03,
+      "id": "data_integrity",
+      "logPath": "evidence/lhdrs/verification/data_integrity.log",
+      "outputTail": "  PASS  test_application_events_have_valid_evidence_class\n  PASS  test_every_source_has_valid_grade\n  PASS  test_geojson_layers_valid\n  PASS  test_health_events_aggregate_columns_only\n  PASS  test_health_events_have_no_address_or_coordinate\n  PASS  test_no_bare_likely_application_events\n  PASS  test_records_reference_existing_sources\n\n7/7 passed.",
+      "returnCode": 0,
+      "status": "passed",
+      "workingDirectory": "."
+    },
+    {
+      "command": "python3 tests/test_lhdrs_integrity.py",
+      "durationSeconds": 0.27,
+      "id": "lhdrs_integrity",
+      "logPath": "evidence/lhdrs/verification/lhdrs_integrity.log",
+      "outputTail": "  PASS  test_mission4_geographic_hierarchy_keeps_unknown_parents_blank\n  PASS  test_mission4_graph_edges_are_versioned_and_inspectable\n  PASS  test_mission4_imagery_inventory_preserves_coverage_limits\n  PASS  test_mission4_proximity_gate_emits_no_false_results\n  PASS  test_mission4_reconstruction_matrices_preserve_unknowns\n  PASS  test_mission4_school_timeline_does_not_invent_boundaries_or_footprints\n  PASS  test_mission4_second_edition_is_distinct_complete_and_checksummed\n  PASS  test_mission4_snapshot_manifests_do_not_invent_annual_geometry\n  PASS  test_mission4_temporal_ordering_and_exceptions_are_explicit\n  PASS  test_mission4_terrain_context_is_complete_and_temporally_bounded\n  PASS  test_mission4_title_sheet_index_is_complete_and_bounded\n  PASS  test_mission4_tract_audit_preserves_lifecycle_boundary\n  PASS  test_mission4_wind_context_is_observed_and_regionally_bounded\n  PASS  test_obligations_are_not_misclassified_as_events\n  PASS  test_planning_area_totals_match_verified_table\n  PASS  test_proximity_analysis_stays_blocked_without_required_geometry\n  PASS  test_school_records_are_traceable\n  PASS  test_source_registry_unique_and_graded\n\n30/30 passed.",
+      "returnCode": 0,
+      "status": "passed",
+      "workingDirectory": "."
+    },
+    {
+      "command": "npm ci",
+      "durationSeconds": 3.61,
+      "id": "clean_install",
+      "logPath": "evidence/lhdrs/verification/clean_install.log",
+      "outputTail": "\nadded 105 packages, and audited 106 packages in 3s\n\n15 packages are looking for funding\n  run `npm fund` for details\n\nfound 0 vulnerabilities",
+      "returnCode": 0,
+      "status": "passed",
+      "workingDirectory": "apps/web (temporary local build mirror)"
+    },
+    {
+      "command": "./node_modules/.bin/tsc --noEmit",
+      "durationSeconds": 1.94,
+      "id": "typescript",
+      "logPath": "evidence/lhdrs/verification/typescript.log",
+      "outputTail": "",
+      "returnCode": 0,
+      "status": "passed",
+      "workingDirectory": "apps/web (temporary local build mirror)"
+    },
+    {
+      "command": "./node_modules/.bin/prisma validate --schema ../../packages/database/schema.prisma",
+      "durationSeconds": 0.89,
+      "id": "prisma_validate",
+      "logPath": "evidence/lhdrs/verification/prisma_validate.log",
+      "outputTail": "Prisma schema loaded from ../../packages/database/schema.prisma\nThe schema at ../../packages/database/schema.prisma is valid \ud83d\ude80",
+      "returnCode": 0,
+      "status": "passed",
+      "workingDirectory": "apps/web (temporary local build mirror)"
+    },
+    {
+      "command": "npm audit --audit-level=high",
+      "durationSeconds": 0.49,
+      "id": "npm_audit",
+      "logPath": "evidence/lhdrs/verification/npm_audit.log",
+      "outputTail": "found 0 vulnerabilities",
+      "returnCode": 0,
+      "status": "passed",
+      "workingDirectory": "apps/web (temporary local build mirror)"
+    },
+    {
+      "command": "npm run build",
+      "durationSeconds": 12.96,
+      "id": "production_build",
+      "logPath": "evidence/lhdrs/verification/production_build.log",
+      "outputTail": "\u251c \u25cb /ethics                                161 B         103 kB\n\u251c \u25cb /exposure                              161 B         103 kB\n\u251c \u25cb /health-events                         161 B         103 kB\n\u251c \u25cb /land-use                              161 B         103 kB\n\u251c \u25cb /literature                            161 B         103 kB\n\u251c \u25cb /map                                  1.3 kB         104 kB\n\u251c \u25cb /methodology                           161 B         103 kB\n\u251c \u25cb /pesticides                            161 B         103 kB\n\u251c \u25cb /sites                                 161 B         103 kB\n\u251c \u25cb /sources                               161 B         103 kB\n\u251c \u25cb /status                                161 B         103 kB\n\u2514 \u25cb /water                                 161 B         103 kB\n+ First Load JS shared by all             103 kB\n  \u251c chunks/255-62902f04efbdd792.js       46.3 kB\n  \u251c chunks/4bd1b696-c023c6e3521b1417.js  54.2 kB\n  \u2514 other shared chunks (total)          2.04 kB\n\n\n\u25cb  (Static)  prerendered as static content\n",
+      "returnCode": 0,
+      "status": "passed",
+      "workingDirectory": "apps/web (temporary local build mirror)"
+    }
+  ],
+  "finishedAt": "2026-07-27T07:31:28.073548+00:00",
+  "passedCount": 7,
+  "startedAt": "2026-07-27T07:31:06.348456+00:00",
+  "status": "passed"
+}

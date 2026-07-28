@@ -1,0 +1,47 @@
+
+> lehrp-web@0.2.0 build
+> next build
+
+   ▲ Next.js 15.5.21
+
+   Creating an optimized production build ...
+ ✓ Compiled successfully in 3.3s
+   Linting and checking validity of types ...
+   Collecting page data ...
+   Generating static pages (0/22) ...
+   Generating static pages (5/22) 
+   Generating static pages (10/22) 
+   Generating static pages (16/22) 
+ ✓ Generating static pages (22/22)
+   Finalizing page optimization ...
+   Collecting build traces ...
+
+Route (app)                                 Size  First Load JS
+┌ ○ /                                      162 B         106 kB
+├ ○ /_not-found                            995 B         104 kB
+├ ○ /atlas                               1.32 kB         104 kB
+├ ○ /chemicals                             161 B         103 kB
+├ ○ /claims                                161 B         103 kB
+├ ○ /data-gaps                             161 B         103 kB
+├ ○ /demographics                          161 B         103 kB
+├ ○ /environmental                         161 B         103 kB
+├ ○ /ethics                                161 B         103 kB
+├ ○ /exposure                              161 B         103 kB
+├ ○ /health-events                         161 B         103 kB
+├ ○ /land-use                              161 B         103 kB
+├ ○ /literature                            161 B         103 kB
+├ ○ /map                                  1.3 kB         104 kB
+├ ○ /methodology                           161 B         103 kB
+├ ○ /pesticides                            161 B         103 kB
+├ ○ /sites                                 161 B         103 kB
+├ ○ /sources                               161 B         103 kB
+├ ○ /status                                161 B         103 kB
+└ ○ /water                                 161 B         103 kB
++ First Load JS shared by all             103 kB
+  ├ chunks/255-62902f04efbdd792.js       46.3 kB
+  ├ chunks/4bd1b696-c023c6e3521b1417.js  54.2 kB
+  └ other shared chunks (total)          2.04 kB
+
+
+○  (Static)  prerendered as static content
+

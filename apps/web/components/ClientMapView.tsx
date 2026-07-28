@@ -1,0 +1,12 @@
+"use client";
+
+import dynamic from "next/dynamic";
+
+const MapView = dynamic(() => import("./MapView"), {
+  ssr: false,
+  loading: () => <p className="muted">Loading map...</p>,
+});
+
+export default function ClientMapView() {
+  return <MapView />;
+}

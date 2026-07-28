@@ -2,6 +2,7 @@ export const NAV: { href: string; label: string; short: string }[] = [
   { href: "/", label: "Overview", short: "Overview" },
   { href: "/status", label: "Research Status", short: "Status" },
   { href: "/map", label: "Interactive Map", short: "Map" },
+  { href: "/atlas", label: "Historical Development Atlas", short: "Atlas" },
   { href: "/health-events", label: "Publicly Reported Health Events", short: "Health Events" },
   { href: "/pesticides", label: "Pesticide Applications", short: "Pesticides" },
   { href: "/chemicals", label: "Chemical Library", short: "Chemicals" },

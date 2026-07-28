@@ -1,0 +1,10 @@
+id,planningArea,landUse,maxDwellingUnits,residentialNetAcres,residentialNetDensity,urbanActivityNetAcres,maxUrbanActivitySqFt,commercialNetAcres,maxCommercialSqFt,openSpaceNetAcres,localParkNetAcres,communityFacilityNetAcres,schoolNetAcres,arterialRoadNetAcres,grossAcres,grossDensity,communityProfileCategory,communityProfileRange,sourceIds,sourceLocator,confidence,limitations
+LH-PA-1,1,residential,1140,221,5.2,,,,,,7,,10,11,249,4.6,141,Medium Density 3.5-5.0 DU/AC,LH-SRC-OC-PC,PDF page 134,high,"Planned allocation; not an as-built count"
+LH-PA-2,2,residential,1880,333,5.6,,,variable,variable,,11,,,17,386,4.9,141,Medium Density 3.5-5.0 DU/AC,LH-SRC-OC-PC,PDF page 134,high,"Commercial allocation is controlled by community totals; planned allocation is not an as-built count"
+LH-PA-3,3,residential,1670,289,5.8,,,,,,10,,20,10,329,5.1,142,Medium Density 5.0-6.5 DU/AC,LH-SRC-OC-PC,PDF page 134,high,"Planned allocation; not an as-built count"
+LH-PA-4,4,residential,1650,472,3.5,,,,,,11,,10,10,503,3.3,133,Medium Low Density 3.0-3.5 DU/AC,LH-SRC-OC-PC,PDF page 134,high,"Planned allocation; not an as-built count"
+LH-PA-5,5,residential,1560,674,2.4,,,variable,variable,,20,,,27,721,2.2,131,Medium Low Density 2.0-2.5 DU/AC,LH-SRC-OC-PC,PDF page 134,high,"Commercial allocation is controlled by community totals; planned allocation is not an as-built count"
+LH-PA-6,6,urban_activity,200,,,111,854000,,,,,1,,8,120,1.3,6.0,Urban Activities Centers,LH-SRC-OC-PC,PDF page 134,high,"Planned maximum; not an as-built floor-area or unit count"
+LH-PA-7,7,open_space,,,,,,,,42,,,,,42,,5.1,Recreation,LH-SRC-OC-PC,PDF page 134,high,"Planned allocation; boundary must be digitized"
+LH-PA-8,8,open_space,,,,,,,,40,,,,,40,,5.1,Recreation,LH-SRC-OC-PC,PDF page 134,high,"Planned allocation; boundary must be digitized"
+LH-PA-TOTAL,total,planned_community,8100,1989,,111,854000,25,275000,82,59,1,40,83,2390,,,,LH-SRC-OC-PC,PDF pages 129 and 134,high,"School site sizes may vary by district requirements; totals are planned maxima or allocations"

@@ -1,0 +1,15 @@
+{
+  "analysisPeriod": "1997-2010",
+  "downscaled": false,
+  "movementModel": false,
+  "regionalOnly": true,
+  "selectedStationContexts": [
+    "LH-WIND-EL-TORO",
+    "LH-WIND-JOHN-WAYNE"
+  ],
+  "sourceIds": [
+    "LH-SRC-NOAA-ISD-HISTORY",
+    "LH-SRC-NOAA-GLOBAL-HOURLY"
+  ],
+  "timeBasis": "UTC"
+}

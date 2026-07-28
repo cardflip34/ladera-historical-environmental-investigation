@@ -1,0 +1,29 @@
+{
+  "accessInformation": "",
+  "catalogPath": "",
+  "culture": "en-US",
+  "description": "Orange County 2018 DEM, 1m",
+  "guid": "",
+  "licenseInfo": "",
+  "name": "oc_dem_1m_2018",
+  "snippet": "Orange County 2018 DEM, 1m",
+  "spatialReference": "NAD_1983_StatePlane_California_VI_FIPS_0406_Feet",
+  "summary": "Orange County 2018 DEM, 1m",
+  "tags": [
+    "Orange County",
+    "DEM",
+    "2019",
+    "1m"
+  ],
+  "thumbnail": "thumbnail/thumbnail.png",
+  "title": "oc_dem_1m_2018.tif",
+  "type": "Image Service",
+  "typeKeywords": [
+    "Data",
+    "Service",
+    "Image Service",
+    "ArcGIS Server",
+    "Elevation 3D Layer"
+  ],
+  "url": "https://spocdarcpub1201.arcgis.gov.local:6443/arcgis/services/Elevation/oc_dem_1m_2018/ImageServer"
+}

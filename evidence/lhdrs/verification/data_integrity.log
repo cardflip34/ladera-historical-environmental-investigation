@@ -1,0 +1,9 @@
+  PASS  test_application_events_have_valid_evidence_class
+  PASS  test_every_source_has_valid_grade
+  PASS  test_geojson_layers_valid
+  PASS  test_health_events_aggregate_columns_only
+  PASS  test_health_events_have_no_address_or_coordinate
+  PASS  test_no_bare_likely_application_events
+  PASS  test_records_reference_existing_sources
+
+7/7 passed.

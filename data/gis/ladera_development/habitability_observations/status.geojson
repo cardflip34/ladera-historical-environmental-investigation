@@ -1,0 +1,11 @@
+{
+  "features": [],
+  "limitations": "Community milestones and visible roofs do not establish lawful or practical habitability geometry.",
+  "notEvidenceOfAbsence": true,
+  "sourceIds": [
+    "LH-SRC-LARMAC-TIMELINE",
+    "LH-SRC-OC-IMAGERY"
+  ],
+  "status": "no_supported_habitability_geometry",
+  "type": "FeatureCollection"
+}

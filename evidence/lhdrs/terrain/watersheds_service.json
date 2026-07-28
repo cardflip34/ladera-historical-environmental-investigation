@@ -1,0 +1,232 @@
+{
+  "advancedQueryCapabilities": {
+    "supportsAdvancedQueryRelated": true,
+    "supportsCountDistinct": true,
+    "supportsCurrentUserQueries": true,
+    "supportsDistinct": true,
+    "supportsHavingClause": true,
+    "supportsLod": false,
+    "supportsOrderBy": true,
+    "supportsPagination": true,
+    "supportsPercentileStatistics": true,
+    "supportsQueryAnalytic": false,
+    "supportsQueryRelatedPagination": true,
+    "supportsQueryWithDatumTransformation": true,
+    "supportsQueryWithDistance": true,
+    "supportsQueryWithLodSR": false,
+    "supportsReturningQueryExtent": true,
+    "supportsSqlExpression": true,
+    "supportsSqlFormat": false,
+    "supportsStatistics": true,
+    "supportsTimeRelation": true,
+    "supportsTrueCurve": true,
+    "useStandardizedQueries": true
+  },
+  "archivingInfo": {
+    "startArchivingMoment": -1,
+    "supportsQueryWithHistoricMoment": false
+  },
+  "canModifyLayer": false,
+  "canScaleSymbols": false,
+  "capabilities": "Map,Query,Data",
+  "cimVersion": "3.5.0",
+  "copyrightText": "PACE",
+  "currentVersion": 11.5,
+  "dateFieldsTimeReference": null,
+  "datesInUnknownTimezone": false,
+  "defaultSubtypeCode": null,
+  "defaultVisibility": true,
+  "description": "Dissolved Boundaries of the subbasin delineation based on County Regional Watersheds.",
+  "displayField": "Watershed",
+  "drawingInfo": {
+    "labelingInfo": null,
+    "renderer": {
+      "symbol": {
+        "color": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "outline": {
+          "color": [
+            0,
+            0,
+            0,
+            255
+          ],
+          "style": "esriSLSSolid",
+          "type": "esriSLS",
+          "width": 2
+        },
+        "style": "esriSFSSolid",
+        "type": "esriSFS"
+      },
+      "type": "simple"
+    },
+    "scaleSymbols": true,
+    "transparency": 0
+  },
+  "extent": {
+    "spatialReference": {
+      "falseM": -100000,
+      "falseX": -118608900,
+      "falseY": -91259500,
+      "falseZ": -100000,
+      "latestWkid": 2230,
+      "mTolerance": 0.001,
+      "mUnits": 10000,
+      "wkid": 102646,
+      "xyTolerance": 0.003280833333333333,
+      "xyUnits": 35979706.30767777,
+      "zTolerance": 0.001,
+      "zUnits": 10000
+    },
+    "xmax": 6207834.132108554,
+    "xmin": 5992539.973130807,
+    "ymax": 2294458.9999754727,
+    "ymin": 2087133.2318850607
+  },
+  "fields": [
+    {
+      "alias": "Shape_Length",
+      "domain": null,
+      "name": "Shape_Length",
+      "type": "esriFieldTypeDouble"
+    },
+    {
+      "alias": "Shape_Area",
+      "domain": null,
+      "name": "Shape_Area",
+      "type": "esriFieldTypeDouble"
+    },
+    {
+      "alias": "OBJECTID",
+      "domain": null,
+      "name": "OBJECTID",
+      "type": "esriFieldTypeOID"
+    },
+    {
+      "alias": "Watershed",
+      "domain": null,
+      "length": 30,
+      "name": "Watershed",
+      "type": "esriFieldTypeString"
+    },
+    {
+      "alias": "Acres",
+      "domain": null,
+      "name": "Acres",
+      "type": "esriFieldTypeDouble"
+    },
+    {
+      "alias": "Shape",
+      "domain": null,
+      "name": "Shape",
+      "type": "esriFieldTypeGeometry"
+    }
+  ],
+  "geometryField": {
+    "alias": "Shape",
+    "name": "Shape",
+    "type": "esriFieldTypeGeometry"
+  },
+  "geometryProperties": {
+    "mapUnits": {
+      "uwkid": 9003
+    },
+    "shapeAreaFieldName": "Shape_Area",
+    "shapeLengthFieldName": "Shape_Length",
+    "units": "esriFeet"
+  },
+  "geometryType": "esriGeometryPolygon",
+  "hasAttachments": false,
+  "hasGeometryProperties": true,
+  "hasLabels": false,
+  "hasMetadata": false,
+  "htmlPopupType": "esriServerHTMLPopupTypeAsHTMLText",
+  "id": 0,
+  "indexes": [
+    {
+      "description": "",
+      "fields": "OBJECTID",
+      "isAscending": true,
+      "isUnique": true,
+      "name": "FDO_OBJECTID"
+    },
+    {
+      "description": "",
+      "fields": "Shape",
+      "isAscending": true,
+      "isUnique": false,
+      "name": "FDO_Shape"
+    }
+  ],
+  "isDataArchived": false,
+  "isDataVersioned": false,
+  "maxRecordCount": 1000,
+  "maxScale": 0,
+  "maxSelectionCount": 2000,
+  "minScale": 0,
+  "name": "Watersheds",
+  "ownershipBasedAccessControlForFeatures": {
+    "allowOthersToQuery": true
+  },
+  "parentLayer": null,
+  "preferredTimeReference": null,
+  "referenceScale": 0.0,
+  "relationships": [],
+  "sourceSpatialReference": {
+    "falseM": 0,
+    "falseX": -118608900,
+    "falseY": -91259500,
+    "falseZ": 0,
+    "latestWkid": 2230,
+    "mTolerance": 0.001,
+    "mUnits": 1,
+    "wkid": 102646,
+    "xyTolerance": 0.003280833333333333,
+    "xyUnits": 3048.0060960121928,
+    "zTolerance": 0.001,
+    "zUnits": 1
+  },
+  "spatialReference": {
+    "falseM": -100000,
+    "falseX": -118608900,
+    "falseY": -91259500,
+    "falseZ": -100000,
+    "latestWkid": 2230,
+    "mTolerance": 0.001,
+    "mUnits": 10000,
+    "wkid": 102646,
+    "xyTolerance": 0.003280833333333333,
+    "xyUnits": 35979706.30767777,
+    "zTolerance": 0.001,
+    "zUnits": 10000
+  },
+  "subLayers": [],
+  "subtypeField": null,
+  "subtypeFieldName": null,
+  "subtypes": [],
+  "supportedQueryFormats": "JSON, geoJSON, PBF",
+  "supportedSpatialRelationships": [
+    "esriSpatialRelIntersects",
+    "esriSpatialRelContains",
+    "esriSpatialRelCrosses",
+    "esriSpatialRelEnvelopeIntersects",
+    "esriSpatialRelIndexIntersects",
+    "esriSpatialRelOverlaps",
+    "esriSpatialRelTouches",
+    "esriSpatialRelWithin",
+    "esriSpatialRelRelation"
+  ],
+  "supportsAdvancedQueries": true,
+  "supportsCoordinatesQuantization": true,
+  "supportsDatumTransformation": true,
+  "supportsDynamicLegends": true,
+  "supportsExceedsLimitStatistics": true,
+  "supportsStatistics": true,
+  "type": "Feature Layer",
+  "typeIdField": null,
+  "useStandardizedQueries": true
+}

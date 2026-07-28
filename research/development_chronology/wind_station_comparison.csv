@@ -1,0 +1,2 @@
+year,elToroValidSpeedHours,johnWayneValidSpeedHours,elToroMeanSpeedMS,johnWayneMeanSpeedMS,meanSpeedDifferenceMS,elToroEasterlyPct,johnWayneEasterlyPct,sourceIds,interpretation,limitations
+1997,8745,5599,2.004,3.648,-1.644,31.16,11.65,LH-SRC-NOAA-GLOBAL-HOURLY,regional_station_comparison_only,Station differences do not quantify conditions at Ladera Ranch.

@@ -1,7 +1,5 @@
-import dynamic from "next/dynamic";
 import { PageHeader, Callout } from "../../components/ui";
-
-const MapView = dynamic(() => import("../../components/MapView"), { ssr: false, loading: () => <p className="muted">Loading map…</p> });
+import ClientMapView from "../../components/ClientMapView";
 
 export const metadata = { title: "Interactive Map" };
 
@@ -18,7 +16,7 @@ export default function MapPage() {
         public-institution / environmental-site locations only. Geographic overlap does not establish exposure or
         causation.
       </Callout>
-      <MapView />
+      <ClientMapView />
       <div className="grid cols-2" style={{ marginTop: "1rem" }}>
         <div className="card">
           <h3>What is shown</h3>

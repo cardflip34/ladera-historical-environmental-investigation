@@ -38,6 +38,30 @@ enum EvidenceClass {
   unverified_allegation
 }
 
+enum DevelopmentStatementClass {
+  documented_exact
+  documented_approximate
+  corroborated_secondary
+  visual_interpretation
+  estimate
+  unresolved
+}
+
+enum TemporalPrecision {
+  day
+  month
+  year
+  range
+  unknown
+}
+
+enum ResearchStatus {
+  open
+  in_progress
+  blocked
+  resolved
+}
+
 model Source {
   id                String            @id
   title             String
@@ -69,6 +93,14 @@ model Source {
   sites             Site[]
   environmentalSites EnvironmentalSite[]
   waterSystems      WaterSystem[]
+  developmentEvents DevelopmentEvent[]
+  developmentSnapshots AnnualDevelopmentSnapshot[]
+  developmentSchools SchoolDevelopmentRecord[]
+  developmentNeighborhoods NeighborhoodDevelopmentRecord[]
+  developmentImagery HistoricalImageryRecord[]
+  developmentPlanningAreas PlanningAreaRecord[]
+  developmentObligations DevelopmentObligation[]
+  developmentQuestions DevelopmentResearchQuestion[]
 }
 
 model PublicHealthEvent {
@@ -227,4 +259,300 @@ model WaterSystem {
   serviceAreaGeometry String? // GeoJSON text
   sourceId            String?
   sourceRel           Source? @relation(fields: [sourceId], references: [id])
+}
+
+model DevelopmentEvent {
+  id                   String                    @id
+  title                String
+  eventType            String
+  dateStart            DateTime
+  dateEnd              DateTime?
+  temporalPrecision    TemporalPrecision
+  placeName            String?
+  featureId            String?
+  status               String?
+  statementClass       DevelopmentStatementClass
+  confidence           String
+  sourceLocator        String?
+  interpretationMethod String?
+  conflictNotes        String?
+  notes                String?
+  geometry             String?                   // GeoJSON text
+  geometryPrecision    String?
+  sources              Source[]
+}
+
+model AnnualDevelopmentSnapshot {
+  year                       Int      @id
+  communityStatus            String
+  tractMapsRecordedByYear    Int
+  tractMapsRecordedCumulative Int
+  homesSoldAsOf              Int?
+  activeSchoolCount          Int
+  documentedMilestones       String
+  ranchlandStatus            String?
+  gradingStatus              String?
+  roadStatus                 String?
+  utilityStatus              String?
+  confidence                 String
+  limitations                String
+  geometry                   String?  // GeoJSON text; current CDP display extent unless documented otherwise
+  sources                    Source[]
+}
+
+model SchoolDevelopmentRecord {
+  id                String    @id
+  name              String
+  openDate          DateTime
+  planningStart     DateTime?
+  constructionStart DateTime?
+  constructionEnd   DateTime?
+  geometry          String?   // GeoJSON point text
+  geometryPrecision String?
+  statementClass    DevelopmentStatementClass
+  confidence        String
+  limitations       String?
+  sources           Source[]
+}
+
+model NeighborhoodDevelopmentRecord {
+  id                   String  @id
+  name                 String
+  planningArea         String?
+  firstGradingDate     DateTime?
+  firstConstructionDate DateTime?
+  firstSaleDate        DateTime?
+  firstOccupancyDate   DateTime?
+  substantialBuildout  DateTime?
+  geometry             String? // GeoJSON text
+  geometryPrecision    String?
+  confidence           String
+  limitations          String
+  sources              Source[]
+}
+
+model HistoricalImageryRecord {
+  id                String    @id
+  captureDateStart  DateTime?
+  captureDateEnd    DateTime?
+  displayYear       Int
+  coverage          String?
+  localFilePath     String?
+  checksum          String?
+  registration      String?
+  interpretationStatus String?
+  limitations       String
+  sources           Source[]
+}
+
+model PlanningAreaRecord {
+  id                   String  @id
+  planningArea         String
+  landUse              String
+  maxDwellingUnits     Int?
+  residentialNetAcres  Float?
+  grossAcres           Float?
+  geometry              String? // GeoJSON text
+  geometryPrecision     String?
+  confidence            String
+  limitations           String
+  sources               Source[]
+}
+
+model DevelopmentObligation {
+  id             String                    @id
+  triggerType    String
+  triggerValue   String?
+  obligation     String
+  status         String
+  sourceLocator  String?
+  statementClass DevelopmentStatementClass
+  confidence     String
+  limitations    String
+  sources        Source[]
+}
+
+model DevelopmentResearchQuestion {
+  id            String         @id
+  priority      String
+  category      String
+  question      String
+  evidenceNeeded String
+  status        ResearchStatus
+  blockedOutput String?
+  nextAction    String?
+  sources       Source[]
+}
+
+model HistoricalObservationRecord {
+  id                  String   @id
+  observedEntityId    String
+  observationType     String
+  observedValue       String
+  exactDate           DateTime?
+  earliestDate        DateTime?
+  latestDate          DateTime?
+  temporalPrecision   TemporalPrecision
+  temporalBasis       String?
+  geometryId          String?
+  geometryType        String?
+  geometryStatus      String?
+  evidenceId          String?
+  pageOrFrameReference String?
+  observationMethod   String
+  researcherOrAgent   String?
+  directOrInferred    String
+  confidence          String
+  confidenceRationale String?
+  limitations         String
+  createdAt           DateTime @default(now())
+  recordVersion       String
+  supersedesId        String?
+  reviewStatus        String
+  sourceIds           String
+}
+
+model DevelopmentClaimRecord {
+  id                       String   @id
+  subjectEntityId          String
+  claimType                String
+  claimText                String
+  earliestDate             DateTime?
+  latestDate               DateTime?
+  temporalPrecision        TemporalPrecision
+  claimScope               String
+  supportingObservationIds String
+  counterEvidenceIds       String?
+  sourceIds                String
+  supportType              String
+  statementClass           DevelopmentStatementClass
+  confidence               String
+  confidenceRationale      String?
+  conflictStatus           String
+  reviewStatus             String
+  limitations              String
+  recordVersion            String
+}
+
+model DevelopmentLifecycleInterval {
+  id                 String   @id
+  entityId           String
+  stateDimension     String
+  stateValue         String
+  validFrom          DateTime?
+  validTo            DateTime?
+  startBoundType     String?
+  endBoundType       String?
+  temporalPrecision  TemporalPrecision
+  geometryId         String?
+  geometryStatus     String
+  sourceIds          String
+  supportingClaimIds String
+  statementClass     DevelopmentStatementClass
+  confidence         String
+  proximityEligible  Boolean  @default(false)
+  limitations        String
+  recordVersion      String
+}
+
+model ConstructionActivityRecord {
+  id                       String   @id
+  activityClass            String
+  canonicalName            String
+  relatedTractIds          String?
+  relatedNeighborhoodIds   String?
+  relatedPlanningAreaIds   String?
+  relatedBuilderIds        String?
+  geometry                 String?
+  geometryMethod           String
+  geometrySource           String?
+  earliestStart            DateTime?
+  latestStart              DateTime?
+  earliestEnd              DateTime?
+  latestEnd                DateTime?
+  temporalPrecision        TemporalPrecision
+  lifecycleState           String
+  intensityClass           String
+  evidenceIds              String
+  sourceIds                String
+  confidence               String
+  confidenceRationale      String
+  limitations              String
+  reviewStatus             String
+  recordVersion            String
+  proximityEligible        Boolean  @default(false)
+}
+
+model OccupancyEventRecord {
+  id                  String   @id
+  relatedEventId      String?
+  geographyId         String
+  geographyType       String
+  eventClass           String
+  eventTitle           String
+  earliestDate         DateTime
+  latestDate           DateTime
+  temporalPrecision    TemporalPrecision
+  homeCount            Int?
+  habitabilityConclusion String
+  occupancyConclusion  String
+  geometry              String?
+  geometryStatus       String
+  sourceIds             String
+  statementClass       DevelopmentStatementClass
+  confidence            String
+  confidenceRationale   String
+  limitations           String
+  reviewStatus          String
+  proximityEligible     Boolean  @default(false)
+}
+
+model EvidenceGraphEdgeRecord {
+  id             String   @id
+  fromId         String
+  fromType       String
+  relationship   String
+  toId           String
+  toType         String
+  validFrom      DateTime?
+  validTo        DateTime?
+  evidenceIds    String
+  sourceIds      String
+  confidence     String
+  recordVersion  String
+  reviewStatus   String
+  limitations    String?
+  notes          String?
+
+  @@index([fromId])
+  @@index([toId])
+  @@index([relationship])
+}
+
+model DevelopmentConflictRecord {
+  id                  String @id
+  subjectId           String
+  conflictType        String
+  positionA           String
+  positionAEvidenceIds String
+  positionASourceIds  String
+  positionB           String
+  positionBEvidenceIds String
+  positionBSourceIds  String
+  resolution          String
+  confidence          String
+  reviewStatus        String
+}
+
+model DevelopmentResearchGapRecord {
+  id                    String @id
+  topic                 String
+  scope                 String
+  evidenceNeeded        String
+  recommendedRepository String
+  searchOrAccessStatus  String
+  priority              String
+  analyticalImpact      String
+  recommendedFollowUp   String
+  reviewStatus          String
 }

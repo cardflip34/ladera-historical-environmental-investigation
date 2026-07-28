@@ -27,6 +27,14 @@ A research repository plus a local web application that:
 | Doc | Purpose |
 |-----|---------|
 | [CLAUDE.md](CLAUDE.md) | Project constitution: rules, zones, scope, stack, language discipline |
+| [LHDRS_MASTER_PRD.md](LHDRS_MASTER_PRD.md) | Historical-development reconstruction specification |
+| [docs/LHDRS_REPOSITORY_AUDIT.md](docs/LHDRS_REPOSITORY_AUDIT.md) | Inventory, gap analysis, duplicate report, and recommendations for the LHDRS workstream |
+| [docs/lhdrs/RECURSIVE_GAP_REVIEW.md](docs/lhdrs/RECURSIVE_GAP_REVIEW.md) | First-edition stop condition, evidence gates, and next research order |
+| [reports/LHDRS_Historical_Development_Atlas.html](reports/LHDRS_Historical_Development_Atlas.html) | Generated print-ready historical-development atlas |
+| [reports/LHDRS_Historical_Development_Atlas_Second_Edition.html](reports/LHDRS_Historical_Development_Atlas_Second_Edition.html) | Preserved second-edition atlas with 1997-2010 annual chapters and evidence-qualified gaps |
+| [docs/lhdrs/MISSION_4_IMPLEMENTATION_SUMMARY.md](docs/lhdrs/MISSION_4_IMPLEMENTATION_SUMMARY.md) | Mission 4 reconstruction scope, outputs, blockers, and verification summary |
+| [reports/LHDRS_Historical_Evidence_Atlas_Mission_5.html](reports/LHDRS_Historical_Evidence_Atlas_Mission_5.html) | Mission 5 public-evidence atlas with County product/absorption tables and official 2005/2009/2010 imagery |
+| [docs/lhdrs/MISSION_5_IMPLEMENTATION_SUMMARY.md](docs/lhdrs/MISSION_5_IMPLEMENTATION_SUMMARY.md) | Mission 5 sources, reconstruction outputs, safeguards, and remaining manual-record blockers |
 | [RESEARCH_PROTOCOL.md](RESEARCH_PROTOCOL.md) | Research questions, hypothesis set, study design |
 | [METHODOLOGY.md](METHODOLOGY.md) | SIR/Poisson/scenario/screening methods and bias register |
 | [SOURCE_POLICY.md](SOURCE_POLICY.md) | Source grading (A1–D) and conflict handling |
@@ -61,6 +69,25 @@ docker compose up -d
 # Python pipelines
 cd pipelines/python && python3 -m venv .venv && source .venv/bin/activate
 pip install -r requirements.txt
+```
+
+Rebuild and verify the second-edition LHDRS outputs with the repository's GIS-capable
+Python environment:
+
+```bash
+make lhdrs-mission4 LHDRS_PYTHON=/path/to/python
+make lhdrs-mission4-publish LHDRS_PYTHON=/path/to/python
+make lhdrs-mission4-docs LHDRS_PYTHON=/path/to/python
+make lhdrs-mission4-verify LHDRS_PYTHON=/path/to/python
+```
+
+Rebuild the Mission 5 evidence integration from the archived public records:
+
+```bash
+make lhdrs-mission5 LHDRS_PYTHON=/path/to/python
+make lhdrs-mission5-publish LHDRS_PYTHON=/path/to/python
+make lhdrs-mission5-docs LHDRS_PYTHON=/path/to/python
+make lhdrs-mission5-verify LHDRS_PYTHON=/path/to/python
 ```
 
 ## Status

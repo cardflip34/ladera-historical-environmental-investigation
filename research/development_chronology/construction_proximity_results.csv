@@ -1,0 +1,1 @@
+resultId,subjectId,subjectClass,constructionActivityId,constructionClass,validFrom,validTo,analysisCrs,minimumEdgeDistanceM,centroidDistanceM,temporalOverlapDays,buffer25m,buffer50m,buffer100m,buffer250m,buffer500m,buffer1000m,subjectGeometryConfidence,targetGeometryConfidence,evidenceIds,sourceIds,limitations

@@ -1,0 +1,329 @@
+{
+  "advancedQueryCapabilities": {
+    "supportsDistinct": true,
+    "supportsOrderBy": true,
+    "supportsPagination": true,
+    "supportsStatistics": true,
+    "useStandardizedQueries": true
+  },
+  "allowAnalysis": true,
+  "allowComputeTiePoints": false,
+  "allowCopy": true,
+  "allowRasterFunction": true,
+  "allowedFields": "Name,MinPS,MaxPS,LowPS,HighPS,Tag,GroupName,ProductName,CenterX,CenterY,ZOrder,Shape_Length,Shape_Area,Thumbnail,Scan_File_Name,Map_Name,DateCurrent,Date_On_Map,Map_Scale",
+  "allowedMosaicMethods": "NorthWest,Center,LockRaster,ByAttribute,Nadir,Viewpoint,Seamline,None",
+  "bandCount": 4,
+  "bandNames": [
+    "Band_1",
+    "Band_2",
+    "Band_3",
+    "Band_4"
+  ],
+  "blockHeight": 256,
+  "blockWidth": 2048,
+  "capabilities": "Image,Metadata,Catalog,Mensuration",
+  "compressionType": "None",
+  "copyrightText": "OC Survey",
+  "currentVersion": 11.5,
+  "datasetFormat": "AMD",
+  "defaultCompressionQuality": 75,
+  "defaultMosaicMethod": "Northwest",
+  "defaultResamplingMethod": "Bilinear",
+  "description": "Orange County Historical Imagery Aerial Index, v2",
+  "editFieldsInfo": null,
+  "exportTilesAllowed": false,
+  "extent": {
+    "spatialReference": {
+      "latestWkid": 2230,
+      "wkid": 102646
+    },
+    "xmax": 6234815.264293699,
+    "xmin": 5943054.604253963,
+    "ymax": 2332762.4558487236,
+    "ymin": 2053774.6803567847
+  },
+  "fields": [
+    {
+      "alias": "OBJECTID",
+      "domain": null,
+      "name": "OBJECTID",
+      "type": "esriFieldTypeOID"
+    },
+    {
+      "alias": "Shape",
+      "domain": null,
+      "name": "Shape",
+      "type": "esriFieldTypeGeometry"
+    },
+    {
+      "alias": "Name",
+      "domain": null,
+      "length": 200,
+      "name": "Name",
+      "type": "esriFieldTypeString"
+    },
+    {
+      "alias": "MinPS",
+      "domain": null,
+      "name": "MinPS",
+      "type": "esriFieldTypeDouble"
+    },
+    {
+      "alias": "MaxPS",
+      "domain": null,
+      "name": "MaxPS",
+      "type": "esriFieldTypeDouble"
+    },
+    {
+      "alias": "LowPS",
+      "domain": null,
+      "name": "LowPS",
+      "type": "esriFieldTypeDouble"
+    },
+    {
+      "alias": "HighPS",
+      "domain": null,
+      "name": "HighPS",
+      "type": "esriFieldTypeDouble"
+    },
+    {
+      "alias": "Category",
+      "domain": {
+        "codedValues": [
+          {
+            "code": 0,
+            "name": "Unknown"
+          },
+          {
+            "code": 1,
+            "name": "Primary"
+          },
+          {
+            "code": 2,
+            "name": "Overview"
+          },
+          {
+            "code": 3,
+            "name": "Unprocessed Overview"
+          },
+          {
+            "code": 4,
+            "name": "Partial Overview"
+          },
+          {
+            "code": 5,
+            "name": "Inactive"
+          },
+          {
+            "code": 253,
+            "name": "Uploaded"
+          },
+          {
+            "code": 254,
+            "name": "Incomplete"
+          },
+          {
+            "code": 255,
+            "name": "Custom"
+          }
+        ],
+        "description": "Catalog item categories.",
+        "mergePolicy": "esriMPTDefaultValue",
+        "name": "MosaicCatalogItemCategoryDomain",
+        "splitPolicy": "esriSPTDefaultValue",
+        "type": "codedValue"
+      },
+      "name": "Category",
+      "type": "esriFieldTypeInteger"
+    },
+    {
+      "alias": "Tag",
+      "domain": null,
+      "length": 100,
+      "name": "Tag",
+      "type": "esriFieldTypeString"
+    },
+    {
+      "alias": "GroupName",
+      "domain": null,
+      "length": 100,
+      "name": "GroupName",
+      "type": "esriFieldTypeString"
+    },
+    {
+      "alias": "ProductName",
+      "domain": null,
+      "length": 100,
+      "name": "ProductName",
+      "type": "esriFieldTypeString"
+    },
+    {
+      "alias": "CenterX",
+      "domain": null,
+      "name": "CenterX",
+      "type": "esriFieldTypeDouble"
+    },
+    {
+      "alias": "CenterY",
+      "domain": null,
+      "name": "CenterY",
+      "type": "esriFieldTypeDouble"
+    },
+    {
+      "alias": "ZOrder",
+      "domain": null,
+      "name": "ZOrder",
+      "type": "esriFieldTypeInteger"
+    },
+    {
+      "alias": "Map ID",
+      "domain": null,
+      "length": 255,
+      "name": "Scan_File_Name",
+      "type": "esriFieldTypeString"
+    },
+    {
+      "alias": "Map_Name",
+      "domain": null,
+      "length": 100,
+      "name": "Map_Name",
+      "type": "esriFieldTypeString"
+    },
+    {
+      "alias": "Date Current",
+      "domain": null,
+      "name": "DateCurrent",
+      "type": "esriFieldTypeInteger"
+    },
+    {
+      "alias": "Date on Map",
+      "domain": null,
+      "name": "Date_On_Map",
+      "type": "esriFieldTypeSmallInteger"
+    },
+    {
+      "alias": "Imagery Type",
+      "domain": null,
+      "name": "Map_Scale",
+      "type": "esriFieldTypeInteger"
+    },
+    {
+      "alias": "Shape_Length",
+      "domain": null,
+      "name": "Shape_Length",
+      "type": "esriFieldTypeDouble"
+    },
+    {
+      "alias": "Shape_Area",
+      "domain": null,
+      "name": "Shape_Area",
+      "type": "esriFieldTypeDouble"
+    }
+  ],
+  "fullExtent": {
+    "spatialReference": {
+      "latestWkid": 2230,
+      "wkid": 102646
+    },
+    "xmax": 6234815.264293699,
+    "xmin": 5943054.604253963,
+    "ymax": 2332762.4558487236,
+    "ymin": 2053774.6803567847
+  },
+  "hasColormap": false,
+  "hasHistograms": true,
+  "hasMultidimensions": false,
+  "hasRasterAttributeTable": false,
+  "initialExtent": {
+    "spatialReference": {
+      "latestWkid": 2230,
+      "wkid": 102646
+    },
+    "xmax": 6234815.264293699,
+    "xmin": 5943054.604253963,
+    "ymax": 2332762.4558487236,
+    "ymin": 2053774.6803567847
+  },
+  "inspectionCapabilities": "",
+  "itemAccess": false,
+  "maxDownloadImageCount": 40,
+  "maxDownloadSizeLimit": 4096,
+  "maxImageHeight": 30000,
+  "maxImageWidth": 30000,
+  "maxMosaicImageCount": 500,
+  "maxPixelSize": 0,
+  "maxRecordCount": 2000,
+  "maxScale": 0,
+  "maxValues": [
+    65407.001953125,
+    65407.001953125,
+    65407.001953125,
+    255
+  ],
+  "meanPixelSize": 0.016346029972056364,
+  "meanValues": [
+    601.6569550696584,
+    320.1122671625349,
+    320.1122671820801,
+    109.11688721607406
+  ],
+  "mensurationCapabilities": "Basic",
+  "minPixelSize": 0,
+  "minScale": 0,
+  "minValues": [
+    0,
+    0,
+    0,
+    0
+  ],
+  "mosaicOperator": "First",
+  "name": "Historic_Imagery/Historic_Imagery_v2",
+  "noDataValue": 1.79e+308,
+  "noDataValues": [
+    1.79e+308,
+    1.79e+308,
+    0,
+    1.79e+308
+  ],
+  "objectIdField": "OBJECTID",
+  "ownershipBasedAccessControlForRasters": null,
+  "pixelSizeX": 0.05362859999998823,
+  "pixelSizeY": 0.05362859999998826,
+  "pixelType": "U8",
+  "rasterFunctionInfos": [
+    {
+      "description": "A No-Op Function.",
+      "help": "",
+      "name": "None"
+    }
+  ],
+  "rasterTypeInfos": [
+    {
+      "description": "Supports all ArcGIS Raster Datasets",
+      "help": "",
+      "name": "Raster Dataset"
+    }
+  ],
+  "serviceDataType": "esriImageServiceDataTypeGeneric",
+  "serviceDescription": "Orange County Historical Imagery Aerial Index, v2",
+  "serviceProperties": "<ImageServer><ImageServiceProperties><MosaicMethod>NorthWest</MosaicMethod><MosaicOperator>First</MosaicOperator><SortAscending>true</SortAscending><LockImageID></LockImageID><TileOrderField>Name</TileOrderField><TileOrderBase>0</TileOrderBase><AvgImageSpacingX>600.000000</AvgImageSpacingX><AvgImageSpacingY>300.000000</AvgImageSpacingY><ViewPointX>0.0</ViewPointX><ViewPointY>0.0</ViewPointY><ViewPointDefShiftX>0.0</ViewPointDefShiftX><ViewPointDefShiftY>0.0</ViewPointDefShiftY><CompressionMethod>None</CompressionMethod><CompressionQuality>75</CompressionQuality><CompressionTolerance>0.010000</CompressionTolerance><SamplingMethod>Bilinear</SamplingMethod></ImageServiceProperties></ImageServer>",
+  "serviceSourceType": "esriImageServiceSourceTypeMosaicDataset",
+  "sortAscending": true,
+  "sortField": "",
+  "sortValue": null,
+  "sortableFields": "",
+  "spatialReference": {
+    "latestWkid": 2230,
+    "wkid": 102646
+  },
+  "stdvValues": [
+    3963.1257487355356,
+    2467.950279994277,
+    2467.950279992586,
+    126.16778975547737
+  ],
+  "supportsAdvancedQueries": true,
+  "supportsStatistics": true,
+  "uncompressedSize": 113208485089840,
+  "useStandardizedQueries": true
+}

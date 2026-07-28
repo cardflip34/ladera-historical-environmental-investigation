@@ -1,0 +1,310 @@
+{
+  "advancedEditingCapabilities": {
+    "supportedApplyEditsUploadIDFormats": "JSON,PBF",
+    "supportedSqlFormatsInCalculate": [
+      "standard"
+    ],
+    "supportsApplyEditsbyUploadID": true,
+    "supportsAsyncApplyEdits": true
+  },
+  "advancedQueryAnalyticCapabilities": {
+    "supportsAsync": true,
+    "supportsLinearRegression": true,
+    "supportsPercentileAnalytic": true
+  },
+  "advancedQueryCapabilities": {
+    "fullTextSearchCapabilities": {
+      "supportsOperator": false,
+      "supportsSearchOperator": true,
+      "supportsSqlExpressionInFullText": true
+    },
+    "fullTextSearchableFields": [],
+    "supportedCurveTypes": [
+      "esriGeometryCircularArc",
+      "esriGeometryEllipticArc",
+      "esriGeometryBezier3Curve"
+    ],
+    "supportsAdvancedQueryRelated": true,
+    "supportsCountDistinct": true,
+    "supportsCurrentUserQueries": true,
+    "supportsDistinct": true,
+    "supportsFullTextSearch": true,
+    "supportsHavingClause": true,
+    "supportsLod": false,
+    "supportsOrderBy": true,
+    "supportsPagination": true,
+    "supportsPercentileStatistics": true,
+    "supportsQueryAnalytic": true,
+    "supportsQueryRelatedPagination": true,
+    "supportsQueryWithCacheHint": false,
+    "supportsQueryWithDatumTransformation": true,
+    "supportsQueryWithDistance": true,
+    "supportsQueryWithLodSR": false,
+    "supportsQueryWithResultType": true,
+    "supportsReturningGeometryCentroid": false,
+    "supportsReturningGeometryEnvelope": true,
+    "supportsReturningQueryExtent": true,
+    "supportsSqlExpression": true,
+    "supportsStatistics": true,
+    "supportsTrueCurve": true
+  },
+  "allowGeometryUpdates": true,
+  "allowTrueCurvesUpdates": false,
+  "allowUpdateWithoutMValues": false,
+  "archivingInfo": {
+    "startArchivingMoment": -1,
+    "supportsQueryWithHistoricMoment": false
+  },
+  "bigIntegerRestrictedTo53Bits": true,
+  "canScaleSymbols": false,
+  "capabilities": "Query",
+  "cimVersion": "3.5.0",
+  "copyrightText": "Orange County Public Works",
+  "currentVersion": 11.5,
+  "dateFieldsTimeReference": {
+    "respectsDaylightSaving": false,
+    "timeZone": "UTC",
+    "timeZoneIANA": "Etc/UTC"
+  },
+  "datesInUnknownTimezone": false,
+  "defaultVisibility": true,
+  "description": "<DIV STYLE=\"text-align:Left;\"><DIV><DIV><P><SPAN>This shapefile represents the stream centerlines generated within the Orange County High Density LiDAR analysis boundary. These lines were generated using QSI hydrology tools, and elevations were assigned to each vertex. The horizontal datum for this dataset is NAD83 with OCS 2007.00 Adjustment, the vertical datum is NAVD88 with OCS 1995.00 Adjustment, and the data is projected in California State Plane VI. Units are in US Survey Feet. Quantum Spatial collected the Orange County High Density LiDAR data for Orange County Public Works between 07/23/16 and 07/26/16. Aerial Imagery utilized was provided by Orange County Public Works, and was acquired by Eagle Aerial Solutions between June and July of 2015. </SPAN></P></DIV></DIV></DIV>",
+  "displayField": "GROUP_",
+  "drawingInfo": {
+    "labelingInfo": null,
+    "renderer": {
+      "symbol": {
+        "color": [
+          102,
+          36,
+          160,
+          255
+        ],
+        "style": "esriSLSSolid",
+        "type": "esriSLS",
+        "width": 1
+      },
+      "type": "simple"
+    },
+    "scaleSymbols": true,
+    "transparency": 0
+  },
+  "editFieldsInfo": null,
+  "enableZDefaults": false,
+  "extent": {
+    "mmax": 0,
+    "mmin": 0,
+    "spatialReference": {
+      "falseM": -100000,
+      "falseX": -118608900,
+      "falseY": -91259500,
+      "falseZ": -100000,
+      "latestWkid": 2230,
+      "mTolerance": 0.001,
+      "mUnits": 10000,
+      "wkid": 102646,
+      "xyTolerance": 0.003280833333333333,
+      "xyUnits": 3048.0060960121928,
+      "zTolerance": 0.001,
+      "zUnits": 10000
+    },
+    "xmax": 6164910.563756391,
+    "xmin": 6094463.266002968,
+    "ymax": 2194998.5528993905,
+    "ymin": 2091621.508013472,
+    "zmax": 1424.229999999996,
+    "zmin": 7.570000000006985
+  },
+  "fields": [
+    {
+      "alias": "OBJECTID",
+      "defaultValue": null,
+      "domain": null,
+      "editable": false,
+      "modelName": "OBJECTID",
+      "name": "OBJECTID",
+      "nullable": false,
+      "type": "esriFieldTypeOID"
+    },
+    {
+      "alias": "GROUP_",
+      "defaultValue": null,
+      "domain": null,
+      "editable": true,
+      "length": 254,
+      "modelName": "GROUP_",
+      "name": "GROUP_",
+      "nullable": true,
+      "type": "esriFieldTypeString"
+    },
+    {
+      "alias": "Reach",
+      "defaultValue": null,
+      "domain": null,
+      "editable": true,
+      "modelName": "Reach",
+      "name": "Reach",
+      "nullable": true,
+      "type": "esriFieldTypeInteger"
+    },
+    {
+      "alias": "REACH_ID",
+      "defaultValue": null,
+      "domain": null,
+      "editable": true,
+      "length": 254,
+      "modelName": "REACH_ID",
+      "name": "REACH_ID",
+      "nullable": true,
+      "type": "esriFieldTypeString"
+    },
+    {
+      "alias": "Shape.STLength()",
+      "defaultValue": null,
+      "domain": null,
+      "editable": false,
+      "modelName": "Shape.STLength()",
+      "name": "Shape__Length",
+      "nullable": true,
+      "required": true,
+      "type": "esriFieldTypeDouble"
+    }
+  ],
+  "geometryField": {
+    "alias": "Shape",
+    "defaultValue": null,
+    "domain": null,
+    "editable": true,
+    "modelName": "Shape",
+    "name": "Shape",
+    "nullable": true,
+    "type": "esriFieldTypeGeometry"
+  },
+  "geometryProperties": {
+    "shapeLengthFieldName": "Shape__Length",
+    "units": "esriFeet"
+  },
+  "geometryType": "esriGeometryPolyline",
+  "globalIdField": "",
+  "hasAttachments": false,
+  "hasGeometryProperties": true,
+  "hasM": true,
+  "hasMetadata": true,
+  "hasZ": true,
+  "htmlPopupType": "esriServerHTMLPopupTypeAsHTMLText",
+  "id": 0,
+  "indexes": [
+    {
+      "description": "",
+      "fields": "OBJECTID",
+      "isAscending": true,
+      "isUnique": true,
+      "name": "R296_pk"
+    },
+    {
+      "description": "",
+      "fields": "Shape",
+      "isAscending": true,
+      "isUnique": true,
+      "name": "S265_idx"
+    }
+  ],
+  "infoInEstimates": [
+    "extent",
+    "count"
+  ],
+  "isCoGoEnabled": false,
+  "isDataArchived": false,
+  "isDataBranchVersioned": false,
+  "isDataReplicaTracked": false,
+  "isDataVersioned": false,
+  "maxRecordCount": 2000,
+  "maxRecordCountFactor": 1,
+  "maxScale": 0,
+  "minScale": 0,
+  "name": "Centerlines",
+  "objectIdField": "OBJECTID",
+  "onlyAllowTrueCurveUpdatesByTrueCurveClients": true,
+  "ownershipBasedAccessControlForFeatures": null,
+  "parentLayer": null,
+  "preferredTimeReference": null,
+  "relationships": [],
+  "sourceSpatialReference": {
+    "falseM": -100000,
+    "falseX": -118608900,
+    "falseY": -91259500,
+    "falseZ": -100000,
+    "latestWkid": 2230,
+    "mTolerance": 0.001,
+    "mUnits": 10000,
+    "wkid": 102646,
+    "xyTolerance": 0.003280833333333333,
+    "xyUnits": 3048.0060960121928,
+    "zTolerance": 0.001,
+    "zUnits": 10000
+  },
+  "spatialReference": {
+    "falseM": -100000,
+    "falseX": -118608900,
+    "falseY": -91259500,
+    "falseZ": -100000,
+    "latestWkid": 2230,
+    "mTolerance": 0.001,
+    "mUnits": 10000,
+    "wkid": 102646,
+    "xyTolerance": 0.003280833333333333,
+    "xyUnits": 3048.0060960121928,
+    "zTolerance": 0.001,
+    "zUnits": 10000
+  },
+  "standardMaxRecordCount": 8000,
+  "standardMaxRecordCountNoGeometry": 32000,
+  "subtypeField": "",
+  "supportedAppendFormats": "FILEGDB,PBF",
+  "supportedExportFormats": "sqlite,filegdb,shapefile,csv,geojson",
+  "supportedQueryFormats": "JSON, geoJSON, PBF",
+  "supportedSpatialRelationships": [
+    "esriSpatialRelIntersects",
+    "esriSpatialRelContains",
+    "esriSpatialRelCrosses",
+    "esriSpatialRelEnvelopeIntersects",
+    "esriSpatialRelIndexIntersects",
+    "esriSpatialRelOverlaps",
+    "esriSpatialRelTouches",
+    "esriSpatialRelWithin",
+    "esriSpatialRelRelation"
+  ],
+  "supportsASyncCalculate": true,
+  "supportsAdvancedQueries": true,
+  "supportsAppend": true,
+  "supportsApplyEditsWithGlobalIds": false,
+  "supportsCalculate": true,
+  "supportsCoordinatesQuantization": true,
+  "supportsDatumTransformation": true,
+  "supportsExceedsLimitStatistics": true,
+  "supportsQuantizationEditMode": true,
+  "supportsRollbackOnFailureParameter": true,
+  "supportsStatistics": true,
+  "supportsVCSProjection": true,
+  "supportsValidateSQL": true,
+  "syncCanReturnChanges": false,
+  "templates": [
+    {
+      "description": "",
+      "drawingTool": "esriFeatureEditToolLine",
+      "name": "Centerlines",
+      "prototype": {
+        "attributes": {
+          "GROUP_": null,
+          "REACH_ID": null,
+          "Reach": null
+        }
+      }
+    }
+  ],
+  "tileMaxRecordCount": 4000,
+  "type": "Feature Layer",
+  "typeIdField": "",
+  "types": [],
+  "useStandardizedQueries": true
+}

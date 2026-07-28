@@ -1,0 +1,28 @@
+{
+  "catalogNames": [
+    "m_3311727_ne_11_1_20100501.tif",
+    "m_3311727_se_11_1_20100501.tif",
+    "m_3311728_nw_11_1_20100501.tif",
+    "m_3311728_sw_11_1_20100501.tif"
+  ],
+  "imageChecksumSha256": "835931ef8fb8316aec58aa1cfcda2ef9a17319c235ed64aa361d0bc0e3723f28",
+  "parameters": {
+    "bbox": "-117.675,33.525,-117.61,33.585",
+    "bboxSR": "4326",
+    "compressionQuality": "92",
+    "f": "image",
+    "format": "jpg",
+    "imageSR": "4326",
+    "interpolation": "RSP_BilinearInterpolation",
+    "size": "3600,4000"
+  },
+  "queryBbox4326": [
+    -117.675,
+    33.525,
+    -117.61,
+    33.585
+  ],
+  "retrievalDate": "2026-07-27",
+  "service": "https://gis.wildlife.ca.gov/images/rest/services/Base_Remote_Sensing/NAIP_2010/ImageServer",
+  "sourceId": "LH-SRC-CDFW-NAIP-2010"
+}

@@ -1,0 +1,15 @@
+{
+  "activeConstructionGeometryStatus": "not_supported",
+  "confidence": "medium",
+  "habitableGeometryStatus": "not_supported",
+  "includedAnnualSnapshotIds": "LH-SNAPSHOT-M4-2002;LH-SNAPSHOT-M4-2003;LH-SNAPSHOT-M4-2004",
+  "limitations": "Phase grouping summarizes documented milestones and does not manufacture physical state transitions between observations.",
+  "occupiedGeometryStatus": "not_supported",
+  "phaseName": "central_buildout",
+  "phaseSnapshotId": "LH-PHASE-M4-04",
+  "proximityStatus": "blocked_missing_dated_subject_and_target_geometry",
+  "sourceIds": "LH-SRC-CUSD-LRES;LH-SRC-CUSD-LRMS;LH-SRC-LARMAC-TIMELINE;LH-SRC-OC-PC",
+  "summary": "Community sales milestones, shared school campus, parks, library, and clubhouses",
+  "validFromYear": 2002,
+  "validToYear": 2004
+}

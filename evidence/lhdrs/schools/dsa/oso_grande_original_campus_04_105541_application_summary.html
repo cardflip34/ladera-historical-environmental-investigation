@@ -1,0 +1,632 @@
+
+<!doctype html>
+
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if IE 9]>    <html class="no-js ie9 oldie" lang="en"> <![endif]-->
+<!--[if (gt IE 9)]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+
+<head>
+<meta charset="utf-8"/>
+
+<title></title>
+
+<meta name="Author" content="State of California" />
+<meta name="Description" content="State of California" />
+<meta name="Keywords" content="California, government" />
+
+<!-- head content, for all pages -->
+
+<!-- Use highest compatibility mode, enable Chrome Frame -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+<!-- http://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True"> <!-- for Blackberry, AvantGo -->
+<meta name="MobileOptimized" content="320"> <!-- for Windows mobile -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="Styles/cagov.core.css">
+
+<!--
+Step 3
+Select a color scheme:
+
+<link rel="stylesheet" href="Styles/colorscheme-oceanside.css">
+<link rel="stylesheet" href="Styles/colorscheme-orangecounty.css">
+<link rel="stylesheet" href="Styles/colorscheme-pasorobles.css">
+<link rel="stylesheet" href="Styles/colorscheme-santabarbara.css">
+<link rel="stylesheet" href="Styles/colorscheme-sierra.css">
+-->
+
+<link rel="stylesheet" href="Styles/colorscheme-oceanside.css">
+
+<!-- Custom CSS -->
+<link rel="stylesheet" href="Styles/custom.css">
+
+<!-- selectivizr.com, emulates CSS3 pseudo-classes and attribute selectors in Internet Explorer 6-8 -->
+<!--[if (lt IE 9) & (!IEMobile)]>
+<script src="Scripts/libs/selectivizr-min.js"></script>
+<![endif]-->
+
+<!-- modernizr.com, feature detection -->
+<script src="Scripts/libs/modernizr-2.0.6.min.js"></script>
+
+<!-- For iPad 3-->
+<link rel="apple-touch-icon" sizes="144x144" href="images/template2014/apple-touch-icon-144x144.png">
+<!-- For iPhone 4 -->
+<link rel="apple-touch-icon" sizes="114x114" href="images/template2014/apple-touch-icon-114x114.png">
+<!-- For iPad 1-->
+<link rel="apple-touch-icon" sizes="72x72" href="images/template2014/apple-touch-icon-72x72.png">
+<!-- For iPhone 3G, iPod Touch and Android -->
+<link rel="apple-touch-icon" href="images/template2014/apple-touch-icon-57x57.png">
+<!-- For Nokia -->
+<link rel="shortcut icon" href="images/template2014/apple-touch-icon-57x57.png">
+<!-- For everything else -->
+<link rel="shortcut icon" href="../favicon.ico">
+
+<!-- Activate ClearType for Mobile IE -->
+<!--[if IE]>
+<meta http-equiv="cleartype" content="on">
+<![endif]-->
+
+<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+  <script src="Scripts/libs/html5shiv.min.js"></script>
+  <script src="Scripts/libs/respond.min.js"></script>
+<![endif]-->
+
+<!-- Include Google Analytics -->
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-XXXXXXX-XX']); // Step 4: your google analytics profile code, either from your own google account, or contact eServices to have one set up for you
+  _gaq.push(['_gat._anonymizeIp']);
+  _gaq.push(['_setDomainName', '.ca.gov']);
+  _gaq.push(['_trackPageview']);
+
+  _gaq.push(['b._setAccount', 'UA-3419582-2']); // statewide analytics - do not remove or change
+  _gaq.push(['b._setDomainName', '.ca.gov']);
+  _gaq.push(['b._trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<script type="text/javascript">
+	var defaultActiveLink = "Project Status eTracker";
+</script>
+</head>
+
+<body class="two-column">
+
+<header role="banner" id="header" class="global-header">
+	<div id="skip-to-content"><a href="#main-content">Skip to Main Content</a></div>
+    
+    <!-- Include Branding -->
+    <!-- header branding -->
+<div class="branding">
+    <div class="header-cagov-logo"><a href="http://www.ca.gov/"><img src="images/template2014/header-ca.gov.png" alt="CA.gov" /></a></div>
+    <div class="header-organization-banner"><a href="https://www.dgs.ca.gov/dsa/"><img src="images/template2014/header-organization.png" alt="Organization Title" /></a></div>
+</div>
+    
+    <!-- Include Mobile Controls -->
+    <!-- mobile navigation controls -->
+<div class="mobile-controls">
+    <span class="mobile-control cagov-logo"><span class="ca-gov-icon-logo" aria-hidden="false"></span></span>
+    <span class="mobile-control toggle-menu"><span class="ca-gov-icon-menu" aria-hidden="true"></span><span class="sr-only">Menu</span></span>
+    <span class="mobile-control-group mobile-header-icons">
+    	<span class="mobile-control contact-link"><span class="ca-gov-icon-chat" aria-hidden="true"></span><span class="sr-only">Contact</span></span> 
+        <!-- Add more mobile controls here. These will be on the right side of the mobile page header section -->
+    </span>
+    <span class="mobile-control toggle-search"><span class="ca-gov-icon-search" aria-hidden="true"></span><span class="sr-only">Search</span></span>
+    <span class="mobile-control-group mobile-menu-icons">
+    	<!-- Add more mobile controls here. These will be on the top right section of the expanded mobile menu -->
+    </span>
+</div>
+    
+    
+        
+      
+        
+        <!-- Include Navigation -->
+    
+        <!-- Megamenu dropdown -->
+<nav id="navigation" class="main-navigation single off-canvas auto-highlight">
+    <ul id="nav_list" class="top-level-nav">
+        <li class="home-link nav-item">
+            <a href="Default.aspx" class="first-level-link"><span id="nav_home_container" class="ca-gov-icon-home" aria-hidden="true"></span><span class="sr-only">Home</span></a>
+        </li>
+        <li class="nav-item">
+            <a href="Default.aspx" class="first-level-link">Home</a>
+        </li>
+        <li class="nav-item">
+            <a href="ProjectStatus.aspx" class="first-level-link">Project Status eTracker</a>
+        </li>
+        <li class="nav-item">
+            <a href="Inspectors.aspx" class="first-level-link">Inspectors</a>
+        </li>
+        <li class="nav-item">
+            <a href="ApprovedLabs.aspx" class="first-level-link">Accepted Labs</a>
+        </li>
+        <li class="nav-item">
+            <a href="FeeCalculator.aspx" class="first-level-link">Plan Review Fee Calculator</a>
+        </li>
+        <li class="nav-item">
+            <a href="PreTrackerAppSearch.aspx" class="first-level-link">Project Status Pre-Tracker</a>
+        </li>
+        <li class="nav-item">
+            <a href="Help.aspx" class="first-level-link">Help</a>
+        </li>
+
+    </ul>
+</nav>
+<!-- End megamenu -->
+       
+   
+    
+	<div class="header-decoration"></div>
+</header>
+
+<div id="main-content" class="main-content">
+    <div class="wrapper">
+        <main role="main" class="main-primary">
+            <!--<ol class="breadcrumb">
+                <li><a href="Default.aspx">Home</a></li>
+            </ol>-->
+        
+ <h2>Application Summary</h2>
+<form name="aspnetForm" method="post" action="./ApplicationSummary.aspx?OriginId=04&amp;AppId=105541" id="aspnetForm">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="6xwkedCStWme8TKG8McfDLHor2hG8YpB50edkBFg77T7aHI63d9Lb5xQ8yZi5s3+DkF9O6A6yxzkvtvsfVO/0PBIImkT1nZDJj8UpLF9q4Ki+0toZvfEBjy0Aw5wfsYMsyrLjjakaKTBbLEHtrgTIvJVP2ENitjNbq51209dyTTg7vDaSt07eTSEKy5R6U4vffYOOrfAizZuT8LXaonWjSJlbmdXnTjfWW9kojTKKJoP2Puz62tBhBsPjAF5sHqB8AFQ+atQFur9vwHNo4bpFj5LvL7krhL/TL7ik7LoennVdP3KlM0AL7TPaqTRxH8OS+K3BnqFOpDMbGwRsc+/rXk86pha4aTKquvBtHV4qeWV4h4VIGIFwX5zq6t8pw4iSj0I3KwstHTvHdUNINrSnGT9ruod+Tot8q5AHROHqEh7VlGaDW+ofqgcDirtC2GGdcy0WIA63DL0dQyX4spglpN3kGZbceyda+5kMjmZUe8eczz0FX+apj4JBwflAulHqXHGYuAZOPj09sph2HWa/7vgrFGciWkX5wfoRqhAInas69+JT3BAy+owVbwgU5S7wS5paNfGiCJN/mueQJB+ez+AlWuHLB3pgZTc5DXlurZh3+64EpFwvC9iOqVY3l4Vb4tZl8zL8i0W5qnnljH0JMtncTMwZtj6a7JVRMz+kFF8qZP6lYraPTsFaboZGN48f95KC/pGhJpMAj899ISaU0y1DqW1sJ0mIWUHOt20oCpCndyPhaoZQq38Fke7EmXqc0tHbpdvkur1WVzmBC5NM7ron4mgm5BjI3rdhf8fPTrra8ejNoZ59LwOOJi3mjuT//DTA1bUosQn2sHtB6nUBBUV4/V/GF3VGzOn4NCOlvIqTSaENJcWqtjMdW7ZYf7GxbiNakvsRw+UrCcUKQcD8pe0pyy2bPzD74n9KMMwfD8c1VwFZjLIbwK/XcUSdfM4B1t7Z1Bh+PT6Yl8gtu+24jLpwFjz76uhFmFQ74l91gAAN7SEv1kYmZNfQ3rxkvfBzED10zMo4UjmUKboQ9XqL/RUPZ7ryetjqW98BbBCwFVN/u93tlJ63jh7Eo8+Qog2u4Hah897APoXW6SY+lRZDpYgAuUhE+4cd13bnKSUAMYssKzSKGiMmFsslPBobPkn34653JVZQAOPV8JbZI1SUxEXNBCDUpvV3dlw1q1bHKiwpFTkktm0ofF/GsFmwAl28QQuz1Uj3aADAUqeF8tkfD7qvxwpQ61KMudTkCHri/6DxczQBdWPgcaG6+hlMIs24XkkOxcYjceXvi3IucvxmuN6kSnbo0EnVDakfA5L40u/3BDUZFQLfGOFw66fP0w309oy+wpsbMTCufv1mhsqHVzhSXhrWetFaCh6jPV0e9rLBGXdwZ5fDCTw2sAN1emaN7rtwcXuUNwHzBDN3yo2bWBuNX+fHWt8im1YJIoGCwkZUHcADKd8wcEohxNd6FXhYA6gjZJs4aVP2k/kt2n0zJa2aOWuJKVc3Fx5yQJ84RLowutEgnFukQUPlTepaGS1tQHZlY8vgD3mNNpLLao5cLSuM2J/Ec6cLH7v0pp/y7agbDwzY2G6VDFD+qSlgtx76Yt0e0ylk4+hqYMLZe4vUUTJOnYmBjscenNpsFZPoVJ8flhpm8p6qSffYz9tnTjTyxPYcCWe3+kzn+sFxnlaYA==" />
+
+<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="1544B2E5" />
+<input type="hidden" name="__VIEWSTATEENCRYPTED" id="__VIEWSTATEENCRYPTED" value="" />
+<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="7J4Lx8uXqIu2qHMYOEel5P27d/lmFYg+3slRNf6I1N5LuKrSdP6dkuRygDDjGtTSaIe3VjwfSgTvQ1BAbo1ZCkXxM384JVfvoFo5KfttulOAOWopYa6cfyUP54/ZAI5otlS1gNQimZylSVsx7wKazNgLxBIcYABTcYnRdi3ZCIT2IoWnes0Wn6jVG5pPLs55i8GDggnEgEE+rjNA1osPjka2LU3KPa7YPbyWavAOWx2jwsRMt7KJV+rf4n02P6wG58QDNzatLrBiZdtEUKLjERj/uDmIucYVWuTcK4oN4XHLj7oxEj7PiL4jFwQ4uymphf58z6WxtHJ0A4WlVcbdKzuvMA71D59M2g60DXGE0sNdk/NC5iRVptvfThVq/BYZdIOYjXxidBQZ9z1C6R0mMWTwc44pZsamvPjG748/JHNxLUeqHofkKUAfGJGSUllWTJeBUZMLRRH8lhvc5OW8eSFK6V75Y9Q0HwAA7sxgB7wK5qR2CHVqKDn0K0p1S6J3SR0R7yFWKn7SNnQ2ioH50a9Fj7Fhrt4RUCSeB+NOq94hIoIWjr30g3x0dr4laFEe" />
+<span id="ctl00_MainContent_lbl42AppNotFound"><b><font color="#FF3300" size="5"></font></b></span>
+<br />
+<table width="100%" cellpadding="0"  cellspacing="0" align="center" border="0">
+    <tr>
+     <td  style="width: 20%"; align="left"><span id="ctl00_MainContent_Label2"><b>Office ID:</b></span></td>
+     <td  align="left">
+         <span id="ctl00_MainContent_lblOffice">04</span></td>
+     <td  style="width: 20%"; align="left" ><span id="ctl00_MainContent_Label4"><b>Application #:</b></span></td>
+     <td  align="left">
+         <span id="ctl00_MainContent_lblApplication">105541</span></td>
+     <td align="right"><span id="ctl00_MainContent_Label1"><b>File #:</b></span></td>
+     <td align="left">
+         <span id="ctl00_MainContent_lblFile">30-9</span></td>
+     </tr>
+     
+     <tr><td colspan="6">&nbsp;</td></tr>
+     <tr>
+     <td align="left" ><span id="ctl00_MainContent_Label7"><b>Project Name:</b></span></td>
+     <td align="left" colspan="5">
+         <span id="ctl00_MainContent_lblPname">Oso Grande Elementary School</span></td>
+     </tr>
+        <tr><td colspan="6">&nbsp;</td></tr>
+     
+     <tr>
+     <td align="left" ><span id="ctl00_MainContent_Label11"><b>Project Scope:</b></span></td>
+     <td align="left" colspan="5">
+         <span id="ctl00_MainContent_lblProjectScope">Construction of C.R./ADMIN./M.P./MEDIA CTR. BLDG. 'A'; FOOD SERVICES BLDG. 'B'; UTILITY ENCLOSURE BLDG.. 'C'; SITE WORK</span></td>
+     </tr>
+     <tr><td colspan="6">&nbsp;</td></tr>
+     
+     <tr>
+     <td align="left"><span id="ctl00_MainContent_Label15"><b>Address:</b></span></td>
+     <td align="left" colspan="5">
+         <span id="ctl00_MainContent_lblAddress">Sienna Parkway At O'neill Rd.</span></td>
+     </tr>
+       <tr><td colspan="6">&nbsp;</td></tr>
+     
+     <tr>
+     <td align="left"><span id="ctl00_MainContent_Label12"><b>City:</b></span></td>
+     <td align="left" >
+         <span id="ctl00_MainContent_lblCity">Ladera Ranch</span></td>
+     <td align="left"><span id="ctl00_MainContent_Label13"><b>Zip:</b></span></td>
+     <td align="left">
+         <span id="ctl00_MainContent_lblZip"></span></td>
+     <td align="right">&nbsp;</td>
+     <td align="left">&nbsp;</td>
+     </tr>
+     
+        <tr><td colspan="6">&nbsp;</td></tr>
+     
+     <tr>
+     <td align="left"><span id="ctl00_MainContent_Label3"><b>PTN #:</b></span></td>
+     <td align="left">
+         <span id="ctl00_MainContent_lblPTN">66464-38</span></td>
+     <td align="left" ><span id="ctl00_MainContent_Label5"><b>OPSC #:</b></span></td>
+     <td align="left">
+         <span id="ctl00_MainContent_lblOPSC"></span></td>
+     </tr>
+     
+       <tr><td colspan="6">&nbsp;</td></tr>
+     
+     <tr>
+     <td align="left"><span id="ctl00_MainContent_Label8"><b>Project Type:</b></span></td>
+     <td align="left">
+         <span id="ctl00_MainContent_lblProjectType">School (K-12)</span></td>
+      <td align="left"><span id="ctl00_MainContent_Label6"><b># Of Incr:</b></span></td>
+     <td align="left">
+         <span id="ctl00_MainContent_lblInc">0</span></td>
+     </tr>
+        <tr><td colspan="6">&nbsp;</td></tr>
+     <tr>
+     
+     <td align="left" ><span id="ctl00_MainContent_Label9"><b>Project Class:</b></span></td>
+     <td align="left">
+         <span id="ctl00_MainContent_lblPclass">Class 1</span></td>
+     <td align="left"><span id="ctl00_MainContent_Label10"><b>Special Type:</b></span></td>
+     <td align="left">
+         <span id="ctl00_MainContent_lblSpecialType">NA</span></td>
+     </tr>                  
+      <tr><td colspan="6">&nbsp;</td></tr>
+     
+     <tr>
+     <td align="left"><span id="ctl00_MainContent_Label24"><b>Estimated Amt:</b></span></td>
+    <td align="left">
+         <span id="ctl00_MainContent_lblEstAmt">$8,500,000.00</span></td>
+         <td style="width:21%;" align="left"><span id="ctl00_MainContent_Label25"><b>Contracted Amt:</b></span></td>
+     <td align="left">
+         <span id="ctl00_MainContent_lblContAmt">$13,607,007.00</span></td>
+     </tr>
+        <tr><td colspan="6">&nbsp;</td></tr>
+    <tr> 
+     
+     <td align="left"><span id="ctl00_MainContent_Label26"><b>Construction Change Document Amt:</b></span></td>
+     <td align="left">
+         <span id="ctl00_MainContent_lblCOamt">($85,805.00)</span></td>
+         <td align="left"><b>Final Project Cost:</b></td>
+     <td align="left">
+         <span id="ctl00_MainContent_lblFinalProjectCost">$13,521,202.00</span>
+         </td>
+    </tr>          
+       <tr><td colspan="6">&nbsp;</td></tr>
+     <tr>
+     <td align="left"><span id="ctl00_MainContent_Label27"><b>Adj Est.Date#1:</b></span></td>
+     <td align="left">
+         <span id="ctl00_MainContent_lblAdjDate1"></span></td>
+     <td align="left" ><span id="ctl00_MainContent_Label28"><b>Adj Est.Amt#1:</b></span></td>
+     <td align="left">
+         <span id="ctl00_MainContent_lblAdjAmt1"></span></td>
+     </tr>
+   
+     <tr><td colspan="6">&nbsp;</td></tr>
+     <tr>
+     <td align="left"><span id="ctl00_MainContent_Label29"><b>Adj Est.Date#2:</b></span></td>
+     <td align="left">
+         <span id="ctl00_MainContent_lblAdjDate2"></span></td>
+     <td align="left" ><span id="ctl00_MainContent_Label30"><b>Adj Est.Amt#2:</b></span></td>
+     <td align="left">
+         <span id="ctl00_MainContent_lblAdjAmt2"></span></td>
+     </tr>
+     <tr><td colspan="6">&nbsp;</td></tr>
+     <tr>
+     <td align="left"><span id="ctl00_MainContent_Label31"><b>Received Date:</b></span></td>
+     <td align="left">
+         <span id="ctl00_MainContent_lblRecvDate">8/20/2003</span></td>
+          <td align="left"><span id="ctl00_MainContent_Label32"><b>Approved Date:</b></span></td>
+     <td align="left">
+         <span id="ctl00_MainContent_lblAppDate">4/12/2004</span></td>
+     </tr> 
+     <tr><td colspan="6">&nbsp;</td></tr>
+     <tr>    
+     <td align="left" ><span id="ctl00_MainContent_Label33"><b>Approval Ext. Date:</b></span></td>
+     <td align="left">
+         <span id="ctl00_MainContent_lblAppExtDate"></span></td>
+     <td align="left">
+         <span id="ctl00_MainContent_Label41"><b>Closed Date:</b></span></td>
+     <td align="left">
+         <span id="ctl00_MainContent_lblCloseDate">6/8/2006</span></td>
+     </tr>                       
+    </table>
+    
+    <br />   
+    
+    
+    <table width="100%" cellpadding="0"  cellspacing="0" align="center" border="0">
+    <tr>
+    <td style="width:12%; align="left"></td>
+    <td style="width:26%;" align="left">
+    <span disabled="disabled"><b><input id="ctl00_MainContent_chkIncompSubm" type="checkbox" name="ctl00$MainContent$chkIncompSubm" disabled="disabled" /><label for="ctl00_MainContent_chkIncompSubm">Incomplete Submittal</label></b></span></td>
+    <td style="width:40%;" align="left"><span id="ctl00_MainContent_Label17"><b>Complete Submittal Received Date:</b></span></td>
+    <td style="width:22%;" align="left">
+        <span id="ctl00_MainContent_lblCompRecvDate">9/18/2003</span></td>
+    </tr>    
+    </table>
+    
+     <br />
+     
+    <table width="100%" cellpadding="0"  cellspacing="0" align="center" border="0">
+    <tr>
+    <td style="width:12%;"></td>
+    <td colspan="5" style="width:88%;">
+        <span id="ctl00_MainContent_Label23"><b>SB 575</b></span></td></tr>
+     <tr>
+    <td style="width:12%;" align="left"></td>
+    <td style="width:28%;" align="left">
+        <span disabled="disabled"><input id="ctl00_MainContent_chkNewCampus" type="checkbox" name="ctl00$MainContent$chkNewCampus" disabled="disabled" /><label for="ctl00_MainContent_chkNewCampus">New Campus</label></span></td>
+    <td style="width:28%;" align="left" > 
+        <span disabled="disabled"><input id="ctl00_MainContent_chkMode" type="checkbox" name="ctl00$MainContent$chkMode" disabled="disabled" /><label for="ctl00_MainContent_chkMode">Modernization</label></span></td>
+    <td style="width:33%;" align="left" >
+        </td>
+    </tr>
+    </table>
+    
+    
+     
+      <br />
+    
+    
+    <table width="100%" cellpadding="0"  cellspacing="0" align="center" border="0">
+     
+    <tr>
+    <td style="width:12%" align="left"></td>
+    <td style="width:28%" align="left">
+        </td>
+    <td style="width:28%" align="left" >
+    <span id="ctl00_MainContent_Label34"><b>Auto Fire Detection</b></span> 
+        </td>
+    <td style="width:32%" align="left" ><span id="ctl00_MainContent_Label35"><b>Sprinkler System</b></span></td>
+        
+    </tr>
+    <tr>
+    <td style="width:12%" align="left">
+        </td>
+    <td style="width:28%" align="left">
+    <span id="ctl00_MainContent_Label37"><b>Required</b></span></td>
+    <td style="width:28%" align="left" >
+     <span disabled="disabled"><input id="ctl00_MainContent_chkAutoFireReq" type="checkbox" name="ctl00$MainContent$chkAutoFireReq" checked="checked" disabled="disabled" /></span> 
+        </td>
+    <td style="width:32%" align="left" ><span disabled="disabled"><input id="ctl00_MainContent_chkSprinklerReq" type="checkbox" name="ctl00$MainContent$chkSprinklerReq" checked="checked" disabled="disabled" /></span></td>      
+    </tr>
+    <tr>
+    <td style="width:12%;" align="left">
+        </td>
+    <td style="width:28%;" align="left">
+    <span id="ctl00_MainContent_Label36"><b>Included In Plan</b></span>
+       </td>
+    <td style="width:28%;" align="left" > 
+     <span disabled="disabled"><input id="ctl00_MainContent_chkAutoFireReqP" type="checkbox" name="ctl00$MainContent$chkAutoFireReqP" disabled="disabled" /></span>
+        </td>
+    <td style="width:32%;" align="left" ><span disabled="disabled"><input id="ctl00_MainContent_chkSprinklerReqP" type="checkbox" name="ctl00$MainContent$chkSprinklerReqP" disabled="disabled" /></span> </td>      
+    </tr>
+    </table>
+    
+     <br />
+              
+    <table width="100%" cellpadding="0"  cellspacing="0" align="center" border="0">
+    <tr>
+    <td style="width:12%;"></td>
+    <td colspan="5" style="width:88%;">
+        <span id="ctl00_MainContent_Label14"><b>Required review services</b></span></td></tr>
+    <tr>
+    <td style="width:12%;" align="left"></td>
+    <td style="width:28%;" align="left">
+        <span disabled="disabled"><input id="ctl00_MainContent_chkAcs" type="checkbox" name="ctl00$MainContent$chkAcs" checked="checked" disabled="disabled" /><label for="ctl00_MainContent_chkAcs">Access Compliance</label></span></td>
+    <td style="width:28%;" align="left" > 
+        <span disabled="disabled"><input id="ctl00_MainContent_chkFLS" type="checkbox" name="ctl00$MainContent$chkFLS" checked="checked" disabled="disabled" /><label for="ctl00_MainContent_chkFLS">Fire & Life Safety</label></span></td>
+    <td style="width:32%;" align="left" >
+        <span disabled="disabled"><input id="ctl00_MainContent_chkEPR" type="checkbox" name="ctl00$MainContent$chkEPR" disabled="disabled" /><label for="ctl00_MainContent_chkEPR">HPS</label></span></td>
+    </tr>
+    
+    <tr>
+    <td style="width:12%" align="left"></td>
+    <td style="width:28%" align="left" >
+        <span disabled="disabled"><input id="ctl00_MainContent_chkSS" type="checkbox" name="ctl00$MainContent$chkSS" checked="checked" disabled="disabled" /><label for="ctl00_MainContent_chkSS">Structural Safety</label></span></td>
+    <td style="width:28%" align="left" >
+        <span disabled="disabled"><input id="ctl00_MainContent_chkFR" type="checkbox" name="ctl00$MainContent$chkFR" checked="checked" disabled="disabled" /><label for="ctl00_MainContent_chkFR">Field Review</label></span></td>
+     <td style="width:32%" align="left" >
+        <span disabled="disabled"><input id="ctl00_MainContent_chkCGS" type="checkbox" name="ctl00$MainContent$chkCGS" disabled="disabled" /><label for="ctl00_MainContent_chkCGS">CGS Review</label></span></td>
+         
+    </tr>    
+    </table>
+    
+    
+    
+    <br />
+    
+    <table width="100%" cellpadding="0"  cellspacing="0" align="center" border="0">
+    <tr>
+    <td style="width:12%"></td>
+    <td colspan="5" style="width:88%">
+        <span id="ctl00_MainContent_Label16"><b>Special review type</b></span></td></tr>
+     <tr>
+    <td style="width:12%;" align="left"></td>
+    <td style="width:28%;" align="left">
+        <span disabled="disabled"><input id="ctl00_MainContent_chkClass" type="checkbox" name="ctl00$MainContent$chkClass" disabled="disabled" /><label for="ctl00_MainContent_chkClass">Class.S Reduction</label></span></td>
+    <td style="width:28%;" align="left" > 
+        <span disabled="disabled"><input id="ctl00_MainContent_chkConcurrent" type="checkbox" name="ctl00$MainContent$chkConcurrent" disabled="disabled" /><label for="ctl00_MainContent_chkConcurrent">Concurrent Review</label></span></td>
+    <td style="width:32%;" align="left" >
+        <span disabled="disabled"><input id="ctl00_MainContent_chkIncrm" type="checkbox" name="ctl00$MainContent$chkIncrm" disabled="disabled" /><label for="ctl00_MainContent_chkIncrm">Incremental Review</label></span></td>
+    </tr>
+    <tr>
+    <td style="width:12%;" align="left"></td>
+    <td style="width:28%;" align="left" >
+        <span disabled="disabled"><input id="ctl00_MainContent_chkCount" type="checkbox" name="ctl00$MainContent$chkCount" disabled="disabled" /><label for="ctl00_MainContent_chkCount">Over the Counter </label></span></td>
+     <td style="width:28%;" align="left" ></td><td style="width:32%;" align="left" ></td>
+     </tr>    
+    </table>
+    
+    <br />
+    
+    
+    
+    
+     <table width="100%" cellpadding="0"  cellspacing="0" align="center" border="0">
+     <tr><td style="width:12%"></td><td align="left">
+         <span id="ctl00_MainContent_Label18"><b>Energy Efficiency</b></span></td></tr>
+     </table>
+
+     <table width="100%" cellpadding="0"  cellspacing="0" align="center" border="0">
+        <tr>
+            <td style="width:12%"></td>
+            <td>
+                <span disabled="disabled"><input id="ctl00_MainContent_chkPlan" type="checkbox" name="ctl00$MainContent$chkPlan" disabled="disabled" /><label for="ctl00_MainContent_chkPlan">The Plan meet Title 24 Energy Requirements</label></span></td>
+        </tr>
+        <tr>
+            <td style="width:12%;"></td>
+            <td style="width:40%;">
+                <span disabled="disabled"><input id="ctl00_MainContent_chkNewConst" type="checkbox" name="ctl00$MainContent$chkNewConst" disabled="disabled" /><label for="ctl00_MainContent_chkNewConst">Project's new construction exceeds Title 24 by</label></span></td>
+            <td style="width:1%;"></td>
+            <td style="width:5%" align="right"><span id="ctl00_MainContent_lblNew"></span>%</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td style="width:12%;"></td>
+            <td style="width:40%;">
+                <span disabled="disabled"><input id="ctl00_MainContent_chkModernization" type="checkbox" name="ctl00$MainContent$chkModernization" disabled="disabled" /><label for="ctl00_MainContent_chkModernization">Project's modernization exceeds Title 24 by</label></span></td> 
+            <td style="width:1%;"></td>
+            <td style="width:5%" align="right"><span id="ctl00_MainContent_lblMode" disabled="disabled"></span>%</td>
+            <td></td>
+            </tr>
+     </table>
+     
+     <br />
+     
+     <table width="100%" cellpadding="0"  cellspacing="0"  border="0">
+        <tr>
+            <td style="width:20%;">
+                <span id="ctl00_MainContent_Label19"><b>Climate Zone:</b></span></td>
+            <td>
+                <span id="ctl00_MainContent_lblClimateZone"></span></td>
+            <td>
+                <span id="ctl00_MainContent_Label20"><b>Project's Sq.footage:</b></span></td>
+            <td>
+                <span id="ctl00_MainContent_lblSq"></span></td>
+            <td>
+                <span id="ctl00_MainContent_Label21"><b>EPR Approved Date:</b></span></td>
+            <td>
+                <span id="ctl00_MainContent_lblApp"></span></td>
+        </tr>         
+        <tr>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td>
+                <span id="ctl00_MainContent_Label39"><b>HPI:</b></span></td>
+            <td>
+                <span disabled="disabled"><input id="ctl00_MainContent_chkHPI" type="checkbox" name="ctl00$MainContent$chkHPI" disabled="disabled" /></span></td>
+            <td>
+                <span id="ctl00_MainContent_Label40"><b>HPI Points:</b></span></td>
+            <td >
+                <span id="ctl00_MainContent_lblHPIPoints" style="display:inline-block;"></span></td>
+            <td>
+                <span id="ctl00_MainContent_Label42"><b>HPI Hours:</b></span></td>
+            <td>
+                <span id="ctl00_MainContent_lblHPIHours" style="display:inline-block;"></span>
+            </td>
+        </tr>
+        <tr>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td>
+                <span id="ctl00_MainContent_Label38"><b>Energy Notes:</b></span></td>
+            <td colspan="5">
+                <span id="ctl00_MainContent_lblEnotes"></span></td>
+           
+        </tr>
+        <tr>
+            <td>&nbsp;</td></tr>
+        <tr>
+            <td>
+                <span id="ctl00_MainContent_Label22"><b>Client's Notes:</b></span></td>
+            <td colspan="5">
+                <span id="ctl00_MainContent_lblNotes">On hold due to incomplete submittal. letter sent to arch on 9/3/2003, MK.</span></td>
+            
+        </tr>
+     </table>
+     
+     
+     <br />
+   </form>
+
+         
+        </main>
+        
+        <div class="main-secondary">
+      
+<a class="governor_website" href="http://gov.ca.gov/" style="width:196px">
+   <!-- <img id="ctl00_wucLeft_imgGovernor" src="images/ca_master/gov.jpg" alt="Governor Jerry Brown" border="0" /></a>-->
+
+<div class="left_column_top">
+	<h3>DGS Links</h3>
+	<ul class="list_decorative_blue">
+		<li><a href="http://www.dgs.ca.gov">DGS Home</a></li>
+		<li><a href="http://www.dgs.ca.gov/dsa">DSA Home</a></li>
+		<li><a href="http://www.dgs.ca.gov/dsa/News">DSA News</a></li>
+		</ul>
+</div>
+<div class="column_inner">
+
+<h3>Tracker Links</h3>
+	<b>Project Status</b>
+	<ul class="list_decorative_blue">
+	
+	   <li><a href="default.aspx">Home</a></li>
+	   	   
+	    <li><a href="ApplicationSummary.aspx">Application Summary</a></li>
+	    <li><a href="ProjectFee.aspx">Project Fee</a></li>
+		<li><a href="ProjectSchedule.aspx">Project Schedule</a></li>
+		<li><a href="ServiceReviewStatus.aspx">Service Review Status</a></li>
+		<li><a href="FieldReviewStatus.aspx">Field Review Status</a></li>
+		<li><a href="Addenda.aspx">Addenda</a></li>
+		<li><a href="ChangeOrders.aspx">Construction Change Documents</a></li>
+		<li><a href="DeferredApprovals.aspx">Deferred Submittals</a></li>
+		<li><a href="Revision.aspx">Revision</a></li>
+		<li><a href="ProjectProfessional.aspx">Project Professional</a></li>
+		<li><a href="ProjectCloseout.aspx">Project Certification</a></li>
+		<li><a href="ProjectRequiredDoc.aspx">Documents Required List</a></li>
+		
+	</ul>
+</div>
+
+         
+
+
+ 
+            
+        </div>
+    </div>
+</div>
+
+
+<!-- Global Footer -->
+<footer id="footer" class="global-footer">
+    <ul>
+		<li><a href="#skip-to-content">Back to Top</a></li> 
+        <li><a href="https://www.dgs.ca.gov/Certification">Certification</a></li> 
+        <li><a href="https://www.dgs.ca.gov/Privacy">Privacy Policy</a></li> 
+        <li><a href="https://www.dgs.ca.gov/Configuration/Footer-Utility-Links/Accessibility/Accessibility">Accessibility</a></li> 
+        <li><a href="https://www.dgs.ca.gov/Contact">Contact Us</a></li>
+	</ul>
+    
+    <!-- Copyright Statement -->
+	<div class="copyright">
+		Copyright &copy; 2015 State of California
+	</div>
+</footer>
+
+<!-- Extra Decorative Content -->
+<div class="decoration-last">&nbsp;</div><!-- Load jQuery from CDN with fallback to local copy -->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js" type="text/javascript"></script>
+<script>
+    //Fall back to local copy if no jquery found
+    if (typeof jQuery == 'undefined') {
+        document.write(unescape("%3Cscript src='Scripts/libs/jquery-1.11.1.min.js' type='text/javascript'%3E%3C/script%3E"));
+    }
+</script>
+
+<!-- Load template core -->
+<script src="Scripts/cagov.core.js"></script>
+<script src="Scripts/search.js "></script>
+
+</body>
+</html>

@@ -1,0 +1,79 @@
+{
+  "title": "LHDRS Historical Evidence Atlas, Mission 5",
+  "generated": "2026-07-27",
+  "version": "3.0",
+  "firstAndSecondEditionsPreserved": true,
+  "proximityResultCount": 0,
+  "files": [
+    {
+      "path": "reports/LHDRS_Historical_Evidence_Atlas_Mission_5.html",
+      "bytes": 22614,
+      "sha256": "4ee5ecf03a6e5c7177a99b059ab8c50bf7f7068f739aa024e174e1ab23c104c1"
+    },
+    {
+      "path": "reports/LHDRS_Historical_Evidence_Atlas_Mission_5.md",
+      "bytes": 5631,
+      "sha256": "d84000fafd4a62d8b40be9dc42af4e9835bcccbdf1f23948027a3fc7fe7236b5"
+    },
+    {
+      "path": "reports/assets/lhdrs_mission5/ladera_naip_2005.jpg",
+      "bytes": 5496985,
+      "sha256": "5fcee243aa5dde4123903fc9a0a3341511abcbcf88ded17bd94749e4d2bcbb3e"
+    },
+    {
+      "path": "reports/assets/lhdrs_mission5/ladera_naip_2009.jpg",
+      "bytes": 5573946,
+      "sha256": "f3c65cc9e3947f39c03734078172a21ac7fc4c0df21aa7027256c621249074f7"
+    },
+    {
+      "path": "reports/assets/lhdrs_mission5/ladera_naip_2010.jpg",
+      "bytes": 6516056,
+      "sha256": "835931ef8fb8316aec58aa1cfcda2ef9a17319c235ed64aa361d0bc0e3723f28"
+    },
+    {
+      "path": "data/exports/atlas_mission5/builder_product_chronology.csv",
+      "bytes": 19521,
+      "sha256": "282d8f9894032004f1cdb14961941e04ff93b0ad0721648d9191c327dbe3be5d"
+    },
+    {
+      "path": "data/exports/atlas_mission5/cfd_absorption_chronology.csv",
+      "bytes": 4892,
+      "sha256": "44e35100563d97a3d8f0e441d29d8667b17759f2ceddb5a39641ce84486e187e"
+    },
+    {
+      "path": "data/exports/atlas_mission5/commercial_asset_chronology_mission5.csv",
+      "bytes": 3171,
+      "sha256": "278157202fa4ffc75303d81bbd24eacd80e18aa536f8466e8910c839010e00b2"
+    },
+    {
+      "path": "data/exports/atlas_mission5/neighborhood_chronology_mission5.csv",
+      "bytes": 53919,
+      "sha256": "62f4f9ed424481d867930c5e40a22335865fc83b31ce78043c8041dd9b59061f"
+    },
+    {
+      "path": "data/exports/atlas_mission5/tract_neighborhood_crosswalk.csv",
+      "bytes": 74417,
+      "sha256": "2f0950395335885d54f3612326fee35de0630a7b63ae87df94f66d053c1845d0"
+    },
+    {
+      "path": "data/exports/atlas_mission5/tract_lifecycle_reconstruction.csv",
+      "bytes": 81653,
+      "sha256": "f7414cfaeaa9992438b502a179fed31e1e50f28c85e364b9bffa8989f986192d"
+    },
+    {
+      "path": "data/exports/atlas_mission5/imagery_inventory.csv",
+      "bytes": 6789,
+      "sha256": "d7ff6afb5110c5647765194ed5d743ff3c57d75391b67dff24455141a65da999"
+    },
+    {
+      "path": "data/exports/atlas_mission5/imagery_observations_mission5.csv",
+      "bytes": 4528,
+      "sha256": "295ae1fddd45c8acc2585d057d28e28f2b715c4f3c24f49f4c5fce2ebce029a0"
+    },
+    {
+      "path": "data/exports/atlas_mission5/highest_value_research_queue.csv",
+      "bytes": 2351,
+      "sha256": "013e6d6c03ac49568543b28e393ef99183fd840be364cc73982d2a3e154b4304"
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "bbox4326": [
+    -117.66101700020555,
+    33.524791000292176,
+    -117.62213599983149,
+    33.577504000093114
+  ],
+  "dateCurrent": 1998,
+  "dateOnMap": 1997,
+  "imageryId": "LH-IMG-1997-1998",
+  "parameters": {
+    "bbox": "-117.66101700020555,33.524791000292176,-117.62213599983149,33.577504000093114",
+    "bboxSR": "4326",
+    "f": "image",
+    "format": "png32",
+    "imageSR": "4326",
+    "interpolation": "RSP_BilinearInterpolation",
+    "mosaicRule": "{\"mosaicMethod\":\"esriMosaicLockRaster\",\"lockRasterIds\":[33]}",
+    "size": "1800,2400",
+    "transparent": "true"
+  },
+  "size": [
+    1800,
+    2400
+  ],
+  "sourceId": "LH-SRC-OC-IMAGERY",
+  "sourceName": "O'Neil Regional Park (June) 1998",
+  "sourceObjectId": 33
+}

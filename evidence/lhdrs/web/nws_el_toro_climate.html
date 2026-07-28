@@ -1,0 +1,908 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <link rel="schema.DC" href="http://purl.org/dc/elements/1.1/" />
+<title>El Toro Climate</title>
+<meta name="DC.title" content="El Toro Climate" />
+<meta name="DC.description" content="El Toro Climate" />
+<meta name="DC.creator" content="US Department of Commerce, NOAA, National Weather Service" />
+<meta name="DC.date.created" scheme="ISO8601" content="April 14th 2021 3:57 PM" />
+<meta name="DC.language" scheme="DCTERMS.RFC1766" content="EN-US" />
+<meta name="DC.keywords" content="El Toro Climate" />
+<meta name="DC.publisher" content="NOAA's National Weather Service" />
+<meta name="DC.contributor" content="National Weather Service" />
+<meta name="DC.rights" content="/disclaimer.php" />
+<meta name="rating" content="General" />
+<meta name="robots" content="index,follow" />
+
+
+        <link href="/css/weatherstyle.css" rel="stylesheet" type="text/css" />
+        <link href="/css/template.css" rel="stylesheet" type="text/css" />
+        <link href="/css/myfcst.css" rel="stylesheet" type="text/css" />
+        <link href="/css/ForecastSearch.css" rel="stylesheet" type="text/css" />
+        <link href="/css/pointforecast.css" rel="stylesheet" type="text/css" />
+        <link href="/css/jqueryui10_3_1custom/jquery-ui-1.10.3.custom.min.css" rel="stylesheet" type="text/css" />
+
+<script type="text/javascript" src="/js/jquery-1.10.2.min.js"></script>        <script type="text/javascript" src="/js/jquery-ui-1.10.3.custom.min.js"></script>        <script type="text/javascript" src="/js/jquery.hoverIntent.minified.js"></script>        <script type="text/javascript" src="/js/ForecastSearch.js"></script>        <script type="text/javascript" id="_fed_an_ua_tag" src="https://dap.digitalgov.gov/Universal-Federated-Analytics-Min.js?agency=DOC&sub-agency=NOAA&yt=true&pga4=G-736JJ6NL0V"></script>        <script type="text/javascript" src="/js/topNavMenu.js"></script>        <script type="text/javascript" src="/js/NidsESRI.js"></script>        <script type="text/javascript" src="/js/nwsexit.js"></script>
+
+
+        <link href="/css/widgets.css" rel="stylesheet" type="text/css" />
+        <link href="/css/colorbox/colorbox.css" rel="stylesheet" type="text/css" />
+        
+        <script type="text/javascript" src="/js/widgets.js"></script>
+        <script type="text/javascript" src="/js/jquery.cycle2.min.js"></script>
+        <script type="text/javascript" src="/js/jquery.colorbox-min.js"></script>
+        <script type="text/javascript" src="/js/nwsexit.js"></script>
+        
+<script>
+$(document).ready(function() {
+  $('img.nocache').each(function () {
+      var $this = $(this);
+      $this.attr('src', noCache($this.attr('src')));
+  });
+});
+function noCache(url) {
+  return url + (url.indexOf('?') >= 0 ? '&nocache=' : '?') + $.now();
+}
+</script>
+
+    </head>
+    <body> 
+        
+
+        <div class="header">
+    <div class="header-content">
+        <a href="https://www.weather.gov" class="header-nws"><img src="/bundles/templating/images/header/header.png" alt="National Weather Service"/></a>
+        <a href="http://www.commerce.gov" class="header-doc"><img src="/bundles/templating/images/header/header_doc.png" alt="United States Department of Commerce"/></a>
+        <a href="http://www.noaa.gov" class="header-noaa" title="National Oceanic and Atmospheric Administration"></a>
+    </div>
+    <div style="clear:both"></div>
+</div>
+<div class="header-shadow">
+    <div class="header-shadow-content"></div>
+</div>
+<script>
+    var domains = {
+        weather: "https://www.weather.gov",
+        forecast: "https://forecast.weather.gov",
+        airquality: "https://airquality.weather.gov",
+        aviation: "https://aviationweather.gov",
+        water: "https://water.weather.gov",
+        graphical: "https://graphical.weather.gov",
+        api: "https://api.weather.gov",
+        radar: "https://radar.weather.gov",
+        esriGeocode: "https://geocode.arcgis.com"
+    }
+</script>
+
+
+        <div class="center">
+
+            <div class="content">
+    <div class="topnav">
+        <ul id="topnav">
+            <li>
+                <script type="text/javascript">
+                    function goBack() {
+                        if (document.referrer.toLowerCase().indexOf("weather.gov") != -1) {
+                            history.back();
+                        } else {
+                            document.location.href = "https://www.weather.gov";
+                        }
+                    }
+                </script>
+                <div class="topMenuNavList home">
+                    <a href="#" onclick="goBack();">HOME</a>
+                </div>
+            </li>
+                            <li>
+                    <div class="topMenuNavList section-link">
+                        <a href="https://www.weather.gov/forecastmaps/">FORECAST</a>
+                    </div>
+                                                                        <div style="opacity: 0;" class="sub">
+                                <ul>
+                                                                            <li>
+                                            <a href="https://www.weather.gov">Local</a>
+                                        </li>
+                                                                            <li>
+                                            <a href="https://digital.weather.gov">Graphical</a>
+                                        </li>
+                                                                            <li>
+                                            <a href="https://aviationweather.gov">Aviation</a>
+                                        </li>
+                                                                            <li>
+                                            <a href="https://www.weather.gov/marine/">Marine</a>
+                                        </li>
+                                                                            <li>
+                                            <a href="https://water.noaa.gov">Rivers and Lakes</a>
+                                        </li>
+                                                                            <li>
+                                            <a href="https://www.nhc.noaa.gov">Hurricanes</a>
+                                        </li>
+                                                                            <li>
+                                            <a href="https://www.spc.noaa.gov">Severe Weather</a>
+                                        </li>
+                                                                            <li>
+                                            <a href="https://www.weather.gov/fire/">Fire Weather</a>
+                                        </li>
+                                                                            <li>
+                                            <a href="https://gml.noaa.gov/grad/solcalc/">Sunrise/Sunset</a>
+                                        </li>
+                                                                            <li>
+                                            <a href="https://www.cpc.ncep.noaa.gov">Long Range Forecasts</a>
+                                        </li>
+                                                                            <li>
+                                            <a href="https://www.cpc.ncep.noaa.gov">Climate Prediction</a>
+                                        </li>
+                                                                            <li>
+                                            <a href="https://www.swpc.noaa.gov">Space Weather</a>
+                                        </li>
+                                                                    </ul>
+                            </div>
+                                                            </li>
+                            <li>
+                    <div class="topMenuNavList section-link">
+                        <a href="https://www.weather.gov/wrh/climate">PAST WEATHER</a>
+                    </div>
+                                                                        <div style="opacity: 0;" class="sub">
+                                <ul>
+                                                                            <li>
+                                            <a href="https://www.weather.gov/wrh/climate">Past Weather</a>
+                                        </li>
+                                                                            <li>
+                                            <a href="https://gml.noaa.gov/grad/solcalc/">Astronomical Data</a>
+                                        </li>
+                                                                            <li>
+                                            <a href="https://www.climate.gov/maps-data/dataset/past-weather-zip-code-data-table">Certified Weather Data</a>
+                                        </li>
+                                                                    </ul>
+                            </div>
+                                                            </li>
+                            <li>
+                    <div class="topMenuNavList section-link">
+                        <a href="https://www.weather.gov/safety/">SAFETY</a>
+                    </div>
+                                                                                </li>
+                            <li>
+                    <div class="topMenuNavList section-link">
+                        <a href="https://www.weather.gov/informationcenter">INFORMATION</a>
+                    </div>
+                                                                        <div style="opacity: 0;" class="sub">
+                                <ul>
+                                                                            <li>
+                                            <a href="https://www.weather.gov/wrn/wea">Wireless Emergency Alerts</a>
+                                        </li>
+                                                                            <li>
+                                            <a href="https://www.weather.gov/wrn/">Weather-Ready Nation</a>
+                                        </li>
+                                                                            <li>
+                                            <a href="https://www.weather.gov/owlie/publication_brochures">Brochures</a>
+                                        </li>
+                                                                            <li>
+                                            <a href="https://www.weather.gov/coop/">Cooperative Observers</a>
+                                        </li>
+                                                                            <li>
+                                            <a href="https://www.weather.gov/briefing/">Daily Briefing</a>
+                                        </li>
+                                                                            <li>
+                                            <a href="https://www.weather.gov/hazstat">Damage/Fatality/Injury Statistics</a>
+                                        </li>
+                                                                            <li>
+                                            <a href="http://mag.ncep.noaa.gov">Forecast Models</a>
+                                        </li>
+                                                                            <li>
+                                            <a href="https://www.weather.gov/gis/">GIS Data Portal</a>
+                                        </li>
+                                                                            <li>
+                                            <a href="https://www.weather.gov/nwr">NOAA Weather Radio</a>
+                                        </li>
+                                                                            <li>
+                                            <a href="https://www.weather.gov/publications/">Publications</a>
+                                        </li>
+                                                                            <li>
+                                            <a href="https://www.weather.gov/skywarn/">SKYWARN Storm Spotters</a>
+                                        </li>
+                                                                            <li>
+                                            <a href="https://www.weather.gov/stormready">StormReady</a>
+                                        </li>
+                                                                            <li>
+                                            <a href="https://www.weather.gov/tsunamiready/">TsunamiReady</a>
+                                        </li>
+                                                                            <li>
+                                            <a href="https://www.weather.gov/notification/">Service Change Notices</a>
+                                        </li>
+                                                                    </ul>
+                            </div>
+                                                            </li>
+                            <li>
+                    <div class="topMenuNavList section-link">
+                        <a href="https://www.weather.gov/education/">EDUCATION</a>
+                    </div>
+                                                                                </li>
+                            <li>
+                    <div class="topMenuNavList section-link">
+                        <a href="https://www.weather.gov/news">NEWS</a>
+                    </div>
+                                                                                </li>
+                            <li>
+                    <div class="topMenuNavList section-link">
+                        <a href="https://www.weather.gov/search/">SEARCH</a>
+                    </div>
+                                            <div style="opacity: 0;" class="sub">
+                            <ul class="no-links">
+                            <li><!-- Begin search code -->
+                                <div id="site-search">
+                                    <form method="get" action="https://search.usa.gov/search" style="margin-bottom: 0; margin-top: 0;">
+                                        <input type="hidden" name="v:project" value="firstgov" />
+                                        <label for="query">Search For</label>
+                                        <input type="text" name="query" id="query" size="12" />
+                                        <input type="submit" value="Go" />
+                                        <p>
+                                            <input type="radio" name="affiliate" checked="checked" value="nws.noaa.gov" id="nws" />
+                                            <label for="nws" class="search-scope">NWS</label>
+                                            <input type="radio" name="affiliate" value="noaa.gov" id="noaa" />
+                                            <label for="noaa" class="search-scope">All NOAA</label>
+                                        </p>
+                                    </form>
+                                </div>
+                            </li>
+                            </ul>
+                        </div>
+                                    </li>
+                            <li class="last">
+                    <div class="topMenuNavList section-link">
+                        <a href="https://www.weather.gov/about/">ABOUT</a>
+                    </div>
+                                                                        <div style="opacity: 0;" class="sub">
+                                <ul>
+                                                                            <li>
+                                            <a href="https://www.weather.gov/about/">About NWS</a>
+                                        </li>
+                                                                            <li>
+                                            <a href="https://www.weather.gov/organization">Organization</a>
+                                        </li>
+                                                                            <li>
+                                            <a href="https://sites.google.com/a/noaa.gov/nws-insider/">For NWS Employees</a>
+                                        </li>
+                                                                            <li>
+                                            <a href="https://www.weather.gov/ncep/">National Centers</a>
+                                        </li>
+                                                                            <li>
+                                            <a href="https://www.noaa.gov/nws-careers">Careers</a>
+                                        </li>
+                                                                            <li>
+                                            <a href="https://www.weather.gov/contact">Contact Us</a>
+                                        </li>
+                                                                            <li>
+                                            <a href="https://forecast.weather.gov/glossary.php">Glossary</a>
+                                        </li>
+                                                                            <li>
+                                            <a href="https://www.weather.gov/socialmedia">Social Media</a>
+                                        </li>
+                                                                            <li>
+                                            <a href="https://www.noaa.gov/NWStransformation">NWS Transformation</a>
+                                        </li>
+                                                                    </ul>
+                            </div>
+                                                            </li>
+                    </ul>
+    </div>
+</div>
+
+
+            <div class="center-content">
+                <div id="zipcity_news">
+                    <div class="one-sixth-first">
+    <div id="forecast-lookup">
+        <form name="getForecast" id="getForecast" action="https://forecast.weather.gov/zipcity.php" method="get">
+            <label for="inputstring">Local forecast by <br />"City, St" or ZIP code</label>
+            <input id="inputstring" name="inputstring" type="text" value="Enter location ..." onclick="this.value=''" />
+            <input name="btnSearch" id="btnSearch" type="submit" value="Go" />
+            <div id="txtError">
+                <div id="errorNoResults" style="display:none;">Sorry, the location you searched for was not found. Please try another search.</div>
+                <div id="errorMultipleResults" style="display:none">Multiple locations were found. Please select one of the following:</div>
+                <div id="errorChoices" style="display:none"></div>
+                <input id="btnCloseError" type="button" value="Close" style="display:none" />
+            </div>
+            <div id="txtHelp"><a style="text-decoration: underline;" href="javascript:void(window.open('https://www.weather.gov/ForecastSearchHelp.html','locsearchhelp','status=0,toolbar=0,location=0,menubar=0,directories=0,resizable=1,scrollbars=1,height=500,width=530').focus());">Location Help</a></div>
+        </form>
+    </div>
+</div>
+
+                        <div class="five-sixth-last">
+                    <div id="topnews">
+                <div id="global_localnews" style="float:left;width:800px;">
+                    <div id="global_localnews_headerbar_main">
+                        <div id="global_localnews_headerbar_sub_left">
+                            <div id="global_localnews_title" style="color:black;margin:5px 0px 2px 0px;font-size:14px;font-weight:bold;">News Headlines</div>
+                        </div>
+                    </div>
+                    <div id="localnews">
+                        <ul>
+                                                            <li><a href="https://www.weather.gov/erh/ghwo?wfo=sgx"><strong>Graphical Hazardous Weather Outlook</strong></a></li>
+                                                            <li><a href="https://www.weather.gov/sgx/Today_Weather_History"><strong>This Day in History</strong></a></li>
+                                                            <li><a href="https://www.weather.gov/sgx/history_form"><strong>This Day in History - archive for any day</strong></a></li>
+                                                    </ul>
+                                                <ul>
+                    </div>
+                </div>
+            </div>
+            <script type="text/javascript">
+                /** news headline Additional Headlines link **/
+                $(document).ready(function () {
+                    $("#additionalNews").toggle();
+                    $(".toggleHeadlines a").click(function(e){
+                        e.preventDefault();
+                        e.stopPropagation();
+                        $(".toggleHeadlines").toggle();
+                        $(".hidden-news-link").toggle();
+                    });
+                });
+            </script>
+            </div>
+
+                </div>
+                <div class="full-width-bordertop">
+                    <div class="div-full">
+
+                        <!-- area for the myforecast widget and wwamap data -->
+                        <div class="one-sixth-first" id="sidebar">
+                            <script type="text/javascript" src="/js/jquery-cookie.js"></script>
+<script type="text/javascript" src="/js/MyForecastWidget.js"></script>
+<div id="myfcst-widget">
+    <div id="myfcst">
+        <form id='myfcst-form' action='/widgets/MyForecastWidget.php'>
+            <span id="myfcst-title">Customize Your <strong>Weather.gov</strong></span>
+            <div id="myfcst-input-block">
+                <input type="text" name="myfcst-location-input" id="myfcst-location-input" value="City, ST" />
+                <label for="myfcst-location-input">Enter Your City, ST or ZIP Code</label><br />
+                <input type="checkbox" name="myfcst-remember" id="myfcst-remember" />
+                <label for="myfcst-remember">Remember Me</label>
+            </div>
+            <div class="myfcst-footer">
+                <input type="submit" value="Get Weather" id="myfcst-submit" />
+                <p class="myfcst-policy"><a href="/privacy.php">Privacy Policy</a></p>
+            </div>
+        </form>
+        <div id="myfcst-fcst"></div>
+        <div id="myfcst-multi-result"></div>
+        <div id="myfcst-loading">LOADING...</div>
+    </div>
+</div>
+
+                            
+                        </div><!-- end of <div class="one-sixth-first"> -->
+
+                        <div class="five-sixth-first" id="pagebody">
+                            <div class="div-full breadcrumb">
+    <div class="sitename">
+        <p class="sitename-name">San Diego, CA</p>
+        <p class="sitename-class">Weather Forecast Office</p>
+    </div>
+    <div class="location">
+        <h1 class='location-pagetitle'>El Toro Climate</h1>
+        <div class='location-breadcrumb'>
+            <a href="https://www.weather.gov">Weather.gov</a>
+                                                &gt; <a href="https://www.weather.gov/sgx">San Diego, CA</a>
+                                &gt; El Toro Climate
+                    </div>
+    </div>
+</div>
+
+                            <div class="div-full">
+    <div class="subMenuNav">
+        <ul id="subMenuNav">
+                            <li>
+                    <div class="subMenuNavList section-link">
+                        <a href="#">Current Hazards</a>
+                    </div>
+                                            <div class="sub">
+                            <ul>
+                                                                    <li>
+                                        <a href="https://www.weather.gov/crh/outlooks?sid=sgx"> Current Outlooks</a>
+                                    </li>
+                                                                    <li>
+                                        <a href="https://www.weather.gov/briefing/"> Daily Briefing</a>
+                                    </li>
+                                                                    <li>
+                                        <a href="https://www.weather.gov/wrh/hazards?wfo=sgx"> Detailed Hazards</a>
+                                    </li>
+                                                                    <li>
+                                        <a href="https://inws.ncep.noaa.gov/report/"> Submit Report</a>
+                                    </li>
+                                                                    <li>
+                                        <a href="http://www.nhc.noaa.gov/gtwo.php?basin=epac&amp;fdays=5"> Hurricane Outlook</a>
+                                    </li>
+                                                                    <li>
+                                        <a href="https://www.weather.gov/sgx/WeatherSafety "> Weather-Ready and Safety</a>
+                                    </li>
+                                                                    <li>
+                                        <a href="https://www.weather.gov/erh/ghwo?wfo=sgx"> Graphical Hazardous Weather Outlook</a>
+                                    </li>
+                                                            </ul>
+                        </div>
+                                    </li>
+                            <li>
+                    <div class="subMenuNavList section-link">
+                        <a href="https://www.weather.gov/wrh/hazards?&amp;zoom=8&amp;scroll_zoom=false&amp;center=33.80653802509606,-116.65557861328126&amp;boundaries=false,false,false,false,false,false,false,false,false,false,false&amp;tab=layers&amp;obs=true&amp;obs_type=weather&amp;elements=temp,wind,gust&amp;temp_filter=-80,130&amp;gust_filter=0,150&amp;rh_filter=0,100&amp;elev_filter=-300,14000&amp;precip_filter=0.01,30&amp;obs_popup=false&amp;obs_density=60&amp;obs_provider=ALL">Current Conditions</a>
+                    </div>
+                                            <div class="sub">
+                            <ul>
+                                                                    <li>
+                                        <a href="https://www.weather.gov/wrh/hazards?&amp;zoom=8&amp;scroll_zoom=false&amp;center=33.80653802509606,-116.65557861328126&amp;boundaries=false,false,false,false,false,false,false,false,false,false,false&amp;tab=layers&amp;obs=true&amp;obs_type=weather&amp;elements=temp,wind,gust&amp;temp_filter=-80,130&amp;gust_filter=0,150&amp;rh_filter=0,100&amp;elev_filter=-300,14000&amp;precip_filter=0.01,30&amp;obs_popup=false&amp;obs_density=60&amp;obs_provider=ALL"> Observations</a>
+                                    </li>
+                                                                    <li>
+                                        <a href="https://www.star.nesdis.noaa.gov/GOES/index.php"> Satellite</a>
+                                    </li>
+                                                                    <li>
+                                        <a href="https://water.noaa.gov/precip"> Precipitation</a>
+                                    </li>
+                                                                    <li>
+                                        <a href="https://www.weather.gov/source/sgx/climate/LAXWRKRTP"> High/Low Temps and Precip</a>
+                                    </li>
+                                                                    <li>
+                                        <a href="https://forecast.weather.gov/product.php?site=NWS&amp;issuedby=SGX&amp;product=RRM&amp;format=CI&amp;version=1&amp;glossary=0&amp;highlight=off"> Local Rainfall Summary</a>
+                                    </li>
+                                                                    <li>
+                                        <a href="https://www.weather.gov/sgx/Hydro"> More Local Rainfall</a>
+                                    </li>
+                                                                    <li>
+                                        <a href="https://www.weather.gov/sgx/observations"> Local Observations</a>
+                                    </li>
+                                                                    <li>
+                                        <a href="https://forecast.weather.gov/product.php?site=NWS&amp;issuedby=SGX&amp;product=LSR&amp;format=CI&amp;version=1&amp;glossary=0&amp;highlight=off"> Local Storm Report </a>
+                                    </li>
+                                                                    <li>
+                                        <a href="https://weather.rap.ucar.edu/upper/displayUpper.php?img=KNKX.png&amp;endDate=-1&amp;endTime=-1&amp;duration=0"> Upper Air Sounding</a>
+                                    </li>
+                                                                    <li>
+                                        <a href="https://forecast.weather.gov/product.php?site=NWS&amp;issuedby=SGX&amp;product=PNS&amp;format=CI&amp;version=1&amp;glossary=0&amp;highlight=off"> Public Information Statement </a>
+                                    </li>
+                                                            </ul>
+                        </div>
+                                    </li>
+                            <li>
+                    <div class="subMenuNavList section-link">
+                        <a href="https://radar.weather.gov">Radar</a>
+                    </div>
+                                            <div class="sub">
+                            <ul>
+                                                                    <li>
+                                        <a href="https://radar.weather.gov/#/"> National</a>
+                                    </li>
+                                                                    <li>
+                                        <a href="https://radar.weather.gov/?settings=v1_eyJhZ2VuZGEiOnsiaWQiOiJuYXRpb25hbCIsImNlbnRlciI6Wy0xMTYuMDA3LDMzLjMwM10sInpvb20iOjgsImxheWVyIjoiY3JlZl9xY2QiLCJ0cmFuc3BhcmVudCI6dHJ1ZSwiYWxlcnRzT3ZlcmxheSI6dHJ1ZX0sImJhc2UiOiJzdGFuZGFyZCIsImNvdW50eSI6dHJ1ZSwiY3dhIjpmYWxzZSwic3RhdGUiOmZhbHNlLCJtZW51Ijp0cnVlLCJzaG9ydEZ1c2VkT25seSI6dHJ1ZX0%3D#/"> Local</a>
+                                    </li>
+                                                                    <li>
+                                        <a href="https://radar.weather.gov/?settings=v1_eyJhZ2VuZGEiOnsiaWQiOm51bGwsImNlbnRlciI6Wy0xMDYuMjQzLDQwLjE3OV0sInpvb20iOjV9LCJiYXNlIjoic3RhbmRhcmQiLCJjb3VudHkiOmZhbHNlLCJjd2EiOmZhbHNlLCJzdGF0ZSI6ZmFsc2UsIm1lbnUiOnRydWUsInNob3J0RnVzZWRPbmx5IjpmYWxzZX0%3D#/"> Regional</a>
+                                    </li>
+                                                                    <li>
+                                        <a href="https://radar.weather.gov/station/KNKX/standard"> San Diego - NKX</a>
+                                    </li>
+                                                                    <li>
+                                        <a href="https://radar.weather.gov/station/KSOX/standard"> Santa Ana Mountains - SOX</a>
+                                    </li>
+                                                                    <li>
+                                        <a href="https://radar.weather.gov/station/KYUX/standard"> Yuma - YUX</a>
+                                    </li>
+                                                                    <li>
+                                        <a href="https://www.weather.gov/radar_lite"> National Radar Quick View</a>
+                                    </li>
+                                                                    <li>
+                                        <a href="https://radar.weather.gov/region/pacsouthwest/standard"> Southwest US Quick View</a>
+                                    </li>
+                                                            </ul>
+                        </div>
+                                    </li>
+                            <li>
+                    <div class="subMenuNavList section-link">
+                        <a href="#">Forecasts</a>
+                    </div>
+                                            <div class="sub">
+                            <ul>
+                                                                    <li>
+                                        <a href="https://www.wpc.ncep.noaa.gov/heatrisk/?wfo=sgx"> Experimental HeatRisk </a>
+                                    </li>
+                                                                    <li>
+                                        <a href="https://www.aviationweather.gov/"> Aviation Weather</a>
+                                    </li>
+                                                                    <li>
+                                        <a href="https://forecast.weather.gov/product.php?site=sgx&amp;issuedby=SGX&amp;product=AFD"> Forecast Discussion</a>
+                                    </li>
+                                                                    <li>
+                                        <a href="https://www.weather.gov/wrh/travel?wfo=sgx"> Travel</a>
+                                    </li>
+                                                                    <li>
+                                        <a href="https://www.weather.gov/wrh/wxtable"> Local Area</a>
+                                    </li>
+                                                                    <li>
+                                        <a href="https://www.weather.gov/wrh/fire?wfo=sgx"> Fire Weather</a>
+                                    </li>
+                                                                    <li>
+                                        <a href="http://www.spc.noaa.gov/"> Severe Weather</a>
+                                    </li>
+                                                                    <li>
+                                        <a href="http://www.nhc.noaa.gov/"> Hurricane Center</a>
+                                    </li>
+                                                                    <li>
+                                        <a href="https://www.weather.gov/sgx/marine"> Marine</a>
+                                    </li>
+                                                                    <li>
+                                        <a href="https://www.wrh.noaa.gov/sgx/hydro/ffpd.php"> Experimental Flash Flood Potential Index</a>
+                                    </li>
+                                                                    <li>
+                                        <a href="https://www.weather.gov/sgx/Hydro"> Hydrology</a>
+                                    </li>
+                                                                    <li>
+                                        <a href="https://www.weather.gov/sgx/audio_forecasts"> Audio Forecasts</a>
+                                    </li>
+                                                                    <li>
+                                        <a href="https://www.weather.gov/erh/ghwo?wfo=sgx"> Weather Hazards Outlook</a>
+                                    </li>
+                                                            </ul>
+                        </div>
+                                    </li>
+                            <li>
+                    <div class="subMenuNavList section-link">
+                        <a href="https://www.water.noaa.gov/wfo/sgx">Rivers and Lakes</a>
+                    </div>
+                                            <div class="sub">
+                            <ul>
+                                                                    <li>
+                                        <a href="https://www.water.noaa.gov/"> National Water Prediction Service (NWPS)</a>
+                                    </li>
+                                                                    <li>
+                                        <a href="https://water.weather.gov/ahps2/forecasts.php?wfo=sgx"> River Forecasts (Map)</a>
+                                    </li>
+                                                                    <li>
+                                        <a href="http://www.water.noaa.gov/wfo/sgx"> Local River Observations (Map)</a>
+                                    </li>
+                                                                    <li>
+                                        <a href="https://water.weather.gov/ahps/rfc/rfc.php"> River Forecast Centers</a>
+                                    </li>
+                                                                    <li>
+                                        <a href="https://www.cocorahs.org/state.aspx?state=ca"> CoCoRaHS</a>
+                                    </li>
+                                                                    <li>
+                                        <a href="https://www.weather.gov/sgx/Hydro"> Hydrology</a>
+                                    </li>
+                                                            </ul>
+                        </div>
+                                    </li>
+                            <li>
+                    <div class="subMenuNavList section-link">
+                        <a href="#">Climate and Past Weather</a>
+                    </div>
+                                            <div class="sub">
+                            <ul>
+                                                                    <li>
+                                        <a href="https://www.weather.gov/wrh/climate?wfo=sgx"> Local</a>
+                                    </li>
+                                                                    <li>
+                                        <a href="https://www.drought.gov/"> Drought</a>
+                                    </li>
+                                                                    <li>
+                                        <a href="https://www.weather.gov/wrh/climate"> National</a>
+                                    </li>
+                                                                    <li>
+                                        <a href="http://scacis.rcc-acis.org/"> Climate Database</a>
+                                    </li>
+                                                                    <li>
+                                        <a href="https://www.climate.gov/"> Climate News</a>
+                                    </li>
+                                                                    <li>
+                                        <a href="https://www.ncdc.noaa.gov/cag/"> Climate at a Glance</a>
+                                    </li>
+                                                            </ul>
+                        </div>
+                                    </li>
+                            <li>
+                    <div class="subMenuNavList section-link">
+                        <a href="#">Local Programs</a>
+                    </div>
+                                            <div class="sub">
+                            <ul>
+                                                                    <li>
+                                        <a href="https://www.weather.gov/sgx/Fastlinks"> Fastlinks</a>
+                                    </li>
+                                                                    <li>
+                                        <a href="https://www.weather.gov/sgx/aviation_main"> Aviation</a>
+                                    </li>
+                                                                    <li>
+                                        <a href="https://www.weather.gov/sgx/Marine"> Marine</a>
+                                    </li>
+                                                                    <li>
+                                        <a href="https://www.weather.gov/wrh/fire?wfo=sgx"> Fire Weather</a>
+                                    </li>
+                                                                    <li>
+                                        <a href="https://www.weather.gov/sgx/DroughtInformationStatement#"> Drought</a>
+                                    </li>
+                                                                    <li>
+                                        <a href="http://www.spc.noaa.gov/"> Severe Weather</a>
+                                    </li>
+                                                                    <li>
+                                        <a href="http://www.wrh.noaa.gov/wrh/rec/?wfo=sgx"> Recreation Safety Forecast </a>
+                                    </li>
+                                                                    <li>
+                                        <a href="https://www.weather.gov/sgx/skywarn"> Spotter &amp; Skywarn</a>
+                                    </li>
+                                                                    <li>
+                                        <a href="https://www.weather.gov/sgx/coop"> COOP &amp; Mesonet</a>
+                                    </li>
+                                                                    <li>
+                                        <a href="https://www.weather.gov/sgx/education_resources"> Education</a>
+                                    </li>
+                                                                    <li>
+                                        <a href="https://www.weather.gov/sgx/NumericalModels"> Numerical Models</a>
+                                    </li>
+                                                                    <li>
+                                        <a href="https://www.weather.gov/sgx/SunEarthandOceanData"> Sun, Earth, &amp; Sea</a>
+                                    </li>
+                                                                    <li>
+                                        <a href="https://www.weather.gov/sgx/our_office"> Our Office</a>
+                                    </li>
+                                                                    <li>
+                                        <a href="https://www.weather.gov/sgx/Triballocationforecasts"> Tribal Forecasts</a>
+                                    </li>
+                                                                    <li>
+                                        <a href="https://www.weather.gov/srh/tropical?office=sgx"> Tropical Weather</a>
+                                    </li>
+                                                                    <li>
+                                        <a href="https://www.weather.gov/srh/tropical?office=sgx#activestorms"> Active Tropical Cyclones</a>
+                                    </li>
+                                                            </ul>
+                        </div>
+                                    </li>
+                    </ul>
+    </div>
+</div>
+
+
+                            
+                            
+                            
+                            <div class="div-full">
+<div class="cms-content"><title></title>
+<pre>
+<font size="3">
+</font><span style="font-size:12px;">------------------INTERNATIONAL STATION METEOROLOGICAL CLIMATE SUMMARY-------------------</span><font size="3">
+
+ :STA 722974 | KNZJ | EL TORO MCAS ,CA,US
+:LAT 33 40N :LONG 117 44W :ELEV 00383(ft) 00117(m) :TYPE NAVY SMOS V3 16031995
+44 - ISMCS Station Climatic Narrative
+
+
+POR defined in data tables
+
+
+               Marine Corps Air Station El Toro, California is    
+          located in the southern section of an area known  as    
+          the  &quot;Los  Angeles  Basin&quot;.   The  air  station   is    
+          screened  on 3 sides by mountain barriers.  Land  in    
+          the immediate vicinity of the station is cleared and    
+          cultivated and under extensive urbanization. 
+		             
+               The region in which the air station is  located    
+          enjoys  one  of the most equable climates  in  North    
+          America.   The  summer  begins in  April  and  lasts    
+          through October.  Increased stability in the form of    
+          haze,   fog  and  stratus.   The   prevailing   wind    
+          direction is west at about 5 knots.  
+		                     
+               The   dry  easterly  winds  (Santa  Ana)   that    
+          sometimes  blow  for several days at a  time,  bring    
+          temperatures  in  the 90&#39;s, and at  times  over  100    
+          degrees  F.  Since September 1949, this station  has    
+          recorded  a  total of 25 days which were  under  the    
+          influence of the &quot;Santa Ana&quot; winds. 
+		                      
+               The  &quot;Santa  Ana&quot; wind that is  experienced  at    
+          this  station may occur in almost any month  of  the    
+          year;   however,  it  is  predominately   a   winter    
+          phenomenon.    
+		                                           
+               Precipitation  at this station is  primarily  a    
+          winter   phenomenon.   The   average   rainfall   is    
+          approximately 12 inches and the major portion of  it    
+          usually  falls during winter storms.  Snow has  been    
+          observed at this station upon rare occasions and the    
+          accumulation has been negligible.                       
+
+<span style="font-size:12px;">
+------------------INTERNATIONAL STATION METEOROLOGICAL CLIMATE SUMMARY-------------------</span>
+
+ :STA 722974 | KNZJ | EL TORO MCAS ,CA,US
+:LAT 33 40N :LONG 117 44W :ELEV 00383(ft) 00117(m) :TYPE NAVY SMOS V3 16031995
+37 - STATION CLIMATIC SUMMARY 
+
+
+POR: (HOURLY): 1945-1993 
+
+</font><span style="font-size:9px;">    TEMPERATURE (DEG F)|    PRECIPITATION (INCHES) (^)  |REL HUM|VAP|DEW| PR |WIND (KTS) |   |      MEAN NO. OF DAYS WITH (&amp;)
+       MEANS   |EXTREME|       PRECIP.     |SNOWFALL (@)|PERCENT|PR |PT.| ALT|           |SKY|PRECIP.|SNOW-  |   |   |  TEMP (DEG F)
+       |   |   |   |   |     |    |    |24H|    |   |24H| (LST) |IN.|(F)| FT.|PREVAIL|MAX|CVR|INCHES |FALL(&quot;)|TH |FOG|MAX|MAX|MIN|MIN
+    MAX|MIN|AVG|MAX|MIN| MEAN| MAX| MIN|MAX|MEAN|MAX|MAX| AM| PM|HG.|   |  $ |DIR|SPD|GST| + | &gt;=| &gt;=| &gt;=| &gt;=|STM| * | &gt;=| &gt;=| &lt;=| &lt;=
+                                                        | 07| 16|                            |.01|.50|.10|1.5|       | 90| 70| 32| 10
+
+JAN  65  45  55  93  25   2.5 12.6    0 5.2    T   1   1  68  54 .24  39   60   E   4  62 SCT   6   2   #   0   1  11   #   8   #   0
+FEB  67  46  57  94  30   2.4 11.7    T 3.0    0   0   0  72  55 .27  42   60   E   4  65 SCT   5   2   0   0   #  11   #   9   #   0
+MAR  67  47  57  96  32   2.4 10.2    T 3.7    0   0   0  79  57 .30  45   65   W   6  53 BRK   7   1   0   0   1  11   #  10   #   0
+APR  71  50  61 101  33   1.0  5.4    0 2.2    0   0   0  77  54 .33  48   60   W   6  51 SCT   4   1   0   0   #  10   1  15   0   0
+MAY  73  54  63 101  39    .2  1.2    0  .9    0   0   0  78  57 .38  51   55   W   6  70 OVR   2   #   0   0   #  12   1  21   0   0
+JUN  77  57  67 107  44     0   .3    0  .3    0   0   0  81  57 .44  55   60   W   6  35 OVR   1   0   0   0   #  16   1  27   0   0
+JUL  82  61  72 110  48     T   .3    0  .3    0   0   0  82  53 .50  59   55   W   6  47 CLR   #   0   0   0   #  18   3  31   0   0
+AUG  83  62  73 104  47    .1   .8    0  .6    0   0   0  83  55 .52  60   60   W   6  36 CLR   1   #   0   0   #  19   4  31   0   0
+SEP  82  60  71 116  45    .3  2.2    0 1.3    0   0   0  79  54 .48  57   65   W   6  43 CLR   1   #   0   0   #  17   5  29   0   0
+OCT  77  56  67 108  38    .3  1.7    T 1.2    0   0   0  74  55 .38  52   60   W   6  45 SCT   2   #   0   0   1  15   3  27   0   0
+NOV  71  50  61  99  35   1.4  6.7    0 2.8    0   0   0  66  52 .28  43   60   E   4  63 SCT   4   1   0   0   #  12   #  16   0   0
+DEC  66  46  56  93  28   1.8  5.5    T 2.8    0   0   0  65  53 .24  39   60   E   4  71 SCT   5   1   0   0   #  11   #   9   #   0
+ANN  73  53  63 116  25  12.4 31.4  3.9 5.2    T   1   1  75  55 .35  49   65   W   5  71 SCT  38   8   #   0   3 163  17 232   1   0
+POR  49  49  49  49  49    49   49   49  49   48  48  48  49  49  48  48   47  48  48  46  47  49  49  48  48  40  40  49  49  49  49
+</span><font size="3">
+
+T = TRACE AMOUNTS ( &lt; .05  &lt; .5 INCHES  
+# = MEAN NO. DAYS &lt; .5 DAYS 
+$ = PRESSURE ALTITUDE IN TENS OF FEET (I.E.  50 = 500 FEET) 
+@ = NAVY STATIONS REPORT HAIL AS SNOWFALL; ALSO NWS FROM JULY,1948 - DEC.,1955
++ = THE PREDOMINANT SKY CONDITION
+* = VISIBILITY IS NOT CONSIDERED
+&amp; = ANN TOTALS MAY NOT EQUAL SUM OF MONTHLY VALUES DUE TO ROUNDING 
+^ = 24 HR MAX PRECIP AND SNOWFALL ARE DAILY TOTALS (MID-NIGHT TO MID-NIGHT)  
+I = EXCESSIVE MISSING DATA - VALUE NOT COMPUTED
+&quot; = INCHES
+
+             MEAN NO. OF DAYS WITH (&amp;)          |   
+          PRECIPITATION     |  OBSTR TO VISION  |   
+        |FRZ |    |HAIL|    |SMOK|BLOW|DUST| OBS|   
+    R/DZ|R/DZ|SNOW|/SLT|PRCP|HAZE|SNOW|SAND| VIS|   
+
+JAN    8    0    #    #    8   13    0    #   17
+FEB    8    0    0    #    8   12    0    0   15
+MAR    9    0    0    #    9   11    0    #   15
+APR    8    0    0    #    8   12    0    0   14
+MAY    9    0    0    0    9   14    0    #   17
+JUN    6    0    0    0    6   18    0    0   21
+JUL    3    0    0    0    3   22    0    #   24
+AUG    3    0    0    0    3   22    0    #   24
+SEP    5    0    0    0    5   21    0    0   23
+OCT    7    0    0    #    7   20    0    #   21
+NOV    6    0    0    #    6   14    0    #   17
+DEC    7    0    0    #    7   14    0    #   17
+ANN   79    0    #    #   79  193    0    1  225
+POR   40   40   40   40   40   40   40   40   40
+
+
+&amp; = ANN TOTALS MAY NOT EQUAL SUM OF MONTHLY VALUES DUE TO ROUNDING 
+I = EXCESSIVE MISSING DATA - VALUE NOT COMPUTED
+# = MEAN NO. DAYS &lt; .5 DAYS
+
+
+</font></pre>
+
+</div>
+</div>
+<div style="clear:both"></div>
+                        </div>
+
+                    </div><!-- end of <div class="partial-width-borderbottom"> -->
+   
+                </div><!-- <div class="full-width-border"> -->
+           
+                <!-- area for features, frontpage thumbs, and custom page -->
+                
+                
+                <!-- end of <div class="partial-width-borderbottom feature-block"> -->
+                
+                <div class="full-width-bordertop">
+                    <div class="full-width-first communication-links">
+        <div class ="one-sixth-first divs">
+        <div class="myforecast-current">
+            <a style="text-decoration:none;" href="https://twitter.com/NWSSanDiego" target="_blank">
+                <img src="/bundles/templating/images/social/x.png" width="16" alt="Follow us on X" height="16" />&nbsp;&nbsp;Follow us on X
+            </a>
+        </div>
+    </div>
+        <div class ="one-sixth-first divs">
+        <div class="myforecast-current">
+            <a style="text-decoration:none;" href="https://www.facebook.com/NWSSanDiego" target="_blank">
+                <img src="/bundles/templating/images/social/facebook.png" width="16" alt="Follow us on Facebook" height="16" />&nbsp;&nbsp;Follow us on Facebook
+            </a>
+        </div>
+    </div>
+        <div class ="one-sixth-first divs">
+        <div class="myforecast-current">
+            <a style="text-decoration:none;" href="http://youtube.com/NWSSanDiego" target="_blank">
+                <img src="/bundles/templating/images/social/youtube.png" width="16" alt="Follow us on YouTube" height="16" />&nbsp;&nbsp;Follow us on YouTube
+            </a>
+        </div>
+    </div>
+    <div class ="one-half-last nopad">
+        <span class="txt-rt myforecast-current">
+            <div class="myforecast-current">
+                <a href="/rss_page.php?site_name=sgx" target="_blank" style="text-decoration:none;font-size:11px;">
+                    <img src="/bundles/templating/images/social/rss.png" width="16" height="16" alt="SGX RSS Feed" />&nbsp;&nbsp;SGX RSS Feed
+                </a>
+            </div>
+        </span>
+    </div>
+</div>
+<div style="clear:both;"></div>
+
+
+                </div>
+
+
+                <div style="clear:both;"></div>
+
+            </div><!-- <div class="center-content"> -->
+
+        </div><!-- end of <div class="center"> -->
+
+        <!-- sitemap area -->
+        <div class="footer">
+            <style type="text/css">
+    .footer-column-head a:link, .footer-column-head a:visited {
+        color: #ED7A08;
+    }
+</style>
+<div class="footer-content">
+            <div class="footer-column" style="padding:10px 10px;">
+                                </div>
+            <div class="footer-column" style="padding:10px 10px;">
+                                </div>
+            <div class="footer-column" style="padding:10px 10px;">
+                                </div>
+            <div class="footer-column" style="padding:10px 10px;">
+                                </div>
+            <div class="footer-column" style="padding:10px 10px;">
+                                </div>
+            <div class="footer-column" style="padding:10px 10px;">
+                                </div>
+    </div>
+
+        </div><!-- end of <div class="footer"> -->
+
+        <!-- legal footer area -->
+        <div class="footer-legal">
+            <div class="footer-legal">
+    <div class="footer-legal-content">
+
+        <div class="one-sixth-first" id="footer_legal_gov">
+            <a href="http://www.usa.gov"><img src="/bundles/templating/images/footer/usa_gov.png" alt="usa.gov" width="110" height="30" /></a>
+        </div>
+
+        <div class="one-half-first" id="footer_legal_info">
+            <p>
+                <a href="http://www.commerce.gov">US Dept of Commerce</a><br />
+                <a href="http://www.noaa.gov">National Oceanic and Atmospheric Administration</a><br />
+                <a href="https://www.weather.gov">National Weather Service</a><br />
+                San Diego, CA<br />                11440 W. Bernardo Court, Suite 230<br />
+                                SAN DIEGO, CA 92127
+                <br />(858)-675-8700<br />
+                <br /><a href="mailto:w-sgx.webmaster@noaa.gov">Comments? Questions? Please Contact Us.</a>
+            </p>
+        </div>
+
+        <div class="one-third-last" id="footer_required_links">
+            <div class="div-half">
+                <a href="https://www.weather.gov/disclaimer">Disclaimer</a><br />
+                <a href="http://www.cio.noaa.gov/services_programs/info_quality.html">Information Quality</a><br />
+                <a href="https://www.weather.gov/help">Help</a><br />
+                <a href="/glossary">Glossary</a>
+            </div>
+
+            <div class="div-half">
+                <a href="https://www.weather.gov/privacy">Privacy Policy</a><br />
+                <a href="https://www.noaa.gov/foia-freedom-of-information-act">Freedom of Information Act (FOIA)</a><br />
+                <a href="https://www.weather.gov/about">About Us</a><br />
+                <a href="https://www.weather.gov/careers">Career Opportunities</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+        </div><!-- end of <div class="footer-legal"> -->
+
+        <script type="text/javascript" src="//www.weather.gov/js/govshutdown.js"></script>
+    </body>
+</html>

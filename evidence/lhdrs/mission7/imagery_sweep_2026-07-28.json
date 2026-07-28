@@ -1,0 +1,1108 @@
+{
+ "generated": "2026-07-28",
+ "aoi": {
+  "minlon": -117.659017,
+  "minlat": 33.526791,
+  "maxlon": -117.624136,
+  "maxlat": 33.575504
+ },
+ "window": [
+  "1997-01-01",
+  "2006-12-31"
+ ],
+ "catalogs": [
+  {
+   "catalog": "USGS_TNM_Access",
+   "query": "https://tnmaccess.nationalmap.gov/api/v1/products?bbox=-117.659017%2C33.526791%2C-117.624136%2C33.575504&max=250&outputFormat=JSON",
+   "status": "ok",
+   "itemCount": 1,
+   "items": [
+    {
+     "id": "USGS 1:24000-scale Quadrangle for Canada Gobernadora, CA 1997",
+     "date": "1997-01-01",
+     "collection": "GeoPDF, GeoTIFF",
+     "url": "https://prd-tnm.s3.amazonaws.com/StagedProducts/Maps/HistoricalTopo/PDF/CA/24000/CA_Canada%20Gobernadora_288890_1997_24000_geo.pdf"
+    }
+   ],
+   "note": "242 total products at AOI; 1 within 1997-2006"
+  },
+  {
+   "catalog": "PlanetaryComputer_naip",
+   "query": "{\"collections\": [\"naip\"], \"bbox\": [-117.659017, 33.526791, -117.624136, 33.575504], \"datetime\": \"1997-01-01T00:00:00Z/2006-12-31T23:59:59Z\", \"limit\": 100}",
+   "status": "ok",
+   "itemCount": 0,
+   "items": [],
+   "note": ""
+  },
+  {
+   "catalog": "PlanetaryComputer_landsat-c2-l2",
+   "query": "{\"collections\": [\"landsat-c2-l2\"], \"bbox\": [-117.659017, 33.526791, -117.624136, 33.575504], \"datetime\": \"1997-01-01T00:00:00Z/2006-12-31T23:59:59Z\", \"limit\": 100}",
+   "status": "ok",
+   "itemCount": 100,
+   "items": [
+    {
+     "id": "LT05_L2SP_041037_20051030_02_T1",
+     "date": "2005-10-30",
+     "collection": "landsat-c2-l2",
+     "gsd": 30,
+     "cloud": 17.0
+    },
+    {
+     "id": "LE07_L2SP_040037_20051031_02_T1",
+     "date": "2005-10-31",
+     "collection": "landsat-c2-l2",
+     "gsd": 30,
+     "cloud": 0.0
+    },
+    {
+     "id": "LE07_L2SP_041037_20051107_02_T1",
+     "date": "2005-11-07",
+     "collection": "landsat-c2-l2",
+     "gsd": 30,
+     "cloud": 70.0
+    },
+    {
+     "id": "LT05_L2SP_040037_20051108_02_T1",
+     "date": "2005-11-08",
+     "collection": "landsat-c2-l2",
+     "gsd": 30,
+     "cloud": 94.0
+    },
+    {
+     "id": "LT05_L2SP_041037_20051115_02_T1",
+     "date": "2005-11-15",
+     "collection": "landsat-c2-l2",
+     "gsd": 30,
+     "cloud": 55.0
+    },
+    {
+     "id": "LE07_L2SP_040037_20051116_02_T1",
+     "date": "2005-11-16",
+     "collection": "landsat-c2-l2",
+     "gsd": 30,
+     "cloud": 0.0
+    },
+    {
+     "id": "LE07_L2SP_041037_20051123_02_T1",
+     "date": "2005-11-23",
+     "collection": "landsat-c2-l2",
+     "gsd": 30,
+     "cloud": 89.0
+    },
+    {
+     "id": "LT05_L2SP_040037_20051124_02_T1",
+     "date": "2005-11-24",
+     "collection": "landsat-c2-l2",
+     "gsd": 30,
+     "cloud": 7.0
+    },
+    {
+     "id": "LE07_L2SP_040037_20051202_02_T1",
+     "date": "2005-12-02",
+     "collection": "landsat-c2-l2",
+     "gsd": 30,
+     "cloud": 80.0
+    },
+    {
+     "id": "LE07_L2SP_041037_20051209_02_T1",
+     "date": "2005-12-09",
+     "collection": "landsat-c2-l2",
+     "gsd": 30,
+     "cloud": 15.0
+    },
+    {
+     "id": "LE07_L2SP_040037_20051218_02_T1",
+     "date": "2005-12-18",
+     "collection": "landsat-c2-l2",
+     "gsd": 30,
+     "cloud": 100.0
+    },
+    {
+     "id": "LE07_L2SP_041037_20051225_02_T1",
+     "date": "2005-12-25",
+     "collection": "landsat-c2-l2",
+     "gsd": 30,
+     "cloud": 97.0
+    },
+    {
+     "id": "LE07_L2SP_040037_20060103_02_T1",
+     "date": "2006-01-03",
+     "collection": "landsat-c2-l2",
+     "gsd": 30,
+     "cloud": 41.0
+    },
+    {
+     "id": "LE07_L2SP_041037_20060110_02_T1",
+     "date": "2006-01-10",
+     "collection": "landsat-c2-l2",
+     "gsd": 30,
+     "cloud": 0.0
+    },
+    {
+     "id": "LT05_L2SP_041037_20060118_02_T1",
+     "date": "2006-01-18",
+     "collection": "landsat-c2-l2",
+     "gsd": 30,
+     "cloud": 45.0
+    },
+    {
+     "id": "LE07_L2SP_040037_20060119_02_T1",
+     "date": "2006-01-19",
+     "collection": "landsat-c2-l2",
+     "gsd": 30,
+     "cloud": 11.0
+    },
+    {
+     "id": "LE07_L2SP_041037_20060126_02_T1",
+     "date": "2006-01-26",
+     "collection": "landsat-c2-l2",
+     "gsd": 30,
+     "cloud": 18.0
+    },
+    {
+     "id": "LT05_L2SP_040037_20060127_02_T1",
+     "date": "2006-01-27",
+     "collection": "landsat-c2-l2",
+     "gsd": 30,
+     "cloud": 19.0
+    },
+    {
+     "id": "LT05_L2SP_041037_20060203_02_T1",
+     "date": "2006-02-03",
+     "collection": "landsat-c2-l2",
+     "gsd": 30,
+     "cloud": 79.0
+    },
+    {
+     "id": "LE07_L2SP_040037_20060204_02_T1",
+     "date": "2006-02-04",
+     "collection": "landsat-c2-l2",
+     "gsd": 30,
+     "cloud": 58.0
+    },
+    {
+     "id": "LE07_L2SP_041037_20060211_02_T1",
+     "date": "2006-02-11",
+     "collection": "landsat-c2-l2",
+     "gsd": 30,
+     "cloud": 72.0
+    },
+    {
+     "id": "LT05_L2SP_040037_20060212_02_T1",
+     "date": "2006-02-12",
+     "collection": "landsat-c2-l2",
+     "gsd": 30,
+     "cloud": 1.0
+    },
+    {
+     "id": "LT05_L2SP_041037_20060219_02_T1",
+     "date": "2006-02-19",
+     "collection": "landsat-c2-l2",
+     "gsd": 30,
+     "cloud": 18.0
+    },
+    {
+     "id": "LE07_L2SP_040037_20060220_02_T1",
+     "date": "2006-02-20",
+     "collection": "landsat-c2-l2",
+     "gsd": 30,
+     "cloud": 4.0
+    },
+    {
+     "id": "LE07_L2SP_041037_20060227_02_T1",
+     "date": "2006-02-27",
+     "collection": "landsat-c2-l2",
+     "gsd": 30,
+     "cloud": 100.0
+    },
+    {
+     "id": "LT05_L2SP_040037_20060228_02_T1",
+     "date": "2006-02-28",
+     "collection": "landsat-c2-l2",
+     "gsd": 30,
+     "cloud": 90.0
+    },
+    {
+     "id": "LT05_L2SP_041037_20060307_02_T1",
+     "date": "2006-03-07",
+     "collection": "landsat-c2-l2",
+     "gsd": 30,
+     "cloud": 9.0
+    },
+    {
+     "id": "LE07_L2SP_040037_20060308_02_T1",
+     "date": "2006-03-08",
+     "collection": "landsat-c2-l2",
+     "gsd": 30,
+     "cloud": 17.0
+    },
+    {
+     "id": "LE07_L2SP_041037_20060315_02_T1",
+     "date": "2006-03-15",
+     "collection": "landsat-c2-l2",
+     "gsd": 30,
+     "cloud": 1.0
+    },
+    {
+     "id": "LE07_L2SP_040037_20060324_02_T1",
+     "date": "2006-03-24",
+     "collection": "landsat-c2-l2",
+     "gsd": 30,
+     "cloud": 5.0
+    },
+    {
+     "id": "LE07_L2SP_041037_20060331_02_T2",
+     "date": "2006-03-31",
+     "collection": "landsat-c2-l2",
+     "gsd": 30,
+     "cloud": 96.0
+    },
+    {
+     "id": "LT05_L2SP_040037_20060401_02_T1",
+     "date": "2006-04-01",
+     "collection": "landsat-c2-l2",
+     "gsd": 30,
+     "cloud": 69.0
+    },
+    {
+     "id": "LT05_L2SP_041037_20060408_02_T1",
+     "date": "2006-04-08",
+     "collection": "landsat-c2-l2",
+     "gsd": 30,
+     "cloud": 37.0
+    },
+    {
+     "id": "LE07_L2SP_040037_20060409_02_T1",
+     "date": "2006-04-09",
+     "collection": "landsat-c2-l2",
+     "gsd": 30,
+     "cloud": 12.0
+    },
+    {
+     "id": "LE07_L2SP_041037_20060416_02_T1",
+     "date": "2006-04-16",
+     "collection": "landsat-c2-l2",
+     "gsd": 30,
+     "cloud": 52.0
+    },
+    {
+     "id": "LT05_L2SP_040037_20060417_02_T1",
+     "date": "2006-04-17",
+     "collection": "landsat-c2-l2",
+     "gsd": 30,
+     "cloud": 28.0
+    },
+    {
+     "id": "LT05_L2SP_041037_20060424_02_T1",
+     "date": "2006-04-24",
+     "collection": "landsat-c2-l2",
+     "gsd": 30,
+     "cloud": 10.0
+    },
+    {
+     "id": "LE07_L2SP_040037_20060425_02_T1",
+     "date": "2006-04-25",
+     "collection": "landsat-c2-l2",
+     "gsd": 30,
+     "cloud": 60.0
+    },
+    {
+     "id": "LE07_L2SP_041037_20060502_02_T1",
+     "date": "2006-05-02",
+     "collection": "landsat-c2-l2",
+     "gsd": 30,
+     "cloud": 100.0
+    },
+    {
+     "id": "LT05_L2SP_040037_20060503_02_T1",
+     "date": "2006-05-03",
+     "collection": "landsat-c2-l2",
+     "gsd": 30,
+     "cloud": 67.0
+    },
+    {
+     "id": "LT05_L2SP_041037_20060510_02_T1",
+     "date": "2006-05-10",
+     "collection": "landsat-c2-l2",
+     "gsd": 30,
+     "cloud": 92.0
+    },
+    {
+     "id": "LE07_L2SP_040037_20060511_02_T1",
+     "date": "2006-05-11",
+     "collection": "landsat-c2-l2",
+     "gsd": 30,
+     "cloud": 44.0
+    },
+    {
+     "id": "LE07_L2SP_041037_20060518_02_T1",
+     "date": "2006-05-18",
+     "collection": "landsat-c2-l2",
+     "gsd": 30,
+     "cloud": 99.0
+    },
+    {
+     "id": "LT05_L2SP_040037_20060519_02_T1",
+     "date": "2006-05-19",
+     "collection": "landsat-c2-l2",
+     "gsd": 30,
+     "cloud": 34.0
+    },
+    {
+     "id": "LT05_L2SP_041037_20060526_02_T1",
+     "date": "2006-05-26",
+     "collection": "landsat-c2-l2",
+     "gsd": 30,
+     "cloud": 78.0
+    },
+    {
+     "id": "LE07_L2SP_040037_20060527_02_T1",
+     "date": "2006-05-27",
+     "collection": "landsat-c2-l2",
+     "gsd": 30,
+     "cloud": 62.0
+    },
+    {
+     "id": "LE07_L2SP_041037_20060603_02_T1",
+     "date": "2006-06-03",
+     "collection": "landsat-c2-l2",
+     "gsd": 30,
+     "cloud": 6.0
+    },
+    {
+     "id": "LT05_L2SP_040037_20060604_02_T1",
+     "date": "2006-06-04",
+     "collection": "landsat-c2-l2",
+     "gsd": 30,
+     "cloud": 29.0
+    },
+    {
+     "id": "LT05_L2SP_041037_20060611_02_T1",
+     "date": "2006-06-11",
+     "collection": "landsat-c2-l2",
+     "gsd": 30,
+     "cloud": 94.0
+    },
+    {
+     "id": "LE07_L2SP_040037_20060612_02_T1",
+     "date": "2006-06-12",
+     "collection": "landsat-c2-l2",
+     "gsd": 30,
+     "cloud": 21.0
+    },
+    {
+     "id": "LE07_L2SP_041037_20060619_02_T1",
+     "date": "2006-06-19",
+     "collection": "landsat-c2-l2",
+     "gsd": 30,
+     "cloud": 90.0
+    },
+    {
+     "id": "LT05_L2SP_040037_20060620_02_T1",
+     "date": "2006-06-20",
+     "collection": "landsat-c2-l2",
+     "gsd": 30,
+     "cloud": 26.0
+    },
+    {
+     "id": "LT05_L2SP_041037_20060627_02_T2",
+     "date": "2006-06-27",
+     "collection": "landsat-c2-l2",
+     "gsd": 30,
+     "cloud": 98.0
+    },
+    {
+     "id": "LE07_L2SP_040037_20060628_02_T1",
+     "date": "2006-06-28",
+     "collection": "landsat-c2-l2",
+     "gsd": 30,
+     "cloud": 3.0
+    },
+    {
+     "id": "LE07_L2SP_041037_20060705_02_T1",
+     "date": "2006-07-05",
+     "collection": "landsat-c2-l2",
+     "gsd": 30,
+     "cloud": 39.0
+    },
+    {
+     "id": "LT05_L2SP_040037_20060706_02_T1",
+     "date": "2006-07-06",
+     "collection": "landsat-c2-l2",
+     "gsd": 30,
+     "cloud": 19.0
+    },
+    {
+     "id": "LT05_L2SP_041037_20060713_02_T1",
+     "date": "2006-07-13",
+     "collection": "landsat-c2-l2",
+     "gsd": 30,
+     "cloud": 42.0
+    },
+    {
+     "id": "LE07_L2SP_040037_20060714_02_T1",
+     "date": "2006-07-14",
+     "collection": "landsat-c2-l2",
+     "gsd": 30,
+     "cloud": 2.0
+    },
+    {
+     "id": "LE07_L2SP_041037_20060721_02_T1",
+     "date": "2006-07-21",
+     "collection": "landsat-c2-l2",
+     "gsd": 30,
+     "cloud": 54.0
+    },
+    {
+     "id": "LT05_L2SP_040037_20060722_02_T1",
+     "date": "2006-07-22",
+     "collection": "landsat-c2-l2",
+     "gsd": 30,
+     "cloud": 13.0
+    },
+    {
+     "id": "LT05_L2SP_041037_20060729_02_T1",
+     "date": "2006-07-29",
+     "collection": "landsat-c2-l2",
+     "gsd": 30,
+     "cloud": 91.0
+    },
+    {
+     "id": "LE07_L2SP_040037_20060730_02_T1",
+     "date": "2006-07-30",
+     "collection": "landsat-c2-l2",
+     "gsd": 30,
+     "cloud": 79.0
+    },
+    {
+     "id": "LE07_L2SP_041037_20060806_02_T1",
+     "date": "2006-08-06",
+     "collection": "landsat-c2-l2",
+     "gsd": 30,
+     "cloud": 72.0
+    },
+    {
+     "id": "LT05_L2SP_040037_20060807_02_T1",
+     "date": "2006-08-07",
+     "collection": "landsat-c2-l2",
+     "gsd": 30,
+     "cloud": 28.0
+    },
+    {
+     "id": "LT05_L2SP_041037_20060814_02_T1",
+     "date": "2006-08-14",
+     "collection": "landsat-c2-l2",
+     "gsd": 30,
+     "cloud": 65.0
+    },
+    {
+     "id": "LE07_L2SP_040037_20060815_02_T1",
+     "date": "2006-08-15",
+     "collection": "landsat-c2-l2",
+     "gsd": 30,
+     "cloud": 27.0
+    },
+    {
+     "id": "LE07_L2SP_041037_20060822_02_T1",
+     "date": "2006-08-22",
+     "collection": "landsat-c2-l2",
+     "gsd": 30,
+     "cloud": 11.0
+    },
+    {
+     "id": "LT05_L2SP_040037_20060823_02_T1",
+     "date": "2006-08-23",
+     "collection": "landsat-c2-l2",
+     "gsd": 30,
+     "cloud": 8.0
+    },
+    {
+     "id": "LT05_L2SP_041037_20060830_02_T1",
+     "date": "2006-08-30",
+     "collection": "landsat-c2-l2",
+     "gsd": 30,
+     "cloud": 65.0
+    },
+    {
+     "id": "LE07_L2SP_040037_20060831_02_T1",
+     "date": "2006-08-31",
+     "collection": "landsat-c2-l2",
+     "gsd": 30,
+     "cloud": 9.0
+    },
+    {
+     "id": "LE07_L2SP_041037_20060907_02_T1",
+     "date": "2006-09-07",
+     "collection": "landsat-c2-l2",
+     "gsd": 30,
+     "cloud": 77.0
+    },
+    {
+     "id": "LT05_L2SP_040037_20060908_02_T1",
+     "date": "2006-09-08",
+     "collection": "landsat-c2-l2",
+     "gsd": 30,
+     "cloud": 26.0
+    },
+    {
+     "id": "LT05_L2SP_041037_20060915_02_T1",
+     "date": "2006-09-15",
+     "collection": "landsat-c2-l2",
+     "gsd": 30,
+     "cloud": 21.0
+    },
+    {
+     "id": "LE07_L2SP_040037_20060916_02_T1",
+     "date": "2006-09-16",
+     "collection": "landsat-c2-l2",
+     "gsd": 30,
+     "cloud": 0.0
+    },
+    {
+     "id": "LE07_L2SP_041037_20060923_02_T1",
+     "date": "2006-09-23",
+     "collection": "landsat-c2-l2",
+     "gsd": 30,
+     "cloud": 4.0
+    },
+    {
+     "id": "LT05_L2SP_040037_20060924_02_T1",
+     "date": "2006-09-24",
+     "collection": "landsat-c2-l2",
+     "gsd": 30,
+     "cloud": 1.0
+    },
+    {
+     "id": "LT05_L2SP_041037_20061001_02_T1",
+     "date": "2006-10-01",
+     "collection": "landsat-c2-l2",
+     "gsd": 30,
+     "cloud": 85.0
+    },
+    {
+     "id": "LE07_L2SP_040037_20061002_02_T1",
+     "date": "2006-10-02",
+     "collection": "landsat-c2-l2",
+     "gsd": 30,
+     "cloud": 25.0
+    },
+    {
+     "id": "LE07_L2SP_041037_20061009_02_T1",
+     "date": "2006-10-09",
+     "collection": "landsat-c2-l2",
+     "gsd": 30,
+     "cloud": 97.0
+    },
+    {
+     "id": "LT05_L2SP_040037_20061010_02_T1",
+     "date": "2006-10-10",
+     "collection": "landsat-c2-l2",
+     "gsd": 30,
+     "cloud": 23.0
+    }
+   ],
+   "note": ""
+  },
+  {
+   "catalog": "USGS_LandsatLook_STAC",
+   "query": "{\"bbox\": [-117.659017, 33.526791, -117.624136, 33.575504], \"datetime\": \"1997-01-01T00:00:00Z/2006-12-31T23:59:59Z\", \"limit\": 100}",
+   "status": "ok",
+   "itemCount": 100,
+   "items": [
+    {
+     "id": "LT05_L2SP_041037_20061204_20210325_02_A1_TOA",
+     "date": "2006-12-04",
+     "collection": "landsat-c2l2alb-ta",
+     "cloud": 0
+    },
+    {
+     "id": "LT05_L2SP_041037_20061204_20210325_02_A1_ST",
+     "date": "2006-12-04",
+     "collection": "landsat-c2l2alb-st",
+     "cloud": 0
+    },
+    {
+     "id": "LE07_L2SP_040037_20061205_20210327_02_A1_TOA",
+     "date": "2006-12-05",
+     "collection": "landsat-c2l2alb-ta",
+     "cloud": 0
+    },
+    {
+     "id": "LE07_L2SP_040037_20061205_20210327_02_A1_ST",
+     "date": "2006-12-05",
+     "collection": "landsat-c2l2alb-st",
+     "cloud": 0
+    },
+    {
+     "id": "LE07_L2SP_040037_20061205_20210327_02_A1_SR",
+     "date": "2006-12-05",
+     "collection": "landsat-c2l2alb-sr",
+     "cloud": 0
+    },
+    {
+     "id": "LE07_L2SP_040037_20061205_20210327_02_A1_BT",
+     "date": "2006-12-05",
+     "collection": "landsat-c2l2alb-bt",
+     "cloud": 0
+    },
+    {
+     "id": "LE07_L2SP_040037_20061205_20200913_02_T1_ST",
+     "date": "2006-12-05",
+     "collection": "landsat-c2l2-st",
+     "cloud": 0
+    },
+    {
+     "id": "LE07_L2SP_040037_20061205_20200913_02_T1_SR",
+     "date": "2006-12-05",
+     "collection": "landsat-c2l2-sr",
+     "cloud": 0
+    },
+    {
+     "id": "LE07_L1TP_040037_20061205_20200913_02_T1",
+     "date": "2006-12-05",
+     "collection": "landsat-c2l1",
+     "cloud": 0
+    },
+    {
+     "id": "LE07_CU_003012_20061205_20210429_02_TOA",
+     "date": "2006-12-05",
+     "collection": "landsat-c2ard-ta",
+     "cloud": 0.0764
+    },
+    {
+     "id": "LE07_CU_003012_20061205_20210429_02_ST",
+     "date": "2006-12-05",
+     "collection": "landsat-c2ard-st",
+     "cloud": 0.0764
+    },
+    {
+     "id": "LE07_CU_003012_20061205_20210429_02_SR",
+     "date": "2006-12-05",
+     "collection": "landsat-c2ard-sr",
+     "cloud": 0.0764
+    },
+    {
+     "id": "LE07_CU_003012_20061205_20210429_02_SNOW",
+     "date": "2006-12-05",
+     "collection": "landsat-c2l3-fsca",
+     "cloud": 0.0764
+    },
+    {
+     "id": "LE07_CU_003012_20061205_20210429_02_DSWE",
+     "date": "2006-12-05",
+     "collection": "landsat-c2l3-dswe",
+     "cloud": 0.0764
+    },
+    {
+     "id": "LE07_CU_003012_20061205_20210429_02_BT",
+     "date": "2006-12-05",
+     "collection": "landsat-c2ard-bt",
+     "cloud": 0.0764
+    },
+    {
+     "id": "LE07_CU_003012_20061205_20210429_02_BA",
+     "date": "2006-12-05",
+     "collection": "landsat-c2l3-ba",
+     "cloud": 0.0764
+    },
+    {
+     "id": "LE07_L2SP_041037_20061212_20210327_02_A1_TOA",
+     "date": "2006-12-12",
+     "collection": "landsat-c2l2alb-ta",
+     "cloud": 25
+    },
+    {
+     "id": "LE07_L2SP_041037_20061212_20210327_02_A1_ST",
+     "date": "2006-12-12",
+     "collection": "landsat-c2l2alb-st",
+     "cloud": 25
+    },
+    {
+     "id": "LE07_L2SP_041037_20061212_20210327_02_A1_SR",
+     "date": "2006-12-12",
+     "collection": "landsat-c2l2alb-sr",
+     "cloud": 25
+    },
+    {
+     "id": "LE07_L2SP_041037_20061212_20210327_02_A1_BT",
+     "date": "2006-12-12",
+     "collection": "landsat-c2l2alb-bt",
+     "cloud": 25
+    },
+    {
+     "id": "LE07_L2SP_041037_20061212_20200913_02_T1_ST",
+     "date": "2006-12-12",
+     "collection": "landsat-c2l2-st",
+     "cloud": 25
+    },
+    {
+     "id": "LE07_L2SP_041037_20061212_20200913_02_T1_SR",
+     "date": "2006-12-12",
+     "collection": "landsat-c2l2-sr",
+     "cloud": 25
+    },
+    {
+     "id": "LE07_L1TP_041037_20061212_20200913_02_T1",
+     "date": "2006-12-12",
+     "collection": "landsat-c2l1",
+     "cloud": 25
+    },
+    {
+     "id": "LE07_CU_003012_20061212_20210429_02_TOA",
+     "date": "2006-12-12",
+     "collection": "landsat-c2ard-ta",
+     "cloud": 37.7573
+    },
+    {
+     "id": "LE07_CU_003012_20061212_20210429_02_ST",
+     "date": "2006-12-12",
+     "collection": "landsat-c2ard-st",
+     "cloud": 37.7573
+    },
+    {
+     "id": "LE07_CU_003012_20061212_20210429_02_SR",
+     "date": "2006-12-12",
+     "collection": "landsat-c2ard-sr",
+     "cloud": 37.7573
+    },
+    {
+     "id": "LE07_CU_003012_20061212_20210429_02_SNOW",
+     "date": "2006-12-12",
+     "collection": "landsat-c2l3-fsca",
+     "cloud": 37.7573
+    },
+    {
+     "id": "LE07_CU_003012_20061212_20210429_02_DSWE",
+     "date": "2006-12-12",
+     "collection": "landsat-c2l3-dswe",
+     "cloud": 37.7573
+    },
+    {
+     "id": "LE07_CU_003012_20061212_20210429_02_BT",
+     "date": "2006-12-12",
+     "collection": "landsat-c2ard-bt",
+     "cloud": 37.7573
+    },
+    {
+     "id": "LE07_CU_003012_20061212_20210429_02_BA",
+     "date": "2006-12-12",
+     "collection": "landsat-c2l3-ba",
+     "cloud": 37.7573
+    },
+    {
+     "id": "LT05_L2SP_040037_20061213_20210325_02_A1_TOA",
+     "date": "2006-12-13",
+     "collection": "landsat-c2l2alb-ta",
+     "cloud": 29
+    },
+    {
+     "id": "LT05_L2SP_040037_20061213_20210325_02_A1_ST",
+     "date": "2006-12-13",
+     "collection": "landsat-c2l2alb-st",
+     "cloud": 29
+    },
+    {
+     "id": "LT05_L2SP_040037_20061213_20210325_02_A1_SR",
+     "date": "2006-12-13",
+     "collection": "landsat-c2l2alb-sr",
+     "cloud": 29
+    },
+    {
+     "id": "LT05_L2SP_040037_20061213_20210325_02_A1_BT",
+     "date": "2006-12-13",
+     "collection": "landsat-c2l2alb-bt",
+     "cloud": 29
+    },
+    {
+     "id": "LT05_L2SP_040037_20061213_20200830_02_T1_ST",
+     "date": "2006-12-13",
+     "collection": "landsat-c2l2-st",
+     "cloud": 29
+    },
+    {
+     "id": "LT05_L2SP_040037_20061213_20200830_02_T1_SR",
+     "date": "2006-12-13",
+     "collection": "landsat-c2l2-sr",
+     "cloud": 29
+    },
+    {
+     "id": "LT05_L1TP_040037_20061213_20200830_02_T1",
+     "date": "2006-12-13",
+     "collection": "landsat-c2l1",
+     "cloud": 29
+    },
+    {
+     "id": "LT05_CU_003012_20061213_20210429_02_TOA",
+     "date": "2006-12-13",
+     "collection": "landsat-c2ard-ta",
+     "cloud": 54.6353
+    },
+    {
+     "id": "LT05_CU_003012_20061213_20210429_02_ST",
+     "date": "2006-12-13",
+     "collection": "landsat-c2ard-st",
+     "cloud": 54.6353
+    },
+    {
+     "id": "LT05_CU_003012_20061213_20210429_02_SR",
+     "date": "2006-12-13",
+     "collection": "landsat-c2ard-sr",
+     "cloud": 54.6353
+    },
+    {
+     "id": "LT05_CU_003012_20061213_20210429_02_SNOW",
+     "date": "2006-12-13",
+     "collection": "landsat-c2l3-fsca",
+     "cloud": 54.6353
+    },
+    {
+     "id": "LT05_CU_003012_20061213_20210429_02_DSWE",
+     "date": "2006-12-13",
+     "collection": "landsat-c2l3-dswe",
+     "cloud": 54.6353
+    },
+    {
+     "id": "LT05_CU_003012_20061213_20210429_02_BT",
+     "date": "2006-12-13",
+     "collection": "landsat-c2ard-bt",
+     "cloud": 54.6353
+    },
+    {
+     "id": "LT05_CU_003012_20061213_20210429_02_BA",
+     "date": "2006-12-13",
+     "collection": "landsat-c2l3-ba",
+     "cloud": 54.6353
+    },
+    {
+     "id": "LT05_L2SP_041037_20061220_20210325_02_A1_TOA",
+     "date": "2006-12-20",
+     "collection": "landsat-c2l2alb-ta",
+     "cloud": 5
+    },
+    {
+     "id": "LT05_L2SP_041037_20061220_20210325_02_A1_ST",
+     "date": "2006-12-20",
+     "collection": "landsat-c2l2alb-st",
+     "cloud": 5
+    },
+    {
+     "id": "LT05_L2SP_041037_20061220_20210325_02_A1_SR",
+     "date": "2006-12-20",
+     "collection": "landsat-c2l2alb-sr",
+     "cloud": 5
+    },
+    {
+     "id": "LT05_L2SP_041037_20061220_20210325_02_A1_BT",
+     "date": "2006-12-20",
+     "collection": "landsat-c2l2alb-bt",
+     "cloud": 5
+    },
+    {
+     "id": "LT05_L2SP_041037_20061220_20200831_02_T1_ST",
+     "date": "2006-12-20",
+     "collection": "landsat-c2l2-st",
+     "cloud": 5
+    },
+    {
+     "id": "LT05_L2SP_041037_20061220_20200831_02_T1_SR",
+     "date": "2006-12-20",
+     "collection": "landsat-c2l2-sr",
+     "cloud": 5
+    },
+    {
+     "id": "LT05_L1TP_041037_20061220_20200831_02_T1",
+     "date": "2006-12-20",
+     "collection": "landsat-c2l1",
+     "cloud": 5
+    },
+    {
+     "id": "LT05_CU_003012_20061220_20210429_02_TOA",
+     "date": "2006-12-20",
+     "collection": "landsat-c2ard-ta",
+     "cloud": 1.6352
+    },
+    {
+     "id": "LT05_CU_003012_20061220_20210429_02_ST",
+     "date": "2006-12-20",
+     "collection": "landsat-c2ard-st",
+     "cloud": 1.6352
+    },
+    {
+     "id": "LT05_CU_003012_20061220_20210429_02_SR",
+     "date": "2006-12-20",
+     "collection": "landsat-c2ard-sr",
+     "cloud": 1.6352
+    },
+    {
+     "id": "LT05_CU_003012_20061220_20210429_02_SNOW",
+     "date": "2006-12-20",
+     "collection": "landsat-c2l3-fsca",
+     "cloud": 1.6352
+    },
+    {
+     "id": "LT05_CU_003012_20061220_20210429_02_DSWE",
+     "date": "2006-12-20",
+     "collection": "landsat-c2l3-dswe",
+     "cloud": 1.6352
+    },
+    {
+     "id": "LT05_CU_003012_20061220_20210429_02_BT",
+     "date": "2006-12-20",
+     "collection": "landsat-c2ard-bt",
+     "cloud": 1.6352
+    },
+    {
+     "id": "LT05_CU_003012_20061220_20210429_02_BA",
+     "date": "2006-12-20",
+     "collection": "landsat-c2l3-ba",
+     "cloud": 1.6352
+    },
+    {
+     "id": "LE07_L2SP_040037_20061221_20210327_02_A1_TOA",
+     "date": "2006-12-21",
+     "collection": "landsat-c2l2alb-ta",
+     "cloud": 17
+    },
+    {
+     "id": "LE07_L2SP_040037_20061221_20210327_02_A1_ST",
+     "date": "2006-12-21",
+     "collection": "landsat-c2l2alb-st",
+     "cloud": 17
+    },
+    {
+     "id": "LE07_L2SP_040037_20061221_20210327_02_A1_SR",
+     "date": "2006-12-21",
+     "collection": "landsat-c2l2alb-sr",
+     "cloud": 17
+    },
+    {
+     "id": "LE07_L2SP_040037_20061221_20210327_02_A1_BT",
+     "date": "2006-12-21",
+     "collection": "landsat-c2l2alb-bt",
+     "cloud": 17
+    },
+    {
+     "id": "LE07_L2SP_040037_20061221_20200913_02_T1_ST",
+     "date": "2006-12-21",
+     "collection": "landsat-c2l2-st",
+     "cloud": 17
+    },
+    {
+     "id": "LE07_L2SP_040037_20061221_20200913_02_T1_SR",
+     "date": "2006-12-21",
+     "collection": "landsat-c2l2-sr",
+     "cloud": 17
+    },
+    {
+     "id": "LE07_L1TP_040037_20061221_20200913_02_T1",
+     "date": "2006-12-21",
+     "collection": "landsat-c2l1",
+     "cloud": 17
+    },
+    {
+     "id": "LE07_CU_003012_20061221_20210429_02_TOA",
+     "date": "2006-12-21",
+     "collection": "landsat-c2ard-ta",
+     "cloud": 34.6552
+    },
+    {
+     "id": "LE07_CU_003012_20061221_20210429_02_ST",
+     "date": "2006-12-21",
+     "collection": "landsat-c2ard-st",
+     "cloud": 34.6552
+    },
+    {
+     "id": "LE07_CU_003012_20061221_20210429_02_SR",
+     "date": "2006-12-21",
+     "collection": "landsat-c2ard-sr",
+     "cloud": 34.6552
+    },
+    {
+     "id": "LE07_CU_003012_20061221_20210429_02_SNOW",
+     "date": "2006-12-21",
+     "collection": "landsat-c2l3-fsca",
+     "cloud": 34.6552
+    },
+    {
+     "id": "LE07_CU_003012_20061221_20210429_02_DSWE",
+     "date": "2006-12-21",
+     "collection": "landsat-c2l3-dswe",
+     "cloud": 34.6552
+    },
+    {
+     "id": "LE07_CU_003012_20061221_20210429_02_BT",
+     "date": "2006-12-21",
+     "collection": "landsat-c2ard-bt",
+     "cloud": 34.6552
+    },
+    {
+     "id": "LE07_CU_003012_20061221_20210429_02_BA",
+     "date": "2006-12-21",
+     "collection": "landsat-c2l3-ba",
+     "cloud": 34.6552
+    },
+    {
+     "id": "LE07_L2SP_041037_20061228_20210327_02_A1_TOA",
+     "date": "2006-12-28",
+     "collection": "landsat-c2l2alb-ta",
+     "cloud": 0
+    },
+    {
+     "id": "LE07_L2SP_041037_20061228_20210327_02_A1_ST",
+     "date": "2006-12-28",
+     "collection": "landsat-c2l2alb-st",
+     "cloud": 0
+    },
+    {
+     "id": "LE07_L2SP_041037_20061228_20210327_02_A1_SR",
+     "date": "2006-12-28",
+     "collection": "landsat-c2l2alb-sr",
+     "cloud": 0
+    },
+    {
+     "id": "LE07_L2SP_041037_20061228_20210327_02_A1_BT",
+     "date": "2006-12-28",
+     "collection": "landsat-c2l2alb-bt",
+     "cloud": 0
+    },
+    {
+     "id": "LE07_L2SP_041037_20061228_20200913_02_T1_ST",
+     "date": "2006-12-28",
+     "collection": "landsat-c2l2-st",
+     "cloud": 0
+    },
+    {
+     "id": "LE07_L2SP_041037_20061228_20200913_02_T1_SR",
+     "date": "2006-12-28",
+     "collection": "landsat-c2l2-sr",
+     "cloud": 0
+    },
+    {
+     "id": "LE07_L1TP_041037_20061228_20200913_02_T1",
+     "date": "2006-12-28",
+     "collection": "landsat-c2l1",
+     "cloud": 0
+    },
+    {
+     "id": "LE07_CU_003012_20061228_20210429_02_TOA",
+     "date": "2006-12-28",
+     "collection": "landsat-c2ard-ta",
+     "cloud": 0.0758
+    }
+   ],
+   "note": ""
+  }
+ ],
+ "gatedSources": [
+  {
+   "source": "USGS EarthExplorer M2M API",
+   "status": "requires_credentials",
+   "note": "Free account. Holds NAPP/NHAP aerial single frames and DOQQ - the most likely free source of 1999-2004 frames. Must be queried with a logged-in session."
+  },
+  {
+   "source": "Commercial vendors (I.K. Curtis, HJW/Pacific Aerial, AirPhotoUSA, EagleView)",
+   "status": "paid_quote_required",
+   "note": "Realistic source for the 1999-2004 blackout. RFQ drafted separately; not sent."
+  }
+ ]
+}

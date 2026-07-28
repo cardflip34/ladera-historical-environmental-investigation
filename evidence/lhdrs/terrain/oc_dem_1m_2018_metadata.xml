@@ -1,0 +1,702 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<metadata xml:lang="en">
+      
+  
+  
+  <Esri>
+            
+    
+    
+    <CreaDate>20200311</CreaDate>
+            
+    
+    
+    <CreaTime>09565900</CreaTime>
+            
+    
+    
+    <ArcGISFormat>1.0</ArcGISFormat>
+            
+    
+    
+    <SyncOnce>FALSE</SyncOnce>
+            
+    
+    
+    <DataProperties>
+                  
+      
+      
+      <itemProps>
+                        
+        
+        
+        <itemName Sync="TRUE">oc_dem_1m_2018.tif</itemName>
+                        
+        
+        
+        <imsContentType Sync="TRUE">002</imsContentType>
+                        
+        
+        
+        <nativeExtBox>
+                              
+          
+          
+          <westBL Sync="TRUE">5971623.854669</westBL>
+                              
+          
+          
+          <eastBL Sync="TRUE">6236079.243709</eastBL>
+                              
+          
+          
+          <southBL Sync="TRUE">2072195.449735</southBL>
+                              
+          
+          
+          <northBL Sync="TRUE">2336644.277095</northBL>
+                              
+          
+          
+          <exTypeCode Sync="TRUE">1</exTypeCode>
+                              
+        
+        
+        </nativeExtBox>
+                        
+      
+      
+      </itemProps>
+                  
+      
+      
+      <coordRef>
+                        
+        
+        
+        <type Sync="TRUE">Projected</type>
+                        
+        
+        
+        <geogcsn Sync="TRUE">GCS_North_American_1983</geogcsn>
+                        
+        
+        
+        <csUnits Sync="TRUE">Linear Unit: Foot_US (0.304801)</csUnits>
+                        
+        
+        
+        <projcsn Sync="TRUE">NAD_1983_StatePlane_California_VI_FIPS_0406_Feet</projcsn>
+                        
+        
+        
+        <peXml Sync="TRUE">&lt;ProjectedCoordinateSystem xsi:type='typens:ProjectedCoordinateSystem' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xs='http://www.w3.org/2001/XMLSchema' xmlns:typens='http://www.esri.com/schemas/ArcGIS/10.7'&gt;&lt;WKT&gt;PROJCS[&amp;quot;NAD_1983_StatePlane_California_VI_FIPS_0406_Feet&amp;quot;,GEOGCS[&amp;quot;GCS_North_American_1983&amp;quot;,DATUM[&amp;quot;D_North_American_1983&amp;quot;,SPHEROID[&amp;quot;GRS_1980&amp;quot;,6378137.0,298.257222101]],PRIMEM[&amp;quot;Greenwich&amp;quot;,0.0],UNIT[&amp;quot;Degree&amp;quot;,0.0174532925199433]],PROJECTION[&amp;quot;Lambert_Conformal_Conic&amp;quot;],PARAMETER[&amp;quot;False_Easting&amp;quot;,6561666.666666666],PARAMETER[&amp;quot;False_Northing&amp;quot;,1640416.666666667],PARAMETER[&amp;quot;Central_Meridian&amp;quot;,-116.25],PARAMETER[&amp;quot;Standard_Parallel_1&amp;quot;,32.78333333333333],PARAMETER[&amp;quot;Standard_Parallel_2&amp;quot;,33.88333333333333],PARAMETER[&amp;quot;Latitude_Of_Origin&amp;quot;,32.16666666666666],UNIT[&amp;quot;Foot_US&amp;quot;,0.3048006096012192],AUTHORITY[&amp;quot;EPSG&amp;quot;,2230]]&lt;/WKT&gt;&lt;XOrigin&gt;-118608900&lt;/XOrigin&gt;&lt;YOrigin&gt;-91259500&lt;/YOrigin&gt;&lt;XYScale&gt;35979706.307677768&lt;/XYScale&gt;&lt;ZOrigin&gt;-100000&lt;/ZOrigin&gt;&lt;ZScale&gt;10000&lt;/ZScale&gt;&lt;MOrigin&gt;-100000&lt;/MOrigin&gt;&lt;MScale&gt;10000&lt;/MScale&gt;&lt;XYTolerance&gt;0.0032808333333333331&lt;/XYTolerance&gt;&lt;ZTolerance&gt;0.001&lt;/ZTolerance&gt;&lt;MTolerance&gt;0.001&lt;/MTolerance&gt;&lt;HighPrecision&gt;true&lt;/HighPrecision&gt;&lt;WKID&gt;102646&lt;/WKID&gt;&lt;LatestWKID&gt;2230&lt;/LatestWKID&gt;&lt;/ProjectedCoordinateSystem&gt;</peXml>
+                        
+      
+      
+      </coordRef>
+                  
+      
+      
+      <RasterProperties>
+                        
+        
+        
+        <General>
+                              
+          
+          
+          <PixelDepth Sync="TRUE">32</PixelDepth>
+                              
+          
+          
+          <HasColormap Sync="TRUE">FALSE</HasColormap>
+                              
+          
+          
+          <CompressionType Sync="TRUE">LZW</CompressionType>
+                              
+          
+          
+          <NumBands Sync="TRUE">1</NumBands>
+                              
+          
+          
+          <Format Sync="TRUE">TIFF</Format>
+                              
+          
+          
+          <HasPyramids Sync="TRUE">TRUE</HasPyramids>
+                              
+          
+          
+          <SourceType Sync="TRUE">continuous</SourceType>
+                              
+          
+          
+          <PixelType Sync="TRUE">floating point</PixelType>
+                              
+          
+          
+          <NoDataValue Sync="TRUE">-3.4028235e+38</NoDataValue>
+                              
+        
+        
+        </General>
+                        
+      
+      
+      </RasterProperties>
+                  
+    
+    
+    </DataProperties>
+            
+    
+    
+    <SyncDate>20200311</SyncDate>
+            
+    
+    
+    <SyncTime>09565900</SyncTime>
+            
+    
+    
+    <ModDate>20200311</ModDate>
+            
+    
+    
+    <ModTime>09565900</ModTime>
+            
+  
+  
+  </Esri>
+      
+  
+  
+  <dataIdInfo>
+            
+    
+    
+    <envirDesc Sync="TRUE"> Version 6.2 (Build 9200) ; Esri ArcGIS 10.7.0.10450</envirDesc>
+            
+    
+    
+    <dataLang>
+                  
+      
+      
+      <languageCode Sync="TRUE" value="eng">
+</languageCode>
+                  
+      
+      
+      <countryCode Sync="TRUE" value="USA">
+</countryCode>
+                  
+    
+    
+    </dataLang>
+            
+    
+    
+    <idCitation>
+                  
+      
+      
+      <resTitle Sync="TRUE">oc_dem_1m_2018.tif</resTitle>
+                  
+      
+      
+      <presForm>
+                        
+        
+        
+        <PresFormCd Sync="TRUE" value="005">
+</PresFormCd>
+                        
+      
+      
+      </presForm>
+                  
+    
+    
+    </idCitation>
+            
+    
+    
+    <spatRpType>
+                  
+      
+      
+      <SpatRepTypCd Sync="TRUE" value="002">
+</SpatRepTypCd>
+                  
+    
+    
+    </spatRpType>
+            
+    
+    
+    <dataExt>
+                  
+      
+      
+      <geoEle>
+                        
+        
+        
+        <GeoBndBox esriExtentType="search">
+                              
+          
+          
+          <exTypeCode Sync="TRUE">1</exTypeCode>
+                              
+          
+          
+          <westBL Sync="TRUE">-118.198227</westBL>
+                              
+          
+          
+          <eastBL Sync="TRUE">-117.316196</eastBL>
+                              
+          
+          
+          <northBL Sync="TRUE">34.075456</northBL>
+                              
+          
+          
+          <southBL Sync="TRUE">33.338327</southBL>
+                              
+        
+        
+        </GeoBndBox>
+                        
+      
+      
+      </geoEle>
+                  
+    
+    
+    </dataExt>
+            
+    
+    
+    <idAbs>Orange County 2018 DEM, 1m</idAbs>
+            
+    
+    
+    <searchKeys>
+                  
+      
+      
+      
+      
+    
+      
+      
+      
+      
+    
+      <keyword>Orange County</keyword>
+      <keyword>DEM</keyword>
+      <keyword>2019</keyword>
+      <keyword>1m</keyword>
+    </searchKeys>
+            
+    
+    
+    <idPurp>Orange County 2018 DEM, 1m</idPurp>
+            
+    
+    
+    <idCredit/>
+            
+    
+    
+    <resConst>
+                  
+      
+      
+      <Consts>
+                        
+        
+        
+        <useLimit/>
+                        
+      
+      
+      </Consts>
+                  
+    
+    
+    </resConst>
+            
+  
+  
+  </dataIdInfo>
+      
+  
+  
+  <mdLang>
+            
+    
+    
+    <languageCode Sync="TRUE" value="eng">
+</languageCode>
+            
+    
+    
+    <countryCode Sync="TRUE" value="USA">
+</countryCode>
+            
+  
+  
+  </mdLang>
+      
+  
+  
+  <mdChar>
+            
+    
+    
+    <CharSetCd Sync="TRUE" value="004">
+</CharSetCd>
+            
+  
+  
+  </mdChar>
+      
+  
+  
+  <distInfo>
+            
+    
+    
+    <distFormat>
+                  
+      
+      
+      <formatName Sync="TRUE">Raster Dataset</formatName>
+                  
+    
+    
+    </distFormat>
+            
+  
+  
+  </distInfo>
+      
+  
+  
+  <mdHrLv>
+            
+    
+    
+    <ScopeCd Sync="TRUE" value="005">
+</ScopeCd>
+            
+  
+  
+  </mdHrLv>
+      
+  
+  
+  <mdHrLvName Sync="TRUE">dataset</mdHrLvName>
+      
+  
+  
+  <refSysInfo>
+            
+    
+    
+    <RefSystem>
+                  
+      
+      
+      <refSysID>
+                        
+        
+        
+        <identCode Sync="TRUE" code="2230">
+</identCode>
+                        
+        
+        
+        <idCodeSpace Sync="TRUE">EPSG</idCodeSpace>
+                        
+        
+        
+        <idVersion Sync="TRUE">5.3(9.0.0)</idVersion>
+                        
+      
+      
+      </refSysID>
+                  
+    
+    
+    </RefSystem>
+            
+  
+  
+  </refSysInfo>
+      
+  
+  
+  <spatRepInfo>
+            
+    
+    
+    <Georect>
+                  
+      
+      
+      <cellGeo>
+                        
+        
+        
+        <CellGeoCd Sync="TRUE" value="002">
+</CellGeoCd>
+                        
+      
+      
+      </cellGeo>
+                  
+      
+      
+      <numDims Sync="TRUE">2</numDims>
+                  
+      
+      
+      <tranParaAv Sync="TRUE">1</tranParaAv>
+                  
+      
+      
+      <chkPtAv Sync="TRUE">0</chkPtAv>
+                  
+      
+      
+      <cornerPts>
+                        
+        
+        
+        <pos Sync="TRUE">5971623.854669 2072195.449735</pos>
+                        
+      
+      
+      </cornerPts>
+                  
+      
+      
+      <cornerPts>
+                        
+        
+        
+        <pos Sync="TRUE">5971623.854669 2336644.277095</pos>
+                        
+      
+      
+      </cornerPts>
+                  
+      
+      
+      <cornerPts>
+                        
+        
+        
+        <pos Sync="TRUE">6236079.243709 2336644.277095</pos>
+                        
+      
+      
+      </cornerPts>
+                  
+      
+      
+      <cornerPts>
+                        
+        
+        
+        <pos Sync="TRUE">6236079.243709 2072195.449735</pos>
+                        
+      
+      
+      </cornerPts>
+                  
+      
+      
+      <centerPt>
+                        
+        
+        
+        <pos Sync="TRUE">6103851.549189 2204419.863415</pos>
+                        
+      
+      
+      </centerPt>
+                  
+      
+      
+      <axisDimension type="002">
+                        
+        
+        
+        <dimSize Sync="TRUE">80606</dimSize>
+                        
+        
+        
+        <dimResol>
+                              
+          
+          
+          <value Sync="TRUE" uom="ftUS">3.280840</value>
+                              
+        
+        
+        </dimResol>
+                        
+      
+      
+      </axisDimension>
+                  
+      
+      
+      <axisDimension type="001">
+                        
+        
+        
+        <dimSize Sync="TRUE">80604</dimSize>
+                        
+        
+        
+        <dimResol>
+                              
+          
+          
+          <value Sync="TRUE" uom="ftUS">3.280840</value>
+                              
+        
+        
+        </dimResol>
+                        
+      
+      
+      </axisDimension>
+                  
+      
+      
+      <ptInPixel>
+                        
+        
+        
+        <PixOrientCd Sync="TRUE" value="001">
+</PixOrientCd>
+                        
+      
+      
+      </ptInPixel>
+                  
+    
+    
+    </Georect>
+            
+  
+  
+  </spatRepInfo>
+      
+  
+  
+  <contInfo>
+            
+    
+    
+    <ImgDesc>
+                  
+      
+      
+      <contentTyp>
+                        
+        
+        
+        <ContentTypCd Sync="TRUE" value="001">
+</ContentTypCd>
+                        
+      
+      
+      </contentTyp>
+                  
+      
+      
+      <covDim>
+                        
+        
+        
+        <Band>
+                              
+          
+          
+          <dimDescrp Sync="TRUE">Band_1</dimDescrp>
+                              
+          
+          
+          <maxVal Sync="TRUE">5688.329102</maxVal>
+                              
+          
+          
+          <minVal Sync="TRUE">-21.087816</minVal>
+                              
+          
+          
+          <bitsPerVal Sync="TRUE">32</bitsPerVal>
+                              
+          
+          
+          <valUnit>
+                                    
+            
+            
+            <UOM type="length">
+</UOM>
+                                    
+          
+          
+          </valUnit>
+                              
+        
+        
+        </Band>
+                        
+      
+      
+      </covDim>
+                  
+    
+    
+    </ImgDesc>
+            
+  
+  
+  </contInfo>
+      
+  
+  
+  <mdDateSt Sync="TRUE">20200311</mdDateSt>
+      
+  
+  
+  <Binary>
+            
+    
+    <Thumbnail>
+                  
+      
+      <Data EsriPropertyType="PictureX">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</Data>
+                
+    
+    </Thumbnail>
+          
+  
+  </Binary>
+    
+
+</metadata>

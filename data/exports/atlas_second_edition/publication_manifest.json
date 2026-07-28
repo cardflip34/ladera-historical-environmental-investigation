@@ -1,0 +1,254 @@
+{
+  "annualChapterCount": 14,
+  "edition": "second",
+  "files": [
+    {
+      "bytes": 83207,
+      "path": "data/exports/atlas_second_edition/figures/annual_context_1997.png",
+      "sha256": "dc411b89ae5bdf370e037a97bcb8bfdcb1aa88e079a266a33cdc5e1f5911539b"
+    },
+    {
+      "bytes": 104042,
+      "path": "data/exports/atlas_second_edition/figures/annual_context_1998.png",
+      "sha256": "8ce3365ff5c77da49778605a05c005786d9d8e97f6ca7dd9d1684fe18b0a2243"
+    },
+    {
+      "bytes": 135083,
+      "path": "data/exports/atlas_second_edition/figures/annual_context_1999.png",
+      "sha256": "205cb5ded6ec50d5d96089a44b5325bdafa69a46b15449b1c84f25ba9492a2dd"
+    },
+    {
+      "bytes": 188897,
+      "path": "data/exports/atlas_second_edition/figures/annual_context_2000.png",
+      "sha256": "230f9fe3d085faeda58d431c851d0304817803c2f9b5a8e144971c88b2499673"
+    },
+    {
+      "bytes": 248354,
+      "path": "data/exports/atlas_second_edition/figures/annual_context_2001.png",
+      "sha256": "d2d9a0de2578c108181b324f656807926abd3bc50d0c2fca257d26dcdb0b2a87"
+    },
+    {
+      "bytes": 278187,
+      "path": "data/exports/atlas_second_edition/figures/annual_context_2002.png",
+      "sha256": "4c692dee3cfe9b42580d1d9a2e19e99aa361a9c58b157d22f69405ebf160f50d"
+    },
+    {
+      "bytes": 331933,
+      "path": "data/exports/atlas_second_edition/figures/annual_context_2003.png",
+      "sha256": "0ebaa7a4714eeefaf23f8a2f29713f227d7dbd0970aa3337208718a94ac74999"
+    },
+    {
+      "bytes": 374577,
+      "path": "data/exports/atlas_second_edition/figures/annual_context_2004.png",
+      "sha256": "b1bc7c68d8e9af8a60a0c5a31e5730ccb6debe72141b20e20794827a369905d9"
+    },
+    {
+      "bytes": 344086,
+      "path": "data/exports/atlas_second_edition/figures/annual_context_2005.png",
+      "sha256": "777fec0803495cf4def21bc7e0a4e056a404c4fe31abf0a0ead0098b67c45c58"
+    },
+    {
+      "bytes": 341508,
+      "path": "data/exports/atlas_second_edition/figures/annual_context_2006.png",
+      "sha256": "b5e89cb2a1d9170b92eaf09fa431d5e4a1d434f5cb491f5e07bf5159bd62af66"
+    },
+    {
+      "bytes": 341235,
+      "path": "data/exports/atlas_second_edition/figures/annual_context_2007.png",
+      "sha256": "5bdd8cd51f8ee2e66f0c4766f2a4f2bac4a20134a132cbbb479ccc99cabfe054"
+    },
+    {
+      "bytes": 346351,
+      "path": "data/exports/atlas_second_edition/figures/annual_context_2008.png",
+      "sha256": "f4e0c6a3a3b87d673d669e48e19ff4fe709c5ae69b6ffe986b41539bef4d576d"
+    },
+    {
+      "bytes": 343453,
+      "path": "data/exports/atlas_second_edition/figures/annual_context_2009.png",
+      "sha256": "1e56ac46d40690689a83a5bd8bbe3c2bb2994acf0dc30704ff376e9741d422b6"
+    },
+    {
+      "bytes": 343239,
+      "path": "data/exports/atlas_second_edition/figures/annual_context_2010.png",
+      "sha256": "3552be4070b0c63b90dcfc44cfd5afd3290466944150a0a610ca2492bddb080c"
+    },
+    {
+      "bytes": 792,
+      "path": "data/exports/atlas_second_edition/phases/central_buildout.json",
+      "sha256": "b83efc7ba5a537b9886c68131340913a5ba01529a6f484a40a1cbb53d9ef1080"
+    },
+    {
+      "bytes": 740,
+      "path": "data/exports/atlas_second_edition/phases/early_occupancy.json",
+      "sha256": "105b60a1e7056df0db47203c632d2555c130017ca8af7c74786ab518cccc4a64"
+    },
+    {
+      "bytes": 815,
+      "path": "data/exports/atlas_second_edition/phases/initial_development.json",
+      "sha256": "46dda194dd0cde5c9cf6a5afbbe211c5acd387340dc326248024e61dfdbd2a4d"
+    },
+    {
+      "bytes": 705,
+      "path": "data/exports/atlas_second_edition/phases/later_buildout_context.json",
+      "sha256": "761f0d41ab23bca39f5bd0d8de55eccc9555ac2fee78d3c5ee0628b6cfb7df1a"
+    },
+    {
+      "bytes": 810,
+      "path": "data/exports/atlas_second_edition/phases/later_village_construction.json",
+      "sha256": "c5ceadaeae45c39e8fc625cc8905b00fb1a461bc9c7d330583cbe9d1f915d22d"
+    },
+    {
+      "bytes": 626,
+      "path": "data/exports/atlas_second_edition/phases/predevelopment_context.json",
+      "sha256": "0de5206f4436b756e820a4b4d3b9dfb857ef7d06f6f2c83fde4de6562444d363"
+    },
+    {
+      "bytes": 1271,
+      "path": "data/exports/atlas_second_edition/snapshots/1997.json",
+      "sha256": "27c5a72b7f20c12c4241ac0a54097e686c83132fe030009ee699c57e0e8fce54"
+    },
+    {
+      "bytes": 1289,
+      "path": "data/exports/atlas_second_edition/snapshots/1998.json",
+      "sha256": "8df41d7b018901d69b5a21ee710911e92977933e8f72e9f4ffbdf27289293477"
+    },
+    {
+      "bytes": 1427,
+      "path": "data/exports/atlas_second_edition/snapshots/1999.json",
+      "sha256": "3c1a9b022dfec951cac10d61d1922926bf98b9ae0bb6593796de9360bfe12c2e"
+    },
+    {
+      "bytes": 1374,
+      "path": "data/exports/atlas_second_edition/snapshots/2000.json",
+      "sha256": "eaaef67076e8373ffbc79739d966cc4b3ab32d8c37bdeafc856ae3c025f8f7d3"
+    },
+    {
+      "bytes": 1509,
+      "path": "data/exports/atlas_second_edition/snapshots/2001.json",
+      "sha256": "8250467355c822e4c71ec970643278df4ee9a6273aa0888ba7186ddd0616acf7"
+    },
+    {
+      "bytes": 1413,
+      "path": "data/exports/atlas_second_edition/snapshots/2002.json",
+      "sha256": "33dc2082145d6625196ce7139fd9d2e4bc8b0a831a799b9d46e9fee15c37d388"
+    },
+    {
+      "bytes": 1643,
+      "path": "data/exports/atlas_second_edition/snapshots/2003.json",
+      "sha256": "b332573ef8bff5d3ab8eb7bf764da0344b4d8dd5e339cdb92984f902879feffe"
+    },
+    {
+      "bytes": 1621,
+      "path": "data/exports/atlas_second_edition/snapshots/2004.json",
+      "sha256": "9ecd2c642e831c60779644ffa31623bef9658bf4b65769b1e91a5d48e36a66fc"
+    },
+    {
+      "bytes": 1622,
+      "path": "data/exports/atlas_second_edition/snapshots/2005.json",
+      "sha256": "bd7334b4d3d0b21ec0f3f498e90152f1070b52e691d97da8bd8ccb83b21ba371"
+    },
+    {
+      "bytes": 1543,
+      "path": "data/exports/atlas_second_edition/snapshots/2006.json",
+      "sha256": "d9eb58064e64e29a6ab97b639ef650100a5c435a67b8e1edd70ebab7a956edcb"
+    },
+    {
+      "bytes": 1494,
+      "path": "data/exports/atlas_second_edition/snapshots/2007.json",
+      "sha256": "25f47c6d334e41cec630cbddfeb85b6999a0f7fb4a2acd9fd702e275b5d4406d"
+    },
+    {
+      "bytes": 1479,
+      "path": "data/exports/atlas_second_edition/snapshots/2008.json",
+      "sha256": "c791d1a82ff0e49619926a43e479f565b35e432a1a00a48584bdfa32aea2a0c4"
+    },
+    {
+      "bytes": 1476,
+      "path": "data/exports/atlas_second_edition/snapshots/2009.json",
+      "sha256": "8278d6a4525be2b8a9bc7699643a6eeb118bfbd103d29d197b9459232048ebcd"
+    },
+    {
+      "bytes": 1476,
+      "path": "data/exports/atlas_second_edition/snapshots/2010.json",
+      "sha256": "cc50cd7b85c5a1bba1ee48843d3310616702749a5cad1be4f4e6f6706307d619"
+    },
+    {
+      "bytes": 12278,
+      "path": "data/exports/atlas_second_edition/tables/annual_phase_snapshot_manifest.csv",
+      "sha256": "5d24d02d99c6ef4e4a94bc2a09daf3341e1c56ee0ad0e26f6c932d9b43c31324"
+    },
+    {
+      "bytes": 4989,
+      "path": "data/exports/atlas_second_edition/tables/asset_chronology.csv",
+      "sha256": "2fb77fc72147be1971fe278f0e11ea6c72b1eca5ede65d509484d0f13498f5cd"
+    },
+    {
+      "bytes": 1036,
+      "path": "data/exports/atlas_second_edition/tables/conflict_registry.csv",
+      "sha256": "371b11a19bc1411484915f95d7c365eb844d1afff77a37dd388726e82b04e0ae"
+    },
+    {
+      "bytes": 2792,
+      "path": "data/exports/atlas_second_edition/tables/construction_activity_registry.csv",
+      "sha256": "d1405faa682284648be5aa8896b08ef660fb1e1a0be756d20354279b00cd93aa"
+    },
+    {
+      "bytes": 312,
+      "path": "data/exports/atlas_second_edition/tables/construction_proximity_results.csv",
+      "sha256": "409ace20bae32f3a37b99b5e1af0cf0e6f3b5523f05eda854c50de65b4961538"
+    },
+    {
+      "bytes": 2820,
+      "path": "data/exports/atlas_second_edition/tables/neighborhood_occupancy_matrix.csv",
+      "sha256": "b1db648d7b855d283f3592417bb70b8458787085e38e629ac53ff54227d9de3d"
+    },
+    {
+      "bytes": 6661,
+      "path": "data/exports/atlas_second_edition/tables/occupancy_event_registry.csv",
+      "sha256": "6cfe584e04f37e97167a802dfc3245e6ebe51c662dc626bcd0b0a41817db02e6"
+    },
+    {
+      "bytes": 2801,
+      "path": "data/exports/atlas_second_edition/tables/phase_snapshot_manifest.csv",
+      "sha256": "ab37ceb1d52fa37fa01469ce93a18e69a7c2328d7221d06fec75803031f9eded"
+    },
+    {
+      "bytes": 4182,
+      "path": "data/exports/atlas_second_edition/tables/research_gaps.csv",
+      "sha256": "be75085725fd5ed6e804d2b4777c6c0838bee442c2328502a6c1b8f1911e5ba3"
+    },
+    {
+      "bytes": 6214,
+      "path": "data/exports/atlas_second_edition/tables/school_timeline.csv",
+      "sha256": "7c7de440666acc929b15661f78cf2fdd568b6083da59156d802d6f40861d7705"
+    },
+    {
+      "bytes": 49127,
+      "path": "data/exports/atlas_second_edition/tables/source_convergence.csv",
+      "sha256": "794cefcac4055e665339e3d8f67ab5b5bbdb96166a700429b90cac418c4e6b54"
+    },
+    {
+      "bytes": 44427,
+      "path": "data/exports/atlas_second_edition/tables/tract_development_matrix.csv",
+      "sha256": "9df3906b18f051ceefc4518277e4e63d4f1a1f7e73a2a1ae5de2dda89567a090"
+    },
+    {
+      "bytes": 50757,
+      "path": "data/exports/atlas_second_edition/tables/tract_milestone_evidence.csv",
+      "sha256": "73d551cc367eb1e3665e0cb242f1de3d5df1891531d208763b94ed7172349851"
+    },
+    {
+      "bytes": 5601,
+      "path": "data/exports/atlas_second_edition/verification_summary.json",
+      "sha256": "86b79351f1aff51ee2da22197652d6d3f8f51e4032caf1c141b735da30edfa81"
+    }
+  ],
+  "firstEditionPreserved": true,
+  "generatedDate": "2026-07-26",
+  "proximityResultCount": 0,
+  "proximityStatus": "blocked",
+  "reports": [
+    "reports/LHDRS_Historical_Development_Atlas_Second_Edition.md",
+    "reports/LHDRS_Historical_Development_Atlas_Second_Edition.html"
+  ]
+}

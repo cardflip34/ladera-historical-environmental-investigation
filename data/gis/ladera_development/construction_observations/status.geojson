@@ -1,0 +1,11 @@
+{
+  "features": [],
+  "limitations": "Partial, nonadjacent imagery cannot establish dated active-construction polygons. An empty feature list means unsupported, not no construction.",
+  "notEvidenceOfAbsence": true,
+  "sourceImageryIds": [
+    "LH-IMG-1994-1995",
+    "LH-IMG-1997-1998"
+  ],
+  "status": "no_supported_active_construction_geometry",
+  "type": "FeatureCollection"
+}

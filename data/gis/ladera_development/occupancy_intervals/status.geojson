@@ -1,0 +1,10 @@
+{
+  "features": [],
+  "limitations": "The first-resident event is community-level and cannot be assigned to a tract or neighborhood.",
+  "notEvidenceOfAbsence": true,
+  "sourceIds": [
+    "LH-SRC-LARMAC-TIMELINE"
+  ],
+  "status": "no_supported_occupancy_geometry",
+  "type": "FeatureCollection"
+}

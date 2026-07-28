@@ -1,0 +1,217 @@
+{
+  "advancedQueryCapabilities": {
+    "supportsDistinct": false,
+    "supportsOrderBy": false,
+    "supportsPagination": false,
+    "supportsStatistics": false,
+    "useStandardizedQueries": true
+  },
+  "allowAnalysis": true,
+  "allowComputeTiePoints": false,
+  "allowCopy": true,
+  "allowRasterFunction": true,
+  "allowedFields": "",
+  "allowedMosaicMethods": "",
+  "bandCount": 1,
+  "bandNames": [
+    "Band_1"
+  ],
+  "blockHeight": 128,
+  "blockWidth": 128,
+  "cacheType": "Elevation",
+  "capabilities": "Mensuration,Image,Metadata",
+  "compressionType": "LZW",
+  "copyrightText": "",
+  "currentVersion": 11.5,
+  "datasetFormat": "TIFF",
+  "defaultCompressionQuality": 75,
+  "defaultMosaicMethod": "Center",
+  "defaultResamplingMethod": "Bilinear",
+  "description": "Orange County 2018 DEM, 1m",
+  "editFieldsInfo": null,
+  "exportTilesAllowed": false,
+  "extent": {
+    "spatialReference": {
+      "latestWkid": 2230,
+      "wkid": 102646
+    },
+    "xmax": 6236079.243709109,
+    "xmin": 5971623.854669109,
+    "ymax": 2336644.2770945365,
+    "ymin": 2072195.4497345367
+  },
+  "fields": [],
+  "fullExtent": {
+    "spatialReference": {
+      "latestWkid": 2230,
+      "wkid": 102646
+    },
+    "xmax": 6236079.243709109,
+    "xmin": 5971623.854669109,
+    "ymax": 2336644.2770945365,
+    "ymin": 2072195.4497345367
+  },
+  "hasColormap": false,
+  "hasHistograms": true,
+  "hasMultidimensions": false,
+  "hasRasterAttributeTable": false,
+  "initialExtent": {
+    "spatialReference": {
+      "latestWkid": 2230,
+      "wkid": 102646
+    },
+    "xmax": 6236079.243709109,
+    "xmin": 5971623.854669109,
+    "ymax": 2336644.2770945365,
+    "ymin": 2072195.4497345367
+  },
+  "inspectionCapabilities": "",
+  "itemAccess": false,
+  "maxImageHeight": 4100,
+  "maxImageWidth": 15000,
+  "maxLOD": 9,
+  "maxPixelSize": 0,
+  "maxScale": 0,
+  "maxValues": [
+    5688.3291015625
+  ],
+  "meanPixelSize": 1.0000020320040632,
+  "meanValues": [
+    851.29094228331
+  ],
+  "mensurationCapabilities": "Basic",
+  "minLOD": 0,
+  "minPixelSize": 0,
+  "minScale": 0,
+  "minValues": [
+    -21.087816238403
+  ],
+  "mosaicOperator": "First",
+  "name": "Elevation/oc_dem_1m_2018",
+  "noDataValue": -3.4028234663852886e+38,
+  "noDataValues": [
+    -3.4028234663852886e+38
+  ],
+  "objectIdField": "",
+  "ownershipBasedAccessControlForRasters": null,
+  "pixelSizeX": 3.2808399999999978,
+  "pixelSizeY": 3.280839999999997,
+  "pixelType": "F32",
+  "rasterFunctionInfos": [
+    {
+      "description": "",
+      "help": "",
+      "name": "None"
+    }
+  ],
+  "rasterTypeInfos": [
+    {
+      "description": "Supports all ArcGIS Raster Datasets",
+      "help": "",
+      "name": "Raster Dataset"
+    }
+  ],
+  "resampling": false,
+  "serviceDataType": "esriImageServiceDataTypeGeneric",
+  "serviceDescription": "Orange County 2018 DEM, 1m",
+  "serviceProperties": "<ImageServer><ImageServiceProperties><MosaicMethod>Center</MosaicMethod><MosaicOperator>First</MosaicOperator><SortAscending>true</SortAscending><LockImageID></LockImageID><TileOrderField></TileOrderField><TileOrderBase>0</TileOrderBase><AvgImageSpacingX>0.000000</AvgImageSpacingX><AvgImageSpacingY>0.000000</AvgImageSpacingY><ViewPointX>0.0</ViewPointX><ViewPointY>0.0</ViewPointY><ViewPointDefShiftX>0.0</ViewPointDefShiftX><ViewPointDefShiftY>0.0</ViewPointDefShiftY><CompressionMethod>None</CompressionMethod><CompressionQuality>75</CompressionQuality><CompressionTolerance>0.010000</CompressionTolerance><SamplingMethod>Bilinear</SamplingMethod></ImageServiceProperties></ImageServer>",
+  "serviceSourceType": "esriImageServiceSourceTypeDataset",
+  "singleFusedMapCache": true,
+  "sortAscending": true,
+  "sortField": "",
+  "sortValue": null,
+  "sortableFields": "",
+  "spatialReference": {
+    "latestWkid": 2230,
+    "wkid": 102646
+  },
+  "stdvValues": [
+    848.752204492
+  ],
+  "storageInfo": {
+    "packetSize": 128,
+    "storageFormat": "esriMapCacheStorageModeCompactV2"
+  },
+  "supportsAdvancedQueries": false,
+  "supportsStatistics": false,
+  "tileInfo": {
+    "cols": 512,
+    "compressionQuality": 0,
+    "dpi": 96,
+    "format": "LERC",
+    "lercError": 0.1,
+    "lods": [
+      {
+        "level": 0,
+        "resolution": 444.4444444444444,
+        "scale": 512000
+      },
+      {
+        "level": 1,
+        "resolution": 222.2222222222222,
+        "scale": 256000
+      },
+      {
+        "level": 2,
+        "resolution": 111.1111111111111,
+        "scale": 128000
+      },
+      {
+        "level": 3,
+        "resolution": 55.55555555555555,
+        "scale": 64000
+      },
+      {
+        "level": 4,
+        "resolution": 27.777777777777775,
+        "scale": 32000
+      },
+      {
+        "level": 5,
+        "resolution": 13.888888888888888,
+        "scale": 16000
+      },
+      {
+        "level": 6,
+        "resolution": 6.944444444444444,
+        "scale": 8000
+      },
+      {
+        "level": 7,
+        "resolution": 3.472222222222222,
+        "scale": 4000
+      },
+      {
+        "level": 8,
+        "resolution": 1.736111111111111,
+        "scale": 2000
+      },
+      {
+        "level": 9,
+        "resolution": 0.8680555555555555,
+        "scale": 1000
+      },
+      {
+        "level": 10,
+        "resolution": 0.43402777777777773,
+        "scale": 500
+      },
+      {
+        "level": 11,
+        "resolution": 0.21701388888888887,
+        "scale": 250
+      }
+    ],
+    "origin": {
+      "x": -118608900,
+      "y": 159081600
+    },
+    "rows": 512,
+    "spatialReference": {
+      "latestWkid": 2230,
+      "wkid": 102646
+    }
+  },
+  "uncompressedSize": 25988664096,
+  "useStandardizedQueries": true
+}

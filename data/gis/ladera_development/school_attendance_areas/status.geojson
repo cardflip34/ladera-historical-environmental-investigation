@@ -1,0 +1,7 @@
+{
+  "features": [],
+  "limitations": "No historical attendance-area geometry is published. Nearest-school calculations are not substitutes for district assignment records.",
+  "notEvidenceOfAbsence": true,
+  "status": "historical_attendance_boundaries_not_retrieved",
+  "type": "FeatureCollection"
+}

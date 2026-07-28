@@ -1,0 +1,17 @@
+{
+ "acquiredAt": "2026-07-28",
+ "sourceService": "https://ocgis.com/arcpub/rest/services/Map_Layers/Parcels/FeatureServer/0",
+ "sourceName": "Orange County Parcels (Assessor-derived), official County ArcGIS service",
+ "provenanceGrade": "A+",
+ "statementClass": "documented",
+ "aoi": {
+  "xmin": -117.659017,
+  "ymin": 33.526791,
+  "xmax": -117.624136,
+  "ymax": 33.575504
+ },
+ "featureCount": 7469,
+ "sha256": "9a53673803759e4189543d5db65e382032d4e6f61c1754d6e2a63b45dad7fd73",
+ "fileBytes": 8015750,
+ "criticalLimitation": "YEAR_BUILT is an Assessor attribute, NOT a certificate of occupancy and NOT a construction completion record. Store as milestoneType='assessor_year_built'. Render only as a year-wide uncertainty band. Never use to assert a specific completion or move-in date."
+}

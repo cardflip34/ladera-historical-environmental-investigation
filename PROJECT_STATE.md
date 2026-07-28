@@ -1,6 +1,6 @@
 # PROJECT_STATE.md
 
-**Last updated:** 2026-07-18 · **Version:** 0.3.0
+**Last updated:** 2026-07-27 · **Version:** 0.3.0
 
 ## Current phase
 
@@ -35,6 +35,19 @@ Sources **50** · Health events 5 · Literature 22 · Chemicals 18 (+ **382** fr
 Products 4 · Application records 4 · Environmental sites 13 · Oil/gas wells 6 ·
 Water-quality 25 · Land-use periods 7 · Site inventory 9 · GIS layers 5 ·
 **PUR Orange County 2023 records analyzed: 79,473**.
+
+## LHDRS Mission 5 public-evidence reconstruction
+
+Mission 5 is complete. It archives 30 additional public sources, adds official 2005/2009/2010
+full-coverage aerial states, reconstructs 20 annual County built-and-occupied absorption
+records, reconciles 69 builder products, records eight 2006 commercial/mixed-use status
+snapshots, and builds 147 current tract-neighborhood relationships from 6,446 matched address
+points. The evidence graph now contains 1,229 nodes and 1,614 edges.
+
+The central proximity gate remains blocked: no dated address-level occupied geometry or
+precise active-construction geometry was recovered. The next work is the ranked manual-record
+queue in `docs/lhdrs/MISSION_5_RESEARCH_QUEUE.md`. See
+`reports/LHDRS_Historical_Evidence_Atlas_Mission_5.html` for the separate Mission 5 atlas.
 
 ## Phase 4b — PUR empirical analysis (added 2026-07-18)
 
@@ -96,6 +109,12 @@ python3 pipelines/python/process_pur.py /path/to/pur2023.zip
 
 # Run integrity tests
 python3 tests/test_data_integrity.py
+
+# Rebuild and verify the archived Mission 5 evidence package
+make lhdrs-mission5 LHDRS_PYTHON=/path/to/python
+make lhdrs-mission5-publish LHDRS_PYTHON=/path/to/python
+make lhdrs-mission5-docs LHDRS_PYTHON=/path/to/python
+make lhdrs-mission5-verify LHDRS_PYTHON=/path/to/python
 
 # Run the incidence scenario analysis
 python3 notebooks/incidence_scenario_analysis.py

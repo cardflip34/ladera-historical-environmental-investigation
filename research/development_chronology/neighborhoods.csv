@@ -1,0 +1,10 @@
+id,name,planningArea,masterDeveloper,builderOrBuilders,tractMapIds,gradingStart,modelOpening,firstSales,firstOccupancy,substantialOccupancy,buildout,confidence,sourceIds,limitations,notes
+LH-VILLAGE-OAK-KNOLL,Oak Knoll,,Ladera Development Co.,,,,,,,,,unknown,LH-SRC-LARMAC-TIMELINE,"Milestone crosswalk to tract maps and builders unresolved","Oak Knoll Clubhouse opened March 2000"
+LH-VILLAGE-BRIDGEPARK,Bridgepark,,Ladera Development Co.,,,,,,,,,unknown,LH-SRC-LARMAC-TIMELINE,"Milestone crosswalk to tract maps and builders unresolved","Bridgepark Plaza opened October 2001"
+LH-VILLAGE-FLINTRIDGE,Flintridge,,Ladera Development Co.,,,,,,,,,unknown,LH-SRC-LARMAC-TIMELINE,"Milestone crosswalk to tract maps and builders unresolved","Village clubhouse opened December 2004"
+LH-VILLAGE-WYCLIFFE,Wycliffe,,Ladera Development Co.,,,,,,,,,unknown,,"All milestone fields unresolved","Village name requires planned-map crosswalk"
+LH-VILLAGE-AVENDALE,Avendale,,Ladera Development Co.,,,,,,,,,unknown,LH-SRC-LARMAC-TIMELINE,"Milestone crosswalk to tract maps and builders unresolved","Village clubhouse opened June 2002"
+LH-VILLAGE-TERRAMOR,Terramor,,Ladera Development Co.,,,,,,,,,unknown,LH-SRC-LARMAC-TIMELINE,"Milestone crosswalk to tract maps and builders unresolved","Terramor Water Park opened November 2005"
+LH-VILLAGE-ECHO-RIDGE,Echo Ridge,,Ladera Development Co.,,,,,,,,,unknown,,"All milestone fields unresolved","Village name requires planned-map crosswalk"
+LH-VILLAGE-TOWNSHIP,Township,,Ladera Development Co.,,,,,,,,,unknown,,"All milestone fields unresolved","Village name requires planned-map crosswalk"
+LH-VILLAGE-COVENANT-HILLS,Covenant Hills,,Ladera Development Co.,,,,,,,,,unknown,LH-SRC-LARMAC-TIMELINE,"Gated-village tract and builder crosswalk unresolved","Village clubhouse opened December 2004"
