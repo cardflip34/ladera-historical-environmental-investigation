@@ -97,6 +97,11 @@
     <a class="back" href="/docs/california/report.html">&larr; Back to the report</a>
   </main>
 
+<!-- Vercel Web Analytics: first-party, cookieless page views. Custom events via data-va-event. -->
+<script>window.va=window.va||function(){(window.vaq=window.vaq||[]).push(arguments)};</script>
+<script defer src="/_vercel/insights/script.js"></script>
+<script>document.addEventListener("click",function(e){var t=e.target.closest&&e.target.closest("[data-va-event]");
+if(t&&window.va){window.va("event",{name:t.getAttribute("data-va-event")})}},{passive:true});</script>
 <script>
   var form = document.getElementById('cform');
   var result = document.getElementById('result');
@@ -119,6 +124,7 @@
     }).then(function (r) { return r.json(); }).then(function (j) {
       if (j.success) {
         form.reset();
+        if (window.va) window.va('event', { name: 'Contact submitted' });
         result.textContent = 'Thank you. Your message has been sent.';
         result.className = 'ok';
       } else {

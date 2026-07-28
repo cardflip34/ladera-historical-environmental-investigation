@@ -75,8 +75,8 @@
       later built on that former ranch land.</p>
 
     <div class="actions">
-      <a class="btn primary" href="/docs/california/report.html">Read the report &rarr;</a>
-      <a class="btn" href="/contact.html">Contact</a>
+      <a class="btn primary" href="/docs/california/report.html" data-va-event="Read the report">Read the report &rarr;</a>
+      <a class="btn" href="/contact.html" data-va-event="Contact click">Contact</a>
     </div>
 
     <div class="meta">
@@ -102,5 +102,10 @@
       <a href="https://github.com/cardflip34/ladera-historical-environmental-investigation">Source repository</a>
     </div>
   </main>
+<!-- Vercel Web Analytics: first-party, cookieless page views. Custom events via data-va-event. -->
+<script>window.va=window.va||function(){(window.vaq=window.vaq||[]).push(arguments)};</script>
+<script defer src="/_vercel/insights/script.js"></script>
+<script>document.addEventListener("click",function(e){var t=e.target.closest&&e.target.closest("[data-va-event]");
+if(t&&window.va){window.va("event",{name:t.getAttribute("data-va-event")})}},{passive:true});</script>
 </body>
 </html>

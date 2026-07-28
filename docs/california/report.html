@@ -148,8 +148,8 @@ code{background:var(--chip);color:var(--ink)}
     <p class="vb-cap">Watch: a short documentary on the investigation, by Andy Stavros.</p>
     <div class="hero-actions">
       <a href="#contents">Jump to contents</a>
-      <a href="index.html">Section-by-section view</a>
-      <a href="/contact.html">Contact</a>
+      <a href="index.html" data-va-event="Section-by-section view">Section-by-section view</a>
+      <a href="/contact.html" data-va-event="Contact click">Contact</a>
     </div>
   </div>
   <div class="disc"><b>This is an independent research and data-organization project. It does not provide
@@ -2731,6 +2731,8 @@ or parcel shown in these plates.</em></p></section>
   var f=document.getElementById("ytfacade");
   if(!f) return;
   function load(){
+    if(f.querySelector("iframe")) return;
+    if(window.va) window.va("event",{name:"Video play"});
     var id=f.getAttribute("data-yt");
     var ifr=document.createElement("iframe");
     ifr.src="https://www.youtube-nocookie.com/embed/"+id+"?autoplay=1&rel=0&modestbranding=1";
@@ -2744,4 +2746,9 @@ or parcel shown in these plates.</em></p></section>
   f.addEventListener("keydown",function(e){ if(e.key==="Enter"||e.key===" "){ e.preventDefault(); load(); } });
 })();
 </script>
+<!-- Vercel Web Analytics: first-party, cookieless page views. Custom events via data-va-event. -->
+<script>window.va=window.va||function(){(window.vaq=window.vaq||[]).push(arguments)};</script>
+<script defer src="/_vercel/insights/script.js"></script>
+<script>document.addEventListener("click",function(e){var t=e.target.closest&&e.target.closest("[data-va-event]");
+if(t&&window.va){window.va("event",{name:t.getAttribute("data-va-event")})}},{passive:true});</script>
 </body></html>

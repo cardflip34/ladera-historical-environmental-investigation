@@ -42,6 +42,14 @@ FOOT=("Independent research & data-organization project. No medical advice; no c
       "geographic and temporal overlap does not establish exposure or causation. No CA dip-site soil has been tested. "
       "Source grades A1-D per chapter 73; registry: research/source_registry/sources.csv.")
 
+# Vercel Web Analytics: first-party, cookieless page views (no consent banner needed).
+# Requires "Web Analytics" to be enabled on the Vercel project. Custom events are declarative:
+# put data-va-event="Some name" on any element and the delegated listener below reports the click.
+ANALYTICS="""<script>window.va=window.va||function(){(window.vaq=window.vaq||[]).push(arguments)};</script>
+<script defer src="/_vercel/insights/script.js"></script>
+<script>document.addEventListener("click",function(e){var t=e.target.closest&&e.target.closest("[data-va-event]");
+if(t&&window.va){window.va("event",{name:t.getAttribute("data-va-event")})}},{passive:true});</script>"""
+
 def b64img(path,maxw=1080,q=68):
     im=Image.open(path); im=im.convert("RGB")
     if im.width>maxw: im=im.resize((maxw,int(im.height*maxw/im.width)))
@@ -171,7 +179,7 @@ for i,(slug,title,raw) in enumerate(chaps):
 <div class="crumb"><a href="index.html">California's Forgotten Past</a> · section {i} of {len(chaps)-1}</div>
 {body}
 <div class="nav">{prev_}<a href="index.html">Contents</a>{next_}</div>
-<div class="foot">{FOOT}</div></div></body></html>"""
+<div class="foot">{FOOT}</div></div>{ANALYTICS}</body></html>"""
     open(os.path.join(OUTD,f"{slug}.html"),"w").write(html)
 
 # index
@@ -184,7 +192,7 @@ idx=f"""<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="v
 <blockquote>{FOOT}</blockquote>
 <h2>Contents</h2><ul class="toc">{items}</ul>
 <p class="foot">Prefer one long page? Read <a href="report.html">the full report on a single page</a>.</p>
-</div></body></html>"""
+</div>{ANALYTICS}</body></html>"""
 open(os.path.join(OUTD,"index.html"),"w").write(idx)
 
 # single print HTML (for PDF)
@@ -303,6 +311,8 @@ VIDEO_JS="""<script>
   var f=document.getElementById("ytfacade");
   if(!f) return;
   function load(){
+    if(f.querySelector("iframe")) return;
+    if(window.va) window.va("event",{name:"Video play"});
     var id=f.getAttribute("data-yt");
     var ifr=document.createElement("iframe");
     ifr.src="https://www.youtube-nocookie.com/embed/"+id+"?autoplay=1&rel=0&modestbranding=1";
@@ -361,8 +371,8 @@ report_html=f"""<!doctype html><html lang="en"><head>
     <p class="vb-cap">Watch: a short documentary on the investigation, by Andy Stavros.</p>
     <div class="hero-actions">
       <a href="#contents">Jump to contents</a>
-      <a href="index.html">Section-by-section view</a>
-      <a href="/contact.html">Contact</a>
+      <a href="index.html" data-va-event="Section-by-section view">Section-by-section view</a>
+      <a href="/contact.html" data-va-event="Contact click">Contact</a>
     </div>
   </div>
   <div class="disc"><b>This is an independent research and data-organization project. It does not provide
@@ -375,6 +385,7 @@ report_html=f"""<!doctype html><html lang="en"><head>
   {sections}
   <div class="foot">{FOOT}</div>
 </div>
+{ANALYTICS}
 {VIDEO_JS}
 </body></html>"""
 open(os.path.join(OUTD,"report.html"),"w").write(report_html)
