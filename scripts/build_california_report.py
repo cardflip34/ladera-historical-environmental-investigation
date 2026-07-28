@@ -201,12 +201,12 @@ REPORT_CSS="""
 /* Match the landing page palette (blue accent), and support light + dark like it does. */
 :root{--paper:#f7f5f0;--ink:#16233a;--ink2:#48586c;--line:#ddd7ca;--accent:#2f6087;--brass:#a97e1f;
   --brassbg:#f4ecd6;--card:#fffdf8;--mat:#e9e6df;--chip:#efe9dc;--quote:#5a4a2c;--muted:#7c8a9c;
-  --barbg:rgba(247,245,240,.94);--shadow:0 2px 18px rgba(20,35,58,.12)}
+  --barbg:rgba(247,245,240,.94);--shadow:0 2px 18px rgba(20,35,58,.12);--on-accent:#fff}
 @media (prefers-color-scheme:dark){:root{--paper:#141a24;--ink:#eef2f7;--ink2:#a9b6c6;--line:#2b3746;--accent:#7fb0d6;
   --brass:#d8b662;--brassbg:#20293a;--card:#1b2330;--mat:#0e131b;--chip:#202a38;--quote:#d7c8a4;--muted:#8493a6;
-  --barbg:rgba(20,26,36,.92);--shadow:0 2px 20px rgba(0,0,0,.45)}}
-:root[data-theme="light"]{--paper:#f7f5f0;--ink:#16233a;--ink2:#48586c;--line:#ddd7ca;--accent:#2f6087;--brass:#a97e1f;--brassbg:#f4ecd6;--card:#fffdf8;--mat:#e9e6df;--chip:#efe9dc;--quote:#5a4a2c;--muted:#7c8a9c;--barbg:rgba(247,245,240,.94);--shadow:0 2px 18px rgba(20,35,58,.12)}
-:root[data-theme="dark"]{--paper:#141a24;--ink:#eef2f7;--ink2:#a9b6c6;--line:#2b3746;--accent:#7fb0d6;--brass:#d8b662;--brassbg:#20293a;--card:#1b2330;--mat:#0e131b;--chip:#202a38;--quote:#d7c8a4;--muted:#8493a6;--barbg:rgba(20,26,36,.92);--shadow:0 2px 20px rgba(0,0,0,.45)}
+  --barbg:rgba(20,26,36,.92);--shadow:0 2px 20px rgba(0,0,0,.45);--on-accent:#0e131b}}
+:root[data-theme="light"]{--paper:#f7f5f0;--ink:#16233a;--ink2:#48586c;--line:#ddd7ca;--accent:#2f6087;--brass:#a97e1f;--brassbg:#f4ecd6;--card:#fffdf8;--mat:#e9e6df;--chip:#efe9dc;--quote:#5a4a2c;--muted:#7c8a9c;--barbg:rgba(247,245,240,.94);--shadow:0 2px 18px rgba(20,35,58,.12);--on-accent:#fff}
+:root[data-theme="dark"]{--paper:#141a24;--ink:#eef2f7;--ink2:#a9b6c6;--line:#2b3746;--accent:#7fb0d6;--brass:#d8b662;--brassbg:#20293a;--card:#1b2330;--mat:#0e131b;--chip:#202a38;--quote:#d7c8a4;--muted:#8493a6;--barbg:rgba(20,26,36,.92);--shadow:0 2px 20px rgba(0,0,0,.45);--on-accent:#0e131b}
 /* re-skin the shared base rules so they follow the theme and lead with blue */
 body{background:var(--mat)}
 .page{background:var(--paper);box-shadow:var(--shadow)}
@@ -230,7 +230,8 @@ code{background:var(--chip);color:var(--ink)}
 .hero{padding:8px 0 2px}
 .eyebrow{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--brass);font-weight:700;margin:0 0 10px}
 .hero h1{font-size:clamp(28px,5.6vw,42px);line-height:1.08;margin:0 0 6px;border:0;color:var(--ink)}
-.tagline{font-family:Georgia,serif;font-style:italic;font-size:clamp(17px,3vw,23px);color:var(--brass);margin:0 0 14px}
+.tagline{font-family:Georgia,serif;font-style:italic;font-size:clamp(20px,3.4vw,30px);color:var(--brass);margin:0 0 12px;letter-spacing:.005em}
+.wordmark-rule{width:54px;height:3px;background:var(--brass);border-radius:2px;margin:0 0 18px}
 .hero .sub{color:var(--ink2);font-size:16.5px;max-width:62ch;margin:0 0 16px}
 /* video: 16:9 landscape (YouTube). Click-to-load facade -> loads the player only on click. */
 .videobox{position:relative;width:100%;max-width:720px;aspect-ratio:16/9;margin:8px 0 6px;border-radius:14px;
@@ -242,14 +243,14 @@ code{background:var(--chip);color:var(--ink)}
   box-shadow:0 6px 22px rgba(0,0,0,.42);transition:transform .12s}
 .videobox:hover .vb-play,.videobox:focus-visible .vb-play{transform:translate(-50%,-50%) scale(1.07)}
 .vb-play::after{content:"";border-style:solid;border-width:12px 0 12px 20px;
-  border-color:transparent transparent transparent #fff;margin-left:5px}
+  border-color:transparent transparent transparent var(--on-accent);margin-left:5px}
 .videobox iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
 .vb-cap{color:var(--ink2);font-size:13.5px;margin:0 0 16px}
 .hero-actions{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 6px}
 .hero-actions a{display:inline-flex;align-items:center;gap:7px;text-decoration:none;font-weight:600;font-size:14.5px;
   padding:10px 17px;border-radius:9px;border:1px solid var(--line);color:var(--ink);background:var(--card)}
 .hero-actions a:hover{border-color:var(--accent)}
-.hero-actions a.primary{background:var(--accent);border-color:var(--accent);color:#fff}
+.hero-actions a.primary{background:var(--accent);border-color:var(--accent);color:var(--on-accent)}
 .disc{background:var(--brassbg);border:1px solid var(--line);border-left:3px solid var(--accent);border-radius:8px;
   padding:13px 16px;font-size:12.5px;color:var(--quote);margin:16px 0}
 .disc b{color:var(--ink)}
@@ -341,6 +342,7 @@ report_html=f"""<!doctype html><html lang="en"><head>
     <p class="eyebrow">Independent research &amp; data-organization project</p>
     <h1>California's Forgotten Past</h1>
     <p class="tagline">The Arsenic Cattle-Dipping Era</p>
+    <div class="wordmark-rule" aria-hidden="true"></div>
     <p class="sub">{DESC}</p>
     <!-- VIDEO: 16:9 YouTube embed (click-to-load facade; loads the player only on click) -->
     <div class="videobox" id="ytfacade" data-yt="QDGB_R92jns" role="button" tabindex="0"
