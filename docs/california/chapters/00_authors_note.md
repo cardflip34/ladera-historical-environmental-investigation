@@ -55,10 +55,32 @@ does not accuse any developer, agency, school, or landowner of wrongdoing, and o
 including pesticides, remain firmly on the table. My only agenda is the truth, and the safety of our
 communities.
 
-I've taken this as far as one person with good tools and a lot of long nights can take it. The next
-steps, pulling the physical ranch archives and putting real soil testing behind the questions the
-paper record cannot close, belong to people and institutions with more reach than I have. I would be
-genuinely glad to help. I have published every source, map, overlay, document, and photograph behind
+## What comes next, and a second phase
+
+I want to say plainly where my own thinking sits, and be careful about how I say it. As I mentioned,
+I'm not a doctor or a biologist, so I'm not making medical conclusions. My personal opinion is that
+if anything historically existed in the soil, years of grading and construction beginning around 1999
+could have increased the opportunity for dust and soil to become airborne while neighborhoods were
+being built and occupied. Families were moving in, kids were outside at schools, playing sports,
+breathing and living through years of ongoing construction. Whether that has any medical significance
+isn't my area of expertise, and I'm not claiming it does.
+
+That is a potential pathway, not a finding. Nothing in this report measures it, and I want to be
+careful not to let a reasonable question sound like a conclusion. It is exactly the kind of question
+that deserves to be documented properly rather than argued about loosely.
+
+So that is where a second phase of this work is now going. I am currently mapping the development
+timeline, occupancy, construction phases, and potential wind patterns, so the historical context is
+accurately documented. The point is not to prove that pathway. The point is that if anyone ever does
+look at it seriously, whether that is a public agency, an epidemiologist, or a researcher who
+disagrees with me entirely, the historical record will already be assembled, dated, sourced, and
+open, instead of being reconstructed from memory years from now. If that record ends up closing the
+question rather than opening it, that is a perfectly good outcome, and I'll publish it either way.
+
+I've taken the first phase as far as one person with good tools and a lot of long nights can take it.
+The next steps that I genuinely cannot do alone, pulling the physical ranch archives and putting real
+soil testing behind the questions the paper record cannot close, belong to people and institutions
+with more reach than I have. I would be genuinely glad to help. I have published every source, map, overlay, document, and photograph behind
 this report, not so anyone will simply take my word for it, but so people can read it, challenge it,
 verify it, and improve it.
 
