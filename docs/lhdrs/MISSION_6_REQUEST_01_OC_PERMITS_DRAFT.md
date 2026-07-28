@@ -29,11 +29,18 @@ All six appendices are produced by `scripts/lhdrs_mission6_appendices.py` (repro
 | E | Known identifiers | `appendix_E_known_identifiers.csv` | ✅ 182 |
 | F | Party name variants | `appendix_F_party_name_variants.csv` | ✅ 91 |
 
-**⚠️ Material limitation — no APN data exists in this repository.** Appendix B's `apn` column is
-deliberately empty with `apnStatus = NOT_IN_REPOSITORY`. APNs must **not** be inferred or derived
-from address/tract data. This makes the APN linkage requested in item 1 below *more* important, and
-the letter should be read with that in mind: we are asking the County to supply the APN linkage we
-do not have.
+**✅ RESOLVED 2026-07-28 — APNs acquired.** The earlier limitation (no APN data in the repository)
+is closed. Mission 7 Phase A3 acquired the official OC Parcels FeatureServer layer and, after
+clipping to the CDP polygon, yielded **6,055 unique valid APNs** inside Ladera Ranch. These are
+published as **`appendix_B2_apn_list.csv`** (APN, site address where the County carries one, raw
+YEAR_BUILT, bedrooms), provenance grade A+.
+
+- 4,564 APNs carry a County site address; 1,491 are APN-only (no address in the County layer).
+- The request should now cite Appendix B2 as the authoritative parcel list, which converts item 1
+  from "please identify the parcels" into "here are the exact parcels."
+- **YEAR_BUILT remains unusable as an occupancy source:** it is blank for 6,041 of 6,101 parcels
+  inside the CDP (populated for 4, ~0.1%). This *strengthens* the case for item 1 — the County
+  permit/CO index is the only route to parcel-level dates.
 
 **Remaining blocker: user authorization to submit.** Nothing else stands in the way.
 
