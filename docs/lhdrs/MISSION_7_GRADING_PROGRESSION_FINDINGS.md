@@ -109,3 +109,51 @@ discrete, worthwhile next step.
 Pixel-level orange/green boundaries are **not** development boundaries. At 30 m a single pixel
 straddles lots, streets and yards, so edges are approximate to roughly one lot width. Do not trace
 neighbourhood or parcel outlines from these rasters.
+
+---
+
+## Phase 3c — monthly true-colour time-lapse (added 2026-07-28)
+
+`scripts/lhdrs_m7_timelapse.py` · 6 km square AOI centred on Ladera Ranch ·
+provenance **A+** · statementClass **documented** (true-colour imagery, no index applied)
+
+**103 usable frames from 120 months (86% monthly coverage), 1997-2006.**
+
+Cadence is set by cloud, not orbit. Landsat 5 and 7 each revisit every 16 days offset by ~8, so the
+theoretical floor is ~8 days. Every one of the 40 quarters in the decade has coverage.
+
+### Method correction worth recording
+Scene-level cloud percentage is a **poor filter** at this scale: the AOI is ~6 km across inside a
+~180 km scene, so a "20% cloudy" scene may be perfectly clear over Ladera Ranch or wholly obscured.
+Frames were therefore selected on **actual per-AOI validity** (QA_PIXEL, >=92% clear), not scene
+cloud. Several frames retained here come from scenes with 25-35% scene cloud that are 100% clear
+over the AOI, and would have been wrongly discarded by a scene-level filter.
+
+### QA finding: QA_PIXEL does not flag smoke
+The **2003-10-25** frame passed at "95.4% clear" with 0% scene cloud, but is in fact **dense
+wildfire smoke**. That date is the ignition day of the October 2003 Southern California firestorm
+(Cedar, Old and Simi fires). The Landsat QA bitmask flags cloud and shadow but **not smoke**.
+
+A second-pass test was added, stated relative to the series rather than as fixed thresholds:
+`texture < 0.5x median AND brightness > 1.3x median`. The smoke frame is the single most extreme
+value in the series on **both** metrics (texture 2.51 vs median 9.1; brightness 133.8 vs median
+86.5), so it separates cleanly with no false positives.
+
+The frame is **retained as evidence** (it is real data, and a genuine record of the event) but is
+**excluded from the default video sequence**, which is 102 frames. It must never be read as ground
+condition.
+
+*Note: the NDVI grading products in Phases 3a/3b are unaffected. The 2003 scene used there is
+2003-05-11, five months before the fires.*
+
+### What the series shows
+Green undeveloped hills through 1998 with a single pale line along the eastern edge (roadway works);
+bare ground opening in the north from 1999; the pale graded area expanding to its maximum through
+2001-2002; then progressively replaced by the mottled grey texture of built structures, with
+landscaping greening from the north, through 2005-2006.
+
+### Limits
+30 m pixels: grading extent, road corridors and large structures are visible. **Individual houses
+are not.** Months with no qualifying scene are simply absent, so frame spacing is uneven and the
+sequence must not be read as even-interval time. Ground conditions only: not a contamination, dust
+or exposure product.
