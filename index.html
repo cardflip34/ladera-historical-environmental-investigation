@@ -24,14 +24,14 @@
 <style>
   :root{
     --paper:#f7f5f0; --ink:#16233a; --ink2:#48586c; --line:#ddd7ca;
-    --accent:#2f6087; --brass:#a97e1f; --brassbg:#f4ecd6; --card:#fffdf8;
+    --accent:#2f6087; --brass:#a97e1f; --brassbg:#f4ecd6; --card:#fffdf8; --on-accent:#fff;
   }
   @media (prefers-color-scheme: dark){
     :root{ --paper:#141a24; --ink:#eef2f7; --ink2:#a9b6c6; --line:#2b3746;
-           --accent:#7fb0d6; --brass:#d8b662; --brassbg:#20293a; --card:#1b2330; }
+           --accent:#7fb0d6; --brass:#d8b662; --brassbg:#20293a; --card:#1b2330; --on-accent:#0e131b; }
   }
-  :root[data-theme="light"]{ --paper:#f7f5f0; --ink:#16233a; --ink2:#48586c; --line:#ddd7ca; --accent:#2f6087; --brass:#a97e1f; --brassbg:#f4ecd6; --card:#fffdf8; }
-  :root[data-theme="dark"]{ --paper:#141a24; --ink:#eef2f7; --ink2:#a9b6c6; --line:#2b3746; --accent:#7fb0d6; --brass:#d8b662; --brassbg:#20293a; --card:#1b2330; }
+  :root[data-theme="light"]{ --paper:#f7f5f0; --ink:#16233a; --ink2:#48586c; --line:#ddd7ca; --accent:#2f6087; --brass:#a97e1f; --brassbg:#f4ecd6; --card:#fffdf8; --on-accent:#fff; }
+  :root[data-theme="dark"]{ --paper:#141a24; --ink:#eef2f7; --ink2:#a9b6c6; --line:#2b3746; --accent:#7fb0d6; --brass:#d8b662; --brassbg:#20293a; --card:#1b2330; --on-accent:#0e131b; }
   *{box-sizing:border-box}
   body{margin:0;background:var(--paper);color:var(--ink);
     font:17px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
@@ -40,13 +40,14 @@
   .eyebrow{font-size:12.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--brass);font-weight:700;margin:0 0 14px}
   h1{font-family:"Iowan Old Style",Georgia,"Times New Roman",serif;font-size:clamp(30px,6vw,46px);
     line-height:1.1;letter-spacing:-.01em;margin:0 0 6px;text-wrap:balance}
-  .tagline{font-family:"Iowan Old Style",Georgia,serif;font-style:italic;font-size:clamp(18px,3vw,24px);color:var(--brass);margin:0 0 18px}
+  .tagline{font-family:"Iowan Old Style",Georgia,serif;font-style:italic;font-size:clamp(21px,4vw,32px);color:var(--brass);margin:0 0 14px;letter-spacing:.005em;text-wrap:balance}
+  .wordmark-rule{width:56px;height:3px;background:var(--brass);border-radius:2px;margin:0 0 24px}
   .sub{color:var(--ink2);font-size:18px;max-width:60ch;margin:0 0 30px}
   .actions{display:flex;flex-wrap:wrap;gap:12px;margin:0 0 30px}
   a.btn{display:inline-flex;align-items:center;gap:8px;text-decoration:none;font-weight:600;font-size:15.5px;
     padding:12px 20px;border-radius:9px;border:1px solid var(--line);color:var(--ink);background:var(--card);transition:.15s}
   a.btn:hover{border-color:var(--accent);transform:translateY(-1px)}
-  a.btn.primary{background:var(--accent);border-color:var(--accent);color:#fff}
+  a.btn.primary{background:var(--accent);border-color:var(--accent);color:var(--on-accent)}
   a.btn.primary:hover{filter:brightness(1.07)}
   .meta{display:flex;flex-wrap:wrap;gap:8px 22px;color:var(--ink2);font-size:14px;margin:0 0 26px}
   .meta b{color:var(--ink)}
@@ -63,6 +64,7 @@
     <p class="eyebrow">Independent research &amp; data-organization project</p>
     <h1>California's Forgotten Past</h1>
     <p class="tagline">The Arsenic Cattle-Dipping Era</p>
+    <div class="wordmark-rule" aria-hidden="true"></div>
     <p class="sub">An independent investigation into California's state-mandated arsenical
       cattle-tick dipping program (1907 to 1912), and the South Orange County communities
       later built on that former ranch land.</p>
