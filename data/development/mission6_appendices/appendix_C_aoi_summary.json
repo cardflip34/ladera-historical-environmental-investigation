@@ -1,0 +1,10 @@
+{
+  "generated": "2026-07-27",
+  "aoiSource": "data/development/ladera_ranch_cdp.geojson (existing repository AOI - reused, not redrawn)",
+  "featureCount": 1,
+  "geometryTypes": [
+    "Polygon"
+  ],
+  "ringCount": 1,
+  "note": "Census CDP boundary used as the project AOI. It is an administrative/statistical boundary, not a legal subdivision or service-area boundary, and does not by itself establish tract membership."
+}

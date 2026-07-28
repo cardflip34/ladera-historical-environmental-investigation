@@ -15,16 +15,27 @@ repository data. Nothing in this file constitutes legal advice.
 | Date scope | 1997-01-01 through 2011-12-31 |
 | Gates addressed | `permit_occupancy_gate`, `address_lifecycle_gate` |
 
-## Blocking prerequisites (must be attached before sending)
+## Blocking prerequisites — ✅ GENERATED 2026-07-27
 
-These are generated from repository data and are **not yet produced**:
+All six appendices are produced by `scripts/lhdrs_mission6_appendices.py` (reproducible) into
+`data/development/mission6_appendices/`:
 
-1. Canonical 123-tract list and aliases
-2. Address/APN request crosswalk, deduplicated for agency production
-3. Project AOI polygon and map
-4. Street-to-tract crosswalk
-5. Known permit, case, agreement, Board item, and document identifiers
-6. Developer, builder, HOA, utility, and public-agency grantor/grantee name variants
+| # | Appendix | File | Status |
+|---|---|---|---|
+| A | Canonical tract list + aliases | `appendix_A_canonical_tracts.csv` | ✅ 123 canonical + 1 excluded/conflicted (TR 17588) |
+| B | Address crosswalk, deduplicated | `appendix_B_address_crosswalk.csv` | ✅ 6,368 rows — ⚠️ **APN column empty, see below** |
+| C | Project AOI polygon and map | `appendix_C_aoi.geojson` | ✅ 1 feature (existing repo AOI, not redrawn) |
+| D | Street-to-tract crosswalk | `appendix_D_street_tract_crosswalk.csv` | ✅ 288 features, multi-date tracts preserved |
+| E | Known identifiers | `appendix_E_known_identifiers.csv` | ✅ 182 |
+| F | Party name variants | `appendix_F_party_name_variants.csv` | ✅ 91 |
+
+**⚠️ Material limitation — no APN data exists in this repository.** Appendix B's `apn` column is
+deliberately empty with `apnStatus = NOT_IN_REPOSITORY`. APNs must **not** be inferred or derived
+from address/tract data. This makes the APN linkage requested in item 1 below *more* important, and
+the letter should be read with that in mind: we are asking the County to supply the APN linkage we
+do not have.
+
+**Remaining blocker: user authorization to submit.** Nothing else stands in the way.
 
 ---
 

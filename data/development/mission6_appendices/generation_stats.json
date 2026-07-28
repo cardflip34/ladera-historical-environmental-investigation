@@ -1,0 +1,17 @@
+{
+  "generated": "2026-07-27",
+  "tr17588Decision": "exclude",
+  "A_tracts_canonical": 123,
+  "A_rows_total": 124,
+  "B_input_rows": 6446,
+  "B_dedup_rows": 6368,
+  "C_features": 1,
+  "D_features": 288,
+  "D_multi_date_tracts": [
+    "15615",
+    "16116",
+    "16121"
+  ],
+  "E_identifiers": 182,
+  "F_parties": 91
+}
