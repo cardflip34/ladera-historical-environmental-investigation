@@ -35,3 +35,4 @@ arsenic-cancer-investigation/**/*_PHI*
 # Mission 6: aerial exceeds the repo's 50MB in-git limit (kept on disk, see mission6/OFFLINE_FILES.md)
 evidence/lhdrs/mission6/imagery/oc_historical_aerial_ladera_1998.tif
 tmp/
+evidence/lhdrs/mission7/*.gif
