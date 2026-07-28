@@ -1,0 +1,162 @@
+{
+ "generated": "2026-07-28",
+ "method": "Landsat C2 L2 surface reflectance; NDVI = (NIR-Red)/(NIR+Red); bare/disturbed = NDVI < 0.2; cloud/shadow masked via QA_PIXEL; seasonal window months 1-5 preferred",
+ "aoi": [
+  -117.659017,
+  33.526791,
+  -117.624136,
+  33.575504
+ ],
+ "provenanceGrade": "A+",
+ "statementClass": "interpreted",
+ "resolutionMeters": 30,
+ "criticalLimitations": [
+  "30 m pixels: approximately ONE PIXEL PER RESIDENTIAL LOT. Rooftops are NOT resolvable. No parcel-level claim may be derived from this product.",
+  "NDVI threshold is an interpretation, not a documented fact. statementClass='interpreted'.",
+  "Bare soil can arise from grading, natural senescence, fire, or fallow agriculture. Seasonal window selection reduces but does not eliminate this ambiguity.",
+  "Landsat 7 SLC failure (2003-05-31) causes ~22% striping; Landsat 5 preferred for 2003+.",
+  "This measures ground disturbance only. It is NOT a contamination, dust, or exposure product."
+ ],
+ "series": [
+  {
+   "year": 1997,
+   "date": "1997-04-24",
+   "platform": "landsat-5",
+   "cloudPct": 1.0,
+   "validPct": 97.3,
+   "barePct": 4.2,
+   "medianNDVI": 0.398,
+   "sceneId": "LT05_L2SP_040037_19970424_02_T1",
+   "pixels": [
+    181,
+    109
+   ]
+  },
+  {
+   "year": 1998,
+   "date": "1998-04-27",
+   "platform": "landsat-5",
+   "cloudPct": 0.0,
+   "validPct": 100.0,
+   "barePct": 1.2,
+   "medianNDVI": 0.622,
+   "sceneId": "LT05_L2SP_040037_19980427_02_T1",
+   "pixels": [
+    181,
+    109
+   ]
+  },
+  {
+   "year": 1999,
+   "date": "1999-03-13",
+   "platform": "landsat-5",
+   "cloudPct": 1.0,
+   "validPct": 100.0,
+   "barePct": 10.3,
+   "medianNDVI": 0.447,
+   "sceneId": "LT05_L2SP_040037_19990313_02_T1",
+   "pixels": [
+    181,
+    109
+   ]
+  },
+  {
+   "year": 2000,
+   "date": "2000-05-18",
+   "platform": "landsat-5",
+   "cloudPct": 0.0,
+   "validPct": 100.0,
+   "barePct": 26.1,
+   "medianNDVI": 0.383,
+   "sceneId": "LT05_L2SP_040037_20000518_02_T1",
+   "pixels": [
+    181,
+    109
+   ]
+  },
+  {
+   "year": 2001,
+   "date": "2001-05-05",
+   "platform": "landsat-5",
+   "cloudPct": 0.0,
+   "validPct": 100.0,
+   "barePct": 30.4,
+   "medianNDVI": 0.432,
+   "sceneId": "LT05_L2SP_040037_20010505_02_T1",
+   "pixels": [
+    181,
+    109
+   ]
+  },
+  {
+   "year": 2002,
+   "date": "2002-03-20",
+   "platform": "landsat-7",
+   "cloudPct": 0.0,
+   "validPct": 100.0,
+   "barePct": 41.3,
+   "medianNDVI": 0.245,
+   "sceneId": "LE07_L2SP_041037_20020320_02_T1",
+   "pixels": [
+    181,
+    109
+   ]
+  },
+  {
+   "year": 2003,
+   "date": "2003-05-11",
+   "platform": "landsat-5",
+   "cloudPct": 0.0,
+   "validPct": 99.2,
+   "barePct": 31.1,
+   "medianNDVI": 0.305,
+   "sceneId": "LT05_L2SP_040037_20030511_02_T1",
+   "pixels": [
+    181,
+    109
+   ]
+  },
+  {
+   "year": 2004,
+   "date": "2004-05-13",
+   "platform": "landsat-5",
+   "cloudPct": 0.0,
+   "validPct": 100.0,
+   "barePct": 26.7,
+   "medianNDVI": 0.286,
+   "sceneId": "LT05_L2SP_040037_20040513_02_T1",
+   "pixels": [
+    181,
+    109
+   ]
+  },
+  {
+   "year": 2005,
+   "date": "2005-04-05",
+   "platform": "landsat-5",
+   "cloudPct": 0.0,
+   "validPct": 99.5,
+   "barePct": 14.5,
+   "medianNDVI": 0.422,
+   "sceneId": "LT05_L2SP_041037_20050405_02_T1",
+   "pixels": [
+    181,
+    109
+   ]
+  },
+  {
+   "year": 2006,
+   "date": "2006-02-12",
+   "platform": "landsat-5",
+   "cloudPct": 1.0,
+   "validPct": 100.0,
+   "barePct": 23.3,
+   "medianNDVI": 0.28,
+   "sceneId": "LT05_L2SP_040037_20060212_02_T1",
+   "pixels": [
+    181,
+    109
+   ]
+  }
+ ]
+}
