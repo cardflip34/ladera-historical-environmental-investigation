@@ -62,3 +62,50 @@ constraints and require real measured environmental data.
   high-resolution coverage. Phase 3 of the reconstruction can proceed at this scale, free, now.
 - **Does not unblock:** Phase 4 parcel-level build-out, which still requires the County permit/CO
   index (`M6-REQ-OC-PERMIT-01`) or high-resolution aerials. Landsat cannot substitute.
+
+---
+
+## Phase 3b — spatial progression (added 2026-07-28)
+
+`scripts/lhdrs_m7_grading_maps.py` reuses the **same ten scenes** Phase 3a selected, so the two
+products cannot disagree, and clips to the CDP polygon. Percentages are higher than Phase 3a because
+clipping removes surrounding undeveloped land from the denominator.
+
+| Year | In-CDP disturbed |
+|---|---|
+| 1997 | 3.7% |
+| 1998 | 0.3% |
+| 1999 | 11.8% |
+| 2000 | 33.8% |
+| 2001 | 40.0% |
+| 2002 | **52.8%** (peak) |
+| 2003 | 41.3% |
+| 2004 | 34.5% |
+| 2005 | 18.4% |
+| 2006 | 27.2% |
+
+Figure: `evidence/lhdrs/mission7/grading_progression_maps.png`
+
+### The spatial finding: the grading front moved north to south
+
+The maps show something the aggregate series could not. Disturbance does not appear uniformly:
+
+- **1997** — a narrow disturbed corridor along the eastern boundary, consistent with roadway works
+  (Antonio Parkway alignment) rather than community grading.
+- **1999** — disturbance opens in the **north** of the CDP.
+- **2000-2001** — the northern block fills in and extends southward down the centre.
+- **2002** — peak, with the **south** now heavily disturbed while parts of the north begin to green,
+  consistent with earlier-graded ground being built on and landscaped.
+- **2003-2005** — progressive greening from the north as build-out completes; residual activity
+  concentrated south and south-central.
+
+**This north-to-south sequence is a spatial hypothesis generated from imagery, at level `interpreted`.**
+It is consistent with the general pattern of the northern villages being developed before the
+southern ones, but it has **not** been formally tested against the 130-row neighbourhood chronology,
+and it must not be cited as confirming any particular neighbourhood's dates. Testing it is a
+discrete, worthwhile next step.
+
+### Additional limitation specific to the maps
+Pixel-level orange/green boundaries are **not** development boundaries. At 30 m a single pixel
+straddles lots, streets and yards, so edges are approximate to roughly one lot width. Do not trace
+neighbourhood or parcel outlines from these rasters.
