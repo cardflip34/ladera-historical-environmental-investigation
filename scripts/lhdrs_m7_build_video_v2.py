@@ -64,6 +64,30 @@ for s in schools:
         seen[c] = {"lon": c[0], "lat": c[1], "label": short}; SCH.append(seen[c])
 
 
+
+NODATA = (58, 64, 78)   # neutral - never a colour that reads as ground
+
+def load_hist_jpg(path):
+    """OC ImageServer exports fill out-of-coverage with pure yellow. Replace with neutral."""
+    im = Image.open(path).convert("RGB")
+    a = np.asarray(im).copy()
+    m = (a[:, :, 0] > 245) & (a[:, :, 1] > 245) & (a[:, :, 2] < 40)
+    a[m] = NODATA
+    return Image.fromarray(a), float(m.mean())
+
+
+def load_geotiff(path):
+    """These are TILED RGBA. PIL mis-decodes them and .convert('RGB') exposes the
+    undefined transparent region. Read with rasterio and honour the alpha band."""
+    import rasterio
+    with rasterio.open(path) as s:
+        rgb = s.read([1, 2, 3]).transpose(1, 2, 0).astype("uint8")
+        al = s.read(4) if s.count >= 4 else np.full(rgb.shape[:2], 255, "uint8")
+    out = rgb.copy()
+    out[al == 0] = NODATA
+    return Image.fromarray(out), float((al == 0).mean())
+
+
 def crop_to_aoi(img, bbox):
     """Crop a north-up image with known geographic bbox down to the canonical AOI."""
     w, h = img.size
@@ -118,6 +142,45 @@ def draw_schools(d):
         d.text((bx+7, py-49), t, font=F(15, True), fill=SCHOOL)
 
 
+
+# Documented named features inside the AOI, with coordinates. Nothing inferred.
+# NOTE: historic_ranch_1948.geojson still carries the pre-correction drainage name
+# ("Canada Chiquita"). Correction C-002 established it is TRABUCO CREEK. Corrected here.
+LANDMARKS = [
+ {"lon": -117.65492, "lat": 33.55505, "label": "1948 ranch structure",
+  "sub": "trail/water node - NOT a dip vat", "col": (255,120,120)},
+ {"lon": -117.64400, "lat": 33.53600, "label": "O'Neill #1 well",
+  "sub": "Union Oil - plugged dry hole", "col": (190,160,255)},
+ {"lon": -117.63600, "lat": 33.54600, "label": "Citizens National Trust B-1",
+  "sub": "plugged dry hole", "col": (190,160,255)},
+ {"lon": -117.66200, "lat": 33.54200, "label": "Blue Diamond Materials",
+  "sub": "asphalt plant", "col": (150,200,150)},
+ {"lon": -117.65500, "lat": 33.56970, "label": "Carl Hankey ES",
+  "sub": "DTSC: arsenic, lead - former orchard", "col": (255,205,80)},
+]
+
+
+def draw_landmarks(d):
+    placed = []
+    for m in LANDMARKS:
+        x, y = xy(m["lon"], m["lat"])
+        if not (0 <= x < MAP and 0 <= y < MAP):
+            continue
+        px, py = (SIZE-MAP)//2+x, TOPBAR+y
+        c = m["col"]
+        d.ellipse([px-8, py-8, px+8, py+8], outline=c, width=3)
+        ty = py-46
+        while any(abs(ty-q) < 34 for q in placed):
+            ty -= 34
+        placed.append(ty)
+        d.line([px, py-10, px, ty+22], fill=c, width=2)
+        w = max(d.textlength(m["label"], font=F(15, True)), d.textlength(m["sub"], font=F(12)))
+        bx = min(max(px-w/2-8, 6), SIZE-w-18)
+        d.rectangle([bx, ty-4, bx+w+16, ty+22], fill=(24, 30, 42))
+        d.text((bx+8, ty-2), m["label"], font=F(15, True), fill=c)
+        d.text((bx+8, ty+11), m["sub"], font=F(12), fill=(170,176,188))
+
+
 def draw_node(d, note=True):
     x, y = xy(*NODE_PT)
     if not (0 <= x < MAP and 0 <= y < MAP): return
@@ -133,7 +196,7 @@ def draw_node(d, note=True):
 
 
 def caption(d, lines, color=(190,196,208)):
-    y = MAPEND+62
+    y = MAPEND+80
     for t in lines:
         d.text((36, y), t, font=F(16), fill=color); y += 24
 
@@ -176,52 +239,16 @@ HIST = [
 for fn, yr, srcdesc, cap in HIST:
     p = os.path.join(AER, fn)
     if not os.path.exists(p): continue
-    panel = crop_to_aoi(Image.open(p).convert("RGB"), HIST_BBOX)
+    src, nod = load_hist_jpg(p)
+    panel = crop_to_aoi(src, HIST_BBOX)
     im, d = base(panel, "Ladera Ranch", srcdesc, yr)
     draw_water(d)
     draw_node(d)
+    if nod > 0.02:
+        d.text((36, MAPEND+56), "■  grey = outside this frame's coverage", font=F(15), fill=NODATA)
     caption(d, cap)
     foot(d, "OC Survey / OCGIS Historic_Imagery_v2, server-rectified")
     frames += hold(im, 3)
-
-# ---------------- the finding card ----------------
-im = Image.new("RGB", (SIZE, SIZE), NAVY); d = ImageDraw.Draw(im)
-d.text((SIZE//2, 300), "What the aerials show", font=F(40, True), fill=WHITE, anchor="ma")
-for i, t in enumerate([
-    "At 1.15 ft/px a 2 m dip vat would be about 6 pixels across.",
-    "A corral would be unmistakable.",
-    "",
-    "None was found inside the footprint in any pre-1950 frame.",
-    "",
-    "That is weak evidence against a large surviving surface facility,",
-    "and no evidence at all about one demolished or buried.",
-    "Dipping ran 1907 to 1917. The earliest frame is 1929."]):
-    d.text((SIZE//2, 400+i*38), t, font=F(21 if t and not t.startswith("That") else 19),
-           fill=WHITE if i in (3,) else MUT, anchor="ma")
-frames += hold(im, 4)
-
-# ---------------- water-siting question, answered honestly ----------------
-im = Image.new("RGB", (SIZE, SIZE), NAVY); d = ImageDraw.Draw(im)
-d.text((SIZE//2, 210), "Would a vat have been sited on the creek?", font=F(34, True), fill=WHITE, anchor="ma")
-rows = [
- ("Yes, for water supply.", WHITE),
- ("The USDA formula was 8 lb arsenic to 500 gallons. Filling and", MUT),
- ("recharging a vat needed a source, and cattle already gathered at water.", MUT),
- ("", MUT),
- ("But not for flushing.", WHITE),
- ("The USDA placard posted at every vat read: \"Do not allow it to", MUT),
- ("contaminate any feed or water supply.\" Containment was the instruction.", MUT),
- ("", MUT),
- ("And if dip HAD been flushed to running water, arsenic binds to", (200,206,216)),
- ("sediment. It would concentrate downstream in depositional zones,", (200,206,216)),
- ("not in the soil at the vat. That changes where you would look.", (200,206,216)),
- ("", MUT),
- ("No vat has been located. This remains an open question.", ACC),
-]
-y = 300
-for t, c in rows:
-    d.text((SIZE//2, y), t, font=F(20 if c is WHITE else 18, c is WHITE), fill=c, anchor="ma"); y += 32
-frames += hold(im, 6)
 
 # ---------------- 1995 / 1998 georeferenced aerials ----------------
 for tif, yr, cap in [
@@ -233,8 +260,11 @@ for tif, yr, cap in [
       "The community is about to be built."])]:
     p = os.path.join(REPO, "evidence/lhdrs/mission6/imagery", tif)
     if not os.path.exists(p): continue
-    panel = crop_to_aoi(Image.open(p).convert("RGB"), TIF_BBOX)
+    src, nod = load_geotiff(p)
+    panel = crop_to_aoi(src, TIF_BBOX)
     im, d = base(panel, "Ladera Ranch", "Orange County aerial, georeferenced", yr)
+    if nod > 0.02:
+        d.text((36, MAPEND+56), "■  grey = outside this frame's coverage", font=F(15), fill=NODATA)
     draw_water(d)
     draw_node(d)
     caption(d, cap)
@@ -272,6 +302,10 @@ for i, dt in enumerate(seq):
         d.line([x, by-2, x, by+2], fill=(120,132,152), width=1)
     px = bx0+(bx1-bx0)*(dec(dt)-T0)/(T1-T0)
     d.ellipse([px-7, by-7, px+7, by+7], fill=ACC)
+    # 1968 water bodies carried forward so you can see what was built over
+    nw = draw_water(d, note=False)
+    d.text((36, MAPEND+46), f"○  {nw} water bodies mapped in 1968, shown where they used to be",
+           font=F(15), fill=CYAN)
     # schools appear once they exist (Chaparral 2001, LRES/LRMS 2003, Oso Grande 2005)
     yr = int(dt[:4])
     live = [s for s in SCH if (("Chaparral" in s["label"] and yr >= 2001) or
@@ -279,9 +313,11 @@ for i, dt in enumerate(seq):
                                ("Oso Grande" in s["label"] and yr >= 2005))]
     if live:
         old = SCH[:]; SCH[:] = live; draw_schools(d); SCH[:] = old
-        d.text((36, MAPEND+46), "○  schools, shown from their opening year", font=F(15), fill=SCHOOL)
-    caption(d, ["30 m pixels: grading and roads visible, individual houses are not.",
-                "Ground conditions only. Not a contamination, dust or exposure product."][0:2])
+        d.text((36, MAPEND+68), "○  schools, shown from their opening year", font=F(15), fill=SCHOOL)
+    cy = MAPEND+96
+    for t in ["30 m pixels: grading and roads visible, individual houses are not.",
+              "Ground conditions only. Not a contamination, dust or exposure product."]:
+        d.text((36, cy), t, font=F(16), fill=(190,196,208)); cy += 24
     foot(d, "Landsat 5/7 - USGS/NASA")
     frames.append(np.asarray(im))
 
@@ -289,16 +325,24 @@ for i, dt in enumerate(seq):
 p = os.path.join(AER, "2022_modern.jpg")
 if os.path.exists(p):
     panel = crop_to_aoi(Image.open(p).convert("RGB"), HIST_BBOX)
-    for cap, showw in [ (["Built out. Ladera Ranch occupies the central and eastern footprint.",
-                          "The western Trabuco corridor is preserved open space."], True),
-                        (["The four public schools, at their mapped locations.",
-                          "Chaparral 2001 - Ladera Ranch ES and MS 2003 - Oso Grande 2005."], False) ]:
+    for mode, cap in [
+        ("water", ["Built out. Ladera Ranch occupies the central and eastern footprint.",
+                   "The western Trabuco corridor is preserved open space."]),
+        ("schools", ["The four public schools, at their mapped locations.",
+                     "Chaparral 2001 - Ladera Ranch ES and MS 2003 - Oso Grande 2005."]),
+        ("landmarks", ["Every named feature this project holds with coordinates inside the frame.",
+                       "The ranch itself is not a point: the whole footprint was O'Neill / Rancho",
+                       "Mission Viejo grazing land. Only one structure was ever mapped on it."])]:
         im, d = base(panel, "Ladera Ranch", "Orange County 1 ft countywide aerial", "2022")
-        if showw: draw_water(d)
-        else: draw_schools(d)
+        if mode == "water": draw_water(d)
+        elif mode == "schools": draw_schools(d)
+        else:
+            draw_landmarks(d)
+            d.text((36, MAPEND+12), "documented features only - nothing inferred",
+                   font=F(15), fill=(150,156,168))
         caption(d, cap)
         foot(d, "OC Survey 2022")
-        frames += hold(im, 3.5)
+        frames += hold(im, 3.5 if mode != "landmarks" else 6)
 
 # ---------------- node zoom: same 100 m across 77 years ----------------
 im = Image.new("RGB", (SIZE, SIZE), NAVY); d = ImageDraw.Draw(im)
@@ -331,7 +375,10 @@ NODEZ = [
 for fn, yr, cap in NODEZ:
     fp = os.path.join(AER, fn)
     if not os.path.exists(fp): continue
-    src = Image.open(fp).convert("RGB")
+    src, nod = load_hist_jpg(fp)
+    if nod > 0.85:
+        print(f"  skipping node zoom {yr}: {nod*100:.0f}% outside frame coverage")
+        continue
     w, h = src.size
     side = min(w, h)
     src = src.crop(((w-side)//2, (h-side)//2, (w+side)//2, (h+side)//2)).resize((MAP, MAP), Image.LANCZOS)
