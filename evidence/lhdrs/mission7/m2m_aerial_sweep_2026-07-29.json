@@ -1,0 +1,410 @@
+{
+ "generated": "2026-07-29",
+ "aoi": {
+  "minlon": -117.674,
+  "minlat": 33.524,
+  "maxlon": -117.609,
+  "maxlat": 33.578
+ },
+ "window": [
+  "1997-01-01",
+  "2006-12-31"
+ ],
+ "datasets": [
+  {
+   "alias": "aerial_combin",
+   "collectionName": "Aerial Photo Single Frames",
+   "status": "none",
+   "sceneCount": 0,
+   "totalHits": 0,
+   "scenes": []
+  },
+  {
+   "alias": "napp",
+   "collectionName": "NAPP",
+   "status": "HITS",
+   "sceneCount": 21,
+   "totalHits": 21,
+   "scenes": [
+    {
+     "entityId": "NP0NAPP010327143",
+     "displayId": "NP0NAPP010327143",
+     "date": "1997-10-16 00:00:00-05",
+     "summary": ""
+    },
+    {
+     "entityId": "NP0NAPP010327144",
+     "displayId": "NP0NAPP010327144",
+     "date": "1997-10-16 00:00:00-05",
+     "summary": ""
+    },
+    {
+     "entityId": "NP0NAPP010327145",
+     "displayId": "NP0NAPP010327145",
+     "date": "1997-10-16 00:00:00-05",
+     "summary": ""
+    },
+    {
+     "entityId": "NP0NAPP010327146",
+     "displayId": "NP0NAPP010327146",
+     "date": "1997-10-16 00:00:00-05",
+     "summary": ""
+    },
+    {
+     "entityId": "NP0NAPP012502142",
+     "displayId": "NP0NAPP012502142",
+     "date": "2002-06-05 00:00:00-05",
+     "summary": ""
+    },
+    {
+     "entityId": "NP0NAPP012502143",
+     "displayId": "NP0NAPP012502143",
+     "date": "2002-06-05 00:00:00-05",
+     "summary": ""
+    },
+    {
+     "entityId": "NP0NAPP012502144",
+     "displayId": "NP0NAPP012502144",
+     "date": "2002-06-05 00:00:00-05",
+     "summary": ""
+    },
+    {
+     "entityId": "NP0NAPP012502145",
+     "displayId": "NP0NAPP012502145",
+     "date": "2002-06-05 00:00:00-05",
+     "summary": ""
+    },
+    {
+     "entityId": "NP0NAPP012502184",
+     "displayId": "NP0NAPP012502184",
+     "date": "2002-06-05 00:00:00-05",
+     "summary": ""
+    },
+    {
+     "entityId": "NP0NAPP012502185",
+     "displayId": "NP0NAPP012502185",
+     "date": "2002-06-05 00:00:00-05",
+     "summary": ""
+    },
+    {
+     "entityId": "NP0NAPP012502186",
+     "displayId": "NP0NAPP012502186",
+     "date": "2002-06-05 00:00:00-05",
+     "summary": ""
+    },
+    {
+     "entityId": "NP0NAPP012502187",
+     "displayId": "NP0NAPP012502187",
+     "date": "2002-06-05 00:00:00-05",
+     "summary": ""
+    },
+    {
+     "entityId": "NP0NAPP012512205",
+     "displayId": "NP0NAPP012512205",
+     "date": "2002-06-15 00:00:00-05",
+     "summary": ""
+    },
+    {
+     "entityId": "NP0NAPP012512206",
+     "displayId": "NP0NAPP012512206",
+     "date": "2002-06-15 00:00:00-05",
+     "summary": ""
+    },
+    {
+     "entityId": "NP0NAPP012512207",
+     "displayId": "NP0NAPP012512207",
+     "date": "2002-06-15 00:00:00-05",
+     "summary": ""
+    },
+    {
+     "entityId": "NP0NAPP012512208",
+     "displayId": "NP0NAPP012512208",
+     "date": "2002-06-15 00:00:00-05",
+     "summary": ""
+    },
+    {
+     "entityId": "NP0NAPP012513001",
+     "displayId": "NP0NAPP012513001",
+     "date": "2002-06-15 00:00:00-05",
+     "summary": ""
+    },
+    {
+     "entityId": "NP0NAPP012513010",
+     "displayId": "NP0NAPP012513010",
+     "date": "2002-06-15 00:00:00-05",
+     "summary": ""
+    },
+    {
+     "entityId": "NP0NAPP012513011",
+     "displayId": "NP0NAPP012513011",
+     "date": "2002-06-15 00:00:00-05",
+     "summary": ""
+    },
+    {
+     "entityId": "NP0NAPP012513012",
+     "displayId": "NP0NAPP012513012",
+     "date": "2002-06-15 00:00:00-05",
+     "summary": ""
+    },
+    {
+     "entityId": "NP0NAPP012513013",
+     "displayId": "NP0NAPP012513013",
+     "date": "2002-06-15 00:00:00-05",
+     "summary": ""
+    }
+   ]
+  },
+  {
+   "alias": "high_res_ortho",
+   "collectionName": "High Resolution Orthoimagery",
+   "status": "HITS",
+   "sceneCount": 35,
+   "totalHits": 35,
+   "scenes": [
+    {
+     "entityId": "1313853_LAXR17C21",
+     "displayId": "1313853_LAXR17C21",
+     "date": "2003-03-01 00:00:00-06",
+     "summary": ""
+    },
+    {
+     "entityId": "1313857_LAXR18C21",
+     "displayId": "1313857_LAXR18C21",
+     "date": "2003-03-01 00:00:00-06",
+     "summary": ""
+    },
+    {
+     "entityId": "1197215_11SMT365095",
+     "displayId": "1197215_11SMT365095",
+     "date": "2004-01-21 00:00:00-06",
+     "summary": ""
+    },
+    {
+     "entityId": "1197216_11SMT365110",
+     "displayId": "1197216_11SMT365110",
+     "date": "2004-01-21 00:00:00-06",
+     "summary": ""
+    },
+    {
+     "entityId": "1197217_11SMT365125",
+     "displayId": "1197217_11SMT365125",
+     "date": "2004-01-21 00:00:00-06",
+     "summary": ""
+    },
+    {
+     "entityId": "1197218_11SMT365140",
+     "displayId": "1197218_11SMT365140",
+     "date": "2004-01-21 00:00:00-06",
+     "summary": ""
+    },
+    {
+     "entityId": "1197219_11SMT365155",
+     "displayId": "1197219_11SMT365155",
+     "date": "2004-01-21 00:00:00-06",
+     "summary": ""
+    },
+    {
+     "entityId": "1197238_11SMT380095",
+     "displayId": "1197238_11SMT380095",
+     "date": "2004-01-21 00:00:00-06",
+     "summary": ""
+    },
+    {
+     "entityId": "1197239_11SMT380110",
+     "displayId": "1197239_11SMT380110",
+     "date": "2004-01-21 00:00:00-06",
+     "summary": ""
+    },
+    {
+     "entityId": "1197240_11SMT380125",
+     "displayId": "1197240_11SMT380125",
+     "date": "2004-01-21 00:00:00-06",
+     "summary": ""
+    },
+    {
+     "entityId": "1197241_11SMT380140",
+     "displayId": "1197241_11SMT380140",
+     "date": "2004-01-21 00:00:00-06",
+     "summary": ""
+    },
+    {
+     "entityId": "1197242_11SMT380155",
+     "displayId": "1197242_11SMT380155",
+     "date": "2004-01-21 00:00:00-06",
+     "summary": ""
+    },
+    {
+     "entityId": "1197261_11SMT395095",
+     "displayId": "1197261_11SMT395095",
+     "date": "2004-01-21 00:00:00-06",
+     "summary": ""
+    },
+    {
+     "entityId": "1197262_11SMT395110",
+     "displayId": "1197262_11SMT395110",
+     "date": "2004-01-21 00:00:00-06",
+     "summary": ""
+    },
+    {
+     "entityId": "1197263_11SMT395125",
+     "displayId": "1197263_11SMT395125",
+     "date": "2004-01-21 00:00:00-06",
+     "summary": ""
+    },
+    {
+     "entityId": "1197264_11SMT395140",
+     "displayId": "1197264_11SMT395140",
+     "date": "2004-01-21 00:00:00-06",
+     "summary": ""
+    },
+    {
+     "entityId": "1197265_11SMT395155",
+     "displayId": "1197265_11SMT395155",
+     "date": "2004-01-21 00:00:00-06",
+     "summary": ""
+    },
+    {
+     "entityId": "1197284_11SMT410095",
+     "displayId": "1197284_11SMT410095",
+     "date": "2004-01-21 00:00:00-06",
+     "summary": ""
+    },
+    {
+     "entityId": "1197285_11SMT410110",
+     "displayId": "1197285_11SMT410110",
+     "date": "2004-01-21 00:00:00-06",
+     "summary": ""
+    },
+    {
+     "entityId": "1197286_11SMT410125",
+     "displayId": "1197286_11SMT410125",
+     "date": "2004-01-21 00:00:00-06",
+     "summary": ""
+    },
+    {
+     "entityId": "1197287_11SMT410140",
+     "displayId": "1197287_11SMT410140",
+     "date": "2004-01-21 00:00:00-06",
+     "summary": ""
+    },
+    {
+     "entityId": "1197288_11SMT410155",
+     "displayId": "1197288_11SMT410155",
+     "date": "2004-01-21 00:00:00-06",
+     "summary": ""
+    },
+    {
+     "entityId": "1197304_11SMT425095",
+     "displayId": "1197304_11SMT425095",
+     "date": "2004-01-21 00:00:00-06",
+     "summary": ""
+    },
+    {
+     "entityId": "1197305_11SMT425110",
+     "displayId": "1197305_11SMT425110",
+     "date": "2004-01-21 00:00:00-06",
+     "summary": ""
+    },
+    {
+     "entityId": "1197306_11SMT425125",
+     "displayId": "1197306_11SMT425125",
+     "date": "2004-01-21 00:00:00-06",
+     "summary": ""
+    },
+    {
+     "entityId": "1197307_11SMT425140",
+     "displayId": "1197307_11SMT425140",
+     "date": "2004-01-21 00:00:00-06",
+     "summary": ""
+    },
+    {
+     "entityId": "1197308_11SMT425155",
+     "displayId": "1197308_11SMT425155",
+     "date": "2004-01-21 00:00:00-06",
+     "summary": ""
+    },
+    {
+     "entityId": "1307106_11SMT4082808881",
+     "displayId": "1307106_11SMT4082808881",
+     "date": "2006-01-06 00:00:00-06",
+     "summary": ""
+    },
+    {
+     "entityId": "1307107_11SMT4082810381",
+     "displayId": "1307107_11SMT4082810381",
+     "date": "2006-01-06 00:00:00-06",
+     "summary": ""
+    },
+    {
+     "entityId": "1307108_11SMT4082811881",
+     "displayId": "1307108_11SMT4082811881",
+     "date": "2006-01-06 00:00:00-06",
+     "summary": ""
+    },
+    {
+     "entityId": "1307109_11SMT4082813381",
+     "displayId": "1307109_11SMT4082813381",
+     "date": "2006-01-06 00:00:00-06",
+     "summary": ""
+    },
+    {
+     "entityId": "1307115_11SMT4232708881",
+     "displayId": "1307115_11SMT4232708881",
+     "date": "2006-01-06 00:00:00-06",
+     "summary": ""
+    },
+    {
+     "entityId": "1307116_11SMT4232710381",
+     "displayId": "1307116_11SMT4232710381",
+     "date": "2006-01-06 00:00:00-06",
+     "summary": ""
+    },
+    {
+     "entityId": "1307117_11SMT4232711881",
+     "displayId": "1307117_11SMT4232711881",
+     "date": "2006-01-06 00:00:00-06",
+     "summary": ""
+    },
+    {
+     "entityId": "1307118_11SMT4232713381",
+     "displayId": "1307118_11SMT4232713381",
+     "date": "2006-01-06 00:00:00-06",
+     "summary": ""
+    }
+   ]
+  },
+  {
+   "alias": "naip",
+   "collectionName": "NAIP",
+   "status": "HITS",
+   "sceneCount": 4,
+   "totalHits": 4,
+   "scenes": [
+    {
+     "entityId": "1241658",
+     "displayId": "N_3311728_NW_11_1_20050607",
+     "date": "2005-06-07 00:00:00-05",
+     "summary": ""
+    },
+    {
+     "entityId": "1241664",
+     "displayId": "N_3311727_NE_11_1_20050607",
+     "date": "2005-06-07 00:00:00-05",
+     "summary": ""
+    },
+    {
+     "entityId": "1241705",
+     "displayId": "N_3311727_SE_11_1_20050607",
+     "date": "2005-06-07 00:00:00-05",
+     "summary": ""
+    },
+    {
+     "entityId": "1241712",
+     "displayId": "N_3311728_SW_11_1_20050607",
+     "date": "2005-06-07 00:00:00-05",
+     "summary": ""
+    }
+   ]
+  }
+ ]
+}
