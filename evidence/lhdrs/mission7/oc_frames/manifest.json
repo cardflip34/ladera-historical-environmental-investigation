@@ -1,0 +1,96 @@
+{
+ "generated": "2026-07-29",
+ "bbox": [
+  -117.68,
+  33.52,
+  -117.616,
+  33.575
+ ],
+ "frames": [
+  {
+   "tag": "1990",
+   "objectId": 319,
+   "name": "Orange County 1990",
+   "path": "evidence/lhdrs/mission7/oc_frames/oc_1990_oid319.jpg",
+   "bytes": 1496045,
+   "sha256": "3c3609b8aa33078c5cb0e5b3740e9c30506c5b31719b20bbb013b8a0edbcafa1",
+   "nodataFraction": 0.0,
+   "bbox": [
+    -117.68,
+    33.52,
+    -117.616,
+    33.575
+   ],
+   "provenanceGrade": "A+",
+   "source": "OC Survey / OCGIS Historic_Imagery_v2 ImageServer, LockRaster"
+  },
+  {
+   "tag": "1980",
+   "objectId": 320,
+   "name": "Orange County 1980",
+   "path": "evidence/lhdrs/mission7/oc_frames/oc_1980_oid320.jpg",
+   "bytes": 1844550,
+   "sha256": "51bf75348326fc8b621b9d96b3b683c911d6ed8dafbf448c81209e1327c03ce1",
+   "nodataFraction": 0.026,
+   "bbox": [
+    -117.68,
+    33.52,
+    -117.616,
+    33.575
+   ],
+   "provenanceGrade": "A+",
+   "source": "OC Survey / OCGIS Historic_Imagery_v2 ImageServer, LockRaster"
+  },
+  {
+   "tag": "1969",
+   "objectId": 315,
+   "name": "Orange County 1970",
+   "path": "evidence/lhdrs/mission7/oc_frames/oc_1969_oid315.jpg",
+   "bytes": 1260884,
+   "sha256": "47e9b1376db628dc8ac18d0a06a32960edaecd465166161e081bc4a0de5d37a8",
+   "nodataFraction": 0.006,
+   "bbox": [
+    -117.68,
+    33.52,
+    -117.616,
+    33.575
+   ],
+   "provenanceGrade": "A+",
+   "source": "OC Survey / OCGIS Historic_Imagery_v2 ImageServer, LockRaster"
+  },
+  {
+   "tag": "1960",
+   "objectId": 343,
+   "name": "Orange County 1960",
+   "path": "evidence/lhdrs/mission7/oc_frames/oc_1960_oid343.jpg",
+   "bytes": 1698381,
+   "sha256": "1ee02bb67f220466189f6a8610e31482dfcef577a21a17a4f894f3c6cd5338d8",
+   "nodataFraction": 0.0003,
+   "bbox": [
+    -117.68,
+    33.52,
+    -117.616,
+    33.575
+   ],
+   "provenanceGrade": "A+",
+   "source": "OC Survey / OCGIS Historic_Imagery_v2 ImageServer, LockRaster"
+  },
+  {
+   "tag": "1953",
+   "objectId": 357,
+   "name": "Orange County 1953",
+   "path": "evidence/lhdrs/mission7/oc_frames/oc_1953_oid357.jpg",
+   "bytes": 1670523,
+   "sha256": "049ae5a179017c280159fcea87fc56af5b47cc89d74d17bce8c69dbfd9f41a92",
+   "nodataFraction": 0.0,
+   "bbox": [
+    -117.68,
+    33.52,
+    -117.616,
+    33.575
+   ],
+   "provenanceGrade": "A+",
+   "source": "OC Survey / OCGIS Historic_Imagery_v2 ImageServer, LockRaster"
+  }
+ ]
+}

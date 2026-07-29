@@ -250,25 +250,35 @@ for fn, yr, srcdesc, cap in HIST:
     foot(d, "OC Survey / OCGIS Historic_Imagery_v2, server-rectified")
     frames += hold(im, 3)
 
-# ---------------- 1995 / 1998 georeferenced aerials ----------------
-for tif, yr, cap in [
-    ("oc_historical_aerial_ladera_1995.tif", "1995",
-     ["Still open ground across most of the footprint.",
-      "Antonio Parkway corridor under construction along the eastern edge."]),
-    ("oc_historical_aerial_ladera_1998.tif", "1998",
-     ["Grading has begun. Entitlement approved 1997; mass grading follows.",
-      "The community is about to be built."])]:
-    p = os.path.join(REPO, "evidence/lhdrs/mission6/imagery", tif)
-    if not os.path.exists(p): continue
-    src, nod = load_geotiff(p)
-    panel = crop_to_aoi(src, TIF_BBOX)
-    im, d = base(panel, "Ladera Ranch", "Orange County aerial, georeferenced", yr)
-    if nod > 0.02:
-        d.text((36, MAPEND+56), "■  grey = outside this frame's coverage", font=F(15), fill=NODATA)
+# ---------------- complete-coverage OC frames, 1953-1990 ----------------
+# These replace the Mission 6 1995/1998 rasters, which are narrow flight strips ~72% transparent
+# over the AOI. Fetched by LockRaster on a single OBJECTID, same method as the 1929/1937 exports.
+OCF = os.path.join(REPO, "evidence/lhdrs/mission7/oc_frames")
+OCSEQ = [
+ ("oc_1953_oid357.jpg", "1953", "Orange County countywide series",
+  ["Still open rangeland. Grazing, unimproved tracks, the creek corridor intact.",
+   "Thirty-six years after compulsory dipping ended."]),
+ ("oc_1960_oid343.jpg", "1960", "Orange County countywide series",
+  ["Unchanged inside the footprint. Development is arriving elsewhere in the county."]),
+ ("oc_1969_oid315.jpg", "1969", "Orange County countywide series",
+  ["Mission Viejo is building out to the west. The footprint itself is still ranch."]),
+ ("oc_1980_oid320.jpg", "1980", "Orange County countywide series",
+  ["Suburbia now reaches the western boundary and stops at the creek."]),
+ ("oc_1990_oid319.jpg", "1990", "Orange County countywide series",
+  ["Seven years before entitlement. The footprint is still undeveloped grazing land,",
+   "with built Mission Viejo pressed against its western edge."]),
+]
+for fn, yr, srcdesc, cap in OCSEQ:
+    fp = os.path.join(OCF, fn)
+    if not os.path.exists(fp):
+        continue
+    src, nod = load_hist_jpg(fp)
+    panel = crop_to_aoi(src, HIST_BBOX)
+    im, d = base(panel, "Ladera Ranch", srcdesc, yr)
     draw_water(d)
     draw_node(d)
     caption(d, cap)
-    foot(d, "OC Survey historical imagery")
+    foot(d, "OC Survey / OCGIS Historic_Imagery_v2, LockRaster export")
     frames += hold(im, 3)
 
 # ---------------- Landsat monthly ----------------
