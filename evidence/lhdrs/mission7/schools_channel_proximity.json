@@ -1,0 +1,34 @@
+[
+ {
+  "school": "Oso Grande Elementary School",
+  "metresToChannel": 58.4,
+  "nearestReach": "ACJACHEMA STORM DRAIN",
+  "provenanceGrade": "A2",
+  "statementClass": "documented",
+  "caveat": "campus point, not property line; a geometric distance only, implies nothing about exposure"
+ },
+ {
+  "school": "Chaparral Elementary School",
+  "metresToChannel": 64.4,
+  "nearestReach": "ACJACHEMA STORM DRAIN",
+  "provenanceGrade": "A2",
+  "statementClass": "documented",
+  "caveat": "campus point, not property line; a geometric distance only, implies nothing about exposure"
+ },
+ {
+  "school": "Ladera Ranch Elementary School",
+  "metresToChannel": 87.4,
+  "nearestReach": "ACJACHEMA STORM DRAIN",
+  "provenanceGrade": "A2",
+  "statementClass": "documented",
+  "caveat": "campus point, not property line; a geometric distance only, implies nothing about exposure"
+ },
+ {
+  "school": "Ladera Ranch Middle School",
+  "metresToChannel": 87.4,
+  "nearestReach": "ACJACHEMA STORM DRAIN",
+  "provenanceGrade": "A2",
+  "statementClass": "documented",
+  "caveat": "campus point, not property line; a geometric distance only, implies nothing about exposure"
+ }
+]

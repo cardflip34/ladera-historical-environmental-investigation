@@ -446,9 +446,14 @@ for i, dt in enumerate(seq):
         d.line([x, by-2, x, by+2], fill=(120,132,152), width=1)
     px = bx0+(bx1-bx0)*(dec(dt)-T0)/(T1-T0)
     d.ellipse([px-7, by-7, px+7, by+7], fill=ACC)
+    # The drainage, carried across the whole construction record. It is the one feature that was
+    # running water through every month of grading shown in this sequence.
+    draw_horno(d, note=False, w=4)
+    d.text((36, MAPEND+46), "—  Horno Creek, continuing north as the Acjachema Storm Drain",
+           font=F(15), fill=STREAM)
     # 1968 water bodies carried forward so you can see what was built over
     nw = draw_water(d, note=False)
-    d.text((36, MAPEND+46), f"○  {nw} water bodies mapped in 1968, shown where they used to be",
+    d.text((36, MAPEND+68), f"○  {nw} water bodies mapped in 1968, shown where they used to be",
            font=F(15), fill=CYAN)
     # schools appear once they exist (Chaparral 2001, LRES/LRMS 2003, Oso Grande 2005)
     yr = int(dt[:4])
@@ -457,8 +462,8 @@ for i, dt in enumerate(seq):
                                ("Oso Grande" in s["label"] and yr >= 2005))]
     if live:
         old = SCH[:]; SCH[:] = live; draw_schools(d); SCH[:] = old
-        d.text((36, MAPEND+68), "○  schools, shown from their opening year", font=F(15), fill=SCHOOL)
-    cy = MAPEND+96
+        d.text((36, MAPEND+90), "○  schools, shown from their opening year", font=F(15), fill=SCHOOL)
+    cy = MAPEND+118
     for t in ["30 m pixels: grading and roads visible, individual houses are not.",
               "Ground conditions only. Not a contamination, dust or exposure product."]:
         d.text((36, cy), t, font=F(16), fill=(190,196,208)); cy += 24
