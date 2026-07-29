@@ -300,6 +300,71 @@ if os.path.exists(p):
         foot(d, "OC Survey 2022")
         frames += hold(im, 3.5)
 
+# ---------------- node zoom: same 100 m across 77 years ----------------
+im = Image.new("RGB", (SIZE, SIZE), NAVY); d = ImageDraw.Draw(im)
+d.text((SIZE//2, 330), "One point on the ground", font=F(40, True), fill=WHITE, anchor="ma")
+for i, t in enumerate([
+    "33.55505, -117.65492  -  Trabuco Creek corridor",
+    "",
+    "A single structure drawn by a USGS surveyor on the 1948 sheet.",
+    "The only documented point of human construction in the footprint.",
+    "",
+    "What it was is unrecorded. It is NOT identified as a dip vat."]):
+    d.text((SIZE//2, 420+i*34), t, font=F(20 if i in (0,) else 18),
+           fill=ACC if i == 0 else MUT, anchor="ma")
+frames += hold(im, 5)
+
+NODEZ = [
+ ("z1_ranch_1929.jpg", "1929",
+  ["Creek corridor with unimproved dirt tracks converging through it.",
+   "Twelve years after compulsory dipping ended."]),
+ ("z1_ranch_1937.jpg", "1937-38",
+  ["1.15 ft/px. Oak and sycamore woodland, braided channel, wheel ruts,",
+   "fence lines on the grassland east. No pen, chute or vat resolvable."]),
+ ("z1_ranch_1946b.jpg", "1946-47",
+  ["Unchanged. Working ranch corridor, still grazed."]),
+ ("z1_ranch_2022_modern.jpg", "2022",
+  ["Today the corridor is PRESERVED OPEN SPACE, not housing.",
+   "Golf course east, commercial to the north-west.",
+   "The ground here was never built over - so it can still be tested."]),
+]
+for fn, yr, cap in NODEZ:
+    fp = os.path.join(AER, fn)
+    if not os.path.exists(fp): continue
+    src = Image.open(fp).convert("RGB")
+    w, h = src.size
+    side = min(w, h)
+    src = src.crop(((w-side)//2, (h-side)//2, (w+side)//2, (h+side)//2)).resize((MAP, MAP), Image.LANCZOS)
+    im, d = base(src, "Trabuco Creek node", "100 m scale  -  33.55505, -117.65492", yr)
+    px, py = (SIZE-MAP)//2+MAP//2, TOPBAR+MAP//2
+    d.ellipse([px-26, py-26, px+26, py+26], outline=NODE, width=3)
+    for dx, dy in ((-38,0),(38,0),(0,-38),(0,38)):
+        d.line([px+dx*0.72, py+dy*0.72, px+dx, py+dy], fill=NODE, width=3)
+    d.text((36, MAPEND+12), "◎  1948 ranch structure - unidentified, explicitly NOT a dip vat",
+           font=F(15), fill=NODE)
+    caption(d, cap)
+    foot(d, "OC Survey / OCGIS Historic_Imagery_v2")
+    frames += hold(im, 4)
+
+# why it matters card
+im = Image.new("RGB", (SIZE, SIZE), NAVY); d = ImageDraw.Draw(im)
+d.text((SIZE//2, 250), "Why this point, and not another", font=F(34, True), fill=WHITE, anchor="ma")
+for i, t in enumerate([
+    "It is the only place in the footprint with all three at once:",
+    "",
+    "documented construction  -  water  -  where cattle gathered",
+    "",
+    "Ranch working facilities were built where stock already came to drink.",
+    "That does not make it a vat. It makes it the least arbitrary place to look.",
+    "",
+    "It sits in preserved open space, so ground-penetrating radar and soil",
+    "sampling remain possible without disturbing a single home.",
+    "",
+    "No vat has been found. The question is open, and it is testable."]):
+    d.text((SIZE//2, 330+i*33), t, font=F(21 if i == 2 else 18, i == 2),
+           fill=ACC if i == 2 else (MUT if i != 10 else (200,206,216)), anchor="ma")
+frames += hold(im, 7)
+
 # ---------------- end card ----------------
 im = Image.new("RGB", (SIZE, SIZE), NAVY); d = ImageDraw.Draw(im)
 d.text((SIZE//2, 330), "Ground disturbance peaked", font=F(34), fill=MUT, anchor="ma")
