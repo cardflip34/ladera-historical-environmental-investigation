@@ -181,6 +181,38 @@ def draw_landmarks(d):
         d.text((bx+8, ty+11), m["sub"], font=F(12), fill=(170,176,188))
 
 
+
+# Horno Creek: OC lidar-derived stream centreline (LH-SRC-OC-STREAMS-2016), reach Horno_3,
+# 498 vertices, all inside the AOI, 3.36 km. statementClass documented_approximate.
+# The source itself cautions: "Current or post-study drainage context; geometry does not establish
+# historical flow". So it is drawn as the CURRENT mapped centreline, labelled as such.
+STREAM = (86, 158, 232)
+def _horno():
+    d = json.load(open(os.path.join(REPO, "data/development/drainage_features.geojson")))
+    segs = []
+    for f in d["features"]:
+        if (f.get("properties") or {}).get("GROUP_") != "Horno":
+            continue
+        g = f["geometry"]
+        parts = [g["coordinates"]] if g["type"] == "LineString" else g["coordinates"]
+        segs.extend(parts)
+    return segs
+HORNO = _horno()
+
+
+def draw_horno(d, note=True, w=4):
+    for seg in HORNO:
+        pts = []
+        for lon, lat, *_ in seg:
+            x, y = xy(lon, lat)
+            pts.append(((SIZE-MAP)//2+x, TOPBAR+y))
+        if len(pts) > 1:
+            d.line(pts, fill=STREAM, width=w, joint="curve")
+    if note:
+        d.text((36, MAPEND+34), "—  Horno Creek, current mapped stream centreline",
+               font=F(15), fill=STREAM)
+
+
 def draw_node(d, note=True):
     x, y = xy(*NODE_PT)
     if not (0 <= x < MAP and 0 <= y < MAP): return
@@ -191,7 +223,7 @@ def draw_node(d, note=True):
     d.line([px, py-24, px, py-18], fill=NODE, width=3)
     d.line([px, py+18, px, py+24], fill=NODE, width=3)
     if note:
-        d.text((36, MAPEND+34), "◎  1948 ranch-activity node - explicitly NOT identified as a dip vat",
+        d.text((36, MAPEND+56), "◎  1948 ranch-activity node - explicitly NOT identified as a dip vat",
                font=F(15), fill=NODE)
 
 
@@ -243,6 +275,7 @@ for fn, yr, srcdesc, cap in HIST:
     panel = crop_to_aoi(src, HIST_BBOX)
     im, d = base(panel, "Ladera Ranch", srcdesc, yr)
     draw_water(d)
+    draw_horno(d)
     draw_node(d)
     if nod > 0.02:
         d.text((36, MAPEND+56), "■  grey = outside this frame's coverage", font=F(15), fill=NODATA)
@@ -276,6 +309,7 @@ for fn, yr, srcdesc, cap in OCSEQ:
     panel = crop_to_aoi(src, HIST_BBOX)
     im, d = base(panel, "Ladera Ranch", srcdesc, yr)
     draw_water(d)
+    draw_horno(d)
     draw_node(d)
     caption(d, cap)
     foot(d, "OC Survey / OCGIS Historic_Imagery_v2, LockRaster export")
@@ -344,6 +378,7 @@ if os.path.exists(p):
                        "The ranch itself is not a point: the whole footprint was O'Neill / Rancho",
                        "Mission Viejo grazing land. Only one structure was ever mapped on it."])]:
         im, d = base(panel, "Ladera Ranch", "Orange County 1 ft countywide aerial", "2022")
+        draw_horno(d, note=(mode=="water"))
         if mode == "water": draw_water(d)
         elif mode == "schools": draw_schools(d)
         else:
@@ -353,6 +388,49 @@ if os.path.exists(p):
         caption(d, cap)
         foot(d, "OC Survey 2022")
         frames += hold(im, 3.5 if mode != "landmarks" else 6)
+
+# ---------------- 0.3 m orthoimagery, January 2004 ----------------
+HRO = os.path.join(OUT, "hro_2004_aoi.png")
+if os.path.exists(HRO):
+    im = Image.new("RGB", (SIZE, SIZE), NAVY); d = ImageDraw.Draw(im)
+    d.text((SIZE//2, 330), "January 2004", font=F(58, True), fill=WHITE, anchor="ma")
+    d.text((SIZE//2, 410), "0.3 metre orthoimagery", font=F(28), fill=ACC, anchor="ma")
+    for i, t in enumerate([
+        "One hundred times finer than the satellite frames.",
+        "Inside the window this project had recorded as having no imagery at all.",
+        "Held tiles cover 36% of the frame; the rest is left blank, not filled in."]):
+        d.text((SIZE//2, 480+i*32), t, font=F(18), fill=MUT, anchor="ma")
+    frames += hold(im, 4)
+
+    src = Image.open(HRO).convert("RGB")
+    a = np.asarray(src).copy()
+    a[(a.sum(axis=2) == 0)] = NODATA           # uncovered -> neutral, never ground
+    panel = Image.fromarray(a).resize((MAP, MAP), Image.LANCZOS)
+
+    for mode, cap in [
+        ("plain", ["USGS High Resolution Orthoimagery, 21 January 2004.",
+                   "North built out. Centre and south still raw graded pad and road.",
+                   "Grey = outside the tiles held, not empty ground."]),
+        ("creek", ["Horno Creek runs the length of the community, through the",
+                   "construction. Blue line is the current mapped centreline.",
+                   "No water sampling has ever been done on it."]),
+        ("all",   ["Schools, the 1948 ranch node, and the creek together,",
+                   "at 0.3 m. Individual houses, pads and equipment are resolvable."])]:
+        im, d = base(panel, "Ladera Ranch", "USGS orthoimagery, 0.3 m native", "Jan 2004")
+        if mode == "plain":
+            d.text((36, MAPEND+12), "■  grey = outside the tiles held", font=F(15), fill=NODATA)
+        elif mode == "creek":
+            draw_horno(d, w=5)
+        else:
+            draw_horno(d, note=False, w=5)
+            draw_water(d, note=False)
+            draw_node(d, note=False)
+            draw_schools(d)
+            d.text((36, MAPEND+12), "○ schools   ◎ 1948 ranch node   — Horno Creek   ○ 1968 water",
+                   font=F(15), fill=MUT)
+        caption(d, cap)
+        foot(d, "USGS EarthExplorer - High Resolution Orthoimagery 2004-01-21")
+        frames += hold(im, 6)
 
 # ---------------- node zoom: same 100 m across 77 years ----------------
 im = Image.new("RGB", (SIZE, SIZE), NAVY); d = ImageDraw.Draw(im)
