@@ -248,7 +248,7 @@ for fn, yr, srcdesc, cap in HIST:
         d.text((36, MAPEND+56), "■  grey = outside this frame's coverage", font=F(15), fill=NODATA)
     caption(d, cap)
     foot(d, "OC Survey / OCGIS Historic_Imagery_v2, server-rectified")
-    frames += hold(im, 3)
+    frames += hold(im, 5)
 
 # ---------------- complete-coverage OC frames, 1953-1990 ----------------
 # These replace the Mission 6 1995/1998 rasters, which are narrow flight strips ~72% transparent
@@ -279,7 +279,7 @@ for fn, yr, srcdesc, cap in OCSEQ:
     draw_node(d)
     caption(d, cap)
     foot(d, "OC Survey / OCGIS Historic_Imagery_v2, LockRaster export")
-    frames += hold(im, 3)
+    frames += hold(im, 5)
 
 # ---------------- Landsat monthly ----------------
 im = Image.new("RGB", (SIZE, SIZE), NAVY); d = ImageDraw.Draw(im)
