@@ -1,0 +1,133 @@
+{
+ "generated": "2026-07-29",
+ "station": "John Wayne Airport (24.7 km)",
+ "provenanceGrade": "A+",
+ "statementClass": "documented_approximate",
+ "sectorConvention": "direction wind came FROM",
+ "constructionPeriodMean": {
+  "N": 6.97,
+  "E": 13.84,
+  "S": 49.95,
+  "W": 29.24,
+  "speed": 2.34,
+  "calm": 25.05
+ },
+ "yearly": {
+  "1997": {
+   "N": 5.89,
+   "E": 11.98,
+   "S": 58.23,
+   "W": 23.89,
+   "speed": 3.64,
+   "calm": 13.49,
+   "months": 12
+  },
+  "1998": {
+   "N": 3.81,
+   "E": 10.07,
+   "S": 57.86,
+   "W": 28.25,
+   "speed": 3.71,
+   "calm": 11.53,
+   "months": 12
+  },
+  "1999": {
+   "N": 6.01,
+   "E": 12.8,
+   "S": 49.85,
+   "W": 31.35,
+   "speed": 2.4,
+   "calm": 26.1,
+   "months": 12
+  },
+  "2000": {
+   "N": 7.46,
+   "E": 13.46,
+   "S": 48.31,
+   "W": 30.78,
+   "speed": 2.26,
+   "calm": 29.06,
+   "months": 12
+  },
+  "2001": {
+   "N": 6.45,
+   "E": 14.76,
+   "S": 49.65,
+   "W": 29.14,
+   "speed": 2.75,
+   "calm": 9.8,
+   "months": 12
+  },
+  "2002": {
+   "N": 7.0,
+   "E": 12.68,
+   "S": 50.16,
+   "W": 30.16,
+   "speed": 2.4,
+   "calm": 22.2,
+   "months": 12
+  },
+  "2003": {
+   "N": 7.31,
+   "E": 13.33,
+   "S": 50.89,
+   "W": 28.46,
+   "speed": 2.24,
+   "calm": 26.91,
+   "months": 12
+  },
+  "2004": {
+   "N": 7.4,
+   "E": 16.58,
+   "S": 51.48,
+   "W": 24.54,
+   "speed": 2.33,
+   "calm": 26.46,
+   "months": 12
+  },
+  "2005": {
+   "N": 6.34,
+   "E": 14.59,
+   "S": 50.2,
+   "W": 28.88,
+   "speed": 2.11,
+   "calm": 31.94,
+   "months": 12
+  },
+  "2006": {
+   "N": 7.77,
+   "E": 12.52,
+   "S": 49.1,
+   "W": 30.62,
+   "speed": 2.24,
+   "calm": 27.96,
+   "months": 12
+  }
+ },
+ "monthlySouthPct": {
+  "1": 36.7,
+  "2": 39.9,
+  "3": 45.5,
+  "4": 50.3,
+  "5": 63.9,
+  "6": 67.4,
+  "7": 63.1,
+  "8": 61.3,
+  "9": 55.9,
+  "10": 47.9,
+  "11": 35.7,
+  "12": 31.9
+ },
+ "limitations": [
+  "NOT DOWNSCALED. The nearest station with construction-period data is John Wayne Airport, 24.7 km away.",
+  "These are airport observations, not measurements at Ladera Ranch.",
+  "STATIONS DISAGREE. In 1997, when both were recording, El Toro (15.6 km) logged 31% easterly hours",
+  "while John Wayne logged 12%. Nearly threefold. Terrain steers wind locally, so no single station",
+  "can be assumed to represent this valley.",
+  "EL TORO CLOSED. The closer station stops in 1997, so the entire construction period rests on the",
+  "more distant one.",
+  "FOUR SECTORS ONLY. The archived summary resolves quadrants, not a full compass rose.",
+  "NOT A TRANSPORT MODEL. This shows where wind came from. It does not model dust, does not estimate",
+  "movement of material between locations, and implies nothing about exposure or health."
+ ]
+}

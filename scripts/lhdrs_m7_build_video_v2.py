@@ -182,35 +182,135 @@ def draw_landmarks(d):
 
 
 
-# Horno Creek: OC lidar-derived stream centreline (LH-SRC-OC-STREAMS-2016), reach Horno_3,
-# 498 vertices, all inside the AOI, 3.36 km. statementClass documented_approximate.
-# The source itself cautions: "Current or post-study drainage context; geometry does not establish
-# historical flow". So it is drawn as the CURRENT mapped centreline, labelled as such.
+
+# ---- Full mapped drainage network, OC Flood_Channels (MapServer), fetched 2026-07-29.
+# The single Horno_3 lidar reach previously plotted was only 0.9 km in the far south. The county
+# as-built channel layer carries the whole system. Horno Creek runs the southern 60% of the AOI and
+# the SAME drainage line continues north as the Acjachema Storm Drain - which is why it reads as
+# "all the way through" on the ground while appearing under two names in the record.
 STREAM = (86, 158, 232)
-def _horno():
-    d = json.load(open(os.path.join(REPO, "data/development/drainage_features.geojson")))
-    segs = []
+DRAIN  = (120, 190, 235)
+PARKC  = (110, 200, 140)
+
+def _chan():
+    p = os.path.join(OUT, "oc_flood_channels_aoi.geojson")
+    if not os.path.exists(p): return {}
+    d = json.load(open(p))
+    out = {}
     for f in d["features"]:
-        if (f.get("properties") or {}).get("GROUP_") != "Horno":
-            continue
-        g = f["geometry"]
+        nm = (f.get("properties") or {}).get("FACILITYNAME")
+        if not nm or not isinstance(nm, str) or len(nm) < 5: continue
+        g = f.get("geometry")
+        if not g: continue
         parts = [g["coordinates"]] if g["type"] == "LineString" else g["coordinates"]
-        segs.extend(parts)
-    return segs
-HORNO = _horno()
+        out.setdefault(nm.strip().upper(), []).extend(parts)
+    return out
+CHAN = _chan()
+
+def _park():
+    """County Park_Boundaries carries only O'Neill Regional Park here. Ladera Ranch's own parks are
+    HOA / LARMAC facilities and are absent from the county layer, so they come from OpenStreetMap
+    (B2, community-mapped) and are graded separately from the A+ county channel geometry."""
+    out = []
+    p = os.path.join(OUT, "oc_parks_aoi.geojson")
+    if os.path.exists(p):
+        for f in json.load(open(p))["features"]:
+            g = f.get("geometry")
+            if not g: continue
+            nm = (f.get("properties") or {}).get("FACILITYNAME") or "Park"
+            rings = [g["coordinates"][0]] if g["type"] == "Polygon" else [q[0] for q in g["coordinates"]]
+            out.append((nm, rings, "county", 9e9))
+    prox = {}
+    pp = os.path.join(OUT, "parks_channel_proximity.json")
+    if os.path.exists(pp):
+        prox = {r["park"]: r["metresToChannel"] for r in json.load(open(pp))}
+    p = os.path.join(OUT, "osm_parks_aoi.geojson")
+    if os.path.exists(p):
+        for f in json.load(open(p))["features"]:
+            g = f.get("geometry"); nm = f["properties"].get("name") or "(unnamed)"
+            if not g: continue
+            out.append((nm, [g["coordinates"][0]], "osm", prox.get(nm, 9e9)))
+    return out
+PARKS = _park()
+ONCHAN = 120.0            # metres. Parks at or inside this distance get named on the frame.
+
+
+def _clip(x0, y0, x1, y1, L, T, R, B):
+    """Liang-Barsky. Vectors must never render outside the map rectangle - previously the
+    channel lines drew across the title bar and the caption."""
+    dx, dy = x1-x0, y1-y0
+    t0, t1 = 0.0, 1.0
+    for pp, qq in ((-dx, x0-L), (dx, R-x0), (-dy, y0-T), (dy, B-y0)):
+        if pp == 0:
+            if qq < 0: return None
+            continue
+        r = qq/pp
+        if pp < 0:
+            if r > t1: return None
+            t0 = max(t0, r)
+        else:
+            if r < t0: return None
+            t1 = min(t1, r)
+    return (x0+t0*dx, y0+t0*dy, x0+t1*dx, y0+t1*dy)
+
+
+def _poly(d, seg, col, w):
+    ox = (SIZE-MAP)//2
+    L, T, R, B = ox, TOPBAR, ox+MAP, MAPEND
+    pts = [(ox+xy(c[0], c[1])[0], TOPBAR+xy(c[0], c[1])[1]) for c in seg]
+    for a, b in zip(pts, pts[1:]):
+        c = _clip(a[0], a[1], b[0], b[1], L, T, R, B)
+        if c:
+            d.line([(c[0], c[1]), (c[2], c[3])], fill=col, width=w)
 
 
 def draw_horno(d, note=True, w=4):
-    for seg in HORNO:
-        pts = []
-        for lon, lat, *_ in seg:
-            x, y = xy(lon, lat)
-            pts.append(((SIZE-MAP)//2+x, TOPBAR+y))
-        if len(pts) > 1:
-            d.line(pts, fill=STREAM, width=w, joint="curve")
+    """Horno Creek plus the drainage line that continues it north."""
+    for seg in CHAN.get("HORNO CREEK CHANNEL", []):
+        _poly(d, seg, STREAM, w)
+    for seg in CHAN.get("ACJACHEMA STORM DRAIN", []):
+        _poly(d, seg, DRAIN, max(2, w-1))
     if note:
-        d.text((36, MAPEND+34), "—  Horno Creek, current mapped stream centreline",
+        d.text((36, MAPEND+34), "—  Horno Creek (south)   —  Acjachema Storm Drain (through the built core)",
                font=F(15), fill=STREAM)
+
+
+def draw_all_water(d, note=True, w=3):
+    for nm, col in (("TRABUCO CREEK CHANNEL", (70,140,210)), ("CANADA CHIQUITA", (70,140,210)),
+                    ("OSO CREEK CHANNEL", (70,140,210))):
+        for seg in CHAN.get(nm, []):
+            _poly(d, seg, col, max(2, w-1))
+    draw_horno(d, note=False, w=w+1)
+    if note:
+        d.text((36, MAPEND+34), "—  Horno Creek    —  Acjachema Storm Drain    —  Trabuco / Canada Chiquita / Oso",
+               font=F(14), fill=STREAM)
+
+
+def draw_parks(d, note=True):
+    ox = (SIZE-MAP)//2
+    lab = []
+    for nm, rings, src, dist in PARKS:
+        near = dist <= ONCHAN
+        col = PARKC if near else (74, 118, 88)
+        for r in rings:
+            if len(r) > 2:
+                _poly(d, list(r) + [r[0]], col, 3 if near else 1)
+        if near and nm != "(unnamed)":
+            cx = sum(q[0] for q in rings[0]) / len(rings[0])
+            cy = sum(q[1] for q in rings[0]) / len(rings[0])
+            x, y = xy(cx, cy)
+            lab.append((ox+x, TOPBAR+y, nm, dist))
+    for x, y, nm, dist in lab:
+        if not (ox+4 < x < ox+MAP-4 and TOPBAR+4 < y < MAPEND-4): continue
+        t = f"{nm}  {dist:.0f} m"
+        d.ellipse([x-4, y-4, x+4, y+4], fill=PARKC, outline=(255, 255, 255))
+        bb = d.textbbox((0, 0), t, font=F(13, True))
+        tx = min(x+9, ox+MAP-(bb[2]-bb[0])-6)
+        d.rectangle([tx-3, y-9, tx+(bb[2]-bb[0])+3, y+9], fill=(12, 26, 20))
+        d.text((tx, y-8), t, font=F(13, True), fill=PARKC)
+    if note:
+        d.text((36, MAPEND+56), "▢  parks    ●  park on or beside the drainage, with distance to it",
+               font=F(15), fill=PARKC)
 
 
 def draw_node(d, note=True):
@@ -411,18 +511,20 @@ if os.path.exists(HRO):
         ("plain", ["USGS High Resolution Orthoimagery, 21 January 2004.",
                    "North built out. Centre and south still raw graded pad and road.",
                    "Grey = outside the tiles held, not empty ground."]),
-        ("creek", ["Horno Creek runs the length of the community, through the",
-                   "construction. Blue line is the current mapped centreline.",
-                   "No water sampling has ever been done on it."]),
+        ("creek", ["One continuous drainage crosses the community: Horno Creek in the south,",
+                   "recorded by the County as the Acjachema Storm Drain through the built core.",
+                   "Four parks sit within 25 m of it. It has never been sampled."]),
         ("all",   ["Schools, the 1948 ranch node, and the creek together,",
                    "at 0.3 m. Individual houses, pads and equipment are resolvable."])]:
         im, d = base(panel, "Ladera Ranch", "USGS orthoimagery, 0.3 m native", "Jan 2004")
         if mode == "plain":
             d.text((36, MAPEND+12), "■  grey = outside the tiles held", font=F(15), fill=NODATA)
         elif mode == "creek":
-            draw_horno(d, w=5)
+            draw_all_water(d, w=5)
+            draw_parks(d)
         else:
-            draw_horno(d, note=False, w=5)
+            draw_all_water(d, note=False, w=4)
+            draw_parks(d, note=False)
             draw_water(d, note=False)
             draw_node(d, note=False)
             draw_schools(d)

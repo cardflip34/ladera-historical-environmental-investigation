@@ -1,0 +1,158 @@
+[
+ {
+  "park": "Chaparral Park",
+  "leisure": "park",
+  "metresToChannel": 8.0,
+  "nearestReach": "ACJACHEMA STORM DRAIN"
+ },
+ {
+  "park": "Oso Grande Park",
+  "leisure": "park",
+  "metresToChannel": 8.2,
+  "nearestReach": "ACJACHEMA STORM DRAIN"
+ },
+ {
+  "park": "Frog Park",
+  "leisure": "park",
+  "metresToChannel": 18.6,
+  "nearestReach": "ACJACHEMA STORM DRAIN"
+ },
+ {
+  "park": "Stoneridge Park",
+  "leisure": "park",
+  "metresToChannel": 23.0,
+  "nearestReach": "HORNO CREEK CHANNEL"
+ },
+ {
+  "park": "Terramor Skate Park",
+  "leisure": "pitch",
+  "metresToChannel": 40.9,
+  "nearestReach": "ACJACHEMA STORM DRAIN"
+ },
+ {
+  "park": "Oso Grande Playground",
+  "leisure": "playground",
+  "metresToChannel": 73.4,
+  "nearestReach": "ACJACHEMA STORM DRAIN"
+ },
+ {
+  "park": "Founder's Park",
+  "leisure": "park",
+  "metresToChannel": 106.5,
+  "nearestReach": "ACJACHEMA STORM DRAIN"
+ },
+ {
+  "park": "Cherry Plunge Park",
+  "leisure": "park",
+  "metresToChannel": 187.7,
+  "nearestReach": "ACJACHEMA STORM DRAIN"
+ },
+ {
+  "park": "Town Green",
+  "leisure": "park",
+  "metresToChannel": 209.6,
+  "nearestReach": "ACJACHEMA STORM DRAIN"
+ },
+ {
+  "park": "Flintridge park",
+  "leisure": "park",
+  "metresToChannel": 339.5,
+  "nearestReach": "ACJACHEMA STORM DRAIN"
+ },
+ {
+  "park": "Hill Top Park",
+  "leisure": "park",
+  "metresToChannel": 422.3,
+  "nearestReach": "ACJACHEMA STORM DRAIN"
+ },
+ {
+  "park": "Wagsdale Field",
+  "leisure": "park",
+  "metresToChannel": 662.1,
+  "nearestReach": "ACJACHEMA STORM DRAIN"
+ },
+ {
+  "park": "Dogwood Park",
+  "leisure": "park",
+  "metresToChannel": 812.2,
+  "nearestReach": "ACJACHEMA STORM DRAIN"
+ },
+ {
+  "park": "Pleasanton Park",
+  "leisure": "park",
+  "metresToChannel": 865.1,
+  "nearestReach": "ACJACHEMA STORM DRAIN"
+ },
+ {
+  "park": "Soccer Field #3",
+  "leisure": "pitch",
+  "metresToChannel": 923.6,
+  "nearestReach": "ACJACHEMA STORM DRAIN"
+ },
+ {
+  "park": "Mission Hills Park",
+  "leisure": "park",
+  "metresToChannel": 927.6,
+  "nearestReach": "ACJACHEMA STORM DRAIN"
+ },
+ {
+  "park": "Bluff Top Park",
+  "leisure": "park",
+  "metresToChannel": 1017.4,
+  "nearestReach": "ACJACHEMA STORM DRAIN"
+ },
+ {
+  "park": "Soccer Field #1",
+  "leisure": "pitch",
+  "metresToChannel": 1040.8,
+  "nearestReach": "ACJACHEMA STORM DRAIN"
+ },
+ {
+  "park": "Artisan park",
+  "leisure": "park",
+  "metresToChannel": 1142.4,
+  "nearestReach": "ACJACHEMA STORM DRAIN"
+ },
+ {
+  "park": "Thalia Park",
+  "leisure": "park",
+  "metresToChannel": 1221.5,
+  "nearestReach": "ACJACHEMA STORM DRAIN"
+ },
+ {
+  "park": "Cordova Park",
+  "leisure": "park",
+  "metresToChannel": 1751.5,
+  "nearestReach": "ACJACHEMA STORM DRAIN"
+ },
+ {
+  "park": "Coronado Park",
+  "leisure": "park",
+  "metresToChannel": 1959.0,
+  "nearestReach": "HORNO CREEK CHANNEL"
+ },
+ {
+  "park": "Bob Zamora Field",
+  "leisure": "pitch",
+  "metresToChannel": 2321.8,
+  "nearestReach": "HORNO CREEK CHANNEL"
+ },
+ {
+  "park": "Quad",
+  "leisure": "park",
+  "metresToChannel": 2434.2,
+  "nearestReach": "ACJACHEMA STORM DRAIN"
+ },
+ {
+  "park": "Cougar Stadium",
+  "leisure": "pitch",
+  "metresToChannel": 2456.0,
+  "nearestReach": "HORNO CREEK CHANNEL"
+ },
+ {
+  "park": "Granada Park",
+  "leisure": "park",
+  "metresToChannel": 3088.2,
+  "nearestReach": "ACJACHEMA STORM DRAIN"
+ }
+]
