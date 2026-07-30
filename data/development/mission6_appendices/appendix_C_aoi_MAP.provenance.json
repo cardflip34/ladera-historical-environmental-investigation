@@ -1,0 +1,25 @@
+{
+ "generated": "2026-07-30",
+ "derivedFrom": "data/development/mission6_appendices/appendix_C_aoi.geojson",
+ "outputs": [
+  "appendix_C_aoi_MAP.png",
+  "appendix_C_aoi.kml"
+ ],
+ "extent": {
+  "west": -117.65901700020555,
+  "east": -117.62413599983148,
+  "south": 33.52679100029218,
+  "north": 33.57550400009311
+ },
+ "approxSizeKm": {
+  "eastWest": 3.24,
+  "northSouth": 5.39
+ },
+ "crs": "EPSG:4326",
+ "basemap": "none - no third-party tiles fetched, so no tile licence travels with an agency submission",
+ "provenanceGrade": "A2",
+ "statementClass": "documented",
+ "note": "Study area only. Not a property boundary, not a parcel, asserts no interest in any land.",
+ "sha256_png": "b8dc05150a0c9f5278c0d0961ed5cb27d90fb9bfede2be10f81ad5493efd660e",
+ "sha256_kml": "fd16f997545072b9d78a6449bf1f22b999ae60b6da4870fde57f455dfb62eb61"
+}
