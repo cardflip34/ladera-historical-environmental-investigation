@@ -5,7 +5,7 @@
  "statementClass": "documented",
  "nativeResolutionMeters": 0.3,
  "sourceCRS": "EPSG:26911",
- "tileCount": 16,
+ "tileCount": 20,
  "tiles": [
   "11smt365095.tif",
   "11smt365110.tif",
@@ -22,7 +22,11 @@
   "11smt410095.tif",
   "11smt410110.tif",
   "11smt410125.tif",
-  "11smt425125.tif"
+  "11smt410140.tif",
+  "11smt425095.tif",
+  "11smt425110.tif",
+  "11smt425125.tif",
+  "11smt425140.tif"
  ],
  "aoi": [
   -117.67,
@@ -34,7 +38,7 @@
   3000,
   2833
  ],
- "aoiCoverageFraction": 0.8904,
- "sha256": "9b79e6419a9f75d69b4fbd60f249d54dcc8b298ec1ff86b5cec40b0b4c1979ed",
+ "aoiCoverageFraction": 1.0,
+ "sha256": "77872eb4e3c7e33396d4cc06170bf653c6f2fe16d2367f7db9819a82e7d54428",
  "limitation": "Held tiles do not cover the entire AOI. Uncovered area is rendered as nodata, never as ground. 0.3 m is the NATIVE tile resolution; the AOI render is downsampled to fit the video grid."
 }
