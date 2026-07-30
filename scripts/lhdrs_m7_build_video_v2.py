@@ -393,10 +393,10 @@ HIST = [
   ["The sharpest frame in the set. Individual oaks, FENCE LINES, WHEEL RUTS and the",
    "braided creek channel are legible. FIELD BOUNDARIES and STOCK TRAILS visible on",
    "the eastern grasslands. No corral, pen, chute or vat resolvable anywhere."]),
- ("1946b.jpg", "1946-47", "Aerial photograph, 1200-scale county series",
-  ["Unchanged. Still rangeland, still grazed.",
-   "The north-west quarter falls outside this frame's coverage.",
-   "Part of the historic O'Neill Ranch / Rancho Mission Viejo."]),
+ ("1946b_filled.jpg", "1947", "Composite - 1947 county flight, north-west quarter from 1938",
+  ["Unchanged. Still rangeland, still grazed, a decade on.",
+   "COMPOSITE: the 1947 flight did not photograph the north-west quarter, so that",
+   "area is the 1938 flight. Both dates show the same thing here - open grazing land."]),
 ]
 for fn, yr, srcdesc, cap in HIST:
     p = os.path.join(AER, fn)

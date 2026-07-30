@@ -1,0 +1,33 @@
+{
+ "generated": "2026-07-29",
+ "file": "1946b_filled.jpg",
+ "what": "Two-date composite covering the canonical AOI with no blank area.",
+ "primary": {
+  "flight": "Orange County 1200 Scale 1947",
+  "objectId": 293,
+  "fractionOfFrame": 0.671
+ },
+ "gapFilled": {
+  "flight": "Orange County 1938",
+  "objectId": 340,
+  "fractionOfFrame": 0.329,
+  "reason": "The 1947 county flight did not photograph the north-west quarter of the AOI. Verified: the two other 1947 rasters intersecting the AOI (oid 286 San Juan Capistrano 600 Scale 1947, oid 289 Laguna Beach-Dana Point 600 Scale 1947) do not reach it either - mosaicking all three left the same 32.9% gap."
+ },
+ "residualGapFraction": 0.0,
+ "toneMatch": "Linear mean/std match applied to the 1938 fill region only, so the seam does not read as a cliff. Cosmetic; no pixel values were invented and no feature was added or removed.",
+ "provenanceGrade": "A2",
+ "statementClass": "documented_composite",
+ "displayRule": "The frame must state on its face that the north-west quarter is 1938, not 1947. A composite may never be presented as a single-date photograph.",
+ "sha256": "9ec6d0bc36251bd9e6f4a60730849a7a43e9f2c84d1e26dfff59a77b161cc815",
+ "bbox": [
+  -117.68,
+  33.52,
+  -117.616,
+  33.575
+ ],
+ "size": [
+  6000,
+  5156
+ ],
+ "source": "OC Survey / OCGIS Historic_Imagery_v2 ImageServer, LockRaster exports"
+}
