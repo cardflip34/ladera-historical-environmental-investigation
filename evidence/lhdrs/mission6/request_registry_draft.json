@@ -1,235 +1,316 @@
 {
-  "schema_version": "1.0",
-  "registry_id": "LHDRS-M6-REQUESTS-2026-07-27",
-  "mission": 6,
-  "created_at": "2026-07-27",
-  "global_status": "drafts_prepared_not_submitted",
-  "submission_authority": "No request may be transmitted without user authorization. LARMAC additionally requires member or duly appointed representative authority.",
-  "request_principles": [
-    "Seek existing records, indexes, reports, exports, and native electronic files; do not require creation of a new record.",
-    "Ask for rolling production and a fee estimate before chargeable work.",
-    "If responsive records were migrated, ask for legacy system names, identifiers, crosswalks, and the responsible current custodian.",
-    "If records were destroyed or transferred, ask for the applicable retention schedule, destruction authorization, transfer accession, and date.",
-    "If part of a record is exempt, request reasonably segregable non-exempt portions and an index describing withheld material.",
-    "Preserve every acknowledgement, clarification, production, fee notice, extension, no-record result, denial, referral, and closed status as evidence."
-  ],
-  "requests": [
-    {
-      "request_id": "M6-REQ-OC-PERMIT-01",
-      "priority": 1,
-      "custodian": "County of Orange / OC Public Works / OC Development Services",
-      "channel": "NextRequest",
-      "channel_url": "https://orangecounty.nextrequest.com/",
-      "alternate_channel": "Permit Record Research counter, County Administration South, 601 N. Ross Street, Santa Ana, CA 92701; 714-667-8800",
-      "status": "draft_pending_local_appendices_and_user_authorization",
-      "date_scope": ["1997-01-01", "2011-12-31"],
-      "geographic_scope": "All tract numbers, addresses, and APNs in the project appendices; Ladera Ranch unincorporated Orange County.",
-      "records": [
-        "Existing permit or case-system exports for building, grading, subdivision improvement, planning, map-check, and related development records",
-        "Permit, application, case, and certificate identifiers",
-        "Tract number, APN, situs address, permit type, work description, applicant, owner, contractor, and builder fields",
-        "Application, issuance, inspection, correction, final inspection, expiration, cancellation, certificate of occupancy, certificate of use and occupancy, and closure dates and statuses",
-        "Inspection event history and final result fields",
-        "Legacy-system names, migration dates, field definitions, code tables, record indexes, and tract/address/APN crosswalks",
-        "Applicable department-specific retention schedules and disposition documentation"
-      ],
-      "format": "Native machine-readable export with field names and code tables, plus linked PDF/image records where available.",
-      "gate_impact": ["permit_occupancy_gate", "address_lifecycle_gate"],
-      "do_not_claim": "A road acceptance, map recordation, sales date, year-built value, or aerial observation is not a certificate of occupancy."
-    },
-    {
-      "request_id": "M6-REQ-OC-BOARD-02",
-      "priority": 2,
-      "custodian": "Orange County Clerk of the Board and OC Public Works",
-      "channel": "NextRequest, naming Clerk of the Board and OC Public Works",
-      "channel_url": "https://orangecounty.nextrequest.com/",
-      "status": "draft_pending_tract_appendix_and_user_authorization",
-      "date_scope": ["1997-01-01", "2011-12-31"],
-      "records": [
-        "Board agendas, staff reports, agenda staff reports, minute orders, resolutions, recorded votes, and attachments",
-        "Subdivision improvement agreements, construction agreements, bonds, security reductions and releases, and notices of completion",
-        "Road, storm drain, sewer, water, landscape, monument, and other public improvement acceptance records",
-        "Records indexed by every project tract and known agreement identifier"
-      ],
-      "known_identifiers": [
-        "May 4, 1999 Board agenda item 20: Tract 15626 and construction agreement S299-2612",
-        "May 4, 1999 Board agenda item 24: Antonio Parkway Phase IV completion March 26, 1999",
-        "Agreements D98-027, D97-038, and D97-053 concerning SDG&E facilities at Antonio Parkway",
-        "The 76 tract sources in the live Road Index Ladera extract"
-      ],
-      "format": "Native PDFs and any existing machine-readable index or docket export.",
-      "gate_impact": ["tract_lifecycle_supporting_chronology"],
-      "do_not_claim": "Improvement acceptance is supporting chronology, not proof that every home in a tract was complete or occupied."
-    },
-    {
-      "request_id": "M6-REQ-OC-AERIAL-03",
-      "priority": 3,
-      "custodian": "Orange County Survey / Geospatial Services",
-      "channel": "NextRequest or OC Survey contact",
-      "channel_url": "https://orangecounty.nextrequest.com/",
-      "reference_url": "https://ocs.ocpublicworks.com/service-areas/oc-survey/products/historical-aerial-imagery",
-      "status": "draft_pending_aoi_appendix_and_user_authorization",
-      "date_scope": ["1997-01-01", "2011-12-31"],
-      "records": [
-        "Aerial survey indexes, flight-line indexes, frame-center indexes, acquisition dates, contractor or mission identifiers, scales, resolutions, coordinate systems, and coverage footprints intersecting the project AOI",
-        "Orthophotos, source frames, mosaics, or existing derivatives for 1999 through 2004 and 2006 through 2008",
-        "Catalog records for imagery not exposed in the public Historical Aerial Imagery Explorer",
-        "Applicable retention schedules and transfer or destruction records"
-      ],
-      "existing_public_findings": "The public explorer yielded georeferenced catalog items 4 and 33 for the study location, cataloged as 1995/1994 and 1998/1997. It did not expose a construction-period item after 1998 at the queried point; this does not establish that no other County imagery exists.",
-      "format": "GeoTIFF or native raster; CSV/GeoJSON index and footprints; sidecar metadata.",
-      "gate_impact": ["aerial_interval_gate"]
-    },
-    {
-      "request_id": "M6-REQ-OC-ASSESSOR-04",
-      "priority": 4,
-      "custodian": "Orange County Assessor",
-      "channel": "Written Assessor public-records request",
-      "channel_url": "https://ocassessor.gov/contact-us/assessor-public-records",
-      "mailing_address": "Orange County Assessor, 500 S. Main Street, Suite 103, Orange, CA 92868, Attn: Quality Assurance",
-      "fax": "714-834-3199",
-      "status": "draft_pending_apn_address_appendix_and_user_authorization",
-      "records": [
-        "Existing public property-characteristic records for appendix APNs and addresses",
-        "Situs address, APN, use code, effective year built, improvement year, improvement characteristics, and parcel status fields",
-        "Existing parcel/APN change or predecessor-successor crosswalks relevant to 1997-2011",
-        "Available data dictionary and product description"
-      ],
-      "format": "Existing bulk electronic format; request a fee estimate before production.",
-      "gate_impact": ["address_lifecycle_supporting_chronology"],
-      "do_not_claim": "Assessor year-built or improvement fields are supporting indicators and do not prove permit final or occupancy dates."
-    },
-    {
-      "request_id": "M6-REQ-CUSD-05",
-      "priority": 5,
-      "custodian": "Capistrano Unified School District",
-      "channel": "GovQA public-records portal",
-      "channel_url": "https://capousd.govqa.us/",
-      "status": "draft_pending_user_authorization",
-      "date_scope": ["1998-01-01", "2011-12-31"],
-      "records": [
-        "Annual attendance-boundary maps, study-area maps, feeder-pattern maps, and GIS files covering Ladera Ranch",
-        "Board agenda items, exhibits, resolutions, minutes, staff reports, and boundary studies establishing or revising those boundaries",
-        "Site acquisition, planning, construction, substantial completion, occupancy, dedication, and opening records for Chaparral Elementary, Tesoro High School, Ladera Ranch Elementary, Ladera Ranch Middle School, and Oso Grande Elementary",
-        "Aggregate annual enrollment and capacity reports for those schools"
-      ],
-      "privacy_limit": "No student-level, address-level, educational, or personally identifying records are requested.",
-      "format": "Native GIS or PDF maps, machine-readable aggregate tables, and linked Board records.",
-      "gate_impact": ["school_and_community_chronology"]
-    },
-    {
-      "request_id": "M6-REQ-SMWD-PRA-06",
-      "priority": 6,
-      "custodian": "Santa Margarita Water District, Secretary to the Board",
-      "channel": "SMWD public-records request",
-      "channel_url": "https://www.smwd.com/234/Contact-Us",
-      "mailing_address": "Santa Margarita Water District, 26111 Antonio Parkway, Rancho Santa Margarita, CA 92688",
-      "phone": "949-459-6420",
-      "status": "draft_pending_tract_street_appendix_and_user_authorization",
-      "date_scope": ["1997-01-01", "2011-12-31"],
-      "records": [
-        "Board and committee agendas, minutes, staff reports, resolutions, project awards, notices of completion, acceptance records, and in-service records concerning Ladera Ranch",
-        "Project and asset indexes keyed by tract, street, facility, pump station, reservoir, pipeline, sewer, recycled-water, and developer project names",
-        "Records for the 2001 Chiquita Water Reclamation Plant expansion and the two subterranean Ladera Ranch reservoir projects begun in 2005",
-        "Asset placed-in-service dates and existing project-to-asset crosswalks",
-        "Applicable retention schedules and legacy-system identifiers"
-      ],
-      "format": "Native electronic records and existing machine-readable indexes.",
-      "gate_impact": ["utility_and_tract_supporting_chronology"]
-    },
-    {
-      "request_id": "M6-REQ-SMWD-PLANS-07",
-      "priority": 7,
-      "custodian": "Santa Margarita Water District Engineering Counter",
-      "channel": "Utility Plan Request, separate from PRA",
-      "channel_url": "https://www.smwd.com/448/Utility-Plan-Request",
-      "email": "engcounter@smwd.com",
-      "phone": "949-459-6503",
-      "status": "draft_pending_aoi_map_street_appendix_and_user_authorization",
-      "request_elements": [
-        "Project location and highlighted AOI map",
-        "Project description and historical-research purpose",
-        "Requested domestic-water, recycled-water, and wastewater utility types",
-        "Relevant streets and tracts",
-        "Project timeline and requester contact information"
-      ],
-      "scope": "Request existing non-sensitive utility-plan indexes and releasable as-built or record drawings. Accept security redactions and ask for metadata or index records if detailed plans cannot be released.",
-      "gate_impact": ["utility_and_tract_supporting_chronology"]
-    },
-    {
-      "request_id": "M6-REQ-LARMAC-08",
-      "priority": 8,
-      "custodian": "Ladera Ranch Maintenance Corporation",
-      "channel": "Member records-inspection request under Bylaws section 8.5",
-      "email": "contact.larmac@laderalife.com",
-      "phone": "949-218-0900",
-      "mailing_address": "Avendale Village Clubhouse, 1 Daisy Street, Ladera Ranch, CA 92694",
-      "status": "draft_requires_member_or_representative_authority",
-      "date_scope": ["1999-01-01", "2011-12-31"],
-      "records": [
-        "Open-session Board, Neighborhood Representative, and relevant committee minutes",
-        "Newsletters, annual reports, facility-opening and turnover records, developer handoff records, and common-area acceptance records",
-        "Records supporting the dated milestones on the LaderaLife community timeline",
-        "Records concerning custom-lot sales, design review, facility openings, Bridgepark Plaza, and community handoff"
-      ],
-      "purpose": "Historical research reasonably related to the member's interest in the development and turnover of the community.",
-      "authority_limit": "Do not send unless the user confirms current LARMAC membership or duly appoints an eligible representative. LARMAC is private and this is not a CPRA request.",
-      "gate_impact": ["facility_commercial_custom_lot_chronology"]
-    },
-    {
-      "request_id": "M6-REQ-CLERKREC-09",
-      "priority": 9,
-      "custodian": "Orange County Clerk-Recorder",
-      "channel": "Grantor/grantee index research followed by document-copy order",
-      "channel_url": "https://ocrecorder.com/recorder-services/obtaining-official-record-copies",
-      "phone": "714-834-2500",
-      "mailing_address": "Orange County Clerk-Recorder, 601 N. Ross Street, Santa Ana, CA 92701",
-      "status": "workflow_pending_grantor_grantee_names_document_numbers_fees_and_user_authorization",
-      "workflow": [
-        "Search the grantor/grantee index using developer, builder, HOA, utility, and public-agency names from the evidence graph",
-        "Record document numbers, recording dates, document types, parties, and referenced tracts or APNs",
-        "Order only targeted copies after document numbers are known and a fee estimate is acceptable"
-      ],
-      "fee_note": "The official page lists per-page and certification fees. Staff do not perform open-ended property research, and images are not exposed in the public index.",
-      "gate_impact": ["developer_transfer_and_custom_lot_supporting_chronology"]
-    },
-    {
-      "request_id": "M6-REQ-USGS-10",
-      "priority": 10,
-      "custodian": "U.S. Geological Survey Earth Resources Observation and Science Center",
-      "channel": "EarthExplorer catalog search and frame order",
-      "channel_url": "https://earthexplorer.usgs.gov/",
-      "reference_url": "https://www.usgs.gov/centers/eros/science/usgs-eros-archive-aerial-photography-aerial-photo-single-frames",
-      "email": "custserv@usgs.gov",
-      "phone": "800-252-4547",
-      "status": "manual_catalog_search_pending_aoi_polygon",
-      "date_scope": ["1999-01-01", "2008-12-31"],
-      "datasets": ["Aerial Photo Single Frames", "NAPP", "DOQ", "High Resolution Orthoimagery", "NAIP"],
-      "scope": "Search the exact project AOI for construction-interval acquisitions, recording entity ID, acquisition date, frame ID, scale, scan status, footprint, and cost before ordering.",
-      "fee_note": "Existing scans may be free; on-demand frame scans may incur charges. Obtain user approval before a paid order.",
-      "gate_impact": ["aerial_interval_gate"]
-    },
-    {
-      "request_id": "M6-REQ-USDA-11",
-      "priority": 11,
-      "custodian": "USDA FPAC Geospatial Enterprise Operations",
-      "channel": "Prior-year NAIP and aerial coverage inquiry",
-      "channel_url": "https://www.fpacbc.usda.gov/geospatial-services/customer-services/naip-coverage-map",
-      "email": "geo.sales@usda.gov",
-      "phone": "801-844-2922",
-      "status": "draft_pending_aoi_polygon_and_user_authorization",
-      "date_scope": ["2003-01-01", "2008-12-31"],
-      "scope": "Request prior-year coverage metadata and available imagery for the exact AOI, especially 2004 and 2006-2008, including acquisition dates, quarter-quad or frame identifiers, resolution, bands, completeness, and delivery options.",
-      "existing_public_findings": "The CDFW public mirror currently exposes 2005, 2009, and 2010 study-period NAIP services. That mirror result does not prove USDA or another archive lacks additional acquisitions.",
-      "gate_impact": ["aerial_interval_gate"]
-    }
-  ],
-  "required_local_appendices": [
-    "Canonical 123-tract list and aliases",
-    "Address/APN request crosswalk deduplicated for agency production",
-    "Project AOI polygon and map",
-    "Street-to-tract crosswalk",
-    "Known permit, case, agreement, Board item, and document identifiers",
-    "Developer, builder, HOA, utility, and public-agency grantor/grantee name variants"
-  ]
+ "schema_version": "1.0",
+ "registry_id": "LHDRS-M6-REQUESTS-2026-07-27",
+ "mission": 6,
+ "created_at": "2026-07-27",
+ "global_status": "drafts_prepared_not_submitted",
+ "submission_authority": "No request may be transmitted without user authorization. LARMAC additionally requires member or duly appointed representative authority.",
+ "request_principles": [
+  "Seek existing records, indexes, reports, exports, and native electronic files; do not require creation of a new record.",
+  "Ask for rolling production and a fee estimate before chargeable work.",
+  "If responsive records were migrated, ask for legacy system names, identifiers, crosswalks, and the responsible current custodian.",
+  "If records were destroyed or transferred, ask for the applicable retention schedule, destruction authorization, transfer accession, and date.",
+  "If part of a record is exempt, request reasonably segregable non-exempt portions and an index describing withheld material.",
+  "Preserve every acknowledgement, clarification, production, fee notice, extension, no-record result, denial, referral, and closed status as evidence."
+ ],
+ "requests": [
+  {
+   "request_id": "M6-REQ-OC-PERMIT-01",
+   "priority": 1,
+   "custodian": "County of Orange / OC Public Works / OC Development Services",
+   "channel": "NextRequest",
+   "channel_url": "https://orangecounty.nextrequest.com/",
+   "alternate_channel": "Permit Record Research counter, County Administration South, 601 N. Ross Street, Santa Ana, CA 92701; 714-667-8800",
+   "status": "submitted_by_user_2026-07-29",
+   "date_scope": [
+    "1997-01-01",
+    "2011-12-31"
+   ],
+   "geographic_scope": "All tract numbers, addresses, and APNs in the project appendices; Ladera Ranch unincorporated Orange County.",
+   "records": [
+    "Existing permit or case-system exports for building, grading, subdivision improvement, planning, map-check, and related development records",
+    "Permit, application, case, and certificate identifiers",
+    "Tract number, APN, situs address, permit type, work description, applicant, owner, contractor, and builder fields",
+    "Application, issuance, inspection, correction, final inspection, expiration, cancellation, certificate of occupancy, certificate of use and occupancy, and closure dates and statuses",
+    "Inspection event history and final result fields",
+    "Legacy-system names, migration dates, field definitions, code tables, record indexes, and tract/address/APN crosswalks",
+    "Applicable department-specific retention schedules and disposition documentation"
+   ],
+   "format": "Native machine-readable export with field names and code tables, plus linked PDF/image records where available.",
+   "gate_impact": [
+    "permit_occupancy_gate",
+    "address_lifecycle_gate"
+   ],
+   "do_not_claim": "A road acceptance, map recordation, sales date, year-built value, or aerial observation is not a certificate of occupancy.",
+   "status_previous": "draft_pending_local_appendices_and_user_authorization",
+   "status_updated": "2026-07-29",
+   "status_note": "User filed via NextRequest 2026-07-29. Reference number, exact timestamp and attached appendix set NOT yet recorded - fill from the confirmation email. PRA determination due ~2026-08-08, ~2026-08-22 if extended."
+  },
+  {
+   "request_id": "M6-REQ-OC-BOARD-02",
+   "priority": 2,
+   "custodian": "Orange County Clerk of the Board and OC Public Works",
+   "channel": "NextRequest, naming Clerk of the Board and OC Public Works",
+   "channel_url": "https://orangecounty.nextrequest.com/",
+   "status": "ready_to_draft_pending_user_authorization",
+   "date_scope": [
+    "1997-01-01",
+    "2011-12-31"
+   ],
+   "records": [
+    "Board agendas, staff reports, agenda staff reports, minute orders, resolutions, recorded votes, and attachments",
+    "Subdivision improvement agreements, construction agreements, bonds, security reductions and releases, and notices of completion",
+    "Road, storm drain, sewer, water, landscape, monument, and other public improvement acceptance records",
+    "Records indexed by every project tract and known agreement identifier"
+   ],
+   "known_identifiers": [
+    "May 4, 1999 Board agenda item 20: Tract 15626 and construction agreement S299-2612",
+    "May 4, 1999 Board agenda item 24: Antonio Parkway Phase IV completion March 26, 1999",
+    "Agreements D98-027, D97-038, and D97-053 concerning SDG&E facilities at Antonio Parkway",
+    "The 76 tract sources in the live Road Index Ladera extract"
+   ],
+   "format": "Native PDFs and any existing machine-readable index or docket export.",
+   "gate_impact": [
+    "tract_lifecycle_supporting_chronology"
+   ],
+   "do_not_claim": "Improvement acceptance is supporting chronology, not proof that every home in a tract was complete or occupied.",
+   "status_previous": "draft_pending_tract_appendix_and_user_authorization",
+   "status_updated": "2026-07-29",
+   "status_note": "Unblocked: Appendix A (123 canonical tracts + aliases) generated 2026-07-27."
+  },
+  {
+   "request_id": "M6-REQ-OC-AERIAL-03",
+   "priority": 3,
+   "custodian": "Orange County Survey / Geospatial Services",
+   "channel": "NextRequest or OC Survey contact",
+   "channel_url": "https://orangecounty.nextrequest.com/",
+   "reference_url": "https://ocs.ocpublicworks.com/service-areas/oc-survey/products/historical-aerial-imagery",
+   "status": "ready_to_draft_pending_user_authorization",
+   "date_scope": [
+    "1997-01-01",
+    "2011-12-31"
+   ],
+   "records": [
+    "Aerial survey indexes, flight-line indexes, frame-center indexes, acquisition dates, contractor or mission identifiers, scales, resolutions, coordinate systems, and coverage footprints intersecting the project AOI",
+    "Orthophotos, source frames, mosaics, or existing derivatives for 1999 through 2004 and 2006 through 2008",
+    "Catalog records for imagery not exposed in the public Historical Aerial Imagery Explorer",
+    "Applicable retention schedules and transfer or destruction records"
+   ],
+   "existing_public_findings": "The public explorer yielded georeferenced catalog items 4 and 33 for the study location, cataloged as 1995/1994 and 1998/1997. It did not expose a construction-period item after 1998 at the queried point; this does not establish that no other County imagery exists.",
+   "format": "GeoTIFF or native raster; CSV/GeoJSON index and footprints; sidecar metadata.",
+   "gate_impact": [
+    "aerial_interval_gate"
+   ],
+   "status_previous": "draft_pending_aoi_appendix_and_user_authorization",
+   "status_updated": "2026-07-29",
+   "status_note": "Unblocked: Appendix C (AOI polygon + map) generated 2026-07-27. Mission 7 additionally narrowed the ask: 0.3 m orthoimagery for 2004-01-21 is now HELD in full (20 tiles, 100% AOI). The residual imagery gap is high-resolution coverage for 1997-2003, which is what this request should now target rather than the whole period."
+  },
+  {
+   "request_id": "M6-REQ-OC-ASSESSOR-04",
+   "priority": 4,
+   "custodian": "Orange County Assessor",
+   "channel": "Written Assessor public-records request",
+   "channel_url": "https://ocassessor.gov/contact-us/assessor-public-records",
+   "mailing_address": "Orange County Assessor, 500 S. Main Street, Suite 103, Orange, CA 92868, Attn: Quality Assurance",
+   "fax": "714-834-3199",
+   "status": "ready_to_draft_pending_user_authorization",
+   "records": [
+    "Existing public property-characteristic records for appendix APNs and addresses",
+    "Situs address, APN, use code, effective year built, improvement year, improvement characteristics, and parcel status fields",
+    "Existing parcel/APN change or predecessor-successor crosswalks relevant to 1997-2011",
+    "Available data dictionary and product description"
+   ],
+   "format": "Existing bulk electronic format; request a fee estimate before production.",
+   "gate_impact": [
+    "address_lifecycle_supporting_chronology"
+   ],
+   "do_not_claim": "Assessor year-built or improvement fields are supporting indicators and do not prove permit final or occupancy dates.",
+   "status_previous": "draft_pending_apn_address_appendix_and_user_authorization",
+   "status_updated": "2026-07-29",
+   "status_note": "Unblocked: Appendix B2 (6,055 verified in-CDP APNs) generated 2026-07-28. Note the driver - County YEAR_BUILT is blank for 6,041 of 6,101 in-CDP parcels."
+  },
+  {
+   "request_id": "M6-REQ-CUSD-05",
+   "priority": 5,
+   "custodian": "Capistrano Unified School District",
+   "channel": "GovQA public-records portal",
+   "channel_url": "https://capousd.govqa.us/",
+   "status": "ready_to_draft_pending_user_authorization",
+   "date_scope": [
+    "1998-01-01",
+    "2011-12-31"
+   ],
+   "records": [
+    "Annual attendance-boundary maps, study-area maps, feeder-pattern maps, and GIS files covering Ladera Ranch",
+    "Board agenda items, exhibits, resolutions, minutes, staff reports, and boundary studies establishing or revising those boundaries",
+    "Site acquisition, planning, construction, substantial completion, occupancy, dedication, and opening records for Chaparral Elementary, Tesoro High School, Ladera Ranch Elementary, Ladera Ranch Middle School, and Oso Grande Elementary",
+    "Aggregate annual enrollment and capacity reports for those schools"
+   ],
+   "privacy_limit": "No student-level, address-level, educational, or personally identifying records are requested.",
+   "format": "Native GIS or PDF maps, machine-readable aggregate tables, and linked Board records.",
+   "gate_impact": [
+    "school_and_community_chronology"
+   ],
+   "status_previous": "draft_pending_user_authorization",
+   "status_updated": "2026-07-29"
+  },
+  {
+   "request_id": "M6-REQ-SMWD-PRA-06",
+   "priority": 6,
+   "custodian": "Santa Margarita Water District, Secretary to the Board",
+   "channel": "SMWD public-records request",
+   "channel_url": "https://www.smwd.com/234/Contact-Us",
+   "mailing_address": "Santa Margarita Water District, 26111 Antonio Parkway, Rancho Santa Margarita, CA 92688",
+   "phone": "949-459-6420",
+   "status": "ready_to_draft_pending_user_authorization",
+   "date_scope": [
+    "1997-01-01",
+    "2011-12-31"
+   ],
+   "records": [
+    "Board and committee agendas, minutes, staff reports, resolutions, project awards, notices of completion, acceptance records, and in-service records concerning Ladera Ranch",
+    "Project and asset indexes keyed by tract, street, facility, pump station, reservoir, pipeline, sewer, recycled-water, and developer project names",
+    "Records for the 2001 Chiquita Water Reclamation Plant expansion and the two subterranean Ladera Ranch reservoir projects begun in 2005",
+    "Asset placed-in-service dates and existing project-to-asset crosswalks",
+    "Applicable retention schedules and legacy-system identifiers"
+   ],
+   "format": "Native electronic records and existing machine-readable indexes.",
+   "gate_impact": [
+    "utility_and_tract_supporting_chronology"
+   ],
+   "status_previous": "draft_pending_tract_street_appendix_and_user_authorization",
+   "status_updated": "2026-07-29",
+   "status_note": "Unblocked: Appendices A and D (288-feature street-to-tract crosswalk) generated 2026-07-27. Mission 7 raises the value of this one: the drainage through the community is mapped and has never been sampled (gate G11)."
+  },
+  {
+   "request_id": "M6-REQ-SMWD-PLANS-07",
+   "priority": 7,
+   "custodian": "Santa Margarita Water District Engineering Counter",
+   "channel": "Utility Plan Request, separate from PRA",
+   "channel_url": "https://www.smwd.com/448/Utility-Plan-Request",
+   "email": "engcounter@smwd.com",
+   "phone": "949-459-6503",
+   "status": "ready_to_draft_pending_user_authorization",
+   "request_elements": [
+    "Project location and highlighted AOI map",
+    "Project description and historical-research purpose",
+    "Requested domestic-water, recycled-water, and wastewater utility types",
+    "Relevant streets and tracts",
+    "Project timeline and requester contact information"
+   ],
+   "scope": "Request existing non-sensitive utility-plan indexes and releasable as-built or record drawings. Accept security redactions and ask for metadata or index records if detailed plans cannot be released.",
+   "gate_impact": [
+    "utility_and_tract_supporting_chronology"
+   ],
+   "status_previous": "draft_pending_aoi_map_street_appendix_and_user_authorization",
+   "status_updated": "2026-07-29",
+   "status_note": "Unblocked: Appendices C and D generated 2026-07-27."
+  },
+  {
+   "request_id": "M6-REQ-LARMAC-08",
+   "priority": 8,
+   "custodian": "Ladera Ranch Maintenance Corporation",
+   "channel": "Member records-inspection request under Bylaws section 8.5",
+   "email": "contact.larmac@laderalife.com",
+   "phone": "949-218-0900",
+   "mailing_address": "Avendale Village Clubhouse, 1 Daisy Street, Ladera Ranch, CA 92694",
+   "status": "draft_requires_member_or_representative_authority",
+   "date_scope": [
+    "1999-01-01",
+    "2011-12-31"
+   ],
+   "records": [
+    "Open-session Board, Neighborhood Representative, and relevant committee minutes",
+    "Newsletters, annual reports, facility-opening and turnover records, developer handoff records, and common-area acceptance records",
+    "Records supporting the dated milestones on the LaderaLife community timeline",
+    "Records concerning custom-lot sales, design review, facility openings, Bridgepark Plaza, and community handoff"
+   ],
+   "purpose": "Historical research reasonably related to the member's interest in the development and turnover of the community.",
+   "authority_limit": "Do not send unless the user confirms current LARMAC membership or duly appoints an eligible representative. LARMAC is private and this is not a CPRA request.",
+   "gate_impact": [
+    "facility_commercial_custom_lot_chronology"
+   ]
+  },
+  {
+   "request_id": "M6-REQ-CLERKREC-09",
+   "priority": 9,
+   "custodian": "Orange County Clerk-Recorder",
+   "channel": "Grantor/grantee index research followed by document-copy order",
+   "channel_url": "https://ocrecorder.com/recorder-services/obtaining-official-record-copies",
+   "phone": "714-834-2500",
+   "mailing_address": "Orange County Clerk-Recorder, 601 N. Ross Street, Santa Ana, CA 92701",
+   "status": "workflow_pending_grantor_grantee_names_document_numbers_fees_and_user_authorization",
+   "workflow": [
+    "Search the grantor/grantee index using developer, builder, HOA, utility, and public-agency names from the evidence graph",
+    "Record document numbers, recording dates, document types, parties, and referenced tracts or APNs",
+    "Order only targeted copies after document numbers are known and a fee estimate is acceptable"
+   ],
+   "fee_note": "The official page lists per-page and certification fees. Staff do not perform open-ended property research, and images are not exposed in the public index.",
+   "gate_impact": [
+    "developer_transfer_and_custom_lot_supporting_chronology"
+   ]
+  },
+  {
+   "request_id": "M6-REQ-USGS-10",
+   "priority": 10,
+   "custodian": "U.S. Geological Survey Earth Resources Observation and Science Center",
+   "channel": "EarthExplorer catalog search and frame order",
+   "channel_url": "https://earthexplorer.usgs.gov/",
+   "reference_url": "https://www.usgs.gov/centers/eros/science/usgs-eros-archive-aerial-photography-aerial-photo-single-frames",
+   "email": "custserv@usgs.gov",
+   "phone": "800-252-4547",
+   "status": "substantially_satisfied_2026-07-29",
+   "date_scope": [
+    "1999-01-01",
+    "2008-12-31"
+   ],
+   "datasets": [
+    "Aerial Photo Single Frames",
+    "NAPP",
+    "DOQ",
+    "High Resolution Orthoimagery",
+    "NAIP"
+   ],
+   "scope": "Search the exact project AOI for construction-interval acquisitions, recording entity ID, acquisition date, frame ID, scale, scan status, footprint, and cost before ordering.",
+   "fee_note": "Existing scans may be free; on-demand frame scans may incur charges. Obtain user approval before a paid order.",
+   "gate_impact": [
+    "aerial_interval_gate"
+   ],
+   "status_previous": "manual_catalog_search_pending_aoi_polygon",
+   "status_updated": "2026-07-29",
+   "status_note": "Mission 7 completed the manual catalogue search this request existed to trigger. All 20 tiles of the 2004-01-21 High Resolution Orthoimagery survey covering the AOI were identified from the project's own index shapefile and acquired via EarthExplorer - 100% AOI coverage at 0.3 m. Landsat 1997-2006 also acquired (102 cloud-free months). Remaining USGS need is 1997-2003 high-resolution aerial coverage, which no free catalogue was found to hold."
+  },
+  {
+   "request_id": "M6-REQ-USDA-11",
+   "priority": 11,
+   "custodian": "USDA FPAC Geospatial Enterprise Operations",
+   "channel": "Prior-year NAIP and aerial coverage inquiry",
+   "channel_url": "https://www.fpacbc.usda.gov/geospatial-services/customer-services/naip-coverage-map",
+   "email": "geo.sales@usda.gov",
+   "phone": "801-844-2922",
+   "status": "ready_to_draft_pending_user_authorization",
+   "date_scope": [
+    "2003-01-01",
+    "2008-12-31"
+   ],
+   "scope": "Request prior-year coverage metadata and available imagery for the exact AOI, especially 2004 and 2006-2008, including acquisition dates, quarter-quad or frame identifiers, resolution, bands, completeness, and delivery options.",
+   "existing_public_findings": "The CDFW public mirror currently exposes 2005, 2009, and 2010 study-period NAIP services. That mirror result does not prove USDA or another archive lacks additional acquisitions.",
+   "gate_impact": [
+    "aerial_interval_gate"
+   ],
+   "status_previous": "draft_pending_aoi_polygon_and_user_authorization",
+   "status_updated": "2026-07-29",
+   "status_note": "Unblocked: Appendix C (AOI polygon) generated 2026-07-27."
+  }
+ ],
+ "required_local_appendices": [
+  "Canonical 123-tract list and aliases",
+  "Address/APN request crosswalk deduplicated for agency production",
+  "Project AOI polygon and map",
+  "Street-to-tract crosswalk",
+  "Known permit, case, agreement, Board item, and document identifiers",
+  "Developer, builder, HOA, utility, and public-agency grantor/grantee name variants"
+ ],
+ "registry_updated": "2026-07-29",
+ "update_reason": "Statuses were written 2026-07-27 when the six local appendices did not exist. Appendices A-F were generated 2026-07-27 and Appendix B2 (APNs) 2026-07-28, so every status that was blocked only on an appendix is stale. Request 01 was submitted by the user 2026-07-29. Nothing in this registry has been submitted by any automated lane."
 }
