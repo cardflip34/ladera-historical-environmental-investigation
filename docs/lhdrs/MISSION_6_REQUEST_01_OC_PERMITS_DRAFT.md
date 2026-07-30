@@ -1,9 +1,19 @@
 # M6-REQ-OC-PERMIT-01 — Orange County permit / occupancy index request
 
-**Status: DRAFT — NOT SUBMITTED.** No public-records request, inquiry, order, or paid transaction
-has been submitted by any lane of this project. This letter cannot be sent until (1) the user
-explicitly authorizes submission, and (2) the required local appendices below are generated from
-repository data. Nothing in this file constitutes legal advice.
+**Status: SUBMITTED by the user, 2026-07-29.** The user reports having filed this request through
+NextRequest and having asked for the records described below. Submission was performed by the user
+personally; no lane of this project submitted it. Nothing in this file constitutes legal advice.
+
+⚠️ **Unverified details.** This project has not seen the confirmation page, so the following are
+NOT recorded and should be filled in from the NextRequest confirmation email when convenient:
+the assigned NextRequest reference number, the exact submission timestamp, which appendices were
+actually attached, and whether the request was filed as one item or split. Until those are known,
+treat this record as "user-reported submitted", not as a verified filing.
+
+**Next expected event:** California PRA requires a determination within 10 calendar days of
+receipt (Gov. Code § 7922.535), extendable by 14 days in specified circumstances. From a
+2026-07-29 filing that puts the first determination due about **2026-08-08**, or **2026-08-22**
+if the County invokes an extension.
 
 | Field | Value |
 |---|---|
@@ -42,7 +52,7 @@ YEAR_BUILT, bedrooms), provenance grade A+.
   inside the CDP (populated for 4, ~0.1%). This *strengthens* the case for item 1 — the County
   permit/CO index is the only route to parcel-level dates.
 
-**Remaining blocker: user authorization to submit.** Nothing else stands in the way.
+**Blocker cleared:** the user authorized and submitted the request on 2026-07-29.
 
 ---
 
