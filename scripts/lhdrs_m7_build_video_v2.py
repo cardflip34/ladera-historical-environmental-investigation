@@ -103,12 +103,20 @@ def xy(lon, lat):
 
 
 def base(panel, title, sub, era):
+    """Every frame is stamped with its own year. The year is the single most important thing on
+    the frame - without it a viewer cannot tell a 1929 rangeland photo from a 1953 one - so it is
+    set large in a filled badge rather than as small corner text."""
     im = Image.new("RGB", (SIZE, SIZE), NAVY)
     im.paste(panel, ((SIZE-MAP)//2, TOPBAR))
     d = ImageDraw.Draw(im)
     d.text((36, 20), title, font=F(38, True), fill=WHITE)
     d.text((36, 66), sub, font=F(16), fill=MUT)
-    d.text((SIZE-36, 28), era, font=F(20, True), fill=ACC, anchor="ra")
+    f = F(46, True)
+    bb = d.textbbox((0, 0), era, font=f)
+    w, h = bb[2]-bb[0], bb[3]-bb[1]
+    x1, y0 = SIZE-30, 16
+    d.rounded_rectangle([x1-w-26, y0, x1, y0+h+22], 8, fill=(38, 30, 18), outline=ACC, width=2)
+    d.text((x1-13, y0+11), era, font=f, fill=ACC, anchor="ra")
     return im, d
 
 
@@ -127,7 +135,23 @@ def draw_water(d, note=True):
     return n
 
 
-def draw_schools(d):
+SCH_DIST = {}
+_p = os.path.join(OUT, "schools_channel_proximity.json")
+if os.path.exists(_p):
+    for r in json.load(open(_p)):
+        k = r["school"].replace(" Elementary School", " ES").replace(" Middle School", " MS")
+        SCH_DIST[k.split()[0] + " " + k.split()[-1]] = r["metresToChannel"]
+
+
+def _sdist(label):
+    """Match a merged label like 'Ladera Ranch ES / MS' back to a proximity record."""
+    for k, v in SCH_DIST.items():
+        if label.split()[0] == k.split()[0]:
+            return v
+    return None
+
+
+def draw_schools(d, with_dist=False):
     for s in SCH:
         x, y = xy(s["lon"], s["lat"])
         if not (0 <= x < MAP and 0 <= y < MAP):
@@ -136,6 +160,10 @@ def draw_schools(d):
         d.ellipse([px-9, py-9, px+9, py+9], outline=SCHOOL, width=3)
         d.line([px, py-16, px, py-30], fill=SCHOOL, width=2)
         t = s["label"]
+        if with_dist:
+            dv = _sdist(s["label"])
+            if dv is not None:
+                t = f"{t}  ·  {dv:.0f} m to creek"
         w = d.textlength(t, font=F(15, True))
         bx = min(max(px-w/2-7, 4), SIZE-w-12)
         d.rectangle([bx, py-52, bx+w+14, py-30], fill=(28, 34, 48))
@@ -286,7 +314,7 @@ def draw_all_water(d, note=True, w=3):
                font=F(14), fill=STREAM)
 
 
-def draw_parks(d, note=True):
+def draw_parks(d, note=True, labels=True):
     ox = (SIZE-MAP)//2
     lab = []
     for nm, rings, src, dist in PARKS:
@@ -295,7 +323,7 @@ def draw_parks(d, note=True):
         for r in rings:
             if len(r) > 2:
                 _poly(d, list(r) + [r[0]], col, 3 if near else 1)
-        if near and nm != "(unnamed)":
+        if labels and near and nm != "(unnamed)":
             cx = sum(q[0] for q in rings[0]) / len(rings[0])
             cy = sum(q[1] for q in rings[0]) / len(rings[0])
             x, y = xy(cx, cy)
@@ -309,7 +337,9 @@ def draw_parks(d, note=True):
         d.rectangle([tx-3, y-9, tx+(bb[2]-bb[0])+3, y+9], fill=(12, 26, 20))
         d.text((tx, y-8), t, font=F(13, True), fill=PARKC)
     if note:
-        d.text((36, MAPEND+56), "▢  parks    ●  park on or beside the drainage, with distance to it",
+        n_on = sum(1 for _, _, _, dv in PARKS if dv <= 25)
+        d.text((36, MAPEND+56),
+               f"▢  parks    {n_on} of them sit within 25 m of the drainage",
                font=F(15), fill=PARKC)
 
 
@@ -381,7 +411,7 @@ for fn, yr, srcdesc, cap in HIST:
         d.text((36, MAPEND+56), "■  grey = outside this frame's coverage", font=F(15), fill=NODATA)
     caption(d, cap)
     foot(d, "OC Survey / OCGIS Historic_Imagery_v2, server-rectified")
-    frames += hold(im, 5)
+    frames += hold(im, 4)
 
 # ---------------- complete-coverage OC frames, 1953-1990 ----------------
 # These replace the Mission 6 1995/1998 rasters, which are narrow flight strips ~72% transparent
@@ -413,7 +443,7 @@ for fn, yr, srcdesc, cap in OCSEQ:
     draw_node(d)
     caption(d, cap)
     foot(d, "OC Survey / OCGIS Historic_Imagery_v2, LockRaster export")
-    frames += hold(im, 5)
+    frames += hold(im, 4)
 
 # ---------------- Landsat monthly ----------------
 im = Image.new("RGB", (SIZE, SIZE), NAVY); d = ImageDraw.Draw(im)
@@ -496,6 +526,13 @@ if os.path.exists(p):
 
 # ---------------- 0.3 m orthoimagery, January 2004 ----------------
 HRO = os.path.join(OUT, "hro_2004_aoi.png")
+_cov = 1.0
+_cj = os.path.join(OUT, "hro_2004_aoi.provenance.json")
+if os.path.exists(_cj):
+    _cov = json.load(open(_cj)).get("aoiCoverageFraction", 1.0)
+COVERAGE_LINE = ("Complete coverage of the frame."
+                 if _cov > 0.995 else
+                 f"Held tiles cover {_cov*100:.0f}% of the frame; the rest is left blank, not filled in.")
 if os.path.exists(HRO):
     im = Image.new("RGB", (SIZE, SIZE), NAVY); d = ImageDraw.Draw(im)
     d.text((SIZE//2, 330), "January 2004", font=F(58, True), fill=WHITE, anchor="ma")
@@ -503,7 +540,7 @@ if os.path.exists(HRO):
     for i, t in enumerate([
         "One hundred times finer than the satellite frames.",
         "Inside the window this project had recorded as having no imagery at all.",
-        "Held tiles cover 36% of the frame; the rest is left blank, not filled in."]):
+        COVERAGE_LINE]):
         d.text((SIZE//2, 480+i*32), t, font=F(18), fill=MUT, anchor="ma")
     frames += hold(im, 4)
 
@@ -519,22 +556,26 @@ if os.path.exists(HRO):
         ("creek", ["One continuous drainage crosses the community: Horno Creek in the south,",
                    "recorded by the County as the Acjachema Storm Drain through the built core.",
                    "Four parks sit within 25 m of it. It has never been sampled."]),
-        ("all",   ["Schools, the 1948 ranch node, and the creek together,",
-                   "at 0.3 m. Individual houses, pads and equipment are resolvable."])]:
+        ("all",   ["Every documented feature on one frame, at 0.3 m: schools, the drainage,",
+                   "the parks along it, the 1948 ranch node and the 1968 water bodies.",
+                   "Individual houses, pads and equipment are resolvable."])]:
         im, d = base(panel, "Ladera Ranch", "USGS orthoimagery, 0.3 m native", "Jan 2004")
         if mode == "plain":
             d.text((36, MAPEND+12), "■  grey = outside the tiles held", font=F(15), fill=NODATA)
         elif mode == "creek":
             draw_all_water(d, w=5)
-            draw_parks(d)
+            draw_parks(d, labels=False)
         else:
             draw_all_water(d, note=False, w=4)
-            draw_parks(d, note=False)
+            draw_parks(d, note=False, labels=False)
             draw_water(d, note=False)
             draw_node(d, note=False)
-            draw_schools(d)
-            d.text((36, MAPEND+12), "○ schools   ◎ 1948 ranch node   — Horno Creek   ○ 1968 water",
+            draw_schools(d, with_dist=True)
+            d.text((36, MAPEND+12),
+                   "○ schools, with distance to the drainage   ◎ 1948 ranch node",
                    font=F(15), fill=MUT)
+            d.text((36, MAPEND+34),
+                   "— drainage   ▢ parks   ○ 1968 water bodies", font=F(15), fill=MUT)
         caption(d, cap)
         foot(d, "USGS EarthExplorer - High Resolution Orthoimagery 2004-01-21")
         frames += hold(im, 6)
