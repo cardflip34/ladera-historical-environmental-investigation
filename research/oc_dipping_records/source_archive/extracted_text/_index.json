@@ -1,0 +1,44 @@
+[
+ {
+  "pdf": "proclamation_1912_johnson.pdf",
+  "pages": 3,
+  "chars": 8308,
+  "text": "proclamation_1912_johnson.txt",
+  "sha256_pdf": "044ba129e9bedf10208da37436f941cf7ec9d1f75b2e67215a264eb4c378a4d3"
+ },
+ {
+  "pdf": "usda_bai_1916_illustrated_lecture_cattle_tick_eradication.pdf",
+  "pages": 22,
+  "chars": 27384,
+  "text": "usda_bai_1916_illustrated_lecture_cattle_tick_eradication.txt",
+  "sha256_pdf": "9533b90d4590aabb56e8e669a107631a61e5e82b89da598d0069c7491f896d52"
+ },
+ {
+  "pdf": "usda_bai_circular174_1911_eradicating_cattle_ticks_in_CALIFORNIA.pdf",
+  "pages": 23,
+  "chars": 45550,
+  "text": "usda_bai_circular174_1911_eradicating_cattle_ticks_in_CALIFORNIA.txt",
+  "sha256_pdf": "2cde5f6099dd4214decfe803a71b8d1b933536a13390d89c7c25437c40764814"
+ },
+ {
+  "pdf": "usda_bai_circular183_1911_dipping_vat.pdf",
+  "pages": 16,
+  "chars": 29605,
+  "text": "usda_bai_circular183_1911_dipping_vat.txt",
+  "sha256_pdf": "56beb8d1758b4b7850247d41f67f4cfc4e9275c83c776ffee9a3ecf075721751"
+ },
+ {
+  "pdf": "usda_bai_circular207_1912_dipping_vats.pdf",
+  "pages": 21,
+  "chars": 41055,
+  "text": "usda_bai_circular207_1912_dipping_vats.txt",
+  "sha256_pdf": "85c3abc76015fd1306db04116dc68c287b7a6262e6dd24a07c9ce64b51c556dc"
+ },
+ {
+  "pdf": "usda_farmers_bulletin_1057_1919_cattle_fever_ticks_eradication.pdf",
+  "pages": 33,
+  "chars": 71925,
+  "text": "usda_farmers_bulletin_1057_1919_cattle_fever_ticks_eradication.txt",
+  "sha256_pdf": "d235763ca72af6cb0a34884545644050d8a469bf621d8fa868b818ed327888b1"
+ }
+]

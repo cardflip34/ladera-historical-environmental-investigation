@@ -1,0 +1,746 @@
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Historic, archived document 
+  
+Do not assume content reflects current 
+scientific knowledge, policies, or practices. 
+ 
+Issued October 16,1912.
+U. S. DEPARTMENT OF AGRICULTURE,
+BUREAU OF ANIMAL INDUSTRY.—CIRCULAR 207^
+A. D. MELVIN, CHIEF OF BUREAU.
+follows
+DIRECTIONS FOR CONSTRUCTING VATSl^ND
+CATTLE TO DESTROY
+BY
+H. W. GRAYBILL, D. V. M.,
+Assistant Zoologist\ Zoological Division,
+AND
+W. P. ELLENBERGER, D.V.S.,
+Veterinary Inspector; Inspection Division.
+[A Revision of Bureau of Animal Industry Circular 183.]
+WASHINGTON:
+GOVERNMENT PRINTING OFFICE.
+1912.
+BUREAU OF ANIMAL INDUSTRY.
+Chief: A. D. MELVIN.
+Assistant Chief: A. M. FARRINGTON.
+Chief Clerk: CHARLES C. CARROLL.
+Animal Husbandry Division: GEORGE M. ROMMEL, chief.
+Biochemic Division: M. DORSET, chief.
+Dairy Division: B. H. RAWL, chief.
+Field Inspection Division: R. A. RAMSAY, chief.
+Meat Inspection Division: RICE P. STEDDOM, chief.
+Pathological Division: JOHN R. MOHLER, chief.
+Quarantine Division: RICHARD W. HICKMAN, chief.
+Zoological 'Division: B. H. RANSOM, chief.
+Experiment Station: E. C. SCHROEDER, superintendent
+Editor: JAMES M. PICKENS,
+2
+ADDITIONAL COPIES of thfa publicationJLX. may be procured from the SUPERINTEND-ENT OF DOCUMENTS, Government PrintingOffice, Washington, D. C, at 5 cents per copy
+LETTER OF TRANSMITTAL.
+UNITED STATES DEPARTMENT OF AGRICULTURE,
+BUREAU OF ANIMAL INDUSTRY,
+Washington, D. C, August P, 1912.
+SIR: I have the honor to transmit the accompanying paper en-
+titled " Directions for Constructing Vats and Dipping Cattle to
+Destroy Ticks," by Drs. H. W. Graybill and W. P. Ellenberger, of
+this bureau. This circular, which is a revision of Circular 183, not
+only gives directions for preparing arsenical dips and for dipping
+cattle, but contains plans and specifications for the construction of
+suitable dipping vats. It has been prepared to meet the need for
+such information in connection with the work being done by the
+bureau in cooperation with State and local authorities for the eradi-
+cation of the ticks which spread the contagion of Texas or southern
+cattle fever. I respectfully recommend that it be published in the
+circular series of this bureau.
+Respectfully,
+A. D. MELVIN,
+Chief of Bureau.
+Hon. JAMES WILSON,
+Secretary of Agriculture.
+CONTENTS.
+Page.
+Arsenical dips 5
+Preparation and use of arsenical dips 6
+Precautions in the use of arsenic 10
+Method of dipping 11
+Rule for calculating the capacity of a dipping vat 12
+Specifications for the construction of a concrete cattle-dipping vat 13
+Site '. 13
+Excavation 13
+Forms 13
+Concrete. 13
+Waterproofing ,. 15
+Exit incline 16
+Slide 16
+Cover 16
+Dripping pen 17
+Chute 17
+Bill of materials for vat, dripping pen, and chute. 17
+Specifications for the construction of a brick dipping vat 18
+Materials . 18
+Excavation and construction - - - - 20
+Bill of materials for brick vat, dripping pen, and chute 20
+ILLUSTRATIONS.
+Page.
+FIG. 1. Plans for a concrete dipping vat 14
+2. Plans for a brick dipping vat 19
+4
+DIRECTIONS FOR CONSTRUCTING VATS AND DIPPING
+CATTLE TO DESTROY TICKS.
+In the course of the work of tick eradication, which the Bureau of
+Animal Industry has undertaken in cooperation with the States of
+the quarantined area, there has arisen a demand for a brief publica-
+tion treating of the preparation and use of arsenical dips and giving
+plans and specifications for a dipping vat suited to the conditions
+and requirements on the ordinary farm.1 It is with the view of
+supplying this information that the present circular has been pre-
+pared. Those who may desire information on the life history of
+the tick or further information relating to methods of its eradication
+are referred to more extensive publications on those subjects.2
+ARSENICAL DIPS.
+Arsenical dips as agents for destroying cattle ticks have come into
+much favor during the past few years. This has been due to their
+efficacy, cheapness, the ease with which they are prepared, and the
+comparatively slight injury they cause to cattle when properly pre-
+pared and used. Homemade dips are the ones most commonly used,
+and are quite satisfactory in every way when ordinary care is observed
+in their preparation. Recently there has been placed on the market a
+proprietary concentrated arsenical dip which has given good results.
+This dip is prepared for use by diluting it with cold water in the
+proportions of 1 to 100. It is entirely possible that in the near
+future other concentrated arsenical dips will be successfully prepared.
+The only advantage in such dips is that comparatively little time is
+required in preparing the bath, but this advantage is largely counter-
+balanced by the fact that they are more expensive than homemade
+dips.
+1 In preparing the plans of the vat shown in this circular consideration has been given
+to the question of cost as well as to practicability of design. The plans for a vat that has
+been used extensively and with much success by bureau inspectors in the tick-eradication
+work in Alabama have been followed in part.
+2 Farmers' Bulletin 498, Bureau of Animal Industry Bulletins 130 and 152, and Bureau
+of Entomology Bulletin 72, all issued by the United States Department of Agriculture.
+5
+6 DIPS AND DIPPING VATS FOR DESTROYING CATTLE TICKS.
+PREPARATION AND USE OF ARSENICAL. DIPS.
+The formula most commonly used in making an arsenical dip is
+the following:
+Sodium carbonate (sal soda) pounds._ 24
+Arsenic trioxid (white arsenic) do S
+Pine tar gallon__ 1
+Water sufficient to make 500 gallons.
+If for any reason a stronger dip is desired, 25 pounds of sodium
+carbonate and 10 pounds of arsenic trioxid may be used in place of
+the amounts given in the above formula. The stronger dip ia re-
+quired by the regulations of the Bureau of Animal Industry in the
+dipping of cattle which are to enter interstate commerce from quar-
+antined areas, but for ordinary eradication work when immediate
+removal of the cattle to tick-free areas is net contemplated it will
+probably be best to use the weaker solution, and this is especially
+true during hot weather and when the animals are to be treated
+every two weeks.
+In preparing the dip a large caldron or galvanized tank is required
+for heating the water in which to dissolve the chemicals. Twenty-
+five gallons of water should be placed in the caldron or tank and
+brought to a boil. The amount of sodium carbonate indicated in the
+formula is then added and dissolved by stirring. When this is accom-
+plished, the required amount of arsenic is added and dissolved in a
+similar manner. The fire is then drawn, and the solution permitted
+to cool to 140° F., or this process may be hastened by the addition
+of cold water. The pine tar is then added slowly in a thin stream
+and thoroughly mixed with the solution by constant stirring. This
+solution should be diluted at once to 500 gallons.
+If a large enough caldron or tank is available for preparing the
+dip, a greater quantity of solution may be prepared at one time,
+always, of course, in the same proportions as the above. In this way
+the time required in preparing the amount of solution necessary to
+fill a vat is reduced considerably. In case it is necessary to use a
+smaller container, say of about the capacity of 15 gallons, only half
+the amount of solution indicated should be prepared at one time, the
+quantities of ingredients used being half those in the formula. This
+will, however,' require so much time in preparing the amount of solu-
+tion necessary to fill a vat that when possible it is advisable to provide
+a larger vessel for dissolving the chemicals.
+The caldron or tank and utensils used in preparing the dip should
+be kept free from grease or oil, as small quantities of these may
+envelop particles of arsenic and prevent or hinder the solution of the
+arsenic. It should also be borne in mind that when hard water is*
+used in the preparation of the dip the dissolving of the sodium car-]
+BIFS AND DIPPING VATS FOR DESTROYING OATTLE TICKS. 7
+bonate' (sal soda) in the boiling water results in the formation of a
+fine white or gray insoluble powder or precipitate of lime salts, which
+may be taken for undissolved arsenic and thus lead to the belief that
+all of the arsenic has not gone into solution.
+The arsenical solution, when prepared according to the above
+method, should be diluted as soon as the pine tar has been added
+in order that the tar may become properly emulsified. In the con-
+centrated solution the tar tends to separate out, especially when the
+solution becomes cold, and collect in a layer at the bottom of the
+container. Even when this plan of immediately diluting the solution
+is followed a satisfactory emulsion is not always obtained and some
+of the tar may separate and go to the bottom of the vat.
+If, however, the acids present in the tar are neutralized by the use
+of concentrated lye, a good emulsion of the tar in the diluted dip may
+be obtained.1 The neutralization is effected by dissolving 1 pound of
+concentrated lye in a quart of waiter for wery gallon1 of tar to be used
+and adding this solution to the tar, stirring thoroughly. When the
+acids of the tar have been properly neutralized the resulting mixture
+should be a bright, thick fluid of a dark brown color. Whether the
+acids have been neutralized or not may be determined by taking a
+small quantity of the tar on the blade of a pocket knife or on a sliver
+of wood and stirring it in a glass of water. If the acids have been
+neutralized the tar will mix uniformly with the water, whereas if
+they have not been neutralized the tar will float about in the water
+in the form of various sized globules that will settle to the bottom,
+when the agitation of the water ceases. For all ordinary grades of
+tar 1 pound of lye to the gallon will be ample to effect neutraliza-
+tion; but if on testing it is found that the amount has not been suf-
+ficient, it will be necessary to add more lye solution—about a pint at
+SL time for each gallon—until the test shows that the acids have been
+neutralized. The neutralized tar should be added to the diluted
+arsenical dip and not to the concentrated solution, with which it will
+not mix satisfactorily. When the neutralized tar is used the vat
+should be filled with diluted arsenic-soda solution prepared in the
+usual way. The required amount of neutralized tar, diluted with
+two to three times its volume of water, should then be added to the
+solution in the vat and thoroughly mixed with the same by stirring.
+Before filling a vat the capacity at the depth to which it is neces-
+sary to fill it for dipping, if not known, should be calculated, and
+for future convenience the water line should be plainly marked at
+some point on the wall of the vat. Unless this is done rt will be
+necessary either to calculate the amount of water in the vat each
+time it is filled or to measure it as it is placed in the vat, both of
+1 This method for emulsifying the tar has been suggested by the Biochemic Division of
+this bureau.
+8 DIPS AND DIPPING VATS FOB DESTBOYING CATTLE TICKS.
+~which procedures will consume considerable unnecessary time. The
+most convenient way to get the water into the vat is to conduct it
+through pipes, either directly from a pump or from an elevated tank
+used for storing water for farm purposes. Frequently, however,
+it is not possible to bring the water to the vat through pipes, and
+it becomes necessary to resort to the laborious process of hauling it
+in barrels on wagons or sleds.
+In case the pine tar is added to the concentrated solution when
+it is made, in which case, as already stated, it is necessary to dilute
+the solution at once, the vat should be partly filled with water and
+then the arsenical solution added as it is made. For example, if
+the vat holds 2,000 gallons, about 1,500 gallons of water should be
+placed in the vat, then four times the amount of solution for mak-
+ing 500 gallons of dip should be prepared and mixed with the water,
+after which the vat should be filled to the 2,000-gallon mark. Within
+certain limits it is immaterial just how much water is added at first,
+provided, of course, ample allowance is made for the volume of the
+concentrated dip, so that when it is added the dip line will not come
+above the mark to which the vat is to be filled.
+The capacity of the vats planned in this circular at a depth of
+5 feet 3 inches is 1,470 gallons. In order to fill it to that depth with
+dip it will be necessary to prepare two batches of concentrated dip,
+each containing the ingredients necessary for making 500 gallons
+of diluted dip, and a third batch containing 7 pounds 9 ounce? of
+arsenic and 22 pounds 3 ounces of sodium carbonate in case 8 pounds
+of arsenic are being used to the 500 gallons, or 9 pounds 7 ounces
+of arsenic and 22 pounds 8 ounces of sodium carbonate in case 10
+pounds of arsenic are being used to the 500 gallons, .
+A stock arsenical solution is found convenient for replenishing the
+dip in a vat when it has gotten too low for dipping. A stock solution
+in which the ingredients for 500 gallons of dip are dissolved in 25
+gallons of water may be used. In making up the stock solution the
+arsenic and sal soda for 500 gallons should be dissolved in the usual
+manner in 25 gallons of water. The tar should not be added to the'
+stock solution. Special care should be observed to see that the solu-
+tion after boiling and cooking measures 25 gallons, and any deficiency •'
+due to evaporation during boiling should be made up by adding cold1
+water. Nineteen parts of water to one part of this solution will give
+the proper dilution. The tar, neutralized in the manner already de-
+scribed, should be mixed with the solution after it has been diluted,
+in the proportion of about half a pint for every 30 gallons of diluted
+dip.
+In diluting stock solutions great care should always be observed in
+measuring the amount of solution and water used. A small error in
+measuring the amount of stock solution required is likely to cause a
+DIPS AND DIPPING VATS FOR DESTROYING CATTLE TICKS. 9
+considerable variation in the arsenic content of the dip, especially
+if the quantity prepared is small. If "the variation happens to be in
+the direction of too low a per cent of arsenic the treatment may not
+prove effective, whereas if it happens to be in the other direction cattle
+that are treated may be injured or even killed. Care is especially
+necessary in the case of a certain highly concentrated proprietary dip,
+to be used at a dilution of 1 to 100. In using this great care should
+be observed in measuring the amount required, and the dilution
+recommended should be strictly followed. The same caution should
+be observed in the case of any other concentrated arsenical dips that
+may later appear on the market.
+The arsenical dip may be left in the vat and used repeatedly, re-
+plenishing it with the proper quantities of water and stock solution
+when necessary. When, however, the dip becomes filthy through the
+addition of manure and dirt carried in by the cattle, the vat should be
+emptied, cleaned, and filled with fresh fluid. The frequency with
+which this should be done must be left to the owner, as the condition
+of the dip at any period after it has been made depends on a variety
+of conditions, such as the number of cattle dipped, the frequency of
+the dippings, etc. Even though the dip may not become very filthy,
+its efficacy decreases somewhat on standing, owing to gradual oxida-
+tion of the arsenic. It is therefore advisable to recharge the vat at
+intervals irrespective of the condition of the dip as to cleanliness.1
+In order that dipping in arsenic may be both efficacious in destroy-
+ing ticks and also harmless to the cattle at all times, it is of the
+highest importance that the dip be of the proper strength when made
+and that it be maintained as far as practicable at that strength. Due
+care in making the dip and in calculating the capacity of the vat
+will, of course, assure the correct initial strength of the dip. Pro-
+viding the vat with a waterproof cover will do much to maintain
+the dip at its proper strength by preventing, on the one hand, con-
+centration by evaporation, and on the other hand dilution by rains.
+A cover will also reduce the risk of .cattle being poisoned during the
+intervals between dippings, especially when the vat is not protected
+by a fence. During rains the water from the draining pen and
+chute should not be permitted to run into the vat and dilute the dip.
+At the conclusion of each dipping, especially if the vat is without
+a cover, it is well to mark the position of the surface of the dip on
+the side of the vat in order to determine at the next dipping whether
+there has been a change in the level of the dip. If the surface of the
+dip has fallen and it is known that the vat does not leak, therk has
+1Mr. R. M. Chapin, of the Biochemic Division, has devised a portable test case for
+testing arsenical dips in the field, which has been shown to be a practical success after ex-
+tensive field tests. With this device, it is now possible to ascertain quickly the strength
+of the dip in a vat, and thus determine when the vat should be recharged. It is the inten-
+tion of the bureau to place test outfits in the hands of the men engaged in tick eradication.
+57489°—Cir. 207—12 2
+10 DIPS AND DIPPING VATS FOR DESTEOYING CATTLE TICKS.
+been a loss of water by evaporation and consequently an increase in
+the strength of the dip. In order to bring the dip down to its
+former strength water should be run into the vat until the dip sur-
+face reaches the mark made at the last dipping. If the fall has
+been due to the vat leaking, the strength of the dip has not been
+altered, and consequently water alone should not be added. If the
+dip surface has been raised by rain the amount of water added in
+this way should be determined by calculation, and for every 19 gal-
+lons of water 1 gallon of the stock solution previously mentioned
+should be used.
+PRECAUTIONS IN THE USE OF ARSENIC.
+Because of the fact that arsenic is a poison, great care should bo
+observed in caring for it after it is purchased from the druggist, in
+order that persons and animals may not be accidentally poisoned.
+The dip at the time it is being made and also after it is diluted
+should be handled and protected as a poison. Unless such pre-
+cautions are observed accidents are very likely to occur. When,
+however, arsenic is handled with the proper care, there is no more
+danger in its use on the farm than in the use of a number of other
+poisons that are commonly and regularly employed by farmers for
+destroying insect pests of plants and obnoxious rodents.
+Persons using the dip, especially with the spray pump, should not
+subject their hands and other portions of the body, by permitting their
+clothing to become wet, to the action of the dip any more than is
+necessary, and it is well to wash the hands thoroughly after each
+spraying, especially when they are frequently exposed to the dip.
+At the time the dip is being prepared, care should be observed not to
+inhale the vapor arising from the caldron or kettle, and during
+spraying the same precaution should be exercised against the in-
+halation of the spray.
+In making the dip, weights and measures should not be guessed at,
+and the arsenic especially should be weighed with the greatest care.
+Cattle should always be watered a short time before they are
+dipped. After they emerge from the vat they should be kept on a
+draining floor until the dip ceases to run from their bodies; then they
+should be placed in a yard free of vegetation until they are entirely
+dry. If cattle are allowed to drain in places where pools of dip
+collect, from which they may drink, or are turned at once on the
+pasture, where the dip will run from their bodies on the grass and
+other vegetation, losses are likely to result. Crowding the animals
+before they are dry should also be avoided, and they should not be
+driven any considerable distance within a week after dipping, espe-
+cially in hot weather.- If many repeated treatments are given the
+cattle should not be treated oftener than every two weeks.
+DIPS AND DIPPING VATS FOR DESTROYING CATTLE TICKS. 11
+In addition to properly protecting vats containing arsenical dip
+when not in use, caution must also be observed when vats are to be
+emptied for cleaning. The dip should not be poured or allowed to
+flow on land and vegetation to which cattle or other animals have
+access. The best plan is to run the dip into a pit properly protected
+by fences. The dip should also not be deposited where it may be
+carried by seepage into wells or springs which supply water used on
+the farm.
+Dalrymple and Kerr1 have suggested a method of rendering the
+arsenical dip harmless by the use of air-slaked lime and copperas
+(ferrous sulphate). This method should not. however, be used alone,
+but rather as a precautionary measure supplementary to the plan sug-
+gested above for disposing of the dip. The process consists in using
+6 pounds each of air-slaked lime and copperas to each 100 gallons of
+dip to be treated. The required amount of lime is first added to the
+dip and thoroughly mixed with it by stirring. After this treatment
+the dip should be permitted to stand for at least an hour. The cop-
+peras should then be dissolved in hot water and the solution while
+still hot should be added slowly to the dip and well mixed with the
+same by stirring. The dip should then be permitted to stand for at
+least 12 hours, after which it may be removed from the vat and dis-
+posed of in the way suggested.2
+METHOD OF DIPPING.
+The procedure to be followed in dipping animals on a farm de-
+pends on the end that is sought in undertaking the treatment. If it
+is simply desired to reduce and keep down the infestation of ticks on
+a farm it will only be necessary for the owner to keep his animals
+under observation and dip them when, according to his judgment,
+treatment is necessary to keep the ticks under control. Such a pro-
+cedure may well be followed where the regular tick eradication is not
+under way; that is, in instances in which' it is not yet practicable or
+expedient to rid farms completely of ticks.
+If, however, it is desired to rid the farm completely of ticks—and
+this should be the purpose in every case in which it is practicable and
+expedient—it will be necessary to dip all cattle, and also any horses,,
+mules, or asses that may harbor the cattle tick, at regular intervals,
+until all ticks have disappeared from the farm. The purpose of such
+1W. H. Dalrymple and A. P. Kerr. Bulletin 132, Louisiana Agricultural Experiment
+Station.
+3 The Biochemic Division of this bureau is at present investigating the process proposed
+by Dalrymple, together with other possible processes for attaining the same end. The^
+essential part in the process is played by caustic lime, which when present in excess pre-
+cipitates all but practically inappreciable traces of the arsenic as insoluble calcium
+arsenite. It is therefore desirable to use quicklime in place of the air-slaked lime
+recommended by Dalrymple, slaking it with water in the usual manner before adding to*
+the dip, while the addition of ferrous sulphate appears to be unnecessary.
+12 DIPS AND DIPPING VATS FOR DESTROYING CATTLE TICKS.
+dipping is to prevent as nearly as possible any engorged females drop-
+ping to the pasture and there laying eggs which in time may develop
+into young ticks. In order to do this it is necessary to dip at inter-
+vals short enough so that no tick after getting on the cattle will have
+time to mature and drop off before the next dipping. An interval
+between dippings of two weeks is considered most satisfactory. This
+interval, however, may be increased somewhat if necessary^ but it
+should never be greater than three weeks.
+In freeing a farm of ticks the dipping should not be discontinued
+until it has been determined with certainty that the cattle and prem-
+ises are free of ticks. It should be borne in mind that it is almost
+impossible to determine by a few inspections, even if carried out with
+great care, that animals are free from ticks. If the treatment is dis-
+continued and a few unobserved ticks are still on the animals, these,
+on: maturing and dropping, are likely to give rise to a new brood of
+young ticks. Moreover, even if the cattle are Actually free from ticks,
+the fact should not be lost sight of that there may still be engorged
+females, eggs, and seed ticks on the premises. This is most likely to
+be the case during the colder part 01 the year when the development
+of the tick on the ground progresses slowly and also when any seed
+ticks that may be present are likely to be slow in reaching the cattle
+because of inactivity resulting from the low temperature.
+RULE FOR CALCULATING THE CAPACITY OF A DIPPING VAT.1
+a. Reduce all dimensions to the same denomination, feet or inches.
+6. Add the length of the bottom of the vat to the length at the
+water line.
+c. Add the width of the bottom to the width at the water line.
+d. Multiply these sums (b and e) together.
+e. Multiply the length of the bottom by the width of the bottom.
+/. Multiply th& length at the water line by the width at the water
+line.
+g. Add together d, e, and /.
+A. Multiply this sum (g) by one-sixth the perpendicular depth
+from the water line to the bottom, which gives the capacity of the
+vat in cubic feet or cubic inches.
+i. If the capacity in cubic inches has been obtained, divide k by
+231; if the capacity in cubic feet has been obtained, divide h by
+0.1336. In either case the result will be the capacity of the vat in
+gallons.
+This method is mathematically accurate if the vat is set level, but
+if it is set so that it is slightly lower at one end than at the other, as
+is usual, the true capacity can not be obtained by this method. If,
+1 This rule has been adapted by Dr. B. H. Ransom from a mathematical formula for
+calculating the volume of a prismoid.
+DIPS AND DIPPING VATS FOR DESTROYING CATTLE TICKS. 13
+however, the figures for the width at the water line and the depth
+are taken from measurements at the middle of the vat the results
+obtained will vary only very slightly from the actual capacity.
+SPECIFICATIONS FOR THE CONSTRUCTION OF A CONCRETE
+CATTLE-DIPPING VAT.
+SITE.
+The site selected for the location of the vat should be dry and of
+sufficient size to admit of the construction of the chute, the dripping
+pen, and at least two additional pens—one for holding the cattle
+prior to dipping and the other for retaining them after dipping
+until sufficiently dried.
+EXCAVATION.
+The excavation should be made 1 foot wider and 1 foot longer
+than the inside dimensions of the vat and should conform to its
+shape. The inside dimensions of the vat are shown on the drawings
+(fig. 1) and are as follows: Length at top of vat, 26 feet; bottom, 12
+feet. Width at top, 3 feet; at bottom, 1J feet. Depth, 6J feet.
+The sides and bottom of the excavation should be firm and solid,
+as they are to serve for the outside forms in casting the concrete.
+If it is necessary to do any filling in order to conform to the shape
+of the vat, the filling should be puddled and thoroughly rammed
+until solid, because the stability of the concrete depends on the
+foundation.
+FORMS.
+The wooden forms should be constructed of 1-inch boards and 2 by
+4 iilch braces, the boards being nailed to the outside face of the braces,
+as shown in the drawings. The sides and end walls should be built 8
+inches higher than the surface of the ground, which should be level.
+CONCRETE.
+The poncrete should be made of 1 part of cement, by measure, 2|
+parts of sand, and 5 parts of broken rock or gravel. The cement
+should be of a standard brand of Portland, the sand clean and coarse,
+and the broken rock from about £-inch pieces to not larger than will
+pass in every direction through a 1-inch ring.
+Mixing.—The mixing should be done on a tight wooden platform
+or in a tight box. The sand and stone should be measured in a bot-
+tomless box, 2£ feet long by 2 feet wide by 1 foot deep, having a
+capacity of 5 cubic feet. A convenient size of batch to mix is one
+consisting of 2 bags of cement, 1 measure (5 cubic feet) of sand, and
+2 measures (10 cubic feet) of stone.
+mmmmmmmm.
+s
+s
+o
+a
+H
+o
+W
+00
+FIG. 1.—Plans for a concrete dipping vat.
+A^D DIPPINO VATS.FQB DESTROYING CATTLE TICKS., 15
+The sand is measured out first and the cement emptied on top, after
+which the two materials are thoroughly mixed together, dry. In the
+meantime the stone may be measured out and thoroughly drenched
+with water. The cement-sand mixture is mixed with water and the
+resulting mortar then combined with the stone. The stone should be
+shoveled on the mortar, which has been previously spread out in a
+thin layer. Mixing should continue until the stone is thoroughly
+coated with mortar, more water being added during the mixing
+process if necessary.
+Laying.—Before laying the concrete the molds should be set and
+thoroughly braced into place. The side forms may be suspended in
+the excavation with their lower edges 6 inches from the bottom by
+means of crosspieces nailed to the uprights and of sufficient length
+to rest on supports located several feet from the edges of the excava-
+tion. The concrete for the bottom and incline is deposited first,
+this mixture being of a consistency that water will flush to the sur-
+face on ramming. The mixtures for the sides and end should be
+very wet and should be thoroughly puddled into place. The con-
+sistency of the concrete for the side walls should be such that it will
+run off the shovel unless handled quickly.
+The laying of the concrete should be done, if possible, in one opera-
+tion, in order that there may be no joints between the new and old
+work. If it becomes necessary to lay the concrete on two or more
+days the surface on which the new concrete is to be deposited should
+be washed thoroughly clean and coated with grout of pure Portland
+cement and water mixed to the consistency of cream. The new con-
+crete should be placed before the grout has set. Extreme care should
+be taken to prevent dirt from falling in on top of the deposited
+concrete.
+The forms should not be removed until the concrete is set, which
+in moderate weather will have taken place in about 24 hours. In.
+damp, cold weather at least 48 hours should be allowed before remov-
+ing the forms. It will be advisable, especially in water-soaked
+ground, to allow the forms to remain in place for one week before
+removal.
+Finishing coat.—Before applying the surf ace coat dampen the walls
+and floor thoroughly. Cover the entire exposed surface of the floor
+and walls with a coating one-half inch thick of cement mortar com-
+posed of Portland cement 1 part, sand 2 parts. Coating to be floated
+and troweled to a smooth finish.
+WATERPROOFING.
+If the earth around the vat is thoroughly drained the vat may be
+waterproofed by painting the surface coat, but painting the surface
+16 DIPS AND DIPPING VATS FOR DESTROYING CATTLE TICKS.
+will not give satisfactory results if there is ground water to seep in.
+The paint may be good hot pine tar, or gas-house tar cut with naphtha
+or gasoline and applied with a brush, or after the mortar coat has
+hardened the inside of the vat may be painted with an 6il-cement
+paint made as follows:1 Mix enough water with Portland cement to
+make a fairly stiff paste; add to this 5 per cent of heavy petroleum
+residuum oil based on the weight of the cement, and mix thoroughly
+until the oil entirely disappears, then add more water and stir until
+a paint of the consistency of cream is formed. This paint should be
+-applied with a brush and should be well rubbed into the surface.
+Should the mortar coat be omitted the paint coat should be applied
+directly to the surface of the concrete.
+EXIT INCLINE.
+If the exit incline is to-have a false wooden floor it will be necessary
+to embed iron bolts in the concrete, to which the wooden floor may be
+fastened. Before the concrete incline is laid embed in the dirt three
+pieces of 2 by 4 inch scantling, placed at the top, center, and bottom
+of the incline. The bolts should extend through these pieces and
+should be placed with the head next to the dirt. The bolts should be
+long enough to extend through the concrete and the inch boards of
+the floor, so that the wooden floor may be securely fastened.
+The exit incline may be constructed without a false bottom. In
+this case bricks laid on edge and embedded in the concrete will form
+cleats to allow the animals to leave the vat readily. The cleats
+should be about 14 inches apart and project about 2 inches.
+SLIDE.
+Cover the slide with a sheet of boiler iron properly fastened to the
+cement.
+COVER.
+The cover of the vat consists of two leaves hinged on posts set 3
+feet in the ground along each side of the vat. The leaves are 2 feet
+C inches wide, and when open rest against the upper part of the
+posts to which they are hinged and serve as splashboards. The
+details of the hinge 2 used and the method of setting it are shown
+in the drawings. When the leaves are open their lower edges are
+just above the top of the side walls, which are given a slope inward
+for the purpose of conducting the dip running from the splash-
+boards back into the vat. Eemovable doors should be constructed to
+close the triangular openings left at the ends of the vat when the
+cover is closed. The hinges may be made by a blacksmith.
+1 These directions for the oil-cement paint are furnished by the Office of Public Roads
+of the United States Department of Agriculture.
+2 This hinge and the method of setting it for the cover of a dipping vat have been
+copied from an article by William Taylor Heslop in the Agricultural Journal of the Union
+of South Africa, Pretoria, vol. 1, No. 1, 1911, pp. 38-43.
+DH>S AND DIPPING VATS FOB DESTROYING CATTLE TICKS. 17
+DRIPPING PEN.
+Construct a dripping pen about 12 by 15,feet at the head of the
+exit incline. The floor should be of concrete prepared as previously
+described for the vat and laid in a similar manner. The floor should
+be pitched toward a corner of the pen, where a pipe should be laid
+in the floor to carry the drippings into a barrel sunk in the ground.
+The drippings thus caught may be returned to the vat after settling.
+The floor should be roughened to prevent the cattle from slipping.
+CHUTE.
+The chute leading to the vat should be built 30 inches wide and 20
+feet long, and the receiving and retaining pens should be of a size to
+take care of the animals to be dipped.
+BILL OF MATERIALS FOR VAT, DRIPPING PEN, AND CHUTE.
+LUMBER FOR FORMS.
+8 pieces 1 by 12 inches by T4 feet long.
+- 13 pieces 1 by 12 inches by 12 feet long.
+2 pieces 1 by 12 inches by 9 feet long.
+2 pieces 1 by 12 inches by 6 feet long.
+2 pieces 1 by 12 inches by 4 feet long.
+8 pieces 2 by 4 inches by 8 feet long.
+-^2 pieces 2 by 4 inches by 7 feet long.
+2 pieces 2 by 4 inches by 6 feet long.
+2 pieces 2 by 4 inches by 4 feet long.
+2 pieces 2 by 4 inches by 2 feet long.
+7 pieces 1 by 6 inches by 12 feet long for crosspieces for inside of forms.
+LUMBER FOR DRIPPING PEN.
+7 pieces 6 by 6 inches by 10 feet long for posts.
+10 pieces 1 by 8 inches by 16 feet long for side rails of pen.
+5 pieces 1 by 8 inches by 12 feet long for side rails of pen.
+5 pieces 1 by 8 inches by 8 feet long for side rails of pen.
+The covers can be made from the lumber used in making the forms,
+and the lumber for the exit incline can be gotten in the same way.
+The 4 by 4 inch posts to which the cover is hinged may be made
+from 2 by 4 stuff by spiking together.
+End form to be made solid.
+HARDWARE AND IRONWORK.
+6 bolts, § by 10 inches, with nuts and washers, for false floor of incline.
+1 sheet of i-inch boiler iron cut to shape of slide; plate bored and counter-
+sunk for 4 screws.
+4 pairs hinges for covers.
+3 heavy T hinges and screws for gate of dripping pen.
+1 heavy iron bolt to fasten gate.
+18 BIPS AND DIPPING VATS FOR DESTROYING CATTLE TICTKS.
+CONCRETE.
+VAT.
+Cement, 10£ barrels (42 bags).
+Sand, 3f cubic yards.
+Stone, 6i eubic yards.
+DRIPPING PEN AND CHUTE.
+Cenrent, 5^ barrels (22 bags).
+SandT If cubic yards.
+Stone, 3£ cubic yards.
+A 26-foot vat has been used extensively for eradication purposes
+with satisfactory results. However, if it is desired to lengthen the
+body of the vat on account of large numbers of cattle to be treated, or
+to make it conform to the bureau's requirements for the treatment of
+cattle for movement as noninfectious, there should be added to the
+amount of concrete material for each lineal or running foot, cement,
+0.37 barrel; sand, 0.12 yard; stone, 0.24 yard.
+By some a dripping chute is regarded more satisfactory than a
+dripping pen. One of the advantages that it has is that the cattle
+are held in line in the order in which they have been dipped, thus
+making it possible to remove one or more of them at a time as soon
+as they have drained sufficiently, in order to make room for others.
+In using the dripping pen this is not practicable, and it is necessary
+to wait until the last animal dipped has drained sufficiently and
+then remove them all together.
+In case it is desired to construct a dripping chute it should be
+located at the head of the exit incline in line with the vat. It should
+be about 36 inches wide. The length will depend on the number of
+cattle it is desired to accommodate at one time, it being necessary to
+allow 4 to 5 feet for each. A length of from 20 to 40 feet is con-
+sidered a convenient size for small herds. The floor should be made
+of concrete and sloped toward the vat. The dip should not be per-
+mitted to run directly into the vat, but should be collected in a barrel
+to settle, as shown in the case of the dripping pen. The floor at the
+sides should be raised about 2 inches in the form of a curb to keep the
+dip from running off.
+SPECIFICATIONS FOR THE CONSTRUCTION OF A BRICK DIPPING
+VAT.
+MATERIALS.
+Bricks.—All bricks should be hard burned.
+Mortar,—The mortar used in laying the bricks should be composed
+of 1 part of Portland cement and 3 parts of clean, sharp sand. The
+plaster for facing the inside of the vat should consist of 1 part of
+cement and 2 parts of sand.
+I
+C/?OSS SECT/OM
+-**** -e'-o'~ ^/f*m
+.*W <fi"x«t"
+61
+I
+o
+a
+FIG. 2.—Plan for a brick dripping vat.
+20 DIPS AND DIPPING VATS FOR DESTROYING CATTLE TICKS.
+EXCAVATION AND CONSTRUCTION.
+Excavate the ground 1 inch wider than the outside width of the
+vat. Lay up the walls one brick thick, all bricks to be stretchers; that
+is, the long way of the brick to be laid the long way of the wall.
+The sides are to be laid with level courses and the batter or slant is
+; made by setting back each succeeding layer of bricks. Break joints
+in every course. Rake out the horizontal mortar joints at least £ inch
+from the inside face of the wall. This will give a key for the cement-
+mortar facing. Build buttresses or piers where indicated on plan and
+shown on cross section. (See fig. 2.) The buttresses are to be one
+brick wide at the bottom and to extend far enough from the inside
+face of the vat so that the outside face will be plumb and finish even
+with the outside face of the coping or curb at top of vat. The but-
+tresses should be laid as a part of the wall and should be bonded into
+the wall. The bottom is laid after the walls are up and the bricks are
+laid flat. The exit incline is laid with bricks laid on edge, and every
+fifth course is to project 2 inches above the face of the incline to form
+cleats. The mortar between the ends of the bricks which form the
+cleats should be cleaned out in order to permit the dip to run back.
+In laying up the walls fill in with mortar between the dirt and out-
+side face of wall.
+The side walls above the ground may be finished and beveled by
+using a heavy coating of cement mortar, or the top may be finished by
+laying the last twTo courses of bricks on edge and so that the bricks are
+headers; that is, the bricks are laid at right angles to the face of the
+wall. Cover the inside faces of walls, exit incline, floor, and slide
+with a J-inch coat of cement mortar mixed in the proportion of 1
+part of cement to 2 parts of sand. Trowel the surface with a steel
+trowel to make smooth.
+The dripping pen and the chute are to be floored with bricks. If
+the ground is very firm, the bricks may be laid flat, but if the ground
+is not firm a more satisfactory floor will be produced by laying the
+bricks on edge. The bricks should be laid in a bed of cement and the
+joints grouted with cement grout. Cement grout is made by mixing
+neat cement with water until it has the thickness of cream. Before
+any of the brickwork is coated with mortar the bricks should be thor-
+oughly washed, and they should be thoroughly wet before the plaster
+coat is applied. The dripping pen and chute are to be plastered with
+a |-inch coat of cement mortar, and before it is completely set the sur-
+face is to be rubbed with a brush broom or a heavy stable broom.
+BILL OF MATERIALS FOR BRICK VAT, DRIPPING PEN, AND CHUTE.
+Brick for vat 2,560
+_ .. _ „ _ . . • . . rif laid on edge 1,320
+Brick for dripping pen and chute |.f ^ ^ ^
+Cement sacks— 28
+Sand (for mortar) cubic yards__ 1.6
+o

@@ -1,0 +1,87 @@
+{
+ "generated": "2026-07-30",
+ "statementClass": "model_estimate",
+ "weakestLink": "Compartment fractions are REASONED ALLOCATIONS, not measurements. They are the least defensible numbers in this project and any reviewer should challenge them.",
+ "totalElementalArsenicKg": {
+  "low": 3035.0,
+  "mid": 7280.0,
+  "high": 18029.0
+ },
+ "compartments": [
+  {
+   "name": "Vat structure + immediate surround",
+   "areaHectares": 0.05,
+   "massFraction": 0.1,
+   "rationale": "Leakage through wooden staves (BAI Circular 174 states leaking is common in wooden vats), splash-out during plunging, and spillage while charging and topping up. Small footprint, sustained loss over the whole service life.",
+   "mgPerKgSoil": {
+    "low": 2890.48,
+    "mid": 6933.33,
+    "high": 17170.48
+   }
+  },
+  {
+   "name": "Drain pen / drip pen",
+   "areaHectares": 0.2,
+   "massFraction": 0.3,
+   "rationale": "Purpose-built to catch drip. The heaviest single deposition zone by design - animals stand here specifically so solution runs off before they leave.",
+   "mgPerKgSoil": {
+    "low": 2167.86,
+    "mid": 5200.0,
+    "high": 12877.86
+   }
+  },
+  {
+   "name": "Working corrals, chutes, approach lanes",
+   "areaHectares": 2.0,
+   "massFraction": 0.2,
+   "rationale": "Wet animals crowded and held; continued dripping; churned ground that absorbs readily.",
+   "mgPerKgSoil": {
+    "low": 144.52,
+    "mid": 346.67,
+    "high": 858.52
+   }
+  },
+  {
+   "name": "Trails, water, shade, salt, bedding grounds",
+   "areaHectares": 50.0,
+   "massFraction": 0.25,
+   "rationale": "Residual drip on the walk out, then concentrated dung and urine where cattle congregate. Cattle distribution is strongly clustered, not uniform - these are the secondary hotspots and they are also, notably, where WATER is.",
+   "mgPerKgSoil": {
+    "low": 7.23,
+    "mid": 17.33,
+    "high": 42.93
+   }
+  },
+  {
+   "name": "Open range - general grazing",
+   "areaHectares": 20000.0,
+   "massFraction": 0.15,
+   "rationale": "Excretion of absorbed and ingested arsenic across the wider range over the days following each dip. Largest area, smallest share, lowest concentration.",
+   "mgPerKgSoil": {
+    "low": 0.01,
+    "mid": 0.03,
+    "high": 0.06
+   }
+  }
+ ],
+ "soilAssumptions": {
+  "bulkDensityKgM3": 1400.0,
+  "depthM": 0.15
+ },
+ "californiaBackgroundMgKg": [
+  1,
+  11
+ ],
+ "twoSidedFinding": {
+  "supportsConcern": "Vat, drain pen and corral compartments exceed background by orders of magnitude even on the low case, and a leaking wooden vat concentrates loss at a point rather than spreading it.",
+  "cutsAgainstConcern": "Open grazing range carries concentrations at or near background once the same mass is spread over tens of thousands of acres. A dramatic arsenic signature on general pasture is NOT the expectation."
+ },
+ "notEstablished": [
+  "presence of arsenic at any Ladera Ranch location",
+  "existence of a vat within the study area",
+  "movement of any material",
+  "any human exposure",
+  "any health effect"
+ ],
+ "supersededBy": "Any accredited laboratory soil or sediment measurement."
+}

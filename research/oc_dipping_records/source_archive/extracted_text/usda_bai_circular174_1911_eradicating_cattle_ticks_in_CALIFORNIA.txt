@@ -1,0 +1,871 @@
+U. S. DEPARTMENT OF AGRICULTURE,
+BUREAU OF ANIMAL INDUSTRY.—
+A. D. MELVIN, CHIEF OF BUREAU.
+ERADICATING CATTLE
+CALIFORNIA.
+BY
+WILLIAM M. MACKELLAR,
+Veterinary Inspector in Charge,
+AND
+GEORGE H. HART,
+Assistant in Pathology and Bacteriology.
+[Reprinted from the Twenty-sixth Annual Report of the Bureau of Animal Industry (1909).]
+WASHINGTON:
+GOVERNMENT PRINTING OFFICE.
+1911.
+ORGANIZATION OF THE BUREAU OF ANIMAL INDUSTRY.
+Chief: A. D. MELVIN.
+Assistant Chief: A. M. FARBINGTON.
+Chief Clerk: CHARLES C. CARROLL.
+Animal Husbandry Division: GEORGE M. ROMMEL, chief.
+Biochemic Division: M. DORSET, chief.
+Dairy Division: B. H. RAWL, chief.
+Inspection Division: RICE P. STEDDOM, chief; MORRIS WOODEN, R. A. RAMSAY, and
+ALBERT E. BEHNKE, associate chiefs.
+Pathological Division: JOHN R. MOHLER, chief.
+Quarantine Division: RICHARD W. HICKMAN, chief.
+Zoological Division: B. H. RANSOM, chief.
+Experiment Station: E. C. SCHROEDER, superintendent.
+J&ditor: JAMES M. PICKENS.
+CONTENTS.
+Page.
+Conditions prior to commencement of eradication work 283
+Losses from the ticks 285
+Early methods of combating gross infestation 286
+Importance of State law 287
+Methods used in tick eradication in California 288
+International fence 290
+Dipping solution, its preparation and use 291
+The dipping vats found most practicable 293
+The swim vat 293
+The cage vat 297
+The wade tank 299
+Present conditions in California 300
+ILLUSTRATIONS.
+Page.
+PLATE XV. Cage vat for dipping cattle 296
+FIG. 7. Plans for wood or concrete dipping vat 294
+8. Plansforcage vat 297
+9. Detail plans for cage vat 298
+10. Plans for small wade tank 299
+in
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Historic, archived document 
+  
+Do not assume content reflects current 
+scientific knowledge, policies, or practices. 
+ 
+ERADICATING CATTLE TICKS IN CALIFORNIA.
+By WILLIAM M. MACKELLAE, Veterinary Inspector in Charge,
+AND
+GEORGE H. HABT, Assistant in Pathology and Bacteriology.
+CONDITIONS PRIOR TO COMMENCEMENT OP ERADICATION WORK
+The history of the Texas-fever cattle tick in California covers
+scores of years. On account of its dating back long before the tick
+was known to be in any way connected with Texas fever, and at a
+time when differentiation of infectious diseases of bovine animals
+was little understood, resulting in anthrax, blackleg, and Texas fever
+being confused with each other and all classed under the lay term of
+" murrain," there is no way of ascertaining the exact origin of the
+tick in this State.
+The common wood tick and castor-bean tick are very numerous in
+parts of California and are found on the cattle and horses in great
+numbers at certain seasons of the year. It is natural, therefore, that
+the invasion of the country by the deadly fever ticks attracted but
+little attention for a long time after their appearance and until they
+had secured a firm foothold.
+Pioneer cattlemen of the State have different views as to the source
+from which the fever ticks were introduced. Thus it is held by some
+that they were brought across the Rocky Mountains on feeder cattle
+shipped into this country from Texas. As Mexico, however, has
+probably been infested since the early conquests of the Spanish, it is
+most plausible to consider that California received her first Texas-
+fever ticks from cattle driven across the line from Lower California.
+Until recent years the entire country was open range and move-
+ments of cattle were not controlled. The ticks, therefore, having been
+seeded in this country, and attracting no suspicion from cattlemen,
+had ample opportunity to spread and involve more of the southern
+section of the State. In every infested locality some one cattleman,
+who on account of having carried on the cattle business on a large
+scale involving the shipping in of cattle from other sections of this
+State and from other States, is accredited by his neighbors with the
+ixesponsibility for bringing the ticks into that particular section.
+283
+284 26TH REPORT, BUREAU OF ANIMAL INDUSTRY.
+When the Texas-fever quarantine line was first placed across the
+United States in 1891 as a result of investigations by Dr. D. E. Salmon,
+the State of California was not included in the quarantined area. In
+1894 outbreaks of Texas fever in Nevada, Kansas, and Missouri were
+reported as apparently caused by cattle originating in California.
+On account of these outbreaks of disease Mr. W. E. Hill, an inspector
+of the Bureau of Animal Industry, was directed to proceed to Cali-
+fornia and make an investigation. His investigation revealed that a
+large part of this State was permanently infested with Texas-fever
+ticks, and that great numbers of cattle had died of the disease in this
+State. The limits of the infested area not having been definitely deter-
+mined, the entire State was subsequently placed below the federal
+quarantine line. Further investigation, however, having shown that
+the northern part of the State was free of ticks, the line was gradually
+moved south, so that in 1906 it crossed California at the northern
+limits of San Luis Obispo,^ Fresno, Madera, and San Bernardino
+counties, thus including the 13 southern counties of the State. All "of
+the territory south of this line was not infested, on account of portions
+of the country being unfavorable to the propagation of the ticks.
+Although many of the counties in the quarantined territory had ap-
+pointed live-stock inspectors, their duties involved attention to all
+infectious diseases, and movements of cattle within a county were
+without restriction. In this way all those sections favorable to the
+development of ticks became permanently ticky ranges, although in
+many instances they were separated by miles of mountainous desert,
+or extremely dry lands, where, on account of lack of feed, cattle could
+not remain the year round. Hence the ticks, even if well seeded on
+this land, failed to secure a permanent foothold.
+Cattlemen learned, even before ticks were in any way connected
+with Texas fever, that certain ranges were dangerous for cattle, and
+thus in many instances after the loss of nonimmune cattle that had
+been placed on a ticky range this land was left free of cattle, and
+the starvation method of cleaning the land of ticks was thereby un-
+consciously accomplished. Thus areas within the State were con-
+stantly being cleaned, while others, on account of the early-day prac-
+tice of driving a herd of cattle away from a range on which they
+were dying, became seeded. Such a condition of affairs existed when,
+in July, 1906, under the congressional appropriation for tick eradi-
+cation, the Bureau of Animal Industry started the work of eradicat-
+ing the ticks in California in cooperation with the State officials.
+The work at first consisted in locating the ticky ranches and edu-
+cating the owners of such land to the losses they were sustaining
+from the ticks and the benefits they would derive from eradicating
+them. This required careful and repeated inspections of all the cattle
+south of the quarantine line, and when completed showed San Luis
+ERADICATING CATTLE TICKS IN CALIFORNIA. 285
+Obispo, Santa Barbara, San Diego, Orange, Fresno, and Ventura
+counties to be heavily infested, and Tulare, Kern, Kings, Los Angeles,
+Riverside, San Bernardino, and Madera counties to be infested to a
+lesser degree. These counties comprised 69,755 square miles of
+territory, and contained 660,027 head of cattle, of which 153,476 were
+on tick-infested ranges.
+LOSSES FROM THE TICKS.
+The loss to the cattle industry south of the quarantine line in Cali-
+fornia from ticks has been enormous. This has been especially the
+case in this State on account of the topography of the country. In
+all the quarantined counties there is high mountainous land, or dry
+land with very hot summers, where ticks do not thrive. As a result
+there was constantly being raised, even in some very ticky counties,
+thousands of head of cattle yearly that reached maturity without
+ever becoming infested with ticks, and hence were not immune to
+Texas fever. From adverse feed conditions, as cold in the mountains
+or drought in the dry lands, cattle would from time to time be
+brought to more favorable feeding places, usually along the coast,
+which in the majority of cases were tick infested, and almost imme-
+diately they would commence to die in wholesale numbers. The
+mountain cattleman called the disease " coast fever," and from bitter
+experience learned to leave their cattle in the mountains or dry
+lands during adverse years, sustaining more or less heavy losses from
+starvation, rather than bring them to the coast on good feed only to
+stand much heavier losses from Texas fever.
+Also, in the driving of cattle to favorable feeding places 50 to 100
+miles distant, they would frequently be driven through some valley
+in the mountains that was tick infested; and although perhaps only
+remaining there overnight, in a short time afterwards, when miles
+away from the ticky valley, the cattle would start to die, and losses
+of from 50 to 100 head in this manner were not uncommon.
+With the breaking up of many of the large ranges in California
+the raising of cattle to the fattening stage early became cheaper in
+the more remote States, as Arizona, Utah, Nevada, New Mexico, and
+western Texas, which were free of ticks. Thus many feeders, all
+nonimmunes, were annually shipped from these States to California
+to be fattened on the native grasses. Such cattle, when brought to
+ticky ranges in this State, died in such large numbers that the prac-
+tice, while very profitable in the absence of ticks, had to be aban-
+doned in many localities. Single cattlemen have been known to lose
+an entire train load of such cattle in a short time.
+Among the immune cattle raised on ticky ranges, toward the end
+of the dry season, when feed was poor and ticks were so numerous as
+286 26TH REPORT, BUREAU OF ANIMAL INDUSTRY.
+to " shingle " the cattle, a yearly loss ranging from 3 to 10 per cent
+was sustained, while on all of these places since eradicating the
+ticks this loss is entirely obviated.
+On the grossly infested ranges it was sometimes necessary for stock
+owners to get off their beef cattle before they were in prime condi-
+tion, rather than keep them until later in the season, when, from the
+heavy infestation, they would fall off instead of gain.
+In some of the quarantined counties the trading in cattle became
+so hazardous as to be almost abandoned, owners being afraid to buy
+or move stock on account of great losses sustained by neighbors on
+all sides from such a procedure.
+In the counties where dairying is the main industry, the shrink-
+age in milk production among the grossly infested herds during the
+summer and fall, while hard to estimate accurately, would increase
+the economic loss from the ticks to a considerable extent.
+A great saving to the railroads in car disinfection has also been
+accomplished, since a large part of the original area quarantined in
+the State has been released.
+EARLY METHODS OF COMBATING GROSS INFESTATION".
+Prior to the commencement of the eradication work many ranges
+containing fine feed were so heavily infested with ticks that raising
+and fattening cattle on them was a difficult problem. The cattlemen
+in many instances did not believe in the so-called tick theory of Texas
+fever, but they considered that from their enormous numbers the
+ticks were an injury on account of the parasitic existence they main-
+tained on the cattle, which was constantly demonstrated by the large
+percentage of deaths among immunes during times when feed was
+short. It therefore was a general practice for ranchers in the summer
+and fall to resort to various methods to destroy the ticks. The time
+and labor expended in this procedure were great and their value
+slight and of a very temporary duration. On some of the ranches the
+range cattle were corraled, roped, and treated one at a time by hand,
+either by currying off the ticks or applying various solutions, as crude
+oil, coal-tar preparations, kerosene oil, or carbolic acid, which in all
+cases killed only a portion of the ticks and often injured the hides of
+the cattle more or less seriously. On the very large ranches, containing
+many thousand head, treating all the cattle individually was impossi-
+ble, and after corraling a bunch only those most heavily infested were
+picked out for treatment. Even this absolutely ineffective method
+required weeks of labor.
+In other cases, wild cattle would be crowded into chutes and
+sprayed through openings in the sides, by which method it was im-
+possible to wet with the solution the parts of the animals where the
+ticks were most numerous. In the dairy herds spraying and swab-
+ERADICATING CATTLE TICKS IN CALIFORNIA. 287
+bing were resorted tout irregular intervals. On some ranches chick-
+ens were accredited with assisting in retarding tick development by
+entering the corral and feeding on the adult ticks picked from the
+bodies of cattle in the recumbent position.
+On one large grant of land comprising 17,000 acres along the ocean
+front, it was the custom to drive the cattle into the ocean and hold
+them against the bluffs where the waves could beat against them.
+This mechanical action of the waves had the effect of dislodging the
+large ticks, and they dropped into the ocean, where they perished.
+The measure, although very crude, was easy of accomplishment and
+resulted in some benefit.
+Owners of some of the larger ranches in order to combat ticks built
+dipping vats. These they filled with water, on the surface of which
+a thin float of oil or distillate was placed, in some cases not over one-
+quarter to one-half inch thick. Cattle were rounded up and run
+through such vats when the ticks became too numerous, but the per-
+manent good so derived was slight.
+IMPORTANCE OF STATE LAW.
+On account of actual tick-eradication work being in no way con-
+nected with the interstate movement of cattle, federal laws are in-
+operative with regard to cattle kept within a State. It is therefore
+essential that Bureau employees engaged in this work be deputized
+under the state law so that they may carry out all the various pro-
+visions of a practicable tick-eradication law.
+While in all cases it expedites matters and is more pleasant for the
+cattle owners and inspectors to work harmoniously in the eradication
+of the ticks, a stringent state law is absolutely necessary, as there are
+always a few stockmen who refuse to see the advantage to themselves
+and the community in eradicating this pest. In order to compel such
+indifferent owners to disinfect their cattle properly a state law should
+be enacted giving the state authorities the power to enforce disinfec-
+tion and making it a misdemeanor for the owners not to comply with
+such requirements.
+Through the efforts of the state veterinarian, Dr. Charles Keane.
+the State of California, in March, 1907, enacted a law which makes it
+a misdemeanor to move or expose tick-infested cattle in such a man-
+ner as to infest other cattle or live stock not so infested. This law
+also provides for the disinfection of cattle as directed by the state
+veterinarian or his deputy, and provides that in case of failure on the
+part of the owner so to disinfect, the state veterinarian has the
+power to disinfect the cattle, the cost of the treatment becoming a
+lien on them. This law, while having weak points that should be
+corrected to cover certain special conditions, has been of inestimable
+value in the work of tick eradication in California.
+82882°—11 2
+288 26TH REPORT, BtJREAU OF ANIMAL INDUSTRY.
+METHODS USED IN TICK EBADICATION IN CALIFORNIA-
+On account of the present high valuation of range lands, the ab-
+sence of feed-lot methods of fattening, and the stocking of all sec-
+tions to the full capacity with live stock, the practice of " resting "
+pastures to clean them is impracticable in the great majority of cases
+in California. This method, however, is one which gives rapid re-
+sults with little work, and when the number of cattle on the ranch
+will permit of its use it is an easy method of accomplishing the
+desired results. In this State it is recommended that all cattle, horses,
+mules, and asses be excluded from the resting. pasture fdr gight
+Dfconths, resting preferably to begin between Mky 1 and Octobefr 1,
+When all tick eggs that may be oil the pasture are sui*e to hatch bef ore
+the approach of cold weather.
+From the lack of rains during the summer season and the excessive
+valuation of irrigable lands, where forage crops could be raised for
+use in the pasture-rotation method, this resource for ridding a ranch
+of ticks has also been impracticable.
+Tick eradication t&fcireferd TesolVed itself into a problem of clean-
+ing the ranges while the cattle were constantly graiing upon them.
+Under such conditions the first essential to success is tHfc installa-
+tion of & dipping vat. It has been out experience under usual con-
+ditions in this State that tiine used in spraying, smearing, carrying,
+hand pidring, or other means without the dipping vat is mostly
+wasted. These latter methods rimy be entirely successful with single
+cows, but where there are a dozen head or more such measures require
+two or three years, and before success is attained the owner is dis-
+couraged and disgusted. Wheri the he!rd comprises over 50 head, it
+h#$ in ottr experience, prbved to be practically iriipossiblib to clean
+Withotat the vat.
+After the vat is installed thte owner intrst be thoroughly informed at
+the b^fimiing: what will be required of him to cl6an his rknch, and
+ifc*pre«fee<L with the possibility of freeing His land and cattle in one
+season. His cooperation is necessary, but even when this is grtan
+constant supefrvisioli by the inspector is ttedessary to pi-fevfent laxity
+a|id overlooking of details whidi are atrablutely essential to success.
+TJms on a ranfch containing irifestjed cattle a single improper mixing
+of the dipping sGlution or the failure to get a few head to the vat at
+a dipping in the middle of the dipping season may destroy the oppor-
+tenity of <$etfning the ranch with that year's work.
+Although tjie eradication work in dn£ community has bedn very
+successful and cleaning df the ranches has proceeded without inter-
+*tfptK>n> thiB fact when iised as an argument for thorcrtigh and regular
+dippirfg ii} scnother section often has little eflfect on obstinate owners
+of tick-infested land.
+ERADICATING CATTLE TICKS IN CALJFOBNIA. 28,9
+g ^e process of cleaning, which entfils tipae, labor, &n<J px-
+op ttf£ part of the cattleman, jie is a^nost sure to kecoine dis-
+gd i}d yvhw, after having dipped his 9$ tyle three or four
+times, they continue to comp up to the vat for the fourth or fifth
+dippjiyj showing ticks, he commences to feel that his efforts are going
+to be ip vaip. At this stage of eradication even the most enlightened
+cattlemen Vho appreciate the benefit of exterminating the ticks are
+liable to bpqoi^e so discouraged as to be disagreeable when approached
+by the inspector in regard to further dipping. At this tune tact on
+the part pf the inspector is very essential. Many cattlemen who have
+made irritating and even insulting remarks tp the inspectors during
+tfye time pf actual eradication work have, af^er this was completed
+and when they realized that their ranches were free of the pest, l>e-
+come strong in their praise of the work and the economic good it
+has done them personally and will do the country at large.
+During the dipping season, when the ranches are heavily infested,
+horses, mules, and burros running on the range require attention,
+and should be dipped or otherwise freed from ticks. When there is
+slight infestation of the range, solipeds require little attention.
+The dippings can be separated by intervals of thirty days under
+ordinary circumstances when the infestation is slight or moderate.
+When the range is very heavily infested it is better to dip at shorter
+intervals, twenty-one to twenty-eight days, for several months or until
+the ticks begin to show a reduction in numbers, when the intervals
+between dippings may be extended to thirty days. When infested
+cattle are to be moved to a tick-free pasture, two dippings must be
+required, separated by an interval of five to fourteen days.
+The dipping season in California begins about April 1 and must con-
+tinue at thirty-day intervals until eight or nine dippings have been
+made in order to clean the range in one season. During these eight
+or nine months it is necessary for the inspector to be present at each
+dipping and supervise the mixing of the dipping fluid in person.
+He should know the exact number of cattle on each infested ranch,
+and where possible should count the cattle at every dipping as they
+are let out of the draining pen, to be sure that the owner has made a
+clean roundup.
+On the slight or moderately infested ranges after several dippings
+the cattle will often come to the vat apparently free from ticks, and
+the owner will therefore object to further dipping. In such cases
+the absolute necessity for continuing the disinfection throughout the
+season must be impressed upon him.
+In many localities in California where infestation existed the coun-
+try was divided up into small ranches, 40 to 120 acres. Such ranches
+were separated by a single line of barbed-wire fence, and all con-
+290 26TH REPORT, BUREAU OF ANIMAL INDUSTRY.
+tained cattle. Upon ranch-to-ranch inspection of such localities, in
+many instances ranches would be found tick free when surrounding
+them on one or more sides ticky cattle were known to be grazing.
+Such ranches were kept under close observation throughout the
+eradication work, and remained clean. It is thus seen that it is quite
+practicable for a single line of good fence to prevent the spread of
+the Texas-fever tick. As a result of our observations in this matter
+it would seem to be unnecessary to augment the cost of eradication
+by insisting on double division fences.
+In dividing large ranges by cross fences, for the purpose of tick
+eradication, as far as possible the single fence should be made to
+traverse rough, inaccessible land where feed is short and where cattle
+will consequently have little tendency to stray directly up to the
+fence.
+INTERNATIONAL FENCE.
+Tick eradication along the California-Mexico line is complicated
+by the fact that parts of Lower California, especially the coast sec-
+tion, is heavily infested with ticks. It being largely a range country,
+bady tick-infested live stock from that country were constantly drift-
+ing and straying across the international line and undoing any efforts
+of the American ranchers in this section to eradicate the ticks from
+their land. Consequently it became apparent that if the ticks were
+to be eradicated in this locality it would be necessary to control this
+movement of tick-infested Mexican live stock. Without such con-
+trol ranchers in this section consider it a hardship to have to attempt
+to free their land of ticks, only to have it reinfested by stray Mexican
+animals, and, consequently, their cooperation in the work can not be
+secured.
+The only feasible method of securing this control of live stock is
+the construction of a stock-proof fence on or near the international
+line. The necessity for such a fence has long been recognized by the
+ranchers in this section, and some, to protect their feed and to assist
+in freeing their cattle of ticks, have constructed fences of a more or
+less temporary character at irregular intervals along the line; but in
+most cases it has been necessary to abandon the eradication work in
+this section pending the construction of a proper fence. It was soon
+ascertained that such a fence could not be constructed without gov-
+ernment assistance. The Bureau of Animal Industry has therefore
+undertaken to construct a first-class stock-proof fence along this line,
+wherever necessary, to prevent the entrance of infested Mexican live
+stock. With this fence installed, eradication in this section will soon
+be accomplished and future reinfestation, prevented. Such a fence
+will also assist the customs officials in preventing illegal traffic be-
+tween the two countries.
+ERADICATING CATTLE TICKS IN CALIFORNIA. 291
+DIPPING SOLUTION, ITS PREPARATION AND USE.
+At the commencement of the work by the Bureau in the summer
+and fall of 1906 the oil-float dip was used. This was prepared by
+filling the vat with water, after which 1 to 2 inches of oil was floated
+on the surface. The oil used was a California prodtict, and while
+samples from several wells seemed to be nearly identical with Beau-
+mont oil, injurious results to the cattle of a more or less serious nature
+followed in most instances. This probably was largely due to the
+extreme heat of California summers and the absence of shade on the
+ranges. While ticks on the cattle were killed by this measure when
+properly carried out, reinfestation soon occurred, and redippings at
+sufficiently short intervals to prevent reseeding of the ranges was
+impossible. The oil float having been found injurious, attempts to
+use crude petroleum alone after the methods followed in the Eastern
+States was abandoned. On account of the insurmountable opposition
+on the part of the cattlemen to the use of oil, it soon became apparent
+that tick eradication in this State would be impossible unless some
+other less injurious disinfecting solution could be obtained.
+The following year the arsenical solution was tried in several vats
+with such satisfactory results to stock owners and inspectors that its
+general use was at once inaugurated and has been continued unin-
+terruptedly to the present time. In this solution, properly prepared,
+cattle can be dipped nine or ten times in one season and remain in
+as good if not better condition than cattle on adjoining pastures with
+identical feed that have not been dipped.
+The solution used in California is made after the following
+formula:
+Arsenic trioxid (white arsenic) pounds— 8
+Sodium carbonate (sal soda) do 24
+Soap (laundry or chipped) do 24
+Pine tar gallons— 2 or 3
+Water do 500
+For mixing the preparation it is necessary to have at the vat one
+or two caldrons or tanks of a capacity of not less than 50 gallons in
+which to dissolve the ingredients. As the water in the caldron warms
+the sodium carbonate is added and dissolved by stirring, after which
+the arsenic is added and the fluid brought to the boiling point and
+stirred until all is in solution. To expedite matters, the soap may
+be cut up and heated at the same time in the second caldron or dis-
+solved in the arsenic and soda solution when only one tank is avail-
+able. These three ingredients being dissolved, the fire is then drawn,
+and the tar is slowly added, with constant stirring to make a homo-
+geneous solution. This concentrated solution is then added to the
+292 26TH REPORT, BUREAU OF ANIMAL INDUSTRY.
+water in the vi|t to make the projier proportion, as giy^iv in the preced-
+ing formula. When filling a large vat of a capacity of 3,000 or 4,000
+gallons, several boilings have to be made, unless the cooking tank
+is quite large.
+The soap, in our opinion, is a valuable ingredient of the prepara-
+tion. It gives body to the dip and tends to make it adhere to the
+hides. This is important, as the solution acts as a gradual poison
+to the ticks, requiring several days to kill when the parasites are
+nearing maturity. It also cleans the hair of the cattle, thus improv-
+ing their appearance after dipping, and may have a slight effect in
+preventing reinfestation for a longer time than when they are dipped
+in an arsenical solution without the soap. It also assists in eipulsify-
+ing the tar and rendering the solution homogeneous. Thepe advan-
+tages far outweigh the slight extra cost of its use. The addition of
+the larger quantity (3 gallons, instead of 1 gallon, as usually recom-
+mended) of pine tar is recommended, as it is also valuable in giving
+body to the mixture and increases its action as a parasiticide. In ad-
+dition, it has been found that the greater the proportion of tar the
+longer cattlie are free from annoyance by flies following clipping.
+While the solution made after the above formula is most satisfac-
+tory for dairy and fine-bred cattle, more arsenic may be added, up
+to 9 or 10 pounds to the 500 gallons, in the disinfection of range cattle.
+When once filled, the vat is ready for use at all times, unless rains
+should dilute its contents, when ingredients have to be added in
+the proper proportions for the amount of rain water which has
+fallen or drained into the tank. In exposed tanks the amount of
+evaporation is considerable during the hot summer months, reducing
+the fluid in the vats as much as 3 inches between dippings. In add-
+ing ingredients tQ keep the fluid at the pepper depth for dipping,
+this evaporation does not have to be accounted for, and the medicinal
+ingredients should be added in full proportion for all water used.
+The same solution remains active as a tickicide indefinitely, but the
+number of times it should be used for redippings depend? entirely
+on the number of cattle dipped each month. Diet carried in on the
+hoofs; hair which comes off the animals in considerable quantities
+during the shedding season, and urine and feces evacuated by the
+cattle in the v$t $nd draining pen tend to befoul the solution. When
+therefore the number of cattle dipped monthly reaches into the
+hundreds of he^cl it is our practice to clefin out the yai after each
+three dippings.
+Fopowipg dipping in arsenical solution care must bp used in driv-
+ing cattle to prevent overheating, as injurious and even fatal results
+have followed forced driving, especially during hot weather.
+While this solution is very poisonous, it has been used very exten-
+sively in this State with no bad results, and with ordinary precautions
+ERADICATING CATTLE TICKS IN CALIFORNIA. 298
+its poisonous nature is not a good reason against its use. It is our
+practice to place on each vat in which the solution is used a notice read-
+ing as follows:
+WARNING !
+The fluid in this vat is
+POISONOUS
+to man and all animals
+t)o riot allow it to contaminate any feed
+Cattle should be watered before
+or water supply.
+dipping.
+THE DIPPING VATS FOUND MOST PRACTICABLE.
+Dipping being the most practicable method of disinfecting cattle
+for eradicating ticks, it is necessary for those engaged in eradication
+work to become familiar with the various kinds of vats, in order
+that the ihost suitable form may be recommended under thfc various
+conditions met, depending on the kind and number of cattle to be
+treated arid the financial condition of the owner.
+In cdmmtmities where several small tick-infested ranches are
+located within a Short distance <rf eifich other cooperative vats have
+b^en established. The several owners of the infested places would
+club tdgether, select the most convenient location to build the vat,
+atld subscribe the iiecessary money for its installation. One rancher
+is appointed treasurer, and it is his duty to collect all riioney for dip-
+ping, buy the dipping materials, and act as manager of the plant.
+A charge is made for dipping, usiially not over 5 cents a Head, and
+if at the end of the dipping season there is a surplus this is divided
+among the subscribers. In this Way the several ranchers have the
+advantage of a dipping vat without each being put id the cost of
+installing one. A dipping day is set once each month, and all in-
+fested herds are dipped at this time, the owners assisting each other
+in the operation.
+In other bases one lonelier will install the vat aiid allow his
+neighbors to dip their catty in it, charging A nominal fee for the
+service.
+In California thrfee styles of vats are used, nkmely, tHe swifti vat,
+the cage vat, land the wade vat.
+• THE SWIM VAT.
+The swim vat is by far the most practical forTfffigfc sttfcklttfd where
+large numbers of cattle are to be dipped. It has the advantage of
+Q tfhd *eqmt(E& Httle labdt in tlte operation of dlti|iiH^. The
+et stfcfi a vat feaii be cbnshiicte&, tip to 80 6? $6 ifeet fft t^ife dip
+Wsti&M, as^it^hksb^li fdMd'Mt the actftM'tfE Wi arsenical
+solution is more potent if the cattle are submerged for at least twenty
+294 26TH REPORT, BUREAU OF ANIMAL INDUSTRY.
+seconds, and such a length of time is recommended when mature ticks
+are present on the cattle. However, in this State successful results
+have followed the use of much shorter tanks. Such vats may be
+constructed of lumber or cement. The latter is preferable, as it has
+not the disadvantage of leaking, which is common in wooden vats,
+and is more durable, A swim vat built after the plans shown in
+ERADICATING CATTLE TICKS IN CALIFORNIA. 295
+figure 7 will prove very satisfactory. This figure, as well as the fol-
+lowing specifications and list of materials, is taken from Farmers'
+Bulletin 378, by H. W. Graybill. A vat constructed according to
+these plans will hold 2,088 gallons when filled to a depth of 5 feet.
+In our experience in the use of such vats in California it has been
+found advantageous to construct the vat with a somewhat steeper
+slope at the entrance end than is indicated in the plans. With this
+modification the cattle are plunged more quickly into the vat, and
+time can be saved in dipping a large number of animals.
+Excavation.—Excavate for the vat, as shown by the drawings (fig. 7), to the
+proper depth. Level the bottom of the pit for the sills. After the vat is com-
+pleted fill in around it, using the surplus earth to bring the grade at the sides
+of the vat a little above the natural grade and slope the surface away from the
+vat. Dig the holes required for all posts, etc.
+Carpenter work.—The drawings show the vat constructed according to two
+methods. One method is to make the sides of 4 by 4 inch posts spaced about
+3 feet apart and lined with 2 by 8 inch dressed, sized, and bevel-edged plank,
+using 20-penny spikes to fasten them to the posts and braces. All the joints are
+to be calked with oakum well driven in with a calking iron and pitched. The
+floor of the vat and the inclines are to be made of 2-inch plank with joints
+calked, the exit incline to have 2 by 4 inch cleats spiked to the plank flooring.
+The slide should have an angle of about 25° and should be covered with No. 16
+galvanized iron.
+The other method is to build the sides of the vat of 2 by 4 inch posts and 2
+by 4 inch braces spaced about 16 inches on centers. The 2 by 4 inch posts and
+braces are to be lined with f by 8 inch tongued-and-grooved flooring, blind
+nailed at every bearing with 10-penny nails. All the joints are to be laid in
+white lead paste and the boards firmly driven up.
+Lumber,—The lumber used in the construction of the vat must be thoroughly
+dried and seasoned stock, free from large and loose knots, straight grained,
+and free from sap.
+Gutters.—The gutters for the dripping pens should be made of sound stock,
+the bottom plank housed into the sides and ends, and the ends housed into
+the sides. All the joints are to be laid in white lead paste and thoroughly
+nailed. Gutters are to have 3-inch fall in 11 feet.
+Concrete vat.—The concrete vat should be made of concrete composed of 1
+part by measure of good Portland cement, 3 parts of clean sharp sand, and 5
+parts of broken rock, the broken rock to be not larger than will pass in any
+direction through a 2-inch ring. The rock should be washed free of dust.
+Concrete should be mixed wet and well tamped into place.
+Bill of materials.—Lumber for vat when constructed of 2-inch material and
+4 by 4 inch posts:
+Sills 8 pieces 4 by 4 inches by 10 feet long.
+1 piece 4 by 4 inches by 16 feet long.
+1 piece 4 by 4 inches by 14 feet long.Posts 6 pieces 4 by 4 inches by 12 feet long.
+5 pieces 4 by 4 inches by 10 feet long.
+1 piece 4 by 4 inches by 16 feet long.
+. 6 pieces 4 by 4 inches by 12 feet long.
+Braces <> piece 4 by 4 lncnes by 10 feet long.
+[1 piece 4 by 4 inches by 6 feet long.
+296 26TH REPORT, BUREAU OF ANIMAL INDUSTRY.
+Guards.
+Sides-
+Floor-
+Cleats-
+2 pieces 2 by 8 inches by 18 feet long.
+1 piece 2 by 8 inches by 16 feet long.
+2 pieces 2 by 8 inches by 12 feet long.
+1 piece 2 by 8 inches by 10 feet long.
+18 pieces 2 by 8 inches by 20 feet long.
+25 pieces 2 by 8 inches by 18 feet long.
+2 pieces 2 by 8 inches by 16 feet long.
+2 pieces 2 by 6 inches by 18 feet long.
+Dressed one side and two edges.
+Edges beveled for calking.
+3 pieces 2 by 10 inches by 20 feet long.
+2 pieces 2 by 10 inches by 16 feet long.
+1 piece 2 by 10 inches by 14 feet long.
+1 piece 2 by 10 inches by 7 feet long.
+1 piece 2 by 12 inches by 12 feet long.
+Dressed one side and two edges.
+Edges beveled for calking.
+4 pieces 2 by 4 inches by 12 feet long.
+Lumber for vat when constructed of flooring and 2 by 4 inch posts:
+Posts_
+Sills 7 pieces 2 by 4 inches by 14 feet long.
+J28 pieces 2 by 4 inches by 18 feet long.
+|4 pieces 4 by 4 inches by 11 feet long.
+{15 pieces 2T by 4 inches by 12 feet long.
+2 pieces 2 by 4 inches by 10 feet long.
+2 pieces 2 by 4 inches by 16 feet long.
+Guards Materials the same as specified above.
+Sides 550 feet b. m. I by 8 inches tongue-and-groove
+flooring.
+Floor Materials the same as specified above.
+Cleats - Materials the same as specified above.
+Lumber for draining pens:
+Mud sills 10 pieces 4 by 12 inches by 2 feet long (cedar or
+cypress).
+Sleepers 4 pieces 6 by 6 inches by 12 feet long.
+Joists .13 pieces 2 by 12 inches by 12 feet long.
+Floor ^ 360 feet b. m. tongue-and-groove flooring £ by 8
+inches—12-foot pieces.
+Cleats 265 linear feet 1 by 3 inches.
+Sides: 4 pieces 2 by 12 inches by 11 feet long
+(dressed).
+Bottom and ends: 2 pieces 2 by 12 inches by 12
+Gutters feet (dressed).
+Bottom housed into sides and ends. Ends housed
+into sides. All joints calked and white leaded
+or pitched.
+11 pieces 4 by 4 inches by 7 feet long.
+Posts . 2 pieces 4 by 4 inches by 8 feet long.
+2 pieces 4 by 4 inches by 9 feet long.
+2 pieces 2 by 8 inches by 18 feet long.
+Rails > 5 pieces 2 by 8 inches by 16 feet long.
+18 pieces 2 by 8 inches by 12 feet long.
+26TH AN. RPT. , BUR. OF ANIMAL INDUSTRY, U. S. DEPT. OF AGR. , 1909. PLATE XV.
+iEra
+! ji
+i • •' '4
+- Xi,
+CAGE VAT FOR DIPPING CATTLE.
+The first figure shows gross appearance of vat and apparatus. The second figuTe shows vat with cage down and attendant ducking animal. The third figure shows vat
+with cage raised and animal walking out.
+EEADIOATING CATTLE TICKS IN CALIFORNIA. 297
+Braces 2 pieces 2 by 4 inches by 10 feet long.
+7 pieces 1 by 6 inches by 12 feet long.
+Hardware for vat and draining pens:
+4 pair 12-inch heavy T hinges and screws.
+4 wrought-iron hooks and staples.
+I pair wrought-iron hook hinges, 12-inch wood screw hooks, and screws.
+50 pounds 20-penny wire nails.
+15 pounds 10-penny wire nails.
+12 square feet No. 16 galvanized iron.
+When vat is constructed of flooring and 2 by 4 posts, the following additional
+hardware will be required:
+19 pounds 20-penny wire nails.
+12 pounds 10-penny wire nails.
+Material for concrete vat:
+Concrete, 1 part Portland cement, 3 parts sand, 5 parts broken rock or
+gravel.
+19 cubic yards broken rock or gravel.
+18 cubic yards sand.
+30 barrels Portland cement.
+THE CAGE VAT.
+The cage vat, when properly constructed, is very practical and is
+recommended for the disinfection of smaller herds and gentle cattle^
+especially dairy cows.
+It has the advantages
+of being economical in
+the amount of dipping
+solution necessary to
+charge the vat; ani-
+mals may be held in
+the solution as long as
+desired, and the oper-
+ation of dipping is
+almost entirely with-
+out rough handling or
+worry to the cattle.
+This last is an impor-
+tant factor in the
+disinfection of milch
+cows without causing
+shrinkage in the milk
+flow. Dairy herds
+should be dipped in,, • • J« • FRONT VIEW SIOCVIEW
+the morning immedi-
+, . „ ° f ._. . FIG. 8.—Plans for cage vat.
+ately after milking.
+They can then be turned out to pasture with very little time lost from
+feed. Plate XV and figures 8 and 9 show this form of vat as it ^
+298 26TH REPORT, BUREAU OF INDUSTRY.
+given most satisfactory results in California. The following specifi-
+cations and bill of materials are given for its construction:
+Tank.
+The tank should be made 7 feet deep, 3 feet wide, and 8 feet long, inside
+measurements.
+Four corner posts, 4 by 6 inches by 18 feet, must be planed on outer sides
+to join planks for sides and ends.
+Sides, 7 planks 2 by 12 inches by 16 feet cut to 8 feet long.
+Ends, 3 planks 2 by 12 inches by 12 feet cut to 3 feet long.
+Ends, 1
+A L
+\ ,
+1
+r
+J
+1
+J
+1
+i
+I
+—L
+Inches
+pieces
+by
+3
+plank 2 by 12
+16 feet cut two
+feet long; left
+O/
+so"
+over, 2 by 12 inches by
+10 feet.
+Bottom, use left-over 2
+by 12 inches by 10 feet cut
+to 3 feet 4 inches long.
+Bottom, 2 planks 2 by 12
+inches by 12 feet cut to
+3 feet 4 inches long.
+Braces, ends, and sides,
+five 1 by 6 inches by 12
+feet.
+Gates, two 1 by 6 inches
+by 14 feet.
+Gates, two 1 by 6 inches
+by 12 feet.
+Gates, four hinges and
+two hooks.
+Cage.
+Floor, two 2 by 6 inches
+by 16 feet cut to 7 feet 11
+inches long.
+Floor cleats, one 2 by 3
+inches by 12 feet cut 28
+inches long.
+Sides, six 1 by 6 inches
+by 14 feet cut to 6 feet 11
+inches long.
+Top piece, one 4 by 6
+inches by 6 feet.
+Make hangers of \ by 2-
+inch iron.
+Wheel.
+Shaft, one 8 by 8 inches
+by 10 feet, turned to set in bed pieces.
+Three-eighths-inch cable or chain attached to shaft to raise cage.
+Bed pieces, make two 3 by 8 inches by 3 feet.
+Spokes, twelve 1£ by 3 inches by 12 feet.
+Flanges, four 1 by 12 inches by 16 feet.
+Have flanges extend 3 inches over ends of spokes and run rope over free ends
+of spokes.
+Use f-inch rope 140 feet long, have pulley in a block sunk in ground, and lift
+cage with saddle horse or horse and traces.
+cfi
+PIG. 9.—Detail plans for cage vat; a, Cross section ofcage; 6, side view of cage; c, floor of cage; d, crosssection of tank. -
+ERADICATING CATTLE TICKS IN CALIFORNIA. 299
+Lumber and milling companies furnish these materials, sized and
+cut in proper manner, to the ranchers for from $55 to $65. The
+builder then has in addition the labor of excavating the pit and put-
+ting the tank together. Draining pens with such vats are not essen-
+tial and are rarely used, as the animal drains while the cage is being
+raised.
+This vat is installed near the corrals and requires only a short
+chute leading from the corral to the cage. In operating such a vat
+the animal is driven through the chute into the cage and the end
+gate closed. The hoist rope is released and the weight of the animal
+carries the cage down into the fluid. If the animal is not completely
+submerged, its head is forced under by the foot of an assistant wear-
+ing rubber boots. After remaining in the solution the proper length
+of time (twenty to thirty seconds) the cage is raised by attaching
+PIG. 10.—Plans for small " wade tank." Vertical section.
+the end of the hoist rope to the saddle horn or the swingletree of a
+horse in harness. During the raising of the cage the animal drains,
+and after a short interval the opposite end gate is opened and the
+animal passes out. With this vat from 30 to 50 animals can be
+dipped per hour.
+THE WADE TANK.
+The wade tank is recommended only in the disinfection of very
+small herds. It can be constructed with an outlay of less than $10
+for materials, thus being cheaper than a good spray pump. Figure
+10 shows plans of such a vat, which can be made of either lumber
+or cement.
+In the use of this tank the animal is led in by a rope or halter and
+cross-tied or held. The solution in the vat, being 36 inches deep,
+300 26TH EEPORT, BUREAU OF ANIMAL INDUSTRY.
+thoroughly saturates the lower parts of the body and sides, which
+are always most heavily infested and most difficult to reach with a
+spray pump or swab. The upper parts of the body are then thor-
+oughly wet by pouring the dipping solution from a pail over the
+head and back. The animal is then led out at the opposite end of
+the vat and allowed to drain on the incline or in the chute. With
+this method less fluid is used than in spraying or swabbing, the opera-
+tion is easier to perform, and it is efficacious.
+PBESENT CONDITIONS IN CALIFOBNIA.<*
+As a result of four years' work by the Bureau and state officials,
+California has only 9,315 square miles, instead of 69,755 square miles,
+of territory in quarantine for Texas-fever ticks. Of this area re-
+maining in quarantine a large percentage is at present tick free and
+should soon be in a condition to be released.
+Of the original 153,476 cattle infested there remain under local
+quarantine 41,906. This number includes all herds on which the
+slightest infestation has been found in 1910, and many of these will
+no doubt be free with the close of this season's work. Half of this
+number are on one large ranch where eradication work has been slow
+on account of its size, the roughness of the range, and lack of co-
+operation from the owner.
+Prior to the inauguration of tick eradication in California con-
+demnations for Texas fever were numerous in the abattoirs having
+federal inspection. During the past two years not a single condem-
+nation for this disease has occurred in Los Angeles, where the
+majority of the cattle from the quarantined area are slaughtered. In
+the past year deaths from Texas fever on the ranges, where some
+years back losses annually reached into the thousands of head, have
+been so few as to be hardly worthy of notice. Our experience has
+proved that tick eradication is not only possible, but with stringent
+laws and proper methods is very practicable. When attained it
+returns to the individual owner and the cattle industry at large many
+times more than the cost of its accomplishment.
+tt Data brought down to summer of 1910.
+o
