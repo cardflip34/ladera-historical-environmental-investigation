@@ -160,3 +160,81 @@ places arsenic monitoring genuinely does NOT reach are recycled irrigation water
 children play on, raw basin water before treatment, and whatever water was used during
 construction — and those three, not the tap supply, are where this investigation's effort should
 go.
+
+
+---
+
+# F5 — CONSTRUCTION ERA (1997–2006): where the drinking water came from
+
+**Question:** during the years Ladera Ranch was graded and built, was tap water imported, or local
+groundwater?
+
+**Answer: imported, overwhelmingly — and the small groundwater volume that did exist never went to
+Ladera Ranch homes.**
+
+## The primary document
+
+SMWD's **2010 Urban Water Management Plan** (347 pp, downloaded and text-extracted to
+`research/water_supply/uwmp/`) carries the year-by-year figures. *(A2 — official agency planning
+document, statutorily required.)*
+
+> "**Groundwater** — SMWD has limited access to groundwater supply. SMWD relies on approximately
+> **100 acre-feet per year of groundwater from the San Juan Basin to provide service on a contract
+> basis to the Nichols Institute.** This local source of supply meets only **0.2% of SMWD's total
+> annual demand.** SMWD currently has **one operating well, Well 6**, which is located in the
+> **southeast corner of SMWD.**"
+
+## Table 3-6, the district's own historical pumping record
+
+| Fiscal year ending | 2005 | 2006 | 2007 | 2008 | 2009 |
+|---|---|---|---|---|---|
+| San Juan Basin groundwater (AF) | 90 | 71 | 78 | 65 | 73 |
+| **% of total water supply** | **0.3%** | **0.2%** | **0.2%** | **0.2%** | **0.2%** |
+
+Total demand at the time was ~34,200 AF/yr — **28,077 AF imported, 65 AF groundwater, 6,027 AF
+recycled.**
+
+## Four findings that settle the construction-era question
+
+1. **The supply was ~99.8% imported.** Groundwater never exceeded 0.3% of district supply in any
+   year on record, including FY2005 and FY2006 — squarely inside the construction window.
+2. **The groundwater was contractually dedicated to a single non-residential customer.** It served
+   **the Nichols Institute** (a laboratory facility in San Juan Capistrano) *on a contract basis*.
+   SMWD's groundwater right in the basin is **150 AFY, held under an Agreement with Nichols
+   Institute**. It was not general residential supply.
+3. **There was one well, and it is in the wrong place.** **Well 6, southeast corner of the
+   district** — San Juan Capistrano area, over the San Juan Basin alluvium. Ladera Ranch is
+   **upland, north-west of that**, and is not over the producing basin.
+4. **Ladera Ranch was built as an imported-water community from the start.** The district's
+   facilities serve it from the MWDOC/Metropolitan imported system. The UWMP names Ladera Ranch
+   only in the context of service-area boundaries, irrigation demand factors, and weather-based
+   controllers — never as a groundwater-served area.
+
+## What this closes, and what it does not
+
+**Closes:** the hypothesis that residents drank local groundwater during 1997–2006 that might have
+carried a ranch-era arsenic signature. They did not. The water came from the Colorado River and the
+State Water Project, hundreds of miles away, treated at Metropolitan's plants. **A local aquifer
+pathway to the tap did not exist during the construction era.**
+
+**Does not close — the genuinely open item:**
+**Construction water is a different question from drinking water.** Grading operations use very
+large volumes for dust suppression and compaction, and that water carries **no drinking-water MCL
+obligation**. It can be non-potable, recycled, or drawn from local sources under a separate permit.
+Whether Ladera's 1997–2006 grading used imported potable, recycled, or any locally-sourced water —
+and from where — is **not answered by any document reviewed so far**, because construction water
+does not appear in a UWMP or a CCR.
+
+That is now the sharpest remaining water question, and it is answerable by records request:
+grading permits and SWPPPs (OC Development Services) and construction-water service agreements
+(SMWD). Both are already in drafted requests; this finding tells us to make the construction-water
+ask **explicit** rather than incidental.
+
+## Note on the 2005 UWMP
+
+The 2005 UWMP (748 pp) is on the district site but is a **scanned image PDF with no text layer** —
+0 characters extractable. It has been downloaded and retained. Confirming the FY1997–2004 figures
+directly from it would require OCR, and is worth doing if the construction-era supply mix is ever
+challenged. The 2010 plan's Table 3-6 already covers FY2005–2009 and shows a stable 0.2–0.3%
+groundwater share, so there is no indication of a materially different earlier picture — but that
+is an **inference** until the 2005 document is read.
