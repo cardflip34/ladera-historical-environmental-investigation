@@ -1,0 +1,331 @@
+{
+ "generated": "2026-07-31",
+ "gsdMeters": 0.37,
+ "cellMeters": 48.0,
+ "method": "2-D spectral periodicity, 3-12 m row-spacing band, power fraction >= 0.22",
+ "cells": 874,
+ "blocks": 35,
+ "areaHaByFrame": {
+  "1929": 49.2,
+  "1938": 111.4,
+  "1947": 8.0
+ },
+ "blockSummary": [
+  {
+   "frame": "1929",
+   "areaHa": 3.0,
+   "rowSpacingM": 6.8,
+   "centroid": [
+    33.5324,
+    -117.67819
+   ]
+  },
+  {
+   "frame": "1929",
+   "areaHa": 19.4,
+   "rowSpacingM": 7.5,
+   "centroid": [
+    33.52545,
+    -117.67449
+   ]
+  },
+  {
+   "frame": "1929",
+   "areaHa": 2.3,
+   "rowSpacingM": 6.8,
+   "centroid": [
+    33.52869,
+    -117.66803
+   ]
+  },
+  {
+   "frame": "1929",
+   "areaHa": 16.4,
+   "rowSpacingM": 6.8,
+   "centroid": [
+    33.5228,
+    -117.66673
+   ]
+  },
+  {
+   "frame": "1929",
+   "areaHa": 0.9,
+   "rowSpacingM": 7.5,
+   "centroid": [
+    33.52311,
+    -117.67045
+   ]
+  },
+  {
+   "frame": "1929",
+   "areaHa": 1.4,
+   "rowSpacingM": 8.0,
+   "centroid": [
+    33.54661,
+    -117.67407
+   ]
+  },
+  {
+   "frame": "1929",
+   "areaHa": 2.1,
+   "rowSpacingM": 6.8,
+   "centroid": [
+    33.5359,
+    -117.67854
+   ]
+  },
+  {
+   "frame": "1929",
+   "areaHa": 1.6,
+   "rowSpacingM": 7.8,
+   "centroid": [
+    33.55393,
+    -117.67407
+   ]
+  },
+  {
+   "frame": "1929",
+   "areaHa": 2.1,
+   "rowSpacingM": 8.0,
+   "centroid": [
+    33.54994,
+    -117.67407
+   ]
+  },
+  {
+   "frame": "1938",
+   "areaHa": 3.2,
+   "rowSpacingM": 6.8,
+   "centroid": [
+    33.53207,
+    -117.67801
+   ]
+  },
+  {
+   "frame": "1938",
+   "areaHa": 6.7,
+   "rowSpacingM": 7.5,
+   "centroid": [
+    33.53139,
+    -117.67268
+   ]
+  },
+  {
+   "frame": "1938",
+   "areaHa": 9.7,
+   "rowSpacingM": 7.1,
+   "centroid": [
+    33.53283,
+    -117.66904
+   ]
+  },
+  {
+   "frame": "1938",
+   "areaHa": 0.7,
+   "rowSpacingM": 7.5,
+   "centroid": [
+    33.53131,
+    -117.67303
+   ]
+  },
+  {
+   "frame": "1938",
+   "areaHa": 26.7,
+   "rowSpacingM": 6.6,
+   "centroid": [
+    33.5251,
+    -117.6745
+   ]
+  },
+  {
+   "frame": "1938",
+   "areaHa": 1.4,
+   "rowSpacingM": 5.9,
+   "centroid": [
+    33.52976,
+    -117.66461
+   ]
+  },
+  {
+   "frame": "1938",
+   "areaHa": 2.3,
+   "rowSpacingM": 6.0,
+   "centroid": [
+    33.52816,
+    -117.67788
+   ]
+  },
+  {
+   "frame": "1938",
+   "areaHa": 2.3,
+   "rowSpacingM": 5.9,
+   "centroid": [
+    33.52932,
+    -117.66736
+   ]
+  },
+  {
+   "frame": "1938",
+   "areaHa": 2.3,
+   "rowSpacingM": 5.9,
+   "centroid": [
+    33.52728,
+    -117.66798
+   ]
+  },
+  {
+   "frame": "1938",
+   "areaHa": 0.9,
+   "rowSpacingM": 5.8,
+   "centroid": [
+    33.52688,
+    -117.66581
+   ]
+  },
+  {
+   "frame": "1938",
+   "areaHa": 0.7,
+   "rowSpacingM": 6.6,
+   "centroid": [
+    33.52658,
+    -117.6708
+   ]
+  },
+  {
+   "frame": "1938",
+   "areaHa": 6.2,
+   "rowSpacingM": 6.6,
+   "centroid": [
+    33.52446,
+    -117.67097
+   ]
+  },
+  {
+   "frame": "1938",
+   "areaHa": 14.3,
+   "rowSpacingM": 6.0,
+   "centroid": [
+    33.52193,
+    -117.66606
+   ]
+  },
+  {
+   "frame": "1938",
+   "areaHa": 5.5,
+   "rowSpacingM": 6.0,
+   "centroid": [
+    33.5232,
+    -117.66747
+   ]
+  },
+  {
+   "frame": "1938",
+   "areaHa": 0.9,
+   "rowSpacingM": 6.6,
+   "centroid": [
+    33.52067,
+    -117.6702
+   ]
+  },
+  {
+   "frame": "1938",
+   "areaHa": 1.6,
+   "rowSpacingM": 5.3,
+   "centroid": [
+    33.52137,
+    -117.63868
+   ]
+  },
+  {
+   "frame": "1938",
+   "areaHa": 0.7,
+   "rowSpacingM": 7.5,
+   "centroid": [
+    33.54107,
+    -117.67751
+   ]
+  },
+  {
+   "frame": "1938",
+   "areaHa": 3.7,
+   "rowSpacingM": 6.6,
+   "centroid": [
+    33.53941,
+    -117.67055
+   ]
+  },
+  {
+   "frame": "1938",
+   "areaHa": 17.5,
+   "rowSpacingM": 7.1,
+   "centroid": [
+    33.53656,
+    -117.66825
+   ]
+  },
+  {
+   "frame": "1938",
+   "areaHa": 0.9,
+   "rowSpacingM": 5.6,
+   "centroid": [
+    33.53763,
+    -117.67278
+   ]
+  },
+  {
+   "frame": "1938",
+   "areaHa": 2.3,
+   "rowSpacingM": 6.9,
+   "centroid": [
+    33.53588,
+    -117.6785
+   ]
+  },
+  {
+   "frame": "1938",
+   "areaHa": 0.9,
+   "rowSpacingM": 5.3,
+   "centroid": [
+    33.53475,
+    -117.67316
+   ]
+  },
+  {
+   "frame": "1947",
+   "areaHa": 4.6,
+   "rowSpacingM": 7.5,
+   "centroid": [
+    33.52207,
+    -117.65118
+   ]
+  },
+  {
+   "frame": "1947",
+   "areaHa": 1.6,
+   "rowSpacingM": 6.0,
+   "centroid": [
+    33.52358,
+    -117.64797
+   ]
+  },
+  {
+   "frame": "1947",
+   "areaHa": 0.9,
+   "rowSpacingM": 6.9,
+   "centroid": [
+    33.52045,
+    -117.65652
+   ]
+  },
+  {
+   "frame": "1947",
+   "areaHa": 0.9,
+   "rowSpacingM": 5.4,
+   "centroid": [
+    33.52111,
+    -117.63833
+   ]
+  }
+ ],
+ "interpretationLimit": "Lead arsenate was the standard orchard insecticide of this era as a general practice. Nothing here documents its use on these specific blocks; only soil measurement can."
+}
