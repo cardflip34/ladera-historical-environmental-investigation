@@ -1,0 +1,488 @@
+{
+ "generated": "2026-07-31",
+ "statementClass": "interpreted",
+ "method": "Sobel gradient orientation concentration + orthogonality, per 40 m cell",
+ "gsdMeters": 0.37,
+ "cellPx": 108,
+ "whatHighScoreMeans": "RECTILINEAR, not vat. Roads, fences, field boundaries, firebreaks, orchard rows, tile edges and film artefacts all score high. Human review is mandatory.",
+ "persistenceLogic": "A real ground feature should appear in more than one independent year of photography. A film artefact should not.",
+ "cellsScored": 37228,
+ "aboveThreshold": 754,
+ "clusters": 355,
+ "candidates": [
+  {
+   "rank": 1,
+   "lat": 33.550298,
+   "lon": -117.662056,
+   "maxZ": 10.94,
+   "framesSeen": [
+    "1929",
+    "1938"
+   ],
+   "nFrames": 2,
+   "persistScore": 19.7,
+   "neighbourhoodExtentM": 0.0,
+   "elongation": 1.0,
+   "tile": "1929_r2c1.jpg",
+   "px": [
+    486,
+    3186
+   ]
+  },
+  {
+   "rank": 2,
+   "lat": 33.520942,
+   "lon": -117.65212,
+   "maxZ": 16.85,
+   "framesSeen": [
+    "1938",
+    "1947"
+   ],
+   "nFrames": 2,
+   "persistScore": 13.11,
+   "neighbourhoodExtentM": 254.0,
+   "elongation": 3.64,
+   "tile": "1947_r0c1.jpg",
+   "px": [
+    2970,
+    3726
+   ]
+  },
+  {
+   "rank": 3,
+   "lat": 33.544716,
+   "lon": -117.639144,
+   "maxZ": 10.83,
+   "framesSeen": [
+    "1929"
+   ],
+   "nFrames": 1,
+   "persistScore": 10.83,
+   "neighbourhoodExtentM": 0.0,
+   "elongation": 1.0,
+   "tile": "1929_r1c2.jpg",
+   "px": [
+    2214,
+    810
+   ]
+  },
+  {
+   "rank": 4,
+   "lat": 33.544344,
+   "lon": -117.674168,
+   "maxZ": 14.94,
+   "framesSeen": [
+    "1929",
+    "1938"
+   ],
+   "nFrames": 2,
+   "persistScore": 10.34,
+   "neighbourhoodExtentM": 393.6,
+   "elongation": 2.64,
+   "tile": "1938_r1c0.jpg",
+   "px": [
+    1458,
+    918
+   ]
+  },
+  {
+   "rank": 5,
+   "lat": 33.545087,
+   "lon": -117.674168,
+   "maxZ": 14.19,
+   "framesSeen": [
+    "1929",
+    "1938"
+   ],
+   "nFrames": 2,
+   "persistScore": 10.12,
+   "neighbourhoodExtentM": 387.8,
+   "elongation": 2.6,
+   "tile": "1938_r1c0.jpg",
+   "px": [
+    1458,
+    702
+   ]
+  },
+  {
+   "rank": 6,
+   "lat": 33.520571,
+   "lon": -117.63828,
+   "maxZ": 5.71,
+   "framesSeen": [
+    "1938",
+    "1947"
+   ],
+   "nFrames": 2,
+   "persistScore": 9.56,
+   "neighbourhoodExtentM": 172.0,
+   "elongation": 2.35,
+   "tile": "1938_r0c2.jpg",
+   "px": [
+    2430,
+    3834
+   ]
+  },
+  {
+   "rank": 7,
+   "lat": 33.522056,
+   "lon": -117.639144,
+   "maxZ": 5.34,
+   "framesSeen": [
+    "1938",
+    "1947"
+   ],
+   "nFrames": 2,
+   "persistScore": 8.95,
+   "neighbourhoodExtentM": 172.0,
+   "elongation": 2.35,
+   "tile": "1938_r0c2.jpg",
+   "px": [
+    2214,
+    3402
+   ]
+  },
+  {
+   "rank": 8,
+   "lat": 33.521684,
+   "lon": -117.651688,
+   "maxZ": 19.19,
+   "framesSeen": [
+    "1947"
+   ],
+   "nFrames": 1,
+   "persistScore": 8.58,
+   "neighbourhoodExtentM": 276.8,
+   "elongation": 3.23,
+   "tile": "1947_r0c1.jpg",
+   "px": [
+    3078,
+    3510
+   ]
+  },
+  {
+   "rank": 9,
+   "lat": 33.523912,
+   "lon": -117.618392,
+   "maxZ": 6.51,
+   "framesSeen": [
+    "1929",
+    "1938",
+    "1947"
+   ],
+   "nFrames": 3,
+   "persistScore": 8.32,
+   "neighbourhoodExtentM": 197.5,
+   "elongation": 4.12,
+   "tile": "1929_r0c3.jpg",
+   "px": [
+    3402,
+    2862
+   ]
+  },
+  {
+   "rank": 10,
+   "lat": 33.526139,
+   "lon": -117.673736,
+   "maxZ": 11.88,
+   "framesSeen": [
+    "1929",
+    "1938"
+   ],
+   "nFrames": 2,
+   "persistScore": 8.2,
+   "neighbourhoodExtentM": 417.4,
+   "elongation": 1.94,
+   "tile": "1929_r0c0.jpg",
+   "px": [
+    1566,
+    2214
+   ]
+  },
+  {
+   "rank": 11,
+   "lat": 33.523541,
+   "lon": -117.64996,
+   "maxZ": 13.81,
+   "framesSeen": [
+    "1938",
+    "1947"
+   ],
+   "nFrames": 2,
+   "persistScore": 8.18,
+   "neighbourhoodExtentM": 326.3,
+   "elongation": 3.73,
+   "tile": "1947_r0c1.jpg",
+   "px": [
+    3510,
+    2970
+   ]
+  },
+  {
+   "rank": 12,
+   "lat": 33.554753,
+   "lon": -117.674168,
+   "maxZ": 13.73,
+   "framesSeen": [
+    "1929",
+    "1938"
+   ],
+   "nFrames": 2,
+   "persistScore": 8.05,
+   "neighbourhoodExtentM": 428.6,
+   "elongation": 2.86,
+   "tile": "1938_r2c0.jpg",
+   "px": [
+    1458,
+    1890
+   ]
+  },
+  {
+   "rank": 13,
+   "lat": 33.555867,
+   "lon": -117.6746,
+   "maxZ": 12.37,
+   "framesSeen": [
+    "1929",
+    "1938"
+   ],
+   "nFrames": 2,
+   "persistScore": 7.89,
+   "neighbourhoodExtentM": 451.2,
+   "elongation": 2.1,
+   "tile": "1938_r2c0.jpg",
+   "px": [
+    1350,
+    1566
+   ]
+  },
+  {
+   "rank": 14,
+   "lat": 33.523169,
+   "lon": -117.650824,
+   "maxZ": 9.45,
+   "framesSeen": [
+    "1938",
+    "1947"
+   ],
+   "nFrames": 2,
+   "persistScore": 7.6,
+   "neighbourhoodExtentM": 276.8,
+   "elongation": 3.23,
+   "tile": "1947_r0c1.jpg",
+   "px": [
+    3294,
+    3078
+   ]
+  },
+  {
+   "rank": 15,
+   "lat": 33.537291,
+   "lon": -117.675464,
+   "maxZ": 9.57,
+   "framesSeen": [
+    "1929",
+    "1938"
+   ],
+   "nFrames": 2,
+   "persistScore": 7.46,
+   "neighbourhoodExtentM": 369.5,
+   "elongation": 2.2,
+   "tile": "1938_r1c0.jpg",
+   "px": [
+    1134,
+    2970
+   ]
+  },
+  {
+   "rank": 16,
+   "lat": 33.525397,
+   "lon": -117.6266,
+   "maxZ": 7.74,
+   "framesSeen": [
+    "1938",
+    "1947"
+   ],
+   "nFrames": 2,
+   "persistScore": 7.3,
+   "neighbourhoodExtentM": 305.3,
+   "elongation": 1.16,
+   "tile": "1938_r0c3.jpg",
+   "px": [
+    1350,
+    2430
+   ]
+  },
+  {
+   "rank": 17,
+   "lat": 33.525397,
+   "lon": -117.616664,
+   "maxZ": 6.28,
+   "framesSeen": [
+    "1938",
+    "1947"
+   ],
+   "nFrames": 2,
+   "persistScore": 7.23,
+   "neighbourhoodExtentM": 250.3,
+   "elongation": 1.14,
+   "tile": "1938_r0c3.jpg",
+   "px": [
+    3834,
+    2430
+   ]
+  },
+  {
+   "rank": 18,
+   "lat": 33.523541,
+   "lon": -117.619256,
+   "maxZ": 6.26,
+   "framesSeen": [
+    "1929",
+    "1938",
+    "1947"
+   ],
+   "nFrames": 3,
+   "persistScore": 7.19,
+   "neighbourhoodExtentM": 362.2,
+   "elongation": 1.2,
+   "tile": "1947_r0c3.jpg",
+   "px": [
+    3186,
+    2970
+   ]
+  },
+  {
+   "rank": 19,
+   "lat": 33.545829,
+   "lon": -117.674168,
+   "maxZ": 14.15,
+   "framesSeen": [
+    "1929",
+    "1938"
+   ],
+   "nFrames": 2,
+   "persistScore": 7.07,
+   "neighbourhoodExtentM": 452.5,
+   "elongation": 3.18,
+   "tile": "1938_r1c0.jpg",
+   "px": [
+    1458,
+    486
+   ]
+  },
+  {
+   "rank": 20,
+   "lat": 33.531337,
+   "lon": -117.61796,
+   "maxZ": 7.03,
+   "framesSeen": [
+    "1929"
+   ],
+   "nFrames": 1,
+   "persistScore": 7.03,
+   "neighbourhoodExtentM": 0.0,
+   "elongation": 1.0,
+   "tile": "1929_r0c3.jpg",
+   "px": [
+    3510,
+    702
+   ]
+  },
+  {
+   "rank": 21,
+   "lat": 33.569617,
+   "lon": -117.646488,
+   "maxZ": 7.03,
+   "framesSeen": [
+    "1929"
+   ],
+   "nFrames": 1,
+   "persistScore": 7.03,
+   "neighbourhoodExtentM": 0.0,
+   "elongation": 1.0,
+   "tile": "1929_r3c2.jpg",
+   "px": [
+    378,
+    1566
+   ]
+  },
+  {
+   "rank": 22,
+   "lat": 33.539889,
+   "lon": -117.675032,
+   "maxZ": 10.49,
+   "framesSeen": [
+    "1929",
+    "1938"
+   ],
+   "nFrames": 2,
+   "persistScore": 6.97,
+   "neighbourhoodExtentM": 433.4,
+   "elongation": 2.16,
+   "tile": "1938_r1c0.jpg",
+   "px": [
+    1242,
+    2214
+   ]
+  },
+  {
+   "rank": 23,
+   "lat": 33.551412,
+   "lon": -117.674168,
+   "maxZ": 11.46,
+   "framesSeen": [
+    "1929",
+    "1938"
+   ],
+   "nFrames": 2,
+   "persistScore": 6.93,
+   "neighbourhoodExtentM": 429.0,
+   "elongation": 2.77,
+   "tile": "1938_r2c0.jpg",
+   "px": [
+    1458,
+    2862
+   ]
+  },
+  {
+   "rank": 24,
+   "lat": 33.549184,
+   "lon": -117.674168,
+   "maxZ": 23.85,
+   "framesSeen": [
+    "1929",
+    "1938"
+   ],
+   "nFrames": 2,
+   "persistScore": 6.89,
+   "neighbourhoodExtentM": 458.4,
+   "elongation": 5.44,
+   "tile": "1938_r2c0.jpg",
+   "px": [
+    1458,
+    3510
+   ]
+  },
+  {
+   "rank": 25,
+   "lat": 33.523169,
+   "lon": -117.6266,
+   "maxZ": 7.65,
+   "framesSeen": [
+    "1929",
+    "1938",
+    "1947"
+   ],
+   "nFrames": 3,
+   "persistScore": 6.83,
+   "neighbourhoodExtentM": 400.2,
+   "elongation": 2.91,
+   "tile": "1929_r0c3.jpg",
+   "px": [
+    1350,
+    3078
+   ]
+  }
+ ]
+}

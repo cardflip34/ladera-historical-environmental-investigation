@@ -1,0 +1,786 @@
+{
+ "generated": "2026-07-31",
+ "aoi": [
+  -117.68,
+  33.52,
+  -117.616,
+  33.575
+ ],
+ "grid": [
+  4,
+  4
+ ],
+ "tilePx": 4000,
+ "gsdMeters": 0.37,
+ "source": "OC Survey / OCGIS Historic_Imagery_v2 ImageServer, LockRaster",
+ "provenanceGrade": "A+",
+ "purpose": "Native-resolution search for swim-vat assemblies (vat + corral + drain pen)",
+ "detectionLimitNote": "At ~1 m/px a swim vat channel is 1 px wide and unresolvable. These tiles are ~0.2 m/px, where a 27 m vat is ~135 px long and a 30 m corral ~150 px across.",
+ "tiles": [
+  {
+   "frame": "1938",
+   "objectId": 340,
+   "row": 0,
+   "col": 0,
+   "bbox": [
+    -117.68,
+    33.52,
+    -117.664,
+    33.533750000000005
+   ],
+   "px": 4000,
+   "gsdMeters": 0.37,
+   "nodataFraction": 0.0,
+   "path": "evidence/lhdrs/vat_hunt/1938/1938_r0c0.jpg",
+   "sha256": "3f37a6b4326d8bb00cac6b8c06715bdafd9d7c2a8519de6bb179533ae620486a"
+  },
+  {
+   "frame": "1938",
+   "objectId": 340,
+   "row": 0,
+   "col": 1,
+   "bbox": [
+    -117.664,
+    33.52,
+    -117.648,
+    33.533750000000005
+   ],
+   "px": 4000,
+   "gsdMeters": 0.37,
+   "nodataFraction": 0.0,
+   "path": "evidence/lhdrs/vat_hunt/1938/1938_r0c1.jpg",
+   "sha256": "e3527b16f4d2e8f3a98a95730cd11ad5cc19c1ed641e9c2d72e99f2d048953e5"
+  },
+  {
+   "frame": "1938",
+   "objectId": 340,
+   "row": 0,
+   "col": 2,
+   "bbox": [
+    -117.648,
+    33.52,
+    -117.632,
+    33.533750000000005
+   ],
+   "px": 4000,
+   "gsdMeters": 0.37,
+   "nodataFraction": 0.0,
+   "path": "evidence/lhdrs/vat_hunt/1938/1938_r0c2.jpg",
+   "sha256": "e76e12c09bc758c36e18ffe9b66a6e50af34788c0021cf98150cbb89385465b2"
+  },
+  {
+   "frame": "1938",
+   "objectId": 340,
+   "row": 0,
+   "col": 3,
+   "bbox": [
+    -117.632,
+    33.52,
+    -117.616,
+    33.533750000000005
+   ],
+   "px": 4000,
+   "gsdMeters": 0.37,
+   "nodataFraction": 0.0,
+   "path": "evidence/lhdrs/vat_hunt/1938/1938_r0c3.jpg",
+   "sha256": "6818269d1bf07c6fb5e088defe81523debb4bf921dd88367a4b9a8ca49f07116"
+  },
+  {
+   "frame": "1938",
+   "objectId": 340,
+   "row": 1,
+   "col": 0,
+   "bbox": [
+    -117.68,
+    33.533750000000005,
+    -117.664,
+    33.5475
+   ],
+   "px": 4000,
+   "gsdMeters": 0.37,
+   "nodataFraction": 0.0,
+   "path": "evidence/lhdrs/vat_hunt/1938/1938_r1c0.jpg",
+   "sha256": "84862d128599d520ab4ff751c27cb80dead46f2b15ed57fcd4e6d86779b7a4fd"
+  },
+  {
+   "frame": "1938",
+   "objectId": 340,
+   "row": 1,
+   "col": 1,
+   "bbox": [
+    -117.664,
+    33.533750000000005,
+    -117.648,
+    33.5475
+   ],
+   "px": 4000,
+   "gsdMeters": 0.37,
+   "nodataFraction": 0.0,
+   "path": "evidence/lhdrs/vat_hunt/1938/1938_r1c1.jpg",
+   "sha256": "27cc10d31a2c7b35bc96e19029f1f43049a64e44963bd61f41013530775772c0"
+  },
+  {
+   "frame": "1938",
+   "objectId": 340,
+   "row": 1,
+   "col": 2,
+   "bbox": [
+    -117.648,
+    33.533750000000005,
+    -117.632,
+    33.5475
+   ],
+   "px": 4000,
+   "gsdMeters": 0.37,
+   "nodataFraction": 0.0,
+   "path": "evidence/lhdrs/vat_hunt/1938/1938_r1c2.jpg",
+   "sha256": "a9756186ddf9dc3e17320b9c6d2bd62b95b0e2ca0fb79f358f7bdd8bb70f0627"
+  },
+  {
+   "frame": "1938",
+   "objectId": 340,
+   "row": 1,
+   "col": 3,
+   "bbox": [
+    -117.632,
+    33.533750000000005,
+    -117.616,
+    33.5475
+   ],
+   "px": 4000,
+   "gsdMeters": 0.37,
+   "nodataFraction": 0.0,
+   "path": "evidence/lhdrs/vat_hunt/1938/1938_r1c3.jpg",
+   "sha256": "8273c52f530a369fde645a7917074c1abc375b9da106e9b231efecf0b771ab28"
+  },
+  {
+   "frame": "1938",
+   "objectId": 340,
+   "row": 2,
+   "col": 0,
+   "bbox": [
+    -117.68,
+    33.5475,
+    -117.664,
+    33.56125
+   ],
+   "px": 4000,
+   "gsdMeters": 0.37,
+   "nodataFraction": 0.0,
+   "path": "evidence/lhdrs/vat_hunt/1938/1938_r2c0.jpg",
+   "sha256": "ea172607f13315140a77e13542b76fa88b6154ef62097175bca1e737bd600ea1"
+  },
+  {
+   "frame": "1938",
+   "objectId": 340,
+   "row": 2,
+   "col": 1,
+   "bbox": [
+    -117.664,
+    33.5475,
+    -117.648,
+    33.56125
+   ],
+   "px": 4000,
+   "gsdMeters": 0.37,
+   "nodataFraction": 0.0,
+   "path": "evidence/lhdrs/vat_hunt/1938/1938_r2c1.jpg",
+   "sha256": "8501ce2ef2cdbaef31a44525509eaa70dc0eca60d45c3f88c6c73ace0d9e87ff"
+  },
+  {
+   "frame": "1938",
+   "objectId": 340,
+   "row": 2,
+   "col": 2,
+   "bbox": [
+    -117.648,
+    33.5475,
+    -117.632,
+    33.56125
+   ],
+   "px": 4000,
+   "gsdMeters": 0.37,
+   "nodataFraction": 0.0,
+   "path": "evidence/lhdrs/vat_hunt/1938/1938_r2c2.jpg",
+   "sha256": "1892277701c8c0aab34032aa94d6066ff2c1a65a41f7a5e7ac1366462f154079"
+  },
+  {
+   "frame": "1938",
+   "objectId": 340,
+   "row": 2,
+   "col": 3,
+   "bbox": [
+    -117.632,
+    33.5475,
+    -117.616,
+    33.56125
+   ],
+   "px": 4000,
+   "gsdMeters": 0.37,
+   "nodataFraction": 0.0,
+   "path": "evidence/lhdrs/vat_hunt/1938/1938_r2c3.jpg",
+   "sha256": "64db0e7828a23c56b443b1a8c9d21928200b2679ce6446fcaf455ec05bdb89da"
+  },
+  {
+   "frame": "1938",
+   "objectId": 340,
+   "row": 3,
+   "col": 0,
+   "bbox": [
+    -117.68,
+    33.56125,
+    -117.664,
+    33.575
+   ],
+   "px": 4000,
+   "gsdMeters": 0.37,
+   "nodataFraction": 0.0,
+   "path": "evidence/lhdrs/vat_hunt/1938/1938_r3c0.jpg",
+   "sha256": "4aa92e36531614da0a0e90cf0d1079b0de6a588ef5db6fe60623cd5721a45a6b"
+  },
+  {
+   "frame": "1938",
+   "objectId": 340,
+   "row": 3,
+   "col": 1,
+   "bbox": [
+    -117.664,
+    33.56125,
+    -117.648,
+    33.575
+   ],
+   "px": 4000,
+   "gsdMeters": 0.37,
+   "nodataFraction": 0.0,
+   "path": "evidence/lhdrs/vat_hunt/1938/1938_r3c1.jpg",
+   "sha256": "4b208a8b28a501dfc82b5296c7b1200b8b274f8f5c1c5b3fe6f1631ca309318a"
+  },
+  {
+   "frame": "1938",
+   "objectId": 340,
+   "row": 3,
+   "col": 2,
+   "bbox": [
+    -117.648,
+    33.56125,
+    -117.632,
+    33.575
+   ],
+   "px": 4000,
+   "gsdMeters": 0.37,
+   "nodataFraction": 0.0,
+   "path": "evidence/lhdrs/vat_hunt/1938/1938_r3c2.jpg",
+   "sha256": "ad76ca5a7fe957df9157b3f89d8c6efcc04924c5228af9dda2849f9a6123a6d4"
+  },
+  {
+   "frame": "1938",
+   "objectId": 340,
+   "row": 3,
+   "col": 3,
+   "bbox": [
+    -117.632,
+    33.56125,
+    -117.616,
+    33.575
+   ],
+   "px": 4000,
+   "gsdMeters": 0.37,
+   "nodataFraction": 0.0,
+   "path": "evidence/lhdrs/vat_hunt/1938/1938_r3c3.jpg",
+   "sha256": "36416e8bc5d3521774c723219f967725c110d9700f2690d2fd16eb05a08a5ab7"
+  },
+  {
+   "frame": "1947",
+   "objectId": 293,
+   "row": 0,
+   "col": 0,
+   "bbox": [
+    -117.68,
+    33.52,
+    -117.664,
+    33.533750000000005
+   ],
+   "px": 4000,
+   "gsdMeters": 0.37,
+   "nodataFraction": 0.6543,
+   "path": "evidence/lhdrs/vat_hunt/1947/1947_r0c0.jpg",
+   "sha256": "e54dd569c653e36d37146402b068e755fb935a2b007bdbe7f7e199cf8332227e"
+  },
+  {
+   "frame": "1947",
+   "objectId": 293,
+   "row": 0,
+   "col": 1,
+   "bbox": [
+    -117.664,
+    33.52,
+    -117.648,
+    33.533750000000005
+   ],
+   "px": 4000,
+   "gsdMeters": 0.37,
+   "nodataFraction": 0.0004,
+   "path": "evidence/lhdrs/vat_hunt/1947/1947_r0c1.jpg",
+   "sha256": "b9f0b96234367f02dbb64087eeaf56530c53329c5b692999c0ef766dcc42c0b9"
+  },
+  {
+   "frame": "1947",
+   "objectId": 293,
+   "row": 0,
+   "col": 2,
+   "bbox": [
+    -117.648,
+    33.52,
+    -117.632,
+    33.533750000000005
+   ],
+   "px": 4000,
+   "gsdMeters": 0.37,
+   "nodataFraction": 0.0036,
+   "path": "evidence/lhdrs/vat_hunt/1947/1947_r0c2.jpg",
+   "sha256": "c6b4cfdb7b8a36f644435a106f1a505af64ead8cff422595187570e5f1a263fb"
+  },
+  {
+   "frame": "1947",
+   "objectId": 293,
+   "row": 0,
+   "col": 3,
+   "bbox": [
+    -117.632,
+    33.52,
+    -117.616,
+    33.533750000000005
+   ],
+   "px": 4000,
+   "gsdMeters": 0.37,
+   "nodataFraction": 0.0021,
+   "path": "evidence/lhdrs/vat_hunt/1947/1947_r0c3.jpg",
+   "sha256": "e6319521f35a5c5b10a82fe5577a7a9b455e0481a93c901fc16688d15d086791"
+  },
+  {
+   "frame": "1947",
+   "objectId": 293,
+   "row": 1,
+   "col": 0,
+   "bbox": [
+    -117.68,
+    33.533750000000005,
+    -117.664,
+    33.5475
+   ],
+   "px": 4000,
+   "gsdMeters": 0.37,
+   "nodataFraction": 0.709,
+   "path": "evidence/lhdrs/vat_hunt/1947/1947_r1c0.jpg",
+   "sha256": "7c876e7d309747ca0004d854bd5749c8fc746940a9147c99078057229d91610c"
+  },
+  {
+   "frame": "1947",
+   "objectId": 293,
+   "row": 1,
+   "col": 1,
+   "bbox": [
+    -117.664,
+    33.533750000000005,
+    -117.648,
+    33.5475
+   ],
+   "px": 4000,
+   "gsdMeters": 0.37,
+   "nodataFraction": 0.016,
+   "path": "evidence/lhdrs/vat_hunt/1947/1947_r1c1.jpg",
+   "sha256": "1309a4185f360febbf3fe81e365cd5dbf8b2f7595d480b92af4a76c1ee088e7c"
+  },
+  {
+   "frame": "1947",
+   "objectId": 293,
+   "row": 1,
+   "col": 2,
+   "bbox": [
+    -117.648,
+    33.533750000000005,
+    -117.632,
+    33.5475
+   ],
+   "px": 4000,
+   "gsdMeters": 0.37,
+   "nodataFraction": 0.001,
+   "path": "evidence/lhdrs/vat_hunt/1947/1947_r1c2.jpg",
+   "sha256": "838f666a58e9436ef9702ef3f956c3e917f79dd063cd159dc8ddc29f259a09a6"
+  },
+  {
+   "frame": "1947",
+   "objectId": 293,
+   "row": 1,
+   "col": 3,
+   "bbox": [
+    -117.632,
+    33.533750000000005,
+    -117.616,
+    33.5475
+   ],
+   "px": 4000,
+   "gsdMeters": 0.37,
+   "nodataFraction": 0.002,
+   "path": "evidence/lhdrs/vat_hunt/1947/1947_r1c3.jpg",
+   "sha256": "902a97147a74c53ac36e2793a2527c075b85fad47bff817c90b0b96afa403672"
+  },
+  {
+   "frame": "1947",
+   "objectId": 293,
+   "row": 2,
+   "col": 1,
+   "bbox": [
+    -117.664,
+    33.5475,
+    -117.648,
+    33.56125
+   ],
+   "px": 4000,
+   "gsdMeters": 0.37,
+   "nodataFraction": 0.846,
+   "path": "evidence/lhdrs/vat_hunt/1947/1947_r2c1.jpg",
+   "sha256": "79fa5e428a68aed5ee1e577651e85e1fc474f3a563585336c3f4e9d077708068"
+  },
+  {
+   "frame": "1947",
+   "objectId": 293,
+   "row": 2,
+   "col": 2,
+   "bbox": [
+    -117.648,
+    33.5475,
+    -117.632,
+    33.56125
+   ],
+   "px": 4000,
+   "gsdMeters": 0.37,
+   "nodataFraction": 0.0017,
+   "path": "evidence/lhdrs/vat_hunt/1947/1947_r2c2.jpg",
+   "sha256": "568fb549fd4d26f0a242e2ae7afb4e00229c3775a478c9ef540648727e246442"
+  },
+  {
+   "frame": "1947",
+   "objectId": 293,
+   "row": 2,
+   "col": 3,
+   "bbox": [
+    -117.632,
+    33.5475,
+    -117.616,
+    33.56125
+   ],
+   "px": 4000,
+   "gsdMeters": 0.37,
+   "nodataFraction": 0.0026,
+   "path": "evidence/lhdrs/vat_hunt/1947/1947_r2c3.jpg",
+   "sha256": "446670e6d10e41de63d2ed48c95875586c9c70f5daac22467f60dfb8ce87d870"
+  },
+  {
+   "frame": "1947",
+   "objectId": 293,
+   "row": 3,
+   "col": 2,
+   "bbox": [
+    -117.648,
+    33.56125,
+    -117.632,
+    33.575
+   ],
+   "px": 4000,
+   "gsdMeters": 0.37,
+   "nodataFraction": 0.0293,
+   "path": "evidence/lhdrs/vat_hunt/1947/1947_r3c2.jpg",
+   "sha256": "954f01a480c1a7bd93db2e4e5e4978644b183f9db13d88e7abd84bd479b1c00d"
+  },
+  {
+   "frame": "1947",
+   "objectId": 293,
+   "row": 3,
+   "col": 3,
+   "bbox": [
+    -117.632,
+    33.56125,
+    -117.616,
+    33.575
+   ],
+   "px": 4000,
+   "gsdMeters": 0.37,
+   "nodataFraction": 0.004,
+   "path": "evidence/lhdrs/vat_hunt/1947/1947_r3c3.jpg",
+   "sha256": "e5939ce183e5588bed9c59fe97adb334117ac52c56c7a552553424a1213b16ac"
+  },
+  {
+   "frame": "1929",
+   "objectId": 346,
+   "row": 0,
+   "col": 0,
+   "bbox": [
+    -117.68,
+    33.52,
+    -117.664,
+    33.533750000000005
+   ],
+   "px": 4000,
+   "gsdMeters": 0.37,
+   "nodataFraction": 0.0,
+   "path": "evidence/lhdrs/vat_hunt/1929/1929_r0c0.jpg",
+   "sha256": "791be9abf921aa71ee98c5d104f2e4b3d05896ef165022fb11cd901dd7867a70"
+  },
+  {
+   "frame": "1929",
+   "objectId": 346,
+   "row": 0,
+   "col": 1,
+   "bbox": [
+    -117.664,
+    33.52,
+    -117.648,
+    33.533750000000005
+   ],
+   "px": 4000,
+   "gsdMeters": 0.37,
+   "nodataFraction": 0.0,
+   "path": "evidence/lhdrs/vat_hunt/1929/1929_r0c1.jpg",
+   "sha256": "21cb62d0debcc97b32778f463a03677d7bac34d3ddc0dd373d5af51accc791f1"
+  },
+  {
+   "frame": "1929",
+   "objectId": 346,
+   "row": 0,
+   "col": 2,
+   "bbox": [
+    -117.648,
+    33.52,
+    -117.632,
+    33.533750000000005
+   ],
+   "px": 4000,
+   "gsdMeters": 0.37,
+   "nodataFraction": 0.0,
+   "path": "evidence/lhdrs/vat_hunt/1929/1929_r0c2.jpg",
+   "sha256": "793b6e14a8c4141ce3a42d9e8978009f79e39cf2bf399df1f0cf557373a17994"
+  },
+  {
+   "frame": "1929",
+   "objectId": 346,
+   "row": 0,
+   "col": 3,
+   "bbox": [
+    -117.632,
+    33.52,
+    -117.616,
+    33.533750000000005
+   ],
+   "px": 4000,
+   "gsdMeters": 0.37,
+   "nodataFraction": 0.0,
+   "path": "evidence/lhdrs/vat_hunt/1929/1929_r0c3.jpg",
+   "sha256": "6a8c366b37d3e3d4a3454f966ff7f4b0add6dfa26c771b34dae83264722c758c"
+  },
+  {
+   "frame": "1929",
+   "objectId": 346,
+   "row": 1,
+   "col": 0,
+   "bbox": [
+    -117.68,
+    33.533750000000005,
+    -117.664,
+    33.5475
+   ],
+   "px": 4000,
+   "gsdMeters": 0.37,
+   "nodataFraction": 0.0,
+   "path": "evidence/lhdrs/vat_hunt/1929/1929_r1c0.jpg",
+   "sha256": "9ad38a57386edcfca24af5c0f4b98eb3ceef7900adc571bdd61a6d0fec928cb2"
+  },
+  {
+   "frame": "1929",
+   "objectId": 346,
+   "row": 1,
+   "col": 1,
+   "bbox": [
+    -117.664,
+    33.533750000000005,
+    -117.648,
+    33.5475
+   ],
+   "px": 4000,
+   "gsdMeters": 0.37,
+   "nodataFraction": 0.0,
+   "path": "evidence/lhdrs/vat_hunt/1929/1929_r1c1.jpg",
+   "sha256": "930c72d8122c6107ae012c111e0e3bd8384a7c0e69f4b085754a846dbf137878"
+  },
+  {
+   "frame": "1929",
+   "objectId": 346,
+   "row": 1,
+   "col": 2,
+   "bbox": [
+    -117.648,
+    33.533750000000005,
+    -117.632,
+    33.5475
+   ],
+   "px": 4000,
+   "gsdMeters": 0.37,
+   "nodataFraction": 0.0,
+   "path": "evidence/lhdrs/vat_hunt/1929/1929_r1c2.jpg",
+   "sha256": "326df74651f5df750a5346ad1cb92c164e563e287f017d0350eb53ea3840b678"
+  },
+  {
+   "frame": "1929",
+   "objectId": 346,
+   "row": 1,
+   "col": 3,
+   "bbox": [
+    -117.632,
+    33.533750000000005,
+    -117.616,
+    33.5475
+   ],
+   "px": 4000,
+   "gsdMeters": 0.37,
+   "nodataFraction": 0.0,
+   "path": "evidence/lhdrs/vat_hunt/1929/1929_r1c3.jpg",
+   "sha256": "db7690bbee483bd149d747a96aa977877b334528e97dc4b2f96b9db005a5270b"
+  },
+  {
+   "frame": "1929",
+   "objectId": 346,
+   "row": 2,
+   "col": 0,
+   "bbox": [
+    -117.68,
+    33.5475,
+    -117.664,
+    33.56125
+   ],
+   "px": 4000,
+   "gsdMeters": 0.37,
+   "nodataFraction": 0.0,
+   "path": "evidence/lhdrs/vat_hunt/1929/1929_r2c0.jpg",
+   "sha256": "9441214963434f0722e6bd10d56a8722e93eb5918df5f5dc2b47240ca3241590"
+  },
+  {
+   "frame": "1929",
+   "objectId": 346,
+   "row": 2,
+   "col": 1,
+   "bbox": [
+    -117.664,
+    33.5475,
+    -117.648,
+    33.56125
+   ],
+   "px": 4000,
+   "gsdMeters": 0.37,
+   "nodataFraction": 0.0,
+   "path": "evidence/lhdrs/vat_hunt/1929/1929_r2c1.jpg",
+   "sha256": "501c6211d8d1bf9897aae29191ae64710b9e8e1ac0fbdc534e31808f21607e2f"
+  },
+  {
+   "frame": "1929",
+   "objectId": 346,
+   "row": 2,
+   "col": 2,
+   "bbox": [
+    -117.648,
+    33.5475,
+    -117.632,
+    33.56125
+   ],
+   "px": 4000,
+   "gsdMeters": 0.37,
+   "nodataFraction": 0.0,
+   "path": "evidence/lhdrs/vat_hunt/1929/1929_r2c2.jpg",
+   "sha256": "3ff94c2389d62d30c8b4c8279c7e24eb0ad505df6fa658ce96fe9671759900f4"
+  },
+  {
+   "frame": "1929",
+   "objectId": 346,
+   "row": 2,
+   "col": 3,
+   "bbox": [
+    -117.632,
+    33.5475,
+    -117.616,
+    33.56125
+   ],
+   "px": 4000,
+   "gsdMeters": 0.37,
+   "nodataFraction": 0.0,
+   "path": "evidence/lhdrs/vat_hunt/1929/1929_r2c3.jpg",
+   "sha256": "551a9f11df1f61271bd5042253802c95f05468dda3524c78fa8acf6ede5b030a"
+  },
+  {
+   "frame": "1929",
+   "objectId": 346,
+   "row": 3,
+   "col": 0,
+   "bbox": [
+    -117.68,
+    33.56125,
+    -117.664,
+    33.575
+   ],
+   "px": 4000,
+   "gsdMeters": 0.37,
+   "nodataFraction": 0.1208,
+   "path": "evidence/lhdrs/vat_hunt/1929/1929_r3c0.jpg",
+   "sha256": "433a815fb737f42029a4add07071064979f75bf84dc1d128ee83101acf35c654"
+  },
+  {
+   "frame": "1929",
+   "objectId": 346,
+   "row": 3,
+   "col": 1,
+   "bbox": [
+    -117.664,
+    33.56125,
+    -117.648,
+    33.575
+   ],
+   "px": 4000,
+   "gsdMeters": 0.37,
+   "nodataFraction": 0.0,
+   "path": "evidence/lhdrs/vat_hunt/1929/1929_r3c1.jpg",
+   "sha256": "9d44647d168af45cb9d368fef8bbda37a80327296298c3132fd5ea16f3e77e9b"
+  },
+  {
+   "frame": "1929",
+   "objectId": 346,
+   "row": 3,
+   "col": 2,
+   "bbox": [
+    -117.648,
+    33.56125,
+    -117.632,
+    33.575
+   ],
+   "px": 4000,
+   "gsdMeters": 0.37,
+   "nodataFraction": 0.0,
+   "path": "evidence/lhdrs/vat_hunt/1929/1929_r3c2.jpg",
+   "sha256": "78c9a0a97223f9c643fffe8ef4e33c16fb204752de3fe64d13326ef157a864ed"
+  },
+  {
+   "frame": "1929",
+   "objectId": 346,
+   "row": 3,
+   "col": 3,
+   "bbox": [
+    -117.632,
+    33.56125,
+    -117.616,
+    33.575
+   ],
+   "px": 4000,
+   "gsdMeters": 0.37,
+   "nodataFraction": 0.0,
+   "path": "evidence/lhdrs/vat_hunt/1929/1929_r3c3.jpg",
+   "sha256": "fa2ce203124b16c688a33052dcb797c6328d11f57ad717e94ab543b51d9d7907"
+  }
+ ]
+}
