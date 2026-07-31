@@ -1,0 +1,172 @@
+{
+ "generated": "2026-07-30",
+ "statementClass": "model_estimate",
+ "targetingLogic": "1968 surface-water bodies as a proxy for cattle congregation; proximity to mapped drainage as a depositional-trap multiplier",
+ "priority1Count": 10,
+ "priority2Count": 13,
+ "targets": [
+  {
+   "lon": -117.66258,
+   "lat": 33.53792,
+   "areaM2": 515,
+   "metresToDrainage": 1,
+   "priority": 1
+  },
+  {
+   "lon": -117.65929,
+   "lat": 33.54763,
+   "areaM2": 1307,
+   "metresToDrainage": 15,
+   "priority": 1
+  },
+  {
+   "lon": -117.63687,
+   "lat": 33.55546,
+   "areaM2": 734,
+   "metresToDrainage": 18,
+   "priority": 1
+  },
+  {
+   "lon": -117.66061,
+   "lat": 33.54123,
+   "areaM2": 12395,
+   "metresToDrainage": 27,
+   "priority": 1
+  },
+  {
+   "lon": -117.64745,
+   "lat": 33.52477,
+   "areaM2": 405,
+   "metresToDrainage": 27,
+   "priority": 1
+  },
+  {
+   "lon": -117.65281,
+   "lat": 33.55857,
+   "areaM2": 9111,
+   "metresToDrainage": 42,
+   "priority": 1
+  },
+  {
+   "lon": -117.63615,
+   "lat": 33.5575,
+   "areaM2": 508,
+   "metresToDrainage": 42,
+   "priority": 1
+  },
+  {
+   "lon": -117.65992,
+   "lat": 33.54793,
+   "areaM2": 4661,
+   "metresToDrainage": 46,
+   "priority": 1
+  },
+  {
+   "lon": -117.63391,
+   "lat": 33.56288,
+   "areaM2": 476,
+   "metresToDrainage": 88,
+   "priority": 1
+  },
+  {
+   "lon": -117.66021,
+   "lat": 33.54593,
+   "areaM2": 547,
+   "metresToDrainage": 97,
+   "priority": 1
+  },
+  {
+   "lon": -117.66081,
+   "lat": 33.55057,
+   "areaM2": 882,
+   "metresToDrainage": 165,
+   "priority": 2
+  },
+  {
+   "lon": -117.66048,
+   "lat": 33.55143,
+   "areaM2": 373,
+   "metresToDrainage": 167,
+   "priority": 2
+  },
+  {
+   "lon": -117.66132,
+   "lat": 33.54394,
+   "areaM2": 24745,
+   "metresToDrainage": 183,
+   "priority": 2
+  },
+  {
+   "lon": -117.64571,
+   "lat": 33.54078,
+   "areaM2": 399,
+   "metresToDrainage": 473,
+   "priority": 2
+  },
+  {
+   "lon": -117.64507,
+   "lat": 33.54788,
+   "areaM2": 367,
+   "metresToDrainage": 509,
+   "priority": 2
+  },
+  {
+   "lon": -117.64498,
+   "lat": 33.54833,
+   "areaM2": 495,
+   "metresToDrainage": 526,
+   "priority": 2
+  },
+  {
+   "lon": -117.64407,
+   "lat": 33.55267,
+   "areaM2": 412,
+   "metresToDrainage": 528,
+   "priority": 2
+  },
+  {
+   "lon": -117.65569,
+   "lat": 33.56819,
+   "areaM2": 354,
+   "metresToDrainage": 632,
+   "priority": 2
+  },
+  {
+   "lon": -117.65619,
+   "lat": 33.53482,
+   "areaM2": 418,
+   "metresToDrainage": 681,
+   "priority": 2
+  },
+  {
+   "lon": -117.66196,
+   "lat": 33.52599,
+   "areaM2": 3721,
+   "metresToDrainage": 688,
+   "priority": 2
+  },
+  {
+   "lon": -117.6352,
+   "lat": 33.52748,
+   "areaM2": 1687,
+   "metresToDrainage": 1094,
+   "priority": 2
+  },
+  {
+   "lon": -117.62619,
+   "lat": 33.5441,
+   "areaM2": 379,
+   "metresToDrainage": 1144,
+   "priority": 2
+  },
+  {
+   "lon": -117.66905,
+   "lat": 33.56911,
+   "areaM2": 534,
+   "metresToDrainage": 1714,
+   "priority": 2
+  }
+ ],
+ "notMarked": "No vat is marked. None has been located in the study area.",
+ "supersededBy": "Any accredited laboratory soil or sediment measurement."
+}
