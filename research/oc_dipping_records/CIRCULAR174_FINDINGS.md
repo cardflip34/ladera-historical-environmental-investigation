@@ -67,6 +67,49 @@ The circular states plainly that open vats took on rainwater. An open vat that f
 also **overflows** in one. This is recorded here as a documented operational condition, **not** as
 evidence that any release occurred at any location.
 
+## 6. Vat types — and which one a large ranch used
+
+> "The **swim vat** is by far the most practical for **range stock where large numbers of cattle are
+> to be dipped**."
+
+The three vat types in the circular are not interchangeable, and the choice is determined by herd
+size and type:
+
+| Type | Documented for | Capacity |
+|---|---|---|
+| **Swim vat** | **range stock, large numbers** | **2,088 gallons** at 5 ft depth, per the Farmers' Bulletin 378 plans reproduced in the circular; the text also describes swim vats "up to 80 or 90 feet in length" |
+| Cage vat | smaller herds, gentle cattle, dairy cows | 7 ft deep × 3 ft wide × 8 ft long |
+| Wade tank | very small herds | under $10 in materials |
+
+A 200,000-acre range operation running thousands of head is squarely the **swim vat** case. This
+also gives a **documented** capacity figure — 2,088 gallons — to replace the assumed 3,000, and the
+"80 to 90 feet" language means substantially larger vats existed.
+
+Cattle were to be **submerged at least 20 seconds** where mature ticks were present.
+
+## 7. The leak — stated by the federal government itself
+
+> "Such vats may be constructed of lumber or cement. The latter is preferable, as **it has not the
+> disadvantage of leaking, which is common in wooden vats**, and is more durable."
+
+This is the single most consequential operational sentence in the circular. The USDA's own guidance
+records that **wooden dipping vats commonly leaked**, and recommends concrete specifically to avoid
+it.
+
+A leaking vat is a continuous point discharge of arsenical solution into the ground directly beneath
+and around it, for as long as the vat is in service — a mechanism entirely separate from drag-out,
+and one that concentrates in a single small footprint rather than dispersing along cattle trails.
+
+**Recorded as a documented general operational condition of the period.** It is not evidence that
+any particular vat leaked, and no vat has been located in the study area. What it establishes is
+that if a wooden vat stood anywhere in this landscape, sustained subsurface loss at that spot is the
+expected condition, not a worst case.
+
+## 8. Programme outcome statewide
+
+> "As a result of four years' work by the Bureau and state officials, California has only **9,315
+> square miles**, instead of 69,755 square miles, of territory in quarantine…"
+
 ## Next archival targets
 
 1. Identify the "one large ranch" — BAI correspondence, State Veterinarian reports 1910–1912.

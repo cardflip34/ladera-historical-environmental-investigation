@@ -34,7 +34,14 @@ TODAY = datetime.date.today().isoformat()
 # ---------------------------------------------------------------- parameters
 # Standard USDA / Bureau of Animal Industry arsenical dip formula of the period.
 LB_AS2O3_PER_500GAL = 8.0          # pounds arsenic trioxide per 500 gallons of charge
-VAT_GALLONS         = (2500, 3000, 5000)   # low / stated / high. Period vats ran ~2,000-6,000 gal.
+VAT_GALLONS         = (2088, 3000, 5000)
+# 2,088 gal is now DOCUMENTED, not assumed: BAI Circular 174 (1911) reproduces the Farmers'
+# Bulletin 378 swim-vat plans and states such a vat "will hold 2,088 gallons when filled to a
+# depth of 5 feet." The circular also describes swim vats "up to 80 or 90 feet in length", so
+# larger vats existed; 3,000 and 5,000 are retained as plausible larger cases.
+# The swim vat is the relevant type here: the circular calls it "by far the most practical for
+# range stock where large numbers of cattle are to be dipped."
+
 YEARS_OPERATING     = 5.0          # OC quarantine ran to Mar 1912; program from ~1907
 DIP_INTERVAL_DAYS   = (14, 21)     # compulsory systematic dipping cadence during quarantine
 

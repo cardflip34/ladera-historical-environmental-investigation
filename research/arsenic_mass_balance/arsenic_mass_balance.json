@@ -14,7 +14,7 @@
  "parameters": {
   "lbAs2O3per500gal": 8.0,
   "vatGallons": [
-   2500,
+   2088,
    3000,
    5000
   ],
@@ -38,9 +38,9 @@
  },
  "standingCharge": [
   {
-   "vatGallons": 2500,
-   "lbAs2O3": 40.0,
-   "kgElementalAs": 13.7
+   "vatGallons": 2088,
+   "lbAs2O3": 33.4,
+   "kgElementalAs": 11.5
   },
   {
    "vatGallons": 3000,
