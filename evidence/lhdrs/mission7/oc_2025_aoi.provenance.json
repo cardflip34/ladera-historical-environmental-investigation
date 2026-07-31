@@ -1,0 +1,19 @@
+{
+ "generated": "2026-07-31",
+ "source": "OC Survey / Eagle Aerial 2025 countywide 1-ft orthoimagery, OCGIS ImageServer",
+ "service": "https://ocgis.com/arcpub/rest/services/Aerial_Imagery_Countywide/Eagle_Aerial_2025_OC_1FT_sid/ImageServer",
+ "aoi": [
+  -117.67,
+  33.524,
+  -117.616,
+  33.575
+ ],
+ "size": [
+  4800,
+  4800
+ ],
+ "tiles": "3x3 @1600px (server size limit)",
+ "provenanceGrade": "A+",
+ "statementClass": "documented",
+ "sha256": "bb41ad43a8134d714a91e6c00266b52c923be56d9a3b5d08eabeb3347f543544"
+}

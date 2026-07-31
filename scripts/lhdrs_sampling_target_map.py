@@ -60,8 +60,10 @@ def xy(lon, lat):
     return (OX + (lon-AOI[0])*math.cos(latm())*sc, OY + (AOI[3]-lat)*sc)
 
 im = Image.new("RGB", (W, H), PAPER)
-# basemap: the 0.3 m 2004 orthoimagery, desaturated so annotation reads on top
-p = os.path.join(M7, "hro_2004_aoi.png")
+# basemap: newest county imagery held - Eagle Aerial 2025 1-ft - falling back to 2004 if absent
+p = os.path.join(M7, "oc_2025_aoi.jpg")
+if not os.path.exists(p):
+    p = os.path.join(M7, "hro_2004_aoi.png")
 if os.path.exists(p):
     base = Image.open(p).convert("RGB").resize((int(PW), int(PH)), Image.LANCZOS)
     a = np.asarray(base).astype(float)
@@ -155,7 +157,7 @@ d.rounded_rectangle([MAP_L,140,MAP_L+300,176], 6, fill=(150,60,42))
 d.text((MAP_L+14,147), "NO VAT HAS BEEN LOCATED", font=F(17,True), fill=(255,255,255))
 d.text((MAP_L+320,147), "Nothing on this map marks a vat. Marking a guess would be fabrication.",
        font=F(18), fill=MUT)
-d.text((MAP_L, 200), "Basemap: USGS 0.3 m orthoimagery, 21 January 2004 · desaturated",
+d.text((MAP_L, 200), "Basemap: OC Survey Eagle Aerial 2025, 1 ft countywide · desaturated",
        font=F(16), fill=MUT)
 
 # ---- legend ----------------------------------------------------------------
