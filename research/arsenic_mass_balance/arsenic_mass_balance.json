@@ -1,0 +1,113 @@
+{
+ "generated": "2026-07-30",
+ "statementClass": "model_estimate",
+ "provenanceGradeInputs": "A1/A2 - period USDA arsenical dip formula; documented compulsory quarantine",
+ "provenanceGradeOutput": "MODEL ESTIMATE - must be displayed with a model-estimate badge, never as measurement",
+ "question": "IF a dipping operation of this size operated in this landscape, what mass of arsenic entered it?",
+ "notAnswered": [
+  "whether a vat existed at any specific location",
+  "whether arsenic is present in Ladera Ranch soil today",
+  "where any arsenic moved",
+  "whether any person was exposed",
+  "any health effect whatsoever"
+ ],
+ "parameters": {
+  "lbAs2O3per500gal": 8.0,
+  "vatGallons": [
+   2500,
+   3000,
+   5000
+  ],
+  "yearsOperating": 5.0,
+  "dipIntervalDays": [
+   14,
+   21
+  ],
+  "dragoutGalPerHead": [
+   0.25,
+   0.5,
+   1.0
+  ],
+  "herdHeadRange": [
+   2000,
+   5000,
+   10000,
+   20000
+  ],
+  "as2o3ToElementalAs": 0.7574
+ },
+ "standingCharge": [
+  {
+   "vatGallons": 2500,
+   "lbAs2O3": 40.0,
+   "kgElementalAs": 13.7
+  },
+  {
+   "vatGallons": 3000,
+   "lbAs2O3": 48.0,
+   "kgElementalAs": 16.5
+  },
+  {
+   "vatGallons": 5000,
+   "lbAs2O3": 80.0,
+   "kgElementalAs": 27.5
+  }
+ ],
+ "throughput": [
+  {
+   "herdHead": 2000,
+   "dragoutGallons": {
+    "low": 43452,
+    "mid": 104286,
+    "high": 260714
+   },
+   "elementalArsenicKg": {
+    "low": 238.8,
+    "mid": 573.2,
+    "high": 1433.1
+   }
+  },
+  {
+   "herdHead": 5000,
+   "dragoutGallons": {
+    "low": 108631,
+    "mid": 260714,
+    "high": 651786
+   },
+   "elementalArsenicKg": {
+    "low": 597.1,
+    "mid": 1433.1,
+    "high": 3582.7
+   }
+  },
+  {
+   "herdHead": 10000,
+   "dragoutGallons": {
+    "low": 217262,
+    "mid": 521429,
+    "high": 1303571
+   },
+   "elementalArsenicKg": {
+    "low": 1194.2,
+    "mid": 2866.2,
+    "high": 7165.5
+   }
+  },
+  {
+   "herdHead": 20000,
+   "dragoutGallons": {
+    "low": 434524,
+    "mid": 1042857,
+    "high": 2607143
+   },
+   "elementalArsenicKg": {
+    "low": 2388.5,
+    "mid": 5732.4,
+    "high": 14331.0
+   }
+  }
+ ],
+ "dominantUncertainty": "Herd size. Head counts for the O'Neill Ranch in 1907-1912 are NOT established in this repository. The range spans an order of magnitude and the output scales linearly with it. Establishing the actual head count would tighten this more than any other single input.",
+ "persistence": "Arsenic is an element and does not degrade. It has no environmental half-life. Mass introduced 1907-1912 remains in the landscape unless physically removed.",
+ "whatThisJustifies": "Soil and sediment testing. It does not justify any causal statement."
+}
