@@ -32,7 +32,7 @@
    2000,
    5000,
    10000,
-   20000
+   25000
   ],
   "as2o3ToElementalAs": 0.7574
  },
@@ -94,19 +94,49 @@
    }
   },
   {
-   "herdHead": 20000,
+   "herdHead": 25000,
    "dragoutGallons": {
-    "low": 434524,
-    "mid": 1042857,
-    "high": 2607143
+    "low": 543155,
+    "mid": 1303571,
+    "high": 3258929
    },
    "elementalArsenicKg": {
-    "low": 2388.5,
-    "mid": 5732.4,
-    "high": 14331.0
+    "low": 2985.6,
+    "mid": 7165.5,
+    "high": 17913.7
    }
   }
  ],
+ "vatsRequired": [
+  {
+   "herdHead": 2000,
+   "vatsRequiredLow": 1,
+   "vatsRequiredHigh": 1
+  },
+  {
+   "herdHead": 5000,
+   "vatsRequiredLow": 1,
+   "vatsRequiredHigh": 2
+  },
+  {
+   "herdHead": 10000,
+   "vatsRequiredLow": 2,
+   "vatsRequiredHigh": 3
+  },
+  {
+   "herdHead": 25000,
+   "vatsRequiredLow": 3,
+   "vatsRequiredHigh": 7
+  }
+ ],
+ "herdSizeSource": {
+  "figure": "over 25,000 head",
+  "quote": "At one time the ranch had over 25,000 head of cattle but now we try to keep it at about 8,000.",
+  "source": "Irish America, Home on the Range with the O'Neills, orig. Jan/Feb 1997",
+  "url": "https://www.irishamerica.com/2024/10/home-on-the-range-with-the-oneills/",
+  "provenanceGrade": "B2",
+  "limitation": "Undated - 'at one time'. Peak year not established. Not a 1907-1912 head count."
+ },
  "dominantUncertainty": "Herd size. Head counts for the O'Neill Ranch in 1907-1912 are NOT established in this repository. The range spans an order of magnitude and the output scales linearly with it. Establishing the actual head count would tighten this more than any other single input.",
  "persistence": "Arsenic is an element and does not degrade. It has no environmental half-life. Mass introduced 1907-1912 remains in the landscape unless physically removed.",
  "whatThisJustifies": "Soil and sediment testing. It does not justify any causal statement."

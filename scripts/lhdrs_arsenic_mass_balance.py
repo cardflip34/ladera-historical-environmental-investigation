@@ -45,7 +45,19 @@ DRAGOUT_GAL_PER_HEAD = (0.25, 0.5, 1.0)    # low / mid / high, per animal per di
 # Herd size. The O'Neill Ranch / Rancho Mission Viejo was among the largest cattle operations in
 # California. Head counts for the era are NOT established in this repository - this is the single
 # largest uncertainty in the calculation and is therefore run across a wide range.
-HERD_HEAD = (2000, 5000, 10000, 20000)
+HERD_HEAD = (2000, 5000, 10000, 25000)
+# 25,000 is now a SOURCED figure, not a guess:
+#   "At one time the ranch had over 25,000 head of cattle but now we try to keep it at about 8,000."
+#   - Irish America, "Home on the Range with the O'Neills" (orig. Jan/Feb 1997). Grade B2:
+#   reputable outlet quoting the ranching family. The quote is UNDATED ("at one time"), so the
+#   peak year is not established. What IS established: the ranch ran 200,000+ acres from 1882,
+#   and a half interest was conveyed to O'Neill in 1907 - the dipping period itself.
+#   Treat 25,000 as a documented historical peak of unknown year, NOT as a 1907-1912 head count.
+
+# Practical vat throughput. A dipping vat processes a finite number of animals per working day;
+# period accounts put a single vat in the low hundreds per day.
+HEAD_PER_VAT_PER_DAY = (300, 500)
+WORKING_DAYS_PER_CYCLE = (12, 18)   # working days available inside a 14-21 day compulsory cycle
 
 AS_FRACTION_OF_AS2O3 = 0.7574      # As2O3 -> elemental As by mass (2*74.92 / 197.84)
 LB_TO_KG = 0.453592
@@ -106,6 +118,24 @@ for herd in HERD_HEAD:
     print(f"   herd {herd:>6,} head   elemental arsenic carried out: "
           f"{out[0]:8,.0f} - {out[2]:9,.0f} kg   (mid {out[1]:,.0f} kg)")
 
+print("\n-- 2b. HOW MANY VATS THE HERD REQUIRES --")
+print("   Compulsory dipping means the ENTIRE herd must pass through a vat every 14-21 days.")
+print("   That is a throughput constraint, and it determines the number of facilities.\n")
+vatcalc=[]
+for herd in HERD_HEAD:
+    lo = herd / (HEAD_PER_VAT_PER_DAY[1] * WORKING_DAYS_PER_CYCLE[1])
+    hi = herd / (HEAD_PER_VAT_PER_DAY[0] * WORKING_DAYS_PER_CYCLE[0])
+    import math as _m
+    vatcalc.append({"herdHead": herd, "vatsRequiredLow": _m.ceil(lo), "vatsRequiredHigh": _m.ceil(hi)})
+    print(f"   herd {herd:>6,} head   requires {_m.ceil(lo)} - {_m.ceil(hi)} vat(s) operating simultaneously")
+print()
+print("   This is the structural point. A single vat cannot cycle a large herd inside the")
+print("   compulsory interval, so a ranch of this size needed SEVERAL dipping stations")
+print("   distributed across its range - sited where cattle already were, near water and")
+print("   handling grounds. Multiple stations across 200,000+ acres raises the prior that")
+print("   one stood within any given part of the historic ranch, including the ground that")
+print("   is now Ladera Ranch. It does NOT establish that one did.")
+
 print("\n-- 3. WHAT THAT MASS WOULD MEAN IF SPREAD OVER GROUND --")
 print("   Illustrative only. Real distribution would be highly concentrated near the vat,")
 print("   pens and approach lanes, NOT uniform. Uniform spreading UNDERSTATES local peaks.\n")
@@ -156,6 +186,8 @@ json.dump({
                      "kgElementalAs": round(standing_charge(v)[1]*AS_FRACTION_OF_AS2O3, 1)}
                     for v in VAT_GALLONS],
  "throughput": results,
+ "vatsRequired": vatcalc,
+ "herdSizeSource": {"figure": "over 25,000 head", "quote": "At one time the ranch had over 25,000 head of cattle but now we try to keep it at about 8,000.", "source": "Irish America, Home on the Range with the O'Neills, orig. Jan/Feb 1997", "url": "https://www.irishamerica.com/2024/10/home-on-the-range-with-the-oneills/", "provenanceGrade": "B2", "limitation": "Undated - 'at one time'. Peak year not established. Not a 1907-1912 head count."},
  "dominantUncertainty": "Herd size. Head counts for the O'Neill Ranch in 1907-1912 are NOT "
                         "established in this repository. The range spans an order of magnitude "
                         "and the output scales linearly with it. Establishing the actual head "
