@@ -1,0 +1,20 @@
+{
+ "generated": "2026-07-31",
+ "frames": 433,
+ "seconds": 61.9,
+ "statementClass": "documented_imagery_with_conceptual_schematic",
+ "imagery": "Landsat 5/7 Collection 2 Level-2, 102 cloud-free months 1997-2006, A+",
+ "overlays": {
+  "candidateSourceZones": "1968 USGS surface-water points (A1) - NOT vats",
+  "drainage": "OC Flood_Channels as-built (A+)"
+ },
+ "schematicIsConceptual": true,
+ "notEstablished": [
+  "presence of arsenic anywhere in the study area",
+  "existence of a vat within the study area",
+  "any transport of any material",
+  "any human exposure",
+  "any health effect"
+ ],
+ "noVatMarked": "A systematic search of the 1929/1938/1947 aerials found none; marking a guess would be fabrication."
+}
