@@ -119,6 +119,16 @@ for w in water:
     d.ellipse([x-r,y-r,x+r,y+r], outline=col, width=4)
     d.ellipse([x-3,y-3,x+3,y+3], fill=col)
 
+# ---- orchard blocks (the confounder), so the map shows where they are NOT --
+_os = os.path.join(REPO, "evidence/lhdrs/orchards/orchard_summary.json")
+if os.path.exists(_os):
+    for b in json.load(open(_os))["blockSummary"]:
+        la, lo = b["centroid"]
+        x, y = xy(lo, la)
+        if OX <= x <= OX+PW and OY <= y <= OY+PH:
+            r = max(8, min(20, int(math.sqrt(b["areaHa"]*10000)/25)))
+            d.rectangle([x-r, y-r, x+r, y+r], outline=PARKC, width=3)
+
 # ---- the 1948 ranch node ---------------------------------------------------
 nx,ny = xy(-117.65492, 33.55505)
 d.ellipse([nx-16,ny-16,nx+16,ny+16], outline=(150,60,180), width=4)
@@ -164,6 +174,8 @@ rows = [
                    "Explicitly NOT identified as a dip vat by the prior imagery audit."),
  (SCHOOL,"square", "Schools — shown for exposure context only.",
                    "Their presence is not evidence of anything being present."),
+ (PARKC, "square", "Orchard blocks detected 1929–1947 — the lead-arsenate confounder.",
+                   "All in the far south-west. Nearest block to any school: 2.8 km. To the drainage: 1.4 km."),
 ]
 for col, shape, t1, t2 in rows:
     cx = MAP_L+16

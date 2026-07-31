@@ -1,0 +1,347 @@
+[
+ {
+  "n": 1,
+  "lat": 33.53792,
+  "lon": -117.66258,
+  "p": 1,
+  "m": 1,
+  "a": 515,
+  "near": "Coronado Park",
+  "nearM": 828,
+  "orchKm": 0.5,
+  "why": [
+   "stock-water point on the drainage (1 m) - congregation and deposition in one spot"
+  ]
+ },
+ {
+  "n": 2,
+  "lat": 33.54763,
+  "lon": -117.65929,
+  "p": 1,
+  "m": 15,
+  "a": 1307,
+  "near": "Coronado Park",
+  "nearM": 543,
+  "orchKm": 1.4,
+  "why": [
+   "stock-water point on the drainage (15 m) - congregation and deposition in one spot"
+  ]
+ },
+ {
+  "n": 3,
+  "lat": 33.55546,
+  "lon": -117.63687,
+  "p": 1,
+  "m": 18,
+  "a": 734,
+  "near": "Ladera Ranch ES",
+  "nearM": 217,
+  "orchKm": 3.4,
+  "why": [
+   "stock-water point on the drainage (18 m) - congregation and deposition in one spot",
+   "now 217 m from Ladera Ranch ES - present-day access relevance",
+   "orchard confounder 3.4 km away - arsenic here could not be casually attributed to orchards"
+  ]
+ },
+ {
+  "n": 4,
+  "lat": 33.54123,
+  "lon": -117.66061,
+  "p": 1,
+  "m": 27,
+  "a": 12395,
+  "near": "Coronado Park",
+  "nearM": 566,
+  "orchKm": 0.9,
+  "why": [
+   "stock-water point on the drainage (27 m) - congregation and deposition in one spot",
+   "large impoundment (12,395 m2) - a settling basin for fine sediment"
+  ]
+ },
+ {
+  "n": 5,
+  "lat": 33.52477,
+  "lon": -117.64745,
+  "p": 1,
+  "m": 27,
+  "a": 405,
+  "near": "Stoneridge Park",
+  "nearM": 205,
+  "orchKm": 0.1,
+  "why": [
+   "stock-water point on the drainage (27 m) - congregation and deposition in one spot",
+   "now 205 m from Stoneridge Park - present-day access relevance"
+  ]
+ },
+ {
+  "n": 6,
+  "lat": 33.55857,
+  "lon": -117.65281,
+  "p": 1,
+  "m": 42,
+  "a": 9111,
+  "near": "Wagsdale Field",
+  "nearM": 842,
+  "orchKm": 2.0,
+  "why": [
+   "stock-water point on the drainage (42 m) - congregation and deposition in one spot",
+   "large impoundment (9,111 m2) - a settling basin for fine sediment",
+   "orchard confounder 2.0 km away - arsenic here could not be casually attributed to orchards"
+  ]
+ },
+ {
+  "n": 7,
+  "lat": 33.5575,
+  "lon": -117.63615,
+  "p": 1,
+  "m": 42,
+  "a": 508,
+  "near": "Frog Park",
+  "nearM": 47,
+  "orchKm": 3.5,
+  "why": [
+   "stock-water point on the drainage (42 m) - congregation and deposition in one spot",
+   "now 47 m from Frog Park - present-day access relevance",
+   "orchard confounder 3.5 km away - arsenic here could not be casually attributed to orchards"
+  ]
+ },
+ {
+  "n": 8,
+  "lat": 33.54793,
+  "lon": -117.65992,
+  "p": 1,
+  "m": 46,
+  "a": 4661,
+  "near": "Coronado Park",
+  "nearM": 512,
+  "orchKm": 1.3,
+  "why": [
+   "stock-water point on the drainage (46 m) - congregation and deposition in one spot",
+   "large impoundment (4,661 m2) - a settling basin for fine sediment"
+  ]
+ },
+ {
+  "n": 9,
+  "lat": 33.56288,
+  "lon": -117.63391,
+  "p": 1,
+  "m": 88,
+  "a": 476,
+  "near": "Chaparral ES",
+  "nearM": 142,
+  "orchKm": 3.8,
+  "why": [
+   "stock-water point on the drainage (88 m) - congregation and deposition in one spot",
+   "now 142 m from Chaparral ES - present-day access relevance",
+   "orchard confounder 3.8 km away - arsenic here could not be casually attributed to orchards"
+  ]
+ },
+ {
+  "n": 10,
+  "lat": 33.54593,
+  "lon": -117.66021,
+  "p": 1,
+  "m": 97,
+  "a": 547,
+  "near": "Coronado Park",
+  "nearM": 396,
+  "orchKm": 1.2,
+  "why": [
+   "stock-water point on the drainage (97 m) - congregation and deposition in one spot",
+   "now 396 m from Coronado Park - present-day access relevance"
+  ]
+ },
+ {
+  "n": 11,
+  "lat": 33.55057,
+  "lon": -117.66081,
+  "p": 2,
+  "m": 165,
+  "a": 882,
+  "near": "Quad",
+  "nearM": 554,
+  "orchKm": 1.2,
+  "why": [
+   "mapped 1968 stock-water point - daily cattle congregation, dung and hoof traffic"
+  ]
+ },
+ {
+  "n": 12,
+  "lat": 33.55143,
+  "lon": -117.66048,
+  "p": 2,
+  "m": 167,
+  "a": 373,
+  "near": "Quad",
+  "nearM": 513,
+  "orchKm": 1.3,
+  "why": [
+   "mapped 1968 stock-water point - daily cattle congregation, dung and hoof traffic"
+  ]
+ },
+ {
+  "n": 13,
+  "lat": 33.54394,
+  "lon": -117.66132,
+  "p": 2,
+  "m": 183,
+  "a": 24745,
+  "near": "Coronado Park",
+  "nearM": 319,
+  "orchKm": 1.0,
+  "why": [
+   "mapped 1968 stock-water point - daily cattle congregation, dung and hoof traffic",
+   "large impoundment (24,745 m2) - a settling basin for fine sediment",
+   "now 319 m from Coronado Park - present-day access relevance"
+  ]
+ },
+ {
+  "n": 14,
+  "lat": 33.54078,
+  "lon": -117.64571,
+  "p": 2,
+  "m": 473,
+  "a": 399,
+  "near": "Terramor Skate Park",
+  "nearM": 613,
+  "orchKm": 1.9,
+  "why": [
+   "mapped 1968 stock-water point - daily cattle congregation, dung and hoof traffic",
+   "orchard confounder 1.9 km away - arsenic here could not be casually attributed to orchards"
+  ]
+ },
+ {
+  "n": 15,
+  "lat": 33.54788,
+  "lon": -117.64507,
+  "p": 2,
+  "m": 509,
+  "a": 367,
+  "near": "Terramor Skate Park",
+  "nearM": 509,
+  "orchKm": 2.5,
+  "why": [
+   "mapped 1968 stock-water point - daily cattle congregation, dung and hoof traffic",
+   "orchard confounder 2.5 km away - arsenic here could not be casually attributed to orchards"
+  ]
+ },
+ {
+  "n": 16,
+  "lat": 33.54833,
+  "lon": -117.64498,
+  "p": 2,
+  "m": 526,
+  "a": 495,
+  "near": "Terramor Skate Park",
+  "nearM": 539,
+  "orchKm": 2.5,
+  "why": [
+   "mapped 1968 stock-water point - daily cattle congregation, dung and hoof traffic",
+   "orchard confounder 2.5 km away - arsenic here could not be casually attributed to orchards"
+  ]
+ },
+ {
+  "n": 17,
+  "lat": 33.55267,
+  "lon": -117.64407,
+  "p": 2,
+  "m": 528,
+  "a": 412,
+  "near": "Wagsdale Field",
+  "nearM": 569,
+  "orchKm": 2.8,
+  "why": [
+   "mapped 1968 stock-water point - daily cattle congregation, dung and hoof traffic",
+   "orchard confounder 2.8 km away - arsenic here could not be casually attributed to orchards"
+  ]
+ },
+ {
+  "n": 18,
+  "lat": 33.56819,
+  "lon": -117.65569,
+  "p": 2,
+  "m": 632,
+  "a": 354,
+  "near": "Cordova Park",
+  "nearM": 41,
+  "orchKm": 2.3,
+  "why": [
+   "mapped 1968 stock-water point - daily cattle congregation, dung and hoof traffic",
+   "now 41 m from Cordova Park - present-day access relevance",
+   "orchard confounder 2.3 km away - arsenic here could not be casually attributed to orchards"
+  ]
+ },
+ {
+  "n": 19,
+  "lat": 33.53482,
+  "lon": -117.65619,
+  "p": 2,
+  "m": 681,
+  "a": 418,
+  "near": "Stoneridge Park",
+  "nearM": 1181,
+  "orchKm": 1.0,
+  "why": [
+   "mapped 1968 stock-water point - daily cattle congregation, dung and hoof traffic"
+  ]
+ },
+ {
+  "n": 20,
+  "lat": 33.52599,
+  "lon": -117.66196,
+  "p": 2,
+  "m": 688,
+  "a": 3721,
+  "near": "Stoneridge Park",
+  "nearM": 1269,
+  "orchKm": 0.4,
+  "why": [
+   "mapped 1968 stock-water point - daily cattle congregation, dung and hoof traffic"
+  ]
+ },
+ {
+  "n": 21,
+  "lat": 33.52748,
+  "lon": -117.6352,
+  "p": 2,
+  "m": 1094,
+  "a": 1687,
+  "near": "Mission Hills Park",
+  "nearM": 1107,
+  "orchKm": 0.8,
+  "why": [
+   "mapped 1968 stock-water point - daily cattle congregation, dung and hoof traffic"
+  ]
+ },
+ {
+  "n": 22,
+  "lat": 33.5441,
+  "lon": -117.62619,
+  "p": 2,
+  "m": 1144,
+  "a": 379,
+  "near": "Mission Hills Park",
+  "nearM": 920,
+  "orchKm": 2.8,
+  "why": [
+   "mapped 1968 stock-water point - daily cattle congregation, dung and hoof traffic",
+   "orchard confounder 2.8 km away - arsenic here could not be casually attributed to orchards"
+  ]
+ },
+ {
+  "n": 23,
+  "lat": 33.56911,
+  "lon": -117.66905,
+  "p": 2,
+  "m": 1714,
+  "a": 534,
+  "near": "Granada Park",
+  "nearM": 26,
+  "orchKm": 1.7,
+  "why": [
+   "mapped 1968 stock-water point - daily cattle congregation, dung and hoof traffic",
+   "now 26 m from Granada Park - present-day access relevance",
+   "orchard confounder 1.7 km away - arsenic here could not be casually attributed to orchards"
+  ]
+ }
+]
