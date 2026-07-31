@@ -1,0 +1,74 @@
+{
+ "generated": "2026-07-30",
+ "statementClass": "model_estimate",
+ "question1": "Approximate pounds of arsenic into the ground, O'Neill Ranch dipping, 1907-1912",
+ "totalElementalArsenic": {
+  "low": {
+   "kg": 3035,
+   "lb": 6692
+  },
+  "mid": {
+   "kg": 7280,
+   "lb": 16051
+  },
+  "high": {
+   "kg": 18029,
+   "lb": 39748
+  }
+ },
+ "totalAsArsenicTrioxide": {
+  "low": {
+   "kg": 4008,
+   "lb": 8836
+  },
+  "mid": {
+   "kg": 9612,
+   "lb": 21192
+  },
+  "high": {
+   "kg": 23804,
+   "lb": 52480
+  }
+ },
+ "components": {
+  "dragoutKg": {
+   "low": 2986.0,
+   "mid": 7165.0,
+   "high": 17914.0
+  },
+  "abandonedVatChargesKg": {
+   "perVat": 16.5,
+   "vats": [
+    3,
+    7
+   ]
+  }
+ },
+ "question2": "Scale comparison to the acute lethal dose",
+ "lethalDoseAs2O3mg": [
+  100.0,
+  300.0
+ ],
+ "nominalLethalDoseEquivalents": {
+  "low": {
+   "lethalDosesLow": 13359173,
+   "lethalDosesHigh": 40077519
+  },
+  "mid": {
+   "lethalDosesLow": 32041339,
+   "lethalDosesHigh": 96124016
+  },
+  "high": {
+   "lethalDosesLow": 79347914,
+   "lethalDosesHigh": 238043742
+  }
+ },
+ "lethalDoseCaveat": "SCALE DEVICE ONLY, NOT A RISK ASSESSMENT. Soil-bound arsenic is only partly bioavailable; the exposure pathway is incidental dust ingestion, not drinking; and acute lethality is a different endpoint from chronic carcinogenic risk. This comparison justifies measurement. It does not support any claim that anyone is being acutely poisoned.",
+ "dominantUncertainties": [
+  "herd size during 1907-1912 specifically (documented peak is undated)",
+  "number and location of dipping stations in Orange County - NOT found in public sources",
+  "fate of vat charges at decommissioning",
+  "drag-out rate per animal"
+ ],
+ "supersededBy": "Any accredited laboratory measurement of soil or sediment. This is arithmetic; one real analytical result outweighs all of it."
+}
