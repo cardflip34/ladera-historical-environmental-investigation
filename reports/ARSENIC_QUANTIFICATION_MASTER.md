@@ -114,6 +114,61 @@ redistributes it; it does not destroy it.
 
 ---
 
+## 4b. SCOPE — how much of that is in **Ladera Ranch** specifically
+
+**The figures in §4 are for the whole O'Neill operation, not for Ladera Ranch.** This distinction
+is easy to lose and would be the first thing a critic corrects, so it is stated plainly here.
+
+| | |
+|---|---|
+| O'Neill Ranch | ~200,000 acres |
+| Ladera Ranch CDP | ~4,200 acres — **2.1% of the ranch** |
+
+Ladera's share is **not** 2.1% of the mass, because the mass is not spread evenly — it concentrates
+hard at vat complexes. So the answer forks on the single unresolved question: **was one of the
+3–7 vats inside what is now Ladera Ranch?**
+
+### Scenario A — no vat inside Ladera
+
+Only the diffuse compartments reach it: excretion across grazed range, plus trails and driving
+routes.
+
+| Case | Elemental As in Ladera | If spread evenly (top 15 cm) |
+|---|---|---|
+| low | 25 kg (**56 lb**) | 0.007 mg/kg |
+| mid | 61 kg (**135 lb**) | 0.017 mg/kg |
+| high | 151 kg (**334 lb**) | 0.042 mg/kg |
+
+**Against a California background of 1–11 mg/kg, Scenario A is undetectable.** Two to three orders
+of magnitude below natural variation. Sampling would return background, and correctly so.
+
+### Scenario B — one vat complex stood inside Ladera
+
+Mass divides roughly per vat across the network, and ~60% of a vat's mass sits within the vat,
+drain pen and corrals — about 2.25 ha combined.
+
+| Case | Concentrated mass | Over 2.25 ha | If 7 vats |
+|---|---|---|---|
+| low | 607 kg (**1,338 lb**) | **128 mg/kg** | 55 mg/kg |
+| mid | 1,456 kg (**3,210 lb**) | **308 mg/kg** | 132 mg/kg |
+| high | 3,606 kg (**7,949 lb**) | **763 mg/kg** | 327 mg/kg |
+
+**That is 10× to 700× California background, in a footprint of a few hectares.** Unmistakable in a
+soil test, and localised enough that a targeted grid would either find it or rule it out.
+
+### Why this fork is the whole investigation
+
+The two scenarios differ by roughly **three orders of magnitude**, and no amount of further desk
+work resolves which one obtains. The aerial search found no vat here — weak evidence of absence,
+for the reasons in §7. The herd math says vats existed somewhere across 200,000 acres.
+
+**Only soil measurement distinguishes Scenario A from Scenario B.** That is precisely why the
+sampling targets in §8 exist, and why a negative result is genuinely informative rather than a
+disappointment: a clean background reading across the ranked depositional zones is strong evidence
+for Scenario A.
+
+---
+
 ## 5. The lethal-dose comparison — and how to use it without being destroyed
 
 A fatal oral dose of arsenic trioxide for an adult is on the order of
