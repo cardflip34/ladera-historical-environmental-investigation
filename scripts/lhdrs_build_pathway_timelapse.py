@@ -52,6 +52,9 @@ HOT=(226,74,58); WARM=(236,158,52); STREAM=(74,150,228); RED=(196,58,44)
 man = json.load(open(os.path.join(M7, "timelapse_manifest.json")))
 seq = man["videoSequence"]
 tgts = json.load(open(os.path.join(M7, "sampling_targets_reasoned.json")))
+MB   = json.load(open(os.path.join(REPO, "research/arsenic_mass_balance/arsenic_mass_balance.json")))
+TOT  = json.load(open(os.path.join(REPO, "research/arsenic_mass_balance/arsenic_total_and_scale.json")))
+DIST = json.load(open(os.path.join(REPO, "research/arsenic_mass_balance/arsenic_grazing_distribution.json")))
 CH = {}
 for f in json.load(open(os.path.join(M7, "oc_flood_channels_aoi.geojson")))["features"]:
     nm = ((f.get("properties") or {}).get("FACILITYNAME") or "").strip().upper()
@@ -239,6 +242,88 @@ def schematic(step, sec=5):
 
 for st in (1, 2, 3, 4):
     frames += schematic(st, sec=4.5 if st < 4 else 8)
+
+# ---------------- the numbers ----------------
+def datacard(title, sub, rows, foot=None, sec=7, tcol=ACC):
+    """Left-aligned figure table. Rows are (label, value) or ("--","") for a rule."""
+    im = Image.new("RGB", (SIZE, SIZE), NAVY); d = ImageDraw.Draw(im)
+    d.rectangle([0, 0, SIZE, 8], fill=RED)
+    d.text((60, 44), title, font=F(34, True), fill=WHITE)
+    y = 96
+    for t in sub:
+        d.text((60, y), t, font=F(17), fill=MUT); y += 26
+    y += 18
+    for lab, val in rows:
+        if lab == "--":
+            d.line([60, y+8, SIZE-60, y+8], fill=(52,60,74), width=1); y += 26; continue
+        d.text((60, y), lab, font=F(19), fill=(206,212,222))
+        d.text((SIZE-60, y), val, font=F(21, True), fill=tcol, anchor="ra")
+        y += 38
+    if foot:
+        by = SIZE-52-len(foot)*24
+        d.rounded_rectangle([50, by-20, SIZE-50, SIZE-30], 8, fill=(38,24,20), outline=(150,60,42), width=2)
+        for i, t in enumerate(foot):
+            d.text((70, by+i*24), t, font=F(15), fill=(226,178,166))
+    return hold(im, sec)
+
+frames += card([("The numbers behind this", 36, True)],
+    ["What a compulsory dipping operation of this size",
+     "would have put into the ground.",
+     "",
+     "MODEL ESTIMATE — arithmetic from documented parameters.",
+     "Nothing here has been measured in this soil."], sec=6)
+
+nv = [v for v in MB["vatsRequired"] if v["herdHead"] == 25000][0]
+sc25 = [r for r in MB["throughput"] if r["herdHead"] == 25000][0]
+frames += datacard("The operation", [
+    "USDA Bureau of Animal Industry Circular 174 (1911) — documented parameters"], [
+    ("Herd, documented peak", "25,000+ head"),
+    ("Formula", "8 lb As2O3 / 500 gal"),
+    ("Range cattle allowance", "up to 10 lb / 500 gal"),
+    ("Dipping cadence, compulsory", "every 14-21 days"),
+    ("Swim vat capacity", "2,088 gallons"),
+    ("--", ""),
+    ("Vats required simultaneously", f"{nv['vatsRequiredLow']} - {nv['vatsRequiredHigh']}"),
+    ], foot=["One vat cannot cycle a herd this size inside the mandated interval.",
+             "An operation at this scale needed a NETWORK of vats across 200,000 acres."], sec=8)
+
+TE = TOT["totalElementalArsenic"]
+frames += datacard("Into the ground — whole ranch", [
+    "Drag-out over five years, plus vat charges abandoned at decommissioning"], [
+    ("Low case", f"{TE['low']['lb']:,} lb"),
+    ("Mid case", f"{TE['mid']['lb']:,} lb"),
+    ("High case", f"{TE['high']['lb']:,} lb"),
+    ("--", ""),
+    ("Mid case, as tons", f"{TE['mid']['lb']/2000:,.0f} US tons"),
+    ("As arsenic trioxide, mid", f"{TOT['totalAsArsenicTrioxide']['mid']['lb']:,} lb"),
+    ], foot=["Arsenic is an ELEMENT. It has no half-life and does not degrade.",
+             "Mass introduced in 1907-1912 is still in this landscape unless hauled away."], sec=8)
+
+frames += datacard("How much of that is in Ladera?", [
+    "Ladera Ranch is ~4,200 acres — 2.1% of the ~200,000-acre ranch.",
+    "But the mass concentrates at vats, so the answer forks on one unknown."], [
+    ("SCENARIO A — no vat here", ""),
+    ("   reaches Ladera", "56 - 334 lb"),
+    ("   concentration", "0.007 - 0.042 mg/kg"),
+    ("   vs CA background 1-11", "UNDETECTABLE"),
+    ("--", ""),
+    ("SCENARIO B — one vat here", ""),
+    ("   in vat, pen and corrals", "1,338 - 7,949 lb"),
+    ("   over ~2.25 hectares", "128 - 763 mg/kg"),
+    ("   vs CA background 1-11", "10x - 700x"),
+    ], foot=["The two scenarios differ by ~1,000x. No further desk work resolves which.",
+             "ONLY SOIL MEASUREMENT DISTINGUISHES THEM."], sec=11)
+
+frames += datacard("Scale — the poisoned cup", [
+    "A fatal oral dose of arsenic trioxide is 100-300 mg. Less than a pea.",
+    "That is why it was the classical poison."], [
+    ("Whole-ranch mass, mid case", "32 - 96 million"),
+    ("   nominal lethal doses", ""),
+    ], foot=["THIS IS ARITHMETIC, NOT TOXICOLOGY. Soil-bound arsenic is only partly",
+             "bioavailable; nobody ingests soil in gram quantities; and acute lethality is a",
+             "different endpoint from chronic risk. It conveys SCALE — a large quantity of a",
+             "non-degrading poison — and it is NOT a claim that anyone is being poisoned."],
+    sec=11, tcol=(236,140,120))
 
 # ---------------- closing ----------------
 frames += card([("The question this video frames", 30, True)],
