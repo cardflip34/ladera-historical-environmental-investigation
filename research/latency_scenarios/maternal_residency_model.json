@@ -1,0 +1,236 @@
+{
+ "generated": "2026-08-03",
+ "statementClass": "model_estimate",
+ "caseDataProvenance": "Community-reported, GRADE C. Aggregate only, no identifiers.",
+ "householdsByYear": {
+  "1997": 0,
+  "1998": 0,
+  "1999": 93,
+  "2000": 562,
+  "2001": 1546,
+  "2002": 2488,
+  "2003": 3987,
+  "2004": 5087,
+  "2005": 5879,
+  "2006": 6380,
+  "2007": 6585,
+  "2008": 6631
+ },
+ "disturbedPctByYear": {
+  "1997": 3.7,
+  "1998": 0.3,
+  "1999": 11.8,
+  "2000": 33.8,
+  "2001": 40.0,
+  "2002": 52.8,
+  "2003": 41.3,
+  "2004": 34.5,
+  "2005": 18.4,
+  "2006": 27.2
+ },
+ "firstOccupancy": 1999,
+ "exposureOpportunityIndex": {
+  "1997": 0.0,
+  "1998": 0.0,
+  "1999": 1.1,
+  "2000": 19.0,
+  "2001": 61.8,
+  "2002": 131.4,
+  "2003": 164.7,
+  "2004": 175.5,
+  "2005": 108.2,
+  "2006": 173.5
+ },
+ "exposureOpportunityPeakYear": 2004,
+ "grid": [
+  {
+   "dxYear": 2013,
+   "reported": 4,
+   "assumedAge": 8,
+   "birthYear": 2005,
+   "gestationYear": 2004.2,
+   "householdsThen": 5087,
+   "duringActiveGrading": true,
+   "verdict": "possible, during active grading (34% bare)"
+  },
+  {
+   "dxYear": 2013,
+   "reported": 4,
+   "assumedAge": 10,
+   "birthYear": 2003,
+   "gestationYear": 2002.2,
+   "householdsThen": 2488,
+   "duringActiveGrading": true,
+   "verdict": "possible, during active grading (53% bare)"
+  },
+  {
+   "dxYear": 2013,
+   "reported": 4,
+   "assumedAge": 12,
+   "birthYear": 2001,
+   "gestationYear": 2000.2,
+   "householdsThen": 562,
+   "duringActiveGrading": true,
+   "verdict": "possible, during active grading (34% bare)"
+  },
+  {
+   "dxYear": 2013,
+   "reported": 4,
+   "assumedAge": 14,
+   "birthYear": 1999,
+   "gestationYear": 1998.2,
+   "householdsThen": 0,
+   "duringActiveGrading": false,
+   "verdict": "IMPOSSIBLE - nobody lived here"
+  },
+  {
+   "dxYear": 2013,
+   "reported": 4,
+   "assumedAge": 16,
+   "birthYear": 1997,
+   "gestationYear": 1996.2,
+   "householdsThen": 0,
+   "duringActiveGrading": false,
+   "verdict": "IMPOSSIBLE - nobody lived here"
+  },
+  {
+   "dxYear": 2013,
+   "reported": 4,
+   "assumedAge": 18,
+   "birthYear": 1995,
+   "gestationYear": 1994.2,
+   "householdsThen": 0,
+   "duringActiveGrading": false,
+   "verdict": "IMPOSSIBLE - nobody lived here"
+  },
+  {
+   "dxYear": 2023.7,
+   "reported": 1,
+   "assumedAge": 8,
+   "birthYear": 2015.7,
+   "gestationYear": 2015.0,
+   "householdsThen": 6631,
+   "duringActiveGrading": false,
+   "verdict": "possible, but grading finished"
+  },
+  {
+   "dxYear": 2023.7,
+   "reported": 1,
+   "assumedAge": 10,
+   "birthYear": 2013.7,
+   "gestationYear": 2013.0,
+   "householdsThen": 6631,
+   "duringActiveGrading": false,
+   "verdict": "possible, but grading finished"
+  },
+  {
+   "dxYear": 2023.7,
+   "reported": 1,
+   "assumedAge": 12,
+   "birthYear": 2011.7,
+   "gestationYear": 2011.0,
+   "householdsThen": 6631,
+   "duringActiveGrading": false,
+   "verdict": "possible, but grading finished"
+  },
+  {
+   "dxYear": 2023.7,
+   "reported": 1,
+   "assumedAge": 14,
+   "birthYear": 2009.7,
+   "gestationYear": 2009.0,
+   "householdsThen": 6631,
+   "duringActiveGrading": false,
+   "verdict": "possible, but grading finished"
+  },
+  {
+   "dxYear": 2023.7,
+   "reported": 1,
+   "assumedAge": 16,
+   "birthYear": 2007.7,
+   "gestationYear": 2007.0,
+   "householdsThen": 6585,
+   "duringActiveGrading": false,
+   "verdict": "possible, but grading finished"
+  },
+  {
+   "dxYear": 2023.7,
+   "reported": 1,
+   "assumedAge": 18,
+   "birthYear": 2005.7,
+   "gestationYear": 2005.0,
+   "householdsThen": 5879,
+   "duringActiveGrading": true,
+   "verdict": "possible, during active grading (18% bare)"
+  },
+  {
+   "dxYear": 2024.6,
+   "reported": 1,
+   "assumedAge": 8,
+   "birthYear": 2016.6,
+   "gestationYear": 2015.8,
+   "householdsThen": 6631,
+   "duringActiveGrading": false,
+   "verdict": "possible, but grading finished"
+  },
+  {
+   "dxYear": 2024.6,
+   "reported": 1,
+   "assumedAge": 10,
+   "birthYear": 2014.6,
+   "gestationYear": 2013.8,
+   "householdsThen": 6631,
+   "duringActiveGrading": false,
+   "verdict": "possible, but grading finished"
+  },
+  {
+   "dxYear": 2024.6,
+   "reported": 1,
+   "assumedAge": 12,
+   "birthYear": 2012.6,
+   "gestationYear": 2011.8,
+   "householdsThen": 6631,
+   "duringActiveGrading": false,
+   "verdict": "possible, but grading finished"
+  },
+  {
+   "dxYear": 2024.6,
+   "reported": 1,
+   "assumedAge": 14,
+   "birthYear": 2010.6,
+   "gestationYear": 2009.8,
+   "householdsThen": 6631,
+   "duringActiveGrading": false,
+   "verdict": "possible, but grading finished"
+  },
+  {
+   "dxYear": 2024.6,
+   "reported": 1,
+   "assumedAge": 16,
+   "birthYear": 2008.6,
+   "gestationYear": 2007.8,
+   "householdsThen": 6631,
+   "duringActiveGrading": false,
+   "verdict": "possible, but grading finished"
+  },
+  {
+   "dxYear": 2024.6,
+   "reported": 1,
+   "assumedAge": 18,
+   "birthYear": 2006.6,
+   "gestationYear": 2005.8,
+   "householdsThen": 6380,
+   "duringActiveGrading": true,
+   "verdict": "possible, during active grading (27% bare)"
+  }
+ ],
+ "keyFinding": "Age at diagnosis is decisive. High-school age at the ~2013 cluster implies gestation 1994-1998, when Ladera Ranch had zero households - incompatible with in-utero exposure at this location. Age 10-12 implies gestation 2000-2002, the peak grading years with households present - the best fit in the dataset.",
+ "counterIntuitive": "Exposure opportunity = disturbance x population. Disturbance peaked 2002 with only ~2,488 households; most households arrived 2005-2008 after grading. Arguments resting on 'peak grading' alone overstate the exposed population.",
+ "notEstablished": [
+  "ages of any reported case",
+  "any exposure",
+  "any excess",
+  "any causal relationship"
+ ],
+ "resolvedBy": "Gate G01 - registry-confirmed diagnoses with ages."
+}
