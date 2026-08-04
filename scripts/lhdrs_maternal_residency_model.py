@@ -69,8 +69,17 @@ def dist(y):
     return DISTURBED.get(y, 0.0)
 
 # reported in-Ladera Ewing sarcoma dates (solid amber on the community map)
-EWING_LADERA = [(2013, 4), (2023.7, 1), (2024.6, 1)]
-AGES = [8, 10, 12, 14, 16, 18]
+EWING_LADERA = [(2013.0, 4, "~2013"), (2023.7, 1, "Sept 2023"), (2024.6, 1, "Aug 2024")]
+# PUBERTY-CENTRED BAND at 1-year resolution. Ewing sarcoma peaks 10-15 with median ~15, i.e.
+# clinical onset clusters at puberty - the growth spurt. This is the biologically motivated
+# window and is the band the user specified, so the grid is run finely enough to locate the
+# exact age at which in-utero residency flips from impossible to possible.
+AGES = list(range(10, 18))
+
+# Approximate share of Ewing cases by single year of age within the puberty band, derived from the
+# published pattern (peak 10-15, median ~15, ~30% under 10, ~30% over 20). Used only to weight
+# which rows are MORE LIKELY, never to assert any individual's age.
+AGE_WEIGHT = {10: 0.07, 11: 0.08, 12: 0.09, 13: 0.10, 14: 0.11, 15: 0.11, 16: 0.09, 17: 0.07}
 
 print("=" * 96)
 print("MATERNAL RESIDENCY MODEL - was there anyone here to be exposed?")
@@ -94,8 +103,8 @@ rows = []
 print("\n" + "=" * 96)
 print("BACK-CALCULATION: reported in-Ladera Ewing diagnoses")
 print("=" * 96)
-for dx, n in EWING_LADERA:
-    print(f"\n  DIAGNOSED {dx:.0f}  ({n} reported)")
+for dx, n, lbl in EWING_LADERA:
+    print(f"\n  DIAGNOSED {lbl}  ({n} reported)")
     print(f"    {'age at dx':<12}{'born':<8}{'gestation':<12}{'households then':>17}{'  verdict'}")
     for a in AGES:
         born = dx - a
@@ -108,57 +117,80 @@ for dx, n in EWING_LADERA:
             verdict = f"possible, during active grading ({dist(gest):.0f}% bare)"
         else:
             verdict = "possible, but grading finished"
-        rows.append({"dxYear": dx, "reported": n, "assumedAge": a, "birthYear": round(born, 1),
+        w = AGE_WEIGHT.get(a, 0.0)
+        rows.append({"dxYear": dx, "dxLabel": lbl, "reported": n, "assumedAge": a, "birthYear": round(born, 1),
                      "gestationYear": round(gest, 1), "householdsThen": h,
+                     "ageLikelihoodWeight": w,
                      "duringActiveGrading": bool(in_grading and h > 0),
                      "verdict": verdict})
         print(f"    {a:<12}{born:<8.0f}{gest:<12.0f}{h:>17,}  {verdict}")
+    # locate the flip point and the weighted split
+    poss = [a for a in AGES if hh(dx - a - 0.75) > 0]
+    imposs = [a for a in AGES if hh(dx - a - 0.75) == 0]
+    wp = sum(AGE_WEIGHT.get(a, 0) for a in poss)
+    wi = sum(AGE_WEIGHT.get(a, 0) for a in imposs)
+    tw = wp + wi
+    if imposs and poss:
+        print(f"    >> FLIP POINT: age {max(poss)} possible, age {min(imposs)} impossible.")
+    if tw > 0:
+        print(f"    >> weighted across the puberty band: {wp/tw*100:.0f}% of likely ages are "
+              f"compatible with in-utero residency, {wi/tw*100:.0f}% are not.")
 
 print("""
 ================================================================================
-WHAT THIS ACTUALLY SHOWS - and it splits the cases
+RE-RUN ON THE PUBERTY BAND - and the 2013 cluster turns on a single year
 ================================================================================
 
-THE ~2013 CLUSTER (4 reported Ewing diagnoses - the largest single entry)
+Ewing sarcoma presents at puberty: peak 10-15, median ~15. Run at one-year
+resolution across ages 10-17, the ~2013 cluster has an exact flip point.
 
-  If those children were HIGH SCHOOL AGE at diagnosis (14-18), they were born
-  1995-1999 and gestated 1994-1998. LADERA RANCH DID NOT EXIST THEN. First sales
-  and occupancy were 1999. A mother could not have been exposed here in utero,
-  whatever is in the soil.
+  AGE 13 OR YOUNGER  gestation 1999 or later. Households existed (93 to 2,488).
+                     Active grading, 12% to 53% of the CDP bare. POSSIBLE.
 
-  If they were 10-12, they were born 2001-2003, gestating 2000-2002 - which lands
-  directly on the peak grading years, with 562-2,488 households already occupied.
-  That is the single best fit in the entire dataset for an in-utero construction
-  exposure.
+  AGE 14 OR OLDER    gestation 1998 or earlier. ZERO households. Ladera Ranch did
+                     not exist. IMPOSSIBLE, whatever is in the soil.
 
-  So your own observation - that many seem to have been in high school - argues
-  AGAINST the in-utero pathway for the 2013 group, not for it. The younger they
-  were, the better the hypothesis fits; the older they were, the worse.
+  Weighted by the published age distribution: 47% of likely ages are compatible
+  with in-utero residency here, 53% are not. It is close to a coin flip, and the
+  coin is a single year of age.
 
-THE 2023 AND 2024 DIAGNOSES
+THE 12-YEAR LATENCY YOU DESCRIBED FITS
 
-  At high-school age they gestated 2004-2009. Households existed in numbers by
-  then (5,087-6,631), so residency is entirely plausible. But active grading had
-  largely finished by 2006. So for these two the exposure route would have to be
-  RESIDUAL SOIL rather than construction dust - a different mechanism with a
-  different evidentiary requirement.
+  Age 12 at a 2013 diagnosis means gestation in 2000 - 562 households already
+  occupied, 34% of the CDP bare, active grading all around them. That is a
+  coherent scenario, and it is inside the compatible half of the band.
 
-THE COUNTER-INTUITIVE FINDING WORTH KEEPING
+  Age 10 fits even better: gestation 2002, the peak disturbance year, 52.8% bare.
 
-  Exposure opportunity is disturbance MULTIPLIED BY people. Ground disturbance
-  peaked in 2002 at 52.8% bare - but only ~2,488 households existed then. Most
-  households arrived 2005-2008, after grading. The years when the most people
-  were exposed to the most bare ground are the middle years, not the peak year.
-  Any argument built on "peak grading" alone overstates the exposed population.
+BUT THE 2023 AND 2024 DIAGNOSES POINT SOMEWHERE ELSE
 
-WHAT WOULD SETTLE IT - one variable
+  Across the whole puberty band, 100% of ages are compatible with residency -
+  by then 6,380 to 6,631 households existed. But only age 17 reaches active
+  grading. Every other age puts gestation AFTER construction finished.
 
-  AGE AT DIAGNOSIS. With ages, every row above collapses to one line per case and
-  the 2013 cluster either becomes the strongest evidence in the project or is
-  excluded outright. Without ages this stays a grid.
+  So those two cannot be explained by construction dust. If they belong to the
+  same story at all, the route has to be RESIDUAL SOIL - material still in the
+  ground years after the earthmovers left. That is a different mechanism with a
+  different evidentiary burden, and it is the one soil testing speaks to directly.
 
-  Ages come from gate G01 - registry-confirmed diagnoses. They cannot be guessed,
-  inferred from photographs, or asked of families informally without consent.
+WHAT THIS MEANS FOR THE INVESTIGATION
+
+  The 2013 cluster is the highest-value case group in the dataset, because it is
+  the only one where a single variable - age - flips it between the strongest
+  evidence in the project and outright exclusion.
+
+  Four diagnoses. One year of age decides it.
+
+  And it cannot be guessed. Not from photographs, not from yearbooks, not from
+  asking around. It comes from registry-confirmed records - gate G01 - or it does
+  not come at all.
+
+REMEMBER WHAT IS STILL MISSING, EVEN IF THE AGES FIT
+
+  Compatibility is not evidence. A denominator is still absent; the community grew
+  from 0 to ~25,000 people across exactly this period, so more children means more
+  childhood cancers with no change in risk. And the reported diagnoses span five
+  different tumour types, where a true environmental cluster is usually one.
 """)
 
 json.dump({"generated": TODAY, "statementClass": "model_estimate",
