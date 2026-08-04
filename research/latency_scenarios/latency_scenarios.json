@@ -1,0 +1,382 @@
+{
+ "generated": "2026-08-03",
+ "statementClass": "model_estimate",
+ "caseDataProvenance": "Community-reported public map. GRADE C, unverified case reports. No names, ages, or addresses. Aggregate only.",
+ "ewingAgeDistributionUsed": [
+  {
+   "ageLow": 2,
+   "ageHigh": 9,
+   "weight": 0.3
+  },
+  {
+   "ageLow": 10,
+   "ageHigh": 15,
+   "weight": 0.4
+  },
+  {
+   "ageLow": 16,
+   "ageHigh": 19,
+   "weight": 0.15
+  },
+  {
+   "ageLow": 20,
+   "ageHigh": 30,
+   "weight": 0.15
+  }
+ ],
+ "gradingEra": {
+  "start": 1997.0,
+  "end": 2006.0,
+  "peakDisturbance": 2002.0
+ },
+ "models": {
+  "in_utero": "exposure during gestation",
+  "early_life": "exposure ages 0-5",
+  "proximate": "exposure within 2 years of diagnosis (comparator)"
+ },
+ "windows": [
+  {
+   "model": "in_utero",
+   "label": "Apr 2008",
+   "n": 1,
+   "dx": "Ewing sarcoma",
+   "inLadera": false,
+   "windowFrom": 1977.5,
+   "windowTo": 2005.5,
+   "gradingOverlapWeight": 0.7
+  },
+  {
+   "model": "in_utero",
+   "label": "~2013",
+   "n": 4,
+   "dx": "Ewing sarcoma",
+   "inLadera": true,
+   "windowFrom": 1982.2,
+   "windowTo": 2010.2,
+   "gradingOverlapWeight": 0.7
+  },
+  {
+   "model": "in_utero",
+   "label": "2015",
+   "n": 1,
+   "dx": "Ewing sarcoma",
+   "inLadera": false,
+   "windowFrom": 1984.2,
+   "windowTo": 2012.2,
+   "gradingOverlapWeight": 0.85
+  },
+  {
+   "model": "in_utero",
+   "label": "Feb 2016",
+   "n": 1,
+   "dx": "Osteosarcoma",
+   "inLadera": true,
+   "windowFrom": 1985.3,
+   "windowTo": 2013.3,
+   "gradingOverlapWeight": 0.55
+  },
+  {
+   "model": "in_utero",
+   "label": "2019",
+   "n": 1,
+   "dx": "Ewing sarcoma",
+   "inLadera": false,
+   "windowFrom": 1988.2,
+   "windowTo": 2016.2,
+   "gradingOverlapWeight": 0.7
+  },
+  {
+   "model": "in_utero",
+   "label": "Oct 2019",
+   "n": 1,
+   "dx": "T-ALL / lymphoma",
+   "inLadera": true,
+   "windowFrom": 1989.0,
+   "windowTo": 2017.0,
+   "gradingOverlapWeight": 0.7
+  },
+  {
+   "model": "in_utero",
+   "label": "Apr 2020",
+   "n": 1,
+   "dx": "Adrenocortical carcinoma",
+   "inLadera": true,
+   "windowFrom": 1989.5,
+   "windowTo": 2017.5,
+   "gradingOverlapWeight": 0.7
+  },
+  {
+   "model": "in_utero",
+   "label": "Sept 2022",
+   "n": 1,
+   "dx": "Ewing sarcoma",
+   "inLadera": false,
+   "windowFrom": 1992.0,
+   "windowTo": 2020.0,
+   "gradingOverlapWeight": 0.3
+  },
+  {
+   "model": "in_utero",
+   "label": "Sept 2023",
+   "n": 1,
+   "dx": "Ewing sarcoma",
+   "inLadera": true,
+   "windowFrom": 1993.0,
+   "windowTo": 2021.0,
+   "gradingOverlapWeight": 0.3
+  },
+  {
+   "model": "in_utero",
+   "label": "Aug 2024",
+   "n": 1,
+   "dx": "Ewing sarcoma",
+   "inLadera": true,
+   "windowFrom": 1993.8,
+   "windowTo": 2021.8,
+   "gradingOverlapWeight": 0.3
+  },
+  {
+   "model": "in_utero",
+   "label": "Jul 2025",
+   "n": 1,
+   "dx": "Glioblastoma",
+   "inLadera": true,
+   "windowFrom": 1994.8,
+   "windowTo": 2022.8,
+   "gradingOverlapWeight": 0.3
+  },
+  {
+   "model": "early_life",
+   "label": "Apr 2008",
+   "n": 1,
+   "dx": "Ewing sarcoma",
+   "inLadera": false,
+   "windowFrom": 1978.3,
+   "windowTo": 2011.3,
+   "gradingOverlapWeight": 0.85
+  },
+  {
+   "model": "early_life",
+   "label": "~2013",
+   "n": 4,
+   "dx": "Ewing sarcoma",
+   "inLadera": true,
+   "windowFrom": 1983.0,
+   "windowTo": 2016.0,
+   "gradingOverlapWeight": 1.0
+  },
+  {
+   "model": "early_life",
+   "label": "2015",
+   "n": 1,
+   "dx": "Ewing sarcoma",
+   "inLadera": false,
+   "windowFrom": 1985.0,
+   "windowTo": 2018.0,
+   "gradingOverlapWeight": 0.7
+  },
+  {
+   "model": "early_life",
+   "label": "Feb 2016",
+   "n": 1,
+   "dx": "Osteosarcoma",
+   "inLadera": true,
+   "windowFrom": 1986.1,
+   "windowTo": 2019.1,
+   "gradingOverlapWeight": 0.7
+  },
+  {
+   "model": "early_life",
+   "label": "2019",
+   "n": 1,
+   "dx": "Ewing sarcoma",
+   "inLadera": false,
+   "windowFrom": 1989.0,
+   "windowTo": 2022.0,
+   "gradingOverlapWeight": 0.7
+  },
+  {
+   "model": "early_life",
+   "label": "Oct 2019",
+   "n": 1,
+   "dx": "T-ALL / lymphoma",
+   "inLadera": true,
+   "windowFrom": 1989.8,
+   "windowTo": 2022.8,
+   "gradingOverlapWeight": 0.7
+  },
+  {
+   "model": "early_life",
+   "label": "Apr 2020",
+   "n": 1,
+   "dx": "Adrenocortical carcinoma",
+   "inLadera": true,
+   "windowFrom": 1990.3,
+   "windowTo": 2023.3,
+   "gradingOverlapWeight": 0.7
+  },
+  {
+   "model": "early_life",
+   "label": "Sept 2022",
+   "n": 1,
+   "dx": "Ewing sarcoma",
+   "inLadera": false,
+   "windowFrom": 1992.7,
+   "windowTo": 2025.7,
+   "gradingOverlapWeight": 0.3
+  },
+  {
+   "model": "early_life",
+   "label": "Sept 2023",
+   "n": 1,
+   "dx": "Ewing sarcoma",
+   "inLadera": true,
+   "windowFrom": 1993.7,
+   "windowTo": 2026.7,
+   "gradingOverlapWeight": 0.3
+  },
+  {
+   "model": "early_life",
+   "label": "Aug 2024",
+   "n": 1,
+   "dx": "Ewing sarcoma",
+   "inLadera": true,
+   "windowFrom": 1994.6,
+   "windowTo": 2027.6,
+   "gradingOverlapWeight": 0.3
+  },
+  {
+   "model": "early_life",
+   "label": "Jul 2025",
+   "n": 1,
+   "dx": "Glioblastoma",
+   "inLadera": true,
+   "windowFrom": 1995.5,
+   "windowTo": 2028.5,
+   "gradingOverlapWeight": 0.15
+  },
+  {
+   "model": "proximate",
+   "label": "Apr 2008",
+   "n": 1,
+   "dx": "Ewing sarcoma",
+   "inLadera": false,
+   "windowFrom": 2006.3,
+   "windowTo": 2008.3,
+   "gradingOverlapWeight": 0.0
+  },
+  {
+   "model": "proximate",
+   "label": "~2013",
+   "n": 4,
+   "dx": "Ewing sarcoma",
+   "inLadera": true,
+   "windowFrom": 2011.0,
+   "windowTo": 2013.0,
+   "gradingOverlapWeight": 0.0
+  },
+  {
+   "model": "proximate",
+   "label": "2015",
+   "n": 1,
+   "dx": "Ewing sarcoma",
+   "inLadera": false,
+   "windowFrom": 2013.0,
+   "windowTo": 2015.0,
+   "gradingOverlapWeight": 0.0
+  },
+  {
+   "model": "proximate",
+   "label": "Feb 2016",
+   "n": 1,
+   "dx": "Osteosarcoma",
+   "inLadera": true,
+   "windowFrom": 2014.1,
+   "windowTo": 2016.1,
+   "gradingOverlapWeight": 0.0
+  },
+  {
+   "model": "proximate",
+   "label": "2019",
+   "n": 1,
+   "dx": "Ewing sarcoma",
+   "inLadera": false,
+   "windowFrom": 2017.0,
+   "windowTo": 2019.0,
+   "gradingOverlapWeight": 0.0
+  },
+  {
+   "model": "proximate",
+   "label": "Oct 2019",
+   "n": 1,
+   "dx": "T-ALL / lymphoma",
+   "inLadera": true,
+   "windowFrom": 2017.8,
+   "windowTo": 2019.8,
+   "gradingOverlapWeight": 0.0
+  },
+  {
+   "model": "proximate",
+   "label": "Apr 2020",
+   "n": 1,
+   "dx": "Adrenocortical carcinoma",
+   "inLadera": true,
+   "windowFrom": 2018.3,
+   "windowTo": 2020.3,
+   "gradingOverlapWeight": 0.0
+  },
+  {
+   "model": "proximate",
+   "label": "Sept 2022",
+   "n": 1,
+   "dx": "Ewing sarcoma",
+   "inLadera": false,
+   "windowFrom": 2020.7,
+   "windowTo": 2022.7,
+   "gradingOverlapWeight": 0.0
+  },
+  {
+   "model": "proximate",
+   "label": "Sept 2023",
+   "n": 1,
+   "dx": "Ewing sarcoma",
+   "inLadera": true,
+   "windowFrom": 2021.7,
+   "windowTo": 2023.7,
+   "gradingOverlapWeight": 0.0
+  },
+  {
+   "model": "proximate",
+   "label": "Aug 2024",
+   "n": 1,
+   "dx": "Ewing sarcoma",
+   "inLadera": true,
+   "windowFrom": 2022.6,
+   "windowTo": 2024.6,
+   "gradingOverlapWeight": 0.0
+  },
+  {
+   "model": "proximate",
+   "label": "Jul 2025",
+   "n": 1,
+   "dx": "Glioblastoma",
+   "inLadera": true,
+   "windowFrom": 2023.5,
+   "windowTo": 2025.5,
+   "gradingOverlapWeight": 0.0
+  }
+ ],
+ "keyLimitations": [
+  "No denominator: Ladera grew from ~0 to ~25,000 residents 1999-2006.",
+  "Windows are 25+ years wide because age at diagnosis is unknown; wide windows overlap almost any period and so carry little discriminating power.",
+  "Reported tumour types are mixed (Ewing, osteosarcoma, T-ALL, adrenocortical, glioblastoma); a genuine environmental cluster is usually a single type.",
+  "The in-utero window for Ewing is a research hypothesis with a NULL primary result in the one California perinatal study located (Wang et al., 388 cases): no significant association overall; Hispanic-specific estimates not significant, gestational Q2 OR 1.53 (0.94-2.51).",
+  "Ewing's defining EWSR1-FLI1 fusion is understood to arise post-natally, arguing against a purely in-utero mechanism."
+ ],
+ "whatWouldTestIt": "Registry-confirmed diagnoses with dates AND ages against an age- and ancestry-appropriate denominator (gate G01, California Cancer Registry). Ages would collapse these windows from ~28 years to a few years.",
+ "notEstablished": [
+  "any excess of any cancer in this community",
+  "any environmental cause of any diagnosis",
+  "that any exposure occurred at any time"
+ ]
+}
