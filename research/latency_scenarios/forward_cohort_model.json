@@ -1,0 +1,68 @@
+{
+ "generated": "2026-08-03",
+ "statementClass": "model_estimate",
+ "supersedes": "maternal_residency_model.json backward framing",
+ "method": "exposure opportunity (bare ground x households) per gestation year, convolved with the Ewing age-at-diagnosis density",
+ "exposureOpportunity": {
+  "1999": 1.1,
+  "2000": 19.0,
+  "2001": 61.8,
+  "2002": 131.4,
+  "2003": 164.7,
+  "2004": 175.5,
+  "2005": 108.2,
+  "2006": 173.5,
+  "2007": 32.9,
+  "2008": 13.3
+ },
+ "predictedDiagnosisShare": {
+  "2008": 0.0112,
+  "2009": 0.0157,
+  "2010": 0.0197,
+  "2011": 0.0246,
+  "2012": 0.0304,
+  "2013": 0.0373,
+  "2014": 0.0448,
+  "2015": 0.0524,
+  "2016": 0.059,
+  "2017": 0.0649,
+  "2018": 0.0683,
+  "2019": 0.0692,
+  "2020": 0.0675,
+  "2021": 0.0636,
+  "2022": 0.0582,
+  "2023": 0.0515,
+  "2024": 0.0447,
+  "2025": 0.0382,
+  "2026": 0.0324,
+  "2027": 0.0271,
+  "2028": 0.0226,
+  "2029": 0.0187,
+  "2030": 0.0153,
+  "2031": 0.0126,
+  "2032": 0.0103
+ },
+ "predictedPeakYear": 2019,
+ "central80Window": [
+  2012,
+  2027
+ ],
+ "reportedInLaderaEwing": {
+  "2013": 4,
+  "2023": 1,
+  "2024": 1
+ },
+ "allReportedInsideWindow": true,
+ "result": "Timing of reported diagnoses is CONSISTENT with in-utero exposure during the construction era. The 2013-2024 spread is what one exposure window looks like after convolution with a 15-year-wide age-at-diagnosis distribution.",
+ "limitations": [
+  "No denominator; community grew 0 to ~25,000 across the same period.",
+  "Predicted window is ~15 years wide, so containment is a low bar - this model can falsify more easily than it can confirm.",
+  "Ewing only; the wider reported list spans five tumour types.",
+  "No exposure has been measured anywhere in the study area."
+ ],
+ "notEstablished": [
+  "any excess",
+  "any exposure",
+  "any causal relationship"
+ ]
+}
