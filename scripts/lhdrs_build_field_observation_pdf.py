@@ -93,35 +93,42 @@ story += [Spacer(1, 10),
      "children or animals into it.</b> Photograph and measure from outside. Arsenic does not "
      "degrade; a century has not reduced it.", SMALL)], bg=WARNBG, bc=RED)]
 
-# ------------------------------------------------------------------ photo
-story += [Paragraph("The structure as found", H2)]
-if PHOTO and os.path.exists(PHOTO):
-    from PIL import Image as PILImage
-    # Rotated 45 degrees CLOCKWISE so the channel axis reads closer to vertical on the page.
-    # Rotation is presentational only - no pixel content is altered, cropped or enhanced.
-    _src_im = PILImage.open(PHOTO).convert("RGB")
-    _rot = _src_im.rotate(-45, expand=True, resample=PILImage.BICUBIC, fillcolor=(252, 251, 248))
-    _rp = os.path.join(OUT, "_photo_rot45cw.jpg")
-    _rot.save(_rp, quality=94)
-    iw, ih = _rot.size
-    w = 4.6*inch; h = w*ih/iw
-    if h > 5.0*inch:
-        h = 5.0*inch; w = h*iw/ih
-    story += [RLImage(_rp, width=w, height=h)]
-    src = os.path.basename(PHOTO)
-else:
-    story += [box([Paragraph("<b>[ PHOTOGRAPH TO BE INSERTED ]</b>", S("P", fontSize=11,
-                    textColor=MUT, alignment=1)),
-                   Spacer(1, 44),
-                   Paragraph("Re-run this script with the image path to embed it:", SMALL),
-                   Paragraph("<font face='Courier' size='8'>python3 scripts/"
-                     "lhdrs_build_field_observation_pdf.py ~/Desktop/vat_photo.jpg</font>", SMALL),
-                   Spacer(1, 40)])]
-    src = "not yet attached"
-story += [Paragraph(f"Observer photograph, source: {src}, <b>rotated 45° clockwise</b> for legibility (presentational only — no content altered). Looking along the axis of the structure. "
-                    "A rusted metal pipe frame lies across the near end; the concrete channel runs "
-                    "away from the camera into heavy dry brush. Depth is obscured by accumulated "
-                    "sediment and vegetation.", CAP)]
+# ------------------------------------------------------------------ photos (unrotated)
+FO = os.path.join(REPO, "evidence/lhdrs/field_observations")
+GALLERY = [
+ ("2026-08-07_axis_view_structure.jpg",
+  "View along the axis of the structure. The concrete channel runs away from the camera into "
+  "heavy brush; a rusted pipe frame crosses the near end. Depth is obscured by sediment and "
+  "vegetation."),
+ ("2026-08-07_end_view_corner_and_rails.jpg",
+  "Down-angle view of the near end: a clean concrete corner with a raised rim on both sides, and "
+  "the pipe railing descending into the structure. The rim-and-corner geometry is what argues "
+  "for a discrete vessel rather than a continuous ditch."),
+ ("2026-08-07_timber_post_with_wire.jpg",
+  "Weathered timber post with wire, standing near the structure. The 1911 specification's pen and "
+  "cover posts were timber set 3 ft into the ground; wire-and-rail fencing enclosed the pens."),
+ ("2026-08-07_fallen_pipe_rails.jpg",
+  "Fallen and leaning pipe rails in the brush beside the structure — consistent with chute or "
+  "pen railing. Corroborating, not diagnostic."),
+]
+story += [Paragraph("The structure and its surroundings, as found", H2),
+  Paragraph("Photographs are presented exactly as taken — no rotation, cropping or enhancement. "
+    "All archived with SHA-256 checksums in evidence/lhdrs/field_observations/.", SMALL),
+  Spacer(1, 4)]
+from PIL import Image as PILImage
+_first = True
+for _fn, _cap in GALLERY:
+    _fp = os.path.join(FO, _fn)
+    if not os.path.exists(_fp):
+        continue
+    iw, ih = PILImage.open(_fp).size
+    w = 4.35*inch; h = w*ih/iw
+    if h > 5.9*inch:
+        h = 5.9*inch; w = h*iw/ih
+    els = [RLImage(_fp, width=w, height=h), Paragraph(_cap, CAP)]
+    story += [KeepTogether(els), Spacer(1, 10)]
+    _first = False
+src = "field photographs, 2026-08-07 visit" if not _first else "not yet attached"
 
 # ------------------------------------------------------------------ observed
 story += [Paragraph("What was observed", H2),

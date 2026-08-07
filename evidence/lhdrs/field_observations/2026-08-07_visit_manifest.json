@@ -1,0 +1,28 @@
+{
+ "generated": "2026-08-07",
+ "visit": "2026-08-07 second visit",
+ "provenanceGrade": "C",
+ "statementClass": "field_observation_unverified",
+ "images": [
+  {
+   "file": "2026-08-07_end_view_corner_and_rails.jpg",
+   "original": "IMG_4493 Medium.jpeg",
+   "sha256": "fec46b194987ab5b0913d2a0ce5a1f9f93c063a4fa0a0026ee8342b855af77ff"
+  },
+  {
+   "file": "2026-08-07_axis_view_structure.jpg",
+   "original": "IMG_4494 Medium.jpeg",
+   "sha256": "d7c4782182afdfdd54d3ce8565399a788ca9737976e7c7551bb5cba299c562a0"
+  },
+  {
+   "file": "2026-08-07_fallen_pipe_rails.jpg",
+   "original": "IMG_4499 Medium.jpeg",
+   "sha256": "407c95473e539f1c6cf4c10a840cd22d51e5c5f51a0e161dca1761f1ad251c32"
+  },
+  {
+   "file": "2026-08-07_timber_post_with_wire.jpg",
+   "original": "IMG_4500 Medium.jpeg",
+   "sha256": "b7f123817e971be9714c17041984816720c1b7fffb4f2f317cd9b33d37fd2a37"
+  }
+ ]
+}
