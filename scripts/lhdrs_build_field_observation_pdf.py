@@ -97,11 +97,17 @@ story += [Spacer(1, 10),
 story += [Paragraph("The structure as found", H2)]
 if PHOTO and os.path.exists(PHOTO):
     from PIL import Image as PILImage
-    iw, ih = PILImage.open(PHOTO).size
-    w = 5.4*inch; h = w*ih/iw
-    if h > 6.2*inch:
-        h = 6.2*inch; w = h*iw/ih
-    story += [RLImage(PHOTO, width=w, height=h)]
+    # Rotated 45 degrees CLOCKWISE so the channel axis reads closer to vertical on the page.
+    # Rotation is presentational only - no pixel content is altered, cropped or enhanced.
+    _src_im = PILImage.open(PHOTO).convert("RGB")
+    _rot = _src_im.rotate(-45, expand=True, resample=PILImage.BICUBIC, fillcolor=(252, 251, 248))
+    _rp = os.path.join(OUT, "_photo_rot45cw.jpg")
+    _rot.save(_rp, quality=94)
+    iw, ih = _rot.size
+    w = 4.6*inch; h = w*ih/iw
+    if h > 5.0*inch:
+        h = 5.0*inch; w = h*iw/ih
+    story += [RLImage(_rp, width=w, height=h)]
     src = os.path.basename(PHOTO)
 else:
     story += [box([Paragraph("<b>[ PHOTOGRAPH TO BE INSERTED ]</b>", S("P", fontSize=11,
@@ -112,7 +118,7 @@ else:
                      "lhdrs_build_field_observation_pdf.py ~/Desktop/vat_photo.jpg</font>", SMALL),
                    Spacer(1, 40)])]
     src = "not yet attached"
-story += [Paragraph(f"Observer photograph, source: {src}. Looking along the axis of the structure. "
+story += [Paragraph(f"Observer photograph, source: {src}, <b>rotated 45° clockwise</b> for legibility (presentational only — no content altered). Looking along the axis of the structure. "
                     "A rusted metal pipe frame lies across the near end; the concrete channel runs "
                     "away from the camera into heavy dry brush. Depth is obscured by accumulated "
                     "sediment and vegetation.", CAP)]
@@ -193,6 +199,51 @@ for t in [
  "era by decades.",
 ]:
     story += [Paragraph(t, LI, bulletText="•")]
+
+story += [PageBreak()]
+
+# ------------------------------------------------------------------ the system
+story += [Paragraph("Why a lone concrete channel is what a whole station leaves behind", H2),
+  Paragraph("A dipping vat was never a standalone object. Circular 183 specifies a complete "
+    "<b>station</b>: receiving and retaining pens, a chute, the vat itself, an exit incline, a "
+    "dripping pen, and a barrel sunk in the ground to catch and recycle run-off. Cattle moved "
+    "through it in one direction.", BODY),
+  Paragraph("The decisive detail is in the bill of materials. <b>The station splits cleanly by "
+    "material, and only two components were concrete.</b>", BODY),
+  tbl([["Component", "Specified material", "Expected after a century"],
+       ["Vat", "CONCRETE (or timber; concrete preferred)", "SURVIVES"],
+       ["Dripping-pen floor", "CONCRETE, 12 × 15 ft, pitched to a corner", "SURVIVES"],
+       ["Chute, 30 in × 20 ft", "timber", "gone"],
+       ["Receiving / retaining pens", "timber", "gone"],
+       ["Dripping-pen posts and rails", "timber, 6×6 posts, 1×8 rails", "gone"],
+       ["Cover leaves / splash boards", "timber on posts set 3 ft deep", "gone"],
+       ["Entry slide facing", "sheet boiler iron on the cement", "rusted away"],
+       ["Drainage pipe and barrel", "iron pipe, barrel sunk in ground", "rusted / buried"]],
+      [1.85*inch, 2.85*inch, 2.2*inch]),
+  Spacer(1, 9),
+  box([Paragraph("<b>What follows from that</b>", BODY),
+   Paragraph("A century on, the timber has rotted and the ironwork has largely gone. <b>The "
+     "concrete is the only part expected to remain by default.</b> So an isolated concrete channel "
+     "sitting in brush, with no pens, no chute and no fencing around it, is <i>precisely</i> what "
+     "the surviving fragment of a complete dipping station would look like. The absence of the "
+     "other components is the predicted condition — not evidence against.", SMALL),
+   Spacer(1, 5),
+   Paragraph("This cuts the other way too, and should be said: the same argument means a surviving "
+     "concrete fragment carries <b>less</b> corroborating context than an intact site would. There "
+     "is no chute or pen left to confirm the interpretation. That is why the measurements in the "
+     "next section carry so much weight — the structure has to identify itself.", SMALL)]),
+  Spacer(1, 10)]
+
+_diag = os.path.join(REPO, "evidence/lhdrs/field_observations/dipping_station_plan_1911.png")
+if os.path.exists(_diag):
+    from PIL import Image as PILImage
+    _dw, _dh = PILImage.open(_diag).size
+    w = 6.9*inch; h = w*_dh/_dw
+    story += [RLImage(_diag, width=w, height=h),
+      Paragraph("Scale plan of a complete 1911-specification station, drawn from the federal "
+        "instructions. Every dimension is quoted from USDA Bureau of Animal Industry Circular 183 "
+        "(1911), repeated in Circular 207 (1912). Solid = concrete; hatched = timber and iron.",
+        CAP)]
 
 story += [PageBreak()]
 
