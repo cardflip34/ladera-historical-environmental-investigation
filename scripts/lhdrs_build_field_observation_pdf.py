@@ -128,7 +128,8 @@ story += [Paragraph("What was observed", H2),
        ["Associated", "Rusted metal pipe frame / rail at one end", "observer, direct"],
        ["Setting", "Heavy dry brush, drainage corridor, near the 1948 mapped structure",
         "observer, direct"],
-       ["Coordinates", "not recorded", "—"]],
+       ["Coordinates", "NOT RECORDED — no GPS in the image metadata", "missing"],
+       ["Image", "640 x 480 px, no EXIF GPS or timestamp retained", "low resolution"]],
       [1.25*inch, 3.55*inch, 2.1*inch])]
 
 # ------------------------------------------------------------------ spec

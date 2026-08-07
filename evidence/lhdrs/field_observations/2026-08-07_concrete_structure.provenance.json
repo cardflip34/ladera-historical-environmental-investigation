@@ -1,0 +1,32 @@
+{
+ "generated": "2026-08-07",
+ "file": "2026-08-07_concrete_structure_IMG_4498.jpg",
+ "originalName": "IMG_4498.jpeg",
+ "sizePx": [
+  640,
+  480
+ ],
+ "exifGps": false,
+ "exifTimestamp": false,
+ "provenance": "Observer field photograph, supplied by the user via email attachment.",
+ "provenanceGrade": "C",
+ "statementClass": "field_observation_unverified",
+ "reportedDimensions": {
+  "lengthFt": "15-20 approx",
+  "widthFt": "3-4 approx",
+  "depthFt": "not measured"
+ },
+ "notEstablished": [
+  "that this is a dipping vat",
+  "that arsenic is present",
+  "any exposure"
+ ],
+ "gaps": [
+  "no GPS coordinates",
+  "no scale reference in frame",
+  "depth not measured",
+  "neither end photographed separately",
+  "low resolution 640x480"
+ ],
+ "sha256": "80fae441b3bfae68ac86a3774adee5f650044a688e7ac3487086bae3bbeb8ae7"
+}
