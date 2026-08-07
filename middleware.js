@@ -21,14 +21,14 @@ const COOKIE = 'cfp_access';
 const COOKIE_SALT = ':cfp-v1';
 const MAX_AGE = 60 * 60 * 24 * 30; // 30 days
 
-// STAGED ROLLOUT — step 1 of 2. Preview deployments sit behind Vercel SSO and
-// cannot be tested from outside, so this first deploy gates only /robots.txt
-// (harmless) plus the unlock endpoint. That proves both halves of the mechanism
-// on real infrastructure — the gate AND the pass-through to a static file —
-// without any risk to the live site. Step 2 widens this to:
-//   matcher: ['/((?!_vercel).*)']   // everything except Vercel internals
+// Gate every path except Vercel's own internal routes, so the analytics beacon
+// (/_vercel/insights/*) keeps working for authenticated visitors.
+//
+// Verified on production before widening: an unauthenticated request returns the
+// login page with no static content, a wrong password is rejected, a correct one
+// sets the cookie, and a cookie-bearing request receives the real file.
 export const config = {
-  matcher: ['/robots.txt', '/__unlock'],
+  matcher: ['/((?!_vercel).*)'],
 };
 
 const enc = new TextEncoder();
