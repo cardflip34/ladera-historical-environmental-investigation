@@ -47,7 +47,7 @@ SED=(196,178,148); RED=(176,58,42); GRN=(60,120,80)
 im = Image.new("RGB", (W, H), PAPER)
 d = ImageDraw.Draw(im, "RGBA")
 d.rectangle([0,0,W,10], fill=RED)
-d.text((70, 40), "The revised ~12 ft reading matches the vat FLOOR exactly",
+d.text((70, 40), "The observed ~12 ft matches the vat FLOOR exactly",
        font=F(38, True), fill=INK)
 d.text((70, 92), "Longitudinal section, to scale. Spec floor = 12 ft. An observed ~12 ft rectangle sits AT FLOOR LEVEL on the taper.", font=F(20, True), fill=INK)
 d.text((70, 124), "Solid = observed in the field.  Ghosted = INTERPRETED reconstruction from the "
@@ -102,14 +102,14 @@ d.text((cx, floor_y+16), "FLOOR — 12 ft — below grade, not yet reached", fon
 obs_y = Y(0.8)
 d.line([cx-prof(0.8)*PPF+6, obs_y, cx-prof(0.8)*PPF-150, obs_y+40], fill=GRN, width=3)
 d.text((cx-prof(0.8)*PPF-156, obs_y+46), "OBSERVED CONCRETE", font=F(19, True), fill=GRN, anchor="ra")
-d.text((cx-prof(0.8)*PPF-156, obs_y+72), "revised estimate ~12 ft — the floor length", font=F(16), fill=GRN, anchor="ra")
+d.text((cx-prof(0.8)*PPF-156, obs_y+72), "observed ~12 ft — the floor length", font=F(16), fill=GRN, anchor="ra")
 
 # taper scale on the right
 tx = X(27.5)
 for L, hf in ((12,0.0),(15,1.4),(17.5,2.6),(20,3.7),(26,6.5)):
     y0 = Y(hf)
     d.line([tx, y0, tx+16, y0], fill=INK, width=2)
-    mark = "  <- REVISED ESTIMATE" if L == 12 else ""
+    mark = "  <- OBSERVED" if L == 12 else ""
     d.text((tx+22, y0-9), f"{L:g} ft at {hf:g} ft up{mark}", font=F(15, True if mark else False),
            fill=(RED if mark else MUT))
 d.line([tx+8, Y(0), tx+8, Y(6.5)], fill=RULE, width=1)

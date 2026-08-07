@@ -142,7 +142,7 @@ src = "field photographs, 2026-08-07 visit"
 story += [Paragraph("What was observed", H2),
   tbl([["Attribute", "As reported", "Confidence"],
        ["Material", "Concrete", "observer, direct"],
-       ["Length", "REVISED: approximately 12 ft (earlier estimate of 15–20 ft superseded on second look)", "estimated, not measured"],
+       ["Length", "approximately 12 ft", "estimated by eye, not measured"],
        ["Width", "approximately 3–4 ft", "estimated, not measured"],
        ["Depth", "NOT MEASURED — obscured by infill", "unknown"],
        ["Form", "Discrete linear channel with ends; not a continuous ditch run", "observer, direct"],
@@ -165,7 +165,7 @@ story += [Paragraph("The federal specification for a concrete dipping vat", H2),
     "common in wooden vats.&rdquo; <b>Concrete construction is therefore consistent with, and in "
     "fact the recommended form of, a period dipping vat.</b>", BODY),
   tbl([["Dimension", "Circular 183 / 207 concrete vat", "Structure as reported"],
-       ["Length", "26 ft at top, tapering to 12 ft at bottom", "~12 ft (revised) — matches the FLOOR length"],
+       ["Length", "26 ft at top, tapering to 12 ft at bottom", "~12 ft — matches the FLOOR length"],
        ["Width", "3.0 ft at top, tapering to 1.5 ft at bottom", "~3–4 ft"],
        ["Depth", "6.5 ft", "not measured"],
        ["Capacity", "1,470 gal at 5 ft 3 in fill", "unknown"],
@@ -178,13 +178,13 @@ story += [Paragraph("Why it could be a vat — the case for", H2)]
 for t in [
  "<b>Concrete is the specified material.</b> Not merely compatible — Circular 174 recommends it "
  "over timber specifically because timber vats leaked.",
- "<b>Revised length matches the spec floor exactly.</b> The documented vat is 12 ft at the floor "
- "widening to 26 ft at the rim. The observer's revised estimate of ~12 ft equals the floor "
+ "<b>Observed length matches the spec floor exactly.</b> The documented vat is 12 ft at the floor "
+ "widening to 26 ft at the rim. The observed ~12 ft equals the floor "
  "length — consistent with the visible concrete being the base course of a full-size vat, with "
  "the flaring upper walls buried, broken, or (in a hybrid build) never concrete at all.",
  "<b>Reported width brackets the spec width.</b> 3–4 ft observed; the spec runs 1.5 ft at the floor to 3.0 ft at the rim, so the reading sits at/above the rim width — widths were estimates.",
  "<b>It is a discrete structure with ends.</b> A concrete-lined drainage channel runs continuously "
- "across a slope; it does not begin and end in 15–20 ft. A vat does.",
+ "across a slope; it does not begin and end in ~12 ft. A vat does.",
  "<b>A metal frame is present.</b> Vats were fitted with rails, splash boards on hinged posts, and "
  "chute fencing. A rusted pipe frame at one end is consistent with that, though not diagnostic.",
  "<b>The setting fits the siting logic.</b> Vats were placed near water and stock-handling ground. "
@@ -265,11 +265,11 @@ if os.path.exists(_diag):
         CAP)]
 
 # ------------------------------------------------------------------ base hypothesis
-story += [Paragraph("The revised measurement, and what sat on top", H2),
-  Paragraph("On a second look the observer revised the length estimate from 15–20 ft down to "
-    "<b>approximately 12 ft</b>. Against the federal specification this is the most significant "
-    "measurement yet, because <b>12 ft is exactly the specified FLOOR length of the vat</b> "
-    "(26 ft at the rim tapering to 12 ft at the floor).", BODY),
+story += [Paragraph("The measurement, and what sat on top", H2),
+  Paragraph("The observable length of the structure is <b>approximately 12 ft</b> (estimated by "
+    "eye; not tape-measured). Against the federal specification this is a significant figure, "
+    "because <b>12 ft is exactly the specified FLOOR length of the vat</b> (26 ft at the rim "
+    "tapering to 12 ft at the floor).", BODY),
   tbl([["Observed length", "Height above vat floor (from the taper)"],
        ["~12 ft", "0 ft — THE FLOOR ITSELF"],
        ["13 ft", "0.5 ft"], ["14 ft", "0.9 ft"],
@@ -339,9 +339,9 @@ story += [Paragraph("What would resolve it — in priority order", H2),
 
 story += [Spacer(1, 8),
   box([Paragraph("<b>Capacity check, once depth is known</b>", BODY),
-   Paragraph("Using the reported 15–20 ft × 3–4 ft footprint and the prismatoid volume the "
-     "circulars themselves specify: a depth of 2 ft yields about 916 gal; 3 ft about 1,375 gal; "
-     "4 ft about 1,833 gal; 5.25 ft about 2,405 gal; 6.5 ft about 2,978 gal. The documented "
+   Paragraph("Using the observed ~12 ft × 3–4 ft footprint and the prismatoid volume the "
+     "circulars themselves specify: a depth of 2 ft yields about 630 gal; 3 ft about 940 gal; "
+     "4 ft about 1,260 gal; 5.25 ft about 1,650 gal; 6.5 ft about 2,040 gal. The documented "
      "capacities are <b>1,470 gal</b> (Circular 183/207 concrete vat) and <b>2,088 gal</b> "
      "(Circular 174 swim vat). Depths at or above roughly 4 ft put the structure in the "
      "documented range; depths under 3 ft place it outside.", SMALL)])]
