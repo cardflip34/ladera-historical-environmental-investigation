@@ -47,10 +47,9 @@ SED=(196,178,148); RED=(176,58,42); GRN=(60,120,80)
 im = Image.new("RGB", (W, H), PAPER)
 d = ImageDraw.Draw(im, "RGBA")
 d.rectangle([0,0,W,10], fill=RED)
-d.text((70, 40), "Could the observed concrete be the base of a full-size vat?",
+d.text((70, 40), "The revised ~12 ft reading matches the vat FLOOR exactly",
        font=F(38, True), fill=INK)
-d.text((70, 92), "Longitudinal section, to scale. The 1911 vat tapers, so OBSERVED LENGTH DEPENDS "
-                 "ON SURVIVING HEIGHT.", font=F(20, True), fill=INK)
+d.text((70, 92), "Longitudinal section, to scale. Spec floor = 12 ft. An observed ~12 ft rectangle sits AT FLOOR LEVEL on the taper.", font=F(20, True), fill=INK)
 d.text((70, 124), "Solid = observed in the field.  Ghosted = INTERPRETED reconstruction from the "
                   "federal spec. They are not the same kind of statement.", font=F(18), fill=MUT)
 
@@ -75,17 +74,17 @@ for i in range(6):
     d.line([cx-prof(6.5*(1-t))*PPF, y0, cx-prof(6.5*(1-t))*PPF+10, y0], fill=(210,190,160), width=1)
 
 # surviving band: floor to ~3 ft (mid of 1.4-3.7), solid concrete
-h_lo, h_hi = 0.0, 3.0
+h_lo, h_hi = 0.0, 1.5
 pts_surv = [(cx-prof(h_hi)*PPF, Y(h_hi)), (cx+prof(h_hi)*PPF, Y(h_hi)),
             (cx+prof(h_lo)*PPF, Y(h_lo)), (cx-prof(h_lo)*PPF, Y(h_lo))]
 d.polygon(pts_surv, fill=CONC, outline=(40,48,60), width=4)
 # sediment infill inside surviving band
-_in = 0.35   # ft of visible concrete wall thickness in section
-d.polygon([(cx-(prof(2.4)-_in)*PPF, Y(2.4)), (cx+(prof(2.4)-_in)*PPF, Y(2.4)),
+_in = 0.35
+d.polygon([(cx-(prof(1.2)-_in)*PPF, Y(1.2)), (cx+(prof(1.2)-_in)*PPF, Y(1.2)),
            (cx+(prof(0)-_in)*PPF, floor_y-0.28*PPF), (cx-(prof(0)-_in)*PPF, floor_y-0.28*PPF)],
           fill=(SED[0],SED[1],SED[2],235))
-d.text((cx, (Y(2.4)+floor_y)/2-10), "sediment infill", font=F(16), fill=(120,104,80), anchor="mm")
-d.text((cx, (Y(2.4)+floor_y)/2+12), "DO NOT DISTURB — sample only with consent + accredited lab",
+d.text((cx, (Y(1.2)+floor_y)/2-10), "sediment infill", font=F(16), fill=(120,104,80), anchor="mm")
+d.text((cx, (Y(1.2)+floor_y)/2+12), "DO NOT DISTURB — sample only with consent + accredited lab",
        font=F(13, True), fill=RED, anchor="mm")
 
 # ground line at top of surviving band (what the observer stands on)
@@ -100,17 +99,17 @@ d.text((cx, rim_y-30), "upper 3–5 ft of wall: timber-framed above the concrete
 d.text((cx, floor_y+16), "FLOOR — 12 ft — below grade, not yet reached", font=F(17, True),
        fill=CONC, anchor="ma")
 # observed band annotation
-obs_y = Y(1.6)
-d.line([cx-prof(1.6)*PPF+6, obs_y, cx-prof(1.6)*PPF-120, obs_y+52], fill=GRN, width=3)
-d.text((cx-prof(1.6)*PPF-126, obs_y+58), "OBSERVED CONCRETE", font=F(19, True), fill=GRN, anchor="ra")
-d.text((cx-prof(1.6)*PPF-126, obs_y+84), "reported 15–20 ft long", font=F(16), fill=GRN, anchor="ra")
+obs_y = Y(0.8)
+d.line([cx-prof(0.8)*PPF+6, obs_y, cx-prof(0.8)*PPF-150, obs_y+40], fill=GRN, width=3)
+d.text((cx-prof(0.8)*PPF-156, obs_y+46), "OBSERVED CONCRETE", font=F(19, True), fill=GRN, anchor="ra")
+d.text((cx-prof(0.8)*PPF-156, obs_y+72), "revised estimate ~12 ft — the floor length", font=F(16), fill=GRN, anchor="ra")
 
 # taper scale on the right
 tx = X(27.5)
 for L, hf in ((12,0.0),(15,1.4),(17.5,2.6),(20,3.7),(26,6.5)):
     y0 = Y(hf)
     d.line([tx, y0, tx+16, y0], fill=INK, width=2)
-    mark = "  <- reported band" if L in (15,20) else ""
+    mark = "  <- REVISED ESTIMATE" if L == 12 else ""
     d.text((tx+22, y0-9), f"{L:g} ft at {hf:g} ft up{mark}", font=F(15, True if mark else False),
            fill=(RED if mark else MUT))
 d.line([tx+8, Y(0), tx+8, Y(6.5)], fill=RULE, width=1)
@@ -120,9 +119,9 @@ d.text((tx, Y(6.5)-40), "length vs height\n(the taper)", font=F(15), fill=INK)
 d.rounded_rectangle([70, 950, W-70, 1080], 10, fill=(251,239,236), outline=RED, width=2)
 d.text((92, 968), "WHAT THIS RECONSTRUCTION IS, AND IS NOT", font=F(19, True), fill=(122,38,24))
 for i, t in enumerate([
- "The solid band is the field observation. Everything ghosted is INTERPRETED from USDA Circular 183 and is testable, not established.",
- "DEPTH IS STILL UNMEASURED. A probe finding concrete floor 3-4 ft below present grade CONFIRMS this reading; a floor at under 2 ft REFUTES it.",
- "Reported width (3-4 ft) runs slightly wide of the taper's 1.8-2.4 ft at this height - stated, not hidden. Widths were estimates, not measurements."]):
+ "An observed ~12 ft rectangle = the spec FLOOR length exactly. Solid = observed; ghosted = interpreted, testable, not established.",
+ "DEPTH IS STILL UNMEASURED. Reading A (full concrete vat, upper walls gone/buried): probing 5-7 ft BEYOND each end should find buried rim or wall stubs.",
+ "Reading B (hybrid): concrete base only, TIMBER upper framing rotted in place - consistent with the weathered post and wire found beside the structure."]):
     d.text((92, 998+i*26), t, font=F(15), fill=(90,60,52))
 
 # companion panel: the other finds

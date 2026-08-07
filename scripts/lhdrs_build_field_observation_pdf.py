@@ -58,7 +58,13 @@ def box(flowables, bg=PANEL, bc=RULE, pad=9):
         ("LEFTPADDING",(0,0),(-1,-1),pad), ("RIGHTPADDING",(0,0),(-1,-1),pad),
         ("TOPPADDING",(0,0),(-1,-1),pad), ("BOTTOMPADDING",(0,0),(-1,-1),pad)]))
 
+TCELL = S("TCELL", fontSize=9, leading=11.5)
+THEAD = S("THEAD", fontSize=9, leading=11.5, fontName="Helvetica-Bold")
 def tbl(data, widths, head=True):
+    # wrap cells in Paragraphs so long text wraps inside its column instead of overflowing
+    data = [[(Paragraph(str(c), THEAD if (head and ri == 0) else TCELL)
+              if isinstance(c, str) else c) for c in row]
+            for ri, row in enumerate(data)]
     st = [("GRID",(0,0),(-1,-1),0.5,RULE),
           ("VALIGN",(0,0),(-1,-1),"TOP"),
           ("FONTSIZE",(0,0),(-1,-1),9),
@@ -93,53 +99,58 @@ story += [Spacer(1, 10),
      "children or animals into it.</b> Photograph and measure from outside. Arsenic does not "
      "degrade; a century has not reduced it.", SMALL)], bg=WARNBG, bc=RED)]
 
-# ------------------------------------------------------------------ photos (unrotated)
+# ------------------------------------------------------------------ photos (unrotated, 2-up)
 FO = os.path.join(REPO, "evidence/lhdrs/field_observations")
 GALLERY = [
  ("2026-08-07_axis_view_structure.jpg",
-  "View along the axis of the structure. The concrete channel runs away from the camera into "
-  "heavy brush; a rusted pipe frame crosses the near end. Depth is obscured by sediment and "
-  "vegetation."),
+  "1 — Axis view. The concrete channel runs away into brush; pipe frame at the near end."),
  ("2026-08-07_end_view_corner_and_rails.jpg",
-  "Down-angle view of the near end: a clean concrete corner with a raised rim on both sides, and "
-  "the pipe railing descending into the structure. The rim-and-corner geometry is what argues "
-  "for a discrete vessel rather than a continuous ditch."),
+  "2 — End view. Clean 90° concrete corner, raised rim on both sides, pipe railing descending "
+  "INTO the structure. The strongest visual argument for a discrete vessel."),
  ("2026-08-07_timber_post_with_wire.jpg",
-  "Weathered timber post with wire, standing near the structure. The 1911 specification's pen and "
-  "cover posts were timber set 3 ft into the ground; wire-and-rail fencing enclosed the pens."),
+  "3 — Weathered timber post with WIRE still attached, standing near the structure; a second "
+  "short stake beside it. Utility pole in the background."),
  ("2026-08-07_fallen_pipe_rails.jpg",
-  "Fallen and leaning pipe rails in the brush beside the structure — consistent with chute or "
-  "pen railing. Corroborating, not diagnostic."),
+  "4 — Fallen and leaning pipe rails in the brush beside the structure — consistent with chute "
+  "or pen railing."),
 ]
 story += [Paragraph("The structure and its surroundings, as found", H2),
-  Paragraph("Photographs are presented exactly as taken — no rotation, cropping or enhancement. "
-    "All archived with SHA-256 checksums in evidence/lhdrs/field_observations/.", SMALL),
-  Spacer(1, 4)]
+  Paragraph("Photographs exactly as taken — no rotation, cropping or enhancement. Archived with "
+    "SHA-256 checksums in evidence/lhdrs/field_observations/.", SMALL), Spacer(1, 6)]
 from PIL import Image as PILImage
-_first = True
+_cells = []
 for _fn, _cap in GALLERY:
     _fp = os.path.join(FO, _fn)
     if not os.path.exists(_fp):
         continue
     iw, ih = PILImage.open(_fp).size
-    w = 4.35*inch; h = w*ih/iw
-    if h > 5.9*inch:
-        h = 5.9*inch; w = h*iw/ih
-    els = [RLImage(_fp, width=w, height=h), Paragraph(_cap, CAP)]
-    story += [KeepTogether(els), Spacer(1, 10)]
-    _first = False
-src = "field photographs, 2026-08-07 visit" if not _first else "not yet attached"
+    w = 3.25*inch; h = w*ih/iw
+    _cells.append([RLImage(_fp, width=w, height=h), Paragraph(_cap, CAP)])
+_rows = []
+for i in range(0, len(_cells), 2):
+    pair = _cells[i:i+2]
+    while len(pair) < 2: pair.append("")
+    _rows.append(pair)
+if _rows:
+    story += [Table(_rows, colWidths=[3.45*inch, 3.45*inch], style=TableStyle([
+        ("VALIGN",(0,0),(-1,-1),"TOP"),
+        ("LEFTPADDING",(0,0),(-1,-1),3),("RIGHTPADDING",(0,0),(-1,-1),3),
+        ("TOPPADDING",(0,0),(-1,-1),4),("BOTTOMPADDING",(0,0),(-1,-1),8)]))]
+src = "field photographs, 2026-08-07 visit"
 
 # ------------------------------------------------------------------ observed
 story += [Paragraph("What was observed", H2),
   tbl([["Attribute", "As reported", "Confidence"],
        ["Material", "Concrete", "observer, direct"],
-       ["Length", "approximately 15–20 ft", "estimated, not measured"],
+       ["Length", "REVISED: approximately 12 ft (earlier estimate of 15–20 ft superseded on second look)", "estimated, not measured"],
        ["Width", "approximately 3–4 ft", "estimated, not measured"],
        ["Depth", "NOT MEASURED — obscured by infill", "unknown"],
        ["Form", "Discrete linear channel with ends; not a continuous ditch run", "observer, direct"],
-       ["Associated", "Rusted pipe frame/rails at one end; weathered timber post with wire nearby "
-        "(second visit, 2026-08-07)", "observer, direct"],
+       ["Rim & corner", "Raised concrete rim on both long sides; clean 90-degree corner at the near end", "photo 2"],
+       ["Railing", "Rusted pipe frame at the near end, one rail descending INTO the structure; further fallen/leaning pipe rails in the brush beside it", "photos 1, 2, 4"],
+       ["Timber post", "Weathered squared timber post standing nearby with WIRE still attached; a second short stake beside it", "photo 3"],
+       ["Wire", "Strand wire at the post, consistent with pen/fence line", "photo 3"],
+       ["Context", "Utility pole visible in background of photo 3 (locational aid); dry mustard/brush cover throughout", "photos"],
        ["Setting", "Heavy dry brush, drainage corridor, near the 1948 mapped structure",
         "observer, direct"],
        ["Coordinates", "NOT RECORDED — no GPS in the image metadata", "missing"],
@@ -154,7 +165,7 @@ story += [Paragraph("The federal specification for a concrete dipping vat", H2),
     "common in wooden vats.&rdquo; <b>Concrete construction is therefore consistent with, and in "
     "fact the recommended form of, a period dipping vat.</b>", BODY),
   tbl([["Dimension", "Circular 183 / 207 concrete vat", "Structure as reported"],
-       ["Length", "26 ft at top, tapering to 12 ft at bottom", "~15–20 ft"],
+       ["Length", "26 ft at top, tapering to 12 ft at bottom", "~12 ft (revised) — matches the FLOOR length"],
        ["Width", "3.0 ft at top, tapering to 1.5 ft at bottom", "~3–4 ft"],
        ["Depth", "6.5 ft", "not measured"],
        ["Capacity", "1,470 gal at 5 ft 3 in fill", "unknown"],
@@ -167,11 +178,11 @@ story += [Paragraph("Why it could be a vat — the case for", H2)]
 for t in [
  "<b>Concrete is the specified material.</b> Not merely compatible — Circular 174 recommends it "
  "over timber specifically because timber vats leaked.",
- "<b>Reported length falls inside the spec envelope.</b> The documented vat is 12 ft at the floor "
- "widening to 26 ft at the rim. A reported 15–20 ft is what an observer would measure on a "
- "<i>tapered</i> vat part-filled with sediment, reading the length at whatever level the infill "
- "now sits — not at the true floor or rim.",
- "<b>Reported width brackets the spec top width.</b> 3–4 ft observed against 3.0 ft specified.",
+ "<b>Revised length matches the spec floor exactly.</b> The documented vat is 12 ft at the floor "
+ "widening to 26 ft at the rim. The observer's revised estimate of ~12 ft equals the floor "
+ "length — consistent with the visible concrete being the base course of a full-size vat, with "
+ "the flaring upper walls buried, broken, or (in a hybrid build) never concrete at all.",
+ "<b>Reported width brackets the spec width.</b> 3–4 ft observed; the spec runs 1.5 ft at the floor to 3.0 ft at the rim, so the reading sits at/above the rim width — widths were estimates.",
  "<b>It is a discrete structure with ends.</b> A concrete-lined drainage channel runs continuously "
  "across a slope; it does not begin and end in 15–20 ft. A vat does.",
  "<b>A metal frame is present.</b> Vats were fitted with rails, splash boards on hinged posts, and "
@@ -254,36 +265,47 @@ if os.path.exists(_diag):
         CAP)]
 
 # ------------------------------------------------------------------ base hypothesis
-story += [Paragraph("Second visit: the base hypothesis, and two new finds", H2),
-  Paragraph("A return visit (2026-08-07) added two observations: a <b>weathered timber post with "
-    "wire</b> standing near the structure, and <b>rusted pipe rails</b> running at its end. These "
-    "are remnants of precisely the perishable components the materials table above predicts — pen "
-    "and cover posts were timber set 3 ft deep; chutes and pens were railed. Their traces "
-    "strengthen the station reading and weaken the lone-drainage-ditch reading.", BODY),
-  Paragraph("The observer also asked the right structural question: <b>could the visible concrete "
-    "be the BASE of a full-size vat, with a larger structure above it now gone?</b> The spec "
-    "answers this quantitatively, because the vat TAPERS — 26 ft at the rim, 12 ft at the floor. "
-    "Length is a function of height:", BODY),
+story += [Paragraph("The revised measurement, and what sat on top", H2),
+  Paragraph("On a second look the observer revised the length estimate from 15–20 ft down to "
+    "<b>approximately 12 ft</b>. Against the federal specification this is the most significant "
+    "measurement yet, because <b>12 ft is exactly the specified FLOOR length of the vat</b> "
+    "(26 ft at the rim tapering to 12 ft at the floor).", BODY),
   tbl([["Observed length", "Height above vat floor (from the taper)"],
-       ["12 ft", "0 ft — the floor itself"],
-       ["15 ft", "1.4 ft"],
-       ["17.5 ft", "2.6 ft"],
-       ["20 ft", "3.7 ft"],
-       ["26 ft", "6.5 ft — the original rim"]],
+       ["~12 ft", "0 ft — THE FLOOR ITSELF"],
+       ["13 ft", "0.5 ft"], ["14 ft", "0.9 ft"],
+       ["20 ft", "3.7 ft"], ["26 ft", "6.5 ft — the original rim"]],
       [2.2*inch, 4.7*inch]),
   Spacer(1, 8),
-  box([Paragraph("<b>The reported 15–20 ft is not a mismatch with the 26-ft specification. It is "
-    "the specification, read 1.4–3.7 ft up the taper.</b>", BODY),
-   Paragraph("That is exactly what the lower portion of a spec vat measures when the upper 3–5 ft "
-     "of wall — timber-framed above the concrete, or concrete since broken away — no longer "
-     "exists. Period practice included part-height concrete with timber framing above; either "
-     "variant leaves this footprint. The reconstruction below draws the surviving band solid and "
-     "the interpreted portion ghosted, because they are different kinds of statement.", SMALL),
-   Spacer(1, 4),
-   Paragraph("<b>Falsifiable, both ways:</b> a probe finding concrete floor 3–4 ft below present "
-     "grade CONFIRMS this reading. A floor at under 2 ft REFUTES it. One caveat is stated on the "
-     "figure: reported width (3–4 ft) runs slightly wide of the taper's 1.8–2.4 ft at that height "
-     "— widths were estimates, not measurements.", SMALL)])]
+  Paragraph("An observed ~12-ft concrete rectangle is therefore consistent with the visible "
+    "concrete being the <b>floor pan and lowest wall course</b> of a full-size vat — the base — "
+    "with whatever stood above it now gone. Two documented construction variants explain the "
+    "missing top, and they answer the question directly:", BODY),
+
+  box([Paragraph("<b>READING A — the top was CONCRETE, and it is either buried or broken</b>", BODY),
+   Paragraph("Circulars 183/207 describe a full-depth concrete vat cast in the excavation, walls "
+     "flaring from 12 ft at the floor to 26 ft at the rim. If this was that type, the upper walls "
+     "did not vanish — they are either (a) <b>BURIED</b>: a century of slopewash and sediment can "
+     "bury the flaring upper walls outward and below present grade, leaving only the innermost "
+     "course exposed; or (b) <b>BROKEN</b>: unreinforced upper courses crack from roots, frost and "
+     "stock traffic and are pushed over — in which case rubble fragments should lie in the brush "
+     "within a few yards. <b>Testable without digging: probe the soil 5–7 ft BEYOND each visible "
+     "end. A buried rim or wall stub found there confirms Reading A.</b>", SMALL)]),
+  Spacer(1, 6),
+  box([Paragraph("<b>READING B — the top was TIMBER, above a concrete base, and it rotted in "
+    "place</b>", BODY),
+   Paragraph("Circular 174's swim vat was timber — 4×4 sills and posts, 2-inch plank walls — and "
+     "period practice included <b>hybrid builds</b>: a concrete lower section for water-tightness "
+     "with timber framing above grade. On this reading the concrete never extended beyond the "
+     "base; the timber upper walls, cover leaves and splash boards simply <b>decayed where they "
+     "stood</b> over a century. Nothing had to be hauled away. The <b>weathered timber post with "
+     "wire standing beside the structure</b>, and the pipe rails, are exactly the surviving traces "
+     "this reading predicts.", SMALL)]),
+  Spacer(1, 6),
+  Paragraph("<b>Which reading is true is decidable in one site visit:</b> Reading A leaves buried "
+    "concrete beyond the visible ends (probe finds it); Reading B leaves none (probe finds "
+    "undisturbed soil). Either way the sediment inside the visible rectangle is the sampling "
+    "target, and either way it must not be disturbed except under consent with an accredited "
+    "laboratory.", BODY)]
 
 _cs = os.path.join(REPO, "evidence/lhdrs/field_observations/vat_cross_section_reconstruction.png")
 if os.path.exists(_cs):
