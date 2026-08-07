@@ -131,7 +131,8 @@ story += [Paragraph("What was observed", H2),
        ["Width", "approximately 3–4 ft", "estimated, not measured"],
        ["Depth", "NOT MEASURED — obscured by infill", "unknown"],
        ["Form", "Discrete linear channel with ends; not a continuous ditch run", "observer, direct"],
-       ["Associated", "Rusted metal pipe frame / rail at one end", "observer, direct"],
+       ["Associated", "Rusted pipe frame/rails at one end; weathered timber post with wire nearby "
+        "(second visit, 2026-08-07)", "observer, direct"],
        ["Setting", "Heavy dry brush, drainage corridor, near the 1948 mapped structure",
         "observer, direct"],
        ["Coordinates", "NOT RECORDED — no GPS in the image metadata", "missing"],
@@ -243,6 +244,48 @@ if os.path.exists(_diag):
       Paragraph("Scale plan of a complete 1911-specification station, drawn from the federal "
         "instructions. Every dimension is quoted from USDA Bureau of Animal Industry Circular 183 "
         "(1911), repeated in Circular 207 (1912). Solid = concrete; hatched = timber and iron.",
+        CAP)]
+
+# ------------------------------------------------------------------ base hypothesis
+story += [Paragraph("Second visit: the base hypothesis, and two new finds", H2),
+  Paragraph("A return visit (2026-08-07) added two observations: a <b>weathered timber post with "
+    "wire</b> standing near the structure, and <b>rusted pipe rails</b> running at its end. These "
+    "are remnants of precisely the perishable components the materials table above predicts — pen "
+    "and cover posts were timber set 3 ft deep; chutes and pens were railed. Their traces "
+    "strengthen the station reading and weaken the lone-drainage-ditch reading.", BODY),
+  Paragraph("The observer also asked the right structural question: <b>could the visible concrete "
+    "be the BASE of a full-size vat, with a larger structure above it now gone?</b> The spec "
+    "answers this quantitatively, because the vat TAPERS — 26 ft at the rim, 12 ft at the floor. "
+    "Length is a function of height:", BODY),
+  tbl([["Observed length", "Height above vat floor (from the taper)"],
+       ["12 ft", "0 ft — the floor itself"],
+       ["15 ft", "1.4 ft"],
+       ["17.5 ft", "2.6 ft"],
+       ["20 ft", "3.7 ft"],
+       ["26 ft", "6.5 ft — the original rim"]],
+      [2.2*inch, 4.7*inch]),
+  Spacer(1, 8),
+  box([Paragraph("<b>The reported 15–20 ft is not a mismatch with the 26-ft specification. It is "
+    "the specification, read 1.4–3.7 ft up the taper.</b>", BODY),
+   Paragraph("That is exactly what the lower portion of a spec vat measures when the upper 3–5 ft "
+     "of wall — timber-framed above the concrete, or concrete since broken away — no longer "
+     "exists. Period practice included part-height concrete with timber framing above; either "
+     "variant leaves this footprint. The reconstruction below draws the surviving band solid and "
+     "the interpreted portion ghosted, because they are different kinds of statement.", SMALL),
+   Spacer(1, 4),
+   Paragraph("<b>Falsifiable, both ways:</b> a probe finding concrete floor 3–4 ft below present "
+     "grade CONFIRMS this reading. A floor at under 2 ft REFUTES it. One caveat is stated on the "
+     "figure: reported width (3–4 ft) runs slightly wide of the taper's 1.8–2.4 ft at that height "
+     "— widths were estimates, not measurements.", SMALL)])]
+
+_cs = os.path.join(REPO, "evidence/lhdrs/field_observations/vat_cross_section_reconstruction.png")
+if os.path.exists(_cs):
+    from PIL import Image as PILImage
+    _w, _h = PILImage.open(_cs).size
+    w = 6.9*inch; h = w*_h/_w
+    story += [Spacer(1, 6), RLImage(_cs, width=w, height=h),
+      Paragraph("Longitudinal section, to scale. Solid = observed; ghosted = interpreted from "
+        "USDA Circular 183. New finds (timber post with wire, pipe rails) listed on the figure.",
         CAP)]
 
 story += [PageBreak()]
