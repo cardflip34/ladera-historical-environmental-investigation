@@ -1,0 +1,6 @@
+{
+  "name": "californias-forgotten-past",
+  "private": true,
+  "type": "module",
+  "description": "Static research site. No build step; package.json exists only so Vercel treats middleware.js as an ES module."
+}
