@@ -16,7 +16,16 @@
    "lat": 33.55441,
    "lon": -117.65391,
    "assessment": "white parallel pipes absent in Jan 2004; adjacent slope freshly graded in 2004; likely construction-era/irrigation PVC; probably NOT the user's site (field photos show rusted steel)"
+  },
+  "C": {
+   "lat": 33.55596,
+   "lon": -117.65675,
+   "found_by": "user, in the contrast-boosted 2022 3-inch crop around pole P1",
+   "description": "cluster of pale rectangular objects ~2 m each, open dry slope, ~58 m ESE of pole P1 (bend pole with white insulators)",
+   "assessment": "PERSISTENT faint pale marks at the same spot in Eagle 30 cm 2018, 2019, 2021; clearly resolved only in the 2022 3-inch. Persistence across years distinguishes C from A (one-year clearing). Not resolvable in NAIP 60cm-1m, Jan 2004 30 cm, or any ranch-era frame. Geometry matches the user's field photo if the pictured pole is P1: pole west of site at ~58 m.",
+   "every_era_sheet": "candidateC_all_eras.jpg (21 frames, 1929-2025, 9 sources)"
   }
  },
- "seasonal_finding": "Riparian/oak canopy over the corridor remains closed and green even at peak drought (21 Aug 2018 NAIP). Summer browning affects grass slopes, not the woody canopy covering the structure area. No season opens the canopy from above."
+ "seasonal_finding": "Riparian/oak canopy over the corridor remains closed and green even at peak drought (21 Aug 2018 NAIP). Summer browning affects grass slopes, not the woody canopy covering the structure area. No season opens the canopy from above.",
+ "best_available_answer": "The 2022 OC 3-inch flight (7.6 cm/px) is the sharpest publicly archived imagery of this ground. All public archives enumerated: OC Survey 1929-1990, USGS HRO 30cm 2004, NAIP 60cm-1m 2012-2022, Eagle 30cm 2018-2025. Nothing sharper exists publicly; only ground visit or permitted drone flight exceeds it."
 }
