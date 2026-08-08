@@ -1,0 +1,22 @@
+{
+ "generated": "2026-08-08",
+ "files": {
+  "naip_summer_series_node.jpg": "USDA NAIP 2012-2022 via Microsoft Planetary Computer STAC, windowed COG reads; acquisition dates from flight metadata; grade A1",
+  "candidateA_persistence_2018_2025.jpg": "OC Eagle 1ft 2018-2021+2025, OC 3-inch 2022; grade A+ county imagery",
+  "candidates_2004_vs_2022.jpg": "USGS HRO 0.3m Jan 2004 tile 11smt380125 vs OC 3-inch 2022",
+  "candidates_ranch_era.jpg": "OC Survey frames 1929-1953, HIST_BBOX affine registration, ~10-20 m positional uncertainty"
+ },
+ "candidates": {
+  "A": {
+   "lat": 33.55492,
+   "lon": -117.65566,
+   "assessment": "clearing+timbers visible ONLY in 2022 3-inch; canopy closed at 1-ft in 2019-2021 and 2025; 2018 shows partial pale patch; consistent with brush cutting between 2021-2022 flights; ranch-era origin NOT established"
+  },
+  "B": {
+   "lat": 33.55441,
+   "lon": -117.65391,
+   "assessment": "white parallel pipes absent in Jan 2004; adjacent slope freshly graded in 2004; likely construction-era/irrigation PVC; probably NOT the user's site (field photos show rusted steel)"
+  }
+ },
+ "seasonal_finding": "Riparian/oak canopy over the corridor remains closed and green even at peak drought (21 Aug 2018 NAIP). Summer browning affects grass slopes, not the woody canopy covering the structure area. No season opens the canopy from above."
+}
