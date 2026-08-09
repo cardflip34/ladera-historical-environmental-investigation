@@ -14,7 +14,7 @@ received — all locations below are inferred from photo content matched to the 
    canopy (invisible from vertical overhead, as in all archival imagery).
 4. **Open-water pond ringed by tule/cattail**, golf course fairway immediately east. Possibly the
    surviving remnant of 1968 USGS-mapped water body = sampling TARGET #6 (33.55857, -117.65281);
-   2022 3-inch shows closed canopy at those coords, so identity unconfirmed pending EXIF. If
+   2022 3-inch shows closed canopy at those coords, so identity now supported: 2022 3-inch + NAIP NIR locate a perennial tule marsh with open water at 33.55756, -117.65184, north tip of the Arroyo Trabuco GC fairway, ~140 m SE (down-drainage) of the 1968 centroid - consistent with the surviving remnant of the mapped water body. EXIF will finalize. If
    confirmed: pond sediment is the highest-value natural sampling archive on the site.
 5. **Vegetation mosaic** on the slope: patches of grey standing-dead/dormant brush and rust-red
    patches among green evergreens. Observer hypothesis: possible phytotoxicity. Assessment below.
