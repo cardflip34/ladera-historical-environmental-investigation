@@ -43,4 +43,4 @@ Andy Stavros
 andystavros@icloud.com
 
 ---
-*Status: DRAFT — ready to send. Log date sent and response in EXTERNAL_ACQUISITION_REGISTER.*
+*Status: SENT 2026-08-11 via Mail.app to Public.Services@FloridaDEP.gov (address verified against FDEP Ombudsman & Public Services page). Await acknowledgment; statutory prompt-response duty applies. Log response in EXTERNAL_ACQUISITION_REGISTER.*
