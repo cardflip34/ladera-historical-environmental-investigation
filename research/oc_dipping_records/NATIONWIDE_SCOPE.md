@@ -63,3 +63,29 @@ Documented findings:
 > mg/kg. California participated in the same federal program but has never inventoried its
 > sites. The available evidence does not establish causation anywhere — it establishes that
 > no one in California has looked."
+
+## Addendum 2026-08-10 — how many unknown Ladera-like sites exist? (model estimate, labeled)
+
+**Physical survival is documented, not speculative.** Arkansas has dip vats standing intact
+enough to be on the National Register of Historic Places (Cogburn, Guinn, Pottsville, et al.);
+the U.S. Forest Service manages known vats on national forest land (Ozark NF is the federal
+ITRC case study); University of Florida researchers documented "hidden" vats being discovered
+under later land uses (2004); ranch-land brokerages in the South publish buyer warnings about
+undisclosed vats on rural parcels (B2). Concrete vats built to federal spec survive a century
+by default — that is the materials argument, now confirmed in multiple states.
+
+**Scale (model estimate):** Florida built ~3,200–3,400 vats to serve its herds. Texas ran the
+program statewide over the largest cattle population in the nation for the longest time;
+the other 11 unregistered states each ran county-blanket programs for years to decades.
+No national count exists, but the program's own structure (every ranching district within
+reach of a vat, dipping every 14 days) implies TENS OF THOUSANDS of vats program-wide, of
+which only Florida's ~3,400 are systematically located. Conservatively, >90% of all vats
+ever built in the program have no recorded location today.
+
+**Built-over base rate (analogy, labeled):** NSW Australia — rural, registered, managed —
+still ended up with 29 of 1,648 known sites (~2%) under residences. Applying any similar
+fraction to tens of thousands of unlocated U.S. vats, concentrated in the fastest-suburbanizing
+states in the country (CA, TX, FL, GA, NC, TN), implies HUNDREDS of potential built-over or
+development-adjacent sites nationally — each one a Ladera-shaped question nobody has asked.
+This is an order-of-magnitude inference, not a count; the national plan (Phase 1) is how it
+becomes a count.
