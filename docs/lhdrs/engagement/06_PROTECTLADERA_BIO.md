@@ -8,7 +8,7 @@ Andy Stavros is a father, a longtime Orange County real estate professional, and
 
 Andy lives in Newport Beach, but Ladera Ranch is anything but distant to him. Close friends call it home, and he has served clients here throughout his career. When he heard the stories of local families facing childhood cancer, he reached out and offered to help.
 
-He dove in with the AI research skills he has developed over the last few years, pairing them with a lifetime of investigating properties, tracing records, and solving complex problems. He has been researching historical archives, including original government records, aerial imagery, maps, and land-use documents, to reconstruct the history of the land this community is built on. That carefully sourced archive now supports ProtectLadera's push for independent environmental testing and real answers for families.
+He dove in with the AI research skills he has developed over the last couple years, pairing them with a lifetime of investigating properties, tracing records, and solving complex problems. He has been researching historical archives, including original government records, aerial imagery, maps, and land-use documents, to reconstruct the history of the land this community is built on. That carefully sourced archive now supports ProtectLadera's push for independent environmental testing and real answers for families.
 
 His rule is simple: no conclusions before measurement. Follow the evidence wherever it leads, and report it honestly.
 
