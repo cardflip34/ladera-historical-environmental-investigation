@@ -1,49 +1,19 @@
-# ProtectLadera advisory bio — Andy Stavros (v2, 2026-08-12)
-*Public-facing. No mention of specific findings or substances (per Andy — hush for now).
-No coordinates, no causal claims. Real-estate background woven in from stavrosgroup.com.*
+# ProtectLadera advisory bio (v4 FINAL, 2026-08-12)
 
-## Title options
-1. **Advisory Member — Independent Researcher & Land Historian** *(recommended)*
-2. Father, Friend of Ladera & Independent Research Lead
-3. Community Research Advisor
+Title: Advisory Member: Independent Researcher & Land Historian
 
-## Full bio (~180 words)
+## Full bio (205 words, no long dashes, no substance mentions)
 
-Andy Stavros is a father, a longtime Orange County real estate professional, and — by his
-own admission — someone too stubborn to walk away from an unanswered question.
+Andy Stavros is a father, a longtime Orange County real estate professional, and, by his own admission, someone too stubborn to walk away from an unanswered question.
 
-Andy lives in Newport Beach, but Ladera Ranch is anything but distant to him: close
-friends call it home, and he has served clients here throughout his career. When he
-learned what some Ladera families were facing, he couldn't look away. He believed the
-skills he'd spent a lifetime building — investigating properties, tracing records, and
-solving complex problems — could genuinely help.
+Andy lives in Newport Beach, but Ladera Ranch is anything but distant to him. Close friends call it home, and he has served clients here throughout his career. When he learned what some Ladera families were facing, he reached out and offered to help. He believed his lifelong skills in investigating properties, tracing records, and solving complex problems could genuinely make a difference.
 
-Over the past two years, working nights and weekends, Andy has used archival research,
-historical aerial imagery, mapping, and AI-assisted data modeling to reconstruct the
-history of the land this community is built on — assembling a documented,
-carefully-sourced research archive that now supports the push for independent
-environmental testing and real answers.
+For the past two years, working nights and weekends, Andy has been researching historical archives: original government records, historical aerial imagery, maps, and land-use documents. Using AI-assisted analysis, he has reconstructed the history of the land this community is built on. That carefully sourced archive now supports ProtectLadera's push for independent environmental testing and real answers for families.
 
-His rule is simple: no conclusions before measurement — follow the evidence wherever
-it leads, and report it honestly.
+His rule is simple: no conclusions before measurement. Follow the evidence wherever it leads, and report it honestly.
 
-President of the Stavros Group at Douglas Elliman, Andy holds a degree in Finance, Real
-Estate and Law. His most important title here, though, is the one that got him involved:
-a dad who wanted to help other families.
+President of the Stavros Group at Douglas Elliman, Andy holds a degree in Finance, Real Estate and Law. But his most important title here is the one that got him involved: a dad who wanted to help other families.
 
-## Short bio (~65 words)
+## Short version (67 words)
 
-A Newport Beach father and lifelong problem-solver with deep ties to Ladera Ranch —
-close friends who live here and clients he's served for years. Moved by what local
-families were facing, Andy spent two years using archival research, historical imagery,
-and AI-assisted modeling to reconstruct the history of this land, building the research
-archive now supporting the push for independent testing. His rule: no conclusions
-before measurement.
-
-## One-liner
-A father and independent researcher who put AI-era investigative tools to work for
-Ladera's families — and won't stop until they have real answers.
-
-## Headshot guidance (unchanged)
-Outdoors, soft light, open space or trail behind you; casual collared shirt, no realtor
-branding; warm and direct. Phone portrait mode, 20 frames chest-up, pick the natural one.
+A Newport Beach father with deep ties to Ladera Ranch. Close friends live here, and he has served clients here for years. When Andy learned what local families were facing, he reached out to help, spending two years researching historical archives with AI-assisted analysis to reconstruct the history of this land. His research archive now supports the push for independent testing. His rule: no conclusions before measurement.
