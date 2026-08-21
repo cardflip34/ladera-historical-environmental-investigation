@@ -1,54 +1,49 @@
-# ProtectLadera advisory bio — Andy Stavros
-*Drafted 2026-08-12 for John Gresko's site. Public-facing: hypothesis-neutral, no causal
-claims, no coordinates. Pick a title, pick a length, send with headshot.*
+# ProtectLadera advisory bio — Andy Stavros (v2, 2026-08-12)
+*Public-facing. No mention of specific findings or substances (per Andy — hush for now).
+No coordinates, no causal claims. Real-estate background woven in from stavrosgroup.com.*
 
 ## Title options
-1. **Father & Independent Land Historian** — Research Lead *(recommended)*
-2. Father, Neighbor & Independent Land-History Researcher
-3. Founder, Ladera Environmental Health Research Platform
+1. **Advisory Member — Independent Researcher & Land Historian** *(recommended)*
+2. Father, Friend of Ladera & Independent Research Lead
+3. Community Research Advisor
 
-## Full bio (~170 words — for his advisory page)
+## Full bio (~180 words)
 
-Andy Stavros is a Ladera Ranch father who asked a simple question about the land his
-community is built on — and was too stubborn to stop until the records answered it.
+Andy Stavros is a father, a longtime Orange County real estate professional, and — by his
+own admission — someone too stubborn to walk away from an unanswered question.
 
-Over two years of nights and weekends, Andy taught himself archival research, historical
-mapping, and geospatial analysis to reconstruct the forgotten history of the O'Neill Ranch
-era — including the federally mandated arsenical cattle-dipping program that operated on
-this land from 1907 to 1912. His research corpus now spans original USDA documents,
-ninety-six years of aerial imagery, quantitative modeling, and documented field work, all
-of it source-graded, timestamped, and built to one standard: report what the evidence
-shows, whatever it shows.
+Andy lives in Newport Beach, but Ladera Ranch is anything but distant to him: close
+friends call it home, and he has served clients here throughout his career. When he
+learned what some Ladera families were facing, he couldn't look away. He believed the
+skills he'd spent a lifetime building — investigating properties, tracing records, and
+solving complex problems — could genuinely help.
 
-Andy's work follows a strict principle — no conclusions before measurement. His goal is
-straightforward: get the soil tested, get families real answers, and make sure no
-community has to rediscover its own history the hard way.
+Over the past two years, working nights and weekends, Andy has used archival research,
+historical aerial imagery, mapping, and AI-assisted data modeling to reconstruct the
+history of the land this community is built on — assembling a documented,
+carefully-sourced research archive that now supports the push for independent
+environmental testing and real answers.
 
-A longtime real estate professional, Andy knows this ground parcel by parcel — but he'll
-tell you his most important credential is being a dad here.
+His rule is simple: no conclusions before measurement — follow the evidence wherever
+it leads, and report it honestly.
 
-## Short bio (~60 words — for a card/grid layout)
+President of the Stavros Group at Douglas Elliman, Andy holds a degree in Finance, Real
+Estate and Law. His most important title here, though, is the one that got him involved:
+a dad who wanted to help other families.
 
-A Ladera Ranch father too stubborn to stop asking questions about the land his community
-is built on. Andy spent two years reconstructing the area's forgotten ranching history —
-including its federally mandated arsenic cattle-dipping era (1907–1912) — building a
-source-graded research archive now guiding the push for independent soil testing. His
-rule: no conclusions before measurement.
+## Short bio (~65 words)
 
-## One-liner (menus/captions)
-Father, independent land historian, and the research lead behind the push to test
-Ladera's soil.
+A Newport Beach father and lifelong problem-solver with deep ties to Ladera Ranch —
+close friends who live here and clients he's served for years. Moved by what local
+families were facing, Andy spent two years using archival research, historical imagery,
+and AI-assisted modeling to reconstruct the history of this land, building the research
+archive now supporting the push for independent testing. His rule: no conclusions
+before measurement.
 
-## Headshot guidance
-- Outdoors beats office: soft morning/evening light, trail or open space behind you —
-  the corridor itself if convenient. It says "walks the land," not "sells the land."
-- Casual collared shirt or clean tee + light jacket; no suit, no realtor branding.
-- Warm, direct, slight smile — approachable and serious at once. Phone portrait mode is
-  fine; have someone shoot 20 frames at chest-up and pick later.
+## One-liner
+A father and independent researcher who put AI-era investigative tools to work for
+Ladera's families — and won't stop until they have real answers.
 
-## Notes (private)
-- The bio deliberately establishes public attribution as research lead — this reinforces
-  the authorship record ahead of the Candice conversation.
-- It makes zero causal claims and promises measurement-first honesty; nothing here can be
-  quoted against the research later.
-- Real estate appears once, reframed as land knowledge. Adjustable on request.
+## Headshot guidance (unchanged)
+Outdoors, soft light, open space or trail behind you; casual collared shirt, no realtor
+branding; warm and direct. Phone portrait mode, 20 frames chest-up, pick the natural one.
