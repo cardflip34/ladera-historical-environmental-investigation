@@ -43,4 +43,4 @@ Andy Stavros
 andystavros@icloud.com
 
 ---
-*Status: SENT 2026-08-11 via Mail.app to Public.Services@FloridaDEP.gov (address verified against FDEP Ombudsman & Public Services page). Await acknowledgment; statutory prompt-response duty applies. Log response in EXTERNAL_ACQUISITION_REGISTER.*
+*Status: SENT 2026-08-11 via Mail.app to Public.Services@FloridaDEP.gov (address verified against FDEP Ombudsman & Public Services page). RESPONSE RECEIVED 2026-09-01: 3 documents (county inventory 107pp, historical overview, Woodward-Clyde copy). Archived in research/national_crossreference/G11_response/ with SHA-256 manifest. Key finding: Palm Beach County absent from inventory - see G11_FINDINGS.md.*

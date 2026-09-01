@@ -105,3 +105,4 @@ wastes staff time and slows both.
 4. **Download DPR PUR data (G06) yourself** — free, public, no request needed.
 5. **Watch for the 01 determination** around 2026-08-08.
 6. Decide the money question on 09, and the institutional question on G01.
+- G11 RESPONSE received 2026-09-01: full Livestock Board inventory (3,281 vats, ranch-name granularity, no coordinates). PALM BEACH ABSENT from registry - overlay blocked by registry hole, not by absence of dipping. Follow-ups: NARA RG17 federal records, PBC county records, FDOH why-absent query.
