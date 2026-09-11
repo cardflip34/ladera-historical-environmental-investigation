@@ -46,3 +46,21 @@ pathway question for the sampling plan (irrigation-water sample = cheap test).
 3. OC Public Works / county drainage permits for the basin outfall.
 4. Fallback: construction-era imagery trenching analysis (HRO Jan 2004 + Eagle series)
    along the two candidate alignments — visible pipe trenches would discriminate A vs B.
+
+## RESOLVED 2026-09-11 — from the primary regulatory record (A2, held with hash)
+RWQCB San Diego, Addendum No. 4 to Order 97-52 (adopted 2008-10-08; SHA-256
+97479faa...89d5771): the HORNO URBAN WATER RECOVERY FACILITY (Tract 15793, southern
+Ladera, Horno Creek HSA 901.27):
+- Runoff collected in the HORNO WATER QUALITY BASIN - owned/operated by the COUNTY OF
+  ORANGE (not SMWD);
+- flows "through seven acres of constructed wetlands, owned by Ladera Ranch Homeowners
+  Association, prior to blending with recycled water";
+- blend enters SMWD's recycled distribution for landscape irrigation; ~180 AF/dry season.
+ROUTE B (via Chiquita WRP) RULED OUT for this stream. Treatment train = county basin +
+HOA wetlands only. Permit characterization sampling (Nov 2004-Apr 2005): salts/nutrients
+ONLY (TDS 686, sulfate 349, Na 57, Cl 48.5, B 0.22, NO3 0.6, F 0.275, P 0.4 mg/L) - no
+arsenic, pesticides, or pharmaceuticals anywhere in the addendum. CEQA: Notice of
+EXEMPTION (2006-09-29) - no environmental review of the diverted stream's chemistry.
+Compliance monitoring references base Order 97-52 Table A-1 - fetch base order to check
+whether arsenic is on the list (G13 addendum). Three-party records map: County OCPW
+(basin as-builts), LARMAC HOA (wetlands), SMWD (diversion/pump; Huitt-Zollars plans).
