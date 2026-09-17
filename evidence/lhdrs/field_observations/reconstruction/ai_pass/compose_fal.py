@@ -64,6 +64,44 @@ def base(t):
     if b-XF<=t<b and b<segs[-1][1]:
         k=ss(b-XF,b,t); nxt,_=seg_frame(b); im=Image.blend(im,nxt,k)
     return to_vertical(im)
+
+# ---- laser callout: where the surviving concrete base (the 12-ft vat floor) sits ----
+_QUAD16=[(392,536),(715,333),(1145,440),(1037,793)]   # floor section on the vat, 16:9 frame coords
+QUAD=[(x*VW/W, y*VW/W+FY) for x,y in _QUAD16]
+def _perim_point(u):
+    pts=QUAD+[QUAD[0]]; L=[math.hypot(pts[i+1][0]-pts[i][0],pts[i+1][1]-pts[i][1]) for i in range(4)]
+    tot=sum(L); d=u*tot
+    for i in range(4):
+        if d<=L[i] or i==3:
+            f=min(1,d/L[i]); return (pts[i][0]+(pts[i+1][0]-pts[i][0])*f, pts[i][1]+(pts[i+1][1]-pts[i][1])*f)
+        d-=L[i]
+def draw_callout(d,t):
+    T0,T1,T2,T3=11.7,12.6,13.7,14.0
+    if t<T0 or t>T3: return
+    fade=1-ss(T2,T3,t)
+    prog=ss(T0,T1,t)                      # laser tracing progress
+    AMB=(255,190,70); WH=(255,250,235)
+    # traced outline (glow layers)
+    if prog>0:
+        n=max(2,int(prog*160)); pts=[_perim_point(prog*i/n) for i in range(n+1)]
+        for wdt,al in ((16,40),(9,90),(4,230)):
+            d.line(pts,fill=AMB+(int(al*fade),),width=wdt,joint="curve")
+    # laser dot at the tracing tip, then resting at the label anchor
+    if prog<1: tip=_perim_point(prog)
+    else: tip=QUAD[1]
+    pulse=0.75+0.25*math.sin(t*9)
+    for r,al in ((26,35),(16,90),(8,220)):
+        d.ellipse([tip[0]-r*pulse,tip[1]-r*pulse,tip[0]+r*pulse,tip[1]+r*pulse],fill=AMB+(int(al*fade),))
+    d.ellipse([tip[0]-4,tip[1]-4,tip[0]+4,tip[1]+4],fill=WH+(int(255*fade),))
+    # label with leader, after tracing completes
+    la=ss(T1,T1+0.35,t)*fade
+    if la>0:
+        A=int(255*la); ax,ay=QUAD[1]; lx,ly=150,FY+40
+        d.line([(ax,ay),(lx+250,ly+52)],fill=AMB+(int(200*la),),width=3)
+        d.rounded_rectangle([lx-14,ly-8,lx+560,ly+64],10,fill=(8,10,14,int(175*la)))
+        d.text((lx,ly-2),"THE SURVIVING CONCRETE BASE IS HERE",font=SAB(24),fill=AMB+(A,))
+        d.text((lx,ly+30),"the 12-ft vat floor, today buried under brush",font=SA(22),fill=(232,234,238,A))
+
 def frame(o):
     t=o/FPS
     im=base(min(t,segs[-1][1]-0.001)).convert("RGBA")
@@ -90,6 +128,7 @@ def frame(o):
         d.text((VW/2,515),"not historical footage · after USDA Circular 183 (1911)",font=SA(24),fill=(200,204,212,ba),anchor="ma")
         d.text((VW/2,300),"What the O'Neill Ranch may have looked like",font=SB(40),fill=(232,234,238,ba),anchor="ma")
         d.text((VW/2,355),"during compulsory arsenic cattle dipping, 1907–1912",font=SR(32),fill=(232,234,238,ba),anchor="ma")
+    draw_callout(d,t)
     im=Image.alpha_composite(im,ov)
     t0=segs[-1][1]-0.4
     if t>=t0:
