@@ -110,10 +110,12 @@ def scene_element(im,d,u):  # 31 - 41
         d.line([x0,y-120,xe,y-120],fill=AMB,width=8)
         d.text((x0,y+20),"1907",font=AB(30),fill=MUT); d.text((x1,y+20),"2026",font=AB(30),fill=MUT,anchor="ra")
         d.text((x0,y-175),"100% of what was introduced",font=AR(26),fill=AMB)
-        for yr,lab in ((1912,"program ends"),(1999,"first homes"),(2007,"build-out")):
+        for j,(yr,lab) in enumerate(((1912,"program ends"),(1999,"first homes"),(2007,"build-out"))):
             xx=x0+(x1-x0)*(yr-1907)/119
             if xx<=xe:
-                d.line([xx,y-12,xx,y+12],fill=INK,width=3); d.text((xx,y+60),f"{yr}\n{lab}",font=AR(22),fill=MUT,anchor="ma")
+                d.line([xx,y-12,xx,y+12],fill=INK,width=3)
+                yy=y+60+(70 if j==2 else 0)
+                d.text((xx,yy),f"{yr}\n{lab}",font=AR(22),fill=MUT,anchor="ma")
     c=eo(6.5,7.5,v)
     if c>0: d.text((W/2,1560),"Whatever was introduced is still somewhere on this landscape.",font=GR(34),fill=INK+(int(255*c),),anchor="ma")
 def scene_vat(im,d,u):      # 41 - 55
