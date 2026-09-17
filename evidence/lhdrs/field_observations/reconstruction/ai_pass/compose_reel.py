@@ -134,6 +134,7 @@ def frame(o):
         d.text((VW/2,205),"The same shape, 115 years later.",font=SR(40),fill=(232,234,238,A),anchor="ma")
         d.text((VW/2,262),"A 12-foot concrete rectangle, hidden in the brush.",font=SR(34),fill=(232,234,238,A),anchor="ma")
         A2=int(255*ss(1.6,2.1,u)*vis)
+        d.rounded_rectangle([60,1295,VW-60,1520],16,fill=(8,10,14,int(175*A2/255)))
         d.text((VW/2,1330),"FOUND · PHOTOGRAPHED · UNTESTED",font=SAB(30),fill=AMB+(A2,),anchor="ma")
         wrap(d,"Iron pipe rails still run up to it. Its depth has not been measured. The soil around it has never been tested for arsenic.",1395,SA(31),(232,234,238,A2),46)
     im=Image.alpha_composite(im,ov)
