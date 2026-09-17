@@ -9,7 +9,7 @@ def dur(f):
     o=subprocess.run(["ffmpeg","-i",f],capture_output=True,text=True).stderr; m=re.search(r"Duration: (\d+):(\d+):([\d.]+)",o)
     return int(m.group(1))*3600+int(m.group(2))*60+float(m.group(3))
 FULL="--full" in sys.argv
-SEGS=[("USER",f"{S}/user.mp4")]+([("INTRO",f"{S}/intro.mp4"),("THREAT",f"{S}/threat.mp4")] if FULL else [])+[("FL",f"{S}/fl.mp4"),("REEL",f"{S}/reel.mp4"),("EXPL",f"{DOC}/fA.mp4"),("B",f"{DOC}/fB.mp4"),("C",f"{DOC}/fC.mp4"),("TS",f"{S}/tire.mp4"),("PD",f"{S}/pond.mp4"),("TR",f"{S}/trail.mp4"),("D",f"{DOC}/fD.mp4")]+([("P3",f"{S}/p3.mp4")] if FULL else [])+[("CLOSE",f"{S}/close.mp4")]
+SEGS=([("OPENMAP",f"{S}/open.mp4")] if "--open" in sys.argv else [])+[("USER",f"{S}/user.mp4")]+([("INTRO",f"{S}/intro.mp4"),("THREAT",f"{S}/threat.mp4")] if FULL else [])+[("FL",f"{S}/fl.mp4"),("REEL",f"{S}/reel.mp4"),("EXPL",f"{DOC}/fA.mp4"),("B",f"{DOC}/fB.mp4"),("C",f"{DOC}/fC.mp4"),("TS",f"{S}/tire.mp4"),("PD",f"{S}/pond.mp4"),("TR",f"{S}/trail.mp4"),("D",f"{DOC}/fD.mp4")]+([("P3",f"{S}/p3.mp4")] if FULL else [])+[("CLOSE",f"{S}/close.mp4")]
 ST={}; T=0.0
 with open("list_full.txt" if FULL else "list.txt","w") as L:
     for k,f in SEGS: L.write(f"file '{f}'\n"); ST[k]=round(T,3); T+=dur(f)

@@ -286,3 +286,84 @@ if __name__=="__main__" and any(w in sys.argv for w in ("intro","threat","p3")):
     if "intro" in sys.argv: seg_intro()
     if "threat" in sys.argv: seg_threat()
     if "p3" in sys.argv: seg_p3()
+
+# ================= COVER + MAP OPEN =================
+def _font(cands,size):
+    for c in cands:
+        for d in ["/System/Library/Fonts/Supplemental/","/Library/Fonts/",os.path.expanduser("~/Library/Fonts/"),"/System/Library/Fonts/"]:
+            p=d+c
+            if os.path.exists(p): return ImageFont.truetype(p,size)
+    return F(size,True)
+def make_cover(out9,out16):
+    base=Image.open(os.path.expanduser("~/Desktop/Ladera_Ranch_Broll_Pack/Promo_Instagram_9x16.jpg")).convert("RGB").resize((W,H),Image.LANCZOS)
+    # keep only the textured blue ground: blur the old title away
+    bg=base.filter(ImageFilter.GaussianBlur(40)); bg=Image.blend(bg,Image.new("RGB",(W,H),(38,48,62)),0.62)
+    fr=bg.copy(); d=ImageDraw.Draw(fr)
+    disp=lambda s:_font(["Didot.ttc","Bodoni 72.ttc","Baskerville.ttc","Georgia Bold.ttf"],s)
+    def ctext(y,txt,font,fill,spacing=0):
+        tw=d.textlength(txt,font=font)+spacing*max(0,len(txt)-1); x=(W-tw)/2
+        if spacing:
+            for ch in txt: d.text((x,y),ch,font=font,fill=fill); x+=d.textlength(ch,font=font)+spacing
+        else: d.text((x,y),txt,font=font,fill=fill)
+    ctext(150,"PHASE 2  ·  AN INDEPENDENT INVESTIGATION",F(30,True),(214,168,84),spacing=6)
+    fs=150
+    while d.textlength("LADERA RANCH",font=disp(fs))>960: fs-=4
+    ctext(230+(150-fs)//2,"LADERA RANCH",disp(fs),(245,240,228))
+    d.line([W/2-60,410,W/2+60,410],fill=(214,168,84),width=4)
+    ctext(440,"ARSENIC",_font(["Arial Black.ttf","Arial Bold.ttf"],190),(214,168,84))
+    ctext(660,"1907 to 1912. Eight pounds per five hundred gallons.",F(34),(210,214,222))
+    ctext(720,"Every animal. Every fourteen days. On this ground.",F(34),(210,214,222))
+    # the concrete base found
+    ctext(830,"A CONCRETE DIP-VAT BASE.",F(58,True),(245,240,228))
+    ctext(905,"FOUND.",disp(170),(214,168,84))
+    # 1911 warning notice, quoted from the federal report
+    bx=(110,1140,970,1440); d.rounded_rectangle(bx,radius=10,outline=(245,240,228),width=3,fill=(18,24,34))
+    ctext(1165,"WARNING!",F(40,True),(245,240,228))
+    ctext(1218,"The fluid in this vat is",F(30),(210,214,222))
+    ctext(1262,"POISONOUS",disp(84),(214,168,84))
+    ctext(1360,"to man and all animals.",F(30),(210,214,222))
+    ctext(1400,"USDA Bureau of Animal Industry, 1911: the notice posted on every California vat",F(20),(150,156,168))
+    ctext(1520,"THE SOIL HAS NEVER BEEN TESTED.",F(46,True),(245,240,228))
+    ctext(1600,"CALIFORNIA: TEST THE SOIL.",F(46,True),(214,168,84))
+    ctext(1760,"SOUTH ORANGE COUNTY, CALIFORNIA",F(26,True),(150,156,168),spacing=5)
+    fr.save(out9,quality=95)
+    # 16x9 variant
+    w16=Image.new("RGB",(1920,1080),(38,48,62)); c=fr.crop((0,120,W,1700)).resize((int(1080*W/1580),1080),Image.LANCZOS)
+    side=bg.resize((1920,1080)).filter(ImageFilter.GaussianBlur(20)); w16.paste(side,(0,0)); w16.paste(c,((1920-c.width)//2,0)); w16.save(out16,quality=95)
+    return fr
+
+def seg_open(dur_cover=4.0,dur_map=13.0,dur_sat=17.0):
+    cover=make_cover(HERE+"/cover_9x16.jpg",HERE+"/cover_16x9.jpg")
+    mp=Image.open(os.path.expanduser("~/Documents/Ladera Ranch/evidence/lhdrs/mission7/sampling_target_map.png")).convert("RGB")
+    sat=Image.open(os.path.expanduser("~/Documents/Ladera Ranch/evidence/lhdrs/mission7/oc_2025_aoi.jpg")).convert("RGB")
+    AOI=(-117.670,33.524,-117.616,33.575); NODE=(-117.65492,33.55505)
+    nx=(NODE[0]-AOI[0])/(AOI[2]-AOI[0])*sat.width; ny=(AOI[3]-NODE[1])/(AOI[3]-AOI[1])*sat.height
+    mpp_x=(AOI[2]-AOI[0])*92500/sat.width  # metres per pixel
+    nc=int(dur_cover*FPS); nm=int(dur_map*FPS); ns=int(dur_sat*FPS); n=nc+nm+ns
+    def fn(i,N):
+        if i<nc: return cover
+        if i<nc+nm:
+            t=ease((i-nc)/nm); fr=Image.new("RGB",(W,H),BG)
+            # slow pan down the map at a zoom that fills the width
+            mc=mp.crop((105,215,1190,1440)); cov=mc.resize((W,int(W*mc.height/mc.width)),Image.LANCZOS); y0=int(max(0,cov.height-1560)*t)
+            fr.paste(cov.crop((0,y0,W,min(cov.height,y0+1560))),(0,0))
+            band(fr,1560,1920,210); caption(fr,"WHERE TO TEST",1600,size=60,color=AMB)
+            caption(fr,"Phase 2 map: 23 recommended sampling sites, ranked by where cattle gathered. The purple cross marks the 1948 ranch structure.",1680,size=30,color=INK,bold=False,maxw=960)
+            tag(fr,"PHASE 2 · THE MAP THAT SENT ME OUT THERE",90); return fr
+        t=ease((i-nc-nm)/ns)
+        half=1400*(1-t)+380*t  # metres half-width: zoom from 2.8 km to 760 m
+        hp=half/mpp_x; box=(int(nx-hp),int(ny-hp),int(nx+hp),int(ny+hp))
+        tile=sat.crop(box).resize((W,W),Image.LANCZOS); fr=Image.new("RGB",(W,H),BG); oy=300; fr.paste(tile,(0,oy))
+        ov=Image.new("RGBA",(W,H),(0,0,0,0)); od=ImageDraw.Draw(ov); cx,cy=W/2,oy+W/2
+        r=max(60,int(160/mpp_x*W/(2*hp)))  # 160 m radius ring
+        a=int(255*min(1,max(0,(t-0.15)*4)))
+        od.ellipse([cx-r,cy-r,cx+r,cy+r],outline=RED+(a,),width=8); od.ellipse([cx-r-20,cy-r-20,cx+r+20,cy+r+20],outline=RED+(a//2,),width=3)
+        fr.paste(ov,(0,0),ov)
+        band(fr,1560,1920,210); caption(fr,"THE NODE",1600,size=60,color=AMB,alpha=a)
+        caption(fr,"Open space above the community: a 1948 ranch structure and the 1968 stock-water points, on the drainage. The top-ranked area on the map.",1680,size=30,color=INK,bold=False,maxw=960,alpha=a)
+        a2=int(255*min(1,max(0,(t-0.7)*6)))
+        caption(fr,"So I took a hike.",1490,size=64,color=INK,align="center",x=0,alpha=a2)
+        tag(fr,"ORANGE COUNTY AERIAL · 2025",90); return fr
+    return render("open",n,fn)
+
+if __name__=="__main__" and "open" in sys.argv: seg_open()
