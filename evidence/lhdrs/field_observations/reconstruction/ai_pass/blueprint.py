@@ -2,7 +2,7 @@ import numpy as np, math
 from PIL import Image, ImageDraw, ImageFilter
 VW,VH=1080,1920
 # concrete rim corners measured on the full-screen frame (canvas px): NL, NR, FR, FL
-CORN=np.array([[115,1235],[400,1412],[695,690],[632,652]],float)
+CORN=np.array([[87,1197],[390,1355],[845,660],[785,628]],float)
 GND=np.array([[0,0],[3.5,0],[3.5,12],[0,12]],float)
 def homog(src,dst):
     A=[]
