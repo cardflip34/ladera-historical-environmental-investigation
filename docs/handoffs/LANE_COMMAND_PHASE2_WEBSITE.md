@@ -10,7 +10,7 @@ You are the website lane for californiasforgottenpast.org (repo: ~/Ladera-Ranch,
 - Ladera_Phase2_BASE/README_FINAL_TIMELINE.txt (chapters), Ladera_Phase2_BASE/phase2_full_script.txt (script for captions)
 
 ## 2. YouTube (Andy's channel, same as Phase 1). Andy or you must drag the file into YouTube Studio; the video lane cannot upload.
-Title: Phase 2: I Found the Concrete Vat Base. Ladera Ranch and California's Forgotten Arsenic Program
+Title (already set): Is California's Soil Poisoned? I Found the Arsenic Vat Base Above Ladera Ranch | Phase 2
 Visibility: Unlisted first, check playback, then Public. Category: News & Politics. Not made for kids. Playlist: California's Forgotten Past (add Phase 1 too).
 Chapters (paste at the top of the description):
 0:00 Cover and Phase 1 recap
@@ -46,7 +46,7 @@ Full report, maps, sources and the Phase 1 film: https://californiasforgottenpas
 
 Independent research and data-organization project. Not medical advice. Establishes no causation. Figures are model estimates from documented herd sizes and the federal formula; every source is graded on the website.
 Tags: Ladera Ranch, arsenic, cattle dipping vat, Texas fever tick, Orange County, Rancho Mission Viejo, Ewing sarcoma, soil testing, California history, environmental health, USDA Bureau of Animal Industry, Arroyo Trabuco
-Record the 11-character video id from the watch URL.
+The Phase 2 video id is XzIJ-pHr-JU (https://youtu.be/XzIJ-pHr-JU). Already done by the video lane in Studio: title, thumbnail, tags, chapters appended to Andy's own description, audience = not for kids, Phase 1 set Public with the new cover and a Phase 2 link at the top of its description. Still to do in Studio: publish Phase 2 (Unlisted first, then Public), upload the SRT captions (Subtitles → English → Upload file → Desktop/Ladera_Phase2_BASE/Ladera_Phase2_FINAL_captions.srt), create the playlist 'California's Forgotten Past' with both videos, and add the access sentence from section 4 to both descriptions.
 
 ## 3. Website edits (docs/california/report.html)
 The Phase 1 embed is a click-to-load facade at ~line 142: <div class="videobox" id="ytfacade" data-yt="QDGB_R92jns" ...> with caption <p class="vb-cap">…</p>, loaded by the script at the bottom of the file (getElementById("ytfacade")).
@@ -58,8 +58,10 @@ e. index.html masthead: add "Phase 1: the record. Phase 2: the site." Regenerate
 f. Never publish coordinates of the concrete base or the pond. Do not add "confirmed", "contaminated" or "poisoned" as statements of fact anywhere on the site.
 g. Commit with the repo's style and the trailer "Co-Authored-By: Claude Fable 5.1 <noreply@anthropic.com>"; push main (Vercel deploys). PUSH_INSTRUCTIONS.md covers the remote.
 
-## 4. Remove password protection
-No password code exists in the repo; it is Vercel Deployment Protection. Vercel dashboard → the site's project → Settings → Deployment Protection → set Vercel Authentication and Password Protection to Disabled for Production → Save. Verify in a private window. If you have no Vercel login, give Andy that exact path.
+## 4. Password protection: KEEP IT ON (Andy's decision, 2026-09-18)
+Do not disable Vercel Deployment Protection. Instead, everywhere the site is referenced publicly, tell people how to get in:
+- On the password gate itself (if Vercel allows custom text) and on any public landing/share card: "This site is password protected. For access, message Andy on Instagram or email andystavros@icloud.com."
+- Add the same sentence to the YouTube descriptions of Phase 1 (QDGB_R92jns) and Phase 2 (XzIJ-pHr-JU) directly under the californiasforgottenpast.org link, and to the site's index.html masthead.
 
 ## 5. Verify and report
 Both embeds play on phone and desktop; no prompt on the public URL; report the Phase 2 video id and the deploy URL back to Andy so he can post Instagram (captions in Desktop/Ladera_Phase2_BASE/SOCIAL_POSTS_Phase1_Phase2.md).
