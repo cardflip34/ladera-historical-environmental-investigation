@@ -3,7 +3,7 @@
 You are the website lane for californiasforgottenpast.org (repo: ~/Ladera-Ranch, static site on Vercel, main page docs/california/report.html). Do the following in order and report each step's result.
 
 ## 1. Files (all on Andy's Desktop)
-- Ladera_Phase2_FINAL_16x9_YouTube.mp4  (1920x1080, 11:48; YouTube upload)
+- Ladera_Phase2_FINAL_16x9_YouTube.mp4  (1920x1080, 12:42; YouTube upload)
 - Ladera_Phase2_FINAL.mp4  (1080x1920 vertical master; Instagram; do not upload to YouTube)
 - Ladera_Phase2_COVER_9x16.jpg  (chosen cover: ARSENIC. / Is California's soil poisoned? / I found it.)  → make the YouTube thumbnail: 1280x720 crop of its upper 60 %, centred, or request a 16:9 export from the video lane
 - Ladera_Phase1_FINAL_16x9_YouTube.mp4 and Ladera_Phase1_COVER_16x9.jpg  (Phase 1 re-cut with the matching cover; replace the Phase 1 YouTube video's thumbnail with this cover, and if Andy wants, upload the re-cut as a new video)
@@ -21,15 +21,16 @@ Chapters (paste at the top of the description):
 2:31 Florida kept records
 3:07 What a dipping station looked like (AI-assisted reconstruction)
 4:17 The arithmetic: 8 lb per 500 gallons
-5:22 Grading 1997 to 2007
-5:46 Three ways soil moves
-6:22 The tire swing
-6:39 The pond by the golf course
-7:48 The pond, the slope and the creek
-8:06 The public trail
-8:24 Water, and where to test
-9:09 The hardest part to say carefully
-9:58 Closing
+5:12 Scale: 32 to 96 million lethal doses
+6:11 Grading 1997 to 2007
+6:35 Three ways soil moves
+7:11 The tire swing
+7:28 The pond by the golf course
+8:37 The pond, the slope and the creek
+9:00 The public trail
+9:18 Water, and where to test
+10:03 The hardest part to say carefully
+10:52 Closing
 Description:
 PHASE 2 of an independent investigation into California's state-mandated arsenic cattle-dipping program (1907 to 1912) and Ladera Ranch, the South Orange County community built on the former O'Neill Ranch. Phase 1 is on this channel.
 
