@@ -5,9 +5,9 @@ Owner: website lane. Prepared 2026-09-17 by the video lane. Everything you need 
 ## 1. Files (Andy's Desktop)
 | File | Use |
 |---|---|
-| `Ladera_Phase2_FINAL_16x9_YouTube.mp4` | YouTube upload. 1920x1080, 24 fps, 11:41. The vertical film centered over a blurred, darkened fill, the same treatment as the Phase 1 YouTube upload (see how the Phase 1 embed looks on the site). |
+| `Ladera_Phase2_FINAL_16x9_YouTube.mp4` | YouTube upload. 1920x1080, 24 fps, 11:53 (rendered 2026-09-17 22:40; use this file, not an earlier copy). The vertical film centered over a blurred, darkened fill, the same treatment as the Phase 1 YouTube upload (see how the Phase 1 embed looks on the site). |
 | `Ladera_Phase2_FINAL.mp4` | Vertical 1080x1920 master (Instagram/TikTok). Do not upload this one to YouTube. |
-| `Ladera_Phase2_COVER_16x9.jpg` | YouTube thumbnail. |
+| `Ladera_Phase2_COVER_9x16.jpg` | The chosen cover (Andy's photo, ARSENIC. / Is California's soil poisoned? / I found it.). Make the YouTube thumbnail from it: 1280x720, crop the top 60 percent and centre it, or ask the video lane for a 16x9 export. |
 | `Ladera_Phase2_COVER_9x16.jpg` | Share card / vertical cover. |
 | `Ladera_Phase2_BASE/README_FINAL_TIMELINE.txt` | Chapter times for the YouTube description. |
 | `Ladera_Phase2_BASE/phase2_full_script.txt` | Narration script (for captions if YouTube auto-captions fail). |
@@ -34,17 +34,18 @@ Chapters (paste into the description exactly; YouTube needs 0:00 first):
 5:22 Grading 1997 to 2007
 5:46 Three ways soil moves
 6:22 The tire swing
-6:39 The pond by the golf course, 1929 to 2025
-7:56 The public trail
-8:14 Water, and where to test
-8:59 The hardest part to say carefully
-9:48 Closing
+6:39 The pond by the golf course
+7:48 The pond, the slope and the creek
+8:07 The public trail
+8:25 Water, and where to test
+9:10 The hardest part to say carefully
+9:59 Closing
 ```
 Description:
 ```
 PHASE 2 of an independent investigation into California's state-mandated arsenic cattle-dipping program (1907 to 1912) and Ladera Ranch, the South Orange County community built on the former O'Neill Ranch. Phase 1 is on this channel.
 
-In August 2026 I hiked into the ungraded open space beside Ladera Ranch and the Arroyo Trabuco golf course and found a twelve-foot concrete rectangle with iron pipe rails still leading up to it. Twelve feet is the floor length of a federal-specification dipping vat (USDA Bureau of Animal Industry Circular 183, 1911). It is unfenced, unmarked, and beside a public trail. Below it is a pond that appears in every aerial back to 1929.
+In August 2026 I hiked into the ungraded open space beside Ladera Ranch and the Arroyo Trabuco golf course and found a twelve-foot concrete rectangle with iron pipe rails still leading up to it. Twelve feet is the floor length of a federal-specification dipping vat (USDA Bureau of Animal Industry Circular 183, 1911). It is unfenced, unmarked, and beside a public trail. Below it, at the foot of the slope, is a pond built with the golf course around 2004; the 1968 federal survey mapped standing water on the creek floor just downhill of it.
 
 This video shows the site, a reconstruction of a 1911-specification dipping station (AI-assisted imagery, labeled as such; not historical footage), the arithmetic from the federal formula (8 lb arsenic trioxide per 500 gallons, every animal every 14 days), Florida's record of the same program (11 of 12 tested vat sites failed the soil arsenic standard), the grading history of the community, and where soil should be sampled.
 
@@ -79,3 +80,7 @@ YouTube upload (unlisted first, check it plays, then Public) → site edit with 
 
 ## 6. Content notes the lane must not change
 The film's on-screen language was audited claim by claim (`evidence/lhdrs/phase2_base/NARRATION_AUDIT.md` in the Documents repo). Do not add "confirmed", "contaminated", "poisoned" or any causal wording on the site around the video. The pond and vat coordinates stay off the site.
+
+
+## Revision note (2026-09-17, late)
+The film was corrected after the first handoff: the pond is a golf-course-era feature (first visible January 2004), not a century-old pond; a short DEM-based drainage graphic now explains slope, pond and creek in order. The runtime is 11:53. If you already drafted anything from the earlier description that mentions the pond "since 1929", replace it with the sentence above. The narration audit in the Documents repo (evidence/lhdrs/phase2_base/NARRATION_AUDIT.md) records the correction.
