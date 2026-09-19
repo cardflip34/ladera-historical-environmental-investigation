@@ -49,7 +49,6 @@ def plate(fn, title, cells, cols, cellw=520, cellh=360, capline=3):
 E="evidence/images/"; H="research/historical_imagery/"; C="research/coto_de_caza/"; I="research/irvine/imagery/"
 
 plate("plate_1_dipping_program.jpg","Plate 1 — The dipping program and the vat",[
- (E+"illustrative/USDA_ARS_cattle_fever_tick_dipping_vat_PD.jpg","Cattle swimming a fever-tick dipping vat. USDA Agricultural Research Service (public domain); present-day border quarantine — same national program & vat design, illustrative."),
  (E+"usda_bai_circ174_1911_cover.jpg","Cover — 'Eradicating Cattle Ticks in California', USDA BAI Circular 174 (1911) [A1]."),
  (E+"usda_bai_circ174_1911_p295_fig7_swim_vat_plans.png","Government swim-vat construction plan, Circular 174 fig. 7 [A1]."),
  (E+"usda_bai_circ207_1912_fig1_concrete_dipping_vat_plan.png","Concrete dipping-vat plan, Circular 207 fig. 1 (1912) [A1]."),
