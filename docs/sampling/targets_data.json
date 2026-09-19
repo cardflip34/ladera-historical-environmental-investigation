@@ -1,0 +1,1704 @@
+[
+ {
+  "n": 1,
+  "lat": 33.53792,
+  "lon": -117.66258,
+  "p": 1,
+  "m_drain": 1,
+  "area": 515,
+  "road": [
+   [
+    119,
+    "service"
+   ],
+   [
+    207,
+    "Trabuco Creek Road"
+   ]
+  ],
+  "path": [
+   [
+    63,
+    "path"
+   ],
+   [
+    63,
+    "path"
+   ]
+  ],
+  "park": [
+   [
+    486,
+    "park"
+   ],
+   [
+    523,
+    "park"
+   ]
+  ],
+  "school": [
+   [
+    422,
+    "Capistrano Valley High School"
+   ]
+  ],
+  "water": [
+   [
+    22,
+    "Trabuco Creek"
+   ]
+  ],
+  "why": [
+   "stock-water point on the drainage (1 m) - congregation and deposition in one spot"
+  ],
+  "near": "Coronado Park",
+  "nearM": 828,
+  "orchKm": 0.5,
+  "elev_ft": 0.0,
+  "local_relief_ft": 0.0,
+  "downhill_ft": null,
+  "relief_ft": 0.0,
+  "dem_cover": true,
+  "rec": {
+   "lon": -117.6637,
+   "lat": 33.53803,
+   "offset_m": 105,
+   "road_m": 24,
+   "green": 0.097,
+   "in_parcel": true,
+   "in_park": false
+  },
+  "class": "golf",
+  "today": "Arroyo Trabuco GC fairway/rough; 1990 open oak-grass with ranch road",
+  "grading": "Golf-course grading (shallow shaping + irrigation); native grade largely intact under rough"
+ },
+ {
+  "n": 2,
+  "lat": 33.54763,
+  "lon": -117.65929,
+  "p": 1,
+  "m_drain": 15,
+  "area": 1307,
+  "road": [
+   [
+    266,
+    "service"
+   ],
+   [
+    276,
+    "Lower Campus Drive"
+   ]
+  ],
+  "path": [
+   [
+    118,
+    "Arroyo Trabuco Trail"
+   ],
+   [
+    142,
+    "track"
+   ]
+  ],
+  "park": [
+   [
+    374,
+    "pitch"
+   ],
+   [
+    388,
+    "pitch"
+   ]
+  ],
+  "school": [
+   [
+    905,
+    "Capistrano Valley High School"
+   ]
+  ],
+  "water": [
+   [
+    74,
+    "Trabuco Creek"
+   ]
+  ],
+  "why": [
+   "stock-water point on the drainage (15 m) - congregation and deposition in one spot"
+  ],
+  "near": "Coronado Park",
+  "nearM": 543,
+  "orchKm": 1.4,
+  "elev_ft": 248.1,
+  "local_relief_ft": 3.6,
+  "downhill_ft": 5.0,
+  "relief_ft": 2.5,
+  "dem_cover": true,
+  "rec": {
+   "lon": -117.65933,
+   "lat": 33.54765,
+   "offset_m": 4,
+   "road_m": 262,
+   "green": 0.102,
+   "in_parcel": true,
+   "in_park": false
+  },
+  "class": "preserved",
+  "today": "Arroyo Trabuco creek corridor, never graded",
+  "grading": "None. Riparian corridor retained as open space"
+ },
+ {
+  "n": 3,
+  "lat": 33.55546,
+  "lon": -117.63687,
+  "p": 1,
+  "m_drain": 18,
+  "area": 734,
+  "road": [
+   [
+    13,
+    "Sienna Parkway"
+   ],
+   [
+    13,
+    "Sienna Parkway"
+   ]
+  ],
+  "path": [
+   [
+    9,
+    "footway"
+   ],
+   [
+    10,
+    "footway"
+   ]
+  ],
+  "park": [
+   [
+    217,
+    "Founder's Park"
+   ],
+   [
+    254,
+    "Frog Park"
+   ]
+  ],
+  "school": [
+   [
+    109,
+    "Ladera Ranch Middle School"
+   ]
+  ],
+  "water": [
+   [
+    20,
+    "Sienna Botanica"
+   ]
+  ],
+  "why": [
+   "stock-water point on the drainage (18 m) - congregation and deposition in one spot",
+   "now 217 m from Ladera Ranch ES - present-day access relevance",
+   "orchard confounder 3.4 km away - arsenic here could not be casually attributed to orchards"
+  ],
+  "near": "Ladera Ranch ES",
+  "nearM": 217,
+  "orchKm": 3.4,
+  "elev_ft": 475.3,
+  "local_relief_ft": 33.9,
+  "downhill_ft": 2.7,
+  "relief_ft": 37.3,
+  "dem_cover": true,
+  "rec": {
+   "lon": -117.63691,
+   "lat": 33.55546,
+   "offset_m": 4,
+   "road_m": 5,
+   "green": 0.066,
+   "in_parcel": false,
+   "in_park": false
+  },
+  "class": "graded_ladera",
+  "today": "Under Ladera housing at Sienna Pkwy; 1990 ranch drainage head",
+  "grading": "Full mass grading 1999-2003; swale filled, pad cut"
+ },
+ {
+  "n": 4,
+  "lat": 33.54123,
+  "lon": -117.66061,
+  "p": 1,
+  "m_drain": 27,
+  "area": 12395,
+  "road": [
+   [
+    193,
+    "Arroyo Trabuco Golf Club"
+   ],
+   [
+    206,
+    "service"
+   ]
+  ],
+  "path": [
+   [
+    15,
+    "path"
+   ],
+   [
+    78,
+    "path"
+   ]
+  ],
+  "park": [
+   [
+    468,
+    "Coronado Park"
+   ],
+   [
+    564,
+    "playground"
+   ]
+  ],
+  "school": [
+   [
+    544,
+    "Capistrano Valley High School"
+   ]
+  ],
+  "water": [
+   [
+    47,
+    "Trabuco Creek"
+   ]
+  ],
+  "why": [
+   "stock-water point on the drainage (27 m) - congregation and deposition in one spot",
+   "large impoundment (12,395 m2) - a settling basin for fine sediment"
+  ],
+  "near": "Coronado Park",
+  "nearM": 566,
+  "orchKm": 0.9,
+  "elev_ft": 0.0,
+  "local_relief_ft": 261.7,
+  "downhill_ft": null,
+  "relief_ft": 267.1,
+  "dem_cover": true,
+  "rec": {
+   "lon": -117.66046,
+   "lat": 33.54096,
+   "offset_m": 33,
+   "road_m": 210,
+   "green": 0.143,
+   "in_parcel": true,
+   "in_park": false
+  },
+  "class": "golf",
+  "today": "Golf course fairway on the old canyon floor",
+  "grading": "Fairway shaping over the impoundment; fill likely 1-3 m"
+ },
+ {
+  "n": 5,
+  "lat": 33.52477,
+  "lon": -117.64745,
+  "p": 1,
+  "m_drain": 27,
+  "area": 405,
+  "road": [
+   [
+    22,
+    "Horno Creek Road"
+   ],
+   [
+    32,
+    "Horseshoe Bend"
+   ]
+  ],
+  "path": [
+   [
+    32,
+    "footway"
+   ],
+   [
+    88,
+    "path"
+   ]
+  ],
+  "park": [
+   [
+    119,
+    "pitch"
+   ],
+   [
+    153,
+    "Stoneridge Park"
+   ]
+  ],
+  "school": [
+   [
+    2195,
+    "Oso Grande Elementary School"
+   ]
+  ],
+  "water": [
+   [
+    38,
+    "Horno Creek"
+   ]
+  ],
+  "why": [
+   "stock-water point on the drainage (27 m) - congregation and deposition in one spot",
+   "now 205 m from Stoneridge Park - present-day access relevance"
+  ],
+  "near": "Stoneridge Park",
+  "nearM": 205,
+  "orchKm": 0.1,
+  "elev_ft": 0.0,
+  "local_relief_ft": 0.0,
+  "downhill_ft": null,
+  "relief_ft": 0.0,
+  "dem_cover": true,
+  "rec": {
+   "lon": -117.64745,
+   "lat": 33.52499,
+   "offset_m": 24,
+   "road_m": 13,
+   "green": 0.149,
+   "in_parcel": false,
+   "in_park": false
+  },
+  "class": "pre1990",
+  "today": "Houses present in 1990 (Mission Viejo, Horno Creek Rd)",
+  "grading": "Graded pre-1980s; not part of Ladera build-out"
+ },
+ {
+  "n": 6,
+  "lat": 33.55857,
+  "lon": -117.65281,
+  "p": 1,
+  "m_drain": 42,
+  "area": 9111,
+  "road": [
+   [
+    324,
+    "service"
+   ],
+   [
+    328,
+    "service"
+   ]
+  ],
+  "path": [
+   [
+    109,
+    "Ladera Ranch Trails"
+   ],
+   [
+    112,
+    "path"
+   ]
+  ],
+  "park": [
+   [
+    593,
+    "Cordova Park"
+   ],
+   [
+    765,
+    "Wagsdale Field"
+   ]
+  ],
+  "school": [
+   [
+    1132,
+    "Carl Hankey Elementary School"
+   ]
+  ],
+  "water": [
+   [
+    150,
+    "Trabuco Creek"
+   ]
+  ],
+  "why": [
+   "stock-water point on the drainage (42 m) - congregation and deposition in one spot",
+   "large impoundment (9,111 m2) - a settling basin for fine sediment",
+   "orchard confounder 2.0 km away - arsenic here could not be casually attributed to orchards"
+  ],
+  "near": "Wagsdale Field",
+  "nearM": 842,
+  "orchKm": 2.0,
+  "elev_ft": 291.1,
+  "local_relief_ft": 7.5,
+  "downhill_ft": 2.8,
+  "relief_ft": 9.1,
+  "dem_cover": true,
+  "rec": {
+   "lon": -117.65272,
+   "lat": 33.55848,
+   "offset_m": 13,
+   "road_m": 335,
+   "green": 0.143,
+   "in_parcel": true,
+   "in_park": false
+  },
+  "class": "preserved",
+  "today": "Oak/riparian corridor below the 2026 concrete find",
+  "grading": "None. Ungraded corridor"
+ },
+ {
+  "n": 7,
+  "lat": 33.5575,
+  "lon": -117.63615,
+  "p": 1,
+  "m_drain": 42,
+  "area": 508,
+  "road": [
+   [
+    34,
+    "Sienna Parkway"
+   ],
+   [
+    45,
+    "Sienna Parkway"
+   ]
+  ],
+  "path": [
+   [
+    16,
+    "footway"
+   ],
+   [
+    25,
+    "footway"
+   ]
+  ],
+  "park": [
+   [
+    20,
+    "Frog Park"
+   ],
+   [
+    209,
+    "park"
+   ]
+  ],
+  "school": [
+   [
+    333,
+    "Ladera Ranch Middle School"
+   ]
+  ],
+  "water": [
+   [
+    23,
+    "Sienna Botanica"
+   ]
+  ],
+  "why": [
+   "stock-water point on the drainage (42 m) - congregation and deposition in one spot",
+   "now 47 m from Frog Park - present-day access relevance",
+   "orchard confounder 3.5 km away - arsenic here could not be casually attributed to orchards"
+  ],
+  "near": "Frog Park",
+  "nearM": 47,
+  "orchKm": 3.5,
+  "elev_ft": 508.8,
+  "local_relief_ft": 32.5,
+  "downhill_ft": 25.9,
+  "relief_ft": 55.7,
+  "dem_cover": true,
+  "rec": {
+   "lon": -117.63684,
+   "lat": 33.5573,
+   "offset_m": 68,
+   "road_m": 7,
+   "green": 0.15,
+   "in_parcel": false,
+   "in_park": false
+  },
+  "class": "graded_ladera",
+  "today": "Under Ladera housing; Frog Park 20 m",
+  "grading": "Full mass grading; drainage head filled"
+ },
+ {
+  "n": 8,
+  "lat": 33.54793,
+  "lon": -117.65992,
+  "p": 1,
+  "m_drain": 46,
+  "area": 4661,
+  "road": [
+   [
+    207,
+    "service"
+   ],
+   [
+    212,
+    "Lower Campus Drive"
+   ]
+  ],
+  "path": [
+   [
+    61,
+    "Arroyo Trabuco Trail"
+   ],
+   [
+    84,
+    "path"
+   ]
+  ],
+  "park": [
+   [
+    308,
+    "pitch"
+   ],
+   [
+    322,
+    "pitch"
+   ]
+  ],
+  "school": [
+   [
+    876,
+    "Capistrano Valley High School"
+   ]
+  ],
+  "water": [
+   [
+    116,
+    "Trabuco Creek"
+   ]
+  ],
+  "why": [
+   "stock-water point on the drainage (46 m) - congregation and deposition in one spot",
+   "large impoundment (4,661 m2) - a settling basin for fine sediment"
+  ],
+  "near": "Coronado Park",
+  "nearM": 512,
+  "orchKm": 1.3,
+  "elev_ft": 243.9,
+  "local_relief_ft": 251.9,
+  "downhill_ft": 243.9,
+  "relief_ft": 246.2,
+  "dem_cover": true,
+  "rec": {
+   "lon": -117.66009,
+   "lat": 33.54804,
+   "offset_m": 20,
+   "road_m": 192,
+   "green": 0.126,
+   "in_parcel": true,
+   "in_park": false
+  },
+  "class": "preserved",
+  "today": "Arroyo Trabuco slope/corridor",
+  "grading": "None"
+ },
+ {
+  "n": 9,
+  "lat": 33.56288,
+  "lon": -117.63391,
+  "p": 1,
+  "m_drain": 88,
+  "area": 476,
+  "road": [
+   [
+    5,
+    "Granville Street"
+   ],
+   [
+    5,
+    "State Street"
+   ]
+  ],
+  "path": [
+   [
+    111,
+    "footway"
+   ],
+   [
+    119,
+    "footway"
+   ]
+  ],
+  "park": [
+   [
+    71,
+    "Chaparral Park"
+   ],
+   [
+    84,
+    "park"
+   ]
+  ],
+  "school": [
+   [
+    960,
+    "Ladera Ranch Middle School"
+   ]
+  ],
+  "water": [
+   [
+    113,
+    "Sienna Botanica"
+   ]
+  ],
+  "why": [
+   "stock-water point on the drainage (88 m) - congregation and deposition in one spot",
+   "now 142 m from Chaparral ES - present-day access relevance",
+   "orchard confounder 3.8 km away - arsenic here could not be casually attributed to orchards"
+  ],
+  "near": "Chaparral ES",
+  "nearM": 142,
+  "orchKm": 3.8,
+  "elev_ft": 570.6,
+  "local_relief_ft": 23.5,
+  "downhill_ft": 16.8,
+  "relief_ft": 24.3,
+  "dem_cover": true,
+  "rec": {
+   "lon": -117.633,
+   "lat": 33.56254,
+   "offset_m": 92,
+   "road_m": 7,
+   "green": 0.086,
+   "in_parcel": false,
+   "in_park": true
+  },
+  "class": "graded_ladera",
+  "today": "Under condos off Granville St; Chaparral Park 71 m",
+  "grading": "Full mass grading; canyon head filled"
+ },
+ {
+  "n": 10,
+  "lat": 33.54593,
+  "lon": -117.66021,
+  "p": 1,
+  "m_drain": 97,
+  "area": 547,
+  "road": [
+   [
+    211,
+    "Las Tunas Drive"
+   ],
+   [
+    242,
+    "Security Road"
+   ]
+  ],
+  "path": [
+   [
+    3,
+    "path"
+   ],
+   [
+    27,
+    "track"
+   ]
+  ],
+  "park": [
+   [
+    318,
+    "Coronado Park"
+   ],
+   [
+    357,
+    "playground"
+   ]
+  ],
+  "school": [
+   [
+    739,
+    "Capistrano Valley High School"
+   ]
+  ],
+  "water": [
+   [
+    138,
+    "Trabuco Creek"
+   ]
+  ],
+  "why": [
+   "stock-water point on the drainage (97 m) - congregation and deposition in one spot",
+   "now 396 m from Coronado Park - present-day access relevance"
+  ],
+  "near": "Coronado Park",
+  "nearM": 396,
+  "orchKm": 1.2,
+  "elev_ft": 254.2,
+  "local_relief_ft": 250.1,
+  "downhill_ft": 254.2,
+  "relief_ft": 250.2,
+  "dem_cover": true,
+  "rec": {
+   "lon": -117.66021,
+   "lat": 33.54586,
+   "offset_m": 8,
+   "road_m": 214,
+   "green": 0.082,
+   "in_parcel": true,
+   "in_park": false
+  },
+  "class": "golf_edge",
+  "today": "Golf margin + preserved brush at canyon confluence",
+  "grading": "Partial; margins retained"
+ },
+ {
+  "n": 11,
+  "lat": 33.55057,
+  "lon": -117.66081,
+  "p": 2,
+  "m_drain": 165,
+  "area": 882,
+  "road": [
+   [
+    151,
+    "service"
+   ],
+   [
+    157,
+    "service"
+   ]
+  ],
+  "path": [
+   [
+    21,
+    "Arroyo Trabuco Trail"
+   ],
+   [
+    31,
+    "path"
+   ]
+  ],
+  "park": [
+   [
+    149,
+    "pitch"
+   ],
+   [
+    156,
+    "pitch"
+   ]
+  ],
+  "school": [
+   [
+    1012,
+    "Capistrano Valley High School"
+   ]
+  ],
+  "water": [
+   [
+    154,
+    "Trabuco Creek"
+   ]
+  ],
+  "why": [
+   "mapped 1968 stock-water point - daily cattle congregation, dung and hoof traffic"
+  ],
+  "near": "Quad",
+  "nearM": 554,
+  "orchKm": 1.2,
+  "elev_ft": 0.0,
+  "local_relief_ft": 250.6,
+  "downhill_ft": null,
+  "relief_ft": 250.8,
+  "dem_cover": true,
+  "rec": {
+   "lon": -117.66027,
+   "lat": 33.55061,
+   "offset_m": 50,
+   "road_m": 197,
+   "green": 0.106,
+   "in_parcel": false,
+   "in_park": false
+  },
+  "class": "preserved",
+  "today": "Slope above Arroyo Trabuco Trail",
+  "grading": "None"
+ },
+ {
+  "n": 12,
+  "lat": 33.55143,
+  "lon": -117.66048,
+  "p": 2,
+  "m_drain": 167,
+  "area": 373,
+  "road": [
+   [
+    148,
+    "service"
+   ],
+   [
+    150,
+    "service"
+   ]
+  ],
+  "path": [
+   [
+    5,
+    "Arroyo Trabuco Trail"
+   ],
+   [
+    22,
+    "path"
+   ]
+  ],
+  "park": [
+   [
+    209,
+    "pitch"
+   ],
+   [
+    220,
+    "pitch"
+   ]
+  ],
+  "school": [
+   [
+    1104,
+    "Capistrano Valley High School"
+   ]
+  ],
+  "water": [
+   [
+    125,
+    "Trabuco Creek"
+   ]
+  ],
+  "why": [
+   "mapped 1968 stock-water point - daily cattle congregation, dung and hoof traffic"
+  ],
+  "near": "Quad",
+  "nearM": 513,
+  "orchKm": 1.3,
+  "elev_ft": 0.0,
+  "local_relief_ft": 255.0,
+  "downhill_ft": null,
+  "relief_ft": 254.3,
+  "dem_cover": true,
+  "rec": {
+   "lon": -117.66048,
+   "lat": 33.55159,
+   "offset_m": 18,
+   "road_m": 140,
+   "green": 0.092,
+   "in_parcel": false,
+   "in_park": false
+  },
+  "class": "preserved",
+  "today": "Slope above Arroyo Trabuco Trail",
+  "grading": "None"
+ },
+ {
+  "n": 13,
+  "lat": 33.54394,
+  "lon": -117.66132,
+  "p": 2,
+  "m_drain": 183,
+  "area": 24745,
+  "road": [
+   [
+    215,
+    "service"
+   ],
+   [
+    228,
+    "Escalona Drive"
+   ]
+  ],
+  "path": [
+   [
+    55,
+    "path"
+   ],
+   [
+    84,
+    "Arroyo Trabuco Trail"
+   ]
+  ],
+  "park": [
+   [
+    236,
+    "Coronado Park"
+   ],
+   [
+    301,
+    "playground"
+   ]
+  ],
+  "school": [
+   [
+    549,
+    "Capistrano Valley High School"
+   ]
+  ],
+  "water": [
+   [
+    206,
+    "Trabuco Creek"
+   ]
+  ],
+  "why": [
+   "mapped 1968 stock-water point - daily cattle congregation, dung and hoof traffic",
+   "large impoundment (24,745 m2) - a settling basin for fine sediment",
+   "now 319 m from Coronado Park - present-day access relevance"
+  ],
+  "near": "Coronado Park",
+  "nearM": 319,
+  "orchKm": 1.0,
+  "elev_ft": 0.0,
+  "local_relief_ft": 0.0,
+  "downhill_ft": null,
+  "relief_ft": 0.0,
+  "dem_cover": true,
+  "rec": {
+   "lon": -117.6613,
+   "lat": 33.54392,
+   "offset_m": 3,
+   "road_m": 215,
+   "green": 0.071,
+   "in_parcel": true,
+   "in_park": false
+  },
+  "class": "golf",
+  "today": "Large 1990 impoundment now golf course + creek",
+  "grading": "Fairway/pond shaping"
+ },
+ {
+  "n": 14,
+  "lat": 33.54078,
+  "lon": -117.64571,
+  "p": 2,
+  "m_drain": 473,
+  "area": 399,
+  "road": [
+   [
+    24,
+    "Davis Place"
+   ],
+   [
+    24,
+    "Reese Creek"
+   ]
+  ],
+  "path": [
+   [
+    46,
+    "footway"
+   ],
+   [
+    250,
+    "footway"
+   ]
+  ],
+  "park": [
+   [
+    494,
+    "park"
+   ],
+   [
+    543,
+    "Oso Grande Park"
+   ]
+  ],
+  "school": [
+   [
+    597,
+    "Oso Grande Elementary School"
+   ]
+  ],
+  "water": [
+   [
+    468,
+    "Sienna Botanica"
+   ]
+  ],
+  "why": [
+   "mapped 1968 stock-water point - daily cattle congregation, dung and hoof traffic",
+   "orchard confounder 1.9 km away - arsenic here could not be casually attributed to orchards"
+  ],
+  "near": "Terramor Skate Park",
+  "nearM": 613,
+  "orchKm": 1.9,
+  "elev_ft": 357.9,
+  "local_relief_ft": 17.9,
+  "downhill_ft": 16.2,
+  "relief_ft": 22.9,
+  "dem_cover": true,
+  "rec": {
+   "lon": -117.64666,
+   "lat": 33.54078,
+   "offset_m": 88,
+   "road_m": 8,
+   "green": 0.093,
+   "in_parcel": false,
+   "in_park": false
+  },
+  "class": "graded_ladera",
+  "today": "Under Ladera housing, Davis Pl",
+  "grading": "Full mass grading; ridge cut"
+ },
+ {
+  "n": 15,
+  "lat": 33.54788,
+  "lon": -117.64507,
+  "p": 2,
+  "m_drain": 509,
+  "area": 367,
+  "road": [
+   [
+    9,
+    "O'Neill Drive"
+   ],
+   [
+    9,
+    "O'Neill Drive"
+   ]
+  ],
+  "path": [
+   [
+    269,
+    "footway"
+   ],
+   [
+    279,
+    "Ladera Ranch Trails - Narrow Canyon Access"
+   ]
+  ],
+  "park": [
+   [
+    77,
+    "park"
+   ],
+   [
+    196,
+    "park"
+   ]
+  ],
+  "school": [
+   [
+    553,
+    "Oso Grande Elementary School"
+   ]
+  ],
+  "water": [
+   [
+    467,
+    "Sienna Botanica"
+   ]
+  ],
+  "why": [
+   "mapped 1968 stock-water point - daily cattle congregation, dung and hoof traffic",
+   "orchard confounder 2.5 km away - arsenic here could not be casually attributed to orchards"
+  ],
+  "near": "Terramor Skate Park",
+  "nearM": 509,
+  "orchKm": 2.5,
+  "elev_ft": 412.1,
+  "local_relief_ft": 14.8,
+  "downhill_ft": 1.6,
+  "relief_ft": 20.3,
+  "dem_cover": true,
+  "rec": {
+   "lon": -117.6441,
+   "lat": 33.54808,
+   "offset_m": 93,
+   "road_m": 8,
+   "green": 0.152,
+   "in_parcel": false,
+   "in_park": true
+  },
+  "class": "graded_ladera",
+  "today": "Under Ladera housing, O'Neill Dr; park 77 m",
+  "grading": "Full mass grading; swale filled"
+ },
+ {
+  "n": 16,
+  "lat": 33.54833,
+  "lon": -117.64498,
+  "p": 2,
+  "m_drain": 526,
+  "area": 495,
+  "road": [
+   [
+    14,
+    "Bayley Street"
+   ],
+   [
+    14,
+    "Collins Street"
+   ]
+  ],
+  "path": [
+   [
+    267,
+    "track"
+   ],
+   [
+    285,
+    "Ladera Ranch Trails - Narrow Canyon Access"
+   ]
+  ],
+  "park": [
+   [
+    53,
+    "park"
+   ],
+   [
+    233,
+    "park"
+   ]
+  ],
+  "school": [
+   [
+    578,
+    "Oso Grande Elementary School"
+   ]
+  ],
+  "water": [
+   [
+    486,
+    "Sienna Botanica"
+   ]
+  ],
+  "why": [
+   "mapped 1968 stock-water point - daily cattle congregation, dung and hoof traffic",
+   "orchard confounder 2.5 km away - arsenic here could not be casually attributed to orchards"
+  ],
+  "near": "Terramor Skate Park",
+  "nearM": 539,
+  "orchKm": 2.5,
+  "elev_ft": 425.1,
+  "local_relief_ft": 15.2,
+  "downhill_ft": 13.6,
+  "relief_ft": 17.2,
+  "dem_cover": true,
+  "rec": {
+   "lon": -117.64405,
+   "lat": 33.54808,
+   "offset_m": 90,
+   "road_m": 6,
+   "green": 0.156,
+   "in_parcel": false,
+   "in_park": true
+  },
+  "class": "graded_ladera",
+  "today": "Under Ladera housing, Bayley St roundabout; park 53 m",
+  "grading": "Full mass grading"
+ },
+ {
+  "n": 17,
+  "lat": 33.55267,
+  "lon": -117.64407,
+  "p": 2,
+  "m_drain": 528,
+  "area": 412,
+  "road": [
+   [
+    13,
+    "Creighton Place"
+   ],
+   [
+    23,
+    "Commons North"
+   ]
+  ],
+  "path": [
+   [
+    62,
+    "footway"
+   ],
+   [
+    102,
+    "footway"
+   ]
+  ],
+  "park": [
+   [
+    447,
+    "park"
+   ],
+   [
+    526,
+    "Wagsdale Field"
+   ]
+  ],
+  "school": [
+   [
+    572,
+    "Ladera Ranch Elementary School"
+   ]
+  ],
+  "water": [
+   [
+    500,
+    "Sienna Botanica"
+   ]
+  ],
+  "why": [
+   "mapped 1968 stock-water point - daily cattle congregation, dung and hoof traffic",
+   "orchard confounder 2.8 km away - arsenic here could not be casually attributed to orchards"
+  ],
+  "near": "Wagsdale Field",
+  "nearM": 569,
+  "orchKm": 2.8,
+  "elev_ft": 441.2,
+  "local_relief_ft": 5.6,
+  "downhill_ft": 1.8,
+  "relief_ft": 3.8,
+  "dem_cover": true,
+  "rec": {
+   "lon": -117.64401,
+   "lat": 33.55281,
+   "offset_m": 17,
+   "road_m": 7,
+   "green": 0.128,
+   "in_parcel": false,
+   "in_park": false
+  },
+  "class": "graded_ladera",
+  "today": "Under Ladera housing, Creighton Pl",
+  "grading": "Full mass grading; slope cut"
+ },
+ {
+  "n": 18,
+  "lat": 33.56819,
+  "lon": -117.65569,
+  "p": 2,
+  "m_drain": 632,
+  "area": 354,
+  "road": [
+   [
+    25,
+    "Tossamar"
+   ],
+   [
+    71,
+    "Jardines"
+   ]
+  ],
+  "path": [
+   [
+    17,
+    "footway"
+   ],
+   [
+    25,
+    "footway"
+   ]
+  ],
+  "park": [
+   [
+    3,
+    "Cordova Park"
+   ],
+   [
+    348,
+    "pitch"
+   ]
+  ],
+  "school": [
+   [
+    63,
+    "Carl Hankey Elementary School"
+   ]
+  ],
+  "water": [
+   [
+    593,
+    "Trabuco Creek"
+   ]
+  ],
+  "why": [
+   "mapped 1968 stock-water point - daily cattle congregation, dung and hoof traffic",
+   "now 41 m from Cordova Park - present-day access relevance",
+   "orchard confounder 2.3 km away - arsenic here could not be casually attributed to orchards"
+  ],
+  "near": "Cordova Park",
+  "nearM": 41,
+  "orchKm": 2.3,
+  "elev_ft": 464.0,
+  "local_relief_ft": 38.7,
+  "downhill_ft": 8.8,
+  "relief_ft": 47.2,
+  "dem_cover": true,
+  "rec": {
+   "lon": -117.6556,
+   "lat": 33.56806,
+   "offset_m": 16,
+   "road_m": 14,
+   "green": 0.063,
+   "in_parcel": false,
+   "in_park": true
+  },
+  "class": "pre1990",
+  "today": "Developed before 1990 (Mission Viejo); Cordova Park 3 m",
+  "grading": "Not Ladera build-out"
+ },
+ {
+  "n": 19,
+  "lat": 33.53482,
+  "lon": -117.65619,
+  "p": 2,
+  "m_drain": 681,
+  "area": 418,
+  "road": [
+   [
+    323,
+    "service"
+   ],
+   [
+    336,
+    "service"
+   ]
+  ],
+  "path": [
+   [
+    210,
+    "Ladera Ranch Trails"
+   ],
+   [
+    246,
+    "Stoneridge Trail"
+   ]
+  ],
+  "park": [
+   [
+    974,
+    "playground"
+   ],
+   [
+    989,
+    "park"
+   ]
+  ],
+  "school": [
+   [
+    1106,
+    "Capistrano Valley High School"
+   ]
+  ],
+  "water": [
+   [
+    677,
+    "Trabuco Creek"
+   ]
+  ],
+  "why": [
+   "mapped 1968 stock-water point - daily cattle congregation, dung and hoof traffic"
+  ],
+  "near": "Stoneridge Park",
+  "nearM": 1181,
+  "orchKm": 1.0,
+  "elev_ft": 429.5,
+  "local_relief_ft": 45.1,
+  "downhill_ft": -8.1,
+  "relief_ft": 57.8,
+  "dem_cover": true,
+  "rec": {
+   "lon": -117.6561,
+   "lat": 33.53475,
+   "offset_m": 11,
+   "road_m": 319,
+   "green": 0.067,
+   "in_parcel": true,
+   "in_park": false
+  },
+  "class": "preserved",
+  "today": "Ungraded canyon south of Ladera",
+  "grading": "None"
+ },
+ {
+  "n": 20,
+  "lat": 33.52599,
+  "lon": -117.66196,
+  "p": 2,
+  "m_drain": 688,
+  "area": 3721,
+  "road": [
+   [
+    37,
+    "service"
+   ],
+   [
+    51,
+    "service"
+   ]
+  ],
+  "path": [
+   [
+    169,
+    "track"
+   ],
+   [
+    309,
+    "Highland Trail"
+   ]
+  ],
+  "park": [
+   [
+    253,
+    "pitch"
+   ],
+   [
+    269,
+    "pitch"
+   ]
+  ],
+  "school": [
+   [
+    1095,
+    "Saddleback Valley Christian School"
+   ]
+  ],
+  "water": [
+   [
+    679,
+    "Trabuco Creek"
+   ]
+  ],
+  "why": [
+   "mapped 1968 stock-water point - daily cattle congregation, dung and hoof traffic"
+  ],
+  "near": "Stoneridge Park",
+  "nearM": 1269,
+  "orchKm": 0.4,
+  "elev_ft": 0.0,
+  "local_relief_ft": 0.0,
+  "downhill_ft": null,
+  "relief_ft": 0.0,
+  "dem_cover": true,
+  "rec": {
+   "lon": -117.66207,
+   "lat": 33.52558,
+   "offset_m": 47,
+   "road_m": 20,
+   "green": 0.096,
+   "in_parcel": false,
+   "in_park": false
+  },
+  "class": "pre1990_edge",
+  "today": "Oak grove + pre-1990 houses",
+  "grading": "Edge development"
+ },
+ {
+  "n": 21,
+  "lat": 33.52748,
+  "lon": -117.6352,
+  "p": 2,
+  "m_drain": 1094,
+  "area": 1687,
+  "road": [
+   [
+    82,
+    "Catalina Vista Road"
+   ],
+   [
+    218,
+    "Vaquero Drive"
+   ]
+  ],
+  "path": [
+   [
+    18,
+    "track"
+   ],
+   [
+    20,
+    "Sendero Loop West"
+   ]
+  ],
+  "park": [
+   [
+    822,
+    "playground"
+   ],
+   [
+    1054,
+    "park"
+   ]
+  ],
+  "school": [
+   [
+    1821,
+    "Oso Grande Elementary School"
+   ]
+  ],
+  "water": [
+   [
+    1037,
+    null
+   ]
+  ],
+  "why": [
+   "mapped 1968 stock-water point - daily cattle congregation, dung and hoof traffic"
+  ],
+  "near": "Mission Hills Park",
+  "nearM": 1107,
+  "orchKm": 0.8,
+  "elev_ft": 613.0,
+  "local_relief_ft": 21.5,
+  "downhill_ft": 20.1,
+  "relief_ft": 41.4,
+  "dem_cover": true,
+  "rec": {
+   "lon": -117.63542,
+   "lat": 33.52818,
+   "offset_m": 81,
+   "road_m": 7,
+   "green": 0.118,
+   "in_parcel": true,
+   "in_park": false
+  },
+  "class": "rmv_new",
+  "today": "Rancho Mission Viejo new-village edge; 1990 ranch pond + oaks",
+  "grading": "Active grading 2015-2025"
+ },
+ {
+  "n": 22,
+  "lat": 33.5441,
+  "lon": -117.62619,
+  "p": 2,
+  "m_drain": 1144,
+  "area": 379,
+  "road": [
+   [
+    200,
+    "Antonio Parkway"
+   ],
+   [
+    217,
+    "Antonio Parkway"
+   ]
+  ],
+  "path": [
+   [
+    433,
+    "footway"
+   ],
+   [
+    535,
+    "track"
+   ]
+  ],
+  "park": [
+   [
+    854,
+    "park"
+   ],
+   [
+    867,
+    "Mission Hills Park"
+   ]
+  ],
+  "school": [
+   [
+    1155,
+    "Oso Grande Elementary School"
+   ]
+  ],
+  "water": [
+   [
+    1175,
+    "Sienna Botanica"
+   ]
+  ],
+  "why": [
+   "mapped 1968 stock-water point - daily cattle congregation, dung and hoof traffic",
+   "orchard confounder 2.8 km away - arsenic here could not be casually attributed to orchards"
+  ],
+  "near": "Mission Hills Park",
+  "nearM": 920,
+  "orchKm": 2.8,
+  "elev_ft": 421.8,
+  "local_relief_ft": 91.8,
+  "downhill_ft": 1.5,
+  "relief_ft": 124.1,
+  "dem_cover": true,
+  "rec": {
+   "lon": -117.62617,
+   "lat": 33.54412,
+   "offset_m": 3,
+   "road_m": 202,
+   "green": 0.085,
+   "in_parcel": true,
+   "in_park": false
+  },
+  "class": "open_rmv",
+  "today": "Open rangeland on RMV land, ungraded",
+  "grading": "None"
+ },
+ {
+  "n": 23,
+  "lat": 33.56911,
+  "lon": -117.66905,
+  "p": 2,
+  "m_drain": 1714,
+  "area": 534,
+  "road": [
+   [
+    74,
+    "Puerta Real"
+   ],
+   [
+    78,
+    "Puerta Real"
+   ]
+  ],
+  "path": [
+   [
+    49,
+    "footway"
+   ],
+   [
+    49,
+    "footway"
+   ]
+  ],
+  "park": [
+   [
+    12,
+    "Granada Park"
+   ],
+   [
+    33,
+    "playground"
+   ]
+  ],
+  "school": [
+   [
+    492,
+    "Viejo Elementary School"
+   ]
+  ],
+  "water": [
+   [
+    319,
+    "Oso Creek"
+   ]
+  ],
+  "why": [
+   "mapped 1968 stock-water point - daily cattle congregation, dung and hoof traffic",
+   "now 26 m from Granada Park - present-day access relevance",
+   "orchard confounder 1.7 km away - arsenic here could not be casually attributed to orchards"
+  ],
+  "near": "Granada Park",
+  "nearM": 26,
+  "orchKm": 1.7,
+  "elev_ft": 0.0,
+  "local_relief_ft": 0.0,
+  "downhill_ft": null,
+  "relief_ft": 0.0,
+  "dem_cover": true,
+  "rec": {
+   "lon": -117.66935,
+   "lat": 33.56871,
+   "offset_m": 52,
+   "road_m": 25,
+   "green": 0.104,
+   "in_parcel": false,
+   "in_park": true
+  },
+  "class": "pre1990",
+  "today": "Developed before 1990; Granada Park 12 m",
+  "grading": "Not Ladera build-out"
+ }
+]

@@ -1,0 +1,669 @@
+<!doctype html><html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Ladera Ranch Soil Sampling Strategy — Arsenic, Dipping-Era Targets</title>
+<style>
+:root{--ink:#171e2b;--navy:#20304d;--mut:#5d6675;--line:#e2e6ec;--bg:#faf9f7;--card:#fff;--blue:#2d5d8f;--ok:#1e7a45;--warn:#9a6a10;--hard:#a23b2c;--off:#6b7280;--amber:#c8811f}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.62 -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif}
+.wrap{max-width:1180px;margin:0 auto;padding:0 28px 96px}
+header.mast{background:var(--navy);color:#fff;padding:54px 0 42px;margin-bottom:38px}
+header.mast .wrap{padding-bottom:0}
+.kicker{font-size:13px;letter-spacing:.16em;text-transform:uppercase;color:#9fc0e4;font-weight:700}
+h1{font-size:40px;line-height:1.12;margin:12px 0 10px;font-weight:700;letter-spacing:-.01em}
+.sub{color:#c9d6e6;font-size:18px;max-width:78ch}
+.meta{margin-top:20px;font-size:13px;color:#9fb2ca}
+h2{font-size:26px;margin:46px 0 6px;letter-spacing:-.01em;border-top:3px solid var(--navy);padding-top:22px}
+h3{font-size:19px;margin:30px 0 6px;color:var(--navy)}
+h4{font-size:16px;margin:22px 0 4px}
+p,li{max-width:82ch}
+.lead{font-size:18px;color:#2b3547}
+table{border-collapse:collapse;width:100%;margin:18px 0;font-size:14px;background:var(--card)}
+th{background:#eef1f5;text-align:left;padding:10px 11px;border-bottom:2px solid var(--line);font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:#43506a;vertical-align:bottom}
+td{padding:11px;border-bottom:1px solid var(--line);vertical-align:top}
+td.num{font-weight:700;font-size:17px;color:var(--navy)}
+tr.tier-A{background:#f4fbf6}tr.tier-B{background:#fffdf5}tr.tier-C{background:#f7f9fc}tr.tier-D{background:#fafafa;color:#6b7280}
+.small{font-size:13px;line-height:1.5}
+.mono{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:12.5px}
+.badge{display:inline-block;padding:2px 9px;border-radius:11px;font-size:11.5px;font-weight:700;letter-spacing:.03em}
+.badge.ok{background:#e4f4ea;color:var(--ok)}.badge.warn{background:#fdf1dc;color:var(--warn)}.badge.hard{background:#fbe8e5;color:var(--hard)}.badge.off{background:#eef0f3;color:var(--off)}
+.tier{display:inline-block;width:26px;height:26px;line-height:26px;text-align:center;border-radius:50%;font-weight:800;color:#fff}
+.tierA{background:var(--ok)}.tierB{background:var(--amber)}.tierC{background:var(--blue)}.tierD{background:#9aa3b0}
+.card{background:var(--card);border:1px solid var(--line);border-left:4px solid var(--blue);padding:16px 20px;margin:18px 0;border-radius:3px}
+.card.warn{border-left-color:var(--amber);background:#fffdf6}
+.card.stop{border-left-color:var(--hard);background:#fdf3f1}
+.card.go{border-left-color:var(--ok);background:#f4fbf6}
+.card h4{margin-top:0}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:14px;margin:18px 0}
+.stat{background:var(--card);border:1px solid var(--line);padding:14px 16px;border-radius:3px}
+.stat .n{font-size:30px;font-weight:700;color:var(--navy);line-height:1.1}
+.stat .l{font-size:12.5px;color:var(--mut);margin-top:3px}
+figure.tgt{margin:26px 0;background:var(--card);border:1px solid var(--line);padding:12px;border-radius:3px}
+figure.tgt img{width:100%;height:auto;display:block;border-radius:2px}
+figcaption{font-size:13px;color:#39435a;margin-top:9px;line-height:1.55}
+.src{display:block;color:var(--mut);font-size:11.5px;margin-top:4px}
+ol,ul{padding-left:22px}
+li{margin:5px 0}
+.q{background:#fff;border:1px solid var(--line);padding:4px 0}
+.disc{font-size:12.5px;color:var(--mut);border-top:1px solid var(--line);margin-top:42px;padding-top:16px}
+a{color:var(--blue)}
+.toc{background:var(--card);border:1px solid var(--line);padding:16px 22px;border-radius:3px;columns:2;column-gap:32px}
+.toc a{text-decoration:none}.toc li{break-inside:avoid}
+code{background:#eef1f5;padding:1px 5px;border-radius:3px;font-size:13px}
+.tablewrap{overflow-x:auto}
+@media print{body{background:#fff}header.mast{background:#fff;color:#000;border-bottom:3px solid #000}h1{color:#000}.sub,.meta,.kicker{color:#333}figure.tgt{break-inside:avoid}}
+</style></head><body>
+<header class="mast"><div class="wrap">
+<div class="kicker">LEHRP · Independent research · Phase 2 follow-on</div>
+<h1>Ladera Ranch Soil Sampling Strategy</h1>
+<p class="sub">Where to test for legacy arsenic from the 1907–1912 compulsory cattle-dipping program, given that most of the historically indicated ground was mass-graded between 1999 and 2007. Twenty-three modelled targets, re-examined against present-day land use, and converted into accessible sampling stations.</p>
+<p class="meta">Prepared 19 September 2026 · Andy Stavros, Independent Researcher &amp; Land Historian · Advisory Member, Protect Ladera<br>
+Hypothesis-neutral. This document establishes no causation and asserts no contamination at any property. It is a sampling design, not a finding.</p>
+</div></header>
+<div class="wrap">
+
+<div class="card"><h4>What this document is for</h4>
+<p>A Cal State Fullerton team, working with the resident group Ladera Health Watch, began collecting soil and water samples in Ladera Ranch on or about 13–14 September 2026, at three parks, analysing for heavy metals including arsenic and lead, and for pesticides. This report does three things: it audits that effort and what is known about it; it sets out the analytical questions that determine whether an arsenic result will mean anything; and it converts the project's 23 historically-derived targets into a concrete, accessible, defensible sampling plan that accounts for twenty years of grading.</p></div>
+
+<h2 id="toc">Contents</h2>
+<ol class="toc">
+<li><a href="#exec">Executive summary</a></li>
+<li><a href="#audit">Part A · Audit: Ladera Health Watch and the CSUF sampling</a></li>
+<li><a href="#analytes">Part B · What kind of arsenic did they test for?</a></li>
+<li><a href="#grading">Part C · Why the circled points cannot be sampled as-is</a></li>
+<li><a href="#tiers">Part D · The 23 targets, re-tiered</a></li>
+<li><a href="#plan">Part E · Per-target sampling plan</a></li>
+<li><a href="#figs">Part F · Target-by-target imagery, 1990 vs 2022</a></li>
+<li><a href="#method">Part G · Field method, QA/QC and laboratory specification</a></li>
+<li><a href="#interp">Part H · How to read a result</a></li>
+<li><a href="#ask">Part I · What to ask the CSUF team, and what to offer</a></li>
+<li><a href="#limits">Limitations, provenance and sources</a></li>
+</ol>
+
+<h2 id="exec">Executive summary</h2>
+<div class="grid">
+<div class="stat"><div class="n">23</div><div class="l">modelled targets carried forward from the 1968 USGS water-point analysis</div></div>
+<div class="stat"><div class="n">7</div><div class="l">tier A: ground never graded, where a result is directly interpretable</div></div>
+<div class="stat"><div class="n">10</div><div class="l">tier B: reworked ground needing an offset strategy, not a point sample</div></div>
+<div class="stat"><div class="n">6</div><div class="l">tier C/D: outside the Ladera build-out; reference or deprioritise</div></div>
+</div>
+
+<p class="lead">Three findings drive everything below.</p>
+<ol>
+<li><b>Most of the historically indicated ground no longer exists in its original form.</b> Landsat analysis of the build-out puts the disturbed footprint at 3.7&nbsp;% of the community in 1997, rising to 52.8&nbsp;% at the 2002 peak. Seven of the ten priority-1 targets are now under housing, roads or golf fairway. Sampling the modelled coordinate itself would, in most cases, mean sampling imported fill or a roadbed.</li>
+<li><b>But the grading did not destroy the question; it moved it.</b> Cut-and-fill is a local operation. Material scraped from a pad is placed within a few hundred metres, in the swale next to it, as a manufactured slope, or as the subgrade under what is now a park or a landscape strip. That gives three classes of accessible receptor: retained open space, the common-area landscape and parks built on the filled low ground, and the depositional traps at the bottom of the drainage where fines have accumulated continuously since 1907.</li>
+<li><b>Only a specific analytical request will answer the historical question.</b> A generic "heavy metals" scan reports total arsenic. That is necessary but not sufficient. Distinguishing a dipping-vat signature from California background, from orchard lead-arsenate, and from imported fill requires arsenic with lead on the same sample, and ideally speciation and a bioavailability measure on any sample that exceeds background. Those must be requested before the samples are run, or the archive has to be re-pulled.</li>
+</ol>
+
+<div class="card go"><h4>The one-paragraph recommendation</h4>
+<p>Offer the CSUF team the historical layer and ask for four things in return: that arsenic and lead be reported together on every sample; that at least three stations be placed on ungraded ground in the Arroyo Trabuco corridor rather than only on park turf; that any sample exceeding roughly 12&nbsp;mg/kg arsenic be held for speciation and bioavailability; and that the sampling depths include a 15–30&nbsp;cm horizon, not only the surface. Then supply target 6 and target 2 as named stations, and the concrete-base area as a fifth, with the caveat that its identification is unestablished.</p></div>
+<h2 id="audit">Part A · Audit: Ladera Health Watch and the CSUF sampling</h2>
+
+<h3>What is established</h3>
+<table><thead><tr><th style="width:22%">Item</th><th>What the public record shows</th><th style="width:16%">Grade</th></tr></thead><tbody>
+<tr><td><b>Organisation</b></td><td>Ladera Health Watch describes itself as "an independent, resident-led volunteer organization." Founded 2026 by <b>Jackie French</b>, a California attorney and former journalist, who serves as founder and director. Site: laderahealthwatch.org (also resolves from ochealthwatch.org).</td><td><span class="badge ok">A2 · own site</span></td></tr>
+<tr><td><b>Scientific lead</b></td><td><b>Dr Jennifer Piazza</b>, professor in the Public Health / Health Science department at CSU Fullerton, described as an NIH-funded researcher, serves as scientific advisor to the group and is named in press coverage as scientific lead. <b>Prof. Daniel Curtis</b> of CSUF is also named on the sampling team.</td><td><span class="badge ok">A2 · B2 press</span></td></tr>
+<tr><td><b>Other advisors</b></td><td>Landscape architect Scott Neiman, engineer Brian Dazey, attorney Warren Martin. Several team members sit on LARMAC's Landscape Advisory Committee.</td><td><span class="badge ok">A2 · own site</span></td></tr>
+<tr><td><b>Sampling</b></td><td>Soil and water samples collected on or about Sunday 13 September 2026 at <b>three parks</b>, by CSUF researchers and students. Analytes reported in coverage as heavy metals "such as arsenic and lead" plus pesticides. First results "as early as the end of the week"; fuller results "by the end of the year."</td><td><span class="badge warn">B2 · news</span></td></tr>
+<tr><td><b>Their own status note</b></td><td>A post on the group's site states: "Research questions, sampling methodology, locations and necessary approvals are still being developed. Environmental sampling has not yet begun." That post predates the 13–14 September collection; the two together suggest sampling began quickly after the protocol was settled.</td><td><span class="badge warn">A2, timing inferred</span></td></tr>
+<tr><td><b>State activity</b></td><td>CDPH confirms the California Cancer Registry is conducting a focused assessment of cancer incidence in the Ladera Ranch area, using data through 2023, with completion expected <b>fall 2026</b>. CDPH states no environmental cause of Ewing sarcoma or the reported cancers in Ladera Ranch has been established.</td><td><span class="badge ok">A2 · CDPH</span></td></tr>
+<tr><td><b>HOA action</b></td><td>LARMAC extended a pause on the products Lifeline, Atrimmec and Specticle G through 14 November.</td><td><span class="badge ok">A2</span></td></tr>
+</tbody></table>
+
+<h3>What is not established</h3>
+<ul>
+<li><b>Which three parks</b> were sampled, and on what basis they were chosen. No public sampling plan, map or station list has been posted.</li>
+<li><b>The analyte list and methods.</b> "Heavy metals" is a category, not a method. Whether arsenic was run by EPA 6010 or 6020, whether lead was reported on the same samples, whether speciation or bioavailability was ordered, and what the reporting limits are, are all unknown.</li>
+<li><b>Depths and compositing.</b> Surface-only grab samples answer a pesticide-application question well and a legacy-arsenic question poorly.</li>
+<li><b>Funding, legal form and data ownership.</b> The group discloses no 501(c)(3) status, fiscal sponsor or funding source, and no statement about who owns or will publish the resulting data.</li>
+<li><b>Relationship to Protect Ladera.</b> No public statement by either group about the other was found.</li>
+<li><b>Whether the historical dipping layer was available to them.</b> Nothing in their materials references the 1907–1912 program, which is the explicit reason for the outreach.</li>
+</ul>
+
+<div class="card"><h4>Credibility read</h4>
+<p><b>Positive indicators.</b> A named founder with a public professional identity; a named university scientist with an institutional affiliation that can be verified; named technical advisors; a stated collaboration with the HOA's landscape committee rather than a covert posture; sampling actually performed rather than announced; and on-record caution from the scientists themselves, including Prof. Curtis's "it's very difficult to prove causation, and we don't even know that this is environmental."</p>
+<p><b>Open questions, not red flags.</b> The group is new (2026), has no disclosed legal form or funding, and has not published a protocol. That is ordinary for a volunteer group moving fast, and it is also exactly the gap that turns good samples into unusable data later. The LARMAC advisory-committee overlap is a strength for access and a potential constraint on independence; it should be disclosed rather than assumed.</p>
+<p><b>Inference, labelled.</b> Nothing found suggests developer, HOA-management or law-firm sponsorship. Absence of evidence here is weak evidence: the group's funding is simply not disclosed.</p></div>
+
+<div class="card go"><h4>Recommended approach to them</h4>
+<ol>
+<li><b>Lead with the offer, not the critique.</b> They have access, a university team and momentum. You have a sourced historical layer nobody else has. Those are complements.</li>
+<li><b>Give them the layer in writing</b>: the 1907–1912 mandate, the herd-scale and cadence arithmetic, the 1968 USGS water-point analysis, the 23 targets with the tiering in this report, and the August 2026 field observation, with its identification explicitly marked unestablished.</li>
+<li><b>Ask for the protocol before the next round</b>, not the results after. The four asks in the executive summary are cheap if made now and expensive if made later.</li>
+<li><b>Do not ask them to endorse the vat hypothesis.</b> Ask them to add stations that would test it, and to report arsenic and lead together. A scientist can agree to that without agreeing to anything else.</li>
+<li><b>Agree publication terms up front</b>: who releases the numbers, in what form, and that a null result gets the same prominence as a positive one.</li>
+</ol></div>
+
+<h3>Questions to put to them, in order</h3>
+<ol>
+<li>Which three parks, and what were the station coordinates and depths? Were samples composited or discrete?</li>
+<li>Which laboratory, and which EPA methods for arsenic and lead? What are the reporting limits in mg/kg?</li>
+<li>Is lead being reported on the same samples as arsenic? (This is the single most useful question in the list; see Part B.)</li>
+<li>Will any sample above background be held for arsenic speciation and for a bioavailability assay?</li>
+<li>Is there an archive of the sample material, and for how long will it be retained?</li>
+<li>Who is funding the analysis, who owns the data, and what is the publication plan, including for a null result?</li>
+<li>Would the team accept three to five additional stations chosen on historical grounds, including at least two on ungraded ground outside the park turf?</li>
+</ol>
+<h2 id="analytes">Part B · What kind of arsenic did they test for?</h2>
+<p class="lead">"Heavy metals" almost certainly means a total-metals scan. That measures how much arsenic is present. It does not, on its own, say what kind, where it came from, or whether it is available to a human body. Four different measurements are in play, and they answer four different questions.</p>
+
+<table><thead><tr><th style="width:20%">Measurement</th><th style="width:22%">Typical method</th><th>What it answers</th><th style="width:20%">Relevance here</th></tr></thead><tbody>
+<tr><td><b>Total arsenic</b></td><td>Acid digestion (EPA 3050B or 3051A) then ICP-MS (EPA 6020B) or ICP-OES (EPA 6010D)</td><td>How many mg of arsenic per kg of soil. The headline number, and the one compared to screening levels.</td><td><b>Essential.</b> Ask for ICP-MS (6020B), not ICP-OES: the lower reporting limit matters when background is 1–11&nbsp;mg/kg.</td></tr>
+<tr><td><b>Lead, on the same sample</b></td><td>Same digestion and run</td><td>The As:Pb ratio. Lead-arsenate orchard spraying leaves elevated arsenic <i>and</i> lead together, roughly 1:3 to 1:4 As:Pb. Arsenic trioxide dipping leaves arsenic with <b>no</b> accompanying lead.</td><td><b>The discriminator.</b> High arsenic with flat lead points away from orchards and toward a dip-style source. Costs nothing extra on the same run.</td></tr>
+<tr><td><b>Speciation</b></td><td>HPLC-ICP-MS; arsenite As(III), arsenate As(V), and organoarsenicals such as MMA and DMA</td><td>The chemical form. Inorganic As(III)/As(V) is the toxicologically important fraction; organic forms are far less so.</td><td><b>Order on exceedances only.</b> Arsenic trioxide weathers to inorganic arsenate in soil; a strongly organic signature would argue for a different source such as MSMA herbicide.</td></tr>
+<tr><td><b>Bioavailability</b></td><td>In-vitro bioaccessibility, EPA 1340 (gastric-phase extraction)</td><td>How much of the arsenic a child's gut would actually absorb, typically far below total.</td><td><b>Order on exceedances only.</b> This is what converts a soil number into a meaningful exposure statement, and it is the honest answer to "is this dangerous?"</td></tr>
+</tbody></table>
+
+<div class="card warn"><h4>Why this matters right now</h4>
+<p>Speciation and bioaccessibility cannot be run on a number; they must be run on retained sample material. If the CSUF samples are digested and discarded, a later decision to speciate means going back into the field. One sentence to the lab now, "hold the residual material pending possible speciation," preserves that option for a few dollars a sample.</p></div>
+
+<h3>The reference values a result will be judged against</h3>
+<table><thead><tr><th>Benchmark</th><th>Value</th><th>What it is</th></tr></thead><tbody>
+<tr><td>California background, soil arsenic</td><td class="mono">1–11 mg/kg</td><td>The commonly cited natural range for California soils; regional studies put typical values in the low single digits. Above ~11 the burden of explanation shifts.</td></tr>
+<tr><td>DTSC screening, residential (CHHSL / HHRA note)</td><td class="mono">≈0.07–0.11 mg/kg</td><td>The cancer-risk-based screening number is below natural background, which is why California practice compares to background first and screening levels second. Expect this confusion in any public discussion.</td></tr>
+<tr><td>US EPA regional screening level, residential soil</td><td class="mono">0.68 mg/kg</td><td>Same issue: below background. A screening level is a trigger for evaluation, not a cleanup standard.</td></tr>
+<tr><td>Florida dip-vat program experience</td><td class="mono">11 of 12 sites exceeded</td><td>When Florida tested vat sites, nearly all required remediation consideration; documented vat-site soils ran to hundreds of mg/kg.</td></tr>
+<tr><td>This project's modelled vat-footprint estimate</td><td class="mono">128–763 mg/kg</td><td>Model estimate only, for the vat, pens and drip-pen footprint, before any dilution by grading. Not a measurement.</td></tr>
+</tbody></table>
+<p class="small"><b>Practical reading.</b> A park-turf result of 2–6&nbsp;mg/kg is unremarkable background. A result of 15–40&nbsp;mg/kg with flat lead in an ungraded corridor is a finding that justifies a step-out grid. A result in the hundreds anywhere is a stop-work-and-call-the-state number. Grading dilution means a genuine vat footprint could be spread to well under 50&nbsp;mg/kg across a wide area, which is precisely why the ungraded stations matter more than the graded ones.</p>
+
+<h2 id="grading">Part C · Why the circled points cannot be sampled as-is</h2>
+<p>The 23 targets were derived from the 1968 USGS field survey of surface water, on the logic that cattle congregate daily at water, that congregation points are where a dipping station and its pens would be sited, and that a point on or near the drainage is simultaneously a congregation point and a sediment trap. That logic is sound for 1907. It is not a statement about 2026 ground.</p>
+
+<h3>What the build-out did</h3>
+<p>Landsat analysis of the community footprint shows the disturbed fraction rising from 3.7&nbsp;% (1997) to 11.8&nbsp;% (1999), 33.8&nbsp;% (2000), 40.0&nbsp;% (2001) and a peak of <b>52.8&nbsp;% in 2002</b>, then declining through 2006. In a mass-graded master plan, that means: ridges cut, swales filled, the original A-horizon stripped and either buried, re-spread as landscape soil, or exported.</p>
+
+<h3>The four things that happen to a contaminated surface horizon</h3>
+<ol>
+<li><b>Buried in place under fill.</b> Common in swales and canyon heads. The signal survives intact but is now 1–6&nbsp;m down. Surface sampling will miss it entirely. Only a boring finds it.</li>
+<li><b>Scraped and used as fill nearby.</b> Diluted by mixing, typically 5:1 to 20:1, and relocated tens to hundreds of metres, usually downhill within the same grading cell. A 400&nbsp;mg/kg footprint becomes a 20–80&nbsp;mg/kg smear across a larger area, which is still well above background.</li>
+<li><b>Re-spread as landscape soil.</b> The top layer of manufactured slopes and parkway strips is often locally won material. This is the most accessible class and the one nobody samples.</li>
+<li><b>Washed downslope during and after construction.</b> Bare graded ground sheds fines. Those fines accumulate in the depositional traps: channel silt benches, detention basins, pond margins, and culvert outfall aprons. This is the one pathway that keeps working after grading stops.</li>
+</ol>
+
+<div class="card"><h4>The operating rule this produces</h4>
+<p><b>Do not sample the coordinate. Sample the three receptors around it.</b> For each target: (1) the nearest <i>retained</i> ground within the same grading cell, meaning open space, slope face or trail margin that the plans left alone; (2) the nearest <i>common-area landscape</i> on the filled low ground, meaning park turf margins and parkway strips, which is where re-spread material ends up and where children actually contact soil; and (3) the nearest <i>depositional trap</i> downslope, meaning channel silt, basin bottom or outfall apron. If none of the three exists within about 200&nbsp;m, the target is not worth sampling and should be recorded as such.</p></div>
+
+<div class="card stop"><h4>Where not to sample, and why</h4>
+<ul>
+<li><b>Roadways, sidewalks and driveways.</b> Engineered subgrade and aggregate base, imported. Tells you about a quarry, not about this ranch.</li>
+<li><b>Private residential yards</b>, without the owner's written consent. This project does not sample private property, and unconsented sampling would taint the whole effort.</li>
+<li><b>Irrigated, amended turf centres.</b> Decades of imported amendment, topdressing and irrigation. Sample the margin, not the middle.</li>
+<li><b>Anywhere within about 0.5&nbsp;km of a historic orchard</b> without paired lead. Target 5 sits 0.1&nbsp;km from an orchard footprint; an arsenic hit there is unattributable without the lead ratio.</li>
+</ul></div>
+<h2 id="tiers">Part D · The 23 targets, re-tiered</h2>
+<p>Every target was re-examined against the 1990 pre-grading aerial, the 2022 three-inch orthoimage, the OpenStreetMap road, trail, park and school network, the county assessor parcel layer, and the 2018 five-metre digital elevation model. Each was then assigned a tier reflecting how interpretable a soil result there would be.</p>
+
+<div class="grid">
+<div class="stat"><div class="n"><span class="tier tierA">A</span></div><div class="l"><b>Native grade intact.</b> Seven targets. A result is directly interpretable against background. These are the stations worth fighting for.</div></div>
+<div class="stat"><div class="n"><span class="tier tierB">B</span></div><div class="l"><b>Reworked ground.</b> Ten targets. Sample the retained margins, common-area landscape and depositional traps, never the pad.</div></div>
+<div class="stat"><div class="n"><span class="tier tierC">C</span></div><div class="l"><b>Outside the build-out.</b> Two targets. Ranch-era reference value, not community exposure.</div></div>
+<div class="stat"><div class="n"><span class="tier tierD">D</span></div><div class="l"><b>Pre-1990 development.</b> Four targets, in Mission Viejo rather than the Ladera grading era. Deprioritise.</div></div>
+</div>
+
+<h3>The three stations that carry the most information</h3>
+<div class="card go">
+<p><b>Target 6</b> — ungraded oak and riparian corridor, on the drainage, immediately downslope of the concrete feature observed in August 2026, and the largest 1968 water body in the northern group at 9,111&nbsp;m². Native grade. If legacy arsenic exists anywhere in this landscape at an interpretable concentration, this is the most likely place to measure it. <b>Take three depths and a paired sediment grab.</b></p>
+<p><b>Target 2</b> — creek-corridor bench, 15&nbsp;m from the drainage, never graded, on the Arroyo Trabuco Trail. A second independent ungraded station in the same corridor; two agreeing results are worth far more than one.</p>
+<p><b>Target 4 / 13</b> — the two large impoundments, 12,395&nbsp;m² and 24,745&nbsp;m², now under golf. Fine sediment in a former pond bed is the best natural archive available: it integrates a century of catchment runoff. Access requires the club's permission, which is worth asking for.</p>
+</div>
+
+<h2 id="plan">Part E · Per-target sampling plan</h2>
+<p class="small">Sorted by tier. Coordinates in the last column are the computed accessible station: a vegetated, non-roadway point derived from the 2022 three-inch imagery, screened against the road network and the assessor parcel layer. They are a starting point for a field walk, not a survey control. Verify access and ownership before sampling, and obtain permission for anything that is not public open space.</p>
+<div class="tablewrap">
+<table><thead><tr>
+<th style="width:4%">#</th><th style="width:5%">Tier</th><th style="width:16%">What is there now</th><th style="width:14%">Grading history</th><th style="width:9%">Metrics</th><th style="width:34%">Recommended action</th><th style="width:18%">Accessible station</th>
+</tr></thead><tbody>
+
+<tr class="tier-A">
+  <td class="num">6</td>
+  <td><span class="tier tierA">A</span></td>
+  <td><span class="badge ok">Ungraded open space</span><br><span class="small">Oak/riparian corridor below the 2026 concrete find</span></td>
+  <td class="small">None. Ungraded corridor</td>
+  <td class="small mono">42 m<br>9,111 m²<br>291.1 ft</td>
+  <td class="small">Direct sample at the point, and this is the single highest-value station in the set: ungraded corridor, on the drainage, immediately downslope of the 2026 concrete find. Take 0-5, 15-30 and 45-60 cm plus one sediment grab in the creek.</td>
+  <td class="small mono">33.55848, -117.65272<br>13 m from centre · 335 m from road</td>
+</tr>
+<tr class="tier-A">
+  <td class="num">8</td>
+  <td><span class="tier tierA">A</span></td>
+  <td><span class="badge ok">Ungraded open space</span><br><span class="small">Arroyo Trabuco slope/corridor</span></td>
+  <td class="small">None</td>
+  <td class="small mono">46 m<br>4,661 m²<br>243.9 ft</td>
+  <td class="small">Direct sample at the point plus one sediment grab in the Arroyo Trabuco channel 60 m east.</td>
+  <td class="small mono">33.54804, -117.66009<br>20 m from centre · 192 m from road</td>
+</tr>
+<tr class="tier-A">
+  <td class="num">2</td>
+  <td><span class="tier tierA">A</span></td>
+  <td><span class="badge ok">Ungraded open space</span><br><span class="small">Arroyo Trabuco creek corridor, never graded</span></td>
+  <td class="small">None. Riparian corridor retained as open space</td>
+  <td class="small mono">15 m<br>1,307 m²<br>248.1 ft</td>
+  <td class="small">Direct sample at the point. Creek-corridor soil never graded. Take the 0-5 cm horizon and a 15-30 cm horizon at the same station; add one channel-sediment grab at the nearest slack-water bar.</td>
+  <td class="small mono">33.54765, -117.65933<br>4 m from centre · 262 m from road</td>
+</tr>
+<tr class="tier-A">
+  <td class="num">11</td>
+  <td><span class="tier tierA">A</span></td>
+  <td><span class="badge ok">Ungraded open space</span><br><span class="small">Slope above Arroyo Trabuco Trail</span></td>
+  <td class="small">None</td>
+  <td class="small mono">165 m<br>882 m²<br>— ft</td>
+  <td class="small">Direct sample at the point. Trail-side, ungraded slope.</td>
+  <td class="small mono">33.55061, -117.66027<br>50 m from centre · 197 m from road</td>
+</tr>
+<tr class="tier-A">
+  <td class="num">10</td>
+  <td><span class="tier tierA">A</span></td>
+  <td><span class="badge ok">Golf margin / open space</span><br><span class="small">Golf margin + preserved brush at canyon confluence</span></td>
+  <td class="small">Partial; margins retained</td>
+  <td class="small mono">97 m<br>547 m²<br>254.2 ft</td>
+  <td class="small">Sample the preserved brush margin and the confluence silt bench. Access from the Arroyo Trabuco Trail.</td>
+  <td class="small mono">33.54586, -117.66021<br>8 m from centre · 214 m from road</td>
+</tr>
+<tr class="tier-A">
+  <td class="num">19</td>
+  <td><span class="tier tierA">A</span></td>
+  <td><span class="badge ok">Ungraded open space</span><br><span class="small">Ungraded canyon south of Ladera</span></td>
+  <td class="small">None</td>
+  <td class="small mono">681 m<br>418 m²<br>429.5 ft</td>
+  <td class="small">Direct sample at the point. Ungraded canyon, but 681 m from the mapped drainage: lower prior.</td>
+  <td class="small mono">33.53475, -117.65610<br>11 m from centre · 319 m from road</td>
+</tr>
+<tr class="tier-A">
+  <td class="num">12</td>
+  <td><span class="tier tierA">A</span></td>
+  <td><span class="badge ok">Ungraded open space</span><br><span class="small">Slope above Arroyo Trabuco Trail</span></td>
+  <td class="small">None</td>
+  <td class="small mono">167 m<br>373 m²<br>— ft</td>
+  <td class="small">Direct sample at the point. Trail-side, ungraded slope, 5 m off the Arroyo Trabuco Trail.</td>
+  <td class="small mono">33.55159, -117.66048<br>18 m from centre · 140 m from road</td>
+</tr>
+<tr class="tier-B">
+  <td class="num">13</td>
+  <td><span class="tier tierB">B</span></td>
+  <td><span class="badge warn">Golf course</span><br><span class="small">Large 1990 impoundment now golf course + creek</span></td>
+  <td class="small">Fairway/pond shaping</td>
+  <td class="small mono">183 m<br>24,745 m²<br>— ft</td>
+  <td class="small">Sample the pond margin and the creek silt bench. The largest 1990 impoundment in the set (24,745 m2).</td>
+  <td class="small mono">33.54392, -117.66130<br>3 m from centre · 215 m from road</td>
+</tr>
+<tr class="tier-B">
+  <td class="num">4</td>
+  <td><span class="tier tierB">B</span></td>
+  <td><span class="badge warn">Golf course</span><br><span class="small">Golf course fairway on the old canyon floor</span></td>
+  <td class="small">Fairway shaping over the impoundment; fill likely 1-3 m</td>
+  <td class="small mono">27 m<br>12,395 m²<br>— ft</td>
+  <td class="small">Sample the fairway rough and the pond margin. This was a 12,395 m2 impoundment in 1990: the finest, most arsenic-retentive sediment in the whole set sits in its bed.</td>
+  <td class="small mono">33.54096, -117.66046<br>33 m from centre · 210 m from road</td>
+</tr>
+<tr class="tier-B">
+  <td class="num">3</td>
+  <td><span class="tier tierB">B</span></td>
+  <td><span class="badge hard">Under Ladera build-out</span><br><span class="small">Under Ladera housing at Sienna Pkwy; 1990 ranch drainage head</span></td>
+  <td class="small">Full mass grading 1999-2003; swale filled, pad cut</td>
+  <td class="small mono">18 m<br>734 m²<br>475.3 ft</td>
+  <td class="small">Do not sample the roadway. Sample the HOA landscape strip on the south side of Sienna Parkway and the turf margin at Founder&#x27;s Park, both within 220 m. Rationale: the 1990 drainage head here was filled; fill material was won locally.</td>
+  <td class="small mono">33.55546, -117.63691<br>4 m from centre · 5 m from road</td>
+</tr>
+<tr class="tier-B">
+  <td class="num">1</td>
+  <td><span class="tier tierB">B</span></td>
+  <td><span class="badge warn">Golf course</span><br><span class="small">Arroyo Trabuco GC fairway/rough; 1990 open oak-grass with ranch road</span></td>
+  <td class="small">Golf-course grading (shallow shaping + irrigation); native grade largely intact under rough</td>
+  <td class="small mono">1 m<br>515 m²<br>— ft</td>
+  <td class="small">Sample the rough and the unirrigated margin between the fairway and the creek, plus the first silt bench in the channel below. Golf shaping here was shallow; the 1990 ranch road is still visible in the 2022 image.</td>
+  <td class="small mono">33.53803, -117.66370<br>105 m from centre · 24 m from road</td>
+</tr>
+<tr class="tier-B">
+  <td class="num">7</td>
+  <td><span class="tier tierB">B</span></td>
+  <td><span class="badge hard">Under Ladera build-out</span><br><span class="small">Under Ladera housing; Frog Park 20 m</span></td>
+  <td class="small">Full mass grading; drainage head filled</td>
+  <td class="small mono">42 m<br>508 m²<br>508.8 ft</td>
+  <td class="small">Sample Frog Park turf margin and the adjacent common-area slope, 20 to 70 m from the point. The 1990 swale was filled to make the pad; the park occupies the low ground.</td>
+  <td class="small mono">33.55730, -117.63684<br>68 m from centre · 7 m from road</td>
+</tr>
+<tr class="tier-B">
+  <td class="num">16</td>
+  <td><span class="tier tierB">B</span></td>
+  <td><span class="badge hard">Under Ladera build-out</span><br><span class="small">Under Ladera housing, Bayley St roundabout; park 53 m</span></td>
+  <td class="small">Full mass grading</td>
+  <td class="small mono">526 m<br>495 m²<br>425.1 ft</td>
+  <td class="small">Sample the park 53 m away and the roundabout landscape island. Both are common area on filled ground.</td>
+  <td class="small mono">33.54808, -117.64405<br>90 m from centre · 6 m from road</td>
+</tr>
+<tr class="tier-B">
+  <td class="num">9</td>
+  <td><span class="tier tierB">B</span></td>
+  <td><span class="badge hard">Under Ladera build-out</span><br><span class="small">Under condos off Granville St; Chaparral Park 71 m</span></td>
+  <td class="small">Full mass grading; canyon head filled</td>
+  <td class="small mono">88 m<br>476 m²<br>570.6 ft</td>
+  <td class="small">Sample Chaparral Park and the common-area slope behind the condominiums, 70 to 110 m. Canyon head was filled here; the park is the accessible low point.</td>
+  <td class="small mono">33.56254, -117.63300<br>92 m from centre · 7 m from road</td>
+</tr>
+<tr class="tier-B">
+  <td class="num">17</td>
+  <td><span class="tier tierB">B</span></td>
+  <td><span class="badge hard">Under Ladera build-out</span><br><span class="small">Under Ladera housing, Creighton Pl</span></td>
+  <td class="small">Full mass grading; slope cut</td>
+  <td class="small mono">528 m<br>412 m²<br>441.2 ft</td>
+  <td class="small">Sample the Creighton Place parkway strip and the nearest manufactured slope face.</td>
+  <td class="small mono">33.55281, -117.64401<br>17 m from centre · 7 m from road</td>
+</tr>
+<tr class="tier-B">
+  <td class="num">14</td>
+  <td><span class="tier tierB">B</span></td>
+  <td><span class="badge hard">Under Ladera build-out</span><br><span class="small">Under Ladera housing, Davis Pl</span></td>
+  <td class="small">Full mass grading; ridge cut</td>
+  <td class="small mono">473 m<br>399 m²<br>357.9 ft</td>
+  <td class="small">Sample the common-area landscape strip on Davis Place and the nearest slope face. Ridge was cut here; cut material moved downhill to the east.</td>
+  <td class="small mono">33.54078, -117.64666<br>88 m from centre · 8 m from road</td>
+</tr>
+<tr class="tier-B">
+  <td class="num">15</td>
+  <td><span class="tier tierB">B</span></td>
+  <td><span class="badge hard">Under Ladera build-out</span><br><span class="small">Under Ladera housing, O&#x27;Neill Dr; park 77 m</span></td>
+  <td class="small">Full mass grading; swale filled</td>
+  <td class="small mono">509 m<br>367 m²<br>412.1 ft</td>
+  <td class="small">Sample the park 77 m away and the O&#x27;Neill Drive parkway strip. Swale filled during grading.</td>
+  <td class="small mono">33.54808, -117.64410<br>93 m from centre · 8 m from road</td>
+</tr>
+<tr class="tier-C">
+  <td class="num">21</td>
+  <td><span class="tier tierC">C</span></td>
+  <td><span class="badge off">RMV new village</span><br><span class="small">Rancho Mission Viejo new-village edge; 1990 ranch pond + oaks</span></td>
+  <td class="small">Active grading 2015-2025</td>
+  <td class="small mono">1094 m<br>1,687 m²<br>613.0 ft</td>
+  <td class="small">Sample only with RMV permission. Active new-village grading since 2015 makes provenance unclear.</td>
+  <td class="small mono">33.52818, -117.63542<br>81 m from centre · 7 m from road</td>
+</tr>
+<tr class="tier-C">
+  <td class="num">22</td>
+  <td><span class="tier tierC">C</span></td>
+  <td><span class="badge warn">Open rangeland (RMV)</span><br><span class="small">Open rangeland on RMV land, ungraded</span></td>
+  <td class="small">None</td>
+  <td class="small mono">1144 m<br>379 m²<br>421.8 ft</td>
+  <td class="small">Ranch-era reference point. Ungraded rangeland; useful for establishing a local background, not as an exposure point.</td>
+  <td class="small mono">33.54412, -117.62617<br>3 m from centre · 202 m from road</td>
+</tr>
+<tr class="tier-D">
+  <td class="num">20</td>
+  <td><span class="tier tierD">D</span></td>
+  <td><span class="badge off">Pre-1990 edge</span><br><span class="small">Oak grove + pre-1990 houses</span></td>
+  <td class="small">Edge development</td>
+  <td class="small mono">688 m<br>3,721 m²<br>— ft</td>
+  <td class="small">Deprioritise, or use as a ranch-era reference: the oak grove is undisturbed.</td>
+  <td class="small mono">33.52558, -117.66207<br>47 m from centre · 20 m from road</td>
+</tr>
+<tr class="tier-D">
+  <td class="num">23</td>
+  <td><span class="tier tierD">D</span></td>
+  <td><span class="badge off">Developed before 1990</span><br><span class="small">Developed before 1990; Granada Park 12 m</span></td>
+  <td class="small">Not Ladera build-out</td>
+  <td class="small mono">1714 m<br>534 m²<br>— ft</td>
+  <td class="small">Deprioritise. Pre-1990 development; Granada Park adjacent if a background point is wanted.</td>
+  <td class="small mono">33.56871, -117.66935<br>52 m from centre · 25 m from road</td>
+</tr>
+<tr class="tier-D">
+  <td class="num">5</td>
+  <td><span class="tier tierD">D</span></td>
+  <td><span class="badge off">Developed before 1990</span><br><span class="small">Houses present in 1990 (Mission Viejo, Horno Creek Rd)</span></td>
+  <td class="small">Graded pre-1980s; not part of Ladera build-out</td>
+  <td class="small mono">27 m<br>405 m²<br>— ft</td>
+  <td class="small">Deprioritise. Houses stood here in 1990; this is Mission Viejo, graded decades before the Ladera era, and an orchard sits 0.1 km away which confounds any arsenic result.</td>
+  <td class="small mono">33.52499, -117.64745<br>24 m from centre · 13 m from road</td>
+</tr>
+<tr class="tier-D">
+  <td class="num">18</td>
+  <td><span class="tier tierD">D</span></td>
+  <td><span class="badge off">Developed before 1990</span><br><span class="small">Developed before 1990 (Mission Viejo); Cordova Park 3 m</span></td>
+  <td class="small">Not Ladera build-out</td>
+  <td class="small mono">632 m<br>354 m²<br>464.0 ft</td>
+  <td class="small">Deprioritise. Pre-1990 development; Cordova Park adjacent if a background point is wanted.</td>
+  <td class="small mono">33.56806, -117.65560<br>16 m from centre · 14 m from road</td>
+</tr>
+</tbody></table>
+</div>
+<p class="small"><b>Metrics column:</b> distance from the mapped 1968 drainage · area of the 1968 water body · ground elevation from the 2018 county DEM.</p>
+
+<h3>If only five samples can be taken</h3>
+<ol>
+<li><b>Target 6</b>, ungraded corridor below the concrete feature. Three depths.</li>
+<li><b>Target 2</b>, ungraded creek bench, as the independent confirmation.</li>
+<li><b>Target 4 or 13</b>, former impoundment bed, as the catchment integrator.</li>
+<li><b>The Frog Park or Chaparral Park margin</b> (targets 7 and 9), as the child-contact receptor on filled ground.</li>
+<li><b>A background station</b> on ungraded ground well away from any water point and any orchard, to establish the local reference value rather than borrowing a statewide range.</li>
+</ol>
+<h2 id="method">Part G · Field method, QA/QC and laboratory specification</h2>
+<p class="lead">This section is written so it can be handed to a soils engineer, an environmental consultant or a university lab without further explanation.</p>
+
+<h3>G.1 Sampling design</h3>
+<table><thead><tr><th style="width:24%">Element</th><th>Specification</th></tr></thead><tbody>
+<tr><td><b>Station type</b></td><td>Five-point composite over a 3&nbsp;m radius (four points on the cardinal directions plus centre), homogenised in a stainless bowl, unless a discrete sample is needed for a specific feature such as a silt bench.</td></tr>
+<tr><td><b>Depths</b></td><td><b>0–5&nbsp;cm</b> (child contact and wind-erodible fraction), <b>15–30&nbsp;cm</b> (below turf amendment and rooting disturbance), and at tier-A stations <b>45–60&nbsp;cm</b>. On filled ground, a hand auger to 1.2&nbsp;m with 30&nbsp;cm interval logging is preferable if access allows, because the pre-grading horizon may be at depth.</td></tr>
+<tr><td><b>Fraction</b></td><td>Sieve to &lt;2&nbsp;mm for the bulk analysis. Additionally request the <b>&lt;250&nbsp;µm</b> fraction on child-contact stations: that is the fraction that adheres to hands, and it typically carries higher metal concentrations than bulk soil.</td></tr>
+<tr><td><b>Sediment stations</b></td><td>Grab from the top 5&nbsp;cm of fine sediment at a slack-water bar, basin bottom or outfall apron. Note whether the deposit is active or relict.</td></tr>
+<tr><td><b>Replicates</b></td><td>One field duplicate per ten samples, minimum one per day. One equipment rinsate blank per day if non-disposable tools are used.</td></tr>
+<tr><td><b>Background stations</b></td><td>Minimum three, on ungraded ground, at least 300&nbsp;m from any 1968 water point, any historic orchard footprint and any current or former agricultural area. Report the local background range rather than relying on the statewide 1–11&nbsp;mg/kg figure.</td></tr>
+<tr><td><b>Containers</b></td><td>Laboratory-supplied 8&nbsp;oz glass jars with Teflon-lined lids for metals; no preservative required; cool to 4&nbsp;°C; metals have a six-month holding time, which is generous but should still be documented.</td></tr>
+<tr><td><b>Positional record</b></td><td>GNSS fix to &lt;3&nbsp;m with the accuracy value recorded, a photograph looking north from each station, and a note of slope position (ridge, mid-slope, toe, channel) and apparent fill versus native ground.</td></tr>
+<tr><td><b>Chain of custody</b></td><td>Signed COC from field to lab, with the analyte list and any hold requests written on the form itself, not agreed verbally.</td></tr>
+</tbody></table>
+
+<h3>G.2 Laboratory specification</h3>
+<table><thead><tr><th style="width:24%">Analysis</th><th style="width:26%">Method</th><th>Notes</th></tr></thead><tbody>
+<tr><td>Arsenic, total</td><td>EPA 3050B/3051A digestion + <b>EPA 6020B ICP-MS</b></td><td>Request a reporting limit of <b>≤0.5&nbsp;mg/kg</b>. ICP-OES (6010D) is acceptable but has a higher limit and less headroom against background.</td></tr>
+<tr><td>Lead, total</td><td>Same digestion and run</td><td><b>Non-negotiable.</b> The As:Pb ratio is the orchard discriminator. Adds essentially nothing to cost.</td></tr>
+<tr><td>Full CAM 17 metals</td><td>Same run</td><td>Recommended. Chromium, copper, zinc and antimony help fingerprint fill material and other historical uses.</td></tr>
+<tr><td>Arsenic speciation</td><td>HPLC-ICP-MS: As(III), As(V), MMA, DMA</td><td><b>Conditional.</b> Trigger on any sample &gt;12&nbsp;mg/kg total arsenic.</td></tr>
+<tr><td>Bioaccessible arsenic</td><td><b>EPA Method 1340</b> in-vitro gastric extraction</td><td><b>Conditional</b>, same trigger. This is the number that supports or refutes an exposure statement, as opposed to a presence statement.</td></tr>
+<tr><td>Soil characterisation</td><td>pH, organic matter, particle size</td><td>Inexpensive; arsenic partitioning is pH- and iron-oxide-dependent, and without these the geochemistry cannot be interpreted.</td></tr>
+<tr><td>Organochlorine pesticides</td><td>EPA 8081B, if the pesticide question is in scope</td><td>Separate question from the dipping-era arsenic; keep the two lines of inquiry distinct in reporting.</td></tr>
+<tr><td>Sample retention</td><td>Written hold instruction</td><td>"Retain residual sample material for a minimum of 90 days pending possible speciation and bioaccessibility." Put it on the COC.</td></tr>
+</tbody></table>
+
+<h3>G.3 Decision rules, set before the results arrive</h3>
+<table><thead><tr><th style="width:26%">Result on a station</th><th>Action</th></tr></thead><tbody>
+<tr><td class="mono">&lt; 11 mg/kg As</td><td>Within the commonly cited California background range. Record and move on. Report it publicly with the same prominence as any other result.</td></tr>
+<tr><td class="mono">11–40 mg/kg As</td><td>Above background. Run speciation and bioaccessibility on the archived material. Step out with a four-point grid at 25&nbsp;m to define extent. Check lead on the same sample.</td></tr>
+<tr><td class="mono">&gt; 40 mg/kg As, flat lead</td><td>Consistent with a non-orchard arsenic source. Notify the property owner and the county; recommend the State be brought in. Expand the grid and add depth profiling.</td></tr>
+<tr><td class="mono">Elevated As <i>and</i> elevated Pb at roughly 1:3</td><td>Consistent with lead-arsenate orchard use, a different and also documented history. Report it as such rather than forcing it into the dipping hypothesis.</td></tr>
+<tr><td class="mono">Any result at a child-contact location above the bioaccessibility-adjusted screening threshold</td><td>Immediate notification to the landowner and the county, regardless of source attribution. Source attribution is a research question; child contact is a safety question and does not wait for it.</td></tr>
+</tbody></table>
+
+<h2 id="interp">Part H · How to read a result</h2>
+<ol>
+<li><b>Compare to local background first, statewide second.</b> Three of your own ungraded, non-water-point stations are worth more than any published range.</li>
+<li><b>Always read arsenic with lead.</b> Arsenic alone is ambiguous in Orange County, where lead-arsenate orchards are a documented regional history.</li>
+<li><b>Treat dilution as expected, not as absence.</b> Grading mixes at roughly 5:1 to 20:1. A hundreds-of-mg/kg footprint becomes tens of mg/kg across a wider area. A moderate elevation over a broad area on filled ground is a more likely signature than a hot spot.</li>
+<li><b>A null on graded ground closes very little.</b> A null on <i>ungraded</i> ground at target 6 or 2 closes a great deal, and that is a genuinely valuable outcome worth publishing loudly.</li>
+<li><b>Never convert a soil concentration into a health statement.</b> Exposure requires contact, frequency, duration and bioavailability. That is an agency and epidemiology question, not one this project or a volunteer group should answer.</li>
+</ol>
+
+<h2 id="ask">Part I · What to ask the CSUF team, and what to offer</h2>
+<div class="card go"><h4>The offer, in one message</h4>
+<p>"I have a sourced historical layer for Ladera Ranch that I don't think is in your dataset: the 1907–1912 state-mandated arsenic cattle-dipping program on the O'Neill Ranch, the federal formula and cadence, a 1968 USGS surface-water analysis that identifies where cattle would have congregated, twenty-three ranked targets reconciled against 1990 and 2022 imagery and the grading history, and a field observation from August 2026 of a concrete feature whose identification is not established. I'd like to give it to your team, and I'd like to ask for four things in the analytical protocol that cost almost nothing and preserve options later. I'm not asking anyone to endorse a hypothesis; I'm asking that the samples be capable of testing one."</p></div>
+<ol>
+<li><b>Arsenic and lead reported together</b> on every sample.</li>
+<li><b>Residual material retained</b> 90 days for possible speciation and bioaccessibility.</li>
+<li><b>At least two stations on ungraded ground</b> in the Arroyo Trabuco corridor, not only on park turf.</li>
+<li><b>A 15–30&nbsp;cm horizon</b> in addition to the surface.</li>
+</ol>
+<p>If they can only take one addition, make it <b>target 6</b>.</p>
+<h2 id="figs">Part F · Target-by-target imagery, 1990 vs 2022</h2>
+<p class="small">Left frame: OC Survey 1990 countywide aerial, before the Ladera build-out. Right frame: OC Survey 2022 three-inch orthoimage. Red ring: the 1968 USGS water point that generated the target. Green ring: the computed accessible sampling station. Each frame is approximately 300&nbsp;m across. No coordinates of the August 2026 field observation are shown anywhere in this document.</p>
+
+<figure class="tgt" id="t2">
+  <img loading="lazy" src="assets/t02.jpg" alt="Target 2: 1990 and 2022">
+  <figcaption><b>Target 2 · tier A · Ungraded open space</b> — Arroyo Trabuco creek corridor, never graded.
+  Red ring: the 1968 water point. Green ring (2022 frame): the recommended accessible station at 33.54765, -117.65933.
+  <span class="src">Imagery: OC Survey 1990 countywide; OC Survey 2022 3-inch. A+ / documented.</span></figcaption>
+</figure>
+<figure class="tgt" id="t6">
+  <img loading="lazy" src="assets/t06.jpg" alt="Target 6: 1990 and 2022">
+  <figcaption><b>Target 6 · tier A · Ungraded open space</b> — Oak/riparian corridor below the 2026 concrete find.
+  Red ring: the 1968 water point. Green ring (2022 frame): the recommended accessible station at 33.55848, -117.65272.
+  <span class="src">Imagery: OC Survey 1990 countywide; OC Survey 2022 3-inch. A+ / documented.</span></figcaption>
+</figure>
+<figure class="tgt" id="t8">
+  <img loading="lazy" src="assets/t08.jpg" alt="Target 8: 1990 and 2022">
+  <figcaption><b>Target 8 · tier A · Ungraded open space</b> — Arroyo Trabuco slope/corridor.
+  Red ring: the 1968 water point. Green ring (2022 frame): the recommended accessible station at 33.54804, -117.66009.
+  <span class="src">Imagery: OC Survey 1990 countywide; OC Survey 2022 3-inch. A+ / documented.</span></figcaption>
+</figure>
+<figure class="tgt" id="t10">
+  <img loading="lazy" src="assets/t10.jpg" alt="Target 10: 1990 and 2022">
+  <figcaption><b>Target 10 · tier A · Golf margin / open space</b> — Golf margin + preserved brush at canyon confluence.
+  Red ring: the 1968 water point. Green ring (2022 frame): the recommended accessible station at 33.54586, -117.66021.
+  <span class="src">Imagery: OC Survey 1990 countywide; OC Survey 2022 3-inch. A+ / documented.</span></figcaption>
+</figure>
+<figure class="tgt" id="t11">
+  <img loading="lazy" src="assets/t11.jpg" alt="Target 11: 1990 and 2022">
+  <figcaption><b>Target 11 · tier A · Ungraded open space</b> — Slope above Arroyo Trabuco Trail.
+  Red ring: the 1968 water point. Green ring (2022 frame): the recommended accessible station at 33.55061, -117.66027.
+  <span class="src">Imagery: OC Survey 1990 countywide; OC Survey 2022 3-inch. A+ / documented.</span></figcaption>
+</figure>
+<figure class="tgt" id="t12">
+  <img loading="lazy" src="assets/t12.jpg" alt="Target 12: 1990 and 2022">
+  <figcaption><b>Target 12 · tier A · Ungraded open space</b> — Slope above Arroyo Trabuco Trail.
+  Red ring: the 1968 water point. Green ring (2022 frame): the recommended accessible station at 33.55159, -117.66048.
+  <span class="src">Imagery: OC Survey 1990 countywide; OC Survey 2022 3-inch. A+ / documented.</span></figcaption>
+</figure>
+<figure class="tgt" id="t19">
+  <img loading="lazy" src="assets/t19.jpg" alt="Target 19: 1990 and 2022">
+  <figcaption><b>Target 19 · tier A · Ungraded open space</b> — Ungraded canyon south of Ladera.
+  Red ring: the 1968 water point. Green ring (2022 frame): the recommended accessible station at 33.53475, -117.65610.
+  <span class="src">Imagery: OC Survey 1990 countywide; OC Survey 2022 3-inch. A+ / documented.</span></figcaption>
+</figure>
+<figure class="tgt" id="t1">
+  <img loading="lazy" src="assets/t01.jpg" alt="Target 1: 1990 and 2022">
+  <figcaption><b>Target 1 · tier B · Golf course</b> — Arroyo Trabuco GC fairway/rough; 1990 open oak-grass with ranch road.
+  Red ring: the 1968 water point. Green ring (2022 frame): the recommended accessible station at 33.53803, -117.66370.
+  <span class="src">Imagery: OC Survey 1990 countywide; OC Survey 2022 3-inch. A+ / documented.</span></figcaption>
+</figure>
+<figure class="tgt" id="t3">
+  <img loading="lazy" src="assets/t03.jpg" alt="Target 3: 1990 and 2022">
+  <figcaption><b>Target 3 · tier B · Under Ladera build-out</b> — Under Ladera housing at Sienna Pkwy; 1990 ranch drainage head.
+  Red ring: the 1968 water point. Green ring (2022 frame): the recommended accessible station at 33.55546, -117.63691.
+  <span class="src">Imagery: OC Survey 1990 countywide; OC Survey 2022 3-inch. A+ / documented.</span></figcaption>
+</figure>
+<figure class="tgt" id="t4">
+  <img loading="lazy" src="assets/t04.jpg" alt="Target 4: 1990 and 2022">
+  <figcaption><b>Target 4 · tier B · Golf course</b> — Golf course fairway on the old canyon floor.
+  Red ring: the 1968 water point. Green ring (2022 frame): the recommended accessible station at 33.54096, -117.66046.
+  <span class="src">Imagery: OC Survey 1990 countywide; OC Survey 2022 3-inch. A+ / documented.</span></figcaption>
+</figure>
+<figure class="tgt" id="t7">
+  <img loading="lazy" src="assets/t07.jpg" alt="Target 7: 1990 and 2022">
+  <figcaption><b>Target 7 · tier B · Under Ladera build-out</b> — Under Ladera housing; Frog Park 20 m.
+  Red ring: the 1968 water point. Green ring (2022 frame): the recommended accessible station at 33.55730, -117.63684.
+  <span class="src">Imagery: OC Survey 1990 countywide; OC Survey 2022 3-inch. A+ / documented.</span></figcaption>
+</figure>
+<figure class="tgt" id="t9">
+  <img loading="lazy" src="assets/t09.jpg" alt="Target 9: 1990 and 2022">
+  <figcaption><b>Target 9 · tier B · Under Ladera build-out</b> — Under condos off Granville St; Chaparral Park 71 m.
+  Red ring: the 1968 water point. Green ring (2022 frame): the recommended accessible station at 33.56254, -117.63300.
+  <span class="src">Imagery: OC Survey 1990 countywide; OC Survey 2022 3-inch. A+ / documented.</span></figcaption>
+</figure>
+<figure class="tgt" id="t13">
+  <img loading="lazy" src="assets/t13.jpg" alt="Target 13: 1990 and 2022">
+  <figcaption><b>Target 13 · tier B · Golf course</b> — Large 1990 impoundment now golf course + creek.
+  Red ring: the 1968 water point. Green ring (2022 frame): the recommended accessible station at 33.54392, -117.66130.
+  <span class="src">Imagery: OC Survey 1990 countywide; OC Survey 2022 3-inch. A+ / documented.</span></figcaption>
+</figure>
+<figure class="tgt" id="t14">
+  <img loading="lazy" src="assets/t14.jpg" alt="Target 14: 1990 and 2022">
+  <figcaption><b>Target 14 · tier B · Under Ladera build-out</b> — Under Ladera housing, Davis Pl.
+  Red ring: the 1968 water point. Green ring (2022 frame): the recommended accessible station at 33.54078, -117.64666.
+  <span class="src">Imagery: OC Survey 1990 countywide; OC Survey 2022 3-inch. A+ / documented.</span></figcaption>
+</figure>
+<figure class="tgt" id="t15">
+  <img loading="lazy" src="assets/t15.jpg" alt="Target 15: 1990 and 2022">
+  <figcaption><b>Target 15 · tier B · Under Ladera build-out</b> — Under Ladera housing, O&#x27;Neill Dr; park 77 m.
+  Red ring: the 1968 water point. Green ring (2022 frame): the recommended accessible station at 33.54808, -117.64410.
+  <span class="src">Imagery: OC Survey 1990 countywide; OC Survey 2022 3-inch. A+ / documented.</span></figcaption>
+</figure>
+<figure class="tgt" id="t16">
+  <img loading="lazy" src="assets/t16.jpg" alt="Target 16: 1990 and 2022">
+  <figcaption><b>Target 16 · tier B · Under Ladera build-out</b> — Under Ladera housing, Bayley St roundabout; park 53 m.
+  Red ring: the 1968 water point. Green ring (2022 frame): the recommended accessible station at 33.54808, -117.64405.
+  <span class="src">Imagery: OC Survey 1990 countywide; OC Survey 2022 3-inch. A+ / documented.</span></figcaption>
+</figure>
+<figure class="tgt" id="t17">
+  <img loading="lazy" src="assets/t17.jpg" alt="Target 17: 1990 and 2022">
+  <figcaption><b>Target 17 · tier B · Under Ladera build-out</b> — Under Ladera housing, Creighton Pl.
+  Red ring: the 1968 water point. Green ring (2022 frame): the recommended accessible station at 33.55281, -117.64401.
+  <span class="src">Imagery: OC Survey 1990 countywide; OC Survey 2022 3-inch. A+ / documented.</span></figcaption>
+</figure>
+<figure class="tgt" id="t21">
+  <img loading="lazy" src="assets/t21.jpg" alt="Target 21: 1990 and 2022">
+  <figcaption><b>Target 21 · tier C · RMV new village</b> — Rancho Mission Viejo new-village edge; 1990 ranch pond + oaks.
+  Red ring: the 1968 water point. Green ring (2022 frame): the recommended accessible station at 33.52818, -117.63542.
+  <span class="src">Imagery: OC Survey 1990 countywide; OC Survey 2022 3-inch. A+ / documented.</span></figcaption>
+</figure>
+<figure class="tgt" id="t22">
+  <img loading="lazy" src="assets/t22.jpg" alt="Target 22: 1990 and 2022">
+  <figcaption><b>Target 22 · tier C · Open rangeland (RMV)</b> — Open rangeland on RMV land, ungraded.
+  Red ring: the 1968 water point. Green ring (2022 frame): the recommended accessible station at 33.54412, -117.62617.
+  <span class="src">Imagery: OC Survey 1990 countywide; OC Survey 2022 3-inch. A+ / documented.</span></figcaption>
+</figure>
+<figure class="tgt" id="t5">
+  <img loading="lazy" src="assets/t05.jpg" alt="Target 5: 1990 and 2022">
+  <figcaption><b>Target 5 · tier D · Developed before 1990</b> — Houses present in 1990 (Mission Viejo, Horno Creek Rd).
+  Red ring: the 1968 water point. Green ring (2022 frame): the recommended accessible station at 33.52499, -117.64745.
+  <span class="src">Imagery: OC Survey 1990 countywide; OC Survey 2022 3-inch. A+ / documented.</span></figcaption>
+</figure>
+<figure class="tgt" id="t18">
+  <img loading="lazy" src="assets/t18.jpg" alt="Target 18: 1990 and 2022">
+  <figcaption><b>Target 18 · tier D · Developed before 1990</b> — Developed before 1990 (Mission Viejo); Cordova Park 3 m.
+  Red ring: the 1968 water point. Green ring (2022 frame): the recommended accessible station at 33.56806, -117.65560.
+  <span class="src">Imagery: OC Survey 1990 countywide; OC Survey 2022 3-inch. A+ / documented.</span></figcaption>
+</figure>
+<figure class="tgt" id="t20">
+  <img loading="lazy" src="assets/t20.jpg" alt="Target 20: 1990 and 2022">
+  <figcaption><b>Target 20 · tier D · Pre-1990 edge</b> — Oak grove + pre-1990 houses.
+  Red ring: the 1968 water point. Green ring (2022 frame): the recommended accessible station at 33.52558, -117.66207.
+  <span class="src">Imagery: OC Survey 1990 countywide; OC Survey 2022 3-inch. A+ / documented.</span></figcaption>
+</figure>
+<figure class="tgt" id="t23">
+  <img loading="lazy" src="assets/t23.jpg" alt="Target 23: 1990 and 2022">
+  <figcaption><b>Target 23 · tier D · Developed before 1990</b> — Developed before 1990; Granada Park 12 m.
+  Red ring: the 1968 water point. Green ring (2022 frame): the recommended accessible station at 33.56871, -117.66935.
+  <span class="src">Imagery: OC Survey 1990 countywide; OC Survey 2022 3-inch. A+ / documented.</span></figcaption>
+</figure>
+
+<h2 id="limits">Limitations, provenance and sources</h2>
+<h3>What this document does not claim</h3>
+<ul>
+<li>It does not claim a dipping vat existed at any of these 23 locations. The targets are a <b>model estimate</b> derived from 1968 surface-water mapping, not a record of vat locations. No California vat inventory exists.</li>
+<li>It does not claim arsenic is present in Ladera Ranch soil. Nothing here is a measurement.</li>
+<li>It does not claim any connection between the reported pediatric cancers and any environmental factor. CDPH states no environmental cause has been established, and the California Cancer Registry assessment is pending.</li>
+<li>The concrete feature observed in August 2026 is a <b>field observation with unestablished identification</b>. Twelve feet of concrete matching a federal specification is a reason to test soil; it is not a vat until the ground says so.</li>
+<li>The accessible station coordinates are computed from imagery and public layers. They have not been walked, surveyed, or checked for ownership.</li>
+</ul>
+
+<h3>Data provenance</h3>
+<table><thead><tr><th style="width:30%">Layer</th><th>Source</th><th style="width:12%">Grade</th></tr></thead><tbody>
+<tr><td>1968 surface-water points, 23 targets</td><td>USGS 1:24,000 topographic field survey, digitised; project file <code>topo1968_water.json</code> and <code>sampling_targets.json</code>, generated 31 July 2026</td><td><span class="badge ok">A1</span></td></tr>
+<tr><td>1990 pre-grading aerial</td><td>OC Survey countywide imagery series</td><td><span class="badge ok">A+</span></td></tr>
+<tr><td>2022 three-inch orthoimagery</td><td>OC Survey <code>22_OC_3IN_SP6</code> ImageServer</td><td><span class="badge ok">A+</span></td></tr>
+<tr><td>Grading progression 1997–2006</td><td>Landsat 5/7 disturbed-fraction analysis; project file <code>grading_maps_summary.json</code></td><td><span class="badge warn">Interpreted from A1</span></td></tr>
+<tr><td>Elevation, local relief</td><td>OC 2018 digital elevation model, 5&nbsp;m, EPSG:26946, values in feet</td><td><span class="badge ok">A1</span></td></tr>
+<tr><td>Roads, trails, parks, schools</td><td>OpenStreetMap extract, retrieved 19 September 2026</td><td><span class="badge warn">B1</span></td></tr>
+<tr><td>Parcels</td><td>OC Assessor parcel layer, retrieved 28 July 2026</td><td><span class="badge ok">A2</span></td></tr>
+<tr><td>Mass-balance and concentration estimates</td><td>Project report <code>ARSENIC_QUANTIFICATION_MASTER.md</code>, from USDA BAI Circulars 174 and 183 (1911)</td><td><span class="badge warn">Model estimate on A1 inputs</span></td></tr>
+<tr><td>Ladera Health Watch organisation and personnel</td><td>laderahealthwatch.org, retrieved 19 September 2026</td><td><span class="badge ok">A2</span></td></tr>
+<tr><td>CSUF sampling, 13–14 September 2026</td><td>NBC Los Angeles, "Soil and water tests underway in Ladera Ranch due to cancer concerns"</td><td><span class="badge warn">B2</span></td></tr>
+<tr><td>CDPH and California Cancer Registry status</td><td>CDPH statement as reported by Ladera Health Watch, retrieved 19 September 2026</td><td><span class="badge ok">A2 as reported</span></td></tr>
+</tbody></table>
+
+<h3>Sources consulted</h3>
+<ul class="small">
+<li><a href="https://www.laderahealthwatch.org/about">Ladera Health Watch — About</a></li>
+<li><a href="https://www.laderahealthwatch.org/post/ladera-ranch-health-investigation-moves-forward-on-cancer-data-research-and-pesticide-policy">Ladera Health Watch — CDPH launches Ladera cancer page; LARMAC extends pesticide pause</a></li>
+<li><a href="https://www.nbclosangeles.com/news/local/soil-water-tests-ladera-ranch-cancer-concerns/3941895/">NBC Los Angeles — Soil and water tests underway in Ladera Ranch due to cancer concerns</a></li>
+<li>USDA Bureau of Animal Industry, Circular 174 (1911) and Circular 183 (1911), dipping-vat specification and arsenical formula</li>
+<li>Florida DEP Cattle Dip Vat Assessment Program records, obtained by public-records request, September 2026</li>
+</ul>
+
+<p class="disc"><b>Disclaimer.</b> This platform is an independent research and data-organization project. It does not provide medical advice and does not establish that any pesticide, property, organization, employer, school, water provider, government agency, or other party caused any illness. Publicly reported health events may not have been independently medically verified. Geographic and temporal overlap does not establish exposure or causation. Formal conclusions require authorized epidemiological analysis, verified medical information, exposure assessment, toxicological review, and independent scientific evaluation. Coordinates of the August 2026 field observation are withheld pending notification of the landowner and the State.</p>
+</div></body></html>
