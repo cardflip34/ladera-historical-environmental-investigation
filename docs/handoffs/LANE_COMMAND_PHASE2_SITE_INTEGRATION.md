@@ -7,6 +7,12 @@ Paste this whole file into the website-lane session as its instruction. It super
 - Instagram: both films posted with captions that point to the site and say it is password protected (access: DM or andystavros@icloud.com).
 - Andy is now listed as an advisor at https://protectladera.org/advisors/ ("Advisory Member: Independent Researcher & Land Historian").
 
+## Read this first
+`docs/handoffs/PHASE2_SOURCE_OF_TRUTH.md` in this repo is the authority for every Phase 2 artifact: what each one
+asserts, its evidence grade, whether it is cleared for publication, and the exact wording that has been superseded
+by corrections. Read it before writing a single line, and treat any conflict between it and this command as
+resolved in its favour.
+
 ## Ground rules (from the project's CLAUDE.md, non-negotiable)
 Hypothesis-neutral. No causal claims. No coordinates of the concrete base or the pond anywhere on the site. No photos that identify children. Every figure labeled by class: verified fact, official record, model estimate, field observation, hypothesis. Language "reported cancer cluster", never "confirmed". Keep Vercel password protection ON; publish the access sentence instead (section 5).
 
@@ -33,6 +39,32 @@ Write it from the sources listed above, in the report's existing voice, roughly 
 - The pond and the drainage (field observation + A1 imagery + DEM). The pond at the edge of the golf course was built with the course (first visible in the January 2004 orthoimage; absent in 1929, 1937, 1947, 1953, 1960, 1969, 1980, 1990). It sits at the foot of the slope below the find (hillside ~421 ft, pond ~325 ft, creek ~280 ft on the 2018 county DEM). The 1968 USGS field survey mapped a 9,111 m² stock-water body on the creek about 240 m upstream (~291 ft); it no longer appears as open water and the corridor is riparian woodland. Runoff from the slope passes through the pond to the creek. The tule ring "looks dead" is an observation with a seasonal explanation; do not call it arsenic damage. Use the era tiles from evidence/lhdrs/phase2_base/pond_eras/ as a 10-frame figure and the two drone photos.
 - What has changed since Phase 1. Some soil sampling in Ladera Ranch is now under way; what it is testing for, and where, has not been shared; Andy has not been consulted on locations. Andy is now an advisor to Protect Ladera (link protectladera.org/advisors). Keep this factual, one paragraph.
 - The ask (unchanged). Close and mark the trail segment until tested; sample the base, the pens footprint, the drip-pen side, the tire-swing area, the pond sediment and the creek margin under hazardous-materials protocol; total and bioavailable arsenic, lead alongside, speciation. Independent of Ladera Ranch and Rancho Mission Viejo, by the State. A negative result is a real result.
+
+## 3b. Second new chapter: "The water loop" (insert after the Phase 2 chapter; suggested file 12_water_loop.md; add to Contents)
+
+Phase 2 also produced a completed water-routing audit that is not yet on the site. Write it from
+`research/water_supply/` and `reports/PURPLE_PIPE_LOOP.pdf` in the evidence repo, roughly 600 to 900 words.
+
+- **What was traced.** Runoff reaching the Horno basin goes to the Upper Chiquita / Horno urban water reclamation
+  facility, then through roughly 7 acres of HOA wetlands, then blends into the recycled water ("purple pipe")
+  system that irrigates the community's slopes, parks and common areas, bypassing Chiquita Creek. The route is
+  established from primary regulatory documents, principally Addendum 4 to RWQCB Order 97-52
+  (`research/water_supply/RWQCB_Addendum4_Order97-52_Horno_UWRF.pdf`, A1).
+- **The finding.** Permit sampling under Order 97-52 covers salts and nutrients. **It does not include arsenic or
+  any metal.** So a closed capture-treat-reuse-irrigate loop exists, documented, and has never been tested for the
+  analyte this project is asking about. That is the entire claim. It is not a claim that anything harmful is
+  circulating.
+- **Figures.** `horno_system_map_2025.jpg` (the system on satellite), `resolved_route_map_2025.jpg` (the confirmed
+  route), `candidate_routes_map_2025.jpg` (what was ruled out and how), `loop_schematic.png`, `loop_accumulation.png`.
+  Each needs a source line and an evidence grade.
+- **Why it belongs beside the soil question.** Irrigation is the one pathway that keeps operating after grading
+  stops: it distributes water across the same slopes and parks where the soil question sits. Say that plainly and
+  stop there.
+- **Language discipline.** "Confirmed by permit documents" applies to the route only. Use "unmeasured", never
+  "contaminated". The word *loop* describes capture-treat-reuse-irrigate; it is not an accumulation claim. The
+  existing HTML at `research/water_supply/purple_pipe_loop_report.html` can be adapted, but re-grade every
+  statement against the chapter conventions before publishing. **Do not name John Gresko anywhere in the report.**
+- Cross-link this chapter from the Phase 2 chapter's dispersal paragraph and from `65_archives_and_testing.md`.
 
 ## 4. Merge edits to existing chapters (do not leave contradictions)
 - 00_authors_note.md, section "What comes next, and a second phase": keep the first two paragraphs (the dust-pathway opinion, carefully hedged). Replace the paragraph beginning "So that is where a second phase of this work is now going" with a short paragraph saying Phase 2 became a field investigation, what it found (one sentence), that the development timeline/occupancy/wind work is still part of the record, and pointing to the new chapter and the Phase 2 film. Keep the contact paragraph and add: "The site is password protected for now. For access, message me on Instagram or email andystavros@icloud.com."
