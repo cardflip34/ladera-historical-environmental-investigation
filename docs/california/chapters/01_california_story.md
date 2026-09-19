@@ -40,7 +40,15 @@ and a draining pen. These are the plans California ranchers built from:
 arsenic bath, swimming its length and climbing out into a drain pen where the fluid ran back toward
 the vat. The government's own plans above specify the structure that process required, down to the
 floor length, which is the measurement that makes a surviving concrete base identifiable a century
-later.
+later. The Bureau photographed the work as it happened:
+
+`evidence/images/usda_bai_circ174_1911_PLATE_XV_cage_vat_for_dipping_cattle.png`
+*Dipping in progress, 1909: the apparatus at rest, an attendant ducking an animal with the cage
+lowered, and an animal walking out. USDA Bureau of Animal Industry, 26th Annual Report (1909),
+Plate XV, reproduced in the California circular [A1]. Note that this is the **cage vat**, the form
+the circular recommends for smaller herds and gentle cattle, "especially dairy cows"; a range
+operation the size of the O'Neill herd would have needed the swim vat plotted above. The
+photograph's location is not stated in the source.*
 
 **The program in Orange County ran ~1907 to March 1912.** Four dip sites are named in the 1908
 press, the Joplin ranch in Trabuco Canyon/Bell Canyon, San Juan Capistrano, Yorba, and the Bixby
