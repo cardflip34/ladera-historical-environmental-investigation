@@ -6,10 +6,9 @@ area. Full-resolution originals of every frame are held in the project repositor
 (`evidence/images/`, `research/*/imagery/`); each caption carries its source and grade.
 
 ## Plate 1: The dipping program and the vat
-The government's engineering and the process itself: the California circular, the swim-, cage-,
-wade-, brick- and concrete-vat plans ranchers built from, the poison warning posted at every vat,
-and a photograph of cattle going through a fever-tick dip (USDA, present-day, same program and vat
-design, shown illustratively).
+The government's engineering: the California circular, the swim-, cage-, wade-, brick- and
+concrete-vat plans ranchers built from, and the poison warning posted at every vat. Every frame is
+a period document of the program itself.
 
 `research/plates/plate_1_dipping_program.jpg`
 

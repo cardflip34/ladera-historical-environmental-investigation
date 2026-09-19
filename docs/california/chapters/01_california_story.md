@@ -38,12 +38,9 @@ and a draining pen. These are the plans California ranchers built from:
 
 **What it looked like.** Cattle were driven single-file down the chute and plunged through the
 arsenic bath, swimming its length and climbing out into a drain pen where the fluid ran back toward
-the vat. The process is unchanged where fever-tick dipping still operates today:
-
-`evidence/images/illustrative/USDA_ARS_cattle_fever_tick_dipping_vat_PD.jpg`
-*Illustrative, U.S. Department of Agriculture, Agricultural Research Service (public domain): cattle
-going through a fever-tick dipping vat in the still-active Texas-Mexico border quarantine. The same
-national program and vat design; not a photograph of the California operation.*
+the vat. The government's own plans above specify the structure that process required, down to the
+floor length, which is the measurement that makes a surviving concrete base identifiable a century
+later.
 
 **The program in Orange County ran ~1907 to March 1912.** Four dip sites are named in the 1908
 press, the Joplin ranch in Trabuco Canyon/Bell Canyon, San Juan Capistrano, Yorba, and the Bixby
