@@ -46,3 +46,28 @@ Phase 2 narration failed this audit and were corrected before the full cut was b
 Language discipline: the reel is labeled AI-assisted reconstruction on screen; no coordinates are shown;
 no individual child or family is referenced; Ewing sarcoma is described as having no established
 environmental cause; the Phase 3 question is framed as a hypothesis for a medical-records study.
+
+## Correction, 2026-09-17 (pond)
+The golf-course pond at the edge of the open space is NOT visible in any aerial before January 2004; it appears with the
+Arroyo Trabuco golf course build-out (~2003-2004). Earlier narration and captions saying "the same pond, 1929 to 2025" and
+"mapped by the 1968 survey as standing water" were wrong and have been replaced. The 2018 county DEM (EPSG:26946, feet)
+puts the hillside where the concrete base was found at ~421 ft, the pond at ~334 ft and the 1968 USGS water body on the
+creek floor at ~291 ft: the 1968 water body is DOWNHILL of the pond, not upstream. Corrected wording: the pond was built
+with the golf course; it sits at the foot of the slope, between the hillside and the creek where the 1968 survey mapped
+standing water; runoff from the slope passes through it. The grey vegetation ring is tule/bulrush, which dies back
+seasonally; "looks dead" is stated as observation only.
+
+## Correction 2, 2026-09-18 (pond position)
+The pond coordinate used in the first Phase 2 cut (33.55756, -117.65184) was the earlier estimate of the target #6
+remnant, not the pond in Andy's drone photos. Matching the drone frames and Andy's marked-up aerial against the OC 2025
+1-ft orthoimage places the pond ~130 m south-south-west, immediately north-west of the bunker at the head of the
+fairway (approx. 33.5565, -117.6523; kept off the site). All ten era tiles, the drainage graphic and the narration were
+rebuilt on the corrected point. The USGS 2004 HRO mosaic was found to sit ~44 m north of the 2025 image at this spot
+and its crop is shifted accordingly. Findings at the corrected point: no pond in 1929, 1937, 1947, 1953, 1960, 1969,
+1980 or 1990 (field edge, then brush); the pond appears with the golf course (2004). Elevations (2018 county DEM, ft):
+hillside where the base was found ~421; pond ~325; creek west of the pond ~280; the 1968 USGS water body (9,111 m2,
+253 m long) lies on the creek floor ~240 m NORTH (upstream), ~291 ft. The creek flows south, so the 1968 body is
+upstream of the pond, not downstream; earlier wording "just downhill" was wrong and is replaced with "on that creek,
+about 260 yards upstream". The 1968 body is a large surface-water feature, two orders of magnitude bigger than a vat
+(~2,000 gal); it is not the concrete base. It no longer appears as open water in any later imagery; the corridor
+there is riparian woodland. Whether it was a seasonal pool or an impounded stock pond that silted in is not established.

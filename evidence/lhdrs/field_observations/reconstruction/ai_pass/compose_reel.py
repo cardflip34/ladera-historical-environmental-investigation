@@ -22,9 +22,13 @@ add("revealA","photo_04_vat.png",4.5)
 add("revealB","IMG_4497",4.0)
 add("blueprint","IMG_4497",7.5)
 add("clip","clip_05_drip.mp4",4.6); add("clip","clip_06_pullback.mp4",4.2)
+add("wide","clip_08_wide.mp4",12.0)
 OUTRO=3.2; END=SEGS[-1][1]+OUTRO; N=int(round(END*FPS))
 def seg_at(kind): return next(s for s in SEGS if s[2]==kind and True)
-tA=[s for s in SEGS if s[2]=="revealA"][0]; tB=[s for s in SEGS if s[2]=="revealB"][0]; tC=[s for s in SEGS if s[2]=="blueprint"][0]
+tA=[s for s in SEGS if s[2]=="revealA"][0]; tB=[s for s in SEGS if s[2]=="revealB"][0]; tC=[s for s in SEGS if s[2]=="blueprint"][0]; tW=[s for s in SEGS if s[2]=="wide"][0]
+import json
+TRACK=json.load(open(os.path.join(D,"..","wide","site_track.json")))
+WIDE=sorted(glob.glob(os.path.join(D,"..","wide","w_*.png")))
 LAST=SEGS[-1][1]
 CAPS=[(0.2,3.0,"LADERA RANCH OPEN SPACE · 2026","Iron pipe rails lead to a surviving concrete base in the brush"),
  (SEGS[1][0]+0.2,SEGS[1][1],"O'NEILL RANCH · c. 1910","AI-assisted reconstruction of a federal-specification cattle dipping station"),
@@ -65,6 +69,8 @@ def raw(t):
             if kind=="revealA": return to_vertical(VAT),(a,b,kind)
             if kind=="revealB": return fit_portrait(PH97,1.0),(a,b,kind)
             if kind=="blueprint": return fit_portrait(PH97,1.0),(a,b,kind)
+            if kind=="wide":
+                i=min(len(WIDE)-1,int((t-a)*FPS/2)); return to_vertical(Image.open(WIDE[i]).convert("RGB")),(a,b,kind)
     a,b,kind,src,off=SEGS[-1]; return to_vertical(Image.open(FR[src][-1]).convert("RGB")),(a,b,kind)
 def base(t):
     im,(a,b,kind)=raw(t)
@@ -162,6 +168,31 @@ def frame(o):
             d.rounded_rectangle([60,1600,VW-60,1800],16,fill=(8,10,14,int(175*A2/255)))
             d.rectangle([100,1640,140,1680],fill=AMB+(A2,)); d.text((160,1642),"OBSERVED  ·  concrete photographed 2026",font=SAB(28),fill=(232,234,238,A2))
             d.rectangle([100,1712,140,1752],fill=(150,220,255,A2)); d.text((160,1714),"INTERPRETED  ·  USDA Circular 183 (1911) dimensions",font=SAB(28),fill=(232,234,238,A2))
+
+    # ---------- WIDE: the whole ranch, multiple stations ----------
+    if tW[0]<=t<tW[1]+XF:
+        u=t-tW[0]; fi=min(len(WIDE)-1,int(u*FPS/2))
+        vis=min(ss(tW[0],tW[0]+0.3,t),1-ss(tW[1]-0.3,tW[1]+0.1,t))
+        pts=TRACK[str(fi)]
+        sc_=VW/W
+        for k,(px,py) in enumerate(pts):
+            x=px*W*sc_; y=py*H*sc_+FY
+            if not (0<x<VW and FY<y<FY+VW*H/W): continue
+            col=AMB if k==0 else (150,220,255)
+            r=int((26 if k==0 else 22)*(1+0.12*math.sin(t*5+k)))
+            show=ss(0.2,0.8,u) if k==0 else ss(3.0+1.2*k,3.6+1.2*k,u)
+            A=int(255*show*vis)
+            if A<=0: continue
+            for rr,al in ((r+14,40),(r+6,110),(r,255)): d.ellipse([x-rr,y-rr,x+rr,y+rr],outline=col+(int(al*show*vis),),width=4)
+            lab="CONCRETE BASE FOUND · 2026" if k==0 else "CANDIDATE STATION"
+            sub="the vat you saw rebuilt" if k==0 else "1968 stock-water point · unconfirmed"
+            lx=min(max(x-160,30),VW-360); ly=y-r-92 if y-r-92>FY+20 else y+r+14
+            d.rounded_rectangle([lx-10,ly-6,lx+340,ly+62],8,fill=(8,10,14,int(170*show*vis)))
+            d.text((lx,ly),lab,font=SAB(24),fill=col+(A,)); d.text((lx,ly+32),sub,font=SA(20),fill=(232,234,238,A))
+        A2=int(255*ss(1.0,1.6,u)*vis)
+        if A2>0:
+            d.text((VW/2,1330),"THREE TO SEVEN VATS",font=SB(52),fill=AMB+(A2,),anchor="ma")
+            wrap(d,"A herd of 25,000 could not be dipped at one station. Candidate sites follow the ranch's mapped water points and drainages. Positions illustrative; only one has been found.",1405,SA(31),(232,234,238,A2),46)
     im=Image.alpha_composite(im,ov)
     t0=LAST-0.4
     if t>=t0:

@@ -46,8 +46,12 @@ def wrap(d,text,font,maxw):
         else: lines.append(cur); cur=w
     if cur: lines.append(cur)
     return lines
-def caption(fr,text,y,size=44,color=INK,bold=True,maxw=960,align="left",x=60,shadow=True,alpha=255):
-    if alpha<=0: return
+CAPX=int(os.environ.get("CAPX","60"))
+def caption(fr,text,y,size=44,color=INK,bold=True,maxw=None,align="left",x=None,shadow=True,alpha=255):
+    if alpha<=0: return y
+    if x is None: x=CAPX if align=="left" else 0
+    if maxw is None: maxw=(W-x-60) if align=="left" else 980
+    if align=="left": maxw=min(maxw,int(os.environ.get("MAXW","2000")))
     ov=Image.new("RGBA",(W,H),(0,0,0,0)); d=ImageDraw.Draw(ov); f=F(size,bold)
     lines=wrap(d,text,f,maxw); lh=int(size*1.22)
     for i,l in enumerate(lines):
@@ -55,6 +59,7 @@ def caption(fr,text,y,size=44,color=INK,bold=True,maxw=960,align="left",x=60,sha
         if shadow: d.text((tx+3,y+i*lh+3),l,font=f,fill=(0,0,0,int(alpha*0.8)))
         d.text((tx,y+i*lh),l,font=f,fill=color+(alpha,))
     fr.paste(ov,(0,0),ov)
+    return y+len(lines)*lh
 def band(fr,y0,y1,alpha=170):
     ov=Image.new("RGBA",(W,H),(0,0,0,0)); ImageDraw.Draw(ov).rectangle([0,y0,W,y1],fill=(8,10,16,alpha)); fr.paste(ov,(0,0),ov)
 def tag(fr,text,y=70):
@@ -67,7 +72,7 @@ def fade_a(i,n,fi=0.5,fo=0.6):
     return max(0,min(1,a))
 
 def render(name,nframes,fn):
-    p=f"{OUT}/{name}.mp4"
+    p=f"{OUT}/{os.environ.get('SEGPFX','')}{name}.mp4"
     ff=subprocess.Popen(["ffmpeg","-y","-loglevel","error","-f","rawvideo","-pix_fmt","rgb24","-s",f"{W}x{H}","-r",str(FPS),"-i","-","-c:v","libx264","-crf","16","-pix_fmt","yuv420p","-video_track_timescale","12288",p],stdin=subprocess.PIPE)
     for i in range(nframes):
         fr=fn(i,nframes)
@@ -77,7 +82,7 @@ def render(name,nframes,fn):
     ff.stdin.close(); ff.wait(); print("wrote",name,round(nframes/FPS,2),"s"); return p
 
 # ---------- SEGMENT: Florida ----------
-def seg_florida(pages,caps,dur=31.0):
+def seg_florida(pages,caps,dur=float(os.environ.get("DUR_FL","31"))):
     """pages: list of image paths; caps: list of (headline, sub)."""
     ims=[Image.open(p).convert("RGB") for p in pages]
     n=int(dur*FPS); intro=int(4.0*FPS); per=(n-intro)/len(ims)
@@ -95,8 +100,8 @@ def seg_florida(pages,caps,dur=31.0):
         kb=kb_frame(im,ease(t),1.0,1.12,0.5,0.45,box); fr.paste(kb,(box[0],box[1]))
         hl,sub=caps[k]
         band(fr,1520,1920,190)
-        caption(fr,hl,1560,size=44,color=AMB)
-        caption(fr,sub,1630,size=30,color=INK,bold=False,maxw=960)
+        y2=caption(fr,hl,1560,size=44,color=AMB)
+        caption(fr,sub,y2+10,size=30,color=INK,bold=False,maxw=960)
         tag(fr,f"FLORIDA · STATE VAT PROGRAM  ·  {k+1}/{len(ims)}",130)
         return fr
     return render("fl",n,fn)
@@ -118,7 +123,7 @@ def seg_tire(path,dur=17.0):
     return render("tire",n,fn)
 
 # ---------- SEGMENT: pond time series ----------
-def seg_pond(dur_lead=8.0,per=3.0,dur_end=7.0):
+def seg_pond(dur_lead=float(os.environ.get('DUR_PL','8')),per=float(os.environ.get('DUR_PP','3')),dur_end=float(os.environ.get('DUR_PE','7'))):
     win=json.load(open(SRC+"/pond/win.json")); WIN=win["WIN"]; P=win["pond"]; T6=win["tgt6"]
     years=["1929","1937","1947","1953","1960","1969","1980","1990","2004","2025"]
     notes={"1929":"earliest aerial survey · open range","1937":"sharpest ranch-era frame · 1.15 ft per pixel","1947":"post-war composite","1953":"Orange County series","1960":"Orange County series","1969":"one year after the USGS field survey mapped water here","1980":"Orange County series","1990":"before entitlement","2004":"USGS 0.3 m · during build-out","2025":"present day · 1 ft"}
@@ -159,8 +164,8 @@ def seg_pond(dur_lead=8.0,per=3.0,dur_end=7.0):
             fr.paste(tiles[y],off); draw_marks(fr,off,labels=(k==0))
             band(fr,1380,1920,0)
             caption(fr,y,1440,size=140,color=AMB)
-            caption(fr,notes[y],1620,size=32,color=INK,bold=False,maxw=960)
-            caption(fr,"Same ground, same window, every frame. Red ring = the pond. Cyan = 1968 USGS water point.",1700,size=24,color=MUT,bold=False,maxw=960)
+            y2=caption(fr,notes[y],1600,size=32,color=INK,bold=False,maxw=960)
+            caption(fr,"Same ground, same window, every frame. Red ring = the pond. Cyan = 1968 USGS water point.",y2+8,size=24,color=MUT,bold=False,maxw=960)
             # progress bar
             d=ImageDraw.Draw(fr); d.rectangle([60,1800,1020,1808],fill=(40,46,58)); d.rectangle([60,1800,60+960*((k+t)/len(years)),1808],fill=AMB)
             tag(fr,"THE SAME POND, 1929 TO 2025",90)
@@ -178,13 +183,14 @@ def seg_pond(dur_lead=8.0,per=3.0,dur_end=7.0):
     return render("pond",n,fn)
 
 # ---------- SEGMENT: trail ----------
-def seg_trail(path,dur=18.0):
+def seg_trail(path,dur=18.0,rings=True):
     im=ImageOps.exif_transpose(Image.open(path)).convert("RGB"); n=int(dur*FPS)
     def fn(i,N):
         t=i/N; fr=blur_bg(im); box=(0,0,W,1400)
         fr.paste(kb_frame(im,ease(t),1.0,1.15,0.45,0.45,box),(0,0)); mp=kb_map(im,ease(t),1.0,1.15,0.45,0.45,box)
-        ring(fr,mp(482,215),r=120,col=AMB,label="RANCH-ERA POST AND RAIL",lab_dx=150,lab_dy=-190)
-        ring(fr,mp(505,590),r=80,col=CYAN,label="PUBLIC TRAIL MARKER · PATH FORK",alpha=int(255*min(1,max(0,(t-0.15)*4))),lab_dx=-560,lab_dy=140)
+        if rings:
+            ring(fr,mp(482,215),r=120,col=AMB,label="RANCH-ERA POST AND RAIL",lab_dx=150,lab_dy=-190)
+            ring(fr,mp(505,590),r=80,col=CYAN,label="PUBLIC TRAIL MARKER · PATH FORK",alpha=int(255*min(1,max(0,(t-0.15)*4))),lab_dx=-560,lab_dy=140)
         band(fr,1380,1920,200)
         tag(fr,"PUBLIC TRAIL · DIPPING-ERA FENCE LINE · CONCRETE BASE NEARBY",90)
         caption(fr,"Families walk and ride past this every weekend.",1420,size=40,color=INK)
@@ -197,7 +203,7 @@ def seg_trail(path,dur=18.0):
 
 # ---------- SEGMENT: closing ----------
 def seg_close(dur=16.0):
-    im=Image.open(DOC+"/closing_card.png").convert("RGB"); n=int(dur*FPS)
+    im=Image.open(HERE+"/closing_card_v2.png").convert("RGB") if os.path.exists(HERE+"/closing_card_v2.png") else Image.open(DOC+"/closing_card.png").convert("RGB"); n=int(dur*FPS)
     return render("close",n,lambda i,N: fit_cover(im,W,H))
 
 if __name__=="__main__":
@@ -206,11 +212,11 @@ if __name__=="__main__":
         pages=json.load(open(HERE+"/fl_pages.json")); seg_florida([p["path"] for p in pages],[(p["hl"],p["sub"]) for p in pages])
     if "tire" in what or "all" in what: seg_tire(SRC+"/tire_swing.jpg")
     if "pond" in what or "all" in what: seg_pond()
-    if "trail" in what or "all" in what: seg_trail(SRC+"/trail_fork.jpg")
+    if "trail" in what or "all" in what: seg_trail(SRC+"/threat/t1_IMG_4499.jpg",rings=False)
     if "close" in what or "all" in what: seg_close()
 
 # ================= FULL-CUT EXTRA SEGMENTS =================
-def seg_intro(dur=32.0):
+def seg_intro(dur=float(os.environ.get("DUR_INTRO","32"))):
     bg=Image.new("RGB",(W,H),BG)
     bg=fit_cover(bg,W,H); n=int(dur*FPS)
     cards=[(0.0,"PHASE 1 · THE RECORD",["1907 to 1912: compulsory arsenic cattle dipping,","ordered by the State of California and the USDA,","on the land that became Ladera Ranch."]),
@@ -229,7 +235,7 @@ def seg_intro(dur=32.0):
         return fr
     return render("intro",n,fn)
 
-def seg_threat(dur=42.0):
+def seg_threat(dur=float(os.environ.get("DUR_THREAT","42"))):
     files=sorted(glob.glob(SRC+"/threat/*.jpg")); ims=[ImageOps.exif_transpose(Image.open(f)).convert("RGB") for f in files]
     caps=json.load(open(SRC+"/threat/caps.json")) if os.path.exists(SRC+"/threat/caps.json") else [("","")]*len(ims)
     n=int(dur*FPS); per=n/len(ims)
@@ -237,7 +243,7 @@ def seg_threat(dur=42.0):
         k=min(len(ims)-1,int(i/per)); t=(i-k*per)/per; im=ims[k]; fr=blur_bg(im)
         box=(0,200,W,1480); fr.paste(kb_frame(im,ease(t),1.0,1.14,0.5,0.5,box),(box[0],box[1]))
         band(fr,1500,1920,200); hl,sub=caps[k]
-        caption(fr,hl,1540,size=46,color=AMB); caption(fr,sub,1610,size=32,color=INK,bold=False,maxw=960)
+        y2=caption(fr,hl,1540,size=46,color=AMB); caption(fr,sub,y2+12,size=32,color=INK,bold=False,maxw=960)
         tag(fr,f"THE IMMEDIATE QUESTION · FIELD RECORD, AUGUST 2026  ·  {k+1}/{len(ims)}",90)
         return fr
     return render("threat",n,fn)
@@ -312,7 +318,7 @@ def make_cover(out9,out16):
     d.line([W/2-60,410,W/2+60,410],fill=(214,168,84),width=4)
     ctext(440,"ARSENIC",_font(["Arial Black.ttf","Arial Bold.ttf"],190),(214,168,84))
     ctext(660,"1907 to 1912. Eight pounds per five hundred gallons.",F(34),(210,214,222))
-    ctext(720,"Every animal. Every fourteen days. On this ground.",F(34),(210,214,222))
+    ctext(720,"Every cow. Every fourteen days. On this ground.",F(34),(210,214,222))
     # the concrete base found
     ctext(830,"A CONCRETE DIP-VAT BASE.",F(58,True),(245,240,228))
     ctext(905,"FOUND.",disp(170),(214,168,84))
@@ -323,7 +329,7 @@ def make_cover(out9,out16):
     ctext(1262,"POISONOUS",disp(84),(214,168,84))
     ctext(1360,"to man and all animals.",F(30),(210,214,222))
     ctext(1400,"USDA Bureau of Animal Industry, 1911: the notice posted on every California vat",F(20),(150,156,168))
-    ctext(1520,"THE SOIL HAS NEVER BEEN TESTED.",F(46,True),(245,240,228))
+    ctext(1520,"UNTESTED FOR TWENTY YEARS.",F(46,True),(245,240,228))
     ctext(1600,"CALIFORNIA: TEST THE SOIL.",F(46,True),(214,168,84))
     ctext(1760,"SOUTH ORANGE COUNTY, CALIFORNIA",F(26,True),(150,156,168),spacing=5)
     fr.save(out9,quality=95)
@@ -345,7 +351,7 @@ def seg_open(dur_cover=4.0,dur_map=13.0,dur_sat=17.0):
         if i<nc+nm:
             t=ease((i-nc)/nm); fr=Image.new("RGB",(W,H),BG)
             # slow pan down the map at a zoom that fills the width
-            mc=mp.crop((105,215,1190,1440)); cov=mc.resize((W,int(W*mc.height/mc.width)),Image.LANCZOS); y0=int(max(0,cov.height-1560)*t)
+            mc=mp.crop((108,236,1188,1438)); cov=mc.resize((W,int(W*mc.height/mc.width)),Image.LANCZOS); y0=int(max(0,cov.height-1560)*t)
             fr.paste(cov.crop((0,y0,W,min(cov.height,y0+1560))),(0,0))
             band(fr,1560,1920,210); caption(fr,"WHERE TO TEST",1600,size=60,color=AMB)
             caption(fr,"Phase 2 map: 23 recommended sampling sites, ranked by where cattle gathered. The purple cross marks the 1948 ranch structure.",1680,size=30,color=INK,bold=False,maxw=960)
@@ -367,3 +373,115 @@ def seg_open(dur_cover=4.0,dur_map=13.0,dur_sat=17.0):
     return render("open",n,fn)
 
 if __name__=="__main__" and "open" in sys.argv: seg_open()
+
+# ================= TOP PANELS for split layout (1080 x 1312) =================
+def make_top_panels():
+    TH=1312
+    base=Image.open(os.path.expanduser("~/Desktop/Ladera_Ranch_Broll_Pack/Promo_Instagram_9x16.jpg")).convert("RGB").resize((W,H),Image.LANCZOS)
+    bg=base.filter(ImageFilter.GaussianBlur(40)); bg=Image.blend(bg,Image.new("RGB",(W,H),(38,48,62)),0.62).crop((0,0,W,TH))
+    disp=lambda s:_font(["Didot.ttc","Bodoni 72.ttc","Georgia Bold.ttf"],s)
+    def panel(fr,items):
+        d=ImageDraw.Draw(fr)
+        for y,txt,font,fill,sp in items:
+            tw=d.textlength(txt,font=font)+sp*max(0,len(txt)-1); x=(W-tw)/2
+            if sp:
+                for ch in txt: d.text((x,y),ch,font=font,fill=fill); x+=d.textlength(ch,font=font)+sp
+            else: d.text((x,y),txt,font=font,fill=fill)
+    # intro top
+    fr=bg.copy(); d=ImageDraw.Draw(fr); fs=150
+    while d.textlength("LADERA RANCH",font=disp(fs))>960: fs-=4
+    panel(fr,[(70,"PHASE 2  ·  AN INDEPENDENT INVESTIGATION",F(28,True),(214,168,84),6),(130,"LADERA RANCH",disp(fs),(245,240,228),0),
+              (330,"ARSENIC",_font(["Arial Black.ttf","Arial Bold.ttf"],170),(214,168,84),0),(520,"1907 to 1912. Eight pounds per five hundred gallons.",F(32),(210,214,222),0),
+              (570,"Every cow. Every fourteen days. On this ground.",F(32),(210,214,222),0),(680,"A CONCRETE DIP-VAT BASE.",F(54,True),(245,240,228),0),(745,"FOUND.",disp(150),(214,168,84),0)])
+    d.line([W/2-60,308,W/2+60,308],fill=(214,168,84),width=4)
+    bx=(110,960,970,1180); d.rounded_rectangle(bx,radius=10,outline=(245,240,228),width=3,fill=(18,24,34))
+    panel(fr,[(978,"WARNING!  The fluid in this vat is",F(30,True),(245,240,228),0),(1018,"POISONOUS",disp(80),(214,168,84),0),(1112,"to man and all animals.   USDA Bureau of Animal Industry, 1911",F(24),(210,214,222),0)])
+    panel(fr,[(1225,"UNTESTED FOR TWENTY YEARS.  CALIFORNIA: TEST THE SOIL.",F(30,True),(214,168,84),0)])
+    fr.save(HERE+"/top_intro.png")
+    # closing top
+    fr=bg.copy(); d=ImageDraw.Draw(fr)
+    fs=260
+    while d.textlength("THE SOIL.",font=disp(fs))>980: fs-=6
+    panel(fr,[(120,"LADERA RANCH  ·  PHASE 2",F(30,True),(214,168,84),6),(230,"TEST",disp(fs),(245,240,228),0),(230+fs*0.95,"THE SOIL.",disp(fs),(214,168,84),0),
+              (800,"A federal arsenic dipping program ran here, 1907 to 1912.",F(34),(210,214,222),0),(850,"A concrete vat base has been found.",F(34),(210,214,222),0),
+              (900,"For twenty years, no one tested the ground.",F(34,True),(245,240,228),0),
+              (1080,"Independent research project  ·  not medical advice  ·  establishes no causation",F(22),(150,156,168),0),
+              (1115,"Figures are model estimates from documented herd sizes and the federal formula",F(22),(150,156,168),0),
+              (1200,"CALIFORNIA: TEST THE SOIL.",F(34,True),(214,168,84),2)])
+    fr.save(HERE+"/top_close.png"); print("top panels ok")
+if __name__=="__main__" and "tops" in sys.argv: make_top_panels()
+
+
+# ================= POND v2: scheduled to Andy's drone piece =================
+def seg_pond2(total=77.6):
+    win=json.load(open(SRC+"/pond/win.json")); WIN=win["WIN"]; P=win["pond"]; T6=win["tgt6"]
+    years=["1929","1937","1947","1953","1960","1969","1980","1990","2004","2025"]
+    tiles={y:Image.open(f"{SRC}/pond/era_{y}.jpg").convert("RGB") for y in years}
+    tf=ImageOps.exif_transpose(Image.open(SRC+"/trail_fork.jpg")).convert("RGB")
+    d20=Image.open(SRC+"/dji_0320.jpg").convert("RGB"); d21=Image.open(SRC+"/dji_0321.jpg").convert("RGB")
+    S=W
+    def xy(lon,lat): return ((lon-WIN[0])/(WIN[2]-WIN[0])*S,(WIN[3]-lat)/(WIN[3]-WIN[1])*S)
+    def marks(fr,off):
+        d=ImageDraw.Draw(fr); x,y=xy(*P); x+=off[0]; y+=off[1]
+        for r,wd in [(70,6),(84,2)]: d.ellipse([x-r,y-r,x+r,y+r],outline=RED,width=wd)
+        x6,y6=xy(*T6); x6+=off[0]; y6+=off[1]; d.ellipse([x6-40,y6-40,x6+40,y6+40],outline=CYAN,width=4)
+    SCH=[(0,9.9,"tile2025"),(9.9,27.6,"post"),(27.6,34.6,"d20"),(34.6,44.0,"d21"),(44.0,71.0,"eras"),(71.0,total,"end")]
+    n=int(total*FPS)
+    def fn(i,N):
+        t=i/FPS; fr=Image.new("RGB",(W,H),BG); box=(0,240,W,1540)
+        for a,b,kind in SCH:
+            if a<=t<b: break
+        u=(t-a)/(b-a)
+        if kind=="tile2025":
+            fr.paste(tiles["2025"],(0,300)); marks(fr,(0,300)); tag(fr,"THE POND · BELOW THE VAT SITE",90)
+            caption(fr,"The same ground, from the air",1440,size=48,color=AMB)
+        elif kind=="post":
+            fr=blur_bg(tf); fr.paste(kb_frame(tf,ease(u),1.0,1.12,0.45,0.45,box),(box[0],box[1])); mp=kb_map(tf,ease(u),1.0,1.12,0.45,0.45,box)
+            ring(fr,mp(482,215),r=120,col=AMB,label="RANCH-ERA POST AND RAIL",lab_dx=150,lab_dy=-190)
+            ring(fr,mp(505,590),r=80,col=CYAN,label="BIKE PATH MARKER",alpha=int(255*min(1,max(0,(u-0.2)*4))),lab_dx=120,lab_dy=60)
+            tag(fr,"THE POST BY THE BIKE PATH",90); y2=caption(fr,"An old post and rail",1580,size=44,color=AMB); caption(fr,"Right beside the public trail.",y2+10,size=30,color=INK,bold=False)
+        elif kind=="d20":
+            fr=blur_bg(d20); fr.paste(kb_frame(d20,ease(u),1.0,1.08,0.72,0.5,box),(box[0],box[1])); mp=kb_map(d20,ease(u),1.0,1.08,0.72,0.5,box)
+            ring(fr,mp(1186,773),r=90,col=CYAN,label="THE POND",lab_dx=-330,lab_dy=-160)
+            ring(fr,mp(1700,760),r=150,col=(120,230,140),label="GOLF COURSE",alpha=int(255*min(1,max(0,(u-0.3)*4))),lab_dx=-320,lab_dy=170)
+            tag(fr,"DRONE · THE POND AND THE FAIRWAY",90); caption(fr,"Next to the golf course",1580,size=44,color=AMB)
+        elif kind=="d21":
+            fr=blur_bg(d21); fr.paste(kb_frame(d21,ease(u),1.0,1.10,0.9,0.5,box),(box[0],box[1])); mp=kb_map(d21,ease(u),1.0,1.10,0.9,0.5,box)
+            ring(fr,mp(1344,715),r=100,col=CYAN,label="STANDING WATER",lab_dx=-360,lab_dy=-200)
+            ring(fr,mp(1000,824),r=330,col=AMB,label="DEAD VEGETATION",alpha=int(255*min(1,max(0,(u-0.25)*4))),lab_dx=-380,lab_dy=300)
+            tag(fr,"DRONE · BELOW THE VAT SITE",90); caption(fr,"It all looks dead",1580,size=44,color=AMB)
+        elif kind=="eras":
+            per=(b-a)/len(years); k=min(len(years)-1,int((t-a)/per)); y=years[k]
+            fr.paste(tiles[y],(0,300)); marks(fr,(0,300)); tag(fr,"THE SAME POND, 1929 TO 2025",90)
+            caption(fr,y,1440,size=140,color=AMB)
+            d=ImageDraw.Draw(fr); d.rectangle([60,1800,1020,1808],fill=(40,46,58)); d.rectangle([60,1800,60+960*((t-a)/(b-a)),1808],fill=AMB)
+        else:
+            fr.paste(tiles["2025"],(0,300)); marks(fr,(0,300)); d=ImageDraw.Draw(fr); x,y=xy(*P); y+=300
+            ov=Image.new("RGBA",(W,H),(0,0,0,0)); od=ImageDraw.Draw(ov); a2=int(255*min(1,u*3))
+            od.line([x+70,y-40,x+300,y-200],fill=AMB+(a2,),width=4); od.text((x+120,y-250),"DEAD VEGETATION RING",font=F(30,True),fill=AMB+(a2,))
+            gx,gy=520,960; od.line([gx,gy,gx-260,gy+230],fill=(120,230,140,a2),width=4); od.text((80,gy+240),"GOLF COURSE FAIRWAY",font=F(30,True),fill=(120,230,140,a2))
+            fr.paste(ov,(0,0),ov); tag(fr,"TEST THE POND · TEST AROUND IT",90); caption(fr,"2025",1440,size=140,color=AMB)
+        return fr
+    return render("pond2",n,fn)
+
+def make_closing_card():
+    base=Image.open(os.path.expanduser("~/Desktop/Ladera_Ranch_Broll_Pack/Promo_Instagram_9x16.jpg")).convert("RGB").resize((W,H),Image.LANCZOS)
+    fr=Image.blend(base.filter(ImageFilter.GaussianBlur(40)),Image.new("RGB",(W,H),(38,48,62)),0.62); d=ImageDraw.Draw(fr)
+    disp=lambda s:_font(["Didot.ttc","Bodoni 72.ttc","Georgia Bold.ttf"],s)
+    def ctext(y,txt,font,fill,sp=0):
+        tw=d.textlength(txt,font=font)+sp*max(0,len(txt)-1); x=(W-tw)/2
+        if sp:
+            for ch in txt: d.text((x,y),ch,font=font,fill=fill); x+=d.textlength(ch,font=font)+sp
+        else: d.text((x,y),txt,font=font,fill=fill)
+    fs=260
+    while d.textlength("THE SOIL.",font=disp(fs))>980: fs-=6
+    ctext(330,"LADERA RANCH  ·  PHASE 2",F(30,True),(214,168,84),6); ctext(440,"TEST",disp(fs),(245,240,228)); ctext(440+fs*0.95,"THE SOIL.",disp(fs),(214,168,84))
+    ctext(1000,"A federal arsenic dipping program ran here, 1907 to 1912.",F(34),(210,214,222)); ctext(1050,"A concrete vat base has been found.",F(34),(210,214,222))
+    ctext(1100,"For twenty years, no one tested the ground.",F(34,True),(245,240,228))
+    ctext(1300,"Independent research project  ·  not medical advice  ·  establishes no causation",F(22),(150,156,168))
+    ctext(1335,"Reconstruction imagery is AI-assisted, after USDA Circular 183 (1911); not historical footage",F(22),(150,156,168))
+    ctext(1370,"Figures are model estimates from documented herd sizes and the federal formula",F(22),(150,156,168))
+    ctext(1520,"CALIFORNIA: TEST THE SOIL.",F(40,True),(214,168,84),2)
+    fr.save(HERE+"/closing_card_v2.png"); print("closing card v2 ok")
+if __name__=="__main__" and "pond2" in sys.argv: seg_pond2()
+if __name__=="__main__" and "card" in sys.argv: make_closing_card()
