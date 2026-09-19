@@ -69,13 +69,15 @@ That is a potential pathway, not a finding. Nothing in this report measures it, 
 careful not to let a reasonable question sound like a conclusion. It is exactly the kind of question
 that deserves to be documented properly rather than argued about loosely.
 
-So that is where a second phase of this work is now going. I am currently mapping the development
-timeline, occupancy, construction phases, and potential wind patterns, so the historical context is
-accurately documented. The point is not to prove that pathway. The point is that if anyone ever does
-look at it seriously, whether that is a public agency, an epidemiologist, or a researcher who
-disagrees with me entirely, the historical record will already be assembled, dated, sourced, and
-open, instead of being reconstructed from memory years from now. If that record ends up closing the
-question rather than opening it, that is a perfectly good outcome, and I'll publish it either way.
+That is where the second phase went, and it did not go where I expected. Phase 2 became a field
+investigation. In August 2026, in ungraded open space above the community beside the golf course, I
+found a concrete base with iron pipe rails still running up to it, its floor about the length
+specified for a federal dipping-vat floor. It is a **candidate, not an identification**, and it stays
+that way until someone tests the soil. The development timeline, occupancy, construction phases and
+wind patterns remain part of this record and are still being assembled; the point was never to prove
+that pathway, only to have it documented, dated and sourced before anyone needs it. What I found, and
+what I am asking for, is set out in *Phase 2: the site*, and in the Phase 2 film at the top of this
+report.
 
 I've taken the first phase as far as one person with good tools and a lot of long nights can take it.
 The next steps that I genuinely cannot do alone, pulling the physical ranch archives and putting real
@@ -93,5 +95,8 @@ something I don't, I would like to hear from you.
 
 > Contact: I would genuinely rather hear from you than not. Please use the [contact form](/contact.html)
 > on the project website. Every message reaches me directly.
+>
+> The site is password protected for now. For access, message me on Instagram or email
+> andystavros@icloud.com.
 
 Andy Stavros, Newport Beach, California

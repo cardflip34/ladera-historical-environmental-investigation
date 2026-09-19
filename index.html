@@ -11,15 +11,15 @@
 <link rel="canonical" href="https://www.californiasforgottenpast.org/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="California's Forgotten Past">
-<meta property="og:title" content="California's Forgotten Past: The Arsenic Cattle-Dipping Era">
-<meta property="og:description" content="An independent, hypothesis-neutral investigation into California's state-mandated arsenical cattle-tick dipping program (1907 to 1912) and the South Orange County communities built on the former ranch land.">
+<meta property="og:title" content="California's Forgotten Past — Phase 2: a candidate arsenic dip-vat base above Ladera Ranch">
+<meta property="og:description" content="Phase 1 set out the record of California's state-mandated arsenical cattle-tick dipping program (1907 to 1912). Phase 2 is a field investigation: a concrete base with iron pipe rails, matching the floor length of a federal-specification dipping vat, found in open space above Ladera Ranch. Identification is not established until the soil is tested.">
 <meta property="og:image" content="https://www.californiasforgottenpast.org/share-card.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:url" content="https://www.californiasforgottenpast.org/">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="California's Forgotten Past: The Arsenic Cattle-Dipping Era">
-<meta name="twitter:description" content="An independent, hypothesis-neutral investigation into California's arsenical cattle-tick dipping era (1907 to 1912) and the communities built on the former ranch land.">
+<meta name="twitter:title" content="California's Forgotten Past — Phase 2: a candidate arsenic dip-vat base above Ladera Ranch">
+<meta name="twitter:description" content="Phase 1 set out the record of California's state-mandated arsenical cattle-tick dipping program (1907 to 1912). Phase 2 is a field investigation: a concrete base with iron pipe rails, matching the floor length of a federal-specification dipping vat, found in open space above Ladera Ranch. Identification is not established until the soil is tested.">
 <meta name="twitter:image" content="https://www.californiasforgottenpast.org/share-card.jpg">
 <style>
   :root{
@@ -60,6 +60,27 @@
   .foot{display:flex;flex-wrap:wrap;gap:8px 20px;font-size:13.5px}
   .foot a{color:var(--accent);text-decoration:none}
   .foot a:hover{text-decoration:underline}
+  .mh-phases{margin:14px 0 0;font-size:15.5px;font-weight:600;color:var(--ink2)}
+  /* two films side by side on desktop, stacked on phone; click-to-load facades */
+  .videogrid{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin:0 0 8px}
+  .vbwrap{margin:0;min-width:0}
+  .videobox{position:relative;width:100%;aspect-ratio:16/9;border-radius:14px;border:1px solid var(--line);
+    background:#0b0f16;overflow:hidden;cursor:pointer;display:block}
+  .vb-poster{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block}
+  .videobox .glow{position:absolute;inset:0;background:radial-gradient(60% 60% at 50% 50%,rgba(0,0,0,.12),rgba(0,0,0,.34))}
+  .vb-play{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:64px;height:64px;border-radius:50%;
+    background:var(--accent);display:flex;align-items:center;justify-content:center;
+    box-shadow:0 6px 22px rgba(0,0,0,.42);transition:transform .12s}
+  .videobox:hover .vb-play,.videobox:focus-visible .vb-play{transform:translate(-50%,-50%) scale(1.07)}
+  .vb-play::after{content:"";border-style:solid;border-width:11px 0 11px 18px;
+    border-color:transparent transparent transparent var(--on-accent);margin-left:5px}
+  .videobox iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+  .vb-cap{margin:8px 0 0;font-size:14px;font-weight:600;color:var(--ink)}
+  .vb-note{color:var(--ink2);font-size:13px;line-height:1.5;margin:14px 0 26px;max-width:62ch}
+  .access{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:12px 16px;
+    font-size:13.5px;color:var(--ink2);margin:0 0 20px}
+  .access b{color:var(--ink)}
+  @media (max-width:760px){.videogrid{grid-template-columns:1fr;gap:14px}}
 </style>
 </head>
 <body>
@@ -69,10 +90,34 @@
       <span class="mh-title">California's Forgotten Past</span>
       <span class="mh-tagline">The Arsenic Cattle-Dipping Era</span>
     </h1>
+    <p class="mh-phases">Phase 1: the record. Phase 2: the site. A candidate dip-vat base has been found.</p>
     <div class="wordmark-rule" aria-hidden="true"></div>
     <p class="sub">An independent investigation into California's state-mandated arsenical
       cattle-tick dipping program (1907 to 1912), and the South Orange County communities
       later built on that former ranch land.</p>
+
+    <div class="videogrid">
+      <figure class="vbwrap">
+        <div class="videobox" id="ytfacade" data-yt="QDGB_R92jns" role="button" tabindex="0"
+             aria-label="Play Phase 1: Ladera Ranch Investigation Leads to California's Forgotten Past">
+          <img class="vb-poster" src="/docs/california/assets/phase1_cover_16x9.jpg" alt="" width="1280" height="720">
+          <span class="glow"></span>
+          <div class="vb-play"></div>
+        </div>
+        <figcaption class="vb-cap">Phase 1 (July 2026): the record.</figcaption>
+      </figure>
+      <figure class="vbwrap">
+        <div class="videobox" id="ytfacade2" data-yt="XzIJ-pHr-JU" role="button" tabindex="0"
+             aria-label="Play Phase 2: the field investigation above Ladera Ranch">
+          <img class="vb-poster" src="/docs/california/assets/phase2_cover_16x9.jpg" alt="" width="1280" height="720">
+          <span class="glow"></span>
+          <div class="vb-play"></div>
+        </div>
+        <figcaption class="vb-cap">Phase 2 (September 2026): the site.</figcaption>
+      </figure>
+    </div>
+    <p class="vb-note">Films by Andy Stavros. The Phase&nbsp;2 cover is the film&rsquo;s own artwork; the question
+      it poses is not a finding.</p>
 
     <div class="actions">
       <a class="btn primary" href="/docs/california/report.html" data-va-event="Read the report">Read the report &rarr;</a>
@@ -81,7 +126,7 @@
 
     <div class="meta">
       <span><b>Priority areas:</b> Ladera Ranch &middot; Bell Canyon / Coto de Caza</span>
-      <span><b>19</b> sections &middot; <b>109</b> graded sources</span>
+      <span><b>20</b> sections &middot; <b>109</b> graded sources</span>
     </div>
 
     <div class="disc">
@@ -89,8 +134,15 @@
       advice and does not establish that any pesticide, property, organization, school, water
       provider, agency, or other party caused any illness.</b> Publicly reported health events may
       not have been independently medically verified. Geographic and temporal overlap does not
-      establish exposure or causation. No soil has been tested and no contamination is asserted for
-      any community named here.
+      establish exposure or causation. No dip-site soil has been tested and no contamination is asserted
+      for any community named here; some soil sampling in Ladera Ranch is now under way and its scope has not
+      been made public. The concrete base reported in Phase 2 is a candidate identified by field observation;
+      it has not been confirmed as a dipping vat and will not be until soil is tested.
+    </div>
+
+    <div class="access">
+      <b>This site is password protected while the work is reviewed.</b> For access, message Andy on
+      Instagram or email <a href="mailto:andystavros@icloud.com">andystavros@icloud.com</a>.
     </div>
 
     <div class="foot">
@@ -105,6 +157,26 @@
 <!-- Vercel Web Analytics: first-party, cookieless page views. Custom events via data-va-event. -->
 <script>window.va=window.va||function(){(window.vaq=window.vaq||[]).push(arguments)};</script>
 <script defer src="/_vercel/insights/script.js"></script>
+<script>
+(function(){
+  var boxes=document.querySelectorAll(".videobox[data-yt]");
+  if(!boxes.length) return;
+  Array.prototype.forEach.call(boxes,function(f){
+    function load(){
+      if(f.querySelector("iframe")) return;
+      if(window.va) window.va("event",{name:"Video play "+(f.id||f.getAttribute("data-yt"))});
+      var ifr=document.createElement("iframe");
+      ifr.src="https://www.youtube-nocookie.com/embed/"+f.getAttribute("data-yt")+"?autoplay=1&rel=0&modestbranding=1";
+      ifr.title="Documentary";
+      ifr.allow="autoplay; encrypted-media; picture-in-picture; fullscreen";
+      ifr.setAttribute("allowfullscreen","");
+      f.innerHTML=""; f.appendChild(ifr);
+    }
+    f.addEventListener("click",load);
+    f.addEventListener("keydown",function(e){ if(e.key==="Enter"||e.key===" "){ e.preventDefault(); load(); } });
+  });
+})();
+</script>
 <script>document.addEventListener("click",function(e){var t=e.target.closest&&e.target.closest("[data-va-event]");
 if(t&&window.va){window.va("event",{name:t.getAttribute("data-va-event")})}},{passive:true});</script>
 </body>

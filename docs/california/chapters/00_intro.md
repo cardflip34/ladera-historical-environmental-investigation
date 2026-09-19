@@ -18,7 +18,8 @@ environmental review existed, what was tested, and whether arsenic, and which ar
 among the analytes**, and every school in the area. Two arsenic signatures matter throughout:
 **lead-arsenate** (orchard pesticide: arsenic *with* lead) and **arsenic trioxide** (the cattle-dip
 poison: arsenic with little or no lead). Where California tested at all, it tested for the first.
-It has never, anywhere, tested for the second.
+For the twenty years these communities have existed, no test anywhere targeted the second;
+some soil sampling in Ladera Ranch is now under way, and neither its analytes nor its locations have been made public, so whether the dip signature is among them is unknown.
 
 > This platform is an independent research and data-organization project. It does not provide
 > medical advice and does not establish that any pesticide, property, organization, employer,

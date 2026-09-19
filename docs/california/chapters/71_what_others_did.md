@@ -32,6 +32,17 @@ Florida's dipping ran for decades and was operated by the program itself. As a r
 - **~3,000+ vat sites are named in old Florida state records**, though a University of Florida
   team went looking precisely because so many had been *"abandoned without recording their
   locations"* (~3,241 records, locations largely unknown) [B2 / underlying A1, S-UF-VATS].
+- **Records response, obtained for this project (G11, Florida DEP) [A2].** A direct records request
+  returned a state inventory listing **3,281 vats**. Of the sites that have been tested, **eleven of
+  twelve exceeded the state soil standard**. Florida's own reporting further records disused vats
+  **reused as pesticide-mixing areas** and **used by children as swimming holes**, which is the
+  clearest available statement of how such a structure gets used once nobody remembers what it was.
+  Note also the **Palm Beach gap**: that county is absent from the inventory, a reminder that a
+  register's silence is a gap in the register, not a clearance of the ground. The response and the
+  photographic exhibit are held at `research/national_crossreference/`
+  (`research/national_crossreference/EXHIBIT_FL_VAT_PHOTOS.pdf`). The 3,281 figure is the inventory
+  as returned; it is close to, but not identical with, the ~3,241 records the University of Florida
+  team worked from, and the two are reported separately here rather than merged.
 - Florida keeps a (weak) public county-level list and a statutory regime: **Statute §376.306**
   makes private owners liability-*exempt* and cleanup voluntary, to a residential target of
   **2.1 mg/kg arsenic** (Ch. 62-777 SCTL) [A2, read directly].

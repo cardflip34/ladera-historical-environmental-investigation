@@ -39,6 +39,14 @@ Bay communities, each shown pre-development and today.
 
 `research/plates/plate_5_other_areas_aerials.jpg`
 
+## Plate 6: Phase 2, the site (pending)
+The August 2026 field material, the candidate concrete base and its iron pipe rails, the trail
+approach, the ten era tiles of the drainage (1929 to 2025), the drone frames of the pond, and the
+reconstruction stills (labelled *AI-assisted reconstruction after USDA Circular 183; not historical
+footage*), is held in the project evidence repository and publishes as Plate 6 with the next build.
+No coordinates appear in any Phase 2 caption, by policy. The chapter it belongs to is *Phase 2: the
+site*.
+
 ---
 
 *The reported pattern warrants investigation; the available evidence does not yet establish
