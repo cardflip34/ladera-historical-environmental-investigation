@@ -18,9 +18,9 @@ never been an analytical target at any school in these communities.**
 **Read this table carefully.** Only one nearby school (Carl Hankey) ever had soil tested for arsenic
 and that was because it sat on a former *orchard*, so the investigation looked for **lead-arsenate**
 (arsenic bound with lead, the orchard pesticide). A cattle **dip** leaves the opposite chemical
-fingerprint: **arsenic trioxide, arsenic with little or no lead.** No school study has ever tested
-*for that.* The dip signature has never been ruled in or out anywhere in these communities. That is
-the single most important, and most fixable, gap in the record.
+fingerprint: **arsenic trioxide, arsenic with little or no lead.** No school study has tested
+*for that.* For twenty years the dip signature was not ruled in or out anywhere in these communities;
+some soil sampling in Ladera Ranch is now under way, and neither its analytes nor its locations have been made public. That remains the single most important, and most fixable, gap in the record.
 
 ## Ladera Ranch: 10 schools (verified roster)
 | School | Operator | Grades | Opened | EnviroStor |

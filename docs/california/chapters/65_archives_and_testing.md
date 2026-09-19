@@ -33,6 +33,25 @@ affected by surface cover).
 
 `media/broll/boards/B5_two_arsenics.jpg`
 
+**Phase 2 sampling targets (added 2026-08).** A candidate concrete base with iron pipe rails was
+located on foot in ungraded open space beside Ladera Ranch (chapter *Phase 2: the site*). It is a
+candidate, not an identification, and it is the most specific thing this investigation has ever had
+to point a spade at. The targets, all under **hazardous-materials protocol**:
+
+- The **concrete base** itself.
+- The **pens footprint** and the **drip-pen side**, where drainage and drip-off would have collected.
+- The **tire-swing area and trail margin**, as the child-contact points.
+- The **pond sediment** below the slope.
+- The **creek margin** below the pond.
+- **Analytes:** total **and bioavailable** arsenic, **lead alongside** (to separate dip from orchard
+  signature), plus **speciation**.
+- **Conducted by the State, independent of Ladera Ranch and of Rancho Mission Viejo**, and the trail
+  segment closed and marked until results are in.
+
+A negative result is a real result and would be published as such. Note that the documented Joplin
+ground below remains the *cleanest* test in the investigation, because dipping there is on the
+record; the Phase 2 base is the *most specific*, because there is a structure to sample.
+
 Priority grounds:
 
 **1 · Bell Canyon / Coto de Caza, the documented dip ranch (highest priority).** This is the only
@@ -65,5 +84,6 @@ the sampling plan's front page:
 
 **What a result would mean.** A dip-signature hit (arsenic well above ~11-12 mg/kg background, with
 *low lead*) on documented ground would convert a century-old paper hazard into a measured,
-manageable fact. A clean result would retire the question honestly. Either outcome is worth having,
-and neither has ever been obtained, because the test has never been run.
+manageable fact. A clean result would retire the question honestly. Either outcome is worth having, and
+neither has been obtained in the twenty years since development, because the dip-signature test was
+not run. Some soil sampling in Ladera Ranch is now under way, and neither its analytes nor its locations have been made public, so it is not yet known whether it closes this gap.

@@ -45,6 +45,40 @@ agree on ~3-30 t concentrated near vats, central ~10 t; the remainder dispersed 
 rangeland via cattle drag-out or was discarded as spent fluid. The earlier ~20-100 t statewide
 figure assumed 200-1,000 vats and is superseded, it was inconsistent with the ceiling.
 
+## 72.2b The whole-ranch case, and the number the film uses
+
+The table above is per vat. Phase 2 asks the same question of the **whole O'Neill ranch operation**
+over the life of the program, using the herd size and the federal 14-day cadence. Computed in
+`reports/ARSENIC_QUANTIFICATION_MASTER.md`:
+
+| Quantity | MODEL ESTIMATE |
+|---|---|
+| Whole-ranch arsenic mass, program lifetime | **6,692 – 39,748 lb** As₂O₃ |
+| Fraction concentrated at a vat, pens and drip pen | **1,338 – 7,949 lb** |
+| Resulting near-structure soil concentration | **128 – 763 mg/kg** |
+| California background arsenic, for comparison | **1 – 11 mg/kg** |
+
+The concentration row is the operative one: **128–763 mg/kg against a 1–11 mg/kg background** is a
+point source that an ordinary soil panel would resolve at once. It also sits inside the empirical
+anchor in 72.1 (500–3,000 mg/kg measured at dip sites in Australia and the US Southeast), which is
+the only reason to take the model seriously at all.
+
+**The lethal-dose comparison, with its caveat attached.** At a central estimate of roughly
+**21,000 lb** and an adult lethal dose of **100–300 mg**, the arithmetic yields **32 to 96 million
+nominal doses**. The Phase 2 film states this figure, and states it with the following caveat, which
+is reproduced here verbatim and is not optional:
+
+> *This is arithmetic, not toxicology. Soil-bound arsenic is only partly bioavailable; nobody ingests
+> soil in quantity; the number says one thing: the mass involved was large. It says nothing about
+> exposure, which has never been measured here.*
+
+The number describes the size of the bag, not a dose anyone received. It is the same "context only"
+caution already stated in 72.4, applied at ranch scale.
+
+*The Phase 2 film draws its quantities from this chapter.* Any figure quoted on screen should be read
+against the classification banner at the top: MODEL ESTIMATE, Confidence Low, possibly wrong by an
+order of magnitude in either direction.
+
 ## 72.3 Toxicology yardsticks
 
 The per-site numbers are the ones that matter for screening any single location. A dip site at the

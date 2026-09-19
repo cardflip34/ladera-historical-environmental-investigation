@@ -3,10 +3,12 @@
 **Summary.** Ladera Ranch (~4,000 acres, built 1999-2006) sits entirely on former O'Neill / Rancho
 Mission Viejo cattle range, land inside the 1907-1912 arsenical tick-dipping quarantine zone whose
 ranches "cover[ed] nearly half the southern portion of Orange" county [B2, LA Herald 1 Sep 1908].
-No dipping vat has been documented or found on the footprint; no soil there has ever been tested for
-arsenic. Every environmental review that touched Ladera was a records-and-walk review, not a sampling
+No dipping vat has been documented or found **inside the residential footprint**, and for the twenty
+years since development no soil there was tested for arsenic. In August 2026 a **candidate concrete base** was located on foot in
+ungraded open space **beside** the community; that find, and what it does and does not mean, is
+chapter *Phase 2: the site*. Every environmental review that touched Ladera was a records-and-walk review, not a sampling
 event. The question this report exists to pose is therefore genuinely open: **never looked, not
-looked-and-cleared.**
+looked-and-cleared.** As of 2026 that is changing at the margin: some soil sampling in Ladera Ranch is now under way, and neither its analytes nor its locations have been made public.
 
 ## The ranch this land was
 For a century before the master plan, this was cattle country, the O'Neill / Rancho Mission Viejo
@@ -96,8 +98,9 @@ and read in context:
   by a standard total-metals panel that was **not speciated for arsenic trioxide**, and outside the
   Ladera Ranch footprint.
 
-Both documents are therefore **consistent with, and do not contradict,** the "never tested for arsenic
-trioxide" finding in the table above. Method note, for transparency: the PEIR's only "trioxide" matches
+Both documents are therefore **consistent with, and do not contradict,** the "not tested for arsenic
+trioxide" finding in the table above, which describes the twenty years of review preceding the
+sampling now under way. Method note, for transparency: the PEIR's only "trioxide" matches
 were "sulfur trioxide," an unrelated air-quality term, counted as false positives once read; this project
 reads every hit in context rather than reporting raw keyword counts.
 
@@ -129,15 +132,26 @@ Because imagery is exhausted, the Ladera answer is now **documentary + a spade**
   total + bioavailable arsenic, **with lead alongside** to separate dip- from orchard-signature, plus
   speciation. Grading likely diluted any residue, so a null is not a full clearance and a hit is
   significant.
+- **Added 2026-08, the child-contact points at the candidate base.** The trail margin beside the
+  structure and the **rope tire swing on its approach** are in casual recreational use, including by
+  children, on ground that has never been characterised. They belong in the sampling list for that
+  reason alone, independent of whether the structure turns out to be a vat. Full target list in
+  chapter *Phase 2: the site*.
 
 ## Honest limits & counter-evidence
 - **No vat found on adequate imagery** (1.15 ft/px would resolve a corral unmistakably), weak
-  evidence against a *surviving surface* facility; says nothing about one demolished ~1917.
+  evidence against a *surviving surface* facility; says nothing about one demolished ~1917. **Updated
+  2026-08:** a candidate concrete base was found **on the ground**, in ungraded open space beside the
+  footprint, where imagery could not resolve it under canopy and brush. The imagery null therefore
+  stands only for **surface facilities visible from the air**, which is a narrower claim than it
+  first appeared. See chapter *Phase 2: the site*.
 - **Homes are NOT preferentially sited on ranch-era water** (enrichment 0.97×, p = 0.51), the
   "developers built on the cattle grounds" mechanism is rejected; near-total development means any
   ranch-era residue would sit under or beside housing regardless.
 - The reported pediatric-cancer pattern **may be explained by** population structure, diagnostic or
   referral patterns, or chance; the available evidence does not establish causation, and this report
   does not claim otherwise.
-- Resolver: **a direct soil arsenic (+ lead, + speciation) test** at the greenbelt node/corridor,
-  never performed.
+- Resolver: **a direct soil arsenic (+ lead, + speciation) test**, never performed. With a candidate
+  structure now identified beside the footprint, the highest-value first sample is no longer a blind
+  greenbelt screen but the base itself and the ground around it, see chapter *Phase 2: the site* for
+  the specific targets.

@@ -58,6 +58,37 @@ Two reasons, both legitimate:
    wells** (a weak, non-significant association, stronger in Hispanic children), worth carrying,
    precisely because it points at the right disease [B2].
 
+## A graded audit of the in-utero hypothesis
+
+One narrower question deserves its own audit, because it is the only version of the arsenic-Ewing
+idea with a plausible mechanism attached: not childhood soil contact, but **exposure before birth**.
+The full graded audit is `docs/lhdrs/science/EWING_ARSENIC_AUDIT.md`
+([PDF](reports/EWING_ARSENIC_AUDIT.pdf)). Its chain, link by link:
+
+| Link in the chain | What the literature supports |
+|---|---|
+| Ewing needs **two steps**: a permissive germline background, then the somatic EWSR1-FLI1 fusion | Supported; the two-step model is set out in a 2025 *Cell Reports* paper [B1] |
+| The fusion may arise **in utero**, in a developing cell population | Plausible on the same model; timing is not directly observed [B1, inference] |
+| **In-utero arsenic** can have lifelong cancer consequences | Supported for *other* cancers by the Chilean in-utero cohorts, the strongest human evidence of prenatal arsenic effects anywhere [B1] |
+| In-utero arsenic raises the chance of **that specific fusion** | **No literature exists.** Not contested, not weak: absent |
+| In-utero arsenic raises the chance of **Ewing sarcoma** | **No literature exists.** Absent |
+
+Two links in the middle of the chain therefore have **nothing published behind them in either
+direction**, which is a different statement from "refuted". There is one further wrinkle that cuts
+*against* a simple story: **arsenic trioxide kills Ewing sarcoma cells** in laboratory work at
+therapeutic drug concentrations, and has been examined as a treatment agent. A compound studied as a
+therapy is an awkward candidate for a cause, though dose, route and timing differ so completely
+between a drug and a soil exposure that neither fact settles the other.
+
+Finally, the three links that are **Ladera-specific have never been measured**: whether dip-signature
+arsenic is present in the soil at all; whether any pregnant resident was exposed to it; and whether
+any exposure occurred in the relevant developmental window. All three are empirical questions, and
+none has been asked.
+
+**Verdict: a testable hypothesis, not a finding.** It is recorded here because it is testable, and
+because the honest description of the middle of the chain is *unstudied*, not *disproved*. It is not
+evidence that arsenic caused anything, and this report does not present it as such.
+
 ## The even-handed counterweight (kept in on purpose)
 Evidence that lowers the prior on arsenic here, reported plainly: children's **urinary arsenic did
 not correlate with residential soil** even above a state soil standard (Middleport, NY); **diet

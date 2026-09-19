@@ -24,7 +24,7 @@ ul,ol{margin:6px 0;padding-left:22px}li{margin:4px 0}
 .foot{margin-top:22px;border-top:1px solid var(--line);padding-top:10px;color:var(--ink2);font-size:11px}
 @media print{body{background:#fff}.page{box-shadow:none;margin:0;max-width:none;padding:.45in .6in}.nav,.crumb{display:none}h1{page-break-before:always}h2{page-break-after:avoid}img{max-height:6.2in}}
 </style></head><body><div class="page">
-<div class="crumb"><a href="index.html">California's Forgotten Past</a> · section 17 of 19</div>
+<div class="crumb"><a href="index.html">California's Forgotten Past</a> · section 18 of 20</div>
 <h1>72 · The Arsenic Model: a Mass Balance in Pounds</h1>
 <blockquote>
 <p><strong>CLASSIFICATION: MODEL ESTIMATE · Confidence: Low.</strong> Every number in this chapter is a
@@ -96,6 +96,54 @@ arsenic can sit in California soil than was ever purchased and poured. Two indep
 agree on ~3-30 t concentrated near vats, central ~10 t; the remainder dispersed thinly across
 rangeland via cattle drag-out or was discarded as spent fluid. The earlier ~20-100 t statewide
 figure assumed 200-1,000 vats and is superseded, it was inconsistent with the ceiling.</p>
+<h2>72.2b The whole-ranch case, and the number the film uses</h2>
+<p>The table above is per vat. Phase 2 asks the same question of the <strong>whole O'Neill ranch operation</strong>
+over the life of the program, using the herd size and the federal 14-day cadence. Computed in
+<code>reports/ARSENIC_QUANTIFICATION_MASTER.md</code>:</p>
+<table>
+<thead>
+<tr>
+<th>Quantity</th>
+<th>MODEL ESTIMATE</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Whole-ranch arsenic mass, program lifetime</td>
+<td><strong>6,692 – 39,748 lb</strong> As₂O₃</td>
+</tr>
+<tr>
+<td>Fraction concentrated at a vat, pens and drip pen</td>
+<td><strong>1,338 – 7,949 lb</strong></td>
+</tr>
+<tr>
+<td>Resulting near-structure soil concentration</td>
+<td><strong>128 – 763 mg/kg</strong></td>
+</tr>
+<tr>
+<td>California background arsenic, for comparison</td>
+<td><strong>1 – 11 mg/kg</strong></td>
+</tr>
+</tbody>
+</table>
+<p>The concentration row is the operative one: <strong>128–763 mg/kg against a 1–11 mg/kg background</strong> is a
+point source that an ordinary soil panel would resolve at once. It also sits inside the empirical
+anchor in 72.1 (500–3,000 mg/kg measured at dip sites in Australia and the US Southeast), which is
+the only reason to take the model seriously at all.</p>
+<p><strong>The lethal-dose comparison, with its caveat attached.</strong> At a central estimate of roughly
+<strong>21,000 lb</strong> and an adult lethal dose of <strong>100–300 mg</strong>, the arithmetic yields <strong>32 to 96 million
+nominal doses</strong>. The Phase 2 film states this figure, and states it with the following caveat, which
+is reproduced here verbatim and is not optional:</p>
+<blockquote>
+<p><em>This is arithmetic, not toxicology. Soil-bound arsenic is only partly bioavailable; nobody ingests
+soil in quantity; the number says one thing: the mass involved was large. It says nothing about
+exposure, which has never been measured here.</em></p>
+</blockquote>
+<p>The number describes the size of the bag, not a dose anyone received. It is the same "context only"
+caution already stated in 72.4, applied at ranch scale.</p>
+<p><em>The Phase 2 film draws its quantities from this chapter.</em> Any figure quoted on screen should be read
+against the classification banner at the top: MODEL ESTIMATE, Confidence Low, possibly wrong by an
+order of magnitude in either direction.</p>
 <h2>72.3 Toxicology yardsticks</h2>
 <p>The per-site numbers are the ones that matter for screening any single location. A dip site at the
 empirical anchor of 500-3,000 mg/kg would sit far above every yardstick:</p>
@@ -144,7 +192,7 @@ is a MODEL ESTIMATE and is not a measurement.</p>
 [A1]. Model output: MODEL ESTIMATE, Confidence Low, reproducible via
 <code>scripts/arsenic_mass_balance.py</code>. Full grading in chapter 73.</p>
 <div class="nav"><a href="71_what_others_did.html">← 71 · What Other Places Did: The Contra</a><a href="index.html">Contents</a><a href="73_methods_sources.html">73 · Methods and Sources →</a></div>
-<div class="foot">Independent research & data-organization project. No medical advice; no causation established; geographic and temporal overlap does not establish exposure or causation. No CA dip-site soil has been tested. Source grades A1-D per chapter 73; registry: research/source_registry/sources.csv.</div></div><script>window.va=window.va||function(){(window.vaq=window.vaq||[]).push(arguments)};</script>
+<div class="foot">Independent research & data-organization project. No medical advice; no causation established; geographic and temporal overlap does not establish exposure or causation. No CA dip-site soil has been tested; some soil sampling in Ladera Ranch is now under way and its scope has not been made public. Source grades A1-D per chapter 73; registry: research/source_registry/sources.csv. This site is password protected while the work is reviewed; for access, message Andy on Instagram or email andystavros@icloud.com.</div></div><script>window.va=window.va||function(){(window.vaq=window.vaq||[]).push(arguments)};</script>
 <script defer src="/_vercel/insights/script.js"></script>
 <script>document.addEventListener("click",function(e){var t=e.target.closest&&e.target.closest("[data-va-event]");
 if(t&&window.va){window.va("event",{name:t.getAttribute("data-va-event")})}},{passive:true});</script></body></html>

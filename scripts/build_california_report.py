@@ -2,7 +2,7 @@
 """Build The California Report: sectioned HTML (index + one page per chapter, cross-linked,
 self-contained with embedded downscaled figures) + a single print HTML for the PDF.
 Chapters: docs/california/chapters/*.md (NN_slug.md, ordered by NN)."""
-import os, re, glob, base64, io, shutil, markdown
+import os, re, glob, base64, io, shutil, markdown, datetime
 from PIL import Image
 ROOT=os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 CH=os.path.join(ROOT,"docs/california/chapters")
@@ -39,8 +39,11 @@ ul,ol{margin:6px 0;padding-left:22px}li{margin:4px 0}
 @media print{body{background:#fff}.page{box-shadow:none;margin:0;max-width:none;padding:.45in .6in}.nav,.crumb{display:none}h1{page-break-before:always}h2{page-break-after:avoid}img{max-height:6.2in}}
 """
 FOOT=("Independent research & data-organization project. No medical advice; no causation established; "
-      "geographic and temporal overlap does not establish exposure or causation. No CA dip-site soil has been tested. "
-      "Source grades A1-D per chapter 73; registry: research/source_registry/sources.csv.")
+      "geographic and temporal overlap does not establish exposure or causation. No CA dip-site soil has been tested; "
+      "some soil sampling in Ladera Ranch is now under way and its scope has not been made public. "
+      "Source grades A1-D per chapter 73; registry: research/source_registry/sources.csv. "
+      "This site is password protected while the work is reviewed; for access, message Andy on Instagram "
+      "or email andystavros@icloud.com.")
 
 # Vercel Web Analytics: first-party, cookieless page views (no consent banner needed).
 # Requires "Web Analytics" to be enabled on the Vercel project. Custom events are declarative:
@@ -207,7 +210,21 @@ print_html=f"""<!doctype html><html lang="en"><head><meta charset="utf-8"><title
 open(os.path.join(OUTD,"_print.html"),"w").write(print_html)
 
 # single long-scroll report page (whole report, external lazy-loaded images)
+# Some figure sources are deliberately not committed (see .gitignore: evidence/images/T[0-9]*/),
+# so a build in a fresh clone cannot regenerate their optimized assets. Snapshot the existing
+# assets first and restore any that a chapter still references but could not be rebuilt here,
+# otherwise such a build silently deletes published figures from the site.
+_preserved={}
+if os.path.isdir(ASSETS):
+    for _f in os.listdir(ASSETS):
+        _fp=os.path.join(ASSETS,_f)
+        if os.path.isfile(_fp): _preserved[_f]=open(_fp,"rb").read()
 shutil.rmtree(ASSETS,ignore_errors=True); os.makedirs(ASSETS,exist_ok=True)
+# Film posters for the two click-to-load facades. assets/ is rebuilt on every run,
+# so the covers are kept in media/covers/ and copied back in here.
+for _cover in ("phase1_cover_16x9.jpg","phase2_cover_16x9.jpg"):
+    _csrc=os.path.join(ROOT,"media","covers",_cover)
+    if os.path.exists(_csrc): shutil.copy2(_csrc,os.path.join(ASSETS,_cover))
 shutil.rmtree(FILESDIR,ignore_errors=True); os.makedirs(FILESDIR,exist_ok=True)
 REPORT_CSS="""
 /* Match the landing page palette (blue accent), and support light + dark like it does. */
@@ -229,7 +246,8 @@ blockquote{background:var(--brassbg);border-left-color:var(--accent);color:var(-
 th{background:var(--chip)}
 th,td{border-color:var(--line)}
 img{border-color:var(--line)}
-code{background:var(--chip);color:var(--ink)}
+code{background:var(--chip);color:var(--ink);overflow-wrap:anywhere;word-break:break-word}
+.chapter em,.chapter a{overflow-wrap:anywhere}
 .foot{border-top-color:var(--line);color:var(--ink2)}
 .topbar{position:sticky;top:0;z-index:50;display:flex;align-items:center;justify-content:space-between;gap:12px;
   background:var(--barbg);backdrop-filter:blur(7px);-webkit-backdrop-filter:blur(7px);
@@ -244,6 +262,7 @@ code{background:var(--chip);color:var(--ink)}
 .hero .masthead{margin:0;border:0}
 .hero .mh-title{font-size:clamp(29px,5.6vw,44px);line-height:1.05;margin:0 0 6px}
 .hero .mh-tagline{font-size:clamp(20px,3.6vw,30px)}
+.mh-phases{margin:12px 0 0;font-size:15px;font-weight:600;color:var(--ink2)}
 .wordmark-rule{width:72px;height:3px;background:var(--brass);border-radius:2px;margin:18px 0 22px}
 .hero .sub{color:var(--ink2);font-size:16.5px;max-width:62ch;margin:0 0 16px}
 /* video: 16:9 landscape (YouTube). Click-to-load facade -> loads the player only on click. */
@@ -259,6 +278,13 @@ code{background:var(--chip);color:var(--ink)}
   border-color:transparent transparent transparent var(--on-accent);margin-left:5px}
 .videobox iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
 .vb-cap{color:var(--ink2);font-size:13.5px;margin:0 0 16px}
+/* two films side by side on desktop, stacked on phone */
+.videogrid{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin:10px 0 2px}
+.vbwrap{margin:0;min-width:0}
+.videogrid .videobox{max-width:none;margin:0}
+.videogrid .vb-cap{margin:8px 0 0;font-weight:600;color:var(--ink)}
+.vb-note{color:var(--ink2);font-size:13px;line-height:1.5;margin:14px 0 16px;max-width:62ch}
+@media (max-width:760px){.videogrid{grid-template-columns:1fr;gap:14px}}
 .hero-actions{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 6px}
 .hero-actions a{display:inline-flex;align-items:center;gap:7px;text-decoration:none;font-weight:600;font-size:14.5px;
   padding:10px 17px;border-radius:9px;border:1px solid var(--line);color:var(--ink);background:var(--card)}
@@ -276,7 +302,7 @@ code{background:var(--chip);color:var(--ink)}
 .chapter{scroll-margin-top:62px;border-top:1px solid var(--line);margin-top:30px;padding-top:8px}
 .chapter:first-of-type{border-top:0;margin-top:10px}
 .chapter h1{font-size:26px;page-break-before:auto;color:var(--ink)}
-.fig-cap{color:var(--muted);font-size:11.5px;font-style:italic}
+.fig-cap{color:var(--muted);font-size:11.5px;font-style:italic;overflow-wrap:anywhere;word-break:break-word}
 /* figure grid: big images, small caption underneath (replaces the tiny-image tables) */
 .figset{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,340px),1fr));gap:16px;margin:18px 0}
 .fig{margin:0;border:1px solid var(--line);border-radius:10px;overflow:hidden;background:var(--card);
@@ -296,6 +322,16 @@ for slug,title,raw in chaps:
     body=markdown.markdown(host_files_md(ext_figures(raw)),extensions=["tables"])
     secs.append(f'<section id="{slug}" class="chapter">{body}</section>')
 sections="".join(secs)
+# restore referenced-but-unbuildable assets (sources absent from this clone)
+def _asset_name(relpath):
+    n=re.sub(r'[^A-Za-z0-9._-]','_',relpath)
+    return os.path.splitext(n)[0]+".jpg"
+_referenced={_asset_name(m) for _,_,_raw in chaps for m in IMGPAT.findall(_raw)}
+_restored=0
+for _f,_data in _preserved.items():
+    if _f in _referenced and not os.path.exists(os.path.join(ASSETS,_f)):
+        open(os.path.join(ASSETS,_f),"wb").write(_data); _restored+=1
+if _restored: print(f"  restored {_restored} asset(s) whose source is not in this clone")
 sections=sections.replace('<img ','<img loading="lazy" ')
 # turn "Figure | Path" tables into a big-image / small-caption grid
 sections=figurize_tables(sections)
@@ -306,24 +342,29 @@ sections=dedupe_images(sections)
 contents="".join(f'<li><a href="#{s}">{t}</a></li>' for s,t,_ in chaps)
 DESC=("An independent, hypothesis-neutral investigation into California's state-mandated arsenical "
       "cattle-tick dipping program (1907 to 1912) and the South Orange County communities built on the former ranch land.")
+OGTITLE=("California's Forgotten Past \u2014 Phase 2: a candidate arsenic dip-vat base above Ladera Ranch")
+OGDESC=("Phase 1 set out the record of California's state-mandated arsenical cattle-tick dipping program "
+        "(1907 to 1912). Phase 2 is a field investigation: a concrete base with iron pipe rails, matching the "
+        "floor length of a federal-specification dipping vat, found in open space above Ladera Ranch. "
+        "Identification is not established until the soil is tested.")
 VIDEO_JS="""<script>
 (function(){
-  var f=document.getElementById("ytfacade");
-  if(!f) return;
-  function load(){
-    if(f.querySelector("iframe")) return;
-    if(window.va) window.va("event",{name:"Video play"});
-    var id=f.getAttribute("data-yt");
-    var ifr=document.createElement("iframe");
-    ifr.src="https://www.youtube-nocookie.com/embed/"+id+"?autoplay=1&rel=0&modestbranding=1";
-    ifr.title="Documentary";
-    ifr.allow="autoplay; encrypted-media; picture-in-picture; fullscreen";
-    ifr.setAttribute("allowfullscreen","");
-    f.innerHTML="";
-    f.appendChild(ifr);
-  }
-  f.addEventListener("click",load);
-  f.addEventListener("keydown",function(e){ if(e.key==="Enter"||e.key===" "){ e.preventDefault(); load(); } });
+  var boxes=document.querySelectorAll(".videobox[data-yt]");
+  if(!boxes.length) return;
+  Array.prototype.forEach.call(boxes,function(f){
+    function load(){
+      if(f.querySelector("iframe")) return;
+      if(window.va) window.va("event",{name:"Video play "+(f.id||f.getAttribute("data-yt"))});
+      var ifr=document.createElement("iframe");
+      ifr.src="https://www.youtube-nocookie.com/embed/"+f.getAttribute("data-yt")+"?autoplay=1&rel=0&modestbranding=1";
+      ifr.title="Documentary";
+      ifr.allow="autoplay; encrypted-media; picture-in-picture; fullscreen";
+      ifr.setAttribute("allowfullscreen","");
+      f.innerHTML=""; f.appendChild(ifr);
+    }
+    f.addEventListener("click",load);
+    f.addEventListener("keydown",function(e){ if(e.key==="Enter"||e.key===" "){ e.preventDefault(); load(); } });
+  });
 })();
 </script>"""
 report_html=f"""<!doctype html><html lang="en"><head>
@@ -335,14 +376,14 @@ report_html=f"""<!doctype html><html lang="en"><head>
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <meta property="og:type" content="article">
 <meta property="og:site_name" content="California's Forgotten Past">
-<meta property="og:title" content="California's Forgotten Past: The Arsenic Cattle-Dipping Era">
-<meta property="og:description" content="{DESC}">
+<meta property="og:title" content="{OGTITLE}">
+<meta property="og:description" content="{OGDESC}">
 <meta property="og:image" content="{OGIMG}">
 <meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
 <meta property="og:url" content="{SITE}/docs/california/report.html">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="California's Forgotten Past: The Arsenic Cattle-Dipping Era">
-<meta name="twitter:description" content="{DESC}">
+<meta name="twitter:title" content="{OGTITLE}">
+<meta name="twitter:description" content="{OGDESC}">
 <meta name="twitter:image" content="{OGIMG}">
 <style>{CSS}{REPORT_CSS}</style></head><body>
 <div class="topbar">
@@ -359,16 +400,33 @@ report_html=f"""<!doctype html><html lang="en"><head>
       <span class="mh-title">California's Forgotten Past</span>
       <span class="mh-tagline">The Arsenic Cattle-Dipping Era</span>
     </h1>
+    <p class="mh-phases">Phase 1: the record. Phase 2: the site. A candidate dip-vat base has been found.</p>
     <div class="wordmark-rule" aria-hidden="true"></div>
     <p class="sub">{DESC}</p>
-    <!-- VIDEO: 16:9 YouTube embed (click-to-load facade; loads the player only on click) -->
-    <div class="videobox" id="ytfacade" data-yt="QDGB_R92jns" role="button" tabindex="0"
-         aria-label="Play the documentary: Ladera Ranch Investigation Leads to California's Forgotten Past">
-      <img class="vb-poster" src="https://i.ytimg.com/vi/QDGB_R92jns/maxresdefault.jpg" alt="">
-      <span class="glow"></span>
-      <div class="vb-play"></div>
+    <!-- VIDEO: two 16:9 YouTube embeds (click-to-load facades; load the player only on click) -->
+    <div class="videogrid">
+      <figure class="vbwrap">
+        <div class="videobox" id="ytfacade" data-yt="QDGB_R92jns" role="button" tabindex="0"
+             aria-label="Play Phase 1: Ladera Ranch Investigation Leads to California's Forgotten Past">
+          <img class="vb-poster" src="assets/phase1_cover_16x9.jpg" alt="" width="1280" height="720">
+          <span class="glow"></span>
+          <div class="vb-play"></div>
+        </div>
+        <figcaption class="vb-cap">Phase 1 (July 2026): the record.</figcaption>
+      </figure>
+      <figure class="vbwrap">
+        <div class="videobox" id="ytfacade2" data-yt="XzIJ-pHr-JU" role="button" tabindex="0"
+             aria-label="Play Phase 2: the field investigation above Ladera Ranch">
+          <img class="vb-poster" src="assets/phase2_cover_16x9.jpg" alt="" width="1280" height="720">
+          <span class="glow"></span>
+          <div class="vb-play"></div>
+        </div>
+        <figcaption class="vb-cap">Phase 2 (September 2026): the site.</figcaption>
+      </figure>
     </div>
-    <p class="vb-cap">Watch: a short documentary on the investigation, by Andy Stavros.</p>
+    <p class="vb-note">Films by Andy Stavros. The Phase 2 cover is the film&rsquo;s own artwork; the question it
+      poses is not a finding. This site is password protected while the work is reviewed &mdash; for access,
+      message Andy on Instagram or email <a href="mailto:andystavros@icloud.com">andystavros@icloud.com</a>.</p>
     <div class="hero-actions">
       <a href="#contents">Jump to contents</a>
       <a href="index.html" data-va-event="Section-by-section view">Section-by-section view</a>
@@ -380,7 +438,9 @@ report_html=f"""<!doctype html><html lang="en"><head>
     agency, or other party caused any illness.</b> Arsenic is not a known cause of Ewing sarcoma. Publicly
     reported health events may not have been independently medically verified. Geographic and temporal overlap
     does not establish exposure or causation. No dip-site soil has been tested and no contamination is asserted
-    for any community named here.</div>
+    for any community named here; some soil sampling in Ladera Ranch is now under way and its scope has not been
+    made public. The concrete base reported in Phase 2 is a candidate identified by field observation; it has not
+    been confirmed as a dipping vat and will not be until soil is tested.</div>
   <nav class="contents" id="contents"><h2>Contents</h2><ol>{contents}</ol></nav>
   {sections}
   <div class="foot">{FOOT}</div>
@@ -395,7 +455,8 @@ urls=[("/",1.0),("/docs/california/report.html",0.9),("/docs/california/index.ht
       ("/contact.html",0.6)]
 urls+=[(f"/docs/california/{s}.html",0.5) for s,_,_ in chaps]
 sm=['<?xml version="1.0" encoding="UTF-8"?>','<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']
-sm+=[f'  <url><loc>{SITE}{u}</loc><changefreq>monthly</changefreq><priority>{p}</priority></url>' for u,p in urls]
+_today=datetime.date.today().isoformat()
+sm+=[f'  <url><loc>{SITE}{u}</loc><lastmod>{_today}</lastmod><changefreq>monthly</changefreq><priority>{p}</priority></url>' for u,p in urls]
 sm+=['</urlset>','']
 open(os.path.join(ROOT,"sitemap.xml"),"w").write("\n".join(sm))
 open(os.path.join(ROOT,"robots.txt"),"w").write(f"User-agent: *\nAllow: /\nSitemap: {SITE}/sitemap.xml\n")

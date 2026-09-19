@@ -7,14 +7,14 @@
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <meta property="og:type" content="article">
 <meta property="og:site_name" content="California's Forgotten Past">
-<meta property="og:title" content="California's Forgotten Past: The Arsenic Cattle-Dipping Era">
-<meta property="og:description" content="An independent, hypothesis-neutral investigation into California's state-mandated arsenical cattle-tick dipping program (1907 to 1912) and the South Orange County communities built on the former ranch land.">
+<meta property="og:title" content="California's Forgotten Past — Phase 2: a candidate arsenic dip-vat base above Ladera Ranch">
+<meta property="og:description" content="Phase 1 set out the record of California's state-mandated arsenical cattle-tick dipping program (1907 to 1912). Phase 2 is a field investigation: a concrete base with iron pipe rails, matching the floor length of a federal-specification dipping vat, found in open space above Ladera Ranch. Identification is not established until the soil is tested.">
 <meta property="og:image" content="https://www.californiasforgottenpast.org/share-card.jpg">
 <meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
 <meta property="og:url" content="https://www.californiasforgottenpast.org/docs/california/report.html">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="California's Forgotten Past: The Arsenic Cattle-Dipping Era">
-<meta name="twitter:description" content="An independent, hypothesis-neutral investigation into California's state-mandated arsenical cattle-tick dipping program (1907 to 1912) and the South Orange County communities built on the former ranch land.">
+<meta name="twitter:title" content="California's Forgotten Past — Phase 2: a candidate arsenic dip-vat base above Ladera Ranch">
+<meta name="twitter:description" content="Phase 1 set out the record of California's state-mandated arsenical cattle-tick dipping program (1907 to 1912). Phase 2 is a field investigation: a concrete base with iron pipe rails, matching the floor length of a federal-specification dipping vat, found in open space above Ladera Ranch. Identification is not established until the soil is tested.">
 <meta name="twitter:image" content="https://www.californiasforgottenpast.org/share-card.jpg">
 <style>
 :root{--paper:#f7f5f0;--ink:#16233a;--ink2:#48586c;--line:#ddd7ca;--accent:#2f6087;--brass:#a97e1f}
@@ -60,7 +60,8 @@ blockquote{background:var(--brassbg);border-left-color:var(--accent);color:var(-
 th{background:var(--chip)}
 th,td{border-color:var(--line)}
 img{border-color:var(--line)}
-code{background:var(--chip);color:var(--ink)}
+code{background:var(--chip);color:var(--ink);overflow-wrap:anywhere;word-break:break-word}
+.chapter em,.chapter a{overflow-wrap:anywhere}
 .foot{border-top-color:var(--line);color:var(--ink2)}
 .topbar{position:sticky;top:0;z-index:50;display:flex;align-items:center;justify-content:space-between;gap:12px;
   background:var(--barbg);backdrop-filter:blur(7px);-webkit-backdrop-filter:blur(7px);
@@ -75,6 +76,7 @@ code{background:var(--chip);color:var(--ink)}
 .hero .masthead{margin:0;border:0}
 .hero .mh-title{font-size:clamp(29px,5.6vw,44px);line-height:1.05;margin:0 0 6px}
 .hero .mh-tagline{font-size:clamp(20px,3.6vw,30px)}
+.mh-phases{margin:12px 0 0;font-size:15px;font-weight:600;color:var(--ink2)}
 .wordmark-rule{width:72px;height:3px;background:var(--brass);border-radius:2px;margin:18px 0 22px}
 .hero .sub{color:var(--ink2);font-size:16.5px;max-width:62ch;margin:0 0 16px}
 /* video: 16:9 landscape (YouTube). Click-to-load facade -> loads the player only on click. */
@@ -90,6 +92,13 @@ code{background:var(--chip);color:var(--ink)}
   border-color:transparent transparent transparent var(--on-accent);margin-left:5px}
 .videobox iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
 .vb-cap{color:var(--ink2);font-size:13.5px;margin:0 0 16px}
+/* two films side by side on desktop, stacked on phone */
+.videogrid{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin:10px 0 2px}
+.vbwrap{margin:0;min-width:0}
+.videogrid .videobox{max-width:none;margin:0}
+.videogrid .vb-cap{margin:8px 0 0;font-weight:600;color:var(--ink)}
+.vb-note{color:var(--ink2);font-size:13px;line-height:1.5;margin:14px 0 16px;max-width:62ch}
+@media (max-width:760px){.videogrid{grid-template-columns:1fr;gap:14px}}
 .hero-actions{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 6px}
 .hero-actions a{display:inline-flex;align-items:center;gap:7px;text-decoration:none;font-weight:600;font-size:14.5px;
   padding:10px 17px;border-radius:9px;border:1px solid var(--line);color:var(--ink);background:var(--card)}
@@ -107,7 +116,7 @@ code{background:var(--chip);color:var(--ink)}
 .chapter{scroll-margin-top:62px;border-top:1px solid var(--line);margin-top:30px;padding-top:8px}
 .chapter:first-of-type{border-top:0;margin-top:10px}
 .chapter h1{font-size:26px;page-break-before:auto;color:var(--ink)}
-.fig-cap{color:var(--muted);font-size:11.5px;font-style:italic}
+.fig-cap{color:var(--muted);font-size:11.5px;font-style:italic;overflow-wrap:anywhere;word-break:break-word}
 /* figure grid: big images, small caption underneath (replaces the tiny-image tables) */
 .figset{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,340px),1fr));gap:16px;margin:18px 0}
 .fig{margin:0;border:1px solid var(--line);border-radius:10px;overflow:hidden;background:var(--card);
@@ -136,16 +145,33 @@ code{background:var(--chip);color:var(--ink)}
       <span class="mh-title">California's Forgotten Past</span>
       <span class="mh-tagline">The Arsenic Cattle-Dipping Era</span>
     </h1>
+    <p class="mh-phases">Phase 1: the record. Phase 2: the site. A candidate dip-vat base has been found.</p>
     <div class="wordmark-rule" aria-hidden="true"></div>
     <p class="sub">An independent, hypothesis-neutral investigation into California's state-mandated arsenical cattle-tick dipping program (1907 to 1912) and the South Orange County communities built on the former ranch land.</p>
-    <!-- VIDEO: 16:9 YouTube embed (click-to-load facade; loads the player only on click) -->
-    <div class="videobox" id="ytfacade" data-yt="QDGB_R92jns" role="button" tabindex="0"
-         aria-label="Play the documentary: Ladera Ranch Investigation Leads to California's Forgotten Past">
-      <img class="vb-poster" src="https://i.ytimg.com/vi/QDGB_R92jns/maxresdefault.jpg" alt="">
-      <span class="glow"></span>
-      <div class="vb-play"></div>
+    <!-- VIDEO: two 16:9 YouTube embeds (click-to-load facades; load the player only on click) -->
+    <div class="videogrid">
+      <figure class="vbwrap">
+        <div class="videobox" id="ytfacade" data-yt="QDGB_R92jns" role="button" tabindex="0"
+             aria-label="Play Phase 1: Ladera Ranch Investigation Leads to California's Forgotten Past">
+          <img class="vb-poster" src="assets/phase1_cover_16x9.jpg" alt="" width="1280" height="720">
+          <span class="glow"></span>
+          <div class="vb-play"></div>
+        </div>
+        <figcaption class="vb-cap">Phase 1 (July 2026): the record.</figcaption>
+      </figure>
+      <figure class="vbwrap">
+        <div class="videobox" id="ytfacade2" data-yt="XzIJ-pHr-JU" role="button" tabindex="0"
+             aria-label="Play Phase 2: the field investigation above Ladera Ranch">
+          <img class="vb-poster" src="assets/phase2_cover_16x9.jpg" alt="" width="1280" height="720">
+          <span class="glow"></span>
+          <div class="vb-play"></div>
+        </div>
+        <figcaption class="vb-cap">Phase 2 (September 2026): the site.</figcaption>
+      </figure>
     </div>
-    <p class="vb-cap">Watch: a short documentary on the investigation, by Andy Stavros.</p>
+    <p class="vb-note">Films by Andy Stavros. The Phase 2 cover is the film&rsquo;s own artwork; the question it
+      poses is not a finding. This site is password protected while the work is reviewed &mdash; for access,
+      message Andy on Instagram or email <a href="mailto:andystavros@icloud.com">andystavros@icloud.com</a>.</p>
     <div class="hero-actions">
       <a href="#contents">Jump to contents</a>
       <a href="index.html" data-va-event="Section-by-section view">Section-by-section view</a>
@@ -157,8 +183,10 @@ code{background:var(--chip);color:var(--ink)}
     agency, or other party caused any illness.</b> Arsenic is not a known cause of Ewing sarcoma. Publicly
     reported health events may not have been independently medically verified. Geographic and temporal overlap
     does not establish exposure or causation. No dip-site soil has been tested and no contamination is asserted
-    for any community named here.</div>
-  <nav class="contents" id="contents"><h2>Contents</h2><ol><li><a href="#00_authors_note">Author's note</a></li><li><a href="#00_help_archives">Archives that may still hold the record</a></li><li><a href="#00_intro">Introduction</a></li><li><a href="#01_california_story">The California story, 1769-2026</a></li><li><a href="#02_discovery">The discovery of the arsenic mandate</a></li><li><a href="#03_health_ewing">The health question: Ewing sarcoma, honestly</a></li><li><a href="#05_the_map">The map: where the question lives</a></li><li><a href="#10_ladera_ranch">Ladera Ranch: the priority area</a></li><li><a href="#15_schools">Schools: the roster, and what the borings actually tested for</a></li><li><a href="#20_bellcanyon_coto">Bell Canyon / Coto de Caza: the documented dip ranch</a></li><li><a href="#30_newport_coast">30 · Newport Coast</a></li><li><a href="#40_irvine">40 · Irvine</a></li><li><a href="#50_newport_bay_eastbluff">50 · Upper Newport Bay: Eastbluff · The Bluffs · Big Canyon · Santa Ana Heights</a></li><li><a href="#60_statewide_tier">60 · The Statewide Tier: Fifteen Communities on the Probability Map</a></li><li><a href="#65_archives_and_testing">What we're looking for, where it is, and where to dig</a></li><li><a href="#70_program_history">70 · The Program History: California 1907 to March 1912</a></li><li><a href="#71_what_others_did">71 · What Other Places Did: The Contrast</a></li><li><a href="#72_arsenic_model">72 · The Arsenic Model: a Mass Balance in Pounds</a></li><li><a href="#73_methods_sources">73 · Methods and Sources</a></li><li><a href="#80_plates">Plates: the complete visual record</a></li></ol></nav>
+    for any community named here; some soil sampling in Ladera Ranch is now under way and its scope has not been
+    made public. The concrete base reported in Phase 2 is a candidate identified by field observation; it has not
+    been confirmed as a dipping vat and will not be until soil is tested.</div>
+  <nav class="contents" id="contents"><h2>Contents</h2><ol><li><a href="#00_authors_note">Author's note</a></li><li><a href="#00_help_archives">Archives that may still hold the record</a></li><li><a href="#00_intro">Introduction</a></li><li><a href="#01_california_story">The California story, 1769-2026</a></li><li><a href="#02_discovery">The discovery of the arsenic mandate</a></li><li><a href="#03_health_ewing">The health question: Ewing sarcoma, honestly</a></li><li><a href="#05_the_map">The map: where the question lives</a></li><li><a href="#10_ladera_ranch">Ladera Ranch: the priority area</a></li><li><a href="#11_phase2_the_site">Phase 2: the site</a></li><li><a href="#15_schools">Schools: the roster, and what the borings actually tested for</a></li><li><a href="#20_bellcanyon_coto">Bell Canyon / Coto de Caza: the documented dip ranch</a></li><li><a href="#30_newport_coast">30 · Newport Coast</a></li><li><a href="#40_irvine">40 · Irvine</a></li><li><a href="#50_newport_bay_eastbluff">50 · Upper Newport Bay: Eastbluff · The Bluffs · Big Canyon · Santa Ana Heights</a></li><li><a href="#60_statewide_tier">60 · The Statewide Tier: Fifteen Communities on the Probability Map</a></li><li><a href="#65_archives_and_testing">What we're looking for, where it is, and where to dig</a></li><li><a href="#70_program_history">70 · The Program History: California 1907 to March 1912</a></li><li><a href="#71_what_others_did">71 · What Other Places Did: The Contrast</a></li><li><a href="#72_arsenic_model">72 · The Arsenic Model: a Mass Balance in Pounds</a></li><li><a href="#73_methods_sources">73 · Methods and Sources</a></li><li><a href="#80_plates">Plates: the complete visual record</a></li></ol></nav>
   <section id="00_authors_note" class="chapter"><h1>Author's note</h1>
 <p>My name is Andy Stavros. I'm not a scientist, a doctor, or an activist. I'm a father in Newport
 Beach.</p>
@@ -218,13 +246,15 @@ isn't my area of expertise, and I'm not claiming it does.</p>
 <p>That is a potential pathway, not a finding. Nothing in this report measures it, and I want to be
 careful not to let a reasonable question sound like a conclusion. It is exactly the kind of question
 that deserves to be documented properly rather than argued about loosely.</p>
-<p>So that is where a second phase of this work is now going. I am currently mapping the development
-timeline, occupancy, construction phases, and potential wind patterns, so the historical context is
-accurately documented. The point is not to prove that pathway. The point is that if anyone ever does
-look at it seriously, whether that is a public agency, an epidemiologist, or a researcher who
-disagrees with me entirely, the historical record will already be assembled, dated, sourced, and
-open, instead of being reconstructed from memory years from now. If that record ends up closing the
-question rather than opening it, that is a perfectly good outcome, and I'll publish it either way.</p>
+<p>That is where the second phase went, and it did not go where I expected. Phase 2 became a field
+investigation. In August 2026, in ungraded open space above the community beside the golf course, I
+found a concrete base with iron pipe rails still running up to it, its floor about the length
+specified for a federal dipping-vat floor. It is a <strong>candidate, not an identification</strong>, and it stays
+that way until someone tests the soil. The development timeline, occupancy, construction phases and
+wind patterns remain part of this record and are still being assembled; the point was never to prove
+that pathway, only to have it documented, dated and sourced before anyone needs it. What I found, and
+what I am asking for, is set out in <em>Phase 2: the site</em>, and in the Phase 2 film at the top of this
+report.</p>
 <p>I've taken the first phase as far as one person with good tools and a lot of long nights can take it.
 The next steps that I genuinely cannot do alone, pulling the physical ranch archives and putting real
 soil testing behind the questions the paper record cannot close, belong to people and institutions
@@ -239,6 +269,8 @@ something I don't, I would like to hear from you.</p>
 <blockquote>
 <p>Contact: I would genuinely rather hear from you than not. Please use the <a href="/contact.html">contact form</a>
 on the project website. Every message reaches me directly.</p>
+<p>The site is password protected for now. For access, message me on Instagram or email
+andystavros@icloud.com.</p>
 </blockquote>
 <p>Andy Stavros, Newport Beach, California</p></section><section id="00_help_archives" class="chapter"><h1>Archives that may still hold the record</h1>
 <p><em>Where a vat could still be named, and how you can help.</em></p>
@@ -282,7 +314,8 @@ environmental review existed, what was tested, and whether arsenic, and which ar
 among the analytes</strong>, and every school in the area. Two arsenic signatures matter throughout:
 <strong>lead-arsenate</strong> (orchard pesticide: arsenic <em>with</em> lead) and <strong>arsenic trioxide</strong> (the cattle-dip
 poison: arsenic with little or no lead). Where California tested at all, it tested for the first.
-It has never, anywhere, tested for the second.</p>
+For the twenty years these communities have existed, no test anywhere targeted the second;
+some soil sampling in Ladera Ranch is now under way, and neither its analytes nor its locations have been made public, so whether the dip signature is among them is unknown.</p>
 <blockquote>
 <p>This platform is an independent research and data-organization project. It does not provide
 medical advice and does not establish that any pesticide, property, organization, employer,
@@ -440,6 +473,54 @@ report does not soften it.</p>
    wells</strong> (a weak, non-significant association, stronger in Hispanic children), worth carrying,
    precisely because it points at the right disease [B2].</li>
 </ol>
+<h2>A graded audit of the in-utero hypothesis</h2>
+<p>One narrower question deserves its own audit, because it is the only version of the arsenic-Ewing
+idea with a plausible mechanism attached: not childhood soil contact, but <strong>exposure before birth</strong>.
+The full graded audit is <code>docs/lhdrs/science/EWING_ARSENIC_AUDIT.md</code>
+(<a href="reports/EWING_ARSENIC_AUDIT.pdf">PDF</a>). Its chain, link by link:</p>
+<table>
+<thead>
+<tr>
+<th>Link in the chain</th>
+<th>What the literature supports</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Ewing needs <strong>two steps</strong>: a permissive germline background, then the somatic EWSR1-FLI1 fusion</td>
+<td>Supported; the two-step model is set out in a 2025 <em>Cell Reports</em> paper [B1]</td>
+</tr>
+<tr>
+<td>The fusion may arise <strong>in utero</strong>, in a developing cell population</td>
+<td>Plausible on the same model; timing is not directly observed [B1, inference]</td>
+</tr>
+<tr>
+<td><strong>In-utero arsenic</strong> can have lifelong cancer consequences</td>
+<td>Supported for <em>other</em> cancers by the Chilean in-utero cohorts, the strongest human evidence of prenatal arsenic effects anywhere [B1]</td>
+</tr>
+<tr>
+<td>In-utero arsenic raises the chance of <strong>that specific fusion</strong></td>
+<td><strong>No literature exists.</strong> Not contested, not weak: absent</td>
+</tr>
+<tr>
+<td>In-utero arsenic raises the chance of <strong>Ewing sarcoma</strong></td>
+<td><strong>No literature exists.</strong> Absent</td>
+</tr>
+</tbody>
+</table>
+<p>Two links in the middle of the chain therefore have <strong>nothing published behind them in either
+direction</strong>, which is a different statement from "refuted". There is one further wrinkle that cuts
+<em>against</em> a simple story: <strong>arsenic trioxide kills Ewing sarcoma cells</strong> in laboratory work at
+therapeutic drug concentrations, and has been examined as a treatment agent. A compound studied as a
+therapy is an awkward candidate for a cause, though dose, route and timing differ so completely
+between a drug and a soil exposure that neither fact settles the other.</p>
+<p>Finally, the three links that are <strong>Ladera-specific have never been measured</strong>: whether dip-signature
+arsenic is present in the soil at all; whether any pregnant resident was exposed to it; and whether
+any exposure occurred in the relevant developmental window. All three are empirical questions, and
+none has been asked.</p>
+<p><strong>Verdict: a testable hypothesis, not a finding.</strong> It is recorded here because it is testable, and
+because the honest description of the middle of the chain is <em>unstudied</em>, not <em>disproved</em>. It is not
+evidence that arsenic caused anything, and this report does not present it as such.</p>
 <h2>The even-handed counterweight (kept in on purpose)</h2>
 <p>Evidence that lowers the prior on arsenic here, reported plainly: children's <strong>urinary arsenic did
 not correlate with residential soil</strong> even above a state soil standard (Middleport, NY); <strong>diet
@@ -458,14 +539,23 @@ no soil result exists behind it. The areas that follow are ordered by priority, 
 Ladera Ranch, then the one documented ranch at Bell Canyon / Coto de Caza.</p>
 <p><img loading="lazy" alt="CA_dipping_probability_map.jpg" src="assets/research_statewide_CA_dipping_probability_map.jpg" /><br><em class="fig-cap">research/statewide/CA_dipping_probability_map.jpg</em></p>
 <p>The same zones over real imagery, the communities that sit on the old ranges today:</p>
-<p><img loading="lazy" alt="CA_dipping_satellite_overview.jpg" src="assets/research_statewide_CA_dipping_satellite_overview.jpg" /><br><em class="fig-cap">research/statewide/CA_dipping_satellite_overview.jpg</em></p></section><section id="10_ladera_ranch" class="chapter"><h1>Ladera Ranch: the priority area</h1>
+<p><img loading="lazy" alt="CA_dipping_satellite_overview.jpg" src="assets/research_statewide_CA_dipping_satellite_overview.jpg" /><br><em class="fig-cap">research/statewide/CA_dipping_satellite_overview.jpg</em></p>
+<p><strong>Added 2026-08.</strong> One point on this map now has a structure behind it rather than a probability. A
+candidate concrete base was located on foot in open space beside Ladera Ranch in August 2026; the
+find, the drainage below it, and the sampling targets are in chapter <em>Phase 2: the site</em>. The map is
+unchanged by it: a candidate is not a located vat, and this is still a prioritisation of an
+unanswered question rather than a contamination map. The era tiles of the drainage (1929 to 2025) and
+the slope-to-pond-to-creek graphic are held in the project evidence repository and publish with the
+next build.</p></section><section id="10_ladera_ranch" class="chapter"><h1>Ladera Ranch: the priority area</h1>
 <p><strong>Summary.</strong> Ladera Ranch (~4,000 acres, built 1999-2006) sits entirely on former O'Neill / Rancho
 Mission Viejo cattle range, land inside the 1907-1912 arsenical tick-dipping quarantine zone whose
 ranches "cover[ed] nearly half the southern portion of Orange" county [B2, LA Herald 1 Sep 1908].
-No dipping vat has been documented or found on the footprint; no soil there has ever been tested for
-arsenic. Every environmental review that touched Ladera was a records-and-walk review, not a sampling
+No dipping vat has been documented or found <strong>inside the residential footprint</strong>, and for the twenty
+years since development no soil there was tested for arsenic. In August 2026 a <strong>candidate concrete base</strong> was located on foot in
+ungraded open space <strong>beside</strong> the community; that find, and what it does and does not mean, is
+chapter <em>Phase 2: the site</em>. Every environmental review that touched Ladera was a records-and-walk review, not a sampling
 event. The question this report exists to pose is therefore genuinely open: <strong>never looked, not
-looked-and-cleared.</strong></p>
+looked-and-cleared.</strong> As of 2026 that is changing at the margin: some soil sampling in Ladera Ranch is now under way, and neither its analytes nor its locations have been made public.</p>
 <h2>The ranch this land was</h2>
 <p>For a century before the master plan, this was cattle country, the O'Neill / Rancho Mission Viejo
 range. The Rancho Santa Margarita y Las Flores and Mission Viejo lands passed from the Forster family
@@ -574,8 +664,9 @@ and read in context:</p>
   by a standard total-metals panel that was <strong>not speciated for arsenic trioxide</strong>, and outside the
   Ladera Ranch footprint.</li>
 </ul>
-<p>Both documents are therefore <strong>consistent with, and do not contradict,</strong> the "never tested for arsenic
-trioxide" finding in the table above. Method note, for transparency: the PEIR's only "trioxide" matches
+<p>Both documents are therefore <strong>consistent with, and do not contradict,</strong> the "not tested for arsenic
+trioxide" finding in the table above, which describes the twenty years of review preceding the
+sampling now under way. Method note, for transparency: the PEIR's only "trioxide" matches
 were "sulfur trioxide," an unrelated air-quality term, counted as false positives once read; this project
 reads every hit in context rather than reporting raw keyword counts.</p>
 <p><strong>This narrows the gap; it does not close it.</strong> The Ladera master entitlement EIR itself (referenced in
@@ -603,20 +694,210 @@ flagged for interactive verification).</p>
   <strong>parks and common areas</strong> (the child-contact 0-6 in horizon), plus any volunteered yard soil;
   total + bioavailable arsenic, <strong>with lead alongside</strong> to separate dip- from orchard-signature, plus
   speciation. Grading likely diluted any residue, so a null is not a full clearance and a hit is
-  significant.</p>
+  significant.
+- <strong>Added 2026-08, the child-contact points at the candidate base.</strong> The trail margin beside the
+  structure and the <strong>rope tire swing on its approach</strong> are in casual recreational use, including by
+  children, on ground that has never been characterised. They belong in the sampling list for that
+  reason alone, independent of whether the structure turns out to be a vat. Full target list in
+  chapter <em>Phase 2: the site</em>.</p>
 <h2>Honest limits &amp; counter-evidence</h2>
 <ul>
 <li><strong>No vat found on adequate imagery</strong> (1.15 ft/px would resolve a corral unmistakably), weak
-  evidence against a <em>surviving surface</em> facility; says nothing about one demolished ~1917.</li>
+  evidence against a <em>surviving surface</em> facility; says nothing about one demolished ~1917. <strong>Updated
+  2026-08:</strong> a candidate concrete base was found <strong>on the ground</strong>, in ungraded open space beside the
+  footprint, where imagery could not resolve it under canopy and brush. The imagery null therefore
+  stands only for <strong>surface facilities visible from the air</strong>, which is a narrower claim than it
+  first appeared. See chapter <em>Phase 2: the site</em>.</li>
 <li><strong>Homes are NOT preferentially sited on ranch-era water</strong> (enrichment 0.97×, p = 0.51), the
   "developers built on the cattle grounds" mechanism is rejected; near-total development means any
   ranch-era residue would sit under or beside housing regardless.</li>
 <li>The reported pediatric-cancer pattern <strong>may be explained by</strong> population structure, diagnostic or
   referral patterns, or chance; the available evidence does not establish causation, and this report
   does not claim otherwise.</li>
-<li>Resolver: <strong>a direct soil arsenic (+ lead, + speciation) test</strong> at the greenbelt node/corridor,
-  never performed.</li>
-</ul></section><section id="15_schools" class="chapter"><h1>Schools: the roster, and what the borings actually tested for</h1>
+<li>Resolver: <strong>a direct soil arsenic (+ lead, + speciation) test</strong>, never performed. With a candidate
+  structure now identified beside the footprint, the highest-value first sample is no longer a blind
+  greenbelt screen but the base itself and the ground around it, see chapter <em>Phase 2: the site</em> for
+  the specific targets.</li>
+</ul></section><section id="11_phase2_the_site" class="chapter"><h1>Phase 2: the site</h1>
+<p><strong>Summary.</strong> In August 2026 a concrete rectangle with iron pipe rails still leading up to it was
+located <strong>on foot</strong>, in ungraded open space above Ladera Ranch beside the Arroyo Trabuco golf course.
+Its floor measures about <strong>12 feet</strong>, the floor length specified for a federal cattle-dipping vat in
+USDA Bureau of Animal Industry Circular 183 (1911) [A1, S-USDA-C183]. It is unfenced, unmarked, and
+sits beside a public trail. <strong>This is a candidate, not an identification.</strong> Nothing here establishes
+that the structure is a dipping vat, and nothing will until the soil is tested. Phase 1 asked whether
+California ever looked. Phase 2 found something to look at.</p>
+<blockquote>
+<p><strong>CLASSIFICATION.</strong> Structure and setting: <strong>field observation</strong> (August 2026). Herd arithmetic and
+mass figures: <strong>MODEL ESTIMATE</strong>. Florida: <strong>[A2]</strong>, official state record. Imagery and elevation:
+<strong>[A1]</strong>. That the structure <em>is</em> a dipping vat remains <strong>HYPOTHESIS</strong>, and is what a soil test
+would settle.</p>
+</blockquote>
+<hr />
+<h2>11.1 The find</h2>
+<p>[field observation, August 2026]</p>
+<p>The structure sits in the <strong>open space above the community, beside the golf course</strong>, on ground never
+graded for housing. No coordinates are published here, and none will be: an unfenced structure of
+unknown chemistry beside a public trail should be closed and marked by an agency, not crowd-visited.
+What can be described without locating it:</p>
+<ul>
+<li>A <strong>poured concrete rectangle</strong>, its floor roughly <strong>12 ft</strong> in length, consistent with the federal
+  specification for a swim-vat floor [A1, S-USDA-C183].</li>
+<li><strong>Iron pipe rails</strong> still in place, running up to the structure, the geometry of an approach chute
+  that funnels animals single-file.</li>
+<li><strong>No fence, no sign, no marking</strong> of any kind.</li>
+<li>A <strong>public trail</strong> passes near it, and a <strong>rope tire swing</strong> hangs on the approach, which is to say
+  the ground around it is in casual recreational use, including by children.</li>
+</ul>
+<p>That last point is why this chapter exists. Dip vat or not, an unmarked structure of unknown chemistry
+in an area of child contact is something an agency should characterise. The position Phase 1 took
+holds: <strong>never looked, not looked-and-cleared.</strong> A candidate found by walking is not a finding; it is
+a place to test.</p>
+<h2>11.2 Why one station is not enough</h2>
+<p>[MODEL ESTIMATE]</p>
+<p>Federal quarantine rules required dipping on a <strong>14-day cadence</strong> through the season [A1, S-USDA-C174,
+1910]. Against a herd of roughly <strong>21,000</strong> head [A1, S-USDA-C174] to <strong>25,000+</strong> by family accounts
+of the O'Neill operation [B2, family history], a single vat cannot physically clear the herd on that
+cycle. Cattle were worked where water was, so the stations followed the ranch's water points. The
+arithmetic of cadence and herd size implies <strong>three to seven vats</strong> across the ranch system
+[MODEL ESTIMATE, confidence low].</p>
+<p><strong>One candidate has been found.</strong> If the estimate is near right, the others are still out there,
+unlocated and unmarked, under what is now open space, golf course and neighbourhood. That is an
+argument for a systematic inventory, the thing Florida did and California never did.</p>
+<h2>11.3 The arithmetic</h2>
+<p>[MODEL ESTIMATE, from <code>reports/ARSENIC_QUANTIFICATION_MASTER.md</code>]</p>
+<p>Using the published USDA California charge of <strong>8 lb white arsenic (As₂O₃) per 500 gal</strong> [A1,
+S-USDA-C174] and the ranch's herd and cadence:</p>
+<table>
+<thead>
+<tr>
+<th>Quantity</th>
+<th>MODEL ESTIMATE</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Whole-ranch arsenic mass, program lifetime</td>
+<td><strong>6,692 – 39,748 lb</strong> As₂O₃</td>
+</tr>
+<tr>
+<td>Fraction concentrated at a vat, pens and drip pen</td>
+<td><strong>1,338 – 7,949 lb</strong></td>
+</tr>
+<tr>
+<td>Resulting near-structure soil concentration</td>
+<td><strong>128 – 763 mg/kg</strong></td>
+</tr>
+<tr>
+<td>California background arsenic, for comparison</td>
+<td><strong>1 – 11 mg/kg</strong> [A2]</td>
+</tr>
+</tbody>
+</table>
+<p>The concentration range is the line that matters: <strong>128–763 mg/kg against a background of 1–11 mg/kg</strong>
+is a point source a standard soil panel would resolve immediately, if anyone ran one. It is also
+squarely inside the range measured at dip sites in Australia and the US Southeast (chapter 72), which
+is the empirical anchor for the whole model.</p>
+<p>The film states a lethal-dose comparison, and it belongs here with its caveat attached, in full. At a
+central estimate of roughly <strong>21,000 lb</strong> and an adult lethal dose of <strong>100–300 mg</strong>, the arithmetic
+gives <strong>32 to 96 million nominal doses</strong>. The caveat is not optional and is reproduced verbatim:</p>
+<blockquote>
+<p><em>This is arithmetic, not toxicology. Soil-bound arsenic is only partly bioavailable; nobody ingests
+soil in quantity; the number says one thing: the mass involved was large. It says nothing about
+exposure, which has never been measured here.</em></p>
+</blockquote>
+<p>The figure describes <strong>the size of the bag</strong>, not a dose anyone received. No exposure has been
+measured in Ladera Ranch, and this project does not claim one occurred.</p>
+<h2>11.4 Florida: the answer key</h2>
+<p>[A2, official state record]</p>
+<p>Florida ran the <strong>same federal program</strong> on the same schedule, and then did the thing California
+never did: it looked.</p>
+<ul>
+<li>Florida <strong>inventoried 3,281 vats</strong> statewide.</li>
+<li>Of twelve sites tested, <strong>eleven exceeded the state soil standard</strong>.</li>
+<li>The state's own report records disused vats <strong>reused as pesticide-mixing areas</strong>, and <strong>used by
+  children as swimming holes</strong>.</li>
+<li>Florida <strong>fenced and remediated</strong>.</li>
+<li>California has <strong>never inventoried a single vat</strong>.</li>
+</ul>
+<p>Florida is not a hypothesis about what may sit in dip-site soil. It is a measured answer from a
+comparable program, and the answer was: mostly above standard. The <strong>G11</strong> records response from
+Florida DEP and the photographic exhibit of Florida vats are held with the cross-reference material;
+note also the <strong>Palm Beach gap</strong>, a county absent from the state inventory, a reminder that an
+inventory's silence is not a clearance. See <code>research/national_crossreference/</code> and
+<code>research/national_crossreference/EXHIBIT_FL_VAT_PHOTOS.pdf</code>.</p>
+<h2>11.5 The pond and the drainage</h2>
+<p>[field observation + A1 imagery + A1 elevation]</p>
+<p>Below the find, at the edge of the golf course, is a pond. The imagery record is unambiguous: it is
+<strong>absent in 1929, 1937, 1947, 1953, 1960, 1969, 1980 and 1990</strong>, and <strong>first appears in the January
+2004 orthoimage</strong> [A1, OC Survey imagery]. <strong>The pond was built with the golf course.</strong> It is not a
+ranch-era feature, and nothing about it is evidence of dipping.</p>
+<p>What makes it worth recording is position. On the 2018 county DEM [A1]:</p>
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>Elevation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Hillside at the find</td>
+<td>~421 ft</td>
+</tr>
+<tr>
+<td>Pond</td>
+<td>~325 ft</td>
+</tr>
+<tr>
+<td>Creek</td>
+<td>~280 ft</td>
+</tr>
+</tbody>
+</table>
+<p>The find sits about a hundred feet above the pond, and the pond sits above the creek. <strong>Runoff from
+that slope passes through the pond on its way to the creek.</strong> That is a drainage relationship, not a
+transport finding: no water, sediment or soil has been sampled anywhere along it.</p>
+<p>Separately, a <strong>1968 USGS field survey</strong> mapped a <strong>9,111 m² stock-water body</strong> on the creek about
+<strong>240 m upstream</strong> (~291 ft) [A1, USGS]. It no longer appears as open water; that corridor is now
+riparian woodland. A ranch-era stock pond upstream of a modern golf-course pond is exactly the sort of
+feature an inventory would want mapped.</p>
+<p>One observation needs an explicit non-claim: the <strong>tule ring around the pond looks dead</strong> this season.
+That has an ordinary seasonal explanation and <strong>is not evidence of arsenic damage</strong>. It is recorded
+because it was seen, not because it means anything.</p>
+<h2>11.6 What has changed since Phase 1</h2>
+<p>[A2 / factual update]</p>
+<p>Two things. <strong>Some soil sampling in Ladera Ranch is now under way.</strong> What it is testing for, and where
+the samples are being taken, has not been shared publicly; this project has not been consulted on
+locations and cannot say whether the dip signature is among the analytes. A sampling programme of
+unknown scope is progress over none, but it does not answer the question this report poses unless it
+targets the right places and the right chemistry. Separately, the author is now listed as an
+<strong>Advisory Member (Independent Researcher &amp; Land Historian)</strong> at
+<a href="https://protectladera.org/advisors/">protectladera.org/advisors</a> [A2].</p>
+<h2>11.7 The ask</h2>
+<p>Unchanged from Phase 1 in substance, sharpened by having a place to point at.</p>
+<ol>
+<li><strong>Close and mark the trail segment</strong> at the structure until it has been tested. This is a
+   precaution, not an accusation.</li>
+<li><strong>Sample, under hazardous-materials protocol:</strong> the base itself; the pens footprint; the drip-pen
+   side; the <strong>tire-swing area</strong> and trail margin, as the child-contact points; the <strong>pond sediment</strong>;
+   and the <strong>creek margin</strong> below it.</li>
+<li><strong>Analytes:</strong> total <strong>and bioavailable</strong> arsenic; <strong>lead alongside</strong>, to separate the dip signature
+   (arsenic trioxide, arsenic with little or no lead) from the orchard signature (lead arsenate);
+   plus <strong>speciation</strong>.</li>
+<li><strong>Independent of Ladera Ranch and of Rancho Mission Viejo</strong>, conducted by the State.</li>
+</ol>
+<p><strong>A negative result is a real result.</strong> If the soil comes back at background, that is an answer this
+project would publish as readily as any other, and the question closes on evidence rather than on
+assumption. What is not acceptable is a third decade of neither looking nor clearing.</p>
+<hr />
+<p><strong>Figures for this chapter are pending.</strong> The era tiles of the drainage (1929 to 2025), the drone
+frames of the pond, the field photographs of the base and rails, and the reconstruction stills
+(labelled <em>AI-assisted reconstruction after USDA Circular 183; not historical footage</em>) are held in
+the project evidence repository and publish with the next build.</p>
+<p><em>Source registry:</em> S-USDA-C183 [A1]; S-USDA-C174 [A1]; Florida DEP inventory and G11 records response
+[A2]; OC Survey orthoimagery [A1]; 2018 OC County DEM [A1]; 1968 USGS field survey [A1]; O'Neill family
+history [B2]; Protect Ladera advisors page [A2]. Model output: MODEL ESTIMATE, Confidence Low, from
+<code>reports/ARSENIC_QUANTIFICATION_MASTER.md</code>. Full grading in chapter 73.</p></section><section id="15_schools" class="chapter"><h1>Schools: the roster, and what the borings actually tested for</h1>
 <p>Schools matter most here: they concentrate the sensitive receptor (children), they sit on the same
 former ranch land, and, under California's 2000 school-siting law, they are the <em>one</em> land use
 that triggers a mandatory environmental look. So what that look tested for is the whole question.
@@ -668,9 +949,9 @@ never been an analytical target at any school in these communities.</strong></p>
 <p><strong>Read this table carefully.</strong> Only one nearby school (Carl Hankey) ever had soil tested for arsenic
 and that was because it sat on a former <em>orchard</em>, so the investigation looked for <strong>lead-arsenate</strong>
 (arsenic bound with lead, the orchard pesticide). A cattle <strong>dip</strong> leaves the opposite chemical
-fingerprint: <strong>arsenic trioxide, arsenic with little or no lead.</strong> No school study has ever tested
-<em>for that.</em> The dip signature has never been ruled in or out anywhere in these communities. That is
-the single most important, and most fixable, gap in the record.</p>
+fingerprint: <strong>arsenic trioxide, arsenic with little or no lead.</strong> No school study has tested
+<em>for that.</em> For twenty years the dip signature was not ruled in or out anywhere in these communities;
+some soil sampling in Ladera Ranch is now under way, and neither its analytes nor its locations have been made public. That remains the single most important, and most fixable, gap in the record.</p>
 <h2>Ladera Ranch: 10 schools (verified roster)</h2>
 <table>
 <thead>
@@ -1426,10 +1707,10 @@ this ground.</p>
 established; predates the 1907-1912 program). <strong>Los Alamitos: PLAUSIBLE</strong> (Bixby cattle ranch,
 lesser county).</p>
 <h3>Figures</h3>
-<p><img loading="lazy" alt="USC-CHS_CHS-7411_388c1ad4_adobes_barn_ca1890.jpg" src="assets/evidence_images_T09-LOSCERRITOS_USC-CHS_CHS-7411_388c1ad4_adobes_barn_ca1890.jpg" /><br><em class="fig-cap">evidence/images/T09-LOSCERRITOS/USC-CHS_CHS-7411_388c1ad4_adobes_barn_ca1890.jpg</em> (adobes + barn,
-c.1890) · <img loading="lazy" alt="HABS_ca0208_011958pv.jpg" src="assets/evidence_images_T09-LOSCERRITOS_HABS_ca0208_011958pv.jpg" /><br><em class="fig-cap">evidence/images/T09-LOSCERRITOS/HABS_ca0208_011958pv.jpg</em> (Los Cerritos ranch house,
-HABS) · <img loading="lazy" alt="Hornbeck_LosAlamitos_LAC_diseno468_preview.jpg" src="assets/evidence_images_T10-LOSALAMITOS_Hornbeck_LosAlamitos_LAC_diseno468_preview.jpg" /><br><em class="fig-cap">evidence/images/T10-LOSALAMITOS/Hornbeck_LosAlamitos_LAC_diseno468_preview.jpg</em> (Los
-Alamitos diseño) · <img loading="lazy" alt="HALS-CA-90_drawing_00001r.jpg" src="assets/evidence_images_T10-LOSALAMITOS_HALS-CA-90_drawing_00001r.jpg" /><br><em class="fig-cap">evidence/images/T10-LOSALAMITOS/HALS-CA-90_drawing_00001r.jpg</em></p>
+<p><code>evidence/images/T09-LOSCERRITOS/USC-CHS_CHS-7411_388c1ad4_adobes_barn_ca1890.jpg</code> (adobes + barn,
+c.1890) · <code>evidence/images/T09-LOSCERRITOS/HABS_ca0208_011958pv.jpg</code> (Los Cerritos ranch house,
+HABS) · <code>evidence/images/T10-LOSALAMITOS/Hornbeck_LosAlamitos_LAC_diseno468_preview.jpg</code> (Los
+Alamitos diseño) · <code>evidence/images/T10-LOSALAMITOS/HALS-CA-90_drawing_00001r.jpg</code></p>
 <h3>Environmental review</h3>
 <table>
 <thead>
@@ -1489,10 +1770,10 @@ nothing here establishes arsenic use.</p>
 coast under the compulsory law. No vat located; and the land is a Marine Corps base, <strong>not homes</strong>
 (green-ring context on the probability map).</p>
 <h3>Figures</h3>
-<p><img loading="lazy" alt="herd_cattle_santa_margarita_1900_CHS-2360.jpg" src="assets/evidence_images_T13-SANTAMARGARITA_herd_cattle_santa_margarita_1900_CHS-2360.jpg" /><br><em class="fig-cap">evidence/images/T13-SANTAMARGARITA/herd_cattle_santa_margarita_1900_CHS-2360.jpg</em> ·
-<img loading="lazy" alt="cattle_stream_santa_margarita_1900_CHS-2358.jpg" src="assets/evidence_images_T13-SANTAMARGARITA_cattle_stream_santa_margarita_1900_CHS-2358.jpg" /><br><em class="fig-cap">evidence/images/T13-SANTAMARGARITA/cattle_stream_santa_margarita_1900_CHS-2358.jpg</em> ·
-<img loading="lazy" alt="plat_santa_margarita_las_flores_1867_E-1362A.jpg" src="assets/evidence_images_T13-SANTAMARGARITA_plat_santa_margarita_las_flores_1867_E-1362A.jpg" /><br><em class="fig-cap">evidence/images/T13-SANTAMARGARITA/plat_santa_margarita_las_flores_1867_E-1362A.jpg</em> ·
-<img loading="lazy" alt="casa_rancho_santa_margarita_HABS_CA-48_015167.jpg" src="assets/evidence_images_T13-SANTAMARGARITA_casa_rancho_santa_margarita_HABS_CA-48_015167.jpg" /><br><em class="fig-cap">evidence/images/T13-SANTAMARGARITA/casa_rancho_santa_margarita_HABS_CA-48_015167.jpg</em></p>
+<p><code>evidence/images/T13-SANTAMARGARITA/herd_cattle_santa_margarita_1900_CHS-2360.jpg</code> ·
+<code>evidence/images/T13-SANTAMARGARITA/cattle_stream_santa_margarita_1900_CHS-2358.jpg</code> ·
+<code>evidence/images/T13-SANTAMARGARITA/plat_santa_margarita_las_flores_1867_E-1362A.jpg</code> ·
+<code>evidence/images/T13-SANTAMARGARITA/casa_rancho_santa_margarita_HABS_CA-48_015167.jpg</code></p>
 <h3>Environmental review</h3>
 <table>
 <thead>
@@ -1548,8 +1829,8 @@ ranch matters chiefly as the strongest <em>operations-scale</em> candidate in th
 <p><strong>LIKELY</strong>, heavy county + documented long-running cattle range; no dipping record tied to the
 rancho by name.</p>
 <h3>Figures</h3>
-<p><img loading="lazy" alt="bancroft_diseno_rancho_simi_1842_D-1091.jpg" src="assets/evidence_images_T03-SIMI_bancroft_diseno_rancho_simi_1842_D-1091.jpg" /><br><em class="fig-cap">evidence/images/T03-SIMI/bancroft_diseno_rancho_simi_1842_D-1091.jpg</em> ·
-<img loading="lazy" alt="huntington_10756_simi_land_water_1888.jpg" src="assets/evidence_images_T03-SIMI_huntington_10756_simi_land_water_1888.jpg" /><br><em class="fig-cap">evidence/images/T03-SIMI/huntington_10756_simi_land_water_1888.jpg</em></p>
+<p><code>evidence/images/T03-SIMI/bancroft_diseno_rancho_simi_1842_D-1091.jpg</code> ·
+<code>evidence/images/T03-SIMI/huntington_10756_simi_land_water_1888.jpg</code></p>
 <h3>Environmental review</h3>
 <table>
 <thead>
@@ -1603,8 +1884,8 @@ unrecorded.</p>
 <p><strong>LIKELY</strong>, heavy county (Ventura) + documented cattle range (later citrus); no dipping record by
 name.</p>
 <h3>Figures</h3>
-<p><img loading="lazy" alt="diseno_B-990_bancroft_78806.jpg" src="assets/evidence_images_T07-SESPE_diseno_B-990_bancroft_78806.jpg" /><br><em class="fig-cap">evidence/images/T07-SESPE/diseno_B-990_bancroft_78806.jpg</em> ·
-<img loading="lazy" alt="postcard_sespe_river_fillmore_front_203657.jpg" src="assets/evidence_images_T07-SESPE_postcard_sespe_river_fillmore_front_203657.jpg" /><br><em class="fig-cap">evidence/images/T07-SESPE/postcard_sespe_river_fillmore_front_203657.jpg</em></p>
+<p><code>evidence/images/T07-SESPE/diseno_B-990_bancroft_78806.jpg</code> ·
+<code>evidence/images/T07-SESPE/postcard_sespe_river_fillmore_front_203657.jpg</code></p>
 <h3>Environmental review</h3>
 <table>
 <thead>
@@ -1660,7 +1941,7 @@ it from dip residue. No vat, no test, no claim.</p>
 <p><strong>LIKELY</strong>, heavy county + century-scale cattle range; built pre-CEQA (never reviewed); no vat
 named.</p>
 <h3>Figures</h3>
-<p><img loading="lazy" alt="HABS_ca1694_RanchoSantaFe_036660.jpg" src="assets/evidence_images_T06-SANDIEGUITO_HABS_ca1694_RanchoSantaFe_036660.jpg" /><br><em class="fig-cap">evidence/images/T06-SANDIEGUITO/HABS_ca1694_RanchoSantaFe_036660.jpg</em> (HABS, Rancho Santa Fe; series
+<p><code>evidence/images/T06-SANDIEGUITO/HABS_ca1694_RanchoSantaFe_036660.jpg</code> (HABS, Rancho Santa Fe; series
 036660-036668 in the same directory)</p>
 <h3>Environmental review</h3>
 <table>
@@ -1716,8 +1997,8 @@ administrative gap, not a hazard.</p>
 <p><strong>LIKELY</strong>, heavy county + cattle range; built pre-CEQA; no vat named ("NONE BY NAME" is the
 plain-language record finding).</p>
 <h3>Figures</h3>
-<p><img loading="lazy" alt="diseno_D-1387_San_Bernardo_Bancroft.jpg" src="assets/evidence_images_T05-SANBERNARDO_diseno_D-1387_San_Bernardo_Bancroft.jpg" /><br><em class="fig-cap">evidence/images/T05-SANBERNARDO/diseno_D-1387_San_Bernardo_Bancroft.jpg</em> ·
-<img loading="lazy" alt="Emory_1847_San_Pasqual_battle_sketch.jpg" src="assets/evidence_images_T05-SANBERNARDO_Emory_1847_San_Pasqual_battle_sketch.jpg" /><br><em class="fig-cap">evidence/images/T05-SANBERNARDO/Emory_1847_San_Pasqual_battle_sketch.jpg</em></p>
+<p><code>evidence/images/T05-SANBERNARDO/diseno_D-1387_San_Bernardo_Bancroft.jpg</code> ·
+<code>evidence/images/T05-SANBERNARDO/Emory_1847_San_Pasqual_battle_sketch.jpg</code></p>
 <h3>Environmental review</h3>
 <table>
 <thead>
@@ -1774,8 +2055,8 @@ inland aerial too late.</p>
 facility; no dip record by name (the place-name "Penasquitos" appears on only 7 pages in the entire
 digitized national newspaper corpus, too sparse to be probative either way).</p>
 <h3>Figures</h3>
-<p><img loading="lazy" alt="habs_ca2072_house_photo1_015244.jpg" src="assets/evidence_images_T04-PENASQUITOS_habs_ca2072_house_photo1_015244.jpg" /><br><em class="fig-cap">evidence/images/T04-PENASQUITOS/habs_ca2072_house_photo1_015244.jpg</em> (Johnson-Taylor adobe) ·
-<img loading="lazy" alt="habs_ca2072A_barn_photo1_015247.jpg" src="assets/evidence_images_T04-PENASQUITOS_habs_ca2072A_barn_photo1_015247.jpg" /><br><em class="fig-cap">evidence/images/T04-PENASQUITOS/habs_ca2072A_barn_photo1_015247.jpg</em> (ranch barn, HABS)</p>
+<p><code>evidence/images/T04-PENASQUITOS/habs_ca2072_house_photo1_015244.jpg</code> (Johnson-Taylor adobe) ·
+<code>evidence/images/T04-PENASQUITOS/habs_ca2072A_barn_photo1_015247.jpg</code> (ranch barn, HABS)</p>
 <h3>Environmental review</h3>
 <table>
 <thead>
@@ -1828,8 +2109,8 @@ a working corral or vat.</p>
 <p><strong>PLAUSIBLE</strong>, lesser county; cattle era largely pre-dated the program; the dominant land use in
 the dip window was orchard/vineyard, which lowers the prior for an arsenical cattle dip here.</p>
 <h3>Figures</h3>
-<p><img loading="lazy" alt="Huntington_SolanoReeve_MapOfRanchoCucamonga_S71_1893-11_id12929.jpg" src="assets/evidence_images_T11-CUCAMONGA_Huntington_SolanoReeve_MapOfRanchoCucamonga_S71_1893-11_id12929.jpg" /><br><em class="fig-cap">evidence/images/T11-CUCAMONGA/Huntington_SolanoReeve_MapOfRanchoCucamonga_S71_1893-11_id12929.jpg</em> ·
-<img loading="lazy" alt="Huntington_SolanoReeve_CucamongaCreek_1870-1880_id11383.jpg" src="assets/evidence_images_T11-CUCAMONGA_Huntington_SolanoReeve_CucamongaCreek_1870-1880_id11383.jpg" /><br><em class="fig-cap">evidence/images/T11-CUCAMONGA/Huntington_SolanoReeve_CucamongaCreek_1870-1880_id11383.jpg</em></p>
+<p><code>evidence/images/T11-CUCAMONGA/Huntington_SolanoReeve_MapOfRanchoCucamonga_S71_1893-11_id12929.jpg</code> ·
+<code>evidence/images/T11-CUCAMONGA/Huntington_SolanoReeve_CucamongaCreek_1870-1880_id11383.jpg</code></p>
 <h3>Environmental review</h3>
 <table>
 <thead>
@@ -1882,8 +2163,8 @@ explains any arsenic that might ever be found. No vat is named; CDNC/Chronicling
 <p><strong>PLAUSIBLE</strong>, lesser county + intensively stocked river rancho; perennial water and sustained
 herds make a working facility plausible in the abstract; nothing is named.</p>
 <h3>Figures</h3>
-<p><img loading="lazy" alt="CHS-8976_rubidoux-ranch-house-ca1869.jpg" src="assets/evidence_images_T12-JURUPA_CHS-8976_rubidoux-ranch-house-ca1869.jpg" /><br><em class="fig-cap">evidence/images/T12-JURUPA/CHS-8976_rubidoux-ranch-house-ca1869.jpg</em> ·
-<img loading="lazy" alt="CHS-12796_rubidoux-rancho-blacksmith-shop-1960.jpg" src="assets/evidence_images_T12-JURUPA_CHS-12796_rubidoux-rancho-blacksmith-shop-1960.jpg" /><br><em class="fig-cap">evidence/images/T12-JURUPA/CHS-12796_rubidoux-rancho-blacksmith-shop-1960.jpg</em></p>
+<p><code>evidence/images/T12-JURUPA/CHS-8976_rubidoux-ranch-house-ca1869.jpg</code> ·
+<code>evidence/images/T12-JURUPA/CHS-12796_rubidoux-rancho-blacksmith-shop-1960.jpg</code></p>
 <h3>Environmental review</h3>
 <table>
 <thead>
@@ -1938,8 +2219,8 @@ Florida.</p>
 <p><strong>PLAUSIBLE</strong>, lesser county, cattle range; and a <strong>competing orchard-arsenic vector</strong>: the
 arsenic screening that exists here was orchard/row-crop-driven, not dip-driven.</p>
 <h3>Figures</h3>
-<p><img loading="lazy" alt="WikimediaCommons_RanchoSanFrancisco_diseno_map_1843_PD.jpg" src="assets/evidence_images_T08-NEWHALL_WikimediaCommons_RanchoSanFrancisco_diseno_map_1843_PD.jpg" /><br><em class="fig-cap">evidence/images/T08-NEWHALL/WikimediaCommons_RanchoSanFrancisco_diseno_map_1843_PD.jpg</em> ·
-<img loading="lazy" alt="HABS_ca1195_RanchoCamulos_020244.jpg" src="assets/evidence_images_T08-NEWHALL_HABS_ca1195_RanchoCamulos_020244.jpg" /><br><em class="fig-cap">evidence/images/T08-NEWHALL/HABS_ca1195_RanchoCamulos_020244.jpg</em></p>
+<p><code>evidence/images/T08-NEWHALL/WikimediaCommons_RanchoSanFrancisco_diseno_map_1843_PD.jpg</code> ·
+<code>evidence/images/T08-NEWHALL/HABS_ca1195_RanchoCamulos_020244.jpg</code></p>
 <h3>Environmental review</h3>
 <table>
 <thead>
@@ -1993,7 +2274,7 @@ the 2013 program has an orchard-first explanation.</p>
 <p><strong>PLAUSIBLE</strong> <em>(unbuilt)</em>, huge cattle operation, but a lesser-infested county, and the land is
 mostly not under housing (green-ring context).</p>
 <h3>Figures</h3>
-<p><img loading="lazy" alt="LOC_2002706073.jpg" src="assets/evidence_images_T14-TEJON_LOC_2002706073.jpg" /><br><em class="fig-cap">evidence/images/T14-TEJON/LOC_2002706073.jpg</em> and companion LOC photographs (1888-1890) and Fort
+<p><code>evidence/images/T14-TEJON/LOC_2002706073.jpg</code> and companion LOC photographs (1888-1890) and Fort
 Tejon HABS documentation in <code>evidence/images/T14-TEJON/</code>, item-level attribution in
 <a href="files/research_statewide_IMAGE_INDEX.md"><code>research/statewide/IMAGE_INDEX.md</code></a>.</p>
 <h3>Environmental review</h3>
@@ -2050,7 +2331,7 @@ any working/dipping facility, unexamined.</p>
 <p><strong>PLAUSIBLE</strong> <em>(farmland)</em>, large cattle operation in a heavy county, discounted for uncertain
 valley tick ecology and for the absence of a residential build-out.</p>
 <h3>Figures</h3>
-<p><img loading="lazy" alt="LOC_KernCounty_ranches_1888_britton-rey.jpg" src="assets/evidence_images_T15-MILLERLUX_LOC_KernCounty_ranches_1888_britton-rey.jpg" /><br><em class="fig-cap">evidence/images/T15-MILLERLUX/LOC_KernCounty_ranches_1888_britton-rey.jpg</em> (1888 Britton &amp; Rey
+<p><code>evidence/images/T15-MILLERLUX/LOC_KernCounty_ranches_1888_britton-rey.jpg</code> (1888 Britton &amp; Rey
 ranch-lands map)</p>
 <h3>Environmental review</h3>
 <table>
@@ -2167,6 +2448,24 @@ add <strong>arsenic speciation</strong>, and include <strong>indoor house dust</
 affected by surface cover).</p>
 <p><strong>The two signatures, one more time, because the whole test design hinges on it:</strong></p>
 
+<p><strong>Phase 2 sampling targets (added 2026-08).</strong> A candidate concrete base with iron pipe rails was
+located on foot in ungraded open space beside Ladera Ranch (chapter <em>Phase 2: the site</em>). It is a
+candidate, not an identification, and it is the most specific thing this investigation has ever had
+to point a spade at. The targets, all under <strong>hazardous-materials protocol</strong>:</p>
+<ul>
+<li>The <strong>concrete base</strong> itself.</li>
+<li>The <strong>pens footprint</strong> and the <strong>drip-pen side</strong>, where drainage and drip-off would have collected.</li>
+<li>The <strong>tire-swing area and trail margin</strong>, as the child-contact points.</li>
+<li>The <strong>pond sediment</strong> below the slope.</li>
+<li>The <strong>creek margin</strong> below the pond.</li>
+<li><strong>Analytes:</strong> total <strong>and bioavailable</strong> arsenic, <strong>lead alongside</strong> (to separate dip from orchard
+  signature), plus <strong>speciation</strong>.</li>
+<li><strong>Conducted by the State, independent of Ladera Ranch and of Rancho Mission Viejo</strong>, and the trail
+  segment closed and marked until results are in.</li>
+</ul>
+<p>A negative result is a real result and would be published as such. Note that the documented Joplin
+ground below remains the <em>cleanest</em> test in the investigation, because dipping there is on the
+record; the Phase 2 base is the <em>most specific</em>, because there is a structure to sample.</p>
 <p>Priority grounds:</p>
 <p><strong>1 · Bell Canyon / Coto de Caza, the documented dip ranch (highest priority).</strong> This is the only
 place we can name a dip from the record, and the old Joplin <strong>home place</strong> in Bell Canyon appears to
@@ -2191,8 +2490,9 @@ the sampling plan's front page:</p>
 
 <p><strong>What a result would mean.</strong> A dip-signature hit (arsenic well above ~11-12 mg/kg background, with
 <em>low lead</em>) on documented ground would convert a century-old paper hazard into a measured,
-manageable fact. A clean result would retire the question honestly. Either outcome is worth having,
-and neither has ever been obtained, because the test has never been run.</p></section><section id="70_program_history" class="chapter"><h1>70 · The Program History: California 1907 to March 1912</h1>
+manageable fact. A clean result would retire the question honestly. Either outcome is worth having, and
+neither has been obtained in the twenty years since development, because the dip-signature test was
+not run. Some soil sampling in Ladera Ranch is now under way, and neither its analytes nor its locations have been made public, so it is not yet known whether it closes this gap.</p></section><section id="70_program_history" class="chapter"><h1>70 · The Program History: California 1907 to March 1912</h1>
 <blockquote>
 <p>Hypothesis-neutral. Every claim carries a source grade [A1/A2/B1/B2/C]. This chapter
 establishes what the state-mandated program <em>was</em> and <em>where it ran</em> in Orange County. It
@@ -2406,6 +2706,17 @@ having inventoried where those homemade vats stood [B1 + absence].</p>
 <li><strong>~3,000+ vat sites are named in old Florida state records</strong>, though a University of Florida
   team went looking precisely because so many had been <em>"abandoned without recording their
   locations"</em> (~3,241 records, locations largely unknown) [B2 / underlying A1, S-UF-VATS].</li>
+<li><strong>Records response, obtained for this project (G11, Florida DEP) [A2].</strong> A direct records request
+  returned a state inventory listing <strong>3,281 vats</strong>. Of the sites that have been tested, <strong>eleven of
+  twelve exceeded the state soil standard</strong>. Florida's own reporting further records disused vats
+  <strong>reused as pesticide-mixing areas</strong> and <strong>used by children as swimming holes</strong>, which is the
+  clearest available statement of how such a structure gets used once nobody remembers what it was.
+  Note also the <strong>Palm Beach gap</strong>: that county is absent from the inventory, a reminder that a
+  register's silence is a gap in the register, not a clearance of the ground. The response and the
+  photographic exhibit are held at <code>research/national_crossreference/</code>
+  (<code>research/national_crossreference/EXHIBIT_FL_VAT_PHOTOS.pdf</code>). The 3,281 figure is the inventory
+  as returned; it is close to, but not identical with, the ~3,241 records the University of Florida
+  team worked from, and the two are reported separately here rather than merged.</li>
 <li>Florida keeps a (weak) public county-level list and a statutory regime: <strong>Statute §376.306</strong>
   makes private owners liability-<em>exempt</em> and cleanup voluntary, to a residential target of
   <strong>2.1 mg/kg arsenic</strong> (Ch. 62-777 SCTL) [A2, read directly].</li>
@@ -2564,6 +2875,54 @@ arsenic can sit in California soil than was ever purchased and poured. Two indep
 agree on ~3-30 t concentrated near vats, central ~10 t; the remainder dispersed thinly across
 rangeland via cattle drag-out or was discarded as spent fluid. The earlier ~20-100 t statewide
 figure assumed 200-1,000 vats and is superseded, it was inconsistent with the ceiling.</p>
+<h2>72.2b The whole-ranch case, and the number the film uses</h2>
+<p>The table above is per vat. Phase 2 asks the same question of the <strong>whole O'Neill ranch operation</strong>
+over the life of the program, using the herd size and the federal 14-day cadence. Computed in
+<code>reports/ARSENIC_QUANTIFICATION_MASTER.md</code>:</p>
+<table>
+<thead>
+<tr>
+<th>Quantity</th>
+<th>MODEL ESTIMATE</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Whole-ranch arsenic mass, program lifetime</td>
+<td><strong>6,692 – 39,748 lb</strong> As₂O₃</td>
+</tr>
+<tr>
+<td>Fraction concentrated at a vat, pens and drip pen</td>
+<td><strong>1,338 – 7,949 lb</strong></td>
+</tr>
+<tr>
+<td>Resulting near-structure soil concentration</td>
+<td><strong>128 – 763 mg/kg</strong></td>
+</tr>
+<tr>
+<td>California background arsenic, for comparison</td>
+<td><strong>1 – 11 mg/kg</strong></td>
+</tr>
+</tbody>
+</table>
+<p>The concentration row is the operative one: <strong>128–763 mg/kg against a 1–11 mg/kg background</strong> is a
+point source that an ordinary soil panel would resolve at once. It also sits inside the empirical
+anchor in 72.1 (500–3,000 mg/kg measured at dip sites in Australia and the US Southeast), which is
+the only reason to take the model seriously at all.</p>
+<p><strong>The lethal-dose comparison, with its caveat attached.</strong> At a central estimate of roughly
+<strong>21,000 lb</strong> and an adult lethal dose of <strong>100–300 mg</strong>, the arithmetic yields <strong>32 to 96 million
+nominal doses</strong>. The Phase 2 film states this figure, and states it with the following caveat, which
+is reproduced here verbatim and is not optional:</p>
+<blockquote>
+<p><em>This is arithmetic, not toxicology. Soil-bound arsenic is only partly bioavailable; nobody ingests
+soil in quantity; the number says one thing: the mass involved was large. It says nothing about
+exposure, which has never been measured here.</em></p>
+</blockquote>
+<p>The number describes the size of the bag, not a dose anyone received. It is the same "context only"
+caution already stated in 72.4, applied at ranch scale.</p>
+<p><em>The Phase 2 film draws its quantities from this chapter.</em> Any figure quoted on screen should be read
+against the classification banner at the top: MODEL ESTIMATE, Confidence Low, possibly wrong by an
+order of magnitude in either direction.</p>
 <h2>72.3 Toxicology yardsticks</h2>
 <p>The per-site numbers are the ones that matter for screening any single location. A dip site at the
 empirical anchor of 500-3,000 mg/kg would sit far above every yardstick:</p>
@@ -2738,11 +3097,18 @@ today.</p>
 <p>The Irvine Ranch core and Bommer Canyon complex, Newport Coast before grading, and the Upper Newport
 Bay communities, each shown pre-development and today.</p>
 <p><img loading="lazy" alt="plate_5_other_areas_aerials.jpg" src="assets/research_plates_plate_5_other_areas_aerials.jpg" /><br><em class="fig-cap">research/plates/plate_5_other_areas_aerials.jpg</em></p>
+<h2>Plate 6: Phase 2, the site (pending)</h2>
+<p>The August 2026 field material, the candidate concrete base and its iron pipe rails, the trail
+approach, the ten era tiles of the drainage (1929 to 2025), the drone frames of the pond, and the
+reconstruction stills (labelled <em>AI-assisted reconstruction after USDA Circular 183; not historical
+footage</em>), is held in the project evidence repository and publishes as Plate 6 with the next build.
+No coordinates appear in any Phase 2 caption, by policy. The chapter it belongs to is <em>Phase 2: the
+site</em>.</p>
 <hr />
 <p><em>The reported pattern warrants investigation; the available evidence does not yet establish
 causation. No soil has been tested and no contamination is asserted for any community, school, home,
 or parcel shown in these plates.</em></p></section>
-  <div class="foot">Independent research & data-organization project. No medical advice; no causation established; geographic and temporal overlap does not establish exposure or causation. No CA dip-site soil has been tested. Source grades A1-D per chapter 73; registry: research/source_registry/sources.csv.</div>
+  <div class="foot">Independent research & data-organization project. No medical advice; no causation established; geographic and temporal overlap does not establish exposure or causation. No CA dip-site soil has been tested; some soil sampling in Ladera Ranch is now under way and its scope has not been made public. Source grades A1-D per chapter 73; registry: research/source_registry/sources.csv. This site is password protected while the work is reviewed; for access, message Andy on Instagram or email andystavros@icloud.com.</div>
 </div>
 <script>window.va=window.va||function(){(window.vaq=window.vaq||[]).push(arguments)};</script>
 <script defer src="/_vercel/insights/script.js"></script>
@@ -2750,22 +3116,22 @@ or parcel shown in these plates.</em></p></section>
 if(t&&window.va){window.va("event",{name:t.getAttribute("data-va-event")})}},{passive:true});</script>
 <script>
 (function(){
-  var f=document.getElementById("ytfacade");
-  if(!f) return;
-  function load(){
-    if(f.querySelector("iframe")) return;
-    if(window.va) window.va("event",{name:"Video play"});
-    var id=f.getAttribute("data-yt");
-    var ifr=document.createElement("iframe");
-    ifr.src="https://www.youtube-nocookie.com/embed/"+id+"?autoplay=1&rel=0&modestbranding=1";
-    ifr.title="Documentary";
-    ifr.allow="autoplay; encrypted-media; picture-in-picture; fullscreen";
-    ifr.setAttribute("allowfullscreen","");
-    f.innerHTML="";
-    f.appendChild(ifr);
-  }
-  f.addEventListener("click",load);
-  f.addEventListener("keydown",function(e){ if(e.key==="Enter"||e.key===" "){ e.preventDefault(); load(); } });
+  var boxes=document.querySelectorAll(".videobox[data-yt]");
+  if(!boxes.length) return;
+  Array.prototype.forEach.call(boxes,function(f){
+    function load(){
+      if(f.querySelector("iframe")) return;
+      if(window.va) window.va("event",{name:"Video play "+(f.id||f.getAttribute("data-yt"))});
+      var ifr=document.createElement("iframe");
+      ifr.src="https://www.youtube-nocookie.com/embed/"+f.getAttribute("data-yt")+"?autoplay=1&rel=0&modestbranding=1";
+      ifr.title="Documentary";
+      ifr.allow="autoplay; encrypted-media; picture-in-picture; fullscreen";
+      ifr.setAttribute("allowfullscreen","");
+      f.innerHTML=""; f.appendChild(ifr);
+    }
+    f.addEventListener("click",load);
+    f.addEventListener("keydown",function(e){ if(e.key==="Enter"||e.key===" "){ e.preventDefault(); load(); } });
+  });
 })();
 </script>
 </body></html>
