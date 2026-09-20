@@ -83,3 +83,51 @@ Do not change Vercel Deployment Protection. Add the access sentence to: the mast
 - Rebuild with scripts/build_california_report.py (and the PDF if the script does it; if the PDF build is slow, it is acceptable to ship HTML first and the PDF in a second commit). Update sitemap.xml lastmod.
 - Check: both video facades load and play; Contents nav includes the new chapter; no "never been tested" wording remains anywhere without the "for twenty years" qualifier (search the chapters for "never been tested" and "has never" and rewrite to "was not tested for twenty years; some sampling is now under way"); no coordinates; no "confirmed", "contaminated" or "poisoned" as statements of fact; phone layout of the two-video masthead.
 - Commit in the repo's style with trailer "Co-Authored-By: Claude Fable 5.1 <noreply@anthropic.com>", push main (Vercel deploys), then report the deploy URL, the list of chapters touched, and anything you chose not to change and why.
+
+---
+
+## Section 3c — Archival sweep chapter (added 20 Sep 2026)
+
+**Source of truth:** `docs/archival/FINDINGS_EIR555.md`
+**Full report:** `docs/archival/Ladera_Terminology_Sweep.html`
+**Supporting data:** `docs/archival/LEXICON.md`, `sweep_results.json`, `terms.py`,
+`Ladera_PC_Program_Text_OCR.txt`
+
+### What to publish
+
+A new chapter in `docs/california/chapters/` covering the archival sweep. Keep it
+hypothesis-neutral and keep the caveats — they are load-bearing, not decoration.
+
+**Headline, in this order:**
+
+1. **The Ladera environmental review is Final EIR 555**, certified by the Orange County
+   Board of Supervisors on 17 October 1995, with Addendum PA970174 approved 7 April 1998.
+   Earlier work in this project searched EIR 589, which covers the Ranch Plan — a
+   different application over different land. EIR 555 has not been obtained.
+
+2. **Archaeological monitoring of grading was a binding condition** on every Area Plan and
+   every tract map in Ladera Ranch, under Board of Supervisors Resolution 77-866. Quote
+   the "observance of grading activities" language. State the caveat in the same breath:
+   the condition guarantees someone was present, not that a concrete feature was recorded.
+
+3. **A document in the evidence folder was unsearchable.** The 136-page Ladera Planned
+   Community Program Text had no text layer and returned 135 characters. OCR recovered it
+   and every finding above came from those pages. This is a good, honest, human story
+   about method and it should be told plainly.
+
+### Language rules for this chapter
+
+- "Unidentified concrete structure," never "vat," for the Phase 2 feature.
+- Say explicitly that this establishes no vat, no contamination, no exposure and no
+  concealment. Every gap found is explained by the scope of the instruments used.
+- Do not publish any CHRIS or SCCIC locational data if and when a records search returns.
+  It is confidential under Gov. Code § 6254.10. Staged coordinate disclosure still applies.
+- Grade every claim. EIR 555 identification is A2. Resolution 77-866 is A2.
+
+### Site mechanics
+
+- Password protection stays **ON**.
+- Keep the access line: contact andystavros@icloud.com or message on social for access.
+  That line should also appear on the password gate page itself, which is still outstanding.
+- Link the full HTML report as a downloadable/standalone page, same pattern as the soil
+  sampling strategy report.
