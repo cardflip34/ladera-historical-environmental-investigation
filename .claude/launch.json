@@ -4,10 +4,25 @@
     {
       "name": "lehrp-web",
       "runtimeExecutable": "npm",
-      "runtimeArgs": ["run", "dev"],
+      "runtimeArgs": [
+        "run",
+        "dev"
+      ],
       "cwd": "apps/web",
       "autoPort": true,
       "port": 3000
+    },
+    {
+      "name": "docs-static",
+      "runtimeExecutable": "python3",
+      "runtimeArgs": [
+        "-m",
+        "http.server",
+        "8777",
+        "--directory",
+        "docs"
+      ],
+      "port": 8777
     }
   ]
 }

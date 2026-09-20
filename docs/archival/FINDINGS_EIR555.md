@@ -124,6 +124,69 @@ documents is weaker evidence than a zero result on native text. Stated in the re
 
 ---
 
+## 6. The Phase I ESA contains none of its own figures, maps or site photographs
+
+Every one of the nine Planning Area reports in EIR 589 Appendix I lists, in its table of
+contents:
+
+- **Plate 1** — Planning Area Location Map
+- **Figure 1** — Site Location Map
+- **Figure 2** — Site Map
+- **Figure 3** — Aerial Photograph
+- **Appendix A** — Assessors Parcel Map
+- **Appendix B** — Zoning Information
+- **Appendix C** — Environmental Records Search
+- **Appendix D** — Orange County Fire Authority File Data
+- **Appendix E — Site Photographs**
+
+**None of them is in the 218-page document.** The file was walked object by object: it
+contains nine raster images in total, each 113 x 172 px, one at the head of each Planning
+Area section. They are the consultant's logo. Every section ends at "7.0 REFERENCES" and
+the next begins.
+
+**Interpretation.** Most likely mundane — the metadata shows the file was scanned on a
+network print server in March 2004 for distribution, and large-format plates and photo
+appendices routinely do not go through a sheet scanner. This is not evidence of
+concealment.
+
+**Why it matters anyway.** The photographs exist by reference. A consultant walked this
+land and bound photographs into Appendix E of nine separate reports. That is a specific,
+named, datable body of images, and it is requestable. Until now the project did not know
+to ask for it. It also means every conclusion drawn from this document is drawn from its
+text alone — anything recorded as a mark on a site map rather than as a sentence has not
+been read.
+
+**Also recovered from the text:** aerial photographs "dating from 1952 to 1999 were
+reviewed at **Continental Aerial Photo** in Los Alamitos, California," stated fourteen
+times across the nine reports, with frame identifiers printed (e.g. 261-8-29-114(1) for
+1959). That is a named commercial archive and orderable frame numbers, and it independently
+confirms the 1952 review-window finding.
+
+---
+
+## 7. Figures recovered and published with the report
+
+Thirteen figures, all unretouched page renders, are published in
+`Ladera_Terminology_Sweep.html` with assets in `assets/`:
+
+| Fig | Source | What it shows |
+|---|---|---|
+| 1, 2 | USDA BAI Circular 207 (1912) | Federal construction plans for concrete and brick dipping vats: 24 ft trough, 6 ft 6 in deep, chute, and a dripping pen with roughened concrete floor sloped to a barrel drain |
+| 3 | USDA BAI Circular 183 (1911) | The predecessor circular, issued the year Orange County was under quarantine |
+| 4 | Ladera PC Program Text | Title page of the document that returned 135 characters |
+| 5 | Ladera PC Program Text | **Ladera Planned Community Zoning Map** — boundary as surveyed bearings and distances; statistical summary: 8,100 max dwelling units on 2,390 gross acres; dated 10 Oct 1995 |
+| 6 | EIR 589 App. I Phase I ESA | The table of contents listing Plate 1, Figures 1-3 and Appendix E Site Photographs — none of which are in the file |
+| 7, 8 | OC Affordable Housing PEIR (2016) | Regional setting, and **Ladera Ranch labelled outside the Ranch Plan project boundary** — the Part D/E distinction drawn on a map |
+| 9, 10 | Ladera PC Program Text | The two EIR 555 citations, including Mitigation Measure 26 sub-measures A through Q |
+| 11 | Ladera PC Program Text | Metes-and-bounds legal description, Williamson & Schmid / Huitt-Zollars, tied to LL 95-007, Instrument No. 19950438155 (recorded 5 Oct 1995) |
+| 12 | Ladera PC Program Text | **Condition 22, ARCHAEO/PALEO** — the Resolution 77-866 mandate. Note neighbouring Condition 21, Vector Control, requiring an Environmental Health survey of each tract before any preliminary grading permit |
+| 13 | Ladera PC Program Text | Area Plan required contents, item (g) **Concept Grading Plan** |
+
+No figure is a photograph of any location in Ladera Ranch, and none shows the Phase 2
+concrete base.
+
+---
+
 ## What this does not establish
 
 - No dipping vat has been identified anywhere in Ladera Ranch. The Phase 2 concrete base
@@ -133,19 +196,25 @@ documents is weaker evidence than a zero result on native text. Stated in the re
   instruments used.
 - Section 2 establishes that a report series was **required to exist**, not that it
   records anything relevant.
+- Section 6 establishes that figures and photographs are **absent from the obtained file**,
+  not that they were destroyed or withheld.
 
 ---
 
 ## Next actions
 
-1. **OC Public Works CPRA** — Final EIR 555 + Addendum PA970174 + cultural resources,
+1. **OC Public Works CPRA** — the *complete* Appendix I to EIR 589, including for each
+   Planning Area: Plate 1, Figures 1-3, and Appendices A-E, **specifically Appendix E,
+   Site Photographs**. State that the copy in public circulation contains the report text
+   only, with none of the plates, figures or appendices attached.
+2. **OC Public Works CPRA** — Final EIR 555 + Addendum PA970174 + cultural resources,
    biological resources and site-assessment appendices + full text of Mitigation Measure 26.
-2. **OC Public Works CPRA** — Area Plans with their required Concept Grading Plans; rough
+3. **OC Public Works CPRA** — Area Plans with their required Concept Grading Plans; rough
    grading plans with existing-conditions / demolition exhibits.
-3. **SCCIC records search** via a qualified requester (CSU Fullerton faculty), naming
+4. **SCCIC records search** via a qualified requester (CSU Fullerton faculty), naming
    Resolution 77-866 reports for the Ladera Planned Community. Confidential under
    Gov. Code § 6254.10 — locational data must not be published.
-4. **COPA research inquiry** — accession records for material donated from the Ladera
+5. **COPA research inquiry** — accession records for material donated from the Ladera
    Planned Community.
-5. **Rancho Mission Viejo** — grading-era photography, originals preferred over prints.
+6. **Rancho Mission Viejo** — grading-era photography, originals preferred over prints.
    **OC Archives** — Commissioner records and photographs, 1907–1912.

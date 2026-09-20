@@ -131,3 +131,31 @@ hypothesis-neutral and keep the caveats — they are load-bearing, not decoratio
   That line should also appear on the password gate page itself, which is still outstanding.
 - Link the full HTML report as a downloadable/standalone page, same pattern as the soil
   sampling strategy report.
+
+### Section 3c addendum — figures now published with the archival report (20 Sep 2026)
+
+The archival sweep report now carries **13 figures** in `docs/archival/assets/`. All are
+unretouched page renders of documents in the evidence set. **None is a photograph of any
+location in Ladera Ranch, and none shows the Phase 2 concrete base.** Label them that way
+on the site.
+
+The three worth putting in the chapter body:
+
+1. **The vat construction plan** (USDA BAI Circular 207, 1912, Fig. 1) —
+   `assets/fig_vat_concrete_plan.jpg`. Shows the 24 ft trough, the chute, and the dripping
+   pen with a roughened concrete floor sloped to a barrel drain. Grade A1.
+2. **Condition 22, ARCHAEO/PALEO** — `assets/fig_archaeo_paleo.jpg`. The Resolution 77-866
+   mandate, on the page. Grade A2.
+3. **The Ladera Planned Community Zoning Map** — `assets/fig_zoning_map.jpg`. Boundary as
+   surveyed bearings and distances; 8,100 max dwelling units on 2,390 gross acres;
+   10 Oct 1995. Grade A2.
+
+**A fourth finding to add to the chapter text.** The Phase I ESA lists Plate 1, Figures 1-3
+and **Appendix E, Site Photographs** in all nine Planning Area tables of contents, and the
+218-page file contains none of them — it holds nine logo images and nothing else. Say
+plainly that the likeliest explanation is a scanning convenience, not concealment, and that
+what it means is the photographs **exist by reference and are requestable**.
+
+Do not publish the metes-and-bounds legal description or the zoning-map course data as
+machine-readable coordinates. The page image is fine; staged coordinate disclosure still
+applies.
