@@ -187,6 +187,140 @@ concrete base.
 
 ---
 
+## 8. External archive dive: what was found, and what is confirmed absent
+
+### 8.1 A Phase I with photographs, for land inside Ladera Ranch
+
+`OsoGrande_Phase1_2002.pdf` in the evidence folder is **not** an adjacent-parcel report. It is:
+
+> **Phase I Environmental Site Assessment for the planned school located southeast of
+> Sienna Parkway and O'Neill Drive, Ladera Ranch, California** — NMG Geotechnical, Inc.,
+> project 01079-02, 4 February 2002, for Capistrano Unified School District. Signed
+> Quin Kinnebrew, CEG, REA II. Site visit **31 January 2002**.
+
+It contains **Appendix B, 16 site photographs** (pages 19–22, four per page), with camera
+date stamps legible. Six are reproduced in the report.
+
+**The structural finding:** mass grading began 1999 and finished summer 2001; the site walk
+was 31 January 2002. The reconnaissance observed "a mass graded, leveled lot" over **up to
+110 feet of fill**. A Phase I conducted after grading cannot observe the original surface.
+This is not a criticism — it is what a Phase I is, performed when the client needs it.
+
+**The interview:** §3.7 records Goffman, McCormick & Urban (Mr Bob Mutchnik), who monitored
+soil removal and placement from 1999. He was asked whether "underground structures, **such
+as fuel storage tanks and clarifiers**," were encountered. Answer: no. A truthful no to that
+question is not an answer to this project's question.
+
+**The soil mechanism:** "Any pesticides and/or herbicides… were likely in the upper surficial
+soils, **which were removed prior to fill placement**… likely mixed with clean soil and/or
+**placed at lower depths during fill placement**." The material is not described as leaving
+the property.
+
+**Two wells:** "Union O'Neil 4520121," abandoned, ~750 ft south (Munger Map Book 1967); and
+a **groundwater well** ~700 ft south on the 1942 Santiago Peak quadrangle. The report treats
+them as probably the same feature. They may not be.
+
+### 8.2 The state record for that site
+
+**DTSC EnviroStor case 30020004, site code 404477** — "Oso Grande School." Status **No
+Action Required, 7 Oct 2003**. Four public documents; two not previously held (the 8 Sept
+2003 PEA determination and the 2 Oct 2003 addendum). No separate filing exists for the
+16 Sept 2003 clarification letter or the 30 Sept 2003 DTSC site visit.
+
+The record's **"past use(s) that caused contamination"** field reads **AGRICULTURAL –
+LIVESTOCK**. Read narrowly: the site was reviewed and cleared, and nothing reports that
+contamination was found. What it shows is that when a state agency classified this parcel's
+past use, it chose livestock agriculture.
+
+**Confirmed absence:** Ladera Ranch Elementary, Ladera Ranch Middle School and Chaparral
+Elementary have **no DTSC case at all**. Only Oso Grande entered review. The likely reason
+is procedural — DTSC school review is tied to state funding and acquisition dates — and
+should be confirmed in writing rather than inferred.
+
+### 8.3 Oil wells of record inside Ladera Ranch (CalGEM WellSTAR)
+
+| API | Name | Operator of record | Status | Section |
+|---|---|---|---|---|
+| 04-059-01270 | O'Neill 1 | Union Oil Company of California | Plugged, dry hole | T7S R7W Sec 30 |
+| 04-059-01005 | Citizens National Trust & Savings B-1 | Exxon Mobil Corp. | Plugged, dry hole | T7S R7W Sec 20 |
+
+Four more O'Neill wells sit just outside in Rancho Mission Viejo. Electric-log dates across
+the group run **1959–1964**, a single exploration campaign none of the environmental
+documents mentions.
+
+**Caveat:** the agency flags these coordinates as digitised from scanned mylar maps, not
+surveyed. Treat as approximate.
+
+**Portal mechanic worth keeping:** `filerequest.conservation.ca.gov/WellRecord?api=` will
+not accept the full API. **Drop the leading `04`** — `05901270` and `05901005` each return
+a file list. Files are released by email through a short form (not submitted; requires the
+user's own name and email).
+
+### 8.4 Photographs of what a derelict vat looks like
+
+**Florida DEP** runs a cattle dipping vat programme and has published its site photographs:
+overgrown low concrete walls indistinguishable from the ground, troughs full of reeds,
+stepped exit ramps, intact drip-pad slabs, surviving guide fencing. Eight are reproduced.
+
+**No equivalent California programme has been identified.** The absence of Californian
+derelict-vat photographs is evidence that no California agency has run this exercise, not
+that California has none. Request 9 in the report asks DTSC and the State Water Board to
+confirm this in writing.
+
+**Federal photographs of vats in use** (all public domain): NARA RG 95 NAID 7007707
+(Wichita National Forest, 27 May 1912, photographer F. Rush, on its original mount with the
+typed caption slip); NAID 2129009 (June 1941, cow on the sloped concrete entry); USDA
+*The Story of the Cattle Fever Tick*, 1917, p. 21 (a newly completed empty vat).
+
+**A local analogue, photographed before demolition:** Environ Strategy Consultants, "Soil
+Excavation Report," Kinoshita Farm Site, San Juan Capistrano, 3 April 2009, Appendix E
+(GeoTracker T10000000266) — a block-walled concrete containment structure on farmland,
+captioned and photographed four days before it was excavated.
+
+### 8.5 Orange County photographic archives: a hard negative
+
+| Search | Records |
+|---|---|
+| `cattle dipping vat`, Calisphere | **0** |
+| `dipping vat`, OC Public Libraries digital collection | **0** |
+| `dipping`, Orange County Archives | **0 relevant** |
+| `corral`, OC Public Libraries | **2 in the entire collection** |
+| `chute` / `cistern` / `stock pond` / `bunkhouse` | **0 each** |
+| `trough` | **1** — a horse trough on Main Street, Tustin |
+
+The photographic record of Orange County ranching is a record of people, not structures.
+This mirrors the documentary finding exactly.
+
+**Four repositories refused automated access and remain unexamined:** Online Archive of
+California, UC Irvine Special Collections, CSU Fullerton digital collections, Los Angeles
+Public Library.
+
+**Confirmed negative at the Library of Congress:** HABS/HAER/HALS holds nothing for Rancho
+Mission Viejo, Rancho Trabuco or Mission Viejo. It does hold **HABS CA-2739-K-5, "Detailed
+view of cattle dip vat," Vail & Vickers Ranch, Santa Rosa Island, California**, large
+format, William B. Dewey, September 2000 — **catalogued but not digitized**. Obtainable only
+by order through LOC Duplication Services. That is a California cattle dip vat photographed
+at large format and it is directly on point.
+
+### 8.6 The 1858 baseline
+
+US General Land Office plat of **Trabuco Rancho**, confirmed to Juan Forster, surveyed by
+John C. Hays, September 1858, 22,184.47 acres (RG 49, National Archives, public domain).
+On the whole sheet the surveyor annotated **one structure**: a small black square lettered
+"Ranch House," in Lot 37, T6S R7W. Also obtained: the plat of **Rancho Mission Viejo or
+La Paz**, same surveyor, September 1858, 46,432.85 acres.
+
+### 8.7 An unresolved name correspondence, recorded but not relied on
+
+HABS documentation of Casa del Rancho Santa Margarita (1937) names the owner contact as
+"Citizens National Trust and Savings Bank, Los Angeles." The 1962 well inside Ladera Ranch
+is leased as **"Citizens National Trust & Savings B-1."** Banks act as trustees for many
+estates. **This is a name correspondence, not established common ownership**, and confirming
+or dismissing it requires a title search. Recorded here only so it is not rediscovered as if
+it were new.
+
+---
+
 ## What this does not establish
 
 - No dipping vat has been identified anywhere in Ladera Ranch. The Phase 2 concrete base
@@ -198,6 +332,13 @@ concrete base.
   records anything relevant.
 - Section 6 establishes that figures and photographs are **absent from the obtained file**,
   not that they were destroyed or withheld.
+- Section 8.1 does not establish that anything is present in the fill. No sample has been
+  taken. It establishes that the documented mechanism moved surface soil down rather than
+  away, and that no one has looked.
+- Section 8.2 does not establish that contamination occurred at the Oso Grande site. The
+  site was reviewed and cleared. The "agricultural – livestock" entry is a land-use
+  classification in a database field.
+- Section 8.5 is a negative result about **archives**, not about the ground.
 
 ---
 
