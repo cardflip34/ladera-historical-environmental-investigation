@@ -1,0 +1,1012 @@
+[
+ {
+  "cat": "A. Correct names (control group \u2014 expected zero)",
+  "term": "dip vat",
+  "n": 0,
+  "where": {}
+ },
+ {
+  "cat": "A. Correct names (control group \u2014 expected zero)",
+  "term": "dipping vat",
+  "n": 0,
+  "where": {}
+ },
+ {
+  "cat": "A. Correct names (control group \u2014 expected zero)",
+  "term": "cattle dip",
+  "n": 0,
+  "where": {}
+ },
+ {
+  "cat": "A. Correct names (control group \u2014 expected zero)",
+  "term": "cattle dipping",
+  "n": 0,
+  "where": {}
+ },
+ {
+  "cat": "A. Correct names (control group \u2014 expected zero)",
+  "term": "sheep dip",
+  "n": 0,
+  "where": {}
+ },
+ {
+  "cat": "A. Correct names (control group \u2014 expected zero)",
+  "term": "sheep dipping",
+  "n": 0,
+  "where": {}
+ },
+ {
+  "cat": "A. Correct names (control group \u2014 expected zero)",
+  "term": "dipping tank",
+  "n": 0,
+  "where": {}
+ },
+ {
+  "cat": "A. Correct names (control group \u2014 expected zero)",
+  "term": "dipping station",
+  "n": 0,
+  "where": {}
+ },
+ {
+  "cat": "A. Correct names (control group \u2014 expected zero)",
+  "term": "dip tank",
+  "n": 0,
+  "where": {}
+ },
+ {
+  "cat": "A. Correct names (control group \u2014 expected zero)",
+  "term": "plunge vat",
+  "n": 0,
+  "where": {}
+ },
+ {
+  "cat": "A. Correct names (control group \u2014 expected zero)",
+  "term": "plunge dip",
+  "n": 0,
+  "where": {}
+ },
+ {
+  "cat": "A. Correct names (control group \u2014 expected zero)",
+  "term": "swim vat",
+  "n": 0,
+  "where": {}
+ },
+ {
+  "cat": "A. Correct names (control group \u2014 expected zero)",
+  "term": "cage vat",
+  "n": 0,
+  "where": {}
+ },
+ {
+  "cat": "A. Correct names (control group \u2014 expected zero)",
+  "term": "wade vat",
+  "n": 0,
+  "where": {}
+ },
+ {
+  "cat": "A. Correct names (control group \u2014 expected zero)",
+  "term": "dip trough",
+  "n": 0,
+  "where": {}
+ },
+ {
+  "cat": "A. Correct names (control group \u2014 expected zero)",
+  "term": "arsenical dip",
+  "n": 0,
+  "where": {}
+ },
+ {
+  "cat": "A. Correct names (control group \u2014 expected zero)",
+  "term": "tick eradication",
+  "n": 0,
+  "where": {}
+ },
+ {
+  "cat": "A. Correct names (control group \u2014 expected zero)",
+  "term": "fever tick",
+  "n": 0,
+  "where": {}
+ },
+ {
+  "cat": "A. Correct names (control group \u2014 expected zero)",
+  "term": "Texas fever",
+  "n": 0,
+  "where": {}
+ },
+ {
+  "cat": "A. Correct names (control group \u2014 expected zero)",
+  "term": "arsenic trioxide",
+  "n": 0,
+  "where": {}
+ },
+ {
+  "cat": "A. Correct names (control group \u2014 expected zero)",
+  "term": "white arsenic",
+  "n": 0,
+  "where": {}
+ },
+ {
+  "cat": "A. Correct names (control group \u2014 expected zero)",
+  "term": "sodium arsenite",
+  "n": 0,
+  "where": {}
+ },
+ {
+  "cat": "B. Generic concrete (most likely wording)",
+  "term": "concrete foundation",
+  "n": 0,
+  "where": {}
+ },
+ {
+  "cat": "B. Generic concrete (most likely wording)",
+  "term": "concrete footing",
+  "n": 0,
+  "where": {}
+ },
+ {
+  "cat": "B. Generic concrete (most likely wording)",
+  "term": "concrete pad",
+  "n": 3,
+  "where": {
+   "EIR589_AppI_PhaseI_ESA": 3
+  }
+ },
+ {
+  "cat": "B. Generic concrete (most likely wording)",
+  "term": "concrete slab",
+  "n": 1,
+  "where": {
+   "EIR589_AppI_PhaseI_ESA": 1
+  }
+ },
+ {
+  "cat": "B. Generic concrete (most likely wording)",
+  "term": "concrete trough",
+  "n": 0,
+  "where": {}
+ },
+ {
+  "cat": "B. Generic concrete (most likely wording)",
+  "term": "concrete structure",
+  "n": 2,
+  "where": {
+   "EIR589_AppI_PhaseI_ESA": 2
+  }
+ },
+ {
+  "cat": "B. Generic concrete (most likely wording)",
+  "term": "concrete box",
+  "n": 0,
+  "where": {}
+ },
+ {
+  "cat": "B. Generic concrete (most likely wording)",
+  "term": "concrete vault",
+  "n": 1,
+  "where": {
+   "EIR589_AppI_PhaseI_ESA": 1
+  }
+ },
+ {
+  "cat": "B. Generic concrete (most likely wording)",
+  "term": "concrete basin",
+  "n": 0,
+  "where": {}
+ },
+ {
+  "cat": "B. Generic concrete (most likely wording)",
+  "term": "concrete tank",
+  "n": 6,
+  "where": {
+   "EIR589_AppI_PhaseI_ESA": 6
+  }
+ },
+ {
+  "cat": "B. Generic concrete (most likely wording)",
+  "term": "concrete lined",
+  "n": 2,
+  "where": {
+   "EIR589_AppI_PhaseI_ESA": 2
+  }
+ },
+ {
+  "cat": "B. Generic concrete (most likely wording)",
+  "term": "concrete-lined",
+  "n": 2,
+  "where": {
+   "EIR589_AppI_PhaseI_ESA": 2
+  }
+ },
+ {
+  "cat": "B. Generic concrete (most likely wording)",
+  "term": "concrete rubble",
+  "n": 0,
+  "where": {}
+ },
+ {
+  "cat": "B. Generic concrete (most likely wording)",
+  "term": "concrete debris",
+  "n": 0,
+  "where": {}
+ },
+ {
+  "cat": "B. Generic concrete (most likely wording)",
+  "term": "concrete remnant",
+  "n": 0,
+  "where": {}
+ },
+ {
+  "cat": "B. Generic concrete (most likely wording)",
+  "term": "concrete wall",
+  "n": 0,
+  "where": {}
+ },
+ {
+  "cat": "B. Generic concrete (most likely wording)",
+  "term": "buried concrete",
+  "n": 0,
+  "where": {}
+ },
+ {
+  "cat": "B. Generic concrete (most likely wording)",
+  "term": "partially buried",
+  "n": 0,
+  "where": {}
+ },
+ {
+  "cat": "B. Generic concrete (most likely wording)",
+  "term": "unknown function",
+  "n": 0,
+  "where": {}
+ },
+ {
+  "cat": "B. Generic concrete (most likely wording)",
+  "term": "unidentified structure",
+  "n": 0,
+  "where": {}
+ },
+ {
+  "cat": "B. Generic concrete (most likely wording)",
+  "term": "unknown origin",
+  "n": 9,
+  "where": {
+   "EIR589_AppI_PhaseI_ESA": 9
+  }
+ },
+ {
+  "cat": "B. Generic concrete (most likely wording)",
+  "term": "of unknown use",
+  "n": 0,
+  "where": {}
+ },
+ {
+  "cat": "C. Water and agricultural infrastructure (likely misidentification)",
+  "term": "stock pond",
+  "n": 0,
+  "where": {}
+ },
+ {
+  "cat": "C. Water and agricultural infrastructure (likely misidentification)",
+  "term": "stock watering",
+  "n": 0,
+  "where": {}
+ },
+ {
+  "cat": "C. Water and agricultural infrastructure (likely misidentification)",
+  "term": "watering trough",
+  "n": 0,
+  "where": {}
+ },
+ {
+  "cat": "C. Water and agricultural infrastructure (likely misidentification)",
+  "term": "water trough",
+  "n": 0,
+  "where": {}
+ },
+ {
+  "cat": "C. Water and agricultural infrastructure (likely misidentification)",
+  "term": "cattle trough",
+  "n": 0,
+  "where": {}
+ },
+ {
+  "cat": "C. Water and agricultural infrastructure (likely misidentification)",
+  "term": "livestock watering",
+  "n": 0,
+  "where": {}
+ },
+ {
+  "cat": "C. Water and agricultural infrastructure (likely misidentification)",
+  "term": "cistern",
+  "n": 0,
+  "where": {}
+ },
+ {
+  "cat": "C. Water and agricultural infrastructure (likely misidentification)",
+  "term": "sump",
+  "n": 9,
+  "where": {
+   "EIR589_AppI_PhaseI_ESA": 9
+  }
+ },
+ {
+  "cat": "C. Water and agricultural infrastructure (likely misidentification)",
+  "term": "settling basin",
+  "n": 0,
+  "where": {}
+ },
+ {
+  "cat": "C. Water and agricultural infrastructure (likely misidentification)",
+  "term": "catch basin",
+  "n": 0,
+  "where": {}
+ },
+ {
+  "cat": "C. Water and agricultural infrastructure (likely misidentification)",
+  "term": "reservoir",
+  "n": 19,
+  "where": {
+   "EIR589_AppI_PhaseI_ESA": 19
+  }
+ },
+ {
+  "cat": "C. Water and agricultural infrastructure (likely misidentification)",
+  "term": "tank pad",
+  "n": 0,
+  "where": {}
+ },
+ {
+  "cat": "C. Water and agricultural infrastructure (likely misidentification)",
+  "term": "spring box",
+  "n": 0,
+  "where": {}
+ },
+ {
+  "cat": "C. Water and agricultural infrastructure (likely misidentification)",
+  "term": "wellhead",
+  "n": 0,
+  "where": {}
+ },
+ {
+  "cat": "C. Water and agricultural infrastructure (likely misidentification)",
+  "term": "well head",
+  "n": 0,
+  "where": {}
+ },
+ {
+  "cat": "C. Water and agricultural infrastructure (likely misidentification)",
+  "term": "abandoned well",
+  "n": 0,
+  "where": {}
+ },
+ {
+  "cat": "C. Water and agricultural infrastructure (likely misidentification)",
+  "term": "agricultural well",
+  "n": 0,
+  "where": {}
+ },
+ {
+  "cat": "C. Water and agricultural infrastructure (likely misidentification)",
+  "term": "irrigation structure",
+  "n": 0,
+  "where": {}
+ },
+ {
+  "cat": "C. Water and agricultural infrastructure (likely misidentification)",
+  "term": "irrigation ditch",
+  "n": 0,
+  "where": {}
+ },
+ {
+  "cat": "C. Water and agricultural infrastructure (likely misidentification)",
+  "term": "flume",
+  "n": 0,
+  "where": {}
+ },
+ {
+  "cat": "C. Water and agricultural infrastructure (likely misidentification)",
+  "term": "headgate",
+  "n": 0,
+  "where": {}
+ },
+ {
+  "cat": "C. Water and agricultural infrastructure (likely misidentification)",
+  "term": "culvert",
+  "n": 0,
+  "where": {}
+ },
+ {
+  "cat": "C. Water and agricultural infrastructure (likely misidentification)",
+  "term": "drainage structure",
+  "n": 0,
+  "where": {}
+ },
+ {
+  "cat": "C. Water and agricultural infrastructure (likely misidentification)",
+  "term": "septic",
+  "n": 3,
+  "where": {
+   "EIR589_AppI_PhaseI_ESA": 1,
+   "OsoGrande_PhaseI_2002": 1,
+   "OsoGrande_PhaseI_Addendum_2003": 1
+  }
+ },
+ {
+  "cat": "C. Water and agricultural infrastructure (likely misidentification)",
+  "term": "leach field",
+  "n": 0,
+  "where": {}
+ },
+ {
+  "cat": "C. Water and agricultural infrastructure (likely misidentification)",
+  "term": "cesspool",
+  "n": 1,
+  "where": {
+   "EIR589_AppI_PhaseI_ESA": 1
+  }
+ },
+ {
+  "cat": "C. Water and agricultural infrastructure (likely misidentification)",
+  "term": "clarifier",
+  "n": 0,
+  "where": {}
+ },
+ {
+  "cat": "C. Water and agricultural infrastructure (likely misidentification)",
+  "term": "oxidation pond",
+  "n": 0,
+  "where": {}
+ },
+ {
+  "cat": "C. Water and agricultural infrastructure (likely misidentification)",
+  "term": "percolation",
+  "n": 0,
+  "where": {}
+ },
+ {
+  "cat": "D. Ranching features",
+  "term": "corral",
+  "n": 11,
+  "where": {
+   "EIR589_AppI_PhaseI_ESA": 11
+  }
+ },
+ {
+  "cat": "D. Ranching features",
+  "term": "loading chute",
+  "n": 0,
+  "where": {}
+ },
+ {
+  "cat": "D. Ranching features",
+  "term": "cattle chute",
+  "n": 0,
+  "where": {}
+ },
+ {
+  "cat": "D. Ranching features",
+  "term": "squeeze chute",
+  "n": 0,
+  "where": {}
+ },
+ {
+  "cat": "D. Ranching features",
+  "term": "holding pen",
+  "n": 0,
+  "where": {}
+ },
+ {
+  "cat": "D. Ranching features",
+  "term": "feed trough",
+  "n": 0,
+  "where": {}
+ },
+ {
+  "cat": "D. Ranching features",
+  "term": "feeder",
+  "n": 0,
+  "where": {}
+ },
+ {
+  "cat": "D. Ranching features",
+  "term": "ranch complex",
+  "n": 0,
+  "where": {}
+ },
+ {
+  "cat": "D. Ranching features",
+  "term": "ranching-related",
+  "n": 0,
+  "where": {}
+ },
+ {
+  "cat": "D. Ranching features",
+  "term": "ranch-era",
+  "n": 0,
+  "where": {}
+ },
+ {
+  "cat": "D. Ranching features",
+  "term": "ranch related",
+  "n": 0,
+  "where": {}
+ },
+ {
+  "cat": "D. Ranching features",
+  "term": "stock pen",
+  "n": 0,
+  "where": {}
+ },
+ {
+  "cat": "D. Ranching features",
+  "term": "livestock pen",
+  "n": 0,
+  "where": {}
+ },
+ {
+  "cat": "D. Ranching features",
+  "term": "fence line",
+  "n": 0,
+  "where": {}
+ },
+ {
+  "cat": "D. Ranching features",
+  "term": "fence post",
+  "n": 0,
+  "where": {}
+ },
+ {
+  "cat": "D. Ranching features",
+  "term": "pipe fence",
+  "n": 0,
+  "where": {}
+ },
+ {
+  "cat": "D. Ranching features",
+  "term": "pipe rail",
+  "n": 0,
+  "where": {}
+ },
+ {
+  "cat": "D. Ranching features",
+  "term": "barbed wire",
+  "n": 0,
+  "where": {}
+ },
+ {
+  "cat": "D. Ranching features",
+  "term": "windmill",
+  "n": 3,
+  "where": {
+   "EIR589_AppI_PhaseI_ESA": 3
+  }
+ },
+ {
+  "cat": "D. Ranching features",
+  "term": "barn foundation",
+  "n": 0,
+  "where": {}
+ },
+ {
+  "cat": "D. Ranching features",
+  "term": "stable",
+  "n": 0,
+  "where": {}
+ },
+ {
+  "cat": "E. Cultural-resources and archaeology jargon",
+  "term": "historic-period",
+  "n": 0,
+  "where": {}
+ },
+ {
+  "cat": "E. Cultural-resources and archaeology jargon",
+  "term": "historic period feature",
+  "n": 0,
+  "where": {}
+ },
+ {
+  "cat": "E. Cultural-resources and archaeology jargon",
+  "term": "historic archaeological",
+  "n": 0,
+  "where": {}
+ },
+ {
+  "cat": "E. Cultural-resources and archaeology jargon",
+  "term": "refuse scatter",
+  "n": 0,
+  "where": {}
+ },
+ {
+  "cat": "E. Cultural-resources and archaeology jargon",
+  "term": "debris scatter",
+  "n": 0,
+  "where": {}
+ },
+ {
+  "cat": "E. Cultural-resources and archaeology jargon",
+  "term": "built environment",
+  "n": 0,
+  "where": {}
+ },
+ {
+  "cat": "E. Cultural-resources and archaeology jargon",
+  "term": "structural remains",
+  "n": 0,
+  "where": {}
+ },
+ {
+  "cat": "E. Cultural-resources and archaeology jargon",
+  "term": "foundation ruin",
+  "n": 0,
+  "where": {}
+ },
+ {
+  "cat": "E. Cultural-resources and archaeology jargon",
+  "term": "isolate",
+  "n": 0,
+  "where": {}
+ },
+ {
+  "cat": "E. Cultural-resources and archaeology jargon",
+  "term": "isolated find",
+  "n": 0,
+  "where": {}
+ },
+ {
+  "cat": "E. Cultural-resources and archaeology jargon",
+  "term": "not eligible",
+  "n": 0,
+  "where": {}
+ },
+ {
+  "cat": "E. Cultural-resources and archaeology jargon",
+  "term": "CRHR",
+  "n": 0,
+  "where": {}
+ },
+ {
+  "cat": "E. Cultural-resources and archaeology jargon",
+  "term": "NRHP",
+  "n": 0,
+  "where": {}
+ },
+ {
+  "cat": "E. Cultural-resources and archaeology jargon",
+  "term": "DPR 523",
+  "n": 0,
+  "where": {}
+ },
+ {
+  "cat": "E. Cultural-resources and archaeology jargon",
+  "term": "trinomial",
+  "n": 0,
+  "where": {}
+ },
+ {
+  "cat": "E. Cultural-resources and archaeology jargon",
+  "term": "CA-ORA",
+  "n": 0,
+  "where": {}
+ },
+ {
+  "cat": "E. Cultural-resources and archaeology jargon",
+  "term": "SCCIC",
+  "n": 0,
+  "where": {}
+ },
+ {
+  "cat": "E. Cultural-resources and archaeology jargon",
+  "term": "records search",
+  "n": 19,
+  "where": {
+   "EIR589_AppI_PhaseI_ESA": 17,
+   "OsoGrande_PhaseI_2002": 1,
+   "OsoGrande_PhaseI_Addendum_2003": 1
+  }
+ },
+ {
+  "cat": "E. Cultural-resources and archaeology jargon",
+  "term": "cultural resource",
+  "n": 0,
+  "where": {}
+ },
+ {
+  "cat": "E. Cultural-resources and archaeology jargon",
+  "term": "archaeological survey",
+  "n": 0,
+  "where": {}
+ },
+ {
+  "cat": "E. Cultural-resources and archaeology jargon",
+  "term": "historic resource",
+  "n": 0,
+  "where": {}
+ },
+ {
+  "cat": "E. Cultural-resources and archaeology jargon",
+  "term": "potentially significant historic",
+  "n": 0,
+  "where": {}
+ },
+ {
+  "cat": "F. Phase I ESA / environmental jargon",
+  "term": "recognized environmental condition",
+  "n": 0,
+  "where": {}
+ },
+ {
+  "cat": "F. Phase I ESA / environmental jargon",
+  "term": "REC",
+  "n": 2,
+  "where": {
+   "Ladera_PC_Program_Text_1995r2003": 2
+  }
+ },
+ {
+  "cat": "F. Phase I ESA / environmental jargon",
+  "term": "historical REC",
+  "n": 0,
+  "where": {}
+ },
+ {
+  "cat": "F. Phase I ESA / environmental jargon",
+  "term": "HREC",
+  "n": 0,
+  "where": {}
+ },
+ {
+  "cat": "F. Phase I ESA / environmental jargon",
+  "term": "CREC",
+  "n": 0,
+  "where": {}
+ },
+ {
+  "cat": "F. Phase I ESA / environmental jargon",
+  "term": "area of concern",
+  "n": 0,
+  "where": {}
+ },
+ {
+  "cat": "F. Phase I ESA / environmental jargon",
+  "term": "areas of potential environmental concern",
+  "n": 0,
+  "where": {}
+ },
+ {
+  "cat": "F. Phase I ESA / environmental jargon",
+  "term": "de minimis",
+  "n": 0,
+  "where": {}
+ },
+ {
+  "cat": "F. Phase I ESA / environmental jargon",
+  "term": "unidentified substructure",
+  "n": 0,
+  "where": {}
+ },
+ {
+  "cat": "F. Phase I ESA / environmental jargon",
+  "term": "underground storage tank",
+  "n": 97,
+  "where": {
+   "EIR589_AppI_PhaseI_ESA": 30,
+   "OsoGrande_PhaseI_2002": 36,
+   "OsoGrande_PhaseI_Addendum_2003": 31
+  }
+ },
+ {
+  "cat": "F. Phase I ESA / environmental jargon",
+  "term": "UST",
+  "n": 139,
+  "where": {
+   "EIR589_AppI_PhaseI_ESA": 75,
+   "OsoGrande_PhaseI_2002": 46,
+   "OsoGrande_PhaseI_Addendum_2003": 18
+  }
+ },
+ {
+  "cat": "F. Phase I ESA / environmental jargon",
+  "term": "aboveground storage tank",
+  "n": 0,
+  "where": {}
+ },
+ {
+  "cat": "F. Phase I ESA / environmental jargon",
+  "term": "pits ponds",
+  "n": 0,
+  "where": {}
+ },
+ {
+  "cat": "F. Phase I ESA / environmental jargon",
+  "term": "ponds and lagoons",
+  "n": 0,
+  "where": {}
+ },
+ {
+  "cat": "F. Phase I ESA / environmental jargon",
+  "term": "lagoon",
+  "n": 0,
+  "where": {}
+ },
+ {
+  "cat": "F. Phase I ESA / environmental jargon",
+  "term": "agricultural chemical",
+  "n": 0,
+  "where": {}
+ },
+ {
+  "cat": "F. Phase I ESA / environmental jargon",
+  "term": "pesticide storage",
+  "n": 0,
+  "where": {}
+ },
+ {
+  "cat": "F. Phase I ESA / environmental jargon",
+  "term": "pesticide mixing",
+  "n": 0,
+  "where": {}
+ },
+ {
+  "cat": "F. Phase I ESA / environmental jargon",
+  "term": "chemical mixing",
+  "n": 0,
+  "where": {}
+ },
+ {
+  "cat": "F. Phase I ESA / environmental jargon",
+  "term": "rinsate",
+  "n": 0,
+  "where": {}
+ },
+ {
+  "cat": "F. Phase I ESA / environmental jargon",
+  "term": "stained soil",
+  "n": 24,
+  "where": {
+   "EIR589_AppI_PhaseI_ESA": 22,
+   "OsoGrande_PhaseI_2002": 1,
+   "OsoGrande_PhaseI_Addendum_2003": 1
+  }
+ },
+ {
+  "cat": "F. Phase I ESA / environmental jargon",
+  "term": "soil staining",
+  "n": 0,
+  "where": {}
+ },
+ {
+  "cat": "F. Phase I ESA / environmental jargon",
+  "term": "distressed vegetation",
+  "n": 31,
+  "where": {
+   "EIR589_AppI_PhaseI_ESA": 31
+  }
+ },
+ {
+  "cat": "F. Phase I ESA / environmental jargon",
+  "term": "buried debris",
+  "n": 1,
+  "where": {
+   "EIR589_AppI_PhaseI_ESA": 1
+  }
+ },
+ {
+  "cat": "F. Phase I ESA / environmental jargon",
+  "term": "buried drum",
+  "n": 0,
+  "where": {}
+ },
+ {
+  "cat": "F. Phase I ESA / environmental jargon",
+  "term": "drum",
+  "n": 21,
+  "where": {
+   "EIR589_AppI_PhaseI_ESA": 21
+  }
+ },
+ {
+  "cat": "G. Grading and civil engineering",
+  "term": "existing improvements",
+  "n": 0,
+  "where": {}
+ },
+ {
+  "cat": "G. Grading and civil engineering",
+  "term": "improvements to be removed",
+  "n": 0,
+  "where": {}
+ },
+ {
+  "cat": "G. Grading and civil engineering",
+  "term": "demolition",
+  "n": 6,
+  "where": {
+   "EIR589_AppI_PhaseI_ESA": 6
+  }
+ },
+ {
+  "cat": "G. Grading and civil engineering",
+  "term": "obstruction",
+  "n": 0,
+  "where": {}
+ },
+ {
+  "cat": "G. Grading and civil engineering",
+  "term": "buried obstruction",
+  "n": 0,
+  "where": {}
+ },
+ {
+  "cat": "G. Grading and civil engineering",
+  "term": "unsuitable material",
+  "n": 0,
+  "where": {}
+ },
+ {
+  "cat": "G. Grading and civil engineering",
+  "term": "deleterious",
+  "n": 0,
+  "where": {}
+ },
+ {
+  "cat": "G. Grading and civil engineering",
+  "term": "removal of existing",
+  "n": 0,
+  "where": {}
+ },
+ {
+  "cat": "G. Grading and civil engineering",
+  "term": "overexcavation",
+  "n": 0,
+  "where": {}
+ },
+ {
+  "cat": "G. Grading and civil engineering",
+  "term": "remedial grading",
+  "n": 0,
+  "where": {}
+ },
+ {
+  "cat": "G. Grading and civil engineering",
+  "term": "abandoned structure",
+  "n": 0,
+  "where": {}
+ },
+ {
+  "cat": "G. Grading and civil engineering",
+  "term": "subsurface anomaly",
+  "n": 0,
+  "where": {}
+ },
+ {
+  "cat": "G. Grading and civil engineering",
+  "term": "undocumented fill",
+  "n": 0,
+  "where": {}
+ },
+ {
+  "cat": "G. Grading and civil engineering",
+  "term": "artificial fill",
+  "n": 0,
+  "where": {}
+ },
+ {
+  "cat": "G. Grading and civil engineering",
+  "term": "debris fill",
+  "n": 0,
+  "where": {}
+ },
+ {
+  "cat": "G. Grading and civil engineering",
+  "term": "remnant structure",
+  "n": 0,
+  "where": {}
+ },
+ {
+  "cat": "G. Grading and civil engineering",
+  "term": "miscellaneous structure",
+  "n": 0,
+  "where": {}
+ }
+]
