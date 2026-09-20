@@ -1,0 +1,310 @@
+<!doctype html><html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>What Was Actually Reported — Structural Observations in the Environmental Record</title>
+<style>
+:root{--ink:#171e2b;--navy:#20304d;--mut:#5d6675;--line:#e2e6ec;--bg:#faf9f7;--card:#fff;--blue:#2d5d8f;--ok:#1e7a45;--warn:#9a6a10;--hard:#a23b2c;--off:#6b7280;--amber:#c8811f}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.62 -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif}
+.wrap{max-width:1180px;margin:0 auto;padding:0 28px 96px}
+header.mast{background:var(--navy);color:#fff;padding:54px 0 42px;margin-bottom:38px}
+header.mast .wrap{padding-bottom:0}
+.kicker{font-size:13px;letter-spacing:.16em;text-transform:uppercase;color:#9fc0e4;font-weight:700}
+h1{font-size:40px;line-height:1.12;margin:12px 0 10px;font-weight:700;letter-spacing:-.01em}
+.sub{color:#c9d6e6;font-size:18px;max-width:78ch}
+.meta{margin-top:20px;font-size:13px;color:#9fb2ca}
+h2{font-size:26px;margin:46px 0 6px;letter-spacing:-.01em;border-top:3px solid var(--navy);padding-top:22px}
+h3{font-size:19px;margin:30px 0 6px;color:var(--navy)}
+h4{font-size:16px;margin:22px 0 4px}
+p,li{max-width:82ch}
+.lead{font-size:18px;color:#2b3547}
+table{border-collapse:collapse;width:100%;margin:18px 0;font-size:14px;background:var(--card)}
+th{background:#eef1f5;text-align:left;padding:10px 11px;border-bottom:2px solid var(--line);font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:#43506a;vertical-align:bottom}
+td{padding:11px;border-bottom:1px solid var(--line);vertical-align:top}
+td.num{font-weight:700;font-size:17px;color:var(--navy)}
+tr.tier-A{background:#f4fbf6}tr.tier-B{background:#fffdf5}tr.tier-C{background:#f7f9fc}tr.tier-D{background:#fafafa;color:#6b7280}
+.small{font-size:13px;line-height:1.5}
+.mono{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:12.5px}
+.badge{display:inline-block;padding:2px 9px;border-radius:11px;font-size:11.5px;font-weight:700;letter-spacing:.03em}
+.badge.ok{background:#e4f4ea;color:var(--ok)}.badge.warn{background:#fdf1dc;color:var(--warn)}.badge.hard{background:#fbe8e5;color:var(--hard)}.badge.off{background:#eef0f3;color:var(--off)}
+.tier{display:inline-block;width:26px;height:26px;line-height:26px;text-align:center;border-radius:50%;font-weight:800;color:#fff}
+.tierA{background:var(--ok)}.tierB{background:var(--amber)}.tierC{background:var(--blue)}.tierD{background:#9aa3b0}
+.card{background:var(--card);border:1px solid var(--line);border-left:4px solid var(--blue);padding:16px 20px;margin:18px 0;border-radius:3px}
+.card.warn{border-left-color:var(--amber);background:#fffdf6}
+.card.stop{border-left-color:var(--hard);background:#fdf3f1}
+.card.go{border-left-color:var(--ok);background:#f4fbf6}
+.card h4{margin-top:0}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:14px;margin:18px 0}
+.stat{background:var(--card);border:1px solid var(--line);padding:14px 16px;border-radius:3px}
+.stat .n{font-size:30px;font-weight:700;color:var(--navy);line-height:1.1}
+.stat .l{font-size:12.5px;color:var(--mut);margin-top:3px}
+figure.tgt{margin:26px 0;background:var(--card);border:1px solid var(--line);padding:12px;border-radius:3px}
+figure.tgt img{width:100%;height:auto;display:block;border-radius:2px}
+figcaption{font-size:13px;color:#39435a;margin-top:9px;line-height:1.55}
+.src{display:block;color:var(--mut);font-size:11.5px;margin-top:4px}
+ol,ul{padding-left:22px}
+li{margin:5px 0}
+.q{background:#fff;border:1px solid var(--line);padding:4px 0}
+.disc{font-size:12.5px;color:var(--mut);border-top:1px solid var(--line);margin-top:42px;padding-top:16px}
+a{color:var(--blue)}
+.toc{background:var(--card);border:1px solid var(--line);padding:16px 22px;border-radius:3px;columns:2;column-gap:32px}
+.toc a{text-decoration:none}.toc li{break-inside:avoid}
+code{background:#eef1f5;padding:1px 5px;border-radius:3px;font-size:13px}
+.tablewrap{overflow-x:auto}
+@media print{body{background:#fff}header.mast{background:#fff;color:#000;border-bottom:3px solid #000}h1{color:#000}.sub,.meta,.kicker{color:#333}figure.tgt{break-inside:avoid}}
+
+figure.fig{margin:26px 0;background:var(--card);border:1px solid var(--line);padding:12px;border-radius:3px}
+figure.fig img{width:100%;height:auto;display:block;border-radius:2px;background:#fff}
+figure.fig figcaption{font-size:13.5px;color:#39435a;margin-top:10px;line-height:1.6}
+figure.fig .fl{display:inline-block;font-weight:800;color:var(--navy);letter-spacing:.02em;margin-right:6px}
+.figrow{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:16px;margin:24px 0}
+.figrow figure.fig{margin:0}
+.figindex td{vertical-align:top}
+</style></head><body>
+<header class="mast"><div class="wrap">
+<div class="kicker">LEHRP · Evidence extract · Companion to the terminology sweep</div>
+<h1>What Was Actually Reported</h1>
+<p class="sub">Every passage in the obtained environmental record that describes an observed structure — concrete, corral, post, rail, fence, trough, windmill, well, pit, sump or buried material. Quoted in full, attributed to document and page, and sorted by what the observer said it was.</p>
+<p class="meta">Prepared 20 September 2026 · Andy Stavros · Hypothesis-neutral. Establishes no dipping vat, no contamination and no exposure at any location.</p>
+</div></header>
+<div class="wrap">
+
+<div class="card stop"><h4>The answer, first</h4>
+<p><b>No. Nobody reported an unknown concrete structure.</b></p>
+<p>Across 288 pages of Phase I Environmental Site Assessment text covering roughly 23,000 acres, the word <i>concrete</i> appears in about thirty observational passages. <b>Every one of them names what the concrete was for.</b> A batch plant. A truck wash-out pit. A containment sump at a rocket test facility. A telecom equipment housing. A curb and gutter. A pile of broken rubble beside a shed. Slabs explicitly attributed to a named former aerospace facility.</p>
+<p><b>There is not one instance, anywhere in the record, of a concrete structure recorded as being of unknown, unstated or unexplained purpose.</b></p>
+<p>The phrases <code>unknown origin</code> and <code>unidentified</code> do appear — nine and five times — and in every case they are the printed wording of the standard owner questionnaire, asking about imported fill dirt and about dumped waste materials. They are never used to describe something a surveyor saw and could not explain.</p></div>
+
+<div class="card"><h4>What this document is</h4>
+<p>This is the raw evidence behind the terminology sweep. Where that report argues about vocabulary, this one simply prints what the record says. Everything below is a direct quotation. Where a passage is long, it is trimmed at a sentence boundary and marked. Nothing is paraphrased.</p>
+<p><b>Sources:</b> EIR 589 Appendix I, Phase I ESA for Planning Areas 1–9 (Rancho Mission Viejo, 2003, revised 2004); NMG Geotechnical Phase I ESA and 2003 Update for the Ladera Ranch school site; the Ladera Planned Community Program Text. Page numbers are PDF pages.</p></div>
+
+<h2 id="toc">Contents</h2>
+<ol class="toc">
+<li><a href="#concrete">1 · Every concrete observation, and what it was said to be</a></li>
+<li><a href="#ranch">2 · The ranch features that <i>were</i> recorded</a></li>
+<li><a href="#silence">3 · Posts, rails and fencing: the silence</a></li>
+<li><a href="#quest">4 · What the owner was asked, and answered</a></li>
+<li><a href="#ladera">5 · Ladera Ranch itself, in full</a></li>
+<li><a href="#leads">6 · Two open leads in the record</a></li>
+<li><a href="#limits">7 · Method and limitations</a></li>
+</ol>
+<h2 id="concrete">1 · Every concrete observation, and what it was said to be</h2>
+<p class="lead">Sorted by what the observer attributed it to. The right-hand column is the crux: in every row, somebody knew what the concrete was.</p>
+
+<h3>Concrete at industrial facilities — the Capistrano Test Site, Planning Area 8</h3>
+<div class="tablewrap"><table><thead><tr><th style="width:52%">Quotation</th><th style="width:10%">Page</th><th>Attributed purpose</th></tr></thead><tbody>
+<tr><td>"A 500-gallon plastic underground storage tank (UST) was removed from a <b>concrete vault</b> in August 1992… The vault was filled with sand and capped with concrete."</td><td>183</td><td>UST containment</td></tr>
+<tr><td>"A 4' x 4' x 7' <b>blind concrete sump</b> was removed in November 1990."</td><td>183</td><td>Sump, removed</td></tr>
+<tr><td>"Two <b>inground concrete sumps</b> at Building 44A and 44B… which received chemical wastewater from the Chemical Laboratory, were to be upgraded to meet the state underground storage tank requirements."</td><td>185–6</td><td>Chemical wastewater</td></tr>
+<tr><td>"Under the direction of the Orange County Environmental Health Agency <b>a hole was cut out of the bottom of each concrete sump</b> and a sample of the soil beneath was taken using a Shelby-tube sampler."</td><td>186</td><td>Sampled through the floor</td></tr>
+<tr><td>"Closure of the HEPTS Concrete Tank. <b>A concrete tank, used for cooling water storage</b> at the HEPTS (High Energy Propulsion Test Stand), was removed from the TRW facility… Closure activities including removing the concrete walls and floors of the tank and taking soil samples once the soil underneath the concrete tank were exposed."</td><td>187</td><td>Cooling water, demolished and sampled</td></tr>
+<tr><td>"Closure of the HATS Concrete Tank. <b>Two adjoining concrete tanks, used for cooling water storage</b> at the HATS (High Altitude Test Stand), were converted to secondary containment… Soil under the concrete tanks was sampled by cutting two holes in the bottom of each."</td><td>187</td><td>Cooling water, converted</td></tr>
+<tr><td>"It includes several structures such as the laboratory (44A), warehouse (44F), utility shed (44E), utility sheds, a <b>concrete-block chemical storage room</b>, two explosive storage 'igloo' bunkers, and several test cells (empty)."</td><td>193</td><td>Chemical storage</td></tr>
+<tr><td>"Chemical storage was either in drums, located in a <b>concrete-lined and covered containment area</b>, or in bulk storage tanks within a <b>concrete block wall containment structure</b>."</td><td>194</td><td>Chemical containment</td></tr>
+<tr><td>"Also located at or adjacent to this facility are an equipment boneyard (directly to the south), a <b>concrete pad formerly used as a laser test pad</b>, and an explosives storage area."</td><td>194</td><td>Laser test pad</td></tr>
+<tr><td>"The Drum Farm is a <b>concrete paved, fenced, and covered storage area</b> divided into two enclosures and separated by a large berm. <b>Two large concrete-lined containment sumps</b> were noted on either end of the Drum Farm."</td><td>195</td><td>Drum storage and containment</td></tr>
+<tr><td>"The system was enclosed in a <b>concrete containment structure</b>."</td><td>195</td><td>Wastewater treatment containment</td></tr>
+<tr><td>"Holding Ponds — No. <b>Holding basins (concrete) observed at Drum Farm (41E)</b>."</td><td>197</td><td>Checklist entry, Drum Farm</td></tr>
+<tr><td>"11/88 - Building Permit; 426 square feet; <b>concrete pad, steel support for alpha test facility-fuel module</b>."</td><td>179</td><td>Permit record</td></tr>
+</tbody></table></div>
+
+<h3>Concrete at commercial and industrial leases, Planning Areas 1, 3, 5</h3>
+<div class="tablewrap"><table><thead><tr><th style="width:52%">Quotation</th><th style="width:10%">Page</th><th>Attributed purpose</th></tr></thead><tbody>
+<tr><td>"Jones also stated that there were <b>concrete-lines pits for truck wash-out</b>." <span class="small">[sic — concrete-lined]</span></td><td>70</td><td>Ready-mix plant wash-out</td></tr>
+<tr><td>"The truck washout recycling pond and related chemicals within the Catalina Pacific Concrete (CPC) lease area <b>should be dismantled/removed</b> and the pond contents removed/disposed of prior to termination of the existing tenants lease."</td><td>81</td><td>Wash-out pond, flagged for removal</td></tr>
+<tr><td>"EEI noted an un-permitted 100-gallon AGT <b>(on a small concrete pad with no secondary containment)</b>."</td><td>76</td><td>Tank pad</td></tr>
+<tr><td>"EEI noted <b>oil-stained concrete</b> in and around the shop areas."</td><td>79</td><td>Shop floor</td></tr>
+<tr><td>"The fueling area did not appear to be paved, although the drum storage area was a <b>bermed concrete slab</b>."</td><td>123</td><td>Drum storage</td></tr>
+<tr><td>"Two 55-gallon drums labeled 'non-regulated waste'… were noted in the vehicle maintenance area, along with <b>stained concrete</b>, stained soil, and a waste oil pan containing oil."</td><td>27</td><td>Maintenance yard</td></tr>
+<tr><td>"A <b>pile of broken concrete</b> was located south of the shed, and miscellaneous debris (chairs, wood, and a barbeque) were located along the eastern and northern sides of the shed."</td><td>27</td><td>Rubble</td></tr>
+<tr><td>"The site currently contains two telecommunications tower and a <b>small concrete structure, which apparently houses support equipment for the towers</b>."</td><td>59, 77</td><td>Telecom equipment housing</td></tr>
+</tbody></table></div>
+
+<div class="card warn"><h4>The one row that comes closest — and why it still is not what we are looking for</h4>
+<p>Planning Area 7, Cristianitos Canyon, page 165:</p>
+<blockquote class="small">"<b>Several concrete slabs and driveways were noted along this central paved road, indicating the former position of structures and facilities at the former Ford Philco facility.</b>"</blockquote>
+<p>This is the only passage in the entire record describing <b>concrete slabs left behind by structures that are gone</b>. It shows that the consultants did notice orphan concrete and did write it down when they saw it.</p>
+<p><b>But it is immediately explained.</b> The surveyor attributed the slabs to the former Ford Philco aerospace facility — a known, named, twentieth-century industrial operation on that ground. The concrete had a story attached, and the story was correct. <b>Nothing was left unexplained.</b></p>
+<p class="small">Planning Area 7 is Ranch Plan land in Cristianitos Canyon. It is not Ladera Ranch.</p></div>
+
+<h3>Concrete at Ladera Ranch itself</h3>
+<div class="tablewrap"><table><thead><tr><th style="width:56%">Quotation</th><th>Attributed purpose</th></tr></thead><tbody>
+<tr><td>"<b>Concrete curb and gutters</b> were located along this road." <span class="small">[O'Neill Drive, Jan 2002]</span></td><td>New street construction</td></tr>
+<tr><td>"A <b>concrete-paved sidewalk</b> was located between this roadway and a portion of the site." <span class="small">[Sept 2003]</span></td><td>New street construction</td></tr>
+<tr><td>"A <b>concrete block wall</b> was in the process of being constructed around this property." <span class="small">[Sept 2003]</span></td><td>New perimeter wall</td></tr>
+</tbody></table></div>
+<p><b>Three concrete observations at Ladera Ranch, all of them things being built in front of the observer.</b> No historic concrete of any kind is recorded on that parcel.</p>
+<h2 id="ranch">2 · The ranch features that <i>were</i> recorded</h2>
+<p class="lead">This matters for fairness. The consultants did record ranching infrastructure, repeatedly and by name, whenever it was standing and in use. The gap is not carelessness about ranch features in general.</p>
+
+<h3>Corrals</h3>
+<div class="tablewrap"><table><thead><tr><th style="width:60%">Quotation</th><th style="width:10%">Page</th><th>Area</th></tr></thead><tbody>
+<tr><td>"<b>The Oaks horse corrals</b> (28650 Ortega Highway) encompasses approximately one and a half acres in the southern portion of the subject property. The site is occupied by horse corrals."</td><td>7</td><td>PA1</td></tr>
+<tr><td>"The corrals have been present since the 1980's, and previously had been vacant."</td><td>25</td><td>PA1</td></tr>
+<tr><td>"The 1942 map notes the presence of two small structures located along the ranch access road near the headquarters area, a small structure located south of San Juan Creek in the D&amp;M Nursery area, and <b>four small structures in the current Oaks Corrals area</b>."</td><td>12</td><td>PA1</td></tr>
+<tr><td>"1973 132-12-17 — <b>The Oaks Corrals (south of Ortega Highway) was noted in its present location</b>." · "The Oaks Corral area was present and <b>it was unclear whether the corrals were present or the area was only cleared</b>."</td><td>11</td><td>PA1</td></tr>
+<tr><td>"<b>The large barn and corrals</b> were noted in the southwest corner of the property, in their current configuration."</td><td>63</td><td>PA3</td></tr>
+<tr><td>"Cow camp includes residences, barns, a maintenance area, pastures, <b>corrals</b>, and open fields." · "EEI noted a roping arena, <b>several corrals</b>, two barns, a few open fields, and six residential structures."</td><td>79</td><td>PA3</td></tr>
+<tr><td>"In addition to the features noted on the 1968 map, the 1974 map noted the presence of three small structures and <b>a small corral on the RJO property</b>."</td><td>91</td><td>PA4</td></tr>
+<tr><td>"1973 132-13-14 — <b>A corral is located in the southern portion of RJO Horse Ranch</b> and a racetrack is located north of RJO."</td><td>92</td><td>PA4</td></tr>
+<tr><td>"The 1968 map notes the presence of two additional clay mines in the western portion, and <b>a corral in the southwestern corner</b>." · "The clay mines and the corral were still noted in the western portion."</td><td>156</td><td>PA7</td></tr>
+<tr><td>"<b>A large corral area was noted in the southwestern margin of the site, along Ford Aerospace Road.</b>"</td><td>165</td><td>PA7</td></tr>
+</tbody></table></div>
+<p class="small">The Oaks Corral received <b>its own dedicated Phase I Environmental Site Assessment</b> in July 2002, cited in the references as a separate report. Ranch features were not beneath notice.</p>
+
+<h3>Windmills</h3>
+<div class="tablewrap"><table><thead><tr><th style="width:70%">Quotation</th><th style="width:10%">Page</th><th>Area</th></tr></thead><tbody>
+<tr><td>"…several <b>electric windmills</b> are located in the grove along San Juan Creek."</td><td>7</td><td>PA1</td></tr>
+<tr><td>"In addition, <b>a small windmill was noted along the southern property margin, along Talega Creek</b>."</td><td>165</td><td>PA7</td></tr>
+<tr><td>"The 1986 through 1988 maps note the presence of the three afore-mentioned water tanks, along with <b>a windmill near the water tank along Verdugo Canyon</b>."</td><td>209</td><td>PA9</td></tr>
+<tr><td>"<b>A windmill was noted along Verdugo Canyon Road</b>, within one of the one-acre parcels."</td><td>217</td><td>PA9</td></tr>
+</tbody></table></div>
+
+<h3>Wells</h3>
+<div class="tablewrap"><table><thead><tr><th style="width:70%">Quotation</th><th style="width:10%">Page</th><th>Area</th></tr></thead><tbody>
+<tr><td>"<b>The 1968 map notes the presence of a well in the former Joan Irvine-Smith Pasture.</b>"</td><td>12</td><td>PA1</td></tr>
+<tr><td>"…the 1948 map notes the presence of <b>a well on the RJO horse ranch property</b> and a small structure along the southern margin."</td><td>~91</td><td>PA4</td></tr>
+<tr><td>"Based on file data, <b>one petroleum exploration well (Exxon, 'O'Neill Estate') was installed in the central portion of the property in 1959</b> to a total depth of approximately 4,100 feet, and <b>one petroleum exploration well (Texaco Inc., 'O'Neill') was installed south of the subject property, along Ortega Highway, in 1964</b> to a total depth of approximately 3,730. <b>Both wells are marked as 'Plugged and Abandoned - Dry Hole.'</b>"</td><td>—</td><td>PA?</td></tr>
+<tr><td>"<b>Two groundwater wells (Well No. 1 and Well No. 2) and related structures were noted</b> along the creek east of the driveway."</td><td>193</td><td>PA8</td></tr>
+</tbody></table></div>
+<div class="card"><h4>Note on the wells, stated carefully</h4>
+<p>The consultants <b>did</b> review the state oil and gas regulator's files, and found and named two exploration wells on O'Neill land. That is a properly conducted check. <b>Nothing in these passages suggests any of these wells is connected to anything else.</b> They are recorded here because a dipping vat needed several thousand gallons of water on a fortnightly cycle, so water locations are worth knowing — and because the Ladera-specific report separately records a groundwater well and an abandoned oil well roughly 700 to 750 feet south of the school site.</p></div>
+
+<h3>Structures on the 1942 map</h3>
+<p>The oldest map any consultant reviewed was from 1942. What it showed, in full:</p>
+<blockquote class="small">"The 1942 map notes the presence of <b>two small structures located along the ranch access road near the headquarters area</b>, <b>a small structure located south of San Juan Creek</b> in the D&amp;M Nursery area, and <b>four small structures in the current Oaks Corrals area</b>. Ortega Highway is present traversing the subject property, along with San Juan Creek Haul Road and a dirt road south of former Joan Irvine-Smith pasture. <b>No other pertinent items were noted.</b>"</blockquote>
+<p>Seven small structures on roughly 23,000 acres, none of them described beyond "small structure." <b>A map at that scale cannot show a twenty-six foot trough, and would not label one if it could.</b></p>
+<h2 id="silence">3 · Posts, rails and fencing: the silence</h2>
+<p class="lead">The concrete base observed in Phase 2 has iron pipe rails and timber posts associated with it. That is the most distinctive thing about it. The record has almost nothing to say about such features.</p>
+
+<div class="card stop"><h4>Every fencing observation in 288 pages</h4>
+<p>Excluding the Ladera Planned Community zoning text, which specifies fence heights and materials for future houses and is not an observation of anything, the complete set is:</p>
+<ul>
+<li>"…which was cleared and occupied by several trailers and <b>a small fenced area</b>." <span class="small">(p10, PA1)</span></li>
+<li>"The O'Connell storage yard was noted, however, <b>no fence was noted</b>." <span class="small">(p63, PA3)</span></li>
+<li>"This steel storage building is located in <b>a fenced compound</b> along the southeastern margin of the property." <span class="small">(p165, PA7)</span></li>
+<li>"The Drum Farm is a concrete paved, <b>fenced</b>, and covered storage area." <span class="small">(p195, PA8)</span></li>
+<li>"12/71; Building Permit; <b>fencing for electric equipment &amp; pump pads</b>-530 L.F." <span class="small">(p114, PA5, permit record)</span></li>
+<li>At Ladera Ranch: "<b>Aboveground structures, with the exception of a chain link fence</b>, were not located within the site." · "<b>A chain link fence bordered each side of the site.</b>" · "<b>Chain link fencing bordered the entire site.</b>" <span class="small">(2003 Update)</span></li>
+</ul>
+<p><b>That is all of it.</b> Six observations, every one of them modern security or industrial fencing.</p></div>
+
+<div class="card stop"><h4>What does not appear, anywhere</h4>
+<p>The record contains <b>no observation of</b>:</p>
+<ul>
+<li>A timber corral post, a fence post, or a post of any kind standing alone</li>
+<li>An iron or steel <b>pipe rail</b>, a guide rail, or a railing of any description</li>
+<li>Derelict, collapsed, weathered or abandoned fencing</li>
+<li>A loading chute, a squeeze, a headgate or a working pen</li>
+<li>A stock watering trough, a cistern, or a stock pond</li>
+<li>A concrete slab, pad or wall on open grazing land</li>
+</ul>
+<p>Corrals are named ten times — always as <b>working facilities in current use</b>, with horses in them, on leased parcels with street addresses. <b>Not once is a corral or any part of one described as derelict, historic, or of unknown age.</b></p></div>
+
+<div class="card warn"><h4>Why the silence is expected rather than suspicious</h4>
+<p>Read the field checklist the consultants were applying to open land. It is quoted identically across the ranch planning areas:</p>
+<blockquote class="small">"This would include any evidence of <b>contamination, distressed vegetation, petroleum-hydrocarbon staining, waste drums, illegal dumping, or improper waste storage/handling</b>."</blockquote>
+<p>Six items. <b>A derelict timber post triggers none of them.</b> It is not contamination, not distressed vegetation, not a petroleum stain, not a drum, not dumping and not waste handling. A person walking with that list in their hand and seeing a rotted post and a length of pipe in the brush has nothing to write it under, and no reason to.</p>
+<p>This is the finding in one sentence: <b>the instrument had no field for it.</b></p></div>
+<h2 id="quest">4 · What the owner was asked, and answered</h2>
+<p class="lead">Every Planning Area report contains the same standard owner questionnaire. It is the one place where a person with direct knowledge of the land was asked, in writing, what had been on it. Here is the relevant part, verbatim.</p>
+
+<div class="card go"><h4>The respondent was candid, and that matters</h4>
+<p>The first answer in the sequence is a volunteered admission against interest:</p>
+<blockquote class="small"><b>Q:</b> Are you aware of any current or previous uses of the site or adjoining properties which may create an environmental concern?<br>
+<b>A:</b> No, with the exception of the maintenance area along Ortega Highway. <b>Years ago we used to dump oil off the corner of the shop building.</b></blockquote>
+<p>Nobody was obliged to say that. It was said anyway. <b>Whatever else this record shows, it does not show a respondent trying to hide things.</b> Other answers disclose drums at the maintenance shop, stained soil at the maintenance shop, and imported fill dirt for a lemon grove.</p></div>
+
+<h3>The closest the instrument ever comes</h3>
+<blockquote class="small"><b>Q:</b> Are there currently, or to the best of your knowledge have there been previously, any <b>pits, ponds, or lagoons</b> located on the property <b>in connection with waste treatment or waste disposal</b>?<br>
+<b>A:</b> No.</blockquote>
+<p>A dipping vat is a pit. This is the only question in the entire instrument that could conceivably have surfaced one — and it is scoped to <b>waste treatment or waste disposal</b>. A vat is not a waste facility. It is a treatment bath for livestock. <b>A person reading that question in 2003 has no reason to think of it.</b></p>
+
+<h3>The other questions, and why none of them reach</h3>
+<div class="tablewrap"><table><thead><tr><th style="width:58%">Question asked</th><th>Why a 1911 dipping vat does not trigger it</th></tr></thead><tbody>
+<tr><td>Gasoline station, motor repair, printing, dry cleaner, photo lab, junkyard, landfill, or waste treatment/storage/disposal/recycling facility?</td><td>None of these categories is livestock treatment</td></tr>
+<tr><td>Damaged or discarded batteries, or <b>pesticides, paints or other chemicals in containers over 5 gallons</b>?</td><td>Asks about <b>containers</b> in present or recent storage, not a structure in the ground</td></tr>
+<tr><td>Industrial drums or sacks of chemicals?</td><td>Arsenic trioxide arrived in sacks in 1911. The question is framed in the present tense about current storage</td></tr>
+<tr><td>Fill dirt of unknown origin?</td><td>About imported soil, not about what was already there</td></tr>
+<tr><td>Stained soil?</td><td>An arsenical vat leaves no visible stain a century later</td></tr>
+<tr><td>Registered or unregistered storage tanks, above or underground?</td><td>A vat is not a tank in the regulatory sense and was never registered</td></tr>
+<tr><td>Vent pipes, fill pipes, or access ways indicating a fill pipe?</td><td>A vat is filled by bucket, hose or gravity. It has no fill pipe</td></tr>
+<tr><td>Flooring, drains or walls <b>within the facility</b> stained or emitting odours?</td><td>Scoped to the interior of buildings</td></tr>
+<tr><td>Waste water discharged other than storm water into a sanitary sewer?</td><td>A vat discharged to ground, decades before anyone framed that as a question</td></tr>
+</tbody></table></div>
+<p><b>Nineteen questions. Not one of them asks what this land was used for before living memory.</b> The instrument is built to find a leaking gas station, and it finds leaking gas stations very well.</p>
+<h2 id="ladera">5 · Ladera Ranch itself, in full</h2>
+<p class="lead">Everything the record says was observed on Ladera Ranch ground. This is short, because there was almost nothing to see by the time anyone looked.</p>
+
+<div class="card stop"><h4>The site reconnaissance list, 31 January 2002, quoted complete</h4>
+<blockquote class="small">
+"At the time of the site reconnaissance, the site existed as a <b>mass graded, leveled lot</b> (photo Nos. 1 through 8). Soil covered the entire site. Pavement and/or vegetation were not located within the site.<br><br>
+<b>Aboveground structures are not located within any portion of the site.</b> The only aboveground items noted within the site were <b>surveyor stakes and barricades</b> around a southern desilting basin.<br><br>
+<b>A desilting basin</b> (a drainage area and inlet for rainwater removal) is located in the site's southern portion (Photo No. 9). Indications that potentially hazardous materials had been dumped into the basin or inlet were not observed.<br><br>
+<b>Stained soil was not encountered</b> within the site.<br>
+<b>Fill ports and vent pipes to USTs were not observed</b> within or adjacent to the subject site.<br>
+<b>Clarifiers, ponds, pits, and sumps, or other below ground waste disposal areas were not observed</b> onsite.<br>
+<b>Indications of septic systems were not observed</b> on any portion of the site or adjoining areas.<br>
+<b>Groundwater monitoring and/or vadose zone wells were not observed</b> within or adjacent to the subject site.<br>
+<b>Mounds or depressions</b>, suggesting trash or other solid waste disposal at the subject site or surrounding areas, <b>were not observed</b>.<br>
+<b>Aboveground storage tanks were not observed</b> within or adjacent to the subject site.<br>
+<b>Pools of liquid</b> or potentially hazardous substances <b>were not observed</b>.<br>
+<b>Wastewater discharge pipes were not observed</b>.<br>
+<b>Unusual or noxious odors were not detected</b>."
+</blockquote>
+<p class="src">NMG Geotechnical, Phase I ESA, project 01079-02, §3.1, quoting the report in full.</p></div>
+
+<h3>What was recorded around the site</h3>
+<div class="tablewrap"><table><thead><tr><th style="width:58%">Quotation</th><th>Date</th></tr></thead><tbody>
+<tr><td>"<b>O'Neil Drive</b> is located immediately north and along the site's northern side… <b>This road was being paved at the time of the site reconnaissance.</b> Concrete curb and gutters were located along this road."</td><td>Jan 2002</td></tr>
+<tr><td>"An undeveloped lot covered with soil is located immediately east of the site… <b>Aboveground and underground structures were not observed</b> on any portion of this lot."</td><td>Jan 2002</td></tr>
+<tr><td>"The property located south of the site exists as a leveled, undeveloped lot covered with soil… <b>A tractor was parked</b> in the central portion."</td><td>Jan 2002</td></tr>
+<tr><td>"<b>Aboveground structures, temporary in appearance, are located west of the site's northern portion</b> (Photo No. 16)."</td><td>Jan 2002</td></tr>
+<tr><td>"An <b>apparent groundwater production well and associated appurtenances</b> were located west of the site's northern portion."</td><td>Sept 2003</td></tr>
+<tr><td>"<b>Chain link fencing bordered the entire site.</b>" · "<b>Utility manholes, three total</b>, were located along this access road." · "<b>Two relatively new pad-mounted transformers (not in use)</b> were located immediately outside of the fence."</td><td>Sept 2003</td></tr>
+<tr><td>"A <b>concrete block wall was in the process of being constructed</b> around this property." · "individual residential-size lots and a roadway <b>appeared to have been precise graded</b> within this property."</td><td>Sept 2003</td></tr>
+</tbody></table></div>
+
+<div class="card warn"><h4>The interview with the people who moved the earth</h4>
+<blockquote class="small">"Goffman, McCormick &amp; Urban, Inc. (GMU) provided geotechnical services during grading of the site and adjoining properties. A representative of the GMU, Mr Bob Mutchnik, noted that they <b>monitored onsite soil removal and placement activities since grading was initiated in 1999</b>. <b>Aboveground structures were not located onsite prior to the start of grading.</b> <b>Underground structures, such as fuel storage tanks and clarifiers, were not encountered during soil removals.</b> Stained and/or odorous soils were also not encountered during soil removals."</blockquote>
+<p>This is the only eyewitness account in the entire record of the ground at Ladera Ranch being opened. <b>The categories put to him were fuel storage tanks and clarifiers.</b></p></div>
+
+<div class="card"><h4>And what the historical review found for this parcel</h4>
+<blockquote class="small">"Since before 1942 and up to 1999, the site had been in an <b>undeveloped state</b> and was <b>part of a larger cattle ranch, used for dry farming and grazing</b>. Mass grading of the site began in 1999 and was completed in the summer of 2001."</blockquote>
+<blockquote class="small">"<b>There were no known manmade structures located within the site prior to 1999.</b>"</blockquote>
+<p>The consultant identified the land use correctly — cattle ranch, grazing, dry farming — and classified the parcel as <b>undeveloped</b>. In the vocabulary of this standard, "undeveloped" closes the inquiry. <b>A vat is a structure on land that a surveyor would still call undeveloped.</b></p>
+</div>
+<h2 id="leads">6 · Two open leads in the record</h2>
+<p class="lead">Passages where the consultants themselves flagged something unresolved and recommended action. Whether that action was ever taken is not in any document held.</p>
+
+<div class="card warn"><h4>Lead 1 · Buried equipment and waste scraps at Cow Camp</h4>
+<p>From the conclusions of Planning Area 3, listed as a recognised environmental condition:</p>
+<blockquote class="small">"Based on conversations with Rancho Mission Viejo personnel, the area <b>east of the Cow Camp maintenance shop area</b> (currently being used to store equipment) was <b>historically used to bury old equipment and waste scraps</b>. EEI recommends that <b>the exact location of the buried debris be identified and excavated, and that soil sampling be performed</b> to determine if any contaminates exist in the pit area or in surrounding areas."</blockquote>
+<p><b>Why it is a lead.</b> It is the only place in the record where somebody with direct knowledge describes material being <i>buried</i> on ranch land, at an unlocated spot, with a recommendation to dig and sample. If old ranch equipment was buried there, old ranch equipment is exactly the category a dismantled dipping station would fall into.</p>
+<p><b>Why it is not evidence of anything.</b> "Old equipment and waste scraps" most plausibly means vehicles, implements and shop waste. The recommendation is about petroleum and metals. And <b>Cow Camp is on Ranch Plan land in Gobernadora Canyon, not in Ladera Ranch.</b></p>
+<p><b>The open question:</b> was the excavation and sampling ever performed, and what did it find? Ask Orange County and the landowner.</p></div>
+
+<div class="card warn"><h4>Lead 2 · A 500-gallon tank removed with no record</h4>
+<blockquote class="small">"Based on conversations with Rancho Mission Viejo personnel, <b>at least one 500-gallon underground fuel tank was removed in the mid 1980's from the Cow Camp area. No information was available with the Orange County Health Care Agency regarding the tank removal, or any soil sampling performed.</b> EEI recommends that the exact location of the former UST be identified, and that confirmation soil sampling be performed."</blockquote>
+<p><b>Why it matters to method rather than to arsenic.</b> Here is a documented case of <b>something being removed from this ranch with no agency record of it at all</b> — known only because a person remembered it and said so in an interview. It is a clean demonstration that the absence of a record does not establish the absence of a thing, on this land, within living memory.</p></div>
+
+<h2 id="limits">7 · Method and limitations</h2>
+
+<div class="card"><h4>How this extract was made</h4>
+<ul>
+<li>The full text of the obtained documents was split into sentences and every sentence containing any of thirty structural terms was pulled: <code>concrete</code>, <code>vat</code>, <code>trough</code>, <code>corral</code>, <code>post</code>, <code>rail</code>, <code>fence</code>, <code>windmill</code>, <code>cistern</code>, <code>sump</code>, <code>basin</code>, <code>pit</code>, <code>pond</code>, <code>lagoon</code>, <code>slab</code>, <code>pad</code>, <code>foundation</code>, <code>vault</code>, <code>tank</code>, <code>buried</code>, <code>debris</code>, <code>unknown origin</code>, <code>unknown function</code>, <code>unidentified</code>, <code>well</code>, <code>chute</code>, <code>pen</code>, <code>cesspool</code>, <code>septic</code>, <code>reservoir</code>, <code>structure</code>.</li>
+<li>That produced <b>693 candidate passages</b>. Each was read and classified. Boilerplate, table-of-contents lines, regulatory database listings and the zoning code's fence-height rules were set aside as non-observational. The rest are reproduced above.</li>
+<li>Quotations are verbatim, including the original's typographic errors, which are marked <span class="small">[sic]</span> where they could confuse.</li>
+</ul></div>
+
+<div class="card stop"><h4>What this extract does not establish</h4>
+<ul>
+<li><b>It does not establish that a dipping vat exists at Ladera Ranch or anywhere else.</b> No such structure is described in any document quoted here.</li>
+<li><b>It does not establish that anyone failed to report something they were required to report.</b> The opposite: the consultants recorded concrete carefully wherever they found it, named ranch features when they were standing, checked the oil and gas regulator's files, and flagged two unresolved items for excavation and sampling. The owner volunteered an admission about dumping oil.</li>
+<li><b>It does not establish contamination or exposure anywhere.</b></li>
+<li><b>Absence of a passage is not absence of a thing.</b> Lead 2 above is the proof: a tank was removed from this ranch in the 1980s and no agency holds a record of it.</li>
+<li><b>Coverage is uneven.</b> The 218-page Phase I covers the Ranch Plan, not Ladera Ranch. Only about ten acres of Ladera Ranch itself has a site reconnaissance in this record, and that walk happened after the ground had been graded. <b>The environmental review of Ladera Ranch — EIR 555 — has not been obtained.</b></li>
+</ul></div>
+
+<div class="disc"><p>This report is part of an independent research and data-organization project. It does not provide medical advice and does not establish that any pesticide, property, organization, employer, school, water provider, government agency, or other party caused any illness. Publicly reported health events may not have been independently medically verified. Geographic and temporal overlap does not establish exposure or causation. Formal conclusions require authorized epidemiological analysis, verified medical information, exposure assessment, toxicological review, and independent scientific evaluation.</p></div>
+</div></body></html>
