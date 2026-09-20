@@ -1,0 +1,484 @@
+<!doctype html><html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Phase 3 — Written Treatment, Narration, Storyboard and Testing Plan</title>
+<style>
+:root{--ink:#171e2b;--navy:#20304d;--mut:#5d6675;--line:#e2e6ec;--bg:#faf9f7;--card:#fff;--blue:#2d5d8f;--ok:#1e7a45;--warn:#9a6a10;--hard:#a23b2c;--off:#6b7280;--amber:#c8811f}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.62 -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif}
+.wrap{max-width:1180px;margin:0 auto;padding:0 28px 96px}
+header.mast{background:var(--navy);color:#fff;padding:54px 0 42px;margin-bottom:38px}
+header.mast .wrap{padding-bottom:0}
+.kicker{font-size:13px;letter-spacing:.16em;text-transform:uppercase;color:#9fc0e4;font-weight:700}
+h1{font-size:40px;line-height:1.12;margin:12px 0 10px;font-weight:700;letter-spacing:-.01em}
+.sub{color:#c9d6e6;font-size:18px;max-width:78ch}
+.meta{margin-top:20px;font-size:13px;color:#9fb2ca}
+h2{font-size:26px;margin:46px 0 6px;letter-spacing:-.01em;border-top:3px solid var(--navy);padding-top:22px}
+h3{font-size:19px;margin:30px 0 6px;color:var(--navy)}
+h4{font-size:16px;margin:22px 0 4px}
+p,li{max-width:82ch}
+.lead{font-size:18px;color:#2b3547}
+table{border-collapse:collapse;width:100%;margin:18px 0;font-size:14px;background:var(--card)}
+th{background:#eef1f5;text-align:left;padding:10px 11px;border-bottom:2px solid var(--line);font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:#43506a;vertical-align:bottom}
+td{padding:11px;border-bottom:1px solid var(--line);vertical-align:top}
+td.num{font-weight:700;font-size:17px;color:var(--navy)}
+tr.tier-A{background:#f4fbf6}tr.tier-B{background:#fffdf5}tr.tier-C{background:#f7f9fc}tr.tier-D{background:#fafafa;color:#6b7280}
+.small{font-size:13px;line-height:1.5}
+.mono{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:12.5px}
+.badge{display:inline-block;padding:2px 9px;border-radius:11px;font-size:11.5px;font-weight:700;letter-spacing:.03em}
+.badge.ok{background:#e4f4ea;color:var(--ok)}.badge.warn{background:#fdf1dc;color:var(--warn)}.badge.hard{background:#fbe8e5;color:var(--hard)}.badge.off{background:#eef0f3;color:var(--off)}
+.tier{display:inline-block;width:26px;height:26px;line-height:26px;text-align:center;border-radius:50%;font-weight:800;color:#fff}
+.tierA{background:var(--ok)}.tierB{background:var(--amber)}.tierC{background:var(--blue)}.tierD{background:#9aa3b0}
+.card{background:var(--card);border:1px solid var(--line);border-left:4px solid var(--blue);padding:16px 20px;margin:18px 0;border-radius:3px}
+.card.warn{border-left-color:var(--amber);background:#fffdf6}
+.card.stop{border-left-color:var(--hard);background:#fdf3f1}
+.card.go{border-left-color:var(--ok);background:#f4fbf6}
+.card h4{margin-top:0}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:14px;margin:18px 0}
+.stat{background:var(--card);border:1px solid var(--line);padding:14px 16px;border-radius:3px}
+.stat .n{font-size:30px;font-weight:700;color:var(--navy);line-height:1.1}
+.stat .l{font-size:12.5px;color:var(--mut);margin-top:3px}
+figure.tgt{margin:26px 0;background:var(--card);border:1px solid var(--line);padding:12px;border-radius:3px}
+figure.tgt img{width:100%;height:auto;display:block;border-radius:2px}
+figcaption{font-size:13px;color:#39435a;margin-top:9px;line-height:1.55}
+.src{display:block;color:var(--mut);font-size:11.5px;margin-top:4px}
+ol,ul{padding-left:22px}
+li{margin:5px 0}
+.q{background:#fff;border:1px solid var(--line);padding:4px 0}
+.disc{font-size:12.5px;color:var(--mut);border-top:1px solid var(--line);margin-top:42px;padding-top:16px}
+a{color:var(--blue)}
+.toc{background:var(--card);border:1px solid var(--line);padding:16px 22px;border-radius:3px;columns:2;column-gap:32px}
+.toc a{text-decoration:none}.toc li{break-inside:avoid}
+code{background:#eef1f5;padding:1px 5px;border-radius:3px;font-size:13px}
+.tablewrap{overflow-x:auto}
+@media print{body{background:#fff}header.mast{background:#fff;color:#000;border-bottom:3px solid #000}h1{color:#000}.sub,.meta,.kicker{color:#333}figure.tgt{break-inside:avoid}}
+
+figure.fig{margin:26px 0;background:var(--card);border:1px solid var(--line);padding:12px;border-radius:3px}
+figure.fig img{width:100%;height:auto;display:block;border-radius:2px;background:#fff}
+figure.fig figcaption{font-size:13.5px;color:#39435a;margin-top:10px;line-height:1.6}
+figure.fig .fl{display:inline-block;font-weight:800;color:var(--navy);letter-spacing:.02em;margin-right:6px}
+.figrow{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:16px;margin:24px 0}
+.figrow figure.fig{margin:0}
+.figindex td{vertical-align:top}
+
+.sc{background:var(--card);border:1px solid var(--line);border-left:4px solid var(--navy);padding:14px 18px;margin:16px 0;border-radius:3px}
+.sc h4{margin:0 0 6px}
+.tc{display:inline-block;font-family:ui-monospace,Menlo,monospace;font-size:12px;background:#eef1f5;padding:2px 7px;border-radius:3px;color:#2b3550}
+.nar{background:#fffdf6;border-left:4px solid var(--amber);padding:12px 16px;margin:10px 0;border-radius:3px;font-size:15px;line-height:1.75}
+.nar b{color:var(--navy)}
+.cls{display:inline-block;padding:2px 8px;border-radius:10px;font-size:11px;font-weight:800;letter-spacing:.04em;margin-right:4px}
+.v{background:#e4f4ea;color:var(--ok)}.ap{background:#fdf1dc;color:var(--warn)}.inf{background:#e8eefb;color:var(--blue)}
+.mod{background:#f0e8fb;color:#6b3fa0}.hyp{background:#fbe8e5;color:var(--hard)}.unk{background:#eef0f3;color:var(--off)}
+.gfx{font-size:13px;color:#39435a;background:#f5f7fa;border:1px dashed var(--line);padding:9px 12px;border-radius:3px;margin-top:8px}
+</style></head><body>
+<header class="mast"><div class="wrap">
+<div class="kicker">LEHRP · California's Forgotten Past · Phase 3</div>
+<h1>Phase 3 — Written Treatment</h1>
+<p class="sub">One documentary in three connected parts: the concrete structures, where the soil should be tested, and the purple-pipe loop. Complete narration, scene-by-scene storyboard, evidence and citations for every claim, graphics manifest, and the integrated testing plan. Nothing has been rendered. This document is written to be fact-checked before a single frame is made.</p>
+<p class="meta">Drafted 20 September 2026 · Andy Stavros · Hypothesis-neutral. Asserts no contamination in any soil, runoff, recycled water or irrigation water at any location.</p>
+</div></header>
+<div class="wrap">
+
+<div class="card stop"><h4>The governing rule of this film</h4>
+<p>Every factual statement on screen carries a class badge, and the badge is shown to the viewer, not just recorded here.</p>
+<p><span class="cls v">DOCUMENTED</span> a named document says it, and the document is shown &nbsp;
+<span class="cls ap">APPROXIMATE</span> real but located only to within a stated distance &nbsp;
+<span class="cls inf">INFERRED</span> reasoned from documents, not stated by them &nbsp;
+<span class="cls mod">MODEL</span> output of a calculation with stated parameters &nbsp;
+<span class="cls hyp">TESTABLE</span> a hypothesis with a named experiment &nbsp;
+<span class="cls unk">UNKNOWN</span> nobody has measured it</p>
+<p><b>Three prohibitions hold throughout.</b> No concrete structure is called a dipping vat. No approximate location is drawn as a confirmed one. No contaminant is said to be present in Ladera's soil, runoff, recycled water or irrigation water, because no analytical testing has established that. <b>Where testing has not happened, the absence of testing is the finding.</b></p>
+<p>The question the film asks, in every part: <b>what do the records establish, what don't we know, and where should we test to find out?</b></p></div>
+
+<div class="card warn"><h4>A correction this draft makes to earlier project work</h4>
+<p>Earlier in this investigation I described a concrete structure in San Juan Capistrano as "photographed four days before it was demolished." <b>The primary document does not support "four days," and that phrasing was mine, not the record's.</b> The verified chronology is set out in Part 1, Scene 6. The photograph itself is undated in the report. This correction is made here so the film does not inherit the error.</p></div>
+
+<h2 id="spec">Production specification</h2>
+<div class="tablewrap"><table><tbody>
+<tr><td style="width:26%"><b>Form</b></td><td>One documentary, three connected parts, continuous narration, no hard breaks. Parts announced by title card only.</td></tr>
+<tr><td><b>Proposed runtime</b></td><td><b>24 minutes 00 seconds.</b> Part 1 — 8:30. Part 2 — 6:30. Part 3 — 7:30. Cold open 0:45, closing 0:45.</td></tr>
+<tr><td><b>Narration</b></td><td>The same British voice used in Phase 2 (edge-tts <code>en-GB-RyanNeural</code>). Pronunciation substitution applies to the voice text only: <b>Ladaira</b> for Ladera, <b>Mission Vee-ay-ho</b> for Mission Viejo. On-screen text always reads Ladera.</td></tr>
+<tr><td><b>Aspect</b></td><td>Two masters as in Phase 2: 1080×1920 vertical with burned captions, and 1920×1080 for YouTube.</td></tr>
+<tr><td><b>Visual language</b></td><td>Phase 2 system carried forward: light ground, dark navy type, restrained blue accent, Ken Burns on stills, <code>zoompan</code> map pushes, document zoom with highlight sweep, source citation block bottom-left on every evidence frame.</td></tr>
+<tr><td><b>Music</b></td><td>Phase 2 bed, sidechain-ducked under narration exactly as in <code>score.sh</code> (threshold 0.02, ratio 6, attack 30, release 900, makeup 1, limiter 0.95).</td></tr>
+<tr><td><b>Reused code</b></td><td><code>p2/build_p2.py</code> segment builders and <code>caption()</code>; <code>p2/assemble.py</code> ordering; <code>p3/score.sh</code>, <code>burn.sh</code>, <code>captions2.py</code>, <code>avsync.py</code>.</td></tr>
+<tr><td><b>New builders required</b></td><td>Layered map reveal; georeferenced historical-aerial cross-fade; pipe-flow animation; cut/fill terrain animation; document highlight sweep. Listed per scene below.</td></tr>
+</tbody></table></div>
+<h2 id="p1">Part 1 · The concrete structures <span class="small">(0:00–8:30)</span></h2>
+<p class="lead">The question: where were the possible historical cattle-dipping structures, and what does the record actually say about concrete on this land?</p>
+
+<div class="sc"><h4>Scene 1 · Cold open <span class="tc">0:00–0:45</span></h4>
+<div class="nar">In nineteen eleven, the federal government ordered every rancher in this county to build a concrete trough and fill it with arsenic.<br><br>
+A hundred and fourteen years later, a man walking a public trail in Ladera Ranch found a concrete base in the ground.<br><br>
+Nobody has ever tested the soil around it. This film is about why not — and about exactly where you would test, if you wanted to know.</div>
+<div class="gfx"><b>Graphics:</b> Phase 2 discovery clip (15 s, existing asset) → slow push into the 1912 federal vat drawing, USDA Circular 207 Fig. 1 → hard cut to black. <b>No map yet.</b></div>
+<p class="small"><span class="cls v">DOCUMENTED</span> the 1907–1912 California quarantine and the arsenical dip requirement — USDA BAI Circular 174, <i>Eradicating Cattle Ticks in California</i>, 1911, which names Orange County among counties "heavily infested." <span class="cls v">DOCUMENTED</span> the concrete base exists and was photographed. <span class="cls unk">UNKNOWN</span> what it is.</p></div>
+
+<div class="sc"><h4>Scene 2 · What a vat is, and what survives of one <span class="tc">0:45–2:15</span></h4>
+<div class="nar">A dipping vat is a narrow concrete trough, twenty-six feet long and six and a half feet deep, with a sloped entry at one end and a ramp at the other. Beside it sits a drip pen — a flat concrete floor, roughened, sloped toward a drain.<br><br>
+Everything else is timber. The rails the cattle brushed against, the chute gates, the plank walkways. Wood rots. <b>Concrete stays.</b><br><br>
+This is what one looks like now, in Florida, where the state went looking for them. Low walls under scrub. A trench full of reeds. A ramp half buried. If you did not know, you would walk past it.</div>
+<div class="gfx"><b>Graphics:</b> Circular 207 Fig. 1 animated — plan, then longitudinal section, then cross-section, each labelled as it appears. Cross-dissolve to the 1912 and 1941 federal photographs of vats in use. Then the Florida derelict sequence: overgrown, trench, flooded with ramp, drip-pad slab. Each carries its citation block.</div>
+<p class="small"><span class="cls v">DOCUMENTED</span> dimensions and drip-pen detail — USDA BAI Circular 207, 1912, Fig. 1. <span class="cls v">DOCUMENTED</span> vats in use — NARA RG 95, NAID 7007707 (27 May 1912, photographer F. Rush) and NAID 2129009 (June 1941). <span class="cls v">DOCUMENTED</span> derelict condition — Florida DEP Cattle Dip Vat programme photographs, 2016 and 2018. <b>All Florida imagery is captioned on screen as Florida, not Ladera.</b></p></div>
+
+<div class="sc"><h4>Scene 3 · Nobody wrote it down, because nobody had a word for it <span class="tc">2:15–3:40</span></h4>
+<div class="nar">So I built a list. A hundred and fifty-nine terms, in seven registers — every phrase a surveyor, an engineer, an archaeologist or an environmental consultant might reach for when they meet a concrete trough in the brush and have no idea what it is.<br><br>
+Then I ran all of them against four hundred and seventy pages of the environmental record for this land.<br><br>
+Twenty-two of those terms are the correct names. Dip vat. Cattle dip. Plunge vat. Tick eradication. Sodium arsenite.<br><br>
+Not one of them appears. Not once, in four hundred and seventy pages.</div>
+<div class="gfx"><b>Graphics:</b> The seven registers build as a column of cards. Then a counter animation runs the sweep — terms flying past, hit counts landing. Register A resolves to a large <b>0 / 22</b>. Behind it, the page-count ticker settles at 470.</div>
+<p class="small"><span class="cls v">DOCUMENTED</span> the sweep and its result — LEHRP terminology sweep, 20 Sept 2026, 159 terms across 6 documents, 470 pages, 956,237 characters; full term list and per-term hit counts published as <code>LEXICON.md</code> and <code>sweep_results.json</code>. <span class="cls inf">INFERRED</span> that the silence reflects vocabulary rather than absence.</p></div>
+
+<div class="sc"><h4>Scene 4 · But the vocabulary exists — for industry <span class="tc">3:40–4:50</span></h4>
+<div class="nar">Here is the thing. Those same consultants wrote about concrete constantly.<br><br>
+A concrete vault a fuel tank came out of. Two concrete-lined containment sumps at the drum farm. A concrete pad that used to be a laser test pad. Concrete tanks for cooling water at a rocket test stand.<br><br>
+Thirty passages, and every single one names what the concrete was for.<br><br>
+Now here is the sentence they used for open grazing land, repeated almost word for word across the ranch: <b>no evidence of contamination, distressed vegetation, petroleum-hydrocarbon staining, illegal dumping, or improper waste storage.</b><br><br>
+Six things to look for. A rotted post and a length of pipe in the brush is none of them.</div>
+<div class="gfx"><b>Graphics:</b> Document zoom on EIR 589 Appendix I, printed pp. 22–23, with a highlight sweep hitting each concrete phrase in turn. Then a split: left, the industrial vocabulary as a list; right, the six-item field checklist. The checklist items tick off one by one against a photograph of a derelict vat and all six fail.</div>
+<p class="small"><span class="cls v">DOCUMENTED</span> all quoted phrases — EIR 589 Appendix I, Phase I ESA, Planning Area 8 (TRW/Northrop Grumman Space Technology), 15 May 2003 rev. Feb 2004, printed pp. 22–23. <span class="cls v">DOCUMENTED</span> the field checklist — same document, Planning Areas 1–9, §5.1, identical wording. <span class="cls v">DOCUMENTED</span> that every concrete observation in the corpus is attributed — LEHRP evidence extract, <code>observation_passages.json</code>, 693 passages classified.</p></div>
+
+<div class="sc"><h4>Scene 5 · The questionnaire that almost asked <span class="tc">4:50–5:35</span></h4>
+<div class="nar">There was one question that could have found it. It is printed in every planning area report, and it reads:<br><br>
+<b>Are there currently, or to the best of your knowledge have there been previously, any pits, ponds, or lagoons located on the property in connection with waste treatment or waste disposal?</b><br><br>
+A vat is a pit. The answer was no.<br><br>
+And I want to be fair about that answer, because the same person, two questions earlier, volunteered something nobody asked them to: <b>years ago we used to dump oil off the corner of the shop building.</b><br><br>
+That is not somebody hiding things. That is somebody answering honestly a question about waste disposal. A livestock bath is not waste disposal. Nobody was lying. <b>The question simply did not reach.</b></div>
+<div class="gfx"><b>Graphics:</b> The questionnaire page, zoomed, the pits-ponds-lagoons item highlighted, then the phrase "in connection with waste treatment or waste disposal" isolated and enlarged. Cut to the oil admission, highlighted in a different colour.</div>
+<p class="small"><span class="cls v">DOCUMENTED</span> both quotations verbatim — EIR 589 Appendix I, Planning Area 1, owner questionnaire, PDF pp. 19–20.</p></div>
+<div class="sc"><h4>Scene 6 · The concrete structure that <i>was</i> photographed — and what the record actually says <span class="tc">5:35–6:35</span></h4>
+<p class="small"><b>This is the scene the earlier project note got wrong. The corrected chronology below is taken directly from the primary report and has been re-verified for this draft.</b></p>
+<div class="nar">There is one place in this valley where somebody did photograph a concrete structure of ambiguous appearance before an excavator reached it.<br><br>
+A farm on Alipaz Street in San Juan Capistrano. February two thousand and nine.<br><br>
+The contractor mobilised on the twentieth. Three days later, on the twenty-third, they demolished a concrete pad with a tank containment on it — and before they did, it was photographed, and the caption recorded what it was.<br><br>
+It was the farmer's secondary containment. Not in service. Known, named, written down.<br><br>
+<b>That is the process. Somebody stood in a field, photographed a concrete structure, wrote down what it was, and only then brought in the machine.</b><br><br>
+It is not what happened at Ladera Ranch.</div>
+<div class="gfx"><b>Graphics:</b> The photograph (Appendix E, p. 21) full frame, then the caption isolated. Then an animated timeline: 27 Jan workplan → 2 Feb approval → 20 Feb mobilisation → 23 Feb demolition → 24 Feb confirmation sampling. The photograph sits <b>unanchored above the 20–23 Feb window</b> with a label reading "photograph undated in the report."</div>
+<div class="tablewrap"><table><thead><tr><th style="width:18%">Date</th><th>What the report says</th><th style="width:16%">Class</th></tr></thead><tbody>
+<tr><td>27 Jan 2009</td><td>Environ Strategy submits the Excavation Workplan for Soil Removal</td><td><span class="cls v">DOCUMENTED</span></td></tr>
+<tr><td>2 Feb 2009</td><td>Orange County Health Care Agency approves the workplan by letter</td><td><span class="cls v">DOCUMENTED</span></td></tr>
+<tr><td>20 Feb 2009</td><td>"ICS mobilized to the site… The area had been cleared by the farmer for excavation, including demolition of the carport, relocation of a trailer, and removal of hay bales."</td><td><span class="cls v">DOCUMENTED</span></td></tr>
+<tr><td><b>23 Feb 2009</b></td><td>"ICS began field operations by <b>demolishing a concrete pad with an aboveground storage tank (AST) secondary containment on it. The secondary containment was previously used by the farmer, but was not in service at the time of demolition.</b>"</td><td><span class="cls v">DOCUMENTED</span></td></tr>
+<tr><td>24 Feb 2009</td><td>OCHCA on site to observe confirmation soil sampling; nine samples collected</td><td><span class="cls v">DOCUMENTED</span></td></tr>
+<tr><td>—</td><td>Date the photograph was taken</td><td><span class="cls unk">UNKNOWN</span></td></tr>
+</tbody></table></div>
+<p class="small"><span class="cls v">DOCUMENTED</span> Environ Strategy Consultants, Inc., <i>Soil Excavation Report, Kinoshita Farm, 32701 Alipaz Street, San Juan Capistrano</i>, project 476, 3 April 2009, §§4.0–5.3 and Appendix E (Photographs). Held via State Water Board GeoTracker, case T10000000266. <b>Narration must not say "four days." The gap between mobilisation and demolition is three days, and the photograph is not dated.</b> <span class="cls v">DOCUMENTED</span> the structure is identified in the record as an AST secondary containment; <b>it is not an unexplained structure and the film must not present it as one.</b></p></div>
+
+<div class="sc"><h4>Scene 7 · The photographs of Ladera Ranch that do exist <span class="tc">6:35–7:30</span></h4>
+<div class="nar">There are photographs of Ladera Ranch ground. Sixteen of them, taken on the thirty-first of January, two thousand and two, for an environmental assessment of a school site at Sienna Parkway and O'Neill Drive.<br><br>
+Here is what they show. Bare graded earth. Scraper tracks. A haul road. A drainage basin with a standpipe in it. Construction trailers on the horizon.<br><br>
+Not one permanent structure. No foundation. No wall. No slab.<br><br>
+And the reason is in the report's own sentence: mass grading began in nineteen ninety-nine and finished in the summer of two thousand and one. The site walk was seven months later.<br><br>
+<b>The environmental professional arrived after the ground was gone.</b></div>
+<div class="gfx"><b>Graphics:</b> The six best frames in sequence with their printed captions. Then the grading timeline as a bar: 1999 → summer 2001 grading, a gap, then a marker at 31 Jan 2002 labelled "site reconnaissance." Then the phrase "up to 110 feet of soil fill" builds as a vertical scale bar against a human figure.</div>
+<p class="small"><span class="cls v">DOCUMENTED</span> NMG Geotechnical, Inc., <i>Phase I Environmental Site Assessment for the planned school located southeast of Sienna Parkway and O'Neill Drive, Ladera Ranch, California</i>, project 01079-02, 4 Feb 2002, §§2.3, 2.4, 3.1 and Appendix B photographs 1–16. DTSC EnviroStor case 30020004 / site code 404477.</p></div>
+
+<div class="sc"><h4>Scene 8 · Somebody was required to be watching <span class="tc">7:30–8:10</span></h4>
+<div class="nar">And yet — somebody was supposed to be there.<br><br>
+The Ladera Planned Community Program Text, condition twenty-two, requires County conditions for archaeological and paleontological survey, investigation, and — this is the phrase — <b>observance of grading activities</b>. On every Area Plan. On every tract map. Under Board of Supervisors Resolution seventy-seven eight sixty-six.<br><br>
+That means a qualified person was contractually required to be standing there while the ground was opened.<br><br>
+Those reports have never been read. They sit at the regional records office at Cal State Fullerton, and nobody in this investigation has asked for them.</div>
+<div class="gfx"><b>Graphics:</b> The Program Text page, printed p. 14, zoomed; condition 22 highlighted; the phrase "observance of grading activities" isolated and enlarged. Then condition 21 above it highlighted in a second colour, labelled "and a second survey, by a different County office."</div>
+<p class="small"><span class="cls v">DOCUMENTED</span> Ladera Planned Community Program Text, 17 Oct 1995 rev. 30 Jul 2003, General Regulations, conditions 21 and 22, printed p. 14. Recovered by OCR for this project; the document has no text layer. <span class="cls v">DOCUMENTED</span> Resolutions 77-866 and 87-516 require monitoring of County-permitted projects and donation of finds to the County — OC Parks, County of Orange Paleontology and Archaeology Collections. <span class="cls unk">UNKNOWN</span> whether any such report records anything relevant.</p></div>
+
+<div class="sc"><h4>Scene 9 · Part 1 map — what was found, where, and what happened to it <span class="tc">8:10–8:30</span></h4>
+<div class="gfx"><b>Graphics — the Part 1 map build, layer by layer on 2022 county imagery:</b><br>
+1. Ladera Ranch boundary, from the Planned Community Zoning Map bearings <span class="cls v">DOCUMENTED</span><br>
+2. Arroyo Trabuco Golf Club, town centre, Oso Grande school site, open space — labelled<br>
+3. The Phase 2 concrete base — <b>single marker, styled as</b> <span class="cls ap">APPROXIMATE</span>, with a stated uncertainty radius, never a pin-point<br>
+4. The 2002 school-site parcel and its 16 photograph positions <span class="cls v">DOCUMENTED</span><br>
+5. Historic water: the 1942-mapped groundwater well ~700 ft south, and the abandoned oil well ~750 ft south <span class="cls ap">APPROXIMATE</span><br>
+6. CalGEM wells of record inside the boundary — O'Neill 1 and Citizens National Trust &amp; Savings B-1 <span class="cls ap">APPROXIMATE</span>, labelled "coordinates digitised from mylar, not surveyed"<br>
+7. Ten linear anomalies tested from 1937/1969 imagery, each shown <b>struck through</b> with its resolution <span class="cls v">DOCUMENTED</span></div>
+<div class="nar">So this is the map of Part One. One concrete base, located approximately. Two wells named in the record. Ten anomalies I tested from the air and resolved as drainage, brush and ranch tracks. And a school site where the only photographs of this ground were taken after it had been levelled.<br><br>
+That is everything the record gives us about where to look.<br><br>
+Which brings the obvious question. <b>If you wanted to actually answer this — where would you test?</b></div>
+<p class="small"><b>Hard rule for this map:</b> the Phase 2 concrete base is drawn with an uncertainty halo and the label <span class="cls ap">APPROXIMATE</span> at all times, and coordinates are never shown to more precision than the project's staged-disclosure practice allows.</p></div>
+<h2 id="p2">Part 2 · Where should the soil be tested? <span class="small">(8:30–15:00)</span></h2>
+<p class="lead">The transition from "where might it have been" to "where would a sample actually answer something."</p>
+
+<div class="sc"><h4>Scene 10 · The land was farmed before it was graded <span class="tc">8:30–10:00</span></h4>
+<div class="nar">Before you can decide where to dig, you have to know what happened to the ground.<br><br>
+In nineteen thirty-seven this was open rangeland. Natural drainage, no field boundaries, nothing worked.<br><br>
+By nineteen fifty-three, look at it. Contour ploughing across the ridgetops and the valley floors. Curved bands following the slope. Field edges.<br><br>
+And somebody wrote on the photograph. A surname. An acreage — two hundred and thirty acres. A year, nineteen forty-five, and a crop. On the next frame, field numbers circled in ink, and the word <b>beans</b>, over and over.<br><br>
+These aren't just aerial photographs. <b>Somebody used them as farm maps.</b><br><br>
+And that matters, because ploughing mixes the top foot of soil. It does not remove concrete, and it does not cut the profile.</div>
+<div class="gfx"><b>Graphics:</b> 1937 and 1953 of the same ground, cross-faded on a shared grid. Then push into the handwriting: "Wiegand", "230.0 A", "1945", the circled "242". Cut to the second frame: inked field boundaries, circled 156 and 157, "Beans" labels traced as they are read. Then a soil cross-section animation — plough zone shaded to about one foot, profile below it intact.</div>
+<p class="small"><span class="cls v">DOCUMENTED</span> land condition by date — Orange County Historic Imagery service, frames OID 310 (1937, native 1.15 ft/px), 357 (1953), 315 (1969), 320 (1980); 32 frames intersect the footprint. <span class="cls v">DOCUMENTED</span> the annotations exist and are on the original prints. <span class="cls ap">APPROXIMATE</span> the reading "Wiegand" and the crop word; the acreage 230.0 and the field numbers 242, 156, 157 are legible. <span class="cls v">DOCUMENTED</span> the consultant's own account: "part of the site's upper (western) portion appears to have been <b>plowed</b> at some time in the site's past" — NMG 01079-02, §3.3, 1952 aerial review. <span class="cls v">DOCUMENTED</span> "used for dry farming and grazing" — same report §2.3. <span class="cls unk">UNKNOWN</span> who kept the field register these numbers key into.</p></div>
+
+<div class="sc"><h4>Scene 11 · Then the ground was moved <span class="tc">10:00–11:00</span></h4>
+<div class="nar">Then, between nineteen ninety-nine and the summer of two thousand and one, the developed footprint was mass graded.<br><br>
+On the school parcel alone, the report records fill <b>up to a hundred and ten feet deep</b>, taken from the site itself and from undeveloped land immediately around it.<br><br>
+And the report says something else, about pesticides, that is worth reading slowly.<br><br>
+<b>Any pesticides or herbicides at the site were likely in the upper surficial soils, which were removed prior to fill placement. These materials, if any, were likely mixed with clean soil and or placed at lower depths during fill placement.</b><br><br>
+Read that again. The material is not described as leaving the property. It is described as stripped from the surface, mixed, and put back deeper.</div>
+<div class="gfx"><b>Graphics:</b> Terrain animation — original landform from contours, then the graded surface, cut shown in one colour and fill in another. Then the quoted sentence typed on screen, with "removed prior to fill placement" and "placed at lower depths" highlighted in sequence. <b>No arrows showing individual soil moving from A to B</b> — see the constraint note below.</div>
+<div class="card stop"><h4>Constraint the film must respect here</h4>
+<p>The grading records establish <b>that</b> cut and fill occurred and to what depth. <b>They do not establish the origin of any individual volume of soil.</b> The film must say so in narration, in this scene, in plain words: <i>"The plans tell us how much earth moved and how deep. They do not tell us which earth went where."</i> Any animated soil-movement arrow is therefore <span class="cls inf">INFERRED</span> and must be labelled as a schematic of the grading concept, not a tracked volume. <b>If the grading plans requested in Part 2's records list are obtained and do establish direction, this scene is re-cut.</b></p></div>
+<p class="small"><span class="cls v">DOCUMENTED</span> NMG 01079-02, §2.4 ("underlain with up to 110 feet of soil fill"), §2.3 (grading 1999 to summer 2001), §4.2 (pesticide reasoning, quoted verbatim). <span class="cls v">DOCUMENTED</span> the grading monitor interview — §3.7, Goffman, McCormick &amp; Urban, Mr Bob Mutchnik: asked whether "underground structures, such as <b>fuel storage tanks and clarifiers</b>" were encountered. <span class="cls inf">INFERRED</span> that the question asked could not have surfaced a dipping structure.</p></div>
+
+<div class="sc"><h4>Scene 12 · Three kinds of ground <span class="tc">11:00–12:00</span></h4>
+<div class="nar">So by the time anyone could take a sample, this land came in three conditions.<br><br>
+Ground that was ploughed and then graded — the top foot mixed, then the whole profile cut or buried.<br><br>
+Ground that was ploughed but never graded — mixed shallow, but still sitting where it always sat.<br><br>
+And ground that was neither. Never farmed, never cut. <b>That is the ground that still holds its original surface, and it is the most informative ground on the map.</b></div>
+<div class="gfx"><b>Graphics:</b> Three soil columns side by side, animated: full mixing and truncation; shallow mixing only; intact horizons. Then the wide 2022 satellite with the disturbance overlay fading in — but see the caveat card below, which is spoken, not just written.</div>
+<div class="card warn"><h4>What the film must admit about its own map here</h4>
+<p>A texture-based classification of the historical aerials was built for this project and <b>it is not reliable enough to sample from</b>. Ploughed fields, smooth natural ridgetops and 1960s housing tracts all look alike to a texture measure. The narration says this out loud: <i>"I built a map of which ground was worked. It is a sketch, not a survey — and the real boundaries are on the grading plans, which I have asked for and do not yet have."</i> The overlay appears on screen with the label <span class="cls mod">MODEL</span> and the words "indicative only."</p></div>
+<p class="small"><span class="cls mod">MODEL</span> LEHRP change-detection, 1937 vs 1953/1969, texture and directional-coherence score, county imagery on a common WGS84 grid. <span class="cls unk">UNKNOWN</span> the true grading limits until OC Public Works releases the rough grading plans with existing-conditions and demolition exhibits.</p></div>
+
+<div class="sc"><h4>Scene 13 · The twenty-three <span class="tc">12:00–13:40</span></h4>
+<div class="nar">Earlier in this investigation I mapped every surface water body recorded on this land by the nineteen sixty-eight survey, and asked a simple question of each one: if cattle were dipped here, where would they have been dipped?<br><br>
+Not at the house. Not at the road. <b>At the water.</b> A vat needs several thousand gallons on a fortnightly cycle. You build it where the water is.<br><br>
+That produced twenty-three locations. And then reality intervened, because most of them are now under something.<br><br>
+So each one was re-examined against what is there today — fairway, slope, park, landscape strip, road — and moved to the nearest accessible ground that still relates to the original point.</div>
+<div class="gfx"><b>Graphics:</b> The 23 targets drop onto satellite imagery one at a time, each with its class (golf, park, slope, landscape, open space) and its offset distance from the original water point. Colour by sampling role, not by drama.</div>
+<div class="tablewrap"><table><thead><tr><th style="width:22%">Sampling role</th><th>What it answers</th><th style="width:20%">Class</th></tr></thead><tbody>
+<tr><td><b>Source-area</b></td><td>Is there elevated arsenic at a historic water point itself?</td><td><span class="cls hyp">TESTABLE</span></td></tr>
+<tr><td><b>Drainage-path</b></td><td>Did anything move downslope from a source area?</td><td><span class="cls hyp">TESTABLE</span></td></tr>
+<tr><td><b>Fill / deposition</b></td><td>Did stripped surface soil end up concentrated anywhere?</td><td><span class="cls hyp">TESTABLE</span></td></tr>
+<tr><td><b>Undisturbed control</b></td><td>What does never-farmed, never-graded ground here read?</td><td><span class="cls hyp">TESTABLE</span></td></tr>
+<tr><td><b>Regional background</b></td><td>What is normal for this geology, off the ranch entirely?</td><td><span class="cls hyp">TESTABLE</span></td></tr>
+</tbody></table></div>
+<p class="small"><span class="cls v">DOCUMENTED</span> the 23 locations, their present-day condition and their recommended offsets — LEHRP soil sampling strategy, <code>targets_data.json</code>, published as <code>LADERA_SOIL_SAMPLING_STRATEGY.html</code> and <code>LADERA_SAMPLING_PLAN_TECHNICAL.html</code>. <span class="cls v">DOCUMENTED</span> water bodies — 1968 USGS survey. <span class="cls inf">INFERRED</span> the siting logic that vats follow water. <b>No target is presented as a vat location.</b></p></div>
+
+<div class="sc"><h4>Scene 14 · Why a control matters more than a hit <span class="tc">13:40–14:40</span></h4>
+<div class="nar">And here is the part that decides whether any of this means anything.<br><br>
+Arsenic occurs naturally in California soils. A number on its own tells you nothing. <b>A number only means something next to another number.</b><br><br>
+So every sample at a historic water point is paired — with undisturbed ground that was never farmed and never graded, and with background soil in the same geology, off the ranch entirely.<br><br>
+If the source areas read the same as the controls, that is an answer. A real one. And it would be the most valuable result this investigation could produce.</div>
+<div class="gfx"><b>Graphics:</b> A simple paired-bar animation — source vs control vs background — shown twice: once resolving to "no difference," once to "a difference." Both outcomes shown as legitimate findings, equal weight.</div>
+<p class="small"><span class="cls v">DOCUMENTED</span> arsenic occurs naturally in California soils at variable background levels; control and background sampling is standard practice. <span class="cls hyp">TESTABLE</span> the entire question. <b>The narration explicitly frames a null result as a success.</b></p></div>
+
+<div class="sc"><h4>Scene 15 · What a sample actually is <span class="tc">14:40–15:00</span></h4>
+<div class="nar">And these are not exotic tests. Surface soil, nought to six inches, where a child's hand reaches. A deeper interval where fill was placed. Digestion, then mass spectrometry. Speciation where total arsenic warrants it, because the form matters more than the amount.<br><br>
+Standard methods. Ordinary laboratories. <b>A few hundred dollars a sample.</b></div>
+<div class="gfx"><b>Graphics:</b> Clean method card — EPA 3050B / 3051A digestion, 6020B ICP-MS, 1340 bioaccessibility, HPLC-ICP-MS speciation, 8081B organochlorine pesticides. Depth diagram 0–6 in and fill interval.</div>
+<p class="small"><span class="cls v">DOCUMENTED</span> methods as specified in the project sampling plan. <span class="cls ap">APPROXIMATE</span> cost per sample.</p></div>
+<h2 id="p3">Part 3 · The purple-pipe loop <span class="small">(15:00–23:15)</span></h2>
+<p class="lead">The water does not end where it drains.</p>
+
+<div class="sc"><h4>Scene 16 · Two systems, and they are not the same <span class="tc">15:00–16:10</span></h4>
+<div class="nar">Before anything else, one distinction, because everything downstream depends on it.<br><br>
+Ladera Ranch has two water systems.<br><br>
+One is drinking water. Imported, treated, tested to state standards, published every year in a consumer confidence report. <b>That is not what this part of the film is about, and nothing here should be read as a claim about the tap.</b><br><br>
+The other is the non-potable system. Recycled water, in purple pipes, for landscape irrigation. Slopes, parks, medians, common-area turf.<br><br>
+Different pipes. Different storage. Different rules. <b>And a very different testing history.</b></div>
+<div class="gfx"><b>Graphics:</b> Clean split diagram, built in two halves that never touch. Left: source → potable storage → distribution → tap, tinted blue. Right: recycled source → non-potable storage → purple distribution → sprinkler, tinted violet. Then both placed on satellite imagery with their respective storage shown. <b>Requirement:</b> the potable tank and the non-potable storage must be visually and textually distinguished, and neither may be mislabelled.</div>
+<p class="small"><span class="cls v">DOCUMENTED</span> the two systems are separate — Santa Margarita Water District recycled-water materials and annual consumer confidence reports held in project. <span class="cls v">DOCUMENTED</span> drinking water arsenic reported non-detect to trace in the CCRs. <b>Production note: before this scene is rendered, the specific potable and non-potable storage facilities must be identified from engineering drawings and the drawing number cited on screen. If the drawings are not obtained, the tanks are shown schematically and labelled</b> <span class="cls ap">APPROXIMATE</span>.</p></div>
+
+<div class="sc"><h4>Scene 17 · Where Ladera's runoff actually goes <span class="tc">16:10–18:00</span></h4>
+<div class="nar">Now follow the water.<br><br>
+Rain and irrigation run off roofs, lawns, streets and slopes. It enters the storm system and the Sienna Botanica corridor, and it drains to Horno Creek.<br><br>
+At the bottom of the watershed it collects in the Horno Water Quality Basin, owned and operated by the County of Orange. When a storm is big enough, the excess carries on toward San Juan Creek and the ocean. <b>The loop takes the low flows — the dry-weather water.</b><br><br>
+From the basin it passes through seven acres of constructed wetlands owned by the Ladera Ranch Homeowners Association.<br><br>
+And then it is pumped into the district's recycled distribution system, and blended with recycled water, for — in the permit's own words — <b>subsequent landscape irrigation use.</b><br><br>
+Roughly a hundred and eighty acre-feet a season. About fifty-nine million gallons. Sprayed back onto the community it came from.</div>
+<div class="gfx"><b>Graphics:</b> The six-step route animated on 2025 county imagery, numbered 1 to 6, water rendered as a flowing line. Storm bypass shown as a branch that leaves the system toward San Juan Creek. Volume visualised at the end — restrained, a simple comparison, no shock framing.</div>
+<p class="small"><span class="cls v">DOCUMENTED</span> the whole route — San Diego RWQCB <b>Addendum No. 4 to Order No. 97-52</b>, adopted <b>8 October 2008</b>, permitting the Horno Urban Water Recovery Facility, Tract 15793, Horno Creek Hydrologic Subarea 901.27. Held in project with SHA-256. <span class="cls v">DOCUMENTED</span> "through seven acres of constructed wetlands, owned by Ladera Ranch Homeowners Association" and "prior to blending with recycled water" for "subsequent landscape irrigation use" — same order. <span class="cls v">DOCUMENTED</span> district description: collects "urban return (runoff) water from Oso Creek, Dove Creek, and Horno Creek to blend with the recycled water… for irrigation." <span class="cls ap">APPROXIMATE</span> ~180 acre-feet / ~59 million gallons per dry season — figure traced to the order; on-screen wording must read "about."</p></div>
+
+<div class="sc"><h4>Scene 18 · It does not go through the treatment plant <span class="tc">18:00–19:20</span></h4>
+<div class="nar">There is an assumption worth killing here, because it is the natural one to make.<br><br>
+This water does not pass through the Chiquita Water Reclamation Plant.<br><br>
+The permit proves it four ways, and the cleanest is the monitoring scheme. Provision K sets up <b>two separate sampling points</b>. One: sample the diversion water, either before or after mixing with recycled water. Two: sample the effluent from the recycled water facilities at the point of discharge, <b>prior to blending with diversion water</b>.<br><br>
+Two monitoring points, for two streams, that meet downstream. That is incoherent if the runoff had already been through the plant.<br><br>
+And the waived parameters say the same thing. The diversion water is exempted from biochemical oxygen demand, total suspended solids, and odour — <b>sewage plant metrics</b>. The waiver exists because this stream was never sewage.<br><br>
+So the treatment this water receives, in total, is a settling basin and seven acres of wetland. That is the permitted design. It is normal for urban runoff recovery. <b>What makes it worth a film is the history of the land it drains.</b></div>
+<div class="gfx"><b>Graphics:</b> The permit text on screen, Provision K.1 and K.2 highlighted in turn. Then the two-stream diagram built: recycled plant effluent on one line, Horno diversion water on another, converging at a blend node, then out to purple pipe. The Chiquita plant shown on the map with a clear "not in this stream's path" treatment — <b>marked out, not implied.</b></div>
+<p class="small"><span class="cls v">DOCUMENTED</span> Provision K.1 and K.2 quoted — RWQCB Addendum No. 4 to Order 97-52, 8 Oct 2008. <span class="cls v">DOCUMENTED</span> BOD/TSS/Odor waiver for diversion water — same provision. <span class="cls inf">INFERRED</span> that two monitoring points imply two streams — this is reasoning from the document and is labelled as such on screen. <b>Production gate: the on-screen quotation must be lifted from the held PDF and shown as an image of the page, not retyped.</b></p></div>
+
+<div class="sc"><h4>Scene 19 · What was tested, and what was not <span class="tc">19:20–20:40</span></h4>
+<div class="nar">Which brings the question this whole part exists to ask. <b>What has anybody measured in this water?</b><br><br>
+The permit records characterisation sampling, November two thousand and four through April two thousand and five. Here is the list.<br><br>
+Total dissolved solids. Sulfate. Sodium. Chloride. Boron. Nitrate. Fluoride. Phosphorus.<br><br>
+Salts and nutrients. Every one of them a parameter you measure to protect plants and groundwater from salinity.<br><br>
+Now here is what is not on that list. <b>Arsenic. A pesticide panel. Pharmaceuticals.</b><br><br>
+I want to be precise about what that means, because it is easy to overstate. It does not mean those things are in the water. <b>It means nobody looked.</b> Twenty years of operation, and the publicly identified testing reviewed in this project does not answer the question.</div>
+<div class="gfx"><b>Graphics:</b> The characterisation results as a table, values shown. Then, beside it, a second panel headed "not measured" with three entries appearing. The contrast is left to do the work — <b>no red, no alarm styling, no sound sting.</b></div>
+<div class="tablewrap"><table><thead><tr><th style="width:34%">Measured, Nov 2004 – Apr 2005</th><th style="width:18%">Value</th><th>Not in those records</th></tr></thead><tbody>
+<tr><td>Total dissolved solids</td><td>686 mg/L</td><td rowspan="8"><b>Arsenic</b> — not identified in the characterisation sampling reviewed<br><br><b>Pesticide analytical panel</b> — not identified<br><br><b>Pharmaceuticals / contaminants of emerging concern</b> — not identified<br><br><span class="cls unk">UNKNOWN</span> whether any of these are present, at any level</td></tr>
+<tr><td>Sulfate</td><td>349 mg/L</td></tr>
+<tr><td>Sodium</td><td>57 mg/L</td></tr>
+<tr><td>Chloride</td><td>48.5 mg/L</td></tr>
+<tr><td>Boron</td><td>0.22 mg/L</td></tr>
+<tr><td>Nitrate</td><td>0.6 mg/L</td></tr>
+<tr><td>Fluoride</td><td>0.275 mg/L</td></tr>
+<tr><td>Phosphorus</td><td>0.4 mg/L</td></tr>
+</tbody></table></div>
+<p class="small"><span class="cls v">DOCUMENTED</span> the characterisation values — RWQCB Addendum No. 4 to Order 97-52, Finding 5. <span class="cls v">DOCUMENTED</span> CEQA Notice of Exemption 29 Sept 2006 — same order, Finding 7 — establishing no environmental review of this stream's chemistry. <b>Outstanding record that must be obtained before this scene is locked: base Order 97-52 Table A-1, to confirm whether arsenic appears on the underlying compliance list. Until that is checked the narration says "the publicly identified testing reviewed in this project," not "no testing exists."</b></p></div>
+
+<div class="sc"><h4>Scene 20 · The correction — what fails and what survives <span class="tc">20:40–21:50</span></h4>
+<div class="nar">Now I have to correct something, because the obvious story here is wrong and I would rather say so than sell it.<br><br>
+The obvious story is that a loop concentrates. Water goes round, evaporates, comes back stronger, round again — compounding.<br><br>
+<b>It doesn't work.</b> The loop is partial. Storms bypass it. Plants transpire it. Recycled water dilutes it. Model that generously and the enrichment tops out somewhere around one point zero two to one point two eight times. That is not compounding. That is noise.<br><br>
+So the water-concentration story fails.<br><br>
+What survives is different, and simpler. <b>Redistribution</b> — whatever the drainage carries is sprayed across the community rather than leaving it. And <b>deposition</b> — water evaporates, and anything persistent it carried stays in the soil, a little at a time, for two decades and counting.<br><br>
+Those are not the same question. And the second one has never been measured.</div>
+<div class="gfx"><b>Graphics:</b> Two animations side by side. Left, "compounding": concentration climbs then flattens at ~1.1×, clearly labelled <span class="cls mod">MODEL</span> and marked <b>FAILS</b>. Right, "deposition": water arrives, evaporates, a small residue remains, repeat — the residue line rises linearly. Marked <span class="cls hyp">TESTABLE</span>.</div>
+<p class="small"><span class="cls mod">MODEL</span> recirculation mass balance, enrichment ×1.02–×1.28, transparent parameters — LEHRP Purple-Pipe Loop report v3, 11 Sept 2026, §4 and E8. <span class="cls inf">INFERRED</span> that redistribution and soil deposition remain live questions. <span class="cls unk">UNKNOWN</span> whether any constituent of concern is present in the stream at all. <b>The film states the failure of its own earlier hypothesis out loud. This is deliberate and must survive the edit.</b></p></div>
+
+<div class="sc"><h4>Scene 21 · Pesticides, handled carefully <span class="tc">21:50–22:30</span></h4>
+<div class="nar">One more thing to be careful about.<br><br>
+This land grew beans and barley for decades, and it is landscaped intensively now. Both of those are reasons to <b>test</b> for pesticides. Neither is evidence that pesticides are circulating.<br><br>
+So the honest formulation is not "pesticides are in Ladera's water." It is this: <b>given the documented land use, here is the panel a competent laboratory would run, and here is why.</b></div>
+<div class="gfx"><b>Graphics:</b> Two columns — "documented land use" (dry-farmed field crops 1940s–1980s; modern HOA landscape maintenance) and "therefore reasonable to screen for" (organochlorine residues given the era of cultivation; current-use landscape herbicides and insecticides). Each row carries its basis.</div>
+<p class="small"><span class="cls v">DOCUMENTED</span> dry farming of beans and barley, from the annotated 1937 prints and the consultants' own land-use descriptions. <span class="cls v">DOCUMENTED</span> modern landscape irrigation of common areas via the recycled system. <span class="cls unk">UNKNOWN</span> all historical application records; none have been located. <span class="cls hyp">TESTABLE</span> the panel. <b>No assertion of presence anywhere in this scene.</b></p></div>
+<div class="sc"><h4>Scene 22 · The water testing design <span class="tc">22:30–23:15</span></h4>
+<div class="nar">So how would you actually answer it?<br><br>
+Not with one sample. With a network small enough to fund and specific enough to tell sources apart.<br><br>
+You need to know what enters the system, what the basin and the wetlands change, what the recycled stream carries on its own, what comes out of the blend, what reaches a sprinkler head — and what, if anything, ends up in the ground.<br><br>
+<b>Seven points. That is the whole design.</b></div>
+<div class="gfx"><b>Graphics:</b> The seven water points drop onto the route animation in order, each labelled with what it isolates. Then the soil and sediment points join. Then the full network holds.</div>
+<p class="small">Full specification in the testing plan below.</p></div>
+
+<h2 id="final">The final integrated map <span class="small">(23:15–24:00)</span></h2>
+<div class="sc"><h4>Scene 23 · Eight layers, then all of them</h4>
+<div class="gfx"><b>Build order, one layer at a time on 2022/2025 county imagery, each announced and each holding for about four seconds:</b><br>
+<b>1.</b> Possible historical concrete-structure locations <span class="cls ap">APPROXIMATE</span> — with uncertainty halos<br>
+<b>2.</b> The 23 historical water-source soil targets <span class="cls v">DOCUMENTED</span> water points, <span class="cls ap">APPROXIMATE</span> recommended sample offsets<br>
+<b>3.</b> Grading, cut and fill <span class="cls mod">MODEL</span> — labelled indicative; replaced with the real limits when the grading plans arrive<br>
+<b>4.</b> Horno drainage system <span class="cls v">DOCUMENTED</span><br>
+<b>5.</b> Horno basin and the seven acres of constructed wetlands <span class="cls v">DOCUMENTED</span><br>
+<b>6.</b> Recycled / purple-pipe system — storage and destination <span class="cls v">DOCUMENTED</span>; alignment <span class="cls ap">APPROXIMATE</span> and drawn as schematic<br>
+<b>7.</b> Proposed water testing locations <span class="cls hyp">TESTABLE</span><br>
+<b>8.</b> Proposed soil and sediment testing locations <span class="cls hyp">TESTABLE</span><br>
+Then all eight together, slow pull-out to the full watershed.</div>
+<div class="nar">And there it is. The whole investigation, in one frame.<br><br>
+Where the structures might be. Where the water was. Where the earth was moved. Where the drainage collects. Where it is treated. Where it is sprayed. And where you would put a sampler to find out whether any of it matters.</div>
+<p class="small"><b>Legend rule:</b> the legend is on screen for the entire sequence and distinguishes documented, approximate, model and proposed by both shape and colour, never colour alone.</p></div>
+
+<h2 id="end">The ending <span class="small">(final 45 seconds)</span></h2>
+<div class="sc"><h4>Scene 24 · Closing narration — full text</h4>
+<div class="nar">I want to be clear about what this film has not shown you.<br><br>
+It has not shown you a dipping vat. It has not shown you contamination. It has not shown you a single laboratory result, because there aren't any — and that is the finding, not the failure.<br><br>
+What the records do tell us is where to look. The historical documents tell us what this land was, and what the people surveying it were never asked. The engineering documents tell us where the water goes, and that it comes back. The grading plans tell us the earth was moved, and how deep.<br><br>
+None of that is proof of anything. All of it is a map.<br><br>
+A hundred and fourteen years ago the state told ranchers here to put arsenic in the ground, and they did it because the law required it. Nobody was careless. Nobody was hiding anything. The paperwork simply never had a box for what happened next.<br><br>
+<b>Modern laboratory testing can answer the question the historical record cannot.</b> A sprinkler head. A sediment core. A patch of long-irrigated turf and a patch of ground that was never touched. Soil at a handful of old water points, and soil somewhere that never was one.<br><br>
+That is not an accusation. <b>It is an experiment.</b> And it is a small one.<br><br>
+The records tell us where to look. Someone should look.</div>
+<div class="gfx"><b>Graphics:</b> The integrated map holds, then desaturates. Testing markers remain lit as everything else fades. Final card: the project disclaimer in full, contact line, and the standing offer of access to the archive.</div></div>
+<h2 id="plan">The integrated testing plan</h2>
+<p class="lead">Built from all three parts. The objective is not to prove contamination. It is to design the smallest set of measurements capable of determining whether any exists and, if so, how it is distributed.</p>
+
+<h3>A · Water — the seven-point network</h3>
+<div class="tablewrap"><table><thead><tr><th style="width:15%">Point</th><th style="width:14%">Sample</th><th style="width:25%">What it isolates</th><th style="width:17%">Panel</th><th>Positive / negative meaning</th></tr></thead><tbody>
+<tr><td><b>W1 · Horno upstream of the basin</b><br><span class="cls ap">APPROXIMATE</span></td><td>Grab, dry weather</td><td>What the watershed delivers <b>before</b> any treatment. The baseline for everything downstream.</td><td>Total As + speciation; OC/OP pesticide panel; TDS suite for continuity with 2004-05</td><td><b>+</b> the catchment is the source. <b>−</b> rules the catchment out and moves attention to the recycled stream.</td></tr>
+<tr><td><b>W2 · Basin outlet / wetland inlet</b></td><td>Grab</td><td>What settling alone removes.</td><td>Same as W1</td><td>Difference from W1 quantifies basin removal.</td></tr>
+<tr><td><b>W3 · Wetland outlet</b><br><span class="cls v">DOCUMENTED</span> feature</td><td>Grab</td><td>The full effect of the <b>entire</b> engineered treatment train for this stream.</td><td>Same as W1</td><td>Establishes what the seven acres actually do. <b>This is the single most informative water point.</b></td></tr>
+<tr><td><b>W4 · Recycled effluent before blending</b></td><td>Grab</td><td>The other input, on its own. Permit Provision K.2 already contemplates sampling here.</td><td>Same as W1</td><td>Separates plant-origin from runoff-origin constituents. Without it the blend is uninterpretable.</td></tr>
+<tr><td><b>W5 · Post-blend / distribution storage</b></td><td>Grab</td><td>What actually enters the purple-pipe network.</td><td>Same as W1</td><td>Mass-balance check against W3 and W4.</td></tr>
+<tr><td><b>W6 · Purple-pipe sprinkler head</b><br><span class="cls hyp">TESTABLE</span></td><td>Grab at two or three community locations</td><td><b>What is actually applied to the ground people use.</b></td><td>Total As + speciation; pesticide panel; CEC screen</td><td>The cheapest, highest-value single test in the whole investigation. <b>Do this one first if only one is funded.</b></td></tr>
+<tr><td><b>W7 · Irrigation runoff returning to drainage</b></td><td>Grab, dry weather</td><td>Closes the circuit — what leaves the landscape and heads back to Horno.</td><td>Same as W1</td><td>Compared with W6, shows what the soil retained.</td></tr>
+</tbody></table></div>
+<div class="card"><h4>Why seven and not eleven</h4>
+<p>Points considered and <b>not</b> recommended in the first round: basin inlet (W1 and W2 bracket it), wetland inlet as distinct from basin outlet (same water, metres apart), pre-blend diversion water as distinct from W3 (the permit treats these as the same stream), and additional sprinkler locations beyond two or three (diminishing return until a first result exists). <b>Add them only if the first round shows a difference worth resolving.</b></p>
+<p><b>Access reality.</b> W2, W3, W4 and W5 sit on infrastructure under three-party custody — County OC Public Works (basin), Ladera Ranch HOA (wetlands), Santa Margarita Water District (diversion works and distribution). <b>W1, W6 and W7 are the points most likely to be reachable without an agreement.</b></p></div>
+
+<h3>B · Sediment</h3>
+<div class="tablewrap"><table><thead><tr><th style="width:22%">Point</th><th style="width:20%">Sample</th><th>Rationale and meaning</th></tr></thead><tbody>
+<tr><td><b>S1 · Horno basin sediment core</b></td><td>Core, depth-resolved, 0–5 cm and at intervals to base</td><td>The basin has been accumulating the watershed's fines since it was built. A depth-resolved core is a <b>time series</b>: it records what the drainage carried, year by year, whether or not anyone was sampling the water. <b>This is the only sample in the whole plan that can look backwards.</b> A clean core is strong evidence; an enriched one dates the enrichment.</td></tr>
+<tr><td><b>S2 · Wetland sediment</b></td><td>Grab, 0–5 cm</td><td>Where persistent constituents would settle out of the diverted stream before it is pumped. Pairs with W3.</td></tr>
+</tbody></table></div>
+
+<h3>C · Soil</h3>
+<div class="tablewrap"><table><thead><tr><th style="width:26%">Group</th><th style="width:16%">n</th><th>Design</th></tr></thead><tbody>
+<tr><td><b>Source-area</b> — historic water points</td><td>From the 23; start with the highest-ranked accessible subset</td><td>0–6 in surface interval at the recommended offset location, plus a fill-depth interval where the target sits on placed fill. <b>Answers: is there anything at the old water points.</b></td></tr>
+<tr><td><b>Drainage-path</b></td><td>3–4</td><td>Downslope of source areas along documented historical drainage. Answers whether anything moved.</td></tr>
+<tr><td><b>Long-irrigated landscape</b></td><td>3–4</td><td>Common-area turf and slope on the purple-pipe system for two decades. <b>Pairs directly with the deposition hypothesis in Part 3.</b></td></tr>
+<tr><td><b>Never-irrigated control</b></td><td>3–4</td><td>Matched soil and aspect, never on the recycled system. <b>Without this, the irrigated results mean nothing.</b></td></tr>
+<tr><td><b>Undisturbed ground</b></td><td>3</td><td>Never farmed, never graded — identified from the 1937 imagery and confirmed against grading limits once the plans are obtained.</td></tr>
+<tr><td><b>Regional background</b></td><td>3</td><td>Same geology, off the ranch entirely. Establishes what "normal" is for this formation.</td></tr>
+</tbody></table></div>
+
+<h3>D · Analytical panel</h3>
+<div class="tablewrap"><table><thead><tr><th style="width:30%">Determination</th><th style="width:22%">Method</th><th>Why</th></tr></thead><tbody>
+<tr><td>Total arsenic, soil and sediment</td><td>EPA 3050B or 3051A digestion, 6020B ICP-MS</td><td>The primary question</td></tr>
+<tr><td>Arsenic speciation</td><td>HPLC-ICP-MS</td><td>Inorganic arsenic drives risk. <b>Run only where total arsenic warrants it</b> — it is the expensive step</td></tr>
+<tr><td>Bioaccessible arsenic</td><td>EPA 1340</td><td>Relevant only where a result exceeds a screening level and exposure matters</td></tr>
+<tr><td>Total arsenic, water</td><td>6020B</td><td>W1–W7</td></tr>
+<tr><td>Organochlorine pesticides</td><td>EPA 8081B</td><td>Era-appropriate to the documented cultivation</td></tr>
+<tr><td>Current-use landscape pesticides</td><td>LC-MS/MS panel</td><td>Era-appropriate to documented HOA irrigation and maintenance</td></tr>
+<tr><td>Salts and nutrients</td><td>Standard suite</td><td><b>Continuity with the 2004–05 characterisation</b>, so the new data is comparable to the only existing data</td></tr>
+</tbody></table></div>
+
+<h3>E · Sequence, if funding is staged</h3>
+<ol>
+<li><b>W6 — sprinkler head.</b> One sample. Cheapest, most direct, answers what is applied to ground people use.</li>
+<li><b>S1 — basin sediment core.</b> The backward-looking sample. Highest information per dollar in the plan.</li>
+<li><b>Long-irrigated soil paired with never-irrigated control.</b> Two samples, one comparison, tests the deposition hypothesis directly.</li>
+<li><b>W3 and W4 — wetland outlet and pre-blend effluent.</b> Separates the two streams. Needs agency cooperation.</li>
+<li><b>Source-area soil</b> at the accessible subset of the 23, each paired with control and background.</li>
+</ol>
+<div class="card go"><h4>What the plan is designed to be able to conclude</h4>
+<p><b>That nothing is there.</b> A clean sprinkler sample, a clean basin core and source areas indistinguishable from background would close this question properly, publicly and permanently. <b>The plan is written so that a null result is a real result</b> — which is why every group above has a matched control, and why the film says so out loud in Scene 14.</p></div>
+
+<h2 id="records">Records still to obtain, in priority order</h2>
+<div class="tablewrap"><table><thead><tr><th style="width:8%">#</th><th style="width:34%">Record</th><th>Why it changes the film</th></tr></thead><tbody>
+<tr><td>1</td><td><b>Base Order 97-52, Table A-1</b> — San Diego RWQCB</td><td><b>Gates Scene 19.</b> Determines whether arsenic appears on the underlying compliance list. Until checked, narration is limited to "the publicly identified testing reviewed in this project."</td></tr>
+<tr><td>2</td><td><b>Rough grading plans with existing-conditions and demolition exhibits</b> — OC Public Works</td><td>Replaces the <span class="cls mod">MODEL</span> cut/fill layer with documented limits. Also the single most likely source of a drawn, labelled concrete structure.</td></tr>
+<tr><td>3</td><td><b>Final EIR 555</b> (certified 17 Oct 1995) + Addendum PA970174, with cultural, biological and site-assessment appendices</td><td>The environmental review of Ladera Ranch itself. Never obtained.</td></tr>
+<tr><td>4</td><td><b>Resolution 77-866 monitoring reports</b> — via CHRIS/SCCIC, qualified requester only</td><td>The mandated grading-observation record. Confidential under Gov. Code § 6254.10; locational data must not be published.</td></tr>
+<tr><td>5</td><td><b>Purple-pipe as-builts</b> — SMWD / Huitt-Zollars; basin records — OC Public Works; wetland records — Ladera Ranch HOA</td><td>Converts the schematic alignment in Part 3 into documented alignment, and identifies the exact blend point for W5.</td></tr>
+<tr><td>6</td><td><b>Complete EIR 589 Appendix I</b> including Plate 1, Figures 1–3 and <b>Appendix E, Site Photographs</b></td><td>The circulating copy has none of them. Nine planning areas' worth of consultant photographs of this landscape.</td></tr>
+<tr><td>7</td><td><b>Potable and non-potable storage identification</b> from engineering drawings</td><td>Gates the tank depiction in Scene 16.</td></tr>
+</tbody></table></div>
+<h2 id="check">Internal fact-check log</h2>
+<p class="lead">Run before this document was finished. Each row is a claim I intended to make, and what happened when I went back to the source.</p>
+<div class="tablewrap"><table><thead><tr><th style="width:30%">Claim as originally drafted</th><th style="width:12%">Result</th><th>What the source actually says</th></tr></thead><tbody>
+<tr><td>Concrete structure "photographed four days before it was demolished"</td><td><span class="badge hard">CORRECTED</span></td><td><b>Not supported.</b> Contractor mobilised 20 Feb 2009; concrete pad demolished 23 Feb 2009 — a three-day gap. <b>The photograph is undated in the report.</b> Narration rewritten in Scene 6. The structure is also identified in the record as a farmer's AST secondary containment, so it is not an unexplained structure and must not be shown as one.</td></tr>
+<tr><td>Runoff passes through the Chiquita plant</td><td><span class="badge ok">RULED OUT</span></td><td>Provision K establishes two separate monitoring points for two streams that meet downstream, and waives BOD/TSS/Odor for the diversion water. Carried into Scene 18 as a four-part proof.</td></tr>
+<tr><td>The loop causes contaminants to compound in the water</td><td><span class="badge hard">FAILS</span></td><td>Modelled enrichment caps at ×1.02–×1.28. <b>The film states this failure explicitly</b> rather than quietly dropping it. Scene 20.</td></tr>
+<tr><td>"No testing has ever been done on this water"</td><td><span class="badge warn">NARROWED</span></td><td>Characterisation sampling Nov 2004–Apr 2005 exists and measured eight salt and nutrient parameters. The correct claim is that <b>the publicly identified testing reviewed in this project did not include arsenic, a pesticide panel or pharmaceuticals</b>. Base Order Table A-1 still to be checked.</td></tr>
+<tr><td>The land was repurposed as orchards before development</td><td><span class="badge warn">CORRECTED</span></td><td><b>Dry-farmed field crops, not orchards.</b> The 1937 print annotations read beans and a grain crop; the consultants record "dry farming and grazing." Lemon groves in the record are on Ranch Plan land at Ortega Gateway, not the Ladera footprint. Scene 10.</td></tr>
+<tr><td>Ten aerial anomalies may be structures</td><td><span class="badge ok">RESOLVED</span></td><td>All ten examined across 1937, 1953, 1969 and 2022. Every one resolves to drainage, erosion rills, brush or a ranch track. <b>None is a structure.</b> Shown struck through in Scene 9.</td></tr>
+<tr><td>A texture map shows which ground was ploughed</td><td><span class="badge warn">DOWNGRADED</span></td><td>The classifier cannot separate ploughed fields from smooth natural ridgetops or 1960s housing. Retained as <span class="cls mod">MODEL</span> with the limitation spoken in narration, Scene 12.</td></tr>
+<tr><td>Ladera schools were all reviewed by the state</td><td><span class="badge hard">FALSE</span></td><td>Only Oso Grande has a DTSC case (30020004 / site code 404477). Three other Ladera Ranch schools have none. Likely procedural; being asked in writing. <b>Not used as an accusation anywhere in the film.</b></td></tr>
+<tr><td>EIR 589 is the Ladera environmental review</td><td><span class="badge hard">FALSE</span></td><td>EIR 589 covers the Ranch Plan. <b>Ladera's review is Final EIR 555</b>, certified 17 Oct 1995, with Addendum PA970174. Not obtained.</td></tr>
+</tbody></table></div>
+
+<h2 id="assets">Asset manifest</h2>
+<div class="tablewrap"><table><thead><tr><th style="width:26%">Category</th><th style="width:12%">Status</th><th>Items</th></tr></thead><tbody>
+<tr><td>Phase 2 reusable</td><td><span class="badge ok">HELD</span></td><td>Discovery clip; reconstruction reel; trail/post still; pond overlay; music bed; caption engine; segment builders; scoring and burn-in scripts</td></tr>
+<tr><td>Vat reference imagery</td><td><span class="badge ok">HELD</span></td><td>USDA Circulars 174/183/207 plates; Farmers' Bulletin 1057 cover; NARA 1912 and 1941 photographs; Florida DEP derelict series (8 frames)</td></tr>
+<tr><td>Ladera site photography</td><td><span class="badge ok">HELD</span></td><td>16 frames, 31 Jan 2002, NMG Appendix B, with printed captions</td></tr>
+<tr><td>Document pages for zoom</td><td><span class="badge ok">HELD</span></td><td>Program Text conditions 21/22; EIR 555 citations; owner questionnaire; EIR 589 PA8 pp. 22–23; EIR 589 table of contents; Kinoshita §§4–5 and Appendix E</td></tr>
+<tr><td>Historical aerials</td><td><span class="badge ok">HELD</span></td><td>1937, 1953, 1959, 1969, 1980, 1990 and 2022 on a common WGS84 grid, wide and core; 1937 annotated frames at native resolution</td></tr>
+<tr><td>Map layers</td><td><span class="badge warn">PARTIAL</span></td><td>23 soil targets ✓; Ladera boundary ✓; candidate anomalies ✓; Horno route — <b>to be drawn from the permit</b>; purple-pipe alignment — <b>schematic until as-builts obtained</b></td></tr>
+<tr><td>Permit page images</td><td><span class="badge warn">NEEDED</span></td><td>Addendum No. 4 to Order 97-52 — Provision K.1/K.2 and Finding 5, as page images for on-screen quotation</td></tr>
+<tr><td>New animation builders</td><td><span class="badge hard">TO BUILD</span></td><td>Layered map reveal; aerial cross-fade on shared grid; pipe-flow; cut/fill terrain; document highlight sweep; paired-bar control comparison</td></tr>
+</tbody></table></div>
+
+<h2 id="gates">Production gates — do not render until these clear</h2>
+<ol>
+<li><b>Scene 6</b> narration says three days, not four, and does not call the Kinoshita structure unexplained.</li>
+<li><b>Scene 16</b> tanks are identified from drawings, or shown schematically and labelled approximate.</li>
+<li><b>Scene 18</b> permit quotations appear as page images, not retyped text.</li>
+<li><b>Scene 19</b> base Order Table A-1 checked, or narration limited to "the publicly identified testing reviewed in this project."</li>
+<li><b>Scene 11</b> no soil-movement arrow is shown as a tracked volume.</li>
+<li><b>Every map</b> — the Phase 2 concrete base carries an uncertainty halo and the approximate badge, always.</li>
+<li><b>Whole film</b> — no frame asserts any contaminant is present in any Ladera soil, runoff, recycled water or irrigation water.</li>
+</ol>
+
+<h2 id="src">Source register</h2>
+<div class="tablewrap"><table><thead><tr><th style="width:44%">Source</th><th style="width:9%">Grade</th><th>Used for</th></tr></thead><tbody>
+<tr><td>San Diego RWQCB, Addendum No. 4 to Order No. 97-52, adopted 8 Oct 2008 (held, SHA-256)</td><td><b>A2</b></td><td>Part 3 route, Provision K, characterisation values, CEQA exemption finding</td></tr>
+<tr><td>LEHRP Purple-Pipe Loop report v3, 11 Sept 2026</td><td><b>Internal</b></td><td>Part 3 structure and the recirculation model; every A2 assertion re-verified against the order</td></tr>
+<tr><td>NMG Geotechnical, Phase I ESA project 01079-02, 4 Feb 2002, and 2003 Update</td><td><b>A2</b></td><td>Ladera photographs, grading chronology, 110 ft fill, pesticide reasoning, wells</td></tr>
+<tr><td>Environ Strategy, Soil Excavation Report, Kinoshita Farm, project 476, 3 April 2009</td><td><b>A2</b></td><td>Scene 6 chronology and the correction</td></tr>
+<tr><td>EIR 589 Appendix I, Phase I ESA, Planning Areas 1–9, 2003 rev. 2004</td><td><b>A2</b></td><td>Concrete vocabulary, field checklist, owner questionnaire, missing figures</td></tr>
+<tr><td>Ladera Planned Community Program Text, 17 Oct 1995 rev. 30 Jul 2003 (OCR'd for this project)</td><td><b>A2</b></td><td>Conditions 21/22, Resolution 77-866, EIR 555 identification, zoning map, boundary</td></tr>
+<tr><td>Orange County Zoning Administrator minutes, PA 180010</td><td><b>A2</b></td><td>EIR 555 certification date and Addendum PA970174</td></tr>
+<tr><td>USDA BAI Circulars 174 (1911), 183 (1911), 207 (1912); Farmers' Bulletin 1057 (1919)</td><td><b>A1</b></td><td>Vat specification, the posted warning notice, Orange County named among infested counties</td></tr>
+<tr><td>NARA RG 95 photographs NAID 7007707, 2129009</td><td><b>A1</b></td><td>Vats in use; US Government work, unrestricted</td></tr>
+<tr><td>Florida DEP Cattle Dip Vat programme photographs, 2016 and 2018</td><td><b>A2</b></td><td>Derelict condition; captioned as Florida on screen</td></tr>
+<tr><td>OC Survey Historic Imagery service, OIDs 310/357/324/315/320/319</td><td><b>A2</b></td><td>Land-use chronology and the annotated prints</td></tr>
+<tr><td>CalGEM WellSTAR</td><td><b>A1</b></td><td>Two plugged dry holes inside the boundary; coordinates flagged as digitised, not surveyed</td></tr>
+<tr><td>DTSC EnviroStor case 30020004 / site code 404477</td><td><b>A2</b></td><td>Regulatory chronology and the school-review gap</td></tr>
+<tr><td>SMWD recycled-water materials and consumer confidence reports</td><td><b>A1/A2</b></td><td>Two-system distinction; drinking water arsenic ND–trace</td></tr>
+<tr><td>LEHRP soil sampling strategy, <code>targets_data.json</code></td><td><b>Internal</b></td><td>The 23 targets, classes and offsets</td></tr>
+</tbody></table></div>
+
+<div class="disc"><p>This treatment is part of an independent research and data-organization project. It does not provide medical advice and does not establish that any pesticide, property, organization, employer, school, water provider, government agency, or other party caused any illness. Publicly reported health events may not have been independently medically verified. Geographic and temporal overlap does not establish exposure or causation. Formal conclusions require authorized epidemiological analysis, verified medical information, exposure assessment, toxicological review, and independent scientific evaluation. No contaminant is asserted to be present in any soil, sediment, runoff, recycled water or irrigation water discussed in this document.</p></div>
+</div></body></html>
