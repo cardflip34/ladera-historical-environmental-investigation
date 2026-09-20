@@ -59,7 +59,9 @@ def b64img(path,maxw=1080,q=68):
     buf=io.BytesIO(); im.save(buf,"JPEG",quality=q)
     return "data:image/jpeg;base64,"+base64.b64encode(buf.getvalue()).decode()
 
-IMGPAT=re.compile(r'`((?:research|docs|media|evidence)/[^`]+?\.(?:jpg|png))`')
+# Accept .jpeg and uppercase extensions too: field photographs come off phones and drones
+# as .jpeg / .JPG / .PNG, and a case-sensitive jpg|png pattern silently skips them.
+IMGPAT=re.compile(r'`((?:research|docs|media|evidence)/[^`]+?\.(?:jpe?g|png))`', re.I)
 def embed_figures(md_text):
     """Replace `path/to/img.jpg` code-refs with embedded images + caption line."""
     def rep(m):
