@@ -4,8 +4,10 @@
 located **on foot**, in ungraded open space above Ladera Ranch beside the Arroyo Trabuco golf course.
 Its floor measures about **12 feet**, the floor length specified for a federal cattle-dipping vat in
 USDA Bureau of Animal Industry Circular 183 (1911) [A1, S-USDA-C183]. It is unfenced, unmarked, and
-sits beside a public trail. **This is a candidate, not an identification.** Nothing here establishes
-that the structure is a dipping vat, and nothing will until the soil is tested. Phase 1 asked whether
+sits beside a public trail. **This is a candidate, not an identification.** The structure has not
+been measured to a standard, has not been sampled, and has not been examined by anyone qualified to
+identify it; the dimensions here are as reported by the observer and are approximate. Nothing here
+establishes that the structure is a dipping vat, and nothing will until the soil is tested. Phase 1 asked whether
 California ever looked. Phase 2 found something to look at.
 
 > **CLASSIFICATION.** Structure and setting: **field observation** (August 2026). Herd arithmetic and
@@ -16,12 +18,23 @@ California ever looked. Phase 2 found something to look at.
 ---
 
 ## 11.1 The find
-[field observation, August 2026]
+[field observation; field record dated 2026-08-07]
 
-The structure sits in the **open space above the community, beside the golf course**, on ground never
-graded for housing. No coordinates are published here, and none will be: an unfenced structure of
-unknown chemistry beside a public trail should be closed and marked by an agency, not crowd-visited.
-What can be described without locating it:
+It was found on foot, in August 2026, and the way it was found is the reason a century of aerial
+imagery missed it. The route ran up to the high ground behind the Home Depot, down past the biking
+and walking trails, and then off them entirely, through unbroken brush and cactus on a slope that was
+never graded for housing. The structure sits under that cover, in the open space above the community
+beside the golf course.
+
+That matters for the record, because it resolves an apparent contradiction. The Ladera Ranch chapter
+records an imagery null, *no vat found on adequate imagery*, at 1.15 ft/px. That resolution
+unmistakably resolves a corral **in the open**. It resolves nothing at all beneath canopy and scrub,
+and it resolves nothing below grade. The null and the find do not conflict; the null was always a
+statement about surface facilities visible from the air, and it is now explicitly limited to that.
+
+No coordinates are published here, and none will be: an unfenced structure of unknown chemistry
+beside a public trail should be closed and marked by an agency, not crowd-visited. What can be
+described without pinning it:
 
 - A **poured concrete rectangle**, its floor roughly **12 ft** in length, consistent with the federal
   specification for a swim-vat floor [A1, S-USDA-C183].
@@ -31,10 +44,36 @@ What can be described without locating it:
 - A **public trail** passes near it, and a **rope tire swing** hangs on the approach, which is to say
   the ground around it is in casual recreational use, including by children.
 
+**What was measured, and what was inferred.** The observed concrete runs about **12 ft**, and the
+precise claim matters: 12 ft is the **floor** length in the federal specification, not the overall
+length of the structure. A complete specified vat is roughly **25 ft** end to end once the sloped
+entry and the climb-out are included. So an observed 12 ft rectangle sitting at floor level is
+consistent with a vat floor, with the remainder either below grade, collapsed, or removed. The scale
+longitudinal reconstruction prepared after the visit sets the observed concrete against the
+specification drawing on one scale and labels the two apart: the **12 ft floor is observed**, the
+**25 ft overall length is interpreted, not observed**, and the floor itself is **below grade and has
+not been excavated or tested**. A reconstruction is an interpretation of what was seen; it is not
+evidence of what the structure is.
+
 That last point is why this chapter exists. Dip vat or not, an unmarked structure of unknown chemistry
 in an area of child contact is something an agency should characterise. The position Phase 1 took
 holds: **never looked, not looked-and-cleared.** A candidate found by walking is not a finding; it is
 a place to test.
+
+### Safety, before anyone goes looking
+The field record carries a warning that belongs on this page too, and it is the reason the location
+stays unpublished. **If this is a dipping vat, the sediment inside it is the single most concentrated
+place arsenic would be found anywhere in this landscape.** This project's own model puts that
+compartment in the thousands of mg/kg against a California background of 1 to 11 mg/kg (chapter 72).
+Accordingly:
+
+- **Do not dig in it, and do not handle or remove the sediment.**
+- **Do not let children or animals into the structure.**
+- Photograph and measure it **from outside**.
+- Arsenic is an element. It does not degrade, and a century has not reduced it.
+
+This is a precaution attached to an unidentified structure, not a statement that anything is
+contaminated. Nothing at the site has been sampled, and until it is, the correct posture is distance.
 
 ## 11.2 Why one station is not enough
 [MODEL ESTIMATE]
@@ -158,10 +197,25 @@ assumption. What is not acceptable is a third decade of neither looking nor clea
 
 ---
 
-**Figures for this chapter are pending.** The era tiles of the drainage (1929 to 2025), the drone
-frames of the pond, the field photographs of the base and rails, and the reconstruction stills
-(labelled *AI-assisted reconstruction after USDA Circular 183; not historical footage*) are held in
-the project evidence repository and publish with the next build.
+## Figures
+The Phase 2 field material is held in the project evidence repository. Each item below publishes as a
+figure as soon as the file is present in this repository; until then the path is the reference. No
+coordinates appear in any Phase 2 caption, by policy, and photographs are archived as taken, without
+rotation, cropping or enhancement.
+
+- `evidence/lhdrs/field_observations/FIELD_OBSERVATION_v5.pdf`, the field record of 2026-08-07: the
+  structure and its surroundings as found, what would confirm or exclude a cattle-dipping vat, and
+  the safety notice reproduced above. Explicitly **not an identification**.
+- `evidence/lhdrs/phase2_base/vat_cross_section_reconstruction.png`, the scale longitudinal section:
+  observed concrete against the federal specification, observed and interpreted elements labelled
+  separately.
+- Field photographs of the structure, `evidence/lhdrs/field_observations/`: the axial view with the
+  concrete channel running into brush and the pipe frame at the near end; the end view showing a
+  clean 90-degree corner, a raised rim on both sides, and pipe railing descending into the structure.
+- Drone frames of the pond and the slope, `evidence/lhdrs/phase2_base/`.
+- The era tiles of the drainage, 1929 to 2025, `evidence/lhdrs/phase2_base/pond_eras/`.
+- Reconstruction stills, labelled *AI-assisted reconstruction after USDA Circular 183; not historical
+  footage*.
 
 *Source registry:* S-USDA-C183 [A1]; S-USDA-C174 [A1]; Florida DEP inventory and G11 records response
 [A2]; OC Survey orthoimagery [A1]; 2018 OC County DEM [A1]; 1968 USGS field survey [A1]; O'Neill family

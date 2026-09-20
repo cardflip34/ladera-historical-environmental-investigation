@@ -64,6 +64,17 @@ weak evidence of a dipping-era working site. It remains in the record as a mappe
 priority**. The honest Ladera picture: imagery offers *no* compelling dip candidate anywhere in the
 footprint, the resolver here is documentary (RMV ranch books, county/state ledgers), not aerial.
 
+**Re-opened as a question, 2026-08.** The August 2026 field record is titled *concrete structure
+near the 1948 node*, which places a physical candidate in the vicinity of the very feature demoted
+above. The demotion rested on a 1937 aerial frame showing no building geometry, and that is the
+weakness: a concrete structure sitting **below grade, under canopy and brush**, would not appear in
+that frame whether it existed or not. The 1937 null therefore does not carry the weight the
+demotion gave it. This does not promote node A to a finding. The structure found is a **candidate**,
+it has not been identified, and nothing has established that the 1948 topographic symbol relates to
+it at all. What changes is the reasoning: node A goes back in the record as an **open question with
+a physical thing near it to test**, rather than a mapped symbol dismissed on aerial evidence that
+could never have resolved it. See chapter *Phase 2: the site*.
+
 ## Figures
 - `research/historical_imagery/11_timeseries_1929-2022_with_water.jpg`, the footprint 1929→2022 with
   all 41 surveyed water bodies.
@@ -123,7 +134,8 @@ paper-only Phase 1 above. **Private/preschool (5)** + 1 former campus (Stoneybro
 flagged for interactive verification).
 
 ## What would locate a vat here, and where to test
-Because imagery is exhausted, the Ladera answer is now **documentary + a spade**:
+Because imagery is exhausted, the Ladera answer is now **documentary + a spade**, and since
+August 2026 the spade has somewhere specific to go:
 - **Archives to pull**, the RMV/O'Neill ranch books, foreman logs, dipping receipts, and ranch
   photo albums (Sherman Library first; then UCI Special Collections, San Juan Capistrano Historical
   Society, the private RMV archive). See Chapter *"What we're looking for."*
