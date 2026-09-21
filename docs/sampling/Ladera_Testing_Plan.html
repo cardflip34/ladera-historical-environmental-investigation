@@ -1,0 +1,520 @@
+<!doctype html><html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Ladera Ranch — Recommended Testing Locations, Rationale and Methods</title>
+<style>
+:root{--ink:#171e2b;--navy:#20304d;--mut:#5d6675;--line:#e2e6ec;--bg:#faf9f7;--card:#fff;--blue:#2d5d8f;--ok:#1e7a45;--warn:#9a6a10;--hard:#a23b2c;--off:#6b7280;--amber:#c8811f}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.62 -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif}
+.wrap{max-width:1180px;margin:0 auto;padding:0 28px 96px}
+header.mast{background:var(--navy);color:#fff;padding:54px 0 42px;margin-bottom:38px}
+header.mast .wrap{padding-bottom:0}
+.kicker{font-size:13px;letter-spacing:.16em;text-transform:uppercase;color:#9fc0e4;font-weight:700}
+h1{font-size:40px;line-height:1.12;margin:12px 0 10px;font-weight:700;letter-spacing:-.01em}
+.sub{color:#c9d6e6;font-size:18px;max-width:78ch}
+.meta{margin-top:20px;font-size:13px;color:#9fb2ca}
+h2{font-size:26px;margin:46px 0 6px;letter-spacing:-.01em;border-top:3px solid var(--navy);padding-top:22px}
+h3{font-size:19px;margin:30px 0 6px;color:var(--navy)}
+h4{font-size:16px;margin:22px 0 4px}
+p,li{max-width:82ch}
+.lead{font-size:18px;color:#2b3547}
+table{border-collapse:collapse;width:100%;margin:18px 0;font-size:14px;background:var(--card)}
+th{background:#eef1f5;text-align:left;padding:10px 11px;border-bottom:2px solid var(--line);font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:#43506a;vertical-align:bottom}
+td{padding:11px;border-bottom:1px solid var(--line);vertical-align:top}
+td.num{font-weight:700;font-size:17px;color:var(--navy)}
+tr.tier-A{background:#f4fbf6}tr.tier-B{background:#fffdf5}tr.tier-C{background:#f7f9fc}tr.tier-D{background:#fafafa;color:#6b7280}
+.small{font-size:13px;line-height:1.5}
+.mono{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:12.5px}
+.badge{display:inline-block;padding:2px 9px;border-radius:11px;font-size:11.5px;font-weight:700;letter-spacing:.03em}
+.badge.ok{background:#e4f4ea;color:var(--ok)}.badge.warn{background:#fdf1dc;color:var(--warn)}.badge.hard{background:#fbe8e5;color:var(--hard)}.badge.off{background:#eef0f3;color:var(--off)}
+.tier{display:inline-block;width:26px;height:26px;line-height:26px;text-align:center;border-radius:50%;font-weight:800;color:#fff}
+.tierA{background:var(--ok)}.tierB{background:var(--amber)}.tierC{background:var(--blue)}.tierD{background:#9aa3b0}
+.card{background:var(--card);border:1px solid var(--line);border-left:4px solid var(--blue);padding:16px 20px;margin:18px 0;border-radius:3px}
+.card.warn{border-left-color:var(--amber);background:#fffdf6}
+.card.stop{border-left-color:var(--hard);background:#fdf3f1}
+.card.go{border-left-color:var(--ok);background:#f4fbf6}
+.card h4{margin-top:0}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:14px;margin:18px 0}
+.stat{background:var(--card);border:1px solid var(--line);padding:14px 16px;border-radius:3px}
+.stat .n{font-size:30px;font-weight:700;color:var(--navy);line-height:1.1}
+.stat .l{font-size:12.5px;color:var(--mut);margin-top:3px}
+figure.tgt{margin:26px 0;background:var(--card);border:1px solid var(--line);padding:12px;border-radius:3px}
+figure.tgt img{width:100%;height:auto;display:block;border-radius:2px}
+figcaption{font-size:13px;color:#39435a;margin-top:9px;line-height:1.55}
+.src{display:block;color:var(--mut);font-size:11.5px;margin-top:4px}
+ol,ul{padding-left:22px}
+li{margin:5px 0}
+.q{background:#fff;border:1px solid var(--line);padding:4px 0}
+.disc{font-size:12.5px;color:var(--mut);border-top:1px solid var(--line);margin-top:42px;padding-top:16px}
+a{color:var(--blue)}
+.toc{background:var(--card);border:1px solid var(--line);padding:16px 22px;border-radius:3px;columns:2;column-gap:32px}
+.toc a{text-decoration:none}.toc li{break-inside:avoid}
+code{background:#eef1f5;padding:1px 5px;border-radius:3px;font-size:13px}
+.tablewrap{overflow-x:auto}
+@media print{body{background:#fff}header.mast{background:#fff;color:#000;border-bottom:3px solid #000}h1{color:#000}.sub,.meta,.kicker{color:#333}figure.tgt{break-inside:avoid}}
+
+figure.fig{margin:26px 0;background:var(--card);border:1px solid var(--line);padding:12px;border-radius:3px}
+figure.fig img{width:100%;height:auto;display:block;border-radius:2px;background:#fff}
+figure.fig figcaption{font-size:13.5px;color:#39435a;margin-top:10px;line-height:1.6}
+figure.fig .fl{display:inline-block;font-weight:800;color:var(--navy);letter-spacing:.02em;margin-right:6px}
+.figrow{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:16px;margin:24px 0}
+.figrow figure.fig{margin:0}
+.figindex td{vertical-align:top}
+
+.role{display:inline-block;padding:3px 10px;border-radius:11px;font-size:11.5px;font-weight:800;letter-spacing:.03em}
+.r-src{background:#fdf1dc;color:#9a6512}.r-ctl{background:#e4f4ea;color:#1d7a42}.r-fill{background:#f0e8fb;color:#6b3fa0}
+.r-drain{background:#e8eefb;color:#2563c9}.r-bg{background:#eef0f3;color:#4a5568}.r-water{background:#e0f5f8;color:#0a6b7d}
+.r-sed{background:#fbe8e5;color:#b3261e}
+td.num{font-family:ui-monospace,Menlo,monospace;font-size:12px;white-space:nowrap}
+.pri{display:inline-block;width:24px;height:24px;line-height:24px;text-align:center;border-radius:50%;font-weight:800;color:#fff;font-size:12px}
+.p1{background:#b3261e}.p2{background:#c2790a}.p3{background:#2563c9}
+</style></head><body>
+<header class="mast"><div class="wrap">
+<div class="kicker">LEHRP · Ladera Ranch · Sampling design</div>
+<h1>Where to Test, Why, and With What</h1>
+<p class="sub">Every recommended sampling location in one document: 23 soil points at historic water bodies, 7 water points through the recycled-irrigation loop, 2 sediment points, and the control and background samples that make any of it interpretable. With the analytical method for each, and what a positive and a negative result would each mean.</p>
+<p class="meta">Prepared 20 September 2026 · Andy Stavros · Hypothesis-neutral. Establishes no contamination anywhere.</p>
+</div></header>
+<div class="wrap">
+
+<div class="card stop"><h4>Read this before the tables</h4>
+<p><b>The objective is not to prove contamination. It is to design the smallest set of measurements that can determine whether any exists, and if so how it is distributed.</b></p>
+<p>Three things follow from that, and they shape every row below.</p>
+<ol>
+<li><b>A number alone means nothing.</b> Arsenic occurs naturally in California soils. Every source-area sample here is paired with an undisturbed control and a regional background sample. Without the pair, a result is uninterpretable.</li>
+<li><b>A clean result is a real result.</b> If the source areas read the same as the controls, that closes the question properly and publicly. The plan is written so that outcome is a success, not a failure.</li>
+<li><b>No location below is a known vat site.</b> They are the places the historical siting logic points to. Nothing here asserts that a structure, or a contaminant, is present at any of them.</li>
+</ol></div>
+
+<div class="card warn"><h4>On the coordinates</h4>
+<p>Sample points are given to five decimal places because a field crew needs them. <b>This document is an operational one and is not for publication.</b> The project's staged coordinate-disclosure practice applies: do not post these locations publicly, and if a CHRIS records search later returns archaeological locational data, that material is confidential under Government Code § 6254.10 and must not be published at all.</p>
+<p>Access is the first practical filter. Several points sit on the Arroyo Trabuco golf course, in HOA common areas, or on Rancho Mission Viejo land. <b>Permission comes before sampling</b>, and the landowner for each should be identified before a crew is booked.</p></div>
+
+<h2 id="toc">Contents</h2>
+<ol class="toc">
+<li><a href="#soil">A · The 23 soil locations</a></li>
+<li><a href="#controls">B · Controls and background — the samples that make the rest mean something</a></li>
+<li><a href="#water">C · The 7 water locations through the purple-pipe loop</a></li>
+<li><a href="#sed">D · Sediment — the only sample that looks backwards</a></li>
+<li><a href="#methods">E · What to test for, and with which method</a></li>
+<li><a href="#order">F · What to do first if funding is staged</a></li>
+<li><a href="#mean">G · What a result would and would not mean</a></li>
+</ol>
+<h2 id="soil">A · The twenty-three soil locations</h2>
+<p class="lead">Each one is a surface-water body recorded on this land by the 1968 survey. A dipping vat needed several thousand gallons on a fortnightly cycle, so vats were built where water was. <b>None of these is a known vat location. They are the places the siting logic points to.</b></p>
+<div class="grid">
+<div class="stat"><div class="n">9</div><div class="l">SOURCE AREA</div></div>
+<div class="stat"><div class="n">7</div><div class="l">UNDISTURBED</div></div>
+<div class="stat"><div class="n">7</div><div class="l">FILL / SOURCE</div></div>
+</div>
+<div class="card">
+<h4>T01 &nbsp; <span class="role r-src">SOURCE AREA</span></h4>
+<div class="tablewrap"><table><tbody>
+<tr><td style="width:23%"><b>Original water point</b></td><td class="num">33.53792, -117.66258</td></tr>
+<tr><td><b>Recommended sample point</b></td><td class="num">33.53803, -117.66370 &nbsp; <span class="small">offset 105 m from the water point · 24 m from the nearest road</span></td></tr>
+<tr><td><b>What is there now</b></td><td>Arroyo Trabuco GC fairway/rough; 1990 open oak-grass with ranch road</td></tr>
+<tr><td><b>Why this location</b></td><td>stock-water point on the drainage (1 m) - congregation and deposition in one spot</td></tr>
+<tr><td><b>Drainage relationship</b></td><td>Trabuco Creek (22 m) · water point sits 1 m from the mapped drainage</td></tr>
+<tr><td><b>Grading status</b></td><td>Historic water point now golf course. Accessible, shallow disturbance only.</td></tr>
+<tr><td><b>Sample to take</b></td><td>0–6 in surface; 6–18 in where access allows</td></tr>
+<tr><td><b>Question it answers</b></td><td>Is there elevated arsenic at this historic water point?</td></tr>
+</tbody></table></div></div>
+<div class="card">
+<h4>T02 &nbsp; <span class="role r-ctl">UNDISTURBED</span></h4>
+<div class="tablewrap"><table><tbody>
+<tr><td style="width:23%"><b>Original water point</b></td><td class="num">33.54763, -117.65929</td></tr>
+<tr><td><b>Recommended sample point</b></td><td class="num">33.54765, -117.65933 &nbsp; <span class="small">offset 4 m from the water point · 262 m from the nearest road</span></td></tr>
+<tr><td><b>What is there now</b></td><td>Arroyo Trabuco creek corridor, never graded</td></tr>
+<tr><td><b>Why this location</b></td><td>stock-water point on the drainage (15 m) - congregation and deposition in one spot</td></tr>
+<tr><td><b>Drainage relationship</b></td><td>Trabuco Creek (74 m) · water point sits 15 m from the mapped drainage</td></tr>
+<tr><td><b>Grading status</b></td><td>Never graded. Original soil profile most likely intact here.</td></tr>
+<tr><td><b>Sample to take</b></td><td>0–6 in surface, plus 6–18 in</td></tr>
+<tr><td><b>Question it answers</b></td><td>What does never-graded ground here read? This is the yardstick every other result is judged against.</td></tr>
+</tbody></table></div></div>
+<div class="card">
+<h4>T03 &nbsp; <span class="role r-fill">FILL / SOURCE</span></h4>
+<div class="tablewrap"><table><tbody>
+<tr><td style="width:23%"><b>Original water point</b></td><td class="num">33.55546, -117.63687</td></tr>
+<tr><td><b>Recommended sample point</b></td><td class="num">33.55546, -117.63691 &nbsp; <span class="small">offset 4 m from the water point · 5 m from the nearest road</span></td></tr>
+<tr><td><b>What is there now</b></td><td>Under Ladera housing at Sienna Pkwy; 1990 ranch drainage head</td></tr>
+<tr><td><b>Why this location</b></td><td>stock-water point on the drainage (18 m) - congregation and deposition in one spot<br>now 217 m from Ladera Ranch ES - present-day access relevance<br>orchard confounder 3.4 km away - arsenic here could not be casually attributed to orchards</td></tr>
+<tr><td><b>Drainage relationship</b></td><td>Sienna Botanica (20 m) · water point sits 18 m from the mapped drainage</td></tr>
+<tr><td><b>Grading status</b></td><td>Historic water point now under Ladera development and placed fill.</td></tr>
+<tr><td><b>Sample to take</b></td><td>0–6 in surface <b>and</b> a fill-depth interval (target the placed-fill horizon)</td></tr>
+<tr><td><b>Question it answers</b></td><td>Did anything at this water point survive into the fill, and is it at the surface where people are?</td></tr>
+</tbody></table></div></div>
+<div class="card">
+<h4>T04 &nbsp; <span class="role r-src">SOURCE AREA</span></h4>
+<div class="tablewrap"><table><tbody>
+<tr><td style="width:23%"><b>Original water point</b></td><td class="num">33.54123, -117.66061</td></tr>
+<tr><td><b>Recommended sample point</b></td><td class="num">33.54096, -117.66046 &nbsp; <span class="small">offset 33 m from the water point · 210 m from the nearest road</span></td></tr>
+<tr><td><b>What is there now</b></td><td>Golf course fairway on the old canyon floor</td></tr>
+<tr><td><b>Why this location</b></td><td>stock-water point on the drainage (27 m) - congregation and deposition in one spot<br>large impoundment (12,395 m2) - a settling basin for fine sediment</td></tr>
+<tr><td><b>Drainage relationship</b></td><td>Trabuco Creek (47 m) · water point sits 27 m from the mapped drainage</td></tr>
+<tr><td><b>Grading status</b></td><td>Historic water point now golf course. Accessible, shallow disturbance only.</td></tr>
+<tr><td><b>Sample to take</b></td><td>0–6 in surface; 6–18 in where access allows</td></tr>
+<tr><td><b>Question it answers</b></td><td>Is there elevated arsenic at this historic water point?</td></tr>
+</tbody></table></div></div>
+<div class="card">
+<h4>T05 &nbsp; <span class="role r-src">SOURCE AREA</span></h4>
+<div class="tablewrap"><table><tbody>
+<tr><td style="width:23%"><b>Original water point</b></td><td class="num">33.52477, -117.64745</td></tr>
+<tr><td><b>Recommended sample point</b></td><td class="num">33.52499, -117.64745 &nbsp; <span class="small">offset 24 m from the water point · 13 m from the nearest road</span></td></tr>
+<tr><td><b>What is there now</b></td><td>Houses present in 1990 (Mission Viejo, Horno Creek Rd)</td></tr>
+<tr><td><b>Why this location</b></td><td>stock-water point on the drainage (27 m) - congregation and deposition in one spot<br>now 205 m from Stoneridge Park - present-day access relevance</td></tr>
+<tr><td><b>Drainage relationship</b></td><td>Horno Creek (38 m) · water point sits 27 m from the mapped drainage</td></tr>
+<tr><td><b>Grading status</b></td><td>Historic water point developed before 1990, outside the Ladera mass grading.</td></tr>
+<tr><td><b>Sample to take</b></td><td>0–6 in surface; 6–18 in where access allows</td></tr>
+<tr><td><b>Question it answers</b></td><td>Is there elevated arsenic at this historic water point?</td></tr>
+</tbody></table></div></div>
+<div class="card">
+<h4>T06 &nbsp; <span class="role r-ctl">UNDISTURBED</span></h4>
+<div class="tablewrap"><table><tbody>
+<tr><td style="width:23%"><b>Original water point</b></td><td class="num">33.55857, -117.65281</td></tr>
+<tr><td><b>Recommended sample point</b></td><td class="num">33.55848, -117.65272 &nbsp; <span class="small">offset 13 m from the water point · 335 m from the nearest road</span></td></tr>
+<tr><td><b>What is there now</b></td><td>Oak/riparian corridor below the 2026 concrete find</td></tr>
+<tr><td><b>Why this location</b></td><td>stock-water point on the drainage (42 m) - congregation and deposition in one spot<br>large impoundment (9,111 m2) - a settling basin for fine sediment<br>orchard confounder 2.0 km away - arsenic here could not be casually attributed to orchards</td></tr>
+<tr><td><b>Drainage relationship</b></td><td>Trabuco Creek (150 m) · water point sits 42 m from the mapped drainage</td></tr>
+<tr><td><b>Grading status</b></td><td>Never graded. Original soil profile most likely intact here.</td></tr>
+<tr><td><b>Sample to take</b></td><td>0–6 in surface, plus 6–18 in</td></tr>
+<tr><td><b>Question it answers</b></td><td>What does never-graded ground here read? This is the yardstick every other result is judged against.</td></tr>
+</tbody></table></div></div>
+<div class="card">
+<h4>T07 &nbsp; <span class="role r-fill">FILL / SOURCE</span></h4>
+<div class="tablewrap"><table><tbody>
+<tr><td style="width:23%"><b>Original water point</b></td><td class="num">33.55750, -117.63615</td></tr>
+<tr><td><b>Recommended sample point</b></td><td class="num">33.55730, -117.63684 &nbsp; <span class="small">offset 68 m from the water point · 7 m from the nearest road</span></td></tr>
+<tr><td><b>What is there now</b></td><td>Under Ladera housing; Frog Park 20 m</td></tr>
+<tr><td><b>Why this location</b></td><td>stock-water point on the drainage (42 m) - congregation and deposition in one spot<br>now 47 m from Frog Park - present-day access relevance<br>orchard confounder 3.5 km away - arsenic here could not be casually attributed to orchards</td></tr>
+<tr><td><b>Drainage relationship</b></td><td>Sienna Botanica (23 m) · water point sits 42 m from the mapped drainage</td></tr>
+<tr><td><b>Grading status</b></td><td>Historic water point now under Ladera development and placed fill.</td></tr>
+<tr><td><b>Sample to take</b></td><td>0–6 in surface <b>and</b> a fill-depth interval (target the placed-fill horizon)</td></tr>
+<tr><td><b>Question it answers</b></td><td>Did anything at this water point survive into the fill, and is it at the surface where people are?</td></tr>
+</tbody></table></div></div>
+<div class="card">
+<h4>T08 &nbsp; <span class="role r-ctl">UNDISTURBED</span></h4>
+<div class="tablewrap"><table><tbody>
+<tr><td style="width:23%"><b>Original water point</b></td><td class="num">33.54793, -117.65992</td></tr>
+<tr><td><b>Recommended sample point</b></td><td class="num">33.54804, -117.66009 &nbsp; <span class="small">offset 20 m from the water point · 192 m from the nearest road</span></td></tr>
+<tr><td><b>What is there now</b></td><td>Arroyo Trabuco slope/corridor</td></tr>
+<tr><td><b>Why this location</b></td><td>stock-water point on the drainage (46 m) - congregation and deposition in one spot<br>large impoundment (4,661 m2) - a settling basin for fine sediment</td></tr>
+<tr><td><b>Drainage relationship</b></td><td>Trabuco Creek (116 m) · water point sits 46 m from the mapped drainage</td></tr>
+<tr><td><b>Grading status</b></td><td>Never graded. Original soil profile most likely intact here.</td></tr>
+<tr><td><b>Sample to take</b></td><td>0–6 in surface, plus 6–18 in</td></tr>
+<tr><td><b>Question it answers</b></td><td>What does never-graded ground here read? This is the yardstick every other result is judged against.</td></tr>
+</tbody></table></div></div>
+<div class="card">
+<h4>T09 &nbsp; <span class="role r-fill">FILL / SOURCE</span></h4>
+<div class="tablewrap"><table><tbody>
+<tr><td style="width:23%"><b>Original water point</b></td><td class="num">33.56288, -117.63391</td></tr>
+<tr><td><b>Recommended sample point</b></td><td class="num">33.56254, -117.63300 &nbsp; <span class="small">offset 92 m from the water point · 7 m from the nearest road</span></td></tr>
+<tr><td><b>What is there now</b></td><td>Under condos off Granville St; Chaparral Park 71 m</td></tr>
+<tr><td><b>Why this location</b></td><td>stock-water point on the drainage (88 m) - congregation and deposition in one spot<br>now 142 m from Chaparral ES - present-day access relevance<br>orchard confounder 3.8 km away - arsenic here could not be casually attributed to orchards</td></tr>
+<tr><td><b>Drainage relationship</b></td><td>Sienna Botanica (113 m) · water point sits 88 m from the mapped drainage</td></tr>
+<tr><td><b>Grading status</b></td><td>Historic water point now under Ladera development and placed fill.</td></tr>
+<tr><td><b>Sample to take</b></td><td>0–6 in surface <b>and</b> a fill-depth interval (target the placed-fill horizon)</td></tr>
+<tr><td><b>Question it answers</b></td><td>Did anything at this water point survive into the fill, and is it at the surface where people are?</td></tr>
+</tbody></table></div></div>
+<div class="card">
+<h4>T10 &nbsp; <span class="role r-src">SOURCE AREA</span></h4>
+<div class="tablewrap"><table><tbody>
+<tr><td style="width:23%"><b>Original water point</b></td><td class="num">33.54593, -117.66021</td></tr>
+<tr><td><b>Recommended sample point</b></td><td class="num">33.54586, -117.66021 &nbsp; <span class="small">offset 8 m from the water point · 214 m from the nearest road</span></td></tr>
+<tr><td><b>What is there now</b></td><td>Golf margin + preserved brush at canyon confluence</td></tr>
+<tr><td><b>Why this location</b></td><td>stock-water point on the drainage (97 m) - congregation and deposition in one spot<br>now 396 m from Coronado Park - present-day access relevance</td></tr>
+<tr><td><b>Drainage relationship</b></td><td>Trabuco Creek (138 m) · water point sits 97 m from the mapped drainage</td></tr>
+<tr><td><b>Grading status</b></td><td>Historic water point at golf course margin.</td></tr>
+<tr><td><b>Sample to take</b></td><td>0–6 in surface; 6–18 in where access allows</td></tr>
+<tr><td><b>Question it answers</b></td><td>Is there elevated arsenic at this historic water point?</td></tr>
+</tbody></table></div></div>
+<div class="card">
+<h4>T11 &nbsp; <span class="role r-ctl">UNDISTURBED</span></h4>
+<div class="tablewrap"><table><tbody>
+<tr><td style="width:23%"><b>Original water point</b></td><td class="num">33.55057, -117.66081</td></tr>
+<tr><td><b>Recommended sample point</b></td><td class="num">33.55061, -117.66027 &nbsp; <span class="small">offset 50 m from the water point · 197 m from the nearest road</span></td></tr>
+<tr><td><b>What is there now</b></td><td>Slope above Arroyo Trabuco Trail</td></tr>
+<tr><td><b>Why this location</b></td><td>mapped 1968 stock-water point - daily cattle congregation, dung and hoof traffic</td></tr>
+<tr><td><b>Drainage relationship</b></td><td>Trabuco Creek (154 m) · water point sits 165 m from the mapped drainage</td></tr>
+<tr><td><b>Grading status</b></td><td>Never graded. Original soil profile most likely intact here.</td></tr>
+<tr><td><b>Sample to take</b></td><td>0–6 in surface, plus 6–18 in</td></tr>
+<tr><td><b>Question it answers</b></td><td>What does never-graded ground here read? This is the yardstick every other result is judged against.</td></tr>
+</tbody></table></div></div>
+<div class="card">
+<h4>T12 &nbsp; <span class="role r-ctl">UNDISTURBED</span></h4>
+<div class="tablewrap"><table><tbody>
+<tr><td style="width:23%"><b>Original water point</b></td><td class="num">33.55143, -117.66048</td></tr>
+<tr><td><b>Recommended sample point</b></td><td class="num">33.55159, -117.66048 &nbsp; <span class="small">offset 18 m from the water point · 140 m from the nearest road</span></td></tr>
+<tr><td><b>What is there now</b></td><td>Slope above Arroyo Trabuco Trail</td></tr>
+<tr><td><b>Why this location</b></td><td>mapped 1968 stock-water point - daily cattle congregation, dung and hoof traffic</td></tr>
+<tr><td><b>Drainage relationship</b></td><td>Trabuco Creek (125 m) · water point sits 167 m from the mapped drainage</td></tr>
+<tr><td><b>Grading status</b></td><td>Never graded. Original soil profile most likely intact here.</td></tr>
+<tr><td><b>Sample to take</b></td><td>0–6 in surface, plus 6–18 in</td></tr>
+<tr><td><b>Question it answers</b></td><td>What does never-graded ground here read? This is the yardstick every other result is judged against.</td></tr>
+</tbody></table></div></div>
+<div class="card">
+<h4>T13 &nbsp; <span class="role r-src">SOURCE AREA</span></h4>
+<div class="tablewrap"><table><tbody>
+<tr><td style="width:23%"><b>Original water point</b></td><td class="num">33.54394, -117.66132</td></tr>
+<tr><td><b>Recommended sample point</b></td><td class="num">33.54392, -117.66130 &nbsp; <span class="small">offset 3 m from the water point · 215 m from the nearest road</span></td></tr>
+<tr><td><b>What is there now</b></td><td>Large 1990 impoundment now golf course + creek</td></tr>
+<tr><td><b>Why this location</b></td><td>mapped 1968 stock-water point - daily cattle congregation, dung and hoof traffic<br>large impoundment (24,745 m2) - a settling basin for fine sediment<br>now 319 m from Coronado Park - present-day access relevance</td></tr>
+<tr><td><b>Drainage relationship</b></td><td>Trabuco Creek (206 m) · water point sits 183 m from the mapped drainage</td></tr>
+<tr><td><b>Grading status</b></td><td>Historic water point now golf course. Accessible, shallow disturbance only.</td></tr>
+<tr><td><b>Sample to take</b></td><td>0–6 in surface; 6–18 in where access allows</td></tr>
+<tr><td><b>Question it answers</b></td><td>Is there elevated arsenic at this historic water point?</td></tr>
+</tbody></table></div></div>
+<div class="card">
+<h4>T14 &nbsp; <span class="role r-fill">FILL / SOURCE</span></h4>
+<div class="tablewrap"><table><tbody>
+<tr><td style="width:23%"><b>Original water point</b></td><td class="num">33.54078, -117.64571</td></tr>
+<tr><td><b>Recommended sample point</b></td><td class="num">33.54078, -117.64666 &nbsp; <span class="small">offset 88 m from the water point · 8 m from the nearest road</span></td></tr>
+<tr><td><b>What is there now</b></td><td>Under Ladera housing, Davis Pl</td></tr>
+<tr><td><b>Why this location</b></td><td>mapped 1968 stock-water point - daily cattle congregation, dung and hoof traffic<br>orchard confounder 1.9 km away - arsenic here could not be casually attributed to orchards</td></tr>
+<tr><td><b>Drainage relationship</b></td><td>Sienna Botanica (468 m) · water point sits 473 m from the mapped drainage</td></tr>
+<tr><td><b>Grading status</b></td><td>Historic water point now under Ladera development and placed fill.</td></tr>
+<tr><td><b>Sample to take</b></td><td>0–6 in surface <b>and</b> a fill-depth interval (target the placed-fill horizon)</td></tr>
+<tr><td><b>Question it answers</b></td><td>Did anything at this water point survive into the fill, and is it at the surface where people are?</td></tr>
+</tbody></table></div></div>
+<div class="card">
+<h4>T15 &nbsp; <span class="role r-fill">FILL / SOURCE</span></h4>
+<div class="tablewrap"><table><tbody>
+<tr><td style="width:23%"><b>Original water point</b></td><td class="num">33.54788, -117.64507</td></tr>
+<tr><td><b>Recommended sample point</b></td><td class="num">33.54808, -117.64410 &nbsp; <span class="small">offset 93 m from the water point · 8 m from the nearest road</span></td></tr>
+<tr><td><b>What is there now</b></td><td>Under Ladera housing, O&#x27;Neill Dr; park 77 m</td></tr>
+<tr><td><b>Why this location</b></td><td>mapped 1968 stock-water point - daily cattle congregation, dung and hoof traffic<br>orchard confounder 2.5 km away - arsenic here could not be casually attributed to orchards</td></tr>
+<tr><td><b>Drainage relationship</b></td><td>Sienna Botanica (467 m) · water point sits 509 m from the mapped drainage</td></tr>
+<tr><td><b>Grading status</b></td><td>Historic water point now under Ladera development and placed fill.</td></tr>
+<tr><td><b>Sample to take</b></td><td>0–6 in surface <b>and</b> a fill-depth interval (target the placed-fill horizon)</td></tr>
+<tr><td><b>Question it answers</b></td><td>Did anything at this water point survive into the fill, and is it at the surface where people are?</td></tr>
+</tbody></table></div></div>
+<div class="card">
+<h4>T16 &nbsp; <span class="role r-fill">FILL / SOURCE</span></h4>
+<div class="tablewrap"><table><tbody>
+<tr><td style="width:23%"><b>Original water point</b></td><td class="num">33.54833, -117.64498</td></tr>
+<tr><td><b>Recommended sample point</b></td><td class="num">33.54808, -117.64405 &nbsp; <span class="small">offset 90 m from the water point · 6 m from the nearest road</span></td></tr>
+<tr><td><b>What is there now</b></td><td>Under Ladera housing, Bayley St roundabout; park 53 m</td></tr>
+<tr><td><b>Why this location</b></td><td>mapped 1968 stock-water point - daily cattle congregation, dung and hoof traffic<br>orchard confounder 2.5 km away - arsenic here could not be casually attributed to orchards</td></tr>
+<tr><td><b>Drainage relationship</b></td><td>Sienna Botanica (486 m) · water point sits 526 m from the mapped drainage</td></tr>
+<tr><td><b>Grading status</b></td><td>Historic water point now under Ladera development and placed fill.</td></tr>
+<tr><td><b>Sample to take</b></td><td>0–6 in surface <b>and</b> a fill-depth interval (target the placed-fill horizon)</td></tr>
+<tr><td><b>Question it answers</b></td><td>Did anything at this water point survive into the fill, and is it at the surface where people are?</td></tr>
+</tbody></table></div></div>
+<div class="card">
+<h4>T17 &nbsp; <span class="role r-fill">FILL / SOURCE</span></h4>
+<div class="tablewrap"><table><tbody>
+<tr><td style="width:23%"><b>Original water point</b></td><td class="num">33.55267, -117.64407</td></tr>
+<tr><td><b>Recommended sample point</b></td><td class="num">33.55281, -117.64401 &nbsp; <span class="small">offset 17 m from the water point · 7 m from the nearest road</span></td></tr>
+<tr><td><b>What is there now</b></td><td>Under Ladera housing, Creighton Pl</td></tr>
+<tr><td><b>Why this location</b></td><td>mapped 1968 stock-water point - daily cattle congregation, dung and hoof traffic<br>orchard confounder 2.8 km away - arsenic here could not be casually attributed to orchards</td></tr>
+<tr><td><b>Drainage relationship</b></td><td>Sienna Botanica (500 m) · water point sits 528 m from the mapped drainage</td></tr>
+<tr><td><b>Grading status</b></td><td>Historic water point now under Ladera development and placed fill.</td></tr>
+<tr><td><b>Sample to take</b></td><td>0–6 in surface <b>and</b> a fill-depth interval (target the placed-fill horizon)</td></tr>
+<tr><td><b>Question it answers</b></td><td>Did anything at this water point survive into the fill, and is it at the surface where people are?</td></tr>
+</tbody></table></div></div>
+<div class="card">
+<h4>T18 &nbsp; <span class="role r-src">SOURCE AREA</span></h4>
+<div class="tablewrap"><table><tbody>
+<tr><td style="width:23%"><b>Original water point</b></td><td class="num">33.56819, -117.65569</td></tr>
+<tr><td><b>Recommended sample point</b></td><td class="num">33.56806, -117.65560 &nbsp; <span class="small">offset 16 m from the water point · 14 m from the nearest road</span></td></tr>
+<tr><td><b>What is there now</b></td><td>Developed before 1990 (Mission Viejo); Cordova Park 3 m</td></tr>
+<tr><td><b>Why this location</b></td><td>mapped 1968 stock-water point - daily cattle congregation, dung and hoof traffic<br>now 41 m from Cordova Park - present-day access relevance<br>orchard confounder 2.3 km away - arsenic here could not be casually attributed to orchards</td></tr>
+<tr><td><b>Drainage relationship</b></td><td>Trabuco Creek (593 m) · water point sits 632 m from the mapped drainage</td></tr>
+<tr><td><b>Grading status</b></td><td>Historic water point developed before 1990, outside the Ladera mass grading.</td></tr>
+<tr><td><b>Sample to take</b></td><td>0–6 in surface; 6–18 in where access allows</td></tr>
+<tr><td><b>Question it answers</b></td><td>Is there elevated arsenic at this historic water point?</td></tr>
+</tbody></table></div></div>
+<div class="card">
+<h4>T19 &nbsp; <span class="role r-ctl">UNDISTURBED</span></h4>
+<div class="tablewrap"><table><tbody>
+<tr><td style="width:23%"><b>Original water point</b></td><td class="num">33.53482, -117.65619</td></tr>
+<tr><td><b>Recommended sample point</b></td><td class="num">33.53475, -117.65610 &nbsp; <span class="small">offset 11 m from the water point · 319 m from the nearest road</span></td></tr>
+<tr><td><b>What is there now</b></td><td>Ungraded canyon south of Ladera</td></tr>
+<tr><td><b>Why this location</b></td><td>mapped 1968 stock-water point - daily cattle congregation, dung and hoof traffic</td></tr>
+<tr><td><b>Drainage relationship</b></td><td>Trabuco Creek (677 m) · water point sits 681 m from the mapped drainage</td></tr>
+<tr><td><b>Grading status</b></td><td>Never graded. Original soil profile most likely intact here.</td></tr>
+<tr><td><b>Sample to take</b></td><td>0–6 in surface, plus 6–18 in</td></tr>
+<tr><td><b>Question it answers</b></td><td>What does never-graded ground here read? This is the yardstick every other result is judged against.</td></tr>
+</tbody></table></div></div>
+<div class="card">
+<h4>T20 &nbsp; <span class="role r-src">SOURCE AREA</span></h4>
+<div class="tablewrap"><table><tbody>
+<tr><td style="width:23%"><b>Original water point</b></td><td class="num">33.52599, -117.66196</td></tr>
+<tr><td><b>Recommended sample point</b></td><td class="num">33.52558, -117.66207 &nbsp; <span class="small">offset 47 m from the water point · 20 m from the nearest road</span></td></tr>
+<tr><td><b>What is there now</b></td><td>Oak grove + pre-1990 houses</td></tr>
+<tr><td><b>Why this location</b></td><td>mapped 1968 stock-water point - daily cattle congregation, dung and hoof traffic</td></tr>
+<tr><td><b>Drainage relationship</b></td><td>Trabuco Creek (679 m) · water point sits 688 m from the mapped drainage</td></tr>
+<tr><td><b>Grading status</b></td><td>Historic water point at the margin of pre-1990 development.</td></tr>
+<tr><td><b>Sample to take</b></td><td>0–6 in surface; 6–18 in where access allows</td></tr>
+<tr><td><b>Question it answers</b></td><td>Is there elevated arsenic at this historic water point?</td></tr>
+</tbody></table></div></div>
+<div class="card">
+<h4>T21 &nbsp; <span class="role r-src">SOURCE AREA</span></h4>
+<div class="tablewrap"><table><tbody>
+<tr><td style="width:23%"><b>Original water point</b></td><td class="num">33.52748, -117.63520</td></tr>
+<tr><td><b>Recommended sample point</b></td><td class="num">33.52818, -117.63542 &nbsp; <span class="small">offset 81 m from the water point · 7 m from the nearest road</span></td></tr>
+<tr><td><b>What is there now</b></td><td>Rancho Mission Viejo new-village edge; 1990 ranch pond + oaks</td></tr>
+<tr><td><b>Why this location</b></td><td>mapped 1968 stock-water point - daily cattle congregation, dung and hoof traffic</td></tr>
+<tr><td><b>Drainage relationship</b></td><td>None (1037 m) · water point sits 1094 m from the mapped drainage</td></tr>
+<tr><td><b>Grading status</b></td><td>Historic water point on newer Rancho Mission Viejo development.</td></tr>
+<tr><td><b>Sample to take</b></td><td>0–6 in surface; 6–18 in where access allows</td></tr>
+<tr><td><b>Question it answers</b></td><td>Is there elevated arsenic at this historic water point?</td></tr>
+</tbody></table></div></div>
+<div class="card">
+<h4>T22 &nbsp; <span class="role r-ctl">UNDISTURBED</span></h4>
+<div class="tablewrap"><table><tbody>
+<tr><td style="width:23%"><b>Original water point</b></td><td class="num">33.54410, -117.62619</td></tr>
+<tr><td><b>Recommended sample point</b></td><td class="num">33.54412, -117.62617 &nbsp; <span class="small">offset 3 m from the water point · 202 m from the nearest road</span></td></tr>
+<tr><td><b>What is there now</b></td><td>Open rangeland on RMV land, ungraded</td></tr>
+<tr><td><b>Why this location</b></td><td>mapped 1968 stock-water point - daily cattle congregation, dung and hoof traffic<br>orchard confounder 2.8 km away - arsenic here could not be casually attributed to orchards</td></tr>
+<tr><td><b>Drainage relationship</b></td><td>Sienna Botanica (1175 m) · water point sits 1144 m from the mapped drainage</td></tr>
+<tr><td><b>Grading status</b></td><td>Open Rancho Mission Viejo ground; likely never graded.</td></tr>
+<tr><td><b>Sample to take</b></td><td>0–6 in surface, plus 6–18 in</td></tr>
+<tr><td><b>Question it answers</b></td><td>What does never-graded ground here read? This is the yardstick every other result is judged against.</td></tr>
+</tbody></table></div></div>
+<div class="card">
+<h4>T23 &nbsp; <span class="role r-src">SOURCE AREA</span></h4>
+<div class="tablewrap"><table><tbody>
+<tr><td style="width:23%"><b>Original water point</b></td><td class="num">33.56911, -117.66905</td></tr>
+<tr><td><b>Recommended sample point</b></td><td class="num">33.56871, -117.66935 &nbsp; <span class="small">offset 52 m from the water point · 25 m from the nearest road</span></td></tr>
+<tr><td><b>What is there now</b></td><td>Developed before 1990; Granada Park 12 m</td></tr>
+<tr><td><b>Why this location</b></td><td>mapped 1968 stock-water point - daily cattle congregation, dung and hoof traffic<br>now 26 m from Granada Park - present-day access relevance<br>orchard confounder 1.7 km away - arsenic here could not be casually attributed to orchards</td></tr>
+<tr><td><b>Drainage relationship</b></td><td>Oso Creek (319 m) · water point sits 1714 m from the mapped drainage</td></tr>
+<tr><td><b>Grading status</b></td><td>Historic water point developed before 1990, outside the Ladera mass grading.</td></tr>
+<tr><td><b>Sample to take</b></td><td>0–6 in surface; 6–18 in where access allows</td></tr>
+<tr><td><b>Question it answers</b></td><td>Is there elevated arsenic at this historic water point?</td></tr>
+</tbody></table></div></div><h2 id="controls">B · Controls and background</h2>
+<p class="lead">These are not optional extras. They are the measurement. Six of the twenty-three points above are already classified as undisturbed and can serve as controls; the rest of this section adds what those do not cover.</p>
+
+<div class="tablewrap"><table><thead><tr><th style="width:20%">Group</th><th style="width:7%">n</th><th style="width:34%">Where</th><th>What it establishes</th></tr></thead><tbody>
+<tr><td><span class="role r-ctl">UNDISTURBED</span></td><td>3–6</td><td>The six targets classed as never-graded — Arroyo Trabuco creek corridor and open Rancho Mission Viejo ground. Matched for soil series and slope aspect where possible.</td><td><b>What never-farmed, never-cut ground here reads.</b> Every source-area result is judged against this.</td></tr>
+<tr><td><span class="role r-bg">BACKGROUND</span></td><td>3</td><td>Same geology, <b>off the ranch entirely</b>. Monterey Formation soils outside any historic ranching or agricultural footprint.</td><td>What "normal" is for this formation, independent of any land-use history on this property.</td></tr>
+<tr><td><span class="role r-ctl">NEVER-IRRIGATED</span></td><td>3–4</td><td>Landscape soil matched for soil and aspect that is <b>not</b> on the recycled-water system. Paired one-for-one with the long-irrigated samples below.</td><td>The comparison that tests the deposition question in the purple-pipe loop.</td></tr>
+<tr><td><span class="role r-src">LONG-IRRIGATED</span></td><td>3–4</td><td>Common-area turf and slope that has been on purple-pipe irrigation for roughly two decades.</td><td>Whether two decades of irrigation has left anything persistent in the soil.</td></tr>
+<tr><td><span class="role r-drain">DRAINAGE-PATH</span></td><td>3–4</td><td>Downslope of the highest-ranked source areas, along the documented historical drainage lines.</td><td>Whether anything moved from a source area, and how far.</td></tr>
+</tbody></table></div>
+
+<div class="card"><h4>Matching rules</h4>
+<p>A control is only a control if it is comparable. For each pair, match on: <b>soil series</b> (from the USDA soil survey), <b>slope and aspect</b>, <b>depth interval</b>, and <b>season of collection</b>. Record all four on the chain-of-custody form. A control taken on a different soil series in a different season is not a control.</p></div>
+<h2 id="water">C · The seven water locations</h2>
+<p class="lead">Ladera's dry-weather runoff is captured at the bottom of its watershed, passed through a county basin and seven acres of HOA wetlands, blended with recycled water and sprayed back onto the community as landscape irrigation. About 180 acre-feet a season. This network is designed to tell the sources apart.</p>
+
+<div class="card warn"><h4>Why seven, and not one</h4>
+<p>A single sample at a sprinkler head tells you what is being applied, but not where it came from. If something is found, the next question is immediately whether it entered with the runoff, arrived in the recycled water, or was concentrated by the treatment. <b>Points W1 through W5 exist so that a result at W6 can be attributed.</b> If you can only fund one, fund W6 — but know what it cannot tell you.</p></div>
+
+<div class="tablewrap"><table><thead><tr><th style="width:6%">ID</th><th style="width:19%">Location</th><th style="width:9%">Sample</th><th style="width:26%">Why here</th><th>What a result means</th></tr></thead><tbody>
+<tr><td><b>W1</b></td><td><span class="role r-water">UPSTREAM</span><br>Horno Creek above the basin</td><td>Grab<br>dry weather</td><td>What the watershed delivers <b>before</b> any treatment. The baseline for everything downstream.</td><td><b>+</b> the catchment is the source. <b>−</b> rules the catchment out and moves attention to the recycled stream.</td></tr>
+<tr><td><b>W2</b></td><td><span class="role r-water">BASIN OUT</span><br>Horno Water Quality Basin outlet</td><td>Grab</td><td>Isolates what settling alone removes. County of Orange owns and operates the basin.</td><td>The difference from W1 quantifies basin removal. Little difference means settling is not the mechanism.</td></tr>
+<tr><td><b>W3</b></td><td><span class="role r-water">WETLAND OUT</span><br>After the 7 acres of constructed wetlands</td><td>Grab</td><td><b>The full effect of the entire engineered treatment train for this stream.</b> There is nothing else between here and the blend.</td><td>Establishes what the seven acres actually do. <b>The single most informative water point in the network.</b></td></tr>
+<tr><td><b>W4</b></td><td><span class="role r-water">PRE-BLEND</span><br>Recycled effluent before blending</td><td>Grab</td><td>The other input, on its own. <b>Provision K.2 of the permit already contemplates sampling at exactly this point.</b></td><td>Separates plant-origin from runoff-origin constituents. Without it the blend is uninterpretable.</td></tr>
+<tr><td><b>W5</b></td><td><span class="role r-water">POST-BLEND</span><br>Distribution storage</td><td>Grab</td><td>What actually enters the purple-pipe network after the two streams meet.</td><td>Mass-balance check against W3 and W4. A value outside that range means something else is entering.</td></tr>
+<tr><td><b>W6</b></td><td><span class="role r-water">SPRINKLER</span><br>Purple-pipe head, 2–3 community locations</td><td>Grab</td><td><b>What is actually applied to the ground people walk on, sit on and let children play on.</b> The most direct question in the whole design.</td><td><b>The cheapest, highest-value single test in this investigation.</b> Multiple locations test whether delivery is uniform.</td></tr>
+<tr><td><b>W7</b></td><td><span class="role r-water">RETURN</span><br>Irrigation runoff re-entering drainage</td><td>Grab<br>dry weather</td><td>Closes the circuit — what leaves the landscape and heads back toward Horno Creek.</td><td>Compared with W6, shows what the soil retained rather than passed through.</td></tr>
+</tbody></table></div>
+
+<div class="card"><h4>Access reality — read before planning</h4>
+<p><b>Three-party custody.</b> The basin is County of Orange (OC Public Works). The wetlands are Ladera Ranch Homeowners Association. The diversion works and distribution are Santa Margarita Water District.</p>
+<p><b>W2, W3, W4 and W5 all sit on that infrastructure and need agency cooperation.</b> W1, W6 and W7 are the points most likely to be reachable without a formal agreement — W6 in particular, since purple-pipe heads serve public common areas.</p></div>
+
+<div class="card"><h4>Four points deliberately left out of round one</h4>
+<ul>
+<li><b>Basin inlet</b> — W1 and W2 already bracket it.</li>
+<li><b>Wetland inlet as distinct from basin outlet</b> — the same water, metres apart.</li>
+<li><b>Pre-blend diversion water as distinct from W3</b> — the permit treats these as the same stream.</li>
+<li><b>Additional sprinkler locations beyond two or three</b> — diminishing return until a first result exists.</li>
+</ul>
+<p class="small">Add any of these only if round one shows a difference worth resolving.</p></div>
+<h2 id="sed">D · Sediment</h2>
+<p class="lead">Two samples, and one of them is the most valuable in the entire plan.</p>
+
+<div class="card go"><h4>S1 · Horno Basin sediment core <span class="role r-sed">DEPTH-RESOLVED CORE</span></h4>
+<p><b>Sample:</b> a core taken to the base of the accumulated sediment, split into intervals — 0–5 cm, then at regular depth increments down.</p>
+<p><b>Why this one matters more than the rest.</b> The basin has been collecting the fine sediment of this entire watershed since it was built. A depth-resolved core is therefore <b>a time series</b>. It records what the drainage was carrying, year by year, whether or not anybody was sampling the water at the time.</p>
+<p><b>This is the only sample in the whole plan that can look backwards.</b> Every water sample tells you about the day it was taken. The core tells you about two decades.</p>
+<p><b>What a result means.</b> A clean core through its full depth is strong evidence, and probably the single most reassuring result obtainable. An enriched core does more than flag a problem — the depth at which enrichment appears <b>dates it</b>, which points at a period and therefore at a cause.</p>
+</div>
+
+<div class="card"><h4>S2 · Wetland sediment <span class="role r-sed">SURFACE GRAB</span></h4>
+<p><b>Sample:</b> 0–5 cm surface grab, within the constructed wetland cells.</p>
+<p><b>Why:</b> where persistent constituents would settle out of the diverted stream before it is pumped into distribution. Pairs directly with the W3 water sample — one tells you what is in the water leaving, the other what stayed behind.</p>
+</div>
+<h2 id="methods">E · What to test for, and with which method</h2>
+<p class="lead">Ask the laboratory for these by method number. They are standard, every commercial environmental lab in Southern California runs them, and quoting the number avoids ambiguity about what you are buying.</p>
+
+<h3>Soil and sediment</h3>
+<div class="tablewrap"><table><thead><tr><th style="width:23%">Determination</th><th style="width:20%">Method</th><th style="width:10%">Run it on</th><th>Why, and what to watch</th></tr></thead><tbody>
+<tr><td><b>Total arsenic</b></td><td>EPA <b>3050B</b> or <b>3051A</b> digestion, then EPA <b>6020B</b> ICP-MS</td><td>Every soil and sediment sample</td><td><b>The primary question.</b> 6020B rather than 6010D ICP-OES because the detection limit matters here — ask for a reporting limit at or below 0.5 mg/kg.</td></tr>
+<tr><td><b>Arsenic speciation</b></td><td><b>HPLC-ICP-MS</b></td><td><b>Only where total arsenic warrants it</b></td><td>Inorganic arsenic drives risk; organic forms largely do not. This is the expensive step, so it is a second-stage test, not a first-stage one.</td></tr>
+<tr><td><b>Bioaccessible arsenic</b></td><td>EPA <b>1340</b></td><td>Only where a result exceeds a screening level</td><td>Estimates how much would actually be absorbed if ingested. Relevant to exposure, not to presence. Third stage.</td></tr>
+<tr><td><b>Organochlorine pesticides</b></td><td>EPA <b>8081B</b></td><td>Source areas and long-irrigated soil</td><td>Era-appropriate to the documented dry farming of beans and barley through the mid-twentieth century.</td></tr>
+<tr><td><b>Lead and the metals suite</b></td><td>Same digestion, <b>6020B</b></td><td>Add to any sample already being digested</td><td><b>Marginal cost is near zero once the digestion is done.</b> Gives context and catches anything unrelated to the arsenic question.</td></tr>
+<tr><td><b>pH, organic carbon, texture</b></td><td>Standard agronomic</td><td>Every sample</td><td>Cheap, and they control how arsenic behaves in soil. Without them a result cannot be interpreted properly.</td></tr>
+</tbody></table></div>
+
+<h3>Water</h3>
+<div class="tablewrap"><table><thead><tr><th style="width:23%">Determination</th><th style="width:20%">Method</th><th style="width:10%">Run it on</th><th>Why</th></tr></thead><tbody>
+<tr><td><b>Total arsenic, dissolved and total</b></td><td>EPA <b>6020B</b></td><td>W1–W7</td><td>Request both filtered and unfiltered. The difference tells you whether it is travelling dissolved or on particles.</td></tr>
+<tr><td><b>Arsenic speciation</b></td><td><b>HPLC-ICP-MS</b></td><td>W3, W6 first</td><td>The two points where form matters most — what the treatment train produces, and what reaches the ground.</td></tr>
+<tr><td><b>Organochlorine pesticides</b></td><td>EPA <b>8081B</b></td><td>W1, W3, W6</td><td>Entry, post-treatment, delivery.</td></tr>
+<tr><td><b>Current-use landscape pesticides</b></td><td><b>LC-MS/MS</b> multi-residue panel</td><td>W6, W7</td><td>Era-appropriate to present-day HOA landscape maintenance.</td></tr>
+<tr><td><b>Salts and nutrients</b></td><td>Standard suite — TDS, sulfate, sodium, chloride, boron, nitrate, fluoride, phosphorus</td><td>All water points</td><td><b>Continuity.</b> These are exactly the eight parameters measured in the 2004–05 characterisation sampling, so new data becomes directly comparable with the only existing data.</td></tr>
+<tr><td><b>Contaminants of emerging concern</b></td><td><b>LC-MS/MS</b> screen</td><td>W6 only, round one</td><td>Screening level only. Expensive, and a screen is enough to decide whether it warrants more.</td></tr>
+</tbody></table></div>
+
+<div class="card"><h4>Field and QA requirements — do not skip these</h4>
+<ul>
+<li><b>Field duplicate</b> at roughly one in ten samples. Tests whether the sampling itself is reproducible.</li>
+<li><b>Equipment blank</b> if any non-disposable tool is used between locations.</li>
+<li><b>Trip blank</b> for the water samples.</li>
+<li><b>Chain of custody</b> on every sample, with GPS point, depth interval, date, time, soil series, slope, aspect and photograph.</li>
+<li><b>Use one laboratory</b> for the whole round. Inter-laboratory variation can exceed the differences you are trying to detect.</li>
+<li><b>Ask for the reporting limits before you book the work</b>, and confirm they are low enough to resolve a difference from background rather than merely "non-detect."</li>
+</ul></div>
+<h2 id="order">F · What to do first</h2>
+<p class="lead">If everything were funded at once, do it all. It will not be, so this is the order that buys the most information per dollar.</p>
+
+<div class="tablewrap"><table><thead><tr><th style="width:6%"></th><th style="width:26%">Sample</th><th style="width:16%">Approx. count</th><th>Why it is in this position</th></tr></thead><tbody>
+<tr><td><span class="pri p1">1</span></td><td><b>W6 · purple-pipe sprinkler head</b></td><td>2–3 water samples</td><td>Cheapest, most direct, and answers the question that affects people today. Arsenic plus speciation plus a pesticide panel.</td></tr>
+<tr><td><span class="pri p1">2</span></td><td><b>S1 · Horno Basin sediment core</b></td><td>1 core, 4–6 intervals</td><td><b>The only backward-looking sample available.</b> Two decades of watershed history in one hole.</td></tr>
+<tr><td><span class="pri p1">3</span></td><td><b>Long-irrigated soil + never-irrigated control</b></td><td>3–4 pairs</td><td>Two samples, one comparison. Tests the deposition hypothesis directly and needs no agency permission.</td></tr>
+<tr><td><span class="pri p2">4</span></td><td><b>Undisturbed and regional background soil</b></td><td>6 total</td><td>Must exist before any source-area result can be read. Do these <b>before</b> or alongside the source areas, never after.</td></tr>
+<tr><td><span class="pri p2">5</span></td><td><b>Source-area soil</b>, accessible subset of the 23</td><td>6–10</td><td>Start with the golf-course and pre-1990 points — shallow disturbance, easier access, and the original surface is more likely to survive.</td></tr>
+<tr><td><span class="pri p3">6</span></td><td><b>W3 and W4 · wetland outlet and pre-blend effluent</b></td><td>2</td><td>Separates the two streams. Needs agency cooperation, so start the conversation early and sample when it lands.</td></tr>
+<tr><td><span class="pri p3">7</span></td><td><b>W1, W2, W5, W7 · the rest of the network</b></td><td>4</td><td>Only worth it once a result somewhere needs attributing.</td></tr>
+<tr><td><span class="pri p3">8</span></td><td><b>Fill-depth intervals</b> at the graded Ladera points</td><td>7</td><td>Requires a drill rig or hand auger to depth. Highest cost, and only informative once the surface results are in.</td></tr>
+</tbody></table></div>
+
+<div class="card go"><h4>The minimum defensible first round</h4>
+<p><b>Roughly a dozen samples.</b> Two or three sprinkler waters, one sediment core split into intervals, three or four irrigated-versus-control soil pairs, and three background soils. Total arsenic on everything, speciation only where warranted, one pesticide panel on the sprinkler water.</p>
+<p>That is enough to answer, with controls, whether anything is being applied to the community's landscape and whether the basin has been accumulating anything for twenty years. <b>Everything else in this document is what you do after that comes back.</b></p></div>
+<h2 id="mean">G · What a result would and would not mean</h2>
+<p class="lead">Decide this before the samples go to the laboratory, not after the numbers come back. Writing it down in advance is what separates an investigation from an argument.</p>
+
+<div class="tablewrap"><table><thead><tr><th style="width:26%">If the result is…</th><th style="width:37%">It means</th><th>It does <b>not</b> mean</th></tr></thead><tbody>
+<tr><td><b>Source areas match controls and background</b></td><td>The historic water points carry no arsenic signature above natural levels. <b>A real and valuable finding that closes this line of inquiry for those locations.</b></td><td>That no vat ever existed anywhere on the property. Twenty-three points is a sample, not a survey.</td></tr>
+<tr><td><b>A source area reads above both controls</b></td><td>Something at that location differs from the surrounding landscape and warrants a second, denser round to define its extent.</td><td>That a dipping vat was there, or that anyone has been exposed. Elevated arsenic has several possible origins including natural variation, imported fill and agricultural application.</td></tr>
+<tr><td><b>Sprinkler water is clean</b></td><td>The irrigation system is not currently delivering the constituents tested for. <b>Directly reassuring, and the most useful single result for residents.</b></td><td>That the soil is clean, or that historical delivery was clean. Water samples describe the day they were taken.</td></tr>
+<tr><td><b>Sprinkler water shows something</b></td><td>It is being applied. <b>Attribution then requires W3 and W4</b> to determine whether it entered with the runoff or the recycled water.</td><td>That it is at a level of concern. Compare against irrigation-water criteria before drawing any conclusion.</td></tr>
+<tr><td><b>Basin core is clean through its depth</b></td><td>Two decades of watershed sediment carries no persistent signature. <b>The strongest reassuring result available from this plan.</b></td><td>That nothing ever passed through in the dissolved phase.</td></tr>
+<tr><td><b>Basin core is enriched at depth</b></td><td>Something was accumulating, and <b>the depth dates it.</b> That points at a period, and therefore narrows the possible causes.</td><td>That it is still occurring. Check the surface interval before assuming anything about the present.</td></tr>
+<tr><td><b>Irrigated soil exceeds its never-irrigated pair</b></td><td>Two decades of irrigation has left something measurable. This is the direct test of the deposition hypothesis.</td><td>That the source is the historic land use. It could equally be current landscape products. The pesticide panel helps separate these.</td></tr>
+</tbody></table></div>
+
+<div class="card stop"><h4>What this document does not establish</h4>
+<ul>
+<li><b>It does not establish that a dipping vat exists anywhere in Ladera Ranch.</b> No location here is a known vat site.</li>
+<li><b>It does not establish that any contaminant is present</b> in any soil, sediment, runoff, recycled water or irrigation water at any location. No analytical testing has been performed.</li>
+<li><b>It does not establish that anyone has been exposed to anything</b>, or that any illness has any environmental cause.</li>
+<li><b>It is a sampling design, not a finding.</b> Its entire purpose is to make a finding possible, in either direction.</li>
+</ul></div>
+
+<h3>Sources this design is built on</h3>
+<div class="tablewrap"><table><thead><tr><th style="width:44%">Source</th><th style="width:9%">Grade</th><th>Used for</th></tr></thead><tbody>
+<tr><td>1968 USGS survey surface-water mapping</td><td><b>A1</b></td><td>The 23 water-body locations</td></tr>
+<tr><td>LEHRP soil sampling strategy, <code>targets_data.json</code></td><td><b>Internal</b></td><td>Target classification, present-day condition, recommended offsets</td></tr>
+<tr><td>NMG Geotechnical, Phase I ESA project 01079-02, 4 Feb 2002</td><td><b>A2</b></td><td>Grading chronology 1999–2001; up to 110 ft of fill; the stripped-and-placed-deeper mechanism</td></tr>
+<tr><td>Tentative Addendum No. 4 to Order No. 97-52, San Diego RWQCB, certifying adoption 8 Oct 2008 <span class="small">(tentative copy held)</span></td><td><b>A2</b></td><td>The Horno route, Provision K sampling points, the 2004–05 characterisation parameters, ~180 acre-feet</td></tr>
+<tr><td>USDA BAI Circulars 174, 183 and 207, 1911–1912</td><td><b>A1</b></td><td>Vat water demand, which is why the siting logic follows water</td></tr>
+<tr><td>Orange County Historic Imagery, 1937–1990</td><td><b>A2</b></td><td>Cultivation history and which ground was never worked</td></tr>
+</tbody></table></div>
+
+<div class="disc"><p>This document is part of an independent research and data-organization project. It does not provide medical advice and does not establish that any pesticide, property, organization, employer, school, water provider, government agency, or other party caused any illness. Publicly reported health events may not have been independently medically verified. Geographic and temporal overlap does not establish exposure or causation. Formal conclusions require authorized epidemiological analysis, verified medical information, exposure assessment, toxicological review, and independent scientific evaluation. No contaminant is asserted to be present at any location named in this document.</p></div>
+</div></body></html>
