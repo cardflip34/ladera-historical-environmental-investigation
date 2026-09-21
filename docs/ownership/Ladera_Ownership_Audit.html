@@ -1,0 +1,354 @@
+<!doctype html><html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>The O'Neill–Moiso–Avery Line: Ownership, Control and the Knowledge Question</title>
+<style>
+:root{--ink:#171e2b;--navy:#20304d;--mut:#5d6675;--line:#e2e6ec;--bg:#faf9f7;--card:#fff;--blue:#2d5d8f;--ok:#1e7a45;--warn:#9a6a10;--hard:#a23b2c;--off:#6b7280;--amber:#c8811f}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.62 -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif}
+.wrap{max-width:1180px;margin:0 auto;padding:0 28px 96px}
+header.mast{background:var(--navy);color:#fff;padding:54px 0 42px;margin-bottom:38px}
+header.mast .wrap{padding-bottom:0}
+.kicker{font-size:13px;letter-spacing:.16em;text-transform:uppercase;color:#9fc0e4;font-weight:700}
+h1{font-size:40px;line-height:1.12;margin:12px 0 10px;font-weight:700;letter-spacing:-.01em}
+.sub{color:#c9d6e6;font-size:18px;max-width:78ch}
+.meta{margin-top:20px;font-size:13px;color:#9fb2ca}
+h2{font-size:26px;margin:46px 0 6px;letter-spacing:-.01em;border-top:3px solid var(--navy);padding-top:22px}
+h3{font-size:19px;margin:30px 0 6px;color:var(--navy)}
+h4{font-size:16px;margin:22px 0 4px}
+p,li{max-width:82ch}
+.lead{font-size:18px;color:#2b3547}
+table{border-collapse:collapse;width:100%;margin:18px 0;font-size:14px;background:var(--card)}
+th{background:#eef1f5;text-align:left;padding:10px 11px;border-bottom:2px solid var(--line);font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:#43506a;vertical-align:bottom}
+td{padding:11px;border-bottom:1px solid var(--line);vertical-align:top}
+td.num{font-weight:700;font-size:17px;color:var(--navy)}
+tr.tier-A{background:#f4fbf6}tr.tier-B{background:#fffdf5}tr.tier-C{background:#f7f9fc}tr.tier-D{background:#fafafa;color:#6b7280}
+.small{font-size:13px;line-height:1.5}
+.mono{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:12.5px}
+.badge{display:inline-block;padding:2px 9px;border-radius:11px;font-size:11.5px;font-weight:700;letter-spacing:.03em}
+.badge.ok{background:#e4f4ea;color:var(--ok)}.badge.warn{background:#fdf1dc;color:var(--warn)}.badge.hard{background:#fbe8e5;color:var(--hard)}.badge.off{background:#eef0f3;color:var(--off)}
+.tier{display:inline-block;width:26px;height:26px;line-height:26px;text-align:center;border-radius:50%;font-weight:800;color:#fff}
+.tierA{background:var(--ok)}.tierB{background:var(--amber)}.tierC{background:var(--blue)}.tierD{background:#9aa3b0}
+.card{background:var(--card);border:1px solid var(--line);border-left:4px solid var(--blue);padding:16px 20px;margin:18px 0;border-radius:3px}
+.card.warn{border-left-color:var(--amber);background:#fffdf6}
+.card.stop{border-left-color:var(--hard);background:#fdf3f1}
+.card.go{border-left-color:var(--ok);background:#f4fbf6}
+.card h4{margin-top:0}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:14px;margin:18px 0}
+.stat{background:var(--card);border:1px solid var(--line);padding:14px 16px;border-radius:3px}
+.stat .n{font-size:30px;font-weight:700;color:var(--navy);line-height:1.1}
+.stat .l{font-size:12.5px;color:var(--mut);margin-top:3px}
+figure.tgt{margin:26px 0;background:var(--card);border:1px solid var(--line);padding:12px;border-radius:3px}
+figure.tgt img{width:100%;height:auto;display:block;border-radius:2px}
+figcaption{font-size:13px;color:#39435a;margin-top:9px;line-height:1.55}
+.src{display:block;color:var(--mut);font-size:11.5px;margin-top:4px}
+ol,ul{padding-left:22px}
+li{margin:5px 0}
+.q{background:#fff;border:1px solid var(--line);padding:4px 0}
+.disc{font-size:12.5px;color:var(--mut);border-top:1px solid var(--line);margin-top:42px;padding-top:16px}
+a{color:var(--blue)}
+.toc{background:var(--card);border:1px solid var(--line);padding:16px 22px;border-radius:3px;columns:2;column-gap:32px}
+.toc a{text-decoration:none}.toc li{break-inside:avoid}
+code{background:#eef1f5;padding:1px 5px;border-radius:3px;font-size:13px}
+.tablewrap{overflow-x:auto}
+@media print{body{background:#fff}header.mast{background:#fff;color:#000;border-bottom:3px solid #000}h1{color:#000}.sub,.meta,.kicker{color:#333}figure.tgt{break-inside:avoid}}
+
+figure.fig{margin:26px 0;background:var(--card);border:1px solid var(--line);padding:12px;border-radius:3px}
+figure.fig img{width:100%;height:auto;display:block;border-radius:2px;background:#fff}
+figure.fig figcaption{font-size:13.5px;color:#39435a;margin-top:10px;line-height:1.6}
+figure.fig .fl{display:inline-block;font-weight:800;color:var(--navy);letter-spacing:.02em;margin-right:6px}
+.figrow{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:16px;margin:24px 0}
+.figrow figure.fig{margin:0}
+.figindex td{vertical-align:top}
+
+.gen{border-left:3px solid var(--line);margin-left:14px;padding-left:22px}
+.per{background:var(--card);border:1px solid var(--line);border-left:4px solid var(--blue);padding:12px 16px;margin:12px 0;border-radius:3px}
+.per.key{border-left-color:var(--amber);background:#fffdf6}
+.per h4{margin:0 0 4px;font-size:16px}
+.per .rel{font-size:13px;color:var(--mut)}
+.ttl{font-size:13.5px;color:#2b3550;margin-top:6px}
+.chain{background:#f5f7fa;border:1px dashed var(--line);padding:10px 14px;border-radius:3px;font-size:13.5px;margin:8px 0}
+.brk{background:#fbe8e5;border-left:4px solid var(--hard);padding:12px 16px;border-radius:3px;margin:14px 0}
+.ok2{background:#e4f4ea;border-left:4px solid var(--ok);padding:12px 16px;border-radius:3px;margin:14px 0}
+</style></head><body>
+<header class="mast"><div class="wrap">
+<div class="kicker">LEHRP · Ownership audit · Companion to Phases 1–3</div>
+<h1>Who Owned This Land, and Could They Have Known?</h1>
+<p class="sub">The O'Neill–Moiso–Avery line from the 1882 purchase to the present: every generation, every entity, every documented title. Then the question that actually matters for this investigation — whether knowledge of a 1910s arsenical dipping programme could have survived inside the family business — answered from the record rather than assumed.</p>
+<p class="meta">Prepared 20 September 2026 · Andy Stavros · Hypothesis-neutral. Alleges no wrongdoing by any person or entity named.</p>
+</div></header>
+<div class="wrap">
+
+<div class="card stop"><h4>What this document is, and what it is not</h4>
+<p><b>It is an ownership and control audit.</b> Who held this land, through which entities, under whose management, and when. That is ordinary, necessary work in any environmental land-use investigation, and all of it is public record.</p>
+<p><b>It is not an accusation.</b> Nothing here asserts that any member of the O'Neill, Moiso or Avery family, or any officer of Rancho Mission Viejo, knew of a dipping vat, concealed anything, or acted improperly. <b>No such evidence exists, and the document reaches the opposite conclusion on the central question.</b></p>
+<p><b>The finding, stated at the top so it cannot be mistaken:</b> the chain of institutional memory that could have carried knowledge of the 1910s dipping programme <b>was broken in 1926</b>, and the break lasted thirty-seven years. The reason is documented, specific, and has nothing to do with anyone's conduct.</p></div>
+
+<div class="card warn"><h4>Two corrections to the premises I was given</h4>
+<ol>
+<li><b>There is no "Tony Moiso Jr."</b> Rancho Mission Viejo's own biography and every profile located state that Anthony R. Moiso and his wife Melinda have <b>four married daughters</b>. No source names a son or any Moiso child holding an officer title. <span class="badge hard">PREMISE NOT SUPPORTED</span></li>
+<li><b>The current chief executive is family — by marriage.</b> <b>Jeremy T. Laster</b>, President since October 2022 and promoted to CEO for 2026, is <b>Tony Moiso's son-in-law</b>. That is the succession answer, and it is documented. <span class="badge ok">DOCUMENTED</span></li>
+</ol>
+<p class="small">A third correction, to the company's own published history: Camp Pendleton was <b>taken by federal court condemnation</b>, not purchased. Rancho Mission Viejo's website and several secondary accounts describe it as a sale. The condemnation order is dated <b>9 July 1942</b>.</p></div>
+
+<h2 id="toc">Contents</h2>
+<ol class="toc">
+<li><a href="#land">1 · The land, 1841–1882</a></li>
+<li><a href="#line">2 · The family line, five generations</a></li>
+<li><a href="#entities">3 · The entities, and who ran them</a></li>
+<li><a href="#moiso">4 · Anthony R. Moiso</a></li>
+<li><a href="#overlay">5 · The overlay — control against the dipping era</a></li>
+<li><a href="#know">6 · Could they have known?</a></li>
+<li><a href="#gaps">7 · What is unverified, and what to request</a></li>
+</ol>
+
+<h2 id="land">1 · The land, 1841–1882</h2>
+<div class="tablewrap"><table><thead><tr><th style="width:24%">Rancho</th><th style="width:26%">Grant</th><th style="width:22%">US patent</th><th>Acreage</th></tr></thead><tbody>
+<tr><td><b>Mission Vieja / La Paz</b><br><span class="small">later Rancho Mission Viejo</span></td><td>Alvarado, 16 Feb 1841, provisionally to José Antonio Estudillo; Pico, 4 Apr 1845, to Agustín Olvera</td><td>To <b>Juan Forster, 6 Aug 1866</b></td><td><b>46,432.65 acres</b></td></tr>
+<tr><td><b>Trabuco</b></td><td>Alvarado 1841 to Santiago Argüello; Pico 1846 to John Forster</td><td>To John Forster, 1866 <span class="small">(exact date unverified)</span></td><td>22,184 acres</td></tr>
+<tr><td><b>Santa Margarita y Las Flores</b></td><td>Alvarado 1841 to Andrés and Pío Pico</td><td>28 Mar 1879, signed by President Hayes</td><td>133,440.78 acres</td></tr>
+</tbody></table></div>
+<p class="small"><span class="badge ok">A1</span> US private land claim case 246 SD and case 317 SD, Bancroft Library; Surveyor General's report. <b>The 1858 General Land Office plat of Trabuco Rancho reproduced in the Phase 3 film is from this same chain</b> — it records one structure, a "Ranch House," on 22,184 acres.</p>
+
+<div class="per"><h4>Juan (John) Forster, 1814/15 – 20 February 1882</h4>
+<p class="rel">English-born; married Doña Ysidora Pico, sister of Governor Pío Pico, 1837.</p>
+<p>Bought the secularised Mission San Juan Capistrano at auction in 1844 for <b>$710</b>. Acquired Trabuco in the 1840s and <b>Rancho Santa Margarita y Las Flores in 1864</b>, by settling the Pico brothers' debts and paying them $14,000. At his peak he held roughly <b>212,000 to 250,000 acres</b>.</p>
+<p><b>He died insolvent.</b> The 1873 California fencing law forced him to fence the whole holding on borrowed money, and a townsite scheme at San Onofre failed. He left his widow a <b>$207,000 mortgage</b>. <b>That debt is why the land came on the market — and why the O'Neills got it.</b></p></div>
+
+<div class="per key"><h4>1882 — the purchase that begins the modern chain</h4>
+<p>After Forster's death his heirs sold the combined Santa Margarita, Mission Viejo and Trabuco ranchos. <b>James Clair Flood supplied the entire purchase capital. Richard O'Neill Sr. supplied the cattle expertise and became resident manager.</b></p>
+<p><b>Title was recorded in Flood's name alone.</b> The arrangement by which O'Neill would work out a half interest was, by every account, a handshake.</p>
+<p>Purchase price <b>$457,000</b>, reflecting the assumed $207,000 mortgage. Acreage is reported variously as 200,000, 205,000, 210,000 and 230,000 — <b>no source reconciles it</b>; use "roughly 200,000 to 210,000."</p>
+<p class="small"><span class="badge ok">A1</span> for the 1882 event and the parties — National Register nomination, Santa Margarita Ranch House, 1971. <span class="badge warn">B2</span> for the terms and the handshake — Camp Pendleton Historical Society, 2013, and <i>Irish America</i>, 1997. <b>No documentary evidence of the handshake was located; the recorded instrument names Flood only.</b></p></div>
+<h2 id="line">2 · The family line, five generations</h2>
+<p class="lead">Every person who held or controlled this land, with their documented title and dates. The generation that matters for the dipping question is the second.</p>
+
+<h3>Generation 1 — the founder</h3>
+<div class="per"><h4>Richard O'Neill Sr., 17 March 1824 – 7 May 1910</h4>
+<p class="rel">Born County Cork, Ireland. Trained as a butcher in New Brunswick, then Boston; sailed for California about 1850. Married Alice O'Neill (1823–1916).</p>
+<div class="ttl"><b>Titles:</b> resident manager of the ranch from <b>1882</b>; <b>half owner from 1906 or 1907</b>, when James L. Flood conveyed an undivided half interest honouring his father's handshake after 24 years. Four months later, in declining health, he deeded his half to his son Jerome.</div>
+<div class="chain"><b>Why he matters here:</b> he ran this ranch as a working cattle operation for 28 years. <b>He was alive and a half owner when the entire county of Orange was placed under cattle-fever quarantine on 1 March 1910.</b> He died two months later.</div>
+<p class="small">Conflicts: birthplace given as County Cork by two sources and Dublin by one. Wife's name given as Alice by one source and "Mary, born in Ulster" by another. Half-interest year 1906 or 1907 depending on source.</p></div>
+
+<h3>Generation 2 — the dipping era</h3>
+<div class="per key"><h4>Jerome O'Neill, 1861 – 1926</h4>
+<p class="rel">Son of Richard Sr. Disabled by polio.</p>
+<div class="ttl"><b>Titles:</b> <b>owner and operator of the family half interest, 1907–1926.</b> Publicly identified as "owner of the Santa Margarita ranch" in the <i>Times-Advocate</i>, 26 October 1917. In <b>1923</b> he and James L. Flood consolidated the partnership into a corporation, the <b>Santa Margarita Company</b>.</div>
+<div class="brk"><b>This is the man in charge during the compulsory dipping programme.</b> The entire county was quarantined in March 1910 and again in October 1911. The March 1912 proclamation released the north and <b>kept the southern portion, including Township 6 South Range 7 West — the township containing this land</b>. Orange County was still named in a quarantine proclamation in March 1915.<br><br>
+If cattle on this ranch were dipped under state order — and a quarantine of this kind compelled it — <b>Jerome O'Neill was the owner who complied.</b> <span class="badge warn">INFERRED from the quarantine geography; no document names this ranch as a dipping site.</span></div>
+<p>He died in <b>1926</b>. James L. Flood died the same year. Jerome left a trust dividing his share between his sister Mary Agatha O'Neill Baumgartner and his brother Richard O'Neill Jr.</p></div>
+
+<div class="per"><h4>Richard O'Neill Jr., 28 January 1863 – 28 December 1943</h4>
+<p class="rel">Son of Richard Sr.; brother of Jerome. Married Marguerite "Daisy" Moore in 1916.</p>
+<div class="ttl"><b>Titles:</b> beneficiary of the Jerome O'Neill Trust from 1926. Took the <b>Orange County portion</b> — Mission Viejo and Trabuco — when the ranch was divided around 1939–41. Died days after the Camp Pendleton condemnation judgment period began.</div></div>
+
+<h3>Generation 3 — the matriarch who kept it</h3>
+<div class="per key"><h4>Marguerite "Daisy" Moore O'Neill, 1879 – 1981</h4>
+<p class="rel">Widow of Richard O'Neill Jr. Fifth-generation Californian, born Los Angeles; first graduating class of Los Angeles High School, 1898.</p>
+<div class="ttl"><b>Title: none.</b> She held no corporate office. <b>She acted as controlling beneficiary of the trust</b> — which in practice meant she decided.</div>
+<div class="chain"><b>1944:</b> the bank trust officers attempted to sell the ranch without the beneficiaries' approval on a <b>$1.2 million</b> offer. <b>She refused, and continued operations.</b> Her maxim — "take care of the land and the land will take care of you" — is quoted in the company's own corporate history to this day.</div>
+<p class="small">She is the reason the land stayed in the family. She lived to 1981 and saw the first development.</p></div>
+
+<h3>Generation 4 — the development decision</h3>
+<div class="per"><h4>Alice Marguerite O'Neill Moiso Avery, 28 January 1917 – 22 July 2014</h4>
+<p class="rel">Daughter of Richard Jr. and Daisy. <b>Married James Robert Moiso in 1938; divorced about 1944–45. Married Waldo Allard Avery III in 1951.</b> Mother of Tony Moiso, Jerome Moiso and Douglas Avery.</p>
+<div class="ttl"><b>Title: none documented.</b> Consistently described as co-owner, decision-maker and matriarch, never with an officer title.</div>
+<div class="chain"><b>1963:</b> with her brother Dick, made the decision to open 11,000 acres to development. <b>That decision begins everything this investigation is about.</b></div>
+<p class="small"><b>This marriage is how the Moiso name enters the family.</b> Her first marriage produced the line that runs the company today.</p></div>
+
+<div class="per"><h4>Richard Jerome "Dick" O'Neill, 3 May 1923 – 4 April 2009</h4>
+<p class="rel">Son of Richard Jr. and Daisy; brother of Alice; uncle of Tony Moiso. Cal Poly San Luis Obispo; US Navy, Second World War. Married Donna Newman 1951; no children.</p>
+<div class="ttl"><b>Titles:</b> Board of Directors and general partner, <b>Mission Viejo Company</b>, from 1963. <b>Chairman, Santa Margarita Company</b> — documented as of 1997. <b>Chairman, Rancho Mission Viejo LLC</b>, at his death in 2009. <span class="small">The year he became Chairman of either entity is not documented.</span></div>
+<p>Also Chairman of the Orange County Democratic Central Committee for three terms and State Chair of the California Democratic Party from 1978 or 1979. Bought El Adobe de Capistrano in 1981 — the building formed from the two adobes between which the 1882 stage carrying his grandfather had stopped.</p>
+<p class="small">Marguerite Parkway, Alicia Parkway, Avery Parkway and Jeronimo Road are all named for this family.</p></div>
+
+<div class="per"><h4>Donna O'Neill, died 2002</h4>
+<p class="rel">Wife of Richard J. O'Neill from 1951.</p>
+<div class="ttl"><b>Title: none documented.</b> Helped found the land conservancy later renamed in her honour — roughly 1,250 to 1,300 acres, now within The Reserve at Rancho Mission Viejo.</div></div>
+
+<h3>Generation 5 — and 6, by marriage</h3>
+<div class="per"><h4>J. Jerome Moiso, 1941 – 2024 &nbsp;·&nbsp; Douglas Avery</h4>
+<p class="rel">Tony Moiso's brother and half-brother.</p>
+<div class="ttl"><b>Titles:</b> both served on the Mission Viejo Company board and are described by the company as continuing owners. <b>No current officer title is documented for either.</b></div></div>
+
+<div class="per key"><h4>Jeremy T. Laster — the succession answer</h4>
+<p class="rel"><b>Son-in-law of Anthony R. Moiso.</b></p>
+<div class="ttl"><b>Titles:</b> joined Rancho Mission Viejo in <b>2001 as Project Manager</b>; <b>President from October 2022</b>; <b>promoted to Chief Executive Officer for 2026</b>. Registered agent for <b>58 entities</b> in the group.</div>
+<p class="small">The chief executive of Rancho Mission Viejo is family by marriage, not an outside professional hire. Documented by the <i>Orange County Business Journal</i>, 17 November 2025.</p></div>
+<h2 id="entities">3 · The entities, and who ran them</h2>
+<p class="lead">Ownership moved through six distinct arrangements. The one that matters most for the knowledge question is the third.</p>
+
+<div class="tablewrap"><table><thead><tr><th style="width:15%">Period</th><th style="width:28%">Entity or arrangement</th><th>Who controlled it</th></tr></thead><tbody>
+<tr><td>1882–1923</td><td>Unincorporated Flood / O'Neill co-ownership</td><td>Title in <b>Flood's</b> name until 1906/07; <b>Richard O'Neill Sr.</b> resident manager throughout, then half owner</td></tr>
+<tr><td>1923–c.1939/41</td><td><b>Santa Margarita Company</b> <span class="small">(corporation)</span></td><td><b>Jerome O'Neill</b> and <b>James L. Flood</b></td></tr>
+<tr><td><b>1926–c.1963</b></td><td><b>Jerome O'Neill Trust</b> — a banking trust</td><td><b>The banks operated the ranch, employing outside managers.</b> First bank-appointed ranch manager: <b>Charles Hardy</b>, formerly of a San Diego packing house. Family influence ran through <b>Daisy O'Neill</b> as controlling beneficiary</td></tr>
+<tr><td>1963–1972</td><td><b>Mission Viejo Company</b></td><td>Joint venture; <b>Donald L. Bren</b> first President. <b>Philip Morris</b> invested 1969, bought it outright 1972 for <b>$52 million</b></td></tr>
+<tr><td>1984–c.1996</td><td><b>The Santa Margarita Company, LP</b><br><span class="small">filed 2 July 1984</span></td><td><b>Anthony R. Moiso</b>, President and CEO. Master-planned Rancho Santa Margarita and Las Flores</td></tr>
+<tr><td><b>1996– </b></td><td><b>Rancho Mission Viejo, LLC</b><br><span class="small">Delaware; registered in California 16 July 1996</span></td><td>Founded <b>to plan and develop the 4,000-acre Ladera Ranch</b> and manage the remaining ~23,000 acres. Manager: <b>O'Neill Properties, LLC</b></td></tr>
+<tr><td>2001– </td><td><b>O'Neill Properties, LLC</b><br><span class="small">filed 7 June 2001</span></td><td>The apex entity in the visible chain. <b>Manager: Anthony R. Moiso</b></td></tr>
+<tr><td>2004–06– </td><td><b>RMV Community Development</b> Company Inc. and LLC</td><td>The Ranch Plan vehicle. Directors include <b>Bennett Dorrance</b>, co-founder of <b>DMB Associates</b> — the Arizona developer that partnered on Ladera Ranch</td></tr>
+</tbody></table></div>
+
+<div class="card warn"><h4>A practical finding for any records request</h4>
+<p>The address <b>28811 Ortega Highway, San Juan Capistrano</b> is the principal address of <b>78 or more registered California entities</b>, including village- and parcel-specific LLCs. <b>Any parcel-level title or responsible-party question should assume a single-purpose LLC is the entity of record, not "Rancho Mission Viejo."</b></p>
+<p class="small">Relevant to this investigation: the Phase I for the Ladera school site records the owner as <b>DMB Ladera, LLC</b>, and the EIR 589 Phase I records the owner as <b>DMB San Juan Investment North, LLC</b>, PO Box 9, San Juan Capistrano — with ownership information "provided by Rancho Mission Viejo."</p></div>
+
+<h3>Non-family management worth naming</h3>
+<div class="tablewrap"><table><thead><tr><th style="width:24%">Name</th><th style="width:34%">Title and dates</th><th>Why relevant here</th></tr></thead><tbody>
+<tr><td><b>Gilbert G. "Gil" Aguirre</b></td><td>Executive Vice President, Ranch Operations; Executive Committee. "Participated in all major land-development decisions for more than 40 years"</td><td><b>The operational figure most likely to hold direct knowledge of historical ranch infrastructure.</b> BS Animal Science, Arizona, 1957; five decades managing cattle operations</td></tr>
+<tr><td><b>Fred Vorhees</b></td><td><b>Ranch Manager, Rancho Mission Viejo.</b> "Approximately 30 years" at the ranch as of 2001</td><td><b>The company's designated interviewee for the Phase I environmental work.</b> See section 6 — this is the single most important name in this document</td></tr>
+<tr><td><b>Charles Hardy</b></td><td>First bank-appointed ranch manager under the Jerome O'Neill Trust, c. late 1920s–30s</td><td>The beginning of 37 years of non-family operational management</td></tr>
+<tr><td><b>Donald L. Vodra</b></td><td>Joined c.1995; CFO, then COO, then President; <b>Vice-Chairman from 10 October 2022</b></td><td>See the unresolved title conflict below</td></tr>
+<tr><td><b>Elise L. Millington</b></td><td>Joined 2004; CFO from 2014; EVP 2019; <b>COO from October 2022</b></td><td>—</td></tr>
+</tbody></table></div>
+<div class="card"><h4>An unresolved conflict, flagged rather than resolved</h4>
+<p>Rancho Mission Viejo's own biography says Tony Moiso "became President of the then 42,000-acre Rancho Mission Viejo in 1972 and served in that role until 2022." The <i>Orange County Business Journal</i> reports <b>Donald Vodra</b> as President immediately before October 2022. <b>Both cannot be literally true of one entity.</b> The likely reconciliation is that the titles attached to different entities in the group. <b>Do not state either as fact without a filing check.</b></p></div>
+<h2 id="moiso">4 · Anthony R. Moiso</h2>
+<p class="lead">Great-grandson of Richard O'Neill Sr. The man who ran this company through every approval this investigation examines.</p>
+
+<div class="per key"><h4>Anthony R. "Tony" Moiso</h4>
+<p class="rel">Son of James Robert Moiso and Alice Marguerite O'Neill. Grandson of Richard O'Neill Jr. and Daisy Moore O'Neill. <b>Great-grandson of Richard O'Neill Sr.</b> Seventh-generation Californian. His parents divorced when he was five.</p>
+<div class="tablewrap"><table><tbody>
+<tr><td style="width:26%"><b>Born</b></td><td>Not directly documented. Reported as <b>85 in March 2025</b>, so born about <b>1939–40</b>. <span class="badge warn">INFERRED</span></td></tr>
+<tr><td><b>Education</b></td><td>Brentwood School; Harvard School, now Harvard-Westlake, grades 7–12; <b>Stanford University</b>, history and political science</td></tr>
+<tr><td><b>Military</b></td><td><b>US Army</b>, Infantry Officers Basic Course, Fort Benning; Infantry Platoon Leader; Basic Training Company Commander, Fort Ord. About 1961–63</td></tr>
+<tr><td><b>Joined the company</b></td><td><b>1965</b>, Mission Viejo Company. Board of Directors and general partner; Executive Vice President</td></tr>
+<tr><td><b>President, Rancho Mission Viejo</b></td><td><b>1972 – 2022</b>, per the company's own biography <span class="small">(see the conflict noted in section 3)</span></td></tr>
+<tr><td><b>President and CEO, The Santa Margarita Company</b></td><td><b>1983/84 – c.1996.</b> Master-planned the 5,000-acre city of Rancho Santa Margarita and the 1,000-acre Las Flores</td></tr>
+<tr><td><b>Founder, Rancho Mission Viejo, LLC</b></td><td><b>1996</b> — the entity <b>formed to plan and develop Ladera Ranch</b></td></tr>
+<tr><td><b>Chairman and CEO, Rancho Mission Viejo</b></td><td>Chairman from 2022; described as CEO as early as 2013. Exact start of the CEO title not verified</td></tr>
+<tr><td><b>Also currently</b></td><td>Director and CEO, RMV Community Development Company, Inc.; <b>Manager, O'Neill Properties, LLC</b>; registered agent, The Santa Margarita Company</td></tr>
+<tr><td><b>Family</b></td><td>Wife Melinda; <b>four married daughters</b>; thirteen grandchildren; two great-granddaughters</td></tr>
+<tr><td><b>Honours</b></td><td>California Homebuilding Foundation Hall of Fame, 1993; OC500 Hall of Fame. Trustee, San Juan Capistrano Historical Society; Board, Mission San Juan Capistrano Preservation Foundation; Council of Advisors, <b>Camp Pendleton Historical Society</b>. March 2025: <b>$50 million</b> gift to Providence Mission Hospital</td></tr>
+</tbody></table></div></div>
+
+<h3>His position at each milestone in this investigation</h3>
+<div class="tablewrap"><table><thead><tr><th style="width:14%">Date</th><th style="width:38%">Event</th><th>His documented role</th></tr></thead><tbody>
+<tr><td><b>1963</b></td><td>The family decides to open 11,000 acres to development</td><td><b>Not yet with the company.</b> The decision was his mother's and his uncle's</td></tr>
+<tr><td>1965</td><td>Mission Viejo master plan adopted</td><td>Joins the company that year</td></tr>
+<tr><td>1972</td><td>Philip Morris buys Mission Viejo Company for $52m</td><td>Becomes <b>President of Rancho Mission Viejo</b> — the retained ranch</td></tr>
+<tr><td><b>17 Oct 1995</b></td><td><b>Final EIR 555 certified</b> — the Ladera Ranch environmental review</td><td><b>President of Rancho Mission Viejo.</b> The landowner's chief executive</td></tr>
+<tr><td><b>1996</b></td><td>Rancho Mission Viejo, LLC formed to develop Ladera Ranch</td><td><b>Founder</b></td></tr>
+<tr><td>7 Apr 1998</td><td>Addendum PA970174 approved</td><td>President</td></tr>
+<tr><td><b>1999–2001</b></td><td><b>Mass grading of Ladera Ranch</b>, up to 110 ft of cut and fill</td><td>President</td></tr>
+<tr><td>Jan–Feb 2002</td><td>NMG Phase I ESA for the Oso Grande school site</td><td>President. <b>Owner of record for that parcel is DMB Ladera, LLC</b> — the joint venture</td></tr>
+<tr><td>Feb 2003</td><td>EIR 589 Phase I commissioned via Morgan, Lewis &amp; Bockius LLP</td><td>President</td></tr>
+<tr><td>2003–04</td><td><b>EIR 589 / the Ranch Plan</b>, ~22,815 acres</td><td>President</td></tr>
+<tr><td>8 Oct 2008</td><td>Horno Urban Water Recovery Facility permitted</td><td>President. The wetlands are HOA-owned; the basin is County-owned</td></tr>
+<tr><td>Oct 2022</td><td>Leadership transition</td><td>Becomes <b>Chairman</b>; son-in-law Jeremy Laster becomes President</td></tr>
+</tbody></table></div>
+
+<div class="card"><h4>What this table shows, and what it does not</h4>
+<p><b>It shows he was the landowner's chief executive at every approval.</b> That is simply what being President for fifty years means, and it is the reason his name belongs in an ownership audit.</p>
+<p><b>It does not show that he had any knowledge of a dipping vat</b>, or that any question about one was ever put to him. <b>No document located places him in the environmental review process personally</b> — the Phase I interviews went to the Ranch Manager, and the consultant was engaged through outside counsel. Section 6 deals with the knowledge question directly.</p></div>
+<h2 id="overlay">5 · The overlay — control against the dipping era</h2>
+<p class="lead">Put the quarantine dates next to the ownership dates and the picture resolves immediately.</p>
+
+<div class="tablewrap"><table><thead><tr><th style="width:13%">Date</th><th style="width:40%">The quarantine</th><th>Who controlled the land</th></tr></thead><tbody>
+<tr><td>1882</td><td>—</td><td>Flood holds title; <b>Richard O'Neill Sr.</b> resident manager</td></tr>
+<tr><td>1906/07</td><td>—</td><td>O'Neill Sr. receives half interest, deeds it to <b>Jerome O'Neill</b></td></tr>
+<tr><td><b>1 Mar 1910</b></td><td><b>Entire county of Orange quarantined</b> <span class="badge ok">A1</span></td><td><b>Jerome O'Neill</b>; Richard Sr. alive, dies 7 May</td></tr>
+<tr><td><b>16 Oct 1911</b></td><td><b>Entire county quarantined again</b> <span class="badge ok">A1</span></td><td>Jerome O'Neill</td></tr>
+<tr><td><b>7 Mar 1912</b></td><td><b>Partial release.</b> The north is freed; the <b>south and west are retained</b>, bounded along the Santa Ana–Trabuco road, the Aliso Canyon road, and <b>the north line of Township 6 South, Range 7 West</b> <span class="badge ok">A1</span></td><td>Jerome O'Neill</td></tr>
+<tr><td><b>1 Mar 1915</b></td><td>Orange County <b>still named</b> in a quarantine proclamation. <span class="small">The copy held is missing page 2, so the 1915 extent is unestablished</span></td><td>Jerome O'Neill</td></tr>
+<tr><td><b>1926</b></td><td>—</td><td><b>Jerome O'Neill dies. James L. Flood dies. The trust begins.</b></td></tr>
+</tbody></table></div>
+
+<div class="card go"><h4>The geography is the point</h4>
+<p><b>Township 6 South, Range 7 West is the township containing Ladera Ranch and the former Trabuco and Mission Viejo rancho land.</b> The March 1912 proclamation drew its boundary along the north line of that township and kept everything south of it under quarantine.</p>
+<p>So this land was inside the quarantined area <b>from at least March 1910 to at least March 1915</b> — and a quarantine of this kind compelled systematic arsenical dipping on a fourteen-day cycle.</p>
+<p><b>This corrects our own earlier record</b>, which had the Orange County quarantine ending in March 1912. It did not. <b>The window on this specific land is at least five years long, not three.</b></p></div>
+
+<div class="card stop"><h4>What the state records cannot do</h4>
+<p>The proclamations describe <b>geography, not owners</b>. No individual ranch is named in any of them, and no ranch is named in the State Veterinarian's biennial reports held by this project. A search of those reports for "O'Neill," "Santa Margarita," "Mission Viejo," "Forster" and "Capistrano" returns <b>nothing</b>.</p>
+<p>So the documents establish that <b>the O'Neill land sat inside a quarantine that compelled dipping</b>. They do <b>not</b> establish that a vat was built, where it was, or who operated it. <span class="badge warn">The link from quarantine geography to a specific structure remains inferred and untested.</span></p></div>
+
+<h2 id="know">6 · Could they have known?</h2>
+<p class="lead">This is the question you actually asked. The honest answer is no, and the reason is documentable rather than charitable.</p>
+
+<div class="brk"><h4>The chain of memory breaks in 1926, and stays broken for thirty-seven years</h4>
+<p><b>1926.</b> Jerome O'Neill dies. James L. Flood dies the same year. <b>The two men who owned and ran this ranch through the entire quarantine period are gone within months of each other.</b></p>
+<p><b>1926 to about 1963.</b> The ranch passes into the <b>Jerome O'Neill Trust — a banking trust</b>. For the next thirty-seven years <b>the banks operated the ranch, employing outside managers</b>. The first was Charles Hardy, previously of a San Diego packing house. Not family. Not continuous. Rotating professional employees answering to trust officers.</p>
+<p><b>That is where institutional memory of a 1910s regulatory compliance programme dies.</b> Not through concealment. Through an ordinary generational and managerial discontinuity of a kind that happens to every long-held estate.</p>
+<p class="small">The trust was adversarial to the family at least once: in <b>1944 the bank officers tried to sell the ranch out from under the beneficiaries</b> on a $1.2 million offer, and Daisy O'Neill refused. That is not an arrangement in which operational folklore is lovingly handed down.</p></div>
+
+<div class="card"><h4>Then do the arithmetic on the people who were actually asked</h4>
+<div class="tablewrap"><table><thead><tr><th style="width:26%">Person</th><th style="width:20%">Started</th><th>Gap from the quarantine</th></tr></thead><tbody>
+<tr><td><b>Tony Moiso</b></td><td>Born c. 1939–40; joined 1965</td><td><b>Born about 25 years after the quarantine ended; joined 55 years after it began</b></td></tr>
+<tr><td><b>Fred Vorhees</b>, Ranch Manager</td><td>About 1971 <span class="small">(30 years' service as of 2001)</span></td><td><b>Started roughly 61 years after the quarantine began, and 56 after it was last proclaimed</b></td></tr>
+<tr><td><b>Gil Aguirre</b>, EVP Ranch Operations</td><td>Degree 1957; 40+ years at RMV</td><td>Began his career four decades after the programme ended</td></tr>
+</tbody></table></div>
+<p><b>Nobody alive inside this company in 1995, or in 2002, had any personal connection to 1910.</b></p></div>
+
+<div class="ok2"><h4>And when they were asked, they told the consultants things</h4>
+<p>Fred Vorhees was Rancho Mission Viejo's designated interviewee for the Phase I environmental work, interviewed repeatedly across planning areas. <b>Eleven distinct disclosures are recorded.</b> He told the consultants:</p>
+<ul>
+<li>that the land had been used for agricultural purposes and <b>"that pesticides may have been used"</b> — volunteered, more than once</li>
+<li>that a petroleum pipeline once ran across a site entrance</li>
+<li>that there was an aboveground diesel tank</li>
+<li>that part of a property was used for <b>clay mining</b></li>
+<li>that there was <b>historically a maintenance shop with underground tanks</b></li>
+<li>that a small gasoline tank had been removed in 1984</li>
+</ul>
+<p>Separately, the owner questionnaire volunteered: <b>"Years ago we used to dump oil off the corner of the shop building."</b> And the company disclosed that an area at Cow Camp <b>"was historically used to bury old equipment and waste scraps"</b> — which the consultant then flagged as a condition requiring excavation and sampling.</p>
+<p><b>That is a pattern of disclosure, not concealment.</b> The company volunteered information against its own interest on at least three separate occasions in the record.</p></div>
+
+<div class="card stop"><h4>The answer, stated plainly</h4>
+<p><b>Could they have known? On the evidence, no — and there is no indication anyone tried not to.</b></p>
+<ol>
+<li><b>The people who would have known died in 1926</b>, and the ranch then spent thirty-seven years under bank trusteeship with hired outside managers. The chain broke.</li>
+<li><b>The subject never came up because nobody asked.</b> The questions put to the ranch were about fuel tanks, drums, clarifiers and pesticides — the standard environmental checklist. Nobody asked about a livestock quarantine from before the First World War, because the instrument has no field for it.</li>
+<li><b>What the family did preserve is the founding story</b> — the Flood handshake, the 205,000 acres, Daisy refusing the bank's offer. That is what families preserve. <b>No family history anywhere includes "we complied with a cattle quarantine in 1911."</b> It was a routine legal obligation at the time, universally imposed across the county, and unremarkable.</li>
+<li><b>Your own instinct is the correct one.</b> The dots could not have been passed down, for the same reason they were not passed down anywhere else in the country. This is a gap in the historical record, not a secret.</li>
+</ol>
+<p><b>Nothing in this document supports an allegation against any living person or against the company.</b> If a vat exists, the most likely explanation for why nobody flagged it is the one this whole investigation keeps arriving at: <b>the question was never asked, by anyone, at any stage.</b></p></div>
+<h2 id="gaps">7 · What is unverified, and what to request</h2>
+
+<div class="card warn"><h4>Where the family might still hold the answer — and this is the constructive point</h4>
+<p>The knowledge chain broke in 1926. <b>But paper does not have to remember to survive.</b> A ledger does not need anyone to recall what is in it.</p>
+<p>Three bodies of record could still carry the 1910s operational detail, and all three are worth asking for <b>as a cooperative request, not an adversarial one</b>:</p>
+<ol>
+<li><b>The Rancho Mission Viejo corporate and family archive.</b> The company publishes a detailed history, maintains a family cemetery, and Tony Moiso sits on the boards of the San Juan Capistrano Historical Society, the Mission Preservation Foundation and the Camp Pendleton Historical Society. <b>This is a family that keeps things.</b> Ranch ledgers, cattle books and correspondence from the Jerome O'Neill period would answer the dipping question directly.</li>
+<li><b>The Sherman Library, Corona del Mar</b> — already identified in this project as the first-visit target for O'Neill business records.</li>
+<li><b>The Orange County Agricultural Commissioner records</b> at the Orange County Archives. The quarantine was administered locally. <b>Inspection and compliance paperwork was generated locally</b>, and it would name ranches.</li>
+</ol>
+<p class="small"><b>Framing matters.</b> The honest ask is: "your ranch was inside a state quarantine that compelled arsenical dipping, nobody today could be expected to know where the vats were, and your own ledgers may be the only surviving record." That is a true statement and an easy one to answer.</p></div>
+
+<h3>Could not verify</h3>
+<div class="tablewrap"><table><thead><tr><th style="width:44%">Item</th><th>Status</th></tr></thead><tbody>
+<tr><td>Tony Moiso's exact birth date and full middle name</td><td>Only inferable from "85 in March 2025"</td></tr>
+<tr><td>His paternal Moiso grandparents</td><td><b>No names located</b></td></tr>
+<tr><td>The exact 1882 conveyance date and recorder's book and page</td><td>Not located. "Two months after Forster's death" is uncited</td></tr>
+<tr><td>Rancho Trabuco's exact 1866 patent date and land-case number</td><td>Not located</td></tr>
+<tr><td>The year Richard J. O'Neill became Chairman of either entity</td><td>Not documented</td></tr>
+<tr><td>Any formal corporate title for Alice Avery, Donna O'Neill, Daisy O'Neill, J. Jerome Moiso or Douglas Avery</td><td><b>None documented for any of them.</b> They are described as owners and decision-makers, never as officers</td></tr>
+<tr><td>Officers of the 1923 Santa Margarita Company beyond Jerome O'Neill and James L. Flood</td><td>Not located</td></tr>
+<tr><td>Whether Moiso personally appeared, testified or signed in the EIR 555 or EIR 589 proceedings</td><td><b>Still being researched at the time of writing</b></td></tr>
+<tr><td>Whether Rancho Mission Viejo participated in the dipping programme</td><td><b>No document names this ranch.</b> The link is inferred from quarantine geography alone</td></tr>
+</tbody></table></div>
+
+<h3>Unresolved conflicts, recorded rather than smoothed over</h3>
+<p class="small">Half-interest conveyed 1906 or 1907 · ranch divided 1939, 1940 or 1941 · Richard O'Neill Sr. born County Cork (two sources) or Dublin (one) · his wife named Alice or Mary · Forster born 1814 or 1815 · Camp Pendleton 121,387 / 123,620 / 125,000 acres and $4,110,035 / $4,239,062 · <b>Moiso or Vodra as President 1972–2022</b> · Santa Margarita Company established 1983 per the company, filed 2 July 1984 per the registry · Alice Avery died 2014 (correct) or 2015 (Find a Grave, in error) · 1882 acreage reported as 200,000 / 205,000 / 210,000 / 230,000.</p>
+
+<h3>Records to pull</h3>
+<div class="tablewrap"><table><thead><tr><th style="width:8%">#</th><th style="width:36%">Record</th><th>What it settles</th></tr></thead><tbody>
+<tr><td>1</td><td><b>Orange County Agricultural Commissioner records, 1907–1920</b>, OC Archives</td><td><b>The only records likely to name ranches in the dipping programme.</b> Highest value for this question</td></tr>
+<tr><td>2</td><td><b>Rancho Mission Viejo family and corporate archive</b> — Jerome O'Neill period ledgers</td><td>Operational detail nobody alive remembers</td></tr>
+<tr><td>3</td><td><b>Sherman Library</b>, Corona del Mar — O'Neill business records</td><td>Same</td></tr>
+<tr><td>4</td><td><b>California Secretary of State</b> Statements of Information for the eight core entities</td><td>Upgrades the officer data from commercial mirror to primary. <b>One session's work in a browser</b></td></tr>
+<tr><td>5</td><td><b>Complete 1 March 1915 proclamation</b>, California State Library</td><td>Page 2 is missing from our copy. <b>Settles how long this land stayed under quarantine</b></td></tr>
+<tr><td>6</td><td>Orange and San Diego County Recorder, 1882 and 1939–41 deed books</td><td>The conveyance date and the division terms</td></tr>
+<tr><td>7</td><td>US District Court, Southern District of California, 1942 condemnation file</td><td>Every payee, acreage and award in the Camp Pendleton taking</td></tr>
+</tbody></table></div>
+
+<div class="card stop"><h4>What this document does not establish</h4>
+<ul>
+<li><b>It does not establish that a dipping vat exists</b> on this land, or ever did.</li>
+<li><b>It does not establish that any person named here knew of one</b>, concealed one, or had any duty they failed to discharge.</li>
+<li><b>It does not establish contamination or exposure</b> anywhere.</li>
+<li><b>It does not establish that Rancho Mission Viejo participated in the dipping programme.</b> The land was inside the quarantine area. No document names the ranch.</li>
+<li><b>Several officer facts are graded B2</b>, taken from a commercial mirror of the state registry rather than the registry itself, and require primary re-verification.</li>
+</ul>
+<p><b>The central finding is exculpatory, and it should be read that way.</b> The institutional memory that could have carried this forward was extinguished by two deaths in 1926 and thirty-seven years of bank trusteeship. That is a documented historical fact about how estates are managed, not a judgment about anyone's character.</p></div>
+
+<div class="disc"><p>This document is part of an independent research and data-organization project. It does not provide medical advice and does not establish that any pesticide, property, organization, employer, school, water provider, government agency, family or individual caused any illness. Publicly reported health events may not have been independently medically verified. Geographic and temporal overlap does not establish exposure or causation. Formal conclusions require authorized epidemiological analysis, verified medical information, exposure assessment, toxicological review, and independent scientific evaluation. No allegation of wrongdoing is made against any person or entity named herein.</p></div>
+</div></body></html>
