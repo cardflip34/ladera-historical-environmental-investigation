@@ -2,8 +2,9 @@
 
 **Summary.** In August 2026 a concrete rectangle with iron pipe rails still leading up to it was
 located **on foot**, in ungraded open space above Ladera Ranch beside the Arroyo Trabuco golf course.
-Its floor measures about **12 feet**, the floor length specified for a federal cattle-dipping vat in
-USDA Bureau of Animal Industry Circular 183 (1911) [A1, S-USDA-C183]. It is unfenced, unmarked, and
+Its floor measures about **12 feet**, which is the vat bottom specified for a federal cattle-dipping
+vat: *"Length at top of vat, 26 feet; bottom, 12 feet"* [A1, S-USDA-C183, USDA Bureau of Animal
+Industry Circular 183 (1911) p.11]. It is unfenced, unmarked, and
 sits beside a public trail. **This is a candidate, not an identification.** The structure has not
 been measured to a standard, has not been sampled, and has not been examined by anyone qualified to
 identify it; the dimensions here are as reported by the observer and are approximate. Nothing here
@@ -21,9 +22,9 @@ California ever looked. Phase 2 found something to look at.
 [field observation; field record dated 2026-08-07]
 
 It was found on foot, in August 2026, and the way it was found is the reason a century of aerial
-imagery missed it. The route ran up to the high ground behind the Home Depot, down past the biking
-and walking trails, and then off them entirely, through unbroken brush and cactus on a slope that was
-never graded for housing. The structure sits under that cover, in the open space above the community
+imagery missed it. The route ran up onto the high ground above the community, down past the
+biking and walking trails, and then off them entirely, through unbroken brush and cactus on a slope
+that was never graded for housing. The structure sits under that cover, in the open space above the community
 beside the golf course.
 
 That matters for the record, because it resolves an apparent contradiction. The Ladera Ranch chapter
@@ -45,13 +46,16 @@ described without pinning it:
   the ground around it is in casual recreational use, including by children.
 
 **What was measured, and what was inferred.** The observed concrete runs about **12 ft**, and the
-precise claim matters: 12 ft is the **floor** length in the federal specification, not the overall
-length of the structure. A complete specified vat is roughly **25 ft** end to end once the sloped
-entry and the climb-out are included. So an observed 12 ft rectangle sitting at floor level is
-consistent with a vat floor, with the remainder either below grade, collapsed, or removed. The scale
-longitudinal reconstruction prepared after the visit sets the observed concrete against the
+precise claim matters. A federal dipping vat is a trapezoid in long section, wide at the rim and
+narrow at the bottom, and the specification gives both numbers in a single line: *"Length at top of
+vat, 26 feet; bottom, 12 feet"* [A1, S-USDA-C183, Circular 183 (1911) p.11, repeated verbatim in
+Circular 207 (1912) p.14]. **Twelve feet is the floor.** An observed ~12 ft rectangle sitting at
+floor level therefore matches the specified vat bottom exactly, with the sloped entry and climb-out
+that would carry it to 26 ft at the rim either below grade, collapsed, or removed.
+
+The scale longitudinal reconstruction prepared after the visit sets the observed concrete against the
 specification drawing on one scale and labels the two apart: the **12 ft floor is observed**, the
-**25 ft overall length is interpreted, not observed**, and the floor itself is **below grade and has
+**full specified length is interpreted, not observed**, and the floor itself is **below grade and has
 not been excavated or tested**. A reconstruction is an interpretation of what was seen; it is not
 evidence of what the structure is.
 
@@ -62,10 +66,13 @@ a place to test.
 
 ### Safety, before anyone goes looking
 The field record carries a warning that belongs on this page too, and it is the reason the location
-stays unpublished. **If this is a dipping vat, the sediment inside it is the single most concentrated
-place arsenic would be found anywhere in this landscape.** This project's own model puts that
-compartment in the thousands of mg/kg against a California background of 1 to 11 mg/kg (chapter 72).
-Accordingly:
+stays unpublished. **If this is a dipping vat, the sediment inside the vessel is the single most
+concentrated place arsenic would be found anywhere in this landscape.** That is a different
+compartment from the soil figures in 11.3: those model the spread across a vat, its pens and its drip
+pen (128 to 763 mg/kg), whereas sediment sitting in the bath itself is the undiluted end of the
+range. Where such material has actually been measured, at dip sites in New South Wales and the US
+Southeast, it runs **500 to 3,000 mg/kg** against a California background of 1 to 11 mg/kg [A2,
+chapter 72]. Accordingly:
 
 - **Do not dig in it, and do not handle or remove the sediment.**
 - **Do not let children or animals into the structure.**
