@@ -1,0 +1,105 @@
+<!doctype html><html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>CDNC Search Kit: twelve searches on the corpus we cannot reach</title>
+<style>
+:root{--ink:#171e2b;--navy:#20304d;--mut:#5d6675;--line:#e2e6ec;--bg:#faf9f7;--card:#fff;--blue:#2d5d8f;--ok:#1e7a45;--warn:#9a6a10;--hard:#a23b2c;--off:#6b7280;--amber:#c8811f}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.62 -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif}
+.wrap{max-width:1180px;margin:0 auto;padding:0 28px 96px}
+header.mast{background:var(--navy);color:#fff;padding:54px 0 42px;margin-bottom:38px}
+header.mast .wrap{padding-bottom:0}
+.kicker{font-size:13px;letter-spacing:.16em;text-transform:uppercase;color:#9fc0e4;font-weight:700}
+h1{font-size:40px;line-height:1.12;margin:12px 0 10px;font-weight:700;letter-spacing:-.01em}
+.sub{color:#c9d6e6;font-size:18px;max-width:78ch}
+.meta{margin-top:20px;font-size:13px;color:#9fb2ca}
+h2{font-size:26px;margin:46px 0 6px;letter-spacing:-.01em;border-top:3px solid var(--navy);padding-top:22px}
+h3{font-size:19px;margin:30px 0 6px;color:var(--navy)}
+h4{font-size:16px;margin:22px 0 4px}
+p,li{max-width:82ch}
+.lead{font-size:18px;color:#2b3547}
+table{border-collapse:collapse;width:100%;margin:18px 0;font-size:14px;background:var(--card)}
+th{background:#eef1f5;text-align:left;padding:10px 11px;border-bottom:2px solid var(--line);font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:#43506a;vertical-align:bottom}
+td{padding:11px;border-bottom:1px solid var(--line);vertical-align:top}
+td.num{font-weight:700;font-size:17px;color:var(--navy)}
+tr.tier-A{background:#f4fbf6}tr.tier-B{background:#fffdf5}tr.tier-C{background:#f7f9fc}tr.tier-D{background:#fafafa;color:#6b7280}
+.small{font-size:13px;line-height:1.5}
+.mono{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:12.5px}
+.badge{display:inline-block;padding:2px 9px;border-radius:11px;font-size:11.5px;font-weight:700;letter-spacing:.03em}
+.badge.ok{background:#e4f4ea;color:var(--ok)}.badge.warn{background:#fdf1dc;color:var(--warn)}.badge.hard{background:#fbe8e5;color:var(--hard)}.badge.off{background:#eef0f3;color:var(--off)}
+.tier{display:inline-block;width:26px;height:26px;line-height:26px;text-align:center;border-radius:50%;font-weight:800;color:#fff}
+.tierA{background:var(--ok)}.tierB{background:var(--amber)}.tierC{background:var(--blue)}.tierD{background:#9aa3b0}
+.card{background:var(--card);border:1px solid var(--line);border-left:4px solid var(--blue);padding:16px 20px;margin:18px 0;border-radius:3px}
+.card.warn{border-left-color:var(--amber);background:#fffdf6}
+.card.stop{border-left-color:var(--hard);background:#fdf3f1}
+.card.go{border-left-color:var(--ok);background:#f4fbf6}
+.card h4{margin-top:0}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:14px;margin:18px 0}
+.stat{background:var(--card);border:1px solid var(--line);padding:14px 16px;border-radius:3px}
+.stat .n{font-size:30px;font-weight:700;color:var(--navy);line-height:1.1}
+.stat .l{font-size:12.5px;color:var(--mut);margin-top:3px}
+figure.tgt{margin:26px 0;background:var(--card);border:1px solid var(--line);padding:12px;border-radius:3px}
+figure.tgt img{width:100%;height:auto;display:block;border-radius:2px}
+figcaption{font-size:13px;color:#39435a;margin-top:9px;line-height:1.55}
+.src{display:block;color:var(--mut);font-size:11.5px;margin-top:4px}
+ol,ul{padding-left:22px}
+li{margin:5px 0}
+.q{background:#fff;border:1px solid var(--line);padding:4px 0}
+.disc{font-size:12.5px;color:var(--mut);border-top:1px solid var(--line);margin-top:42px;padding-top:16px}
+a{color:var(--blue)}
+.toc{background:var(--card);border:1px solid var(--line);padding:16px 22px;border-radius:3px;columns:2;column-gap:32px}
+.toc a{text-decoration:none}.toc li{break-inside:avoid}
+code{background:#eef1f5;padding:1px 5px;border-radius:3px;font-size:13px}
+.tablewrap{overflow-x:auto}
+@media print{body{background:#fff}header.mast{background:#fff;color:#000;border-bottom:3px solid #000}h1{color:#000}.sub,.meta,.kicker{color:#333}figure.tgt{break-inside:avoid}}
+
+figure.fig{margin:26px 0;background:var(--card);border:1px solid var(--line);padding:12px;border-radius:3px}
+figure.fig img{width:100%;height:auto;display:block;border-radius:2px;background:#fff}
+figure.fig figcaption{font-size:13.5px;color:#39435a;margin-top:10px;line-height:1.6}
+figure.fig .fl{display:inline-block;font-weight:800;color:var(--navy);letter-spacing:.02em;margin-right:6px}
+.figrow{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:16px;margin:24px 0}
+.figrow figure.fig{margin:0}
+.figindex td{vertical-align:top}
+
+.gen{border-left:3px solid var(--line);margin-left:14px;padding-left:22px}
+.per{background:var(--card);border:1px solid var(--line);border-left:4px solid var(--blue);padding:12px 16px;margin:12px 0;border-radius:3px}
+.per.key{border-left-color:var(--amber);background:#fffdf6}
+.per h4{margin:0 0 4px;font-size:16px}
+.per .rel{font-size:13px;color:var(--mut)}
+.ttl{font-size:13.5px;color:#2b3550;margin-top:6px}
+.chain{background:#f5f7fa;border:1px dashed var(--line);padding:10px 14px;border-radius:3px;font-size:13.5px;margin:8px 0}
+.brk{background:#fbe8e5;border-left:4px solid var(--hard);padding:12px 16px;border-radius:3px;margin:14px 0}
+.ok2{background:#e4f4ea;border-left:4px solid var(--ok);padding:12px 16px;border-radius:3px;margin:14px 0}
+</style></head><body><header class="mast"><div class="wrap">
+<div class="kicker">LEHRP · Search kit · Companion to the newspaper sweep</div>
+<h1>CDNC Search Kit</h1>
+<p class="sub">Twelve searches, in priority order, on the one newspaper corpus this project has never been able to reach. Each row is a live link. The reasoning behind every query is in the third column so you can judge the hits as you go.</p>
+<p class="meta">Prepared 21 September 2026 · For the California Digital Newspaper Collection, cdnc.ucr.edu</p>
+</div></header>
+<div class="wrap">
+
+<div class="card warn"><h4>Why this is a hand-off and not a result</h4>
+<p><code>cdnc.ucr.edu</code> sits behind a Cloudflare challenge that returns <b>HTTP 403 to every automated request</b> — not a content restriction, a bot check. It loads normally in an ordinary browser. <b>In this session all three browser-control tools were unavailable</b>, so I could not drive one. Everything else in the sweep was done; this is the piece that needs a human at a keyboard, and it is about ten minutes of clicking.</p>
+<p><b>Why it matters more than the rest.</b> The Internet Archive’s run of the <i>Santa Ana Register</i> begins in September 1911. <b>1908 to 1911 — the peak dipping years, and the years the one article we have comes from — are not covered by any corpus reached so far.</b> CDNC is the likeliest home of Orange County titles for exactly that window.</p></div>
+
+<div class="card"><h4>How to work through it</h4>
+<ol>
+<li><b>Click a link.</b> It opens CDNC’s search already filled in. If a link lands you on the plain search page instead, paste the bold term into the search box and set the years by hand — the parameter syntax could not be tested from here.</li>
+<li><b>Read the snippets, not just the counts.</b> Period OCR is poor and the hit count alone means nothing.</li>
+<li><b>For anything promising, note the paper, the exact date and the page number.</b> That is all I need to pull the full text and grade it.</li>
+<li><b>Check the county on every geographic hit</b> before believing it — see row 12.</li>
+</ol></div>
+
+<h2>The twelve searches</h2>
+<div class="tablewrap"><table><thead><tr><th style="width:6%">#</th><th style="width:26%">Query and years</th><th>Why this one</th></tr></thead><tbody>
+<tr><td class="num">1</td><td><a href="https://cdnc.ucr.edu/?a=q&hs=1&r=1&results=1&txq=Selleck&txf=txIN&ssnip=txt&dafdq=&dafmq=&dafyq=1906&datdq=&datmq=&datyq=1913&puq=&e=-------en--20--1--txt-txIN--------" target="_blank"><b>Selleck</b></a><br><span class="small mono">1905–1911</span></td><td>Dr. W. E. Selleck, <b>County Live Stock Inspector for San Diego County c.1906–1910</b> — the county the southern half of this holding lay in. He was arranging dip tanks and filing monthly reports to his Board of Supervisors. <b>His file is now closed at this end:</b> he moved to Imperial County in September 1910, resigned that November and died in December 1910, so <b>there is no point searching him after 1910.</b> What is still worth finding is a San Diego County report of his that names a ranch.</td></tr><tr><td class="num">2</td><td><a href="https://cdnc.ucr.edu/?a=q&hs=1&r=1&results=1&txq=Closson&txf=txIN&ssnip=txt&dafdq=&dafmq=&dafyq=1912&datdq=&datmq=&datyq=1918&puq=&e=-------en--20--1--txt-txIN--------" target="_blank"><b>Closson</b></a><br><span class="small mono">1912–1918</span></td><td>Dr. Gardner W. Closson of Anaheim, Orange County stock inspector from 8 January 1913, reappointed 6 January 1915. Armor (1921) credits him with having "driven out the Texas fever tick."</td></tr><tr><td class="num">3</td><td><a href="https://cdnc.ucr.edu/?a=q&hs=1&r=1&results=1&txq=McFarlane&txf=txIN&ssnip=txt&dafdq=&dafmq=&dafyq=1906&datdq=&datmq=&datyq=1914&puq=&e=-------en--20--1--txt-txIN--------" target="_blank"><b>McFarlane</b></a><br><span class="small mono">1906–1914</span></td><td>Dr. W. S. McFarlane of Anaheim, who held the Orange County post "for some years past" before Closson — which means he held it through the peak dipping years this project cannot otherwise see.</td></tr><tr><td class="num">4</td><td><a href="https://cdnc.ucr.edu/?a=q&hs=1&r=1&results=1&txq=%22dipping+vat%22&txf=txIN&ssnip=txt&dafdq=&dafmq=&dafyq=1905&datdq=&datmq=&datyq=1922&puq=&e=-------en--20--1--txt-txIN--------" target="_blank"><b>"dipping vat"</b></a><br><span class="small mono">1905–1922</span></td><td>Any California vat mentioned by name. The 1910 Imperial County item recommending <b>cement instead of wood</b> was found this way in a different corpus; there will be more.</td></tr><tr><td class="num">5</td><td><a href="https://cdnc.ucr.edu/?a=q&hs=1&r=1&results=1&txq=%22dipping+tank%22&txf=txIN&ssnip=txt&dafdq=&dafmq=&dafyq=1905&datdq=&datmq=&datyq=1922&puq=&e=-------en--20--1--txt-txIN--------" target="_blank"><b>"dipping tank"</b></a><br><span class="small mono">1905–1922</span></td><td>Selleck’s own word for it. Worth running separately — the two terms were not interchangeable in the period.</td></tr><tr><td class="num">6</td><td><a href="https://cdnc.ucr.edu/?a=q&hs=1&r=1&results=1&txq=%22dipping+plant%22&txf=txIN&ssnip=txt&dafdq=&dafmq=&dafyq=1905&datdq=&datmq=&datyq=1922&puq=&e=-------en--20--1--txt-txIN--------" target="_blank"><b>"dipping plant"</b></a><br><span class="small mono">1905–1922</span></td><td>The word the Los Angeles Herald used for the Barstow works the State Veterinarian inspected in May 1908.</td></tr><tr><td class="num">7</td><td><a href="https://cdnc.ucr.edu/?a=q&hs=1&r=1&results=1&txq=Keane+quarantine&txf=txIN&ssnip=txt&dafdq=&dafmq=&dafyq=1907&datdq=&datmq=&datyq=1917&puq=&e=-------en--20--1--txt-txIN--------" target="_blank"><b>Keane quarantine</b></a><br><span class="small mono">1907–1917</span></td><td>Dr. Charles F. Keane, State Veterinarian. He signed the proclamations. Also try <b>Kane</b> — newspapers of the period spelled it both ways.</td></tr><tr><td class="num">8</td><td><a href="https://cdnc.ucr.edu/?a=q&hs=1&r=1&results=1&txq=%22cattle+tick%22+%22Orange+county%22&txf=txIN&ssnip=txt&dafdq=&dafmq=&dafyq=1907&datdq=&datmq=&datyq=1917&puq=&e=-------en--20--1--txt-txIN--------" target="_blank"><b>"cattle tick" "Orange county"</b></a><br><span class="small mono">1907–1917</span></td><td>The direct question, asked of the one corpus that may hold Orange County titles for 1908–1911.</td></tr><tr><td class="num">9</td><td><a href="https://cdnc.ucr.edu/?a=q&hs=1&r=1&results=1&txq=%22stock+inspector%22+Orange&txf=txIN&ssnip=txt&dafdq=&dafmq=&dafyq=1907&datdq=&datmq=&datyq=1917&puq=&e=-------en--20--1--txt-txIN--------" target="_blank"><b>"stock inspector" Orange</b></a><br><span class="small mono">1907–1917</span></td><td>The office rather than the man. Catches board proceedings, salary items and appointment fights.</td></tr><tr><td class="num">10</td><td><a href="https://cdnc.ucr.edu/?a=q&hs=1&r=1&results=1&txq=%22Texas+fever%22+Capistrano&txf=txIN&ssnip=txt&dafdq=&dafmq=&dafyq=1905&datdq=&datmq=&datyq=1917&puq=&e=-------en--20--1--txt-txIN--------" target="_blank"><b>"Texas fever" Capistrano</b></a><br><span class="small mono">1905–1917</span></td><td>Place rather than person. San Juan Capistrano was the nearest town to this land.</td></tr><tr><td class="num">11</td><td><a href="https://cdnc.ucr.edu/?a=q&hs=1&r=1&results=1&txq=%22O%E2%80%99Neill%22+cattle+tick&txf=txIN&ssnip=txt&dafdq=&dafmq=&dafyq=1905&datdq=&datmq=&datyq=1917&puq=&e=-------en--20--1--txt-txIN--------" target="_blank"><b>"O’Neill" cattle tick</b></a><br><span class="small mono">1905–1917</span></td><td>The direct one. Try <b>O’Neil</b> with one L as well — that is how the Los Angeles Herald spelled it in the 1908 article.</td></tr><tr><td class="num">12</td><td><a href="https://cdnc.ucr.edu/?a=q&hs=1&r=1&results=1&txq=%22Santa+Margarita%22+tick&txf=txIN&ssnip=txt&dafdq=&dafmq=&dafyq=1905&datdq=&datmq=&datyq=1917&puq=&e=-------en--20--1--txt-txIN--------" target="_blank"><b>"Santa Margarita" tick</b></a><br><span class="small mono">1905–1917</span></td><td><b>Check the county on every hit.</b> There are two Santa Margaritas and the other one is a railroad station in San Luis Obispo County, near the Hearst ranch, which also dipped cattle. This trap has already caught one search in this project.</td></tr>
+</tbody></table></div>
+
+<div class="card go"><h4>One thing to check before you start</h4>
+<p>CDNC’s own title list will say <b>whether it holds any Orange County paper at all for 1908–1911</b>. If it does, that paper is worth reading forward by hand from about February 1908 — when the county quarantine began — regardless of what any keyword search returns. <b>Routine compliance with a standing state order is exactly the kind of thing a keyword search misses and a human reading a column finds.</b></p></div>
+
+<div class="card stop"><h4>What a hit would and would not mean</h4>
+<p>A newspaper report that a vat stood somewhere on this ranch would establish <b>that a vat stood somewhere on this ranch</b>. It would not establish the location within the Ladera footprint, the chemical used, or any present-day soil condition. Those remain questions for records and for analysis.</p>
+<p>And a null result would be worth having too. <b>Record what you searched and found nothing on</b> — the absence goes into the record beside the findings, the same way the 1,198 Santa Ana Register issues did.</p></div>
+
+<div class="disc"><p>This document is part of an independent research and data-organization project. It does not provide medical advice and does not establish that any pesticide, property, organization, employer, school, water provider, government agency, or other party caused any illness. Geographic and temporal overlap does not establish exposure or causation.</p></div>
+</div></body></html>
