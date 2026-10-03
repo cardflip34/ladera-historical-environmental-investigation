@@ -20,7 +20,7 @@ ST=[('D2',-117.65492,33.55505,AMB,'1948 RANCH STRUCTURE','woodland in 1990 AND 2
     ('D3',-117.65281,33.55857,GRN,'T6 · BELOW YOUR FIND','scrub in 1990 AND 2025 · unchanged','the slope anything from D1 drained across'),
     ('D4',-117.65992,33.54793,CYN,'T8 · CREEK CORRIDOR','unchanged · CLOSED OAK CANOPY','fly the channel and the gaps, not a grid'),
     ('D5',-117.65929,33.54763,CYN,'T2 · CREEK BENCH','unchanged · CLOSED OAK CANOPY','15 m off the drainage, on the trail'),
-    ('D6',-117.66081,33.55057,CYN,'T11 + T12','unchanged · houses within 150 m','two water points above the trail'),
+    ('D6',-117.66081,33.55057,AMB,'T11 + T12 · PROMOTED','unchanged · just south of the search area','the 1968 water points on this same slope'),
     ('D7',-117.65619,33.53482,GRN,'T19 · OPEN GROUND','unchanged · NO CANOPY, NOTHING BUILT','the clearest view of native grade in the set')]
 EXTRA=[(-117.66048,33.55143)]
 for lon,lat in EXTRA:
@@ -64,6 +64,37 @@ for sid,lon,lat,col,t1,t2,t3 in ST:
     d.text((bx,by+152),t2,font=f3,fill=col+(240,))
     d.text((bx,by+204),t3,font=f4,fill=(184,194,208,235))
     d.line([(x,y),(bx-26 if bx>x else bx+tw+30,by+120)],fill=col+(150,),width=5)
+
+# ---- the located search area, from the Home Depot landmark in the 3 Oct drone photos
+SA=(-117.6618,33.5516,-117.6566,33.5566)
+ax0,ay0=P(SA[0],SA[3]); ax1,ay1=P(SA[2],SA[1])
+d.rectangle([ax0,ay0,ax1,ay1],outline=RED+(255,),width=11)
+for i in range(0,int(ay1-ay0),46):
+    d.line([(ax0,ay0+i),(ax0+min(46,ax1-ax0),ay0+i+46)],fill=RED+(42,),width=5)
+hdx,hdy=P(-117.66050,33.55675)
+d.ellipse([hdx-30,hdy-30,hdx+30,hdy+30],outline=(255,255,255,255),width=10)
+d.ellipse([hdx-10,hdy-10,hdx+10,hdy+10],fill=(255,255,255,255))
+f1,f2=Fa(54),Fg(40)
+lab='HOME DEPOT, 27952 HILLCREST'; sub='the landmark in your 3 Oct photos  \u00b7  33.55675, \u2212117.66050'
+tw=max(d.textlength(lab,font=f1),d.textlength(sub,font=f2))
+d.rounded_rectangle([hdx-tw/2-26,hdy-152,hdx+tw/2+26,hdy-36],14,fill=(12,15,21,225),outline=(255,255,255,235),width=5)
+d.text((hdx-tw/2,hdy-142),lab,font=f1,fill=(255,255,255,255))
+d.text((hdx-tw/2,hdy-82),sub,font=f2,fill=(198,206,218,235))
+
+f3,f4,f5=Fa(76),Fa(50),Fg(42)
+t1='D1 SEARCH AREA \u2014 LOCATED 3 OCT'
+t2='the scrub south and south-east of the Home Depot'
+t3='Your photos put the structure in here. Exact point still unresolved:'
+t4='the files that reached me had their EXIF stripped and were downscaled.'
+bw=max(d.textlength(t1,font=f3),d.textlength(t2,font=f4),d.textlength(t3,font=f5),d.textlength(t4,font=f5))+80
+bx=ax0-bw-60
+if bx<40: bx=ax1+60
+by=ay0+40
+d.rounded_rectangle([bx,by,bx+bw,by+286],20,fill=(32,10,8,236),outline=RED+(255,),width=8)
+d.text((bx+40,by+18),t1,font=f3,fill=RED+(255,))
+d.text((bx+40,by+106),t2,font=f4,fill=(236,206,200,250))
+d.text((bx+40,by+172),t3,font=f5,fill=(214,190,186,240))
+d.text((bx+40,by+222),t4,font=f5,fill=(214,190,186,240))
 
 # D1 note
 x3,y3=P(-117.65281,33.55857)
