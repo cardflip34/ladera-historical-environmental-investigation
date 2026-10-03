@@ -126,6 +126,35 @@ figure.fig .fl{display:inline-block;font-weight:800;color:var(--navy);letter-spa
 </ul>
 <p><b>A well-photographed negative closes a question.</b> This project has more open questions than it needs.</p></div>
 
+<h2 id="waypoints">Waypoints, and how to get them into the aircraft</h2>
+<p class="lead">Ninety-nine waypoints across the seven stations, with ground elevation pulled from the USGS 1 m DEM at every single one.</p>
+
+<div class="card stop"><h4>The altitudes are terrain-corrected, and that only holds if you launch at the station centre</h4>
+<p>Every altitude in the waypoint files is <b>relative to the launch point</b>, and each one has been adjusted by the difference in ground height between that waypoint and the station centre, so the aircraft holds a constant height <b>above the ground</b> rather than above wherever it took off.</p>
+<p>It matters most where the ground moves under the flight path: <b>D7 has 22.1 m of relief across its grid</b>, D6 has 14.3 m, D6b 12.3 m, D3 11.6 m.</p>
+<p><b>If you launch somewhere other than the station centre, these numbers are wrong.</b> Either re-launch at the centre or add the ground-height difference yourself. And keep terrain-follow and obstacle avoidance on regardless — this is a plan, not a guarantee.</p></div>
+
+<div class="tablewrap"><table><thead><tr><th style="width:22%">Your app</th><th style="width:26%">What to use</th><th>How</th></tr></thead><tbody>
+<tr><td><b>DJI Fly</b><br><span class="small">Mini 4 Pro, Air 3 / 3S, Mavic 3 consumer, Neo</span></td><td><code>Ladera_stations.kml</code> + <code>Ladera_stations.txt</code></td><td><b>DJI Fly cannot import a waypoint file.</b> Waypoint mode exists on these aircraft, but you place points by tapping the map or by flying there and marking. Open the KML in Google Earth on the same phone so you can see exactly where each point sits, then tap-match it in DJI Fly, and take the altitude, gimbal angle and heading from the text file.</td></tr>
+<tr class="tier-A"><td><b>Litchi</b><br><span class="small">most DJI consumer aircraft</span></td><td>the ten <code>litchi_*.csv</code> files</td><td><b>The most direct file-to-aircraft route.</b> Litchi Mission Hub in a browser → Missions → Import → upload, then sync to the app. The orbit missions already carry a <b>POI at the station centre</b>, so the camera stays locked on the target all the way round.</td></tr>
+<tr><td><b>DJI Pilot 2</b><br><span class="small">Mavic 3 Enterprise / Thermal, Matrice</span></td><td>the <b>SURVEY AREA</b> polygons inside <code>Ladera_stations.kml</code></td><td>For D1, D2, D3 and D7 use the built-in <b>Mapping</b> mission rather than waypoints — import or redraw the polygon, set 75% front and 65% side overlap at 60 m, and let it fly its own grid. Use a Waypoint mission only for the obliques.</td></tr>
+<tr><td>On foot</td><td><code>Ladera_stations.gpx</code></td><td>Gaia, Avenza, Garmin, any handheld. Or paste a coordinate pair from the text file straight into Google Maps.</td></tr>
+</tbody></table></div>
+
+<p class="small"><b>One format deliberately not included.</b> DJI Pilot 2 also accepts a proprietary KMZ in DJI's WPML schema. I did not generate one, because I have no way to test it here and a waypoint file that imports with subtly wrong altitudes is worse than no file at all. The KML polygon into Pilot's own Mapping mission is both safer and less work.</p>
+
+<div class="card go"><h4>D1 — generate it yourself</h4>
+<p>The coordinate of your August find is deliberately not stored in the project, so its waypoints are not in the pack. Run this with your own coordinate and it writes the identical set into <code>out_D1/</code>, pulling real ground elevation for every point:</p>
+<p class="mono"><b>python3 d1.py 33.5xxxxx -117.6xxxxx</b></p>
+<p class="small">It produces the Litchi orbit and grid CSVs, a KML with the survey polygon, a GPX and a plain list — same structure, same corrections as the other seven.</p></div>
+
+<h3>What is in each station</h3>
+<div class="tablewrap"><table><tbody>
+<tr><td style="width:22%"><b>Orbit</b></td><td>8 points on a 40 m radius, <b>28 m above ground</b>, gimbal −35°, heading toward the centre, one photo per point. Every station has one.</td></tr>
+<tr><td><b>Grid</b></td><td>150 × 150 m, 30 m line spacing, <b>60 m above ground</b>, nadir. <b>D2, D3 and D7 only</b> — plus D1 when you generate it.</td></tr>
+<tr class="tier-B"><td><b>No grid</b></td><td><b>D4 and D5 have no grid and that is deliberate.</b> They sit under closed oak canopy, where a nadir mapping run photographs treetops and the ground stays invisible.</td></tr>
+</tbody></table></div>
+
 <h2 id="spec">Flight settings</h2>
 <div class="tablewrap"><table><tbody>
 <tr class="tier-A"><td style="width:24%"><b>Nadir grid</b></td><td><b>60 m (200 ft) AGL, 75% front, 65% side overlap</b> — an orthomosaic at roughly 1.5 cm/px, which means you can take <b>real dimensions</b> off it and test the 26 ft / 12 ft specification instead of eyeballing it. <b>D1, D3, D7 only.</b></td></tr>

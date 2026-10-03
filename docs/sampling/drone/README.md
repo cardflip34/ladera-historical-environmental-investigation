@@ -37,3 +37,29 @@ Station sources: `data/geospatial/topo1968_water.geojson`,
 **D1, the August 2026 concrete feature, is not plotted and its coordinates are
 not in this repository.** Rendered output is not committed — it carries
 locational data.
+
+## Waypoints
+
+`gen.py` builds the waypoint geometry for the six plotted stations (orbit: 8 points,
+40 m radius, 28 m AGL, gimbal −35°, heading to centre; grid: 150 × 150 m, 30 m line
+spacing, 60 m AGL, nadir, on D2/D3/D7 only) and queries the **USGS 1 m DEM**
+(`epqs.nationalmap.gov`) for ground elevation at **every** waypoint.
+
+`export.py` writes KML, per-station Litchi Mission Hub CSVs, GPX and a plain list.
+
+**Altitudes are terrain-corrected and relative to a launch at the station centre.**
+Each waypoint's commanded altitude is `target_AGL + (ground_wp − ground_centre)`, so
+the aircraft holds constant height above ground. Relief inside a station set reaches
+22.1 m at D7, 14.3 m at D6, 12.3 m at D6b, 11.6 m at D3. Launching anywhere other
+than the centre invalidates the numbers.
+
+`d1.py <lat> <lon>` regenerates the identical set for D1, whose coordinate is
+deliberately not stored here.
+
+No DJI WPML KMZ is generated: it cannot be tested from here, and a waypoint file
+that imports with subtly wrong altitudes is worse than no file. DJI Pilot 2 users
+should import the KML survey polygon into the built-in Mapping mission instead.
+
+D4 and D5 get no grid by design — closed oak canopy.
+
+Rendered map and waypoint exports are **not committed**: locational data.

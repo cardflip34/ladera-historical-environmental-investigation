@@ -27,6 +27,26 @@ for lon,lat in EXTRA:
     x,y=P(lon,lat); d.ellipse([x-24,y-24,x+24,y+24],outline=CYN+(190,),width=7)
     d.ellipse([x-8,y-8,x+8,y+8],fill=CYN+(230,))
 
+
+# ---- flight geometry: 40 m orbit ring, and the 150 m survey square where a grid is flown
+import math as _m
+MPX_=MPX
+GRIDS={'D2','D3','D7'}
+for sid,lon,lat,col,_a,_b,_c in ST:
+    x,y=P(lon,lat)
+    r=40.0/MPX_
+    d.ellipse([x-r,y-r,x+r,y+r],outline=col+(205,),width=7)
+    for i in range(8):
+        th=2*_m.pi*i/8
+        px_,py_=x+r*_m.sin(th), y-r*_m.cos(th)
+        d.ellipse([px_-13,py_-13,px_+13,py_+13],fill=col+(235,),outline=(12,15,20,255),width=3)
+    if sid in GRIDS:
+        h=75.0/MPX_
+        d.rectangle([x-h,y-h,x+h,y+h],outline=col+(170,),width=6)
+        for li in range(6):
+            yy=y-h+li*(2*h/5)
+            d.line([(x-h,yy),(x+h,yy)],fill=col+(110,),width=4)
+
 LOFF={'D5':150,'D4':-130,'D6':-40}
 for sid,lon,lat,col,t1,t2,t3 in ST:
     x,y=P(lon,lat)
